@@ -374,18 +374,16 @@ const ipoList = defineTool({
         matches(r['Listing Board'], input.board) &&
         matches(r['Participant Admin'], input.participant_admin, 'includes'),
     );
-    const rows = rs
-      .slice(0, input.limit ?? 20)
-      .map((r) => ({
-        ticker: r['Ticker Code'],
-        company: r['Company Name'],
-        listing_date: r['Listing Date'],
-        sector: r.Sector,
-        board: r['Listing Board'],
-        final_price: r['Final Price (Rp)'],
-        return_d1: r['Return D1'],
-        participant_admin: r['Participant Admin'],
-      }));
+    const rows = rs.slice(0, input.limit ?? 20).map((r) => ({
+      ticker: r['Ticker Code'],
+      company: r['Company Name'],
+      listing_date: r['Listing Date'],
+      sector: r.Sector,
+      board: r['Listing Board'],
+      final_price: r['Final Price (Rp)'],
+      return_d1: r['Return D1'],
+      participant_admin: r['Participant Admin'],
+    }));
     return tableOutput(ctx, {
       tool: 'ipo_list',
       title: `e-IPO (${rs.length})`,

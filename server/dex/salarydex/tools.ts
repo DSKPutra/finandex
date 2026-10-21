@@ -4,9 +4,9 @@ import { z } from 'zod';
 import { median } from '../../../src/shared/analytics/stats.ts';
 import { fmtMoney } from '../../../src/shared/format.ts';
 import { artifact, defineTool, method, ToolError, t, type Tool, type ToolContext } from '../../tools/types.ts';
-import { barOutput } from '../helpers.ts';
+import { barOutput, infoCard } from '../helpers.ts';
 import { appInfo, dataQualityTool, datasetInfo, openDex } from '../shared-tools.ts';
-import { histogram, loadTable, matches, MIN_N, stat, type Row } from '../table.ts';
+import { groupStat, histogram, loadTable, matches, MIN_N, sortGroups, stat, type Row } from '../table.ts';
 
 const DS = 'Global Salary Data by Skill & Role (16% sample, 100,060 postings)';
 const FLAGS = ['sample_16pct', 'fixed_fx_not_ppp', 'cc_by_nc'];
@@ -68,21 +68,29 @@ const salaryStats = defineTool({
         note: enough ? undefined : `data tidak cukup (n < ${MIN_N})`,
       },
       ui: [
-        artifact(ctx, {
-          title: ctx.locale === 'id' ? 'Distribusi gaji (USD/tahun)' : 'Salary distribution (USD/yr)',
-          summary: enough
-            ? `median ${fmtMoney(res.median, 'USD', ctx.locale)} (n = ${vals.length})`
-            : `n = ${vals.length} < ${MIN_N}`,
-          dataset: DS,
-          tab: 'benchmark',
-          spec: {
-            type: 'histogram',
-            bins: histogram(vals, 24),
-            median: res.median,
-            n: vals.length,
-            value_format: 'money_usd',
-          },
-        }),
+        enough
+          ? artifact(ctx, {
+              title: ctx.locale === 'id' ? 'Distribusi gaji (USD/tahun)' : 'Salary distribution (USD/yr)',
+              summary: `median ${fmtMoney(res.median, 'USD', ctx.locale)} (n = ${vals.length})`,
+              dataset: DS,
+              tab: 'benchmark',
+              spec: {
+                type: 'histogram',
+                bins: histogram(vals, 24),
+                median: res.median,
+                n: vals.length,
+                value_format: 'money_usd',
+              },
+            })
+          : infoCard(
+              ctx,
+              ctx.locale === 'id' ? 'Data tidak cukup' : 'Not enough data',
+              ctx.locale === 'id'
+                ? `Hanya ${vals.length} lowongan cocok (n < ${MIN_N}); statistik tidak ditampilkan.`
+                : `Only ${vals.length} postings match (n < ${MIN_N}); statistics are not shown.`,
+              DS,
+              'warning',
+            ),
       ],
       method: method(ctx, {
         tool: 'salary_stats',
@@ -222,20 +230,10 @@ const salaryDistribution = defineTool({
   label: t('Menyusun distribusi gaji…', 'Building the salary distribution…'),
   numeric: true,
   async run(ctx, input) {
-    const rows = filter(await rowsOf(ctx), input.filters ?? {});
-    const g = new Map<string, number[]>();
-    for (const r of rows) {
-      const k = r[input.group_by] as string | null;
-      if (!k) continue;
-      if (!g.has(k)) g.set(k, []);
-      const v = usd(r);
-      if (Number.isFinite(v)) g.get(k)!.push(v);
-    }
-    const gs = [...g.entries()]
-      .filter(([, v]) => v.length >= MIN_N)
-      .map(([k, v]) => ({ key: k, value: median(v), n: v.length }))
-      .sort((a, b) => b.value - a.value)
-      .slice(0, input.limit ?? 15);
+    const rows = filter(await rowsOf(ctx), input.filters ?? {}).filter((r) => Number.isFinite(usd(r)));
+    const gs = sortGroups(
+      groupStat(rows, (r) => r[input.group_by] as string | null, usd, 'median').filter((g) => g.n >= MIN_N),
+    ).slice(0, input.limit ?? 15);
     return barOutput(ctx, {
       tool: 'salary_distribution',
       title: `${ctx.locale === 'id' ? 'Median gaji per' : 'Median salary by'} ${input.group_by}`,

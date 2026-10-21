@@ -3,7 +3,6 @@
 import type { ValueFormat } from '../../src/shared/chart-spec.ts';
 import type { FormulaId } from '../../src/shared/analytics/formulas.ts';
 import { artifact, method, type ToolContext, type ToolOutput } from '../tools/types.ts';
-import type { Group } from './table.ts';
 
 export function barOutput(
   ctx: ToolContext,
@@ -120,8 +119,4 @@ export function infoCard(
     dataset,
     spec: { type: 'card', body, tone, link: null, ...(items ? { items } : {}) },
   });
-}
-
-export function groupsTo(gs: Group[]): { key: string; value: number | null; n: number }[] {
-  return gs.map((g) => ({ key: g.key, value: g.value, n: g.n }));
 }

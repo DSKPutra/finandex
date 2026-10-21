@@ -1,7 +1,7 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
 // Helpers for row tables (columnar + dictionary-encoded files of §7.3) used by tabular Dex tools.
 import type { ColumnarTableFile } from '../../src/shared/data-contracts.ts';
-import { median, quantile, mean, sum } from '../../src/shared/analytics/stats.ts';
+import { median, quantile, mean } from '../../src/shared/analytics/stats.ts';
 import { fold } from '../../src/shared/text.ts';
 import type { DataStore } from '../data/store.ts';
 
@@ -30,11 +30,7 @@ export function loadTable(store: DataStore, path: string): Promise<Row[]> {
   return p;
 }
 
-export function num(v: unknown): number {
-  return typeof v === 'number' && Number.isFinite(v) ? v : NaN;
-}
-
-export type Stat = 'median' | 'mean' | 'p25' | 'p75' | 'count' | 'sum' | 'min' | 'max';
+export type Stat = 'median' | 'mean' | 'p25' | 'p75' | 'count';
 
 export function stat(values: number[], s: Stat): number | null {
   const v = values.filter((x) => Number.isFinite(x));
@@ -49,12 +45,6 @@ export function stat(values: number[], s: Stat): number | null {
       return quantile(v, 0.25);
     case 'p75':
       return quantile(v, 0.75);
-    case 'sum':
-      return sum(v);
-    case 'min':
-      return Math.min(...v);
-    case 'max':
-      return Math.max(...v);
   }
 }
 
@@ -67,19 +57,16 @@ export interface Group {
 /** Group rows and compute a statistic of `val` per group (rows with null key skipped). */
 export function groupStat(
   rows: Row[],
-  key: (r: Row) => string | null | undefined | (string | null)[],
+  key: (r: Row) => string | null | undefined,
   val: (r: Row) => number,
   s: Stat,
 ): Group[] {
   const g = new Map<string, number[]>();
   for (const r of rows) {
     const k = key(r);
-    const keys = Array.isArray(k) ? k : [k];
-    for (const kk of keys) {
-      if (kk === null || kk === undefined || kk === '') continue;
-      if (!g.has(kk)) g.set(kk, []);
-      g.get(kk)!.push(val(r));
-    }
+    if (k === null || k === undefined || k === '') continue;
+    if (!g.has(k)) g.set(k, []);
+    g.get(k)!.push(val(r));
   }
   return [...g.entries()].map(([k, vs]) => ({
     key: k,
@@ -88,9 +75,9 @@ export function groupStat(
   }));
 }
 
-export function sortGroups(gs: Group[], order: 'desc' | 'asc' = 'desc'): Group[] {
-  const dir = order === 'asc' ? 1 : -1;
-  return gs.filter((g) => g.value !== null).sort((a, b) => dir * (a.value! - b.value!) || (a.key < b.key ? -1 : 1));
+/** Groups with a value, largest first (ties by key A→Z). */
+export function sortGroups(gs: Group[]): Group[] {
+  return gs.filter((g) => g.value !== null).sort((a, b) => b.value! - a.value! || (a.key < b.key ? -1 : 1));
 }
 
 /** Equal-width histogram (outliers beyond p1/p99 clipped into the edge bins). */

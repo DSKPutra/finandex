@@ -22,7 +22,7 @@
     "format": "prettier --write .",
     "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.node.json --noEmit",
     "test": "vitest run --project unit",
-    "test:coverage": "vitest run --project unit --coverage",
+    "test:coverage": "vitest run --project unit --project tools --coverage",
     "test:golden": "vitest run --project golden",
     "test:tools": "vitest run --project tools",
     "test:parity": "tsx scripts/data/parity.ts",

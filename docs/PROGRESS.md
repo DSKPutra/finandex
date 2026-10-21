@@ -17,5 +17,5 @@
 - Tools untuk 27 Dex (`server/dex/*/tools.ts`, registry `server/dex/index.ts`), skema `strict`, `ui` + `method` wajib untuk tool angka.
 - Orkestrator §8.3 (`server/chat/orchestrator.ts`), adapter Claude (`server/chat/anthropic.ts`), SSE §8.2, handler (`server/handler.ts`) untuk Vercel (`api/[[...route]].ts`) & Netlify (`netlify/functions/api.mts`), keamanan (CORS allowlist, rate limit + anggaran token, validasi zod + 64 KB, header, penjaga data sensitif).
 - System prompt global + 27 Dex (`server/chat/system-prompts/*.md`, dibundel ke `prompts.generated.ts`).
-- `test:tools` 194/194 (registry/skema strict, kontrak ui+method per panggilan skenario, protokol orkestrator, handler & keamanan, prompt).
+- `test:tools` + unit: 326 tes lulus; coverage `src/shared` + `server` **98,6% statement · 90,9% branch · 99,7% function · 99,4% line** (matriks tool memanggil setiap tool; fixture saham SINTETIS untuk tool NASDAQ/S&P yang datanya belum ada).
 - `eval:chat:mock`: **115/128 lulus, 0 gagal, 13 pending-data** (NASDAQ 7, S&P 500 6 → input #2/#3; mylaiwyer-01 → input #30). Laporan: `docs/eval/mock-report.md`.

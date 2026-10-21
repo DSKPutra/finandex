@@ -61,7 +61,7 @@ export class DataStore {
   /** true when the file exists (cached probe). */
   async has(path: string): Promise<boolean> {
     try {
-      await this.load(path, 'json');
+      await this.load(path, 'binary');
       return true;
     } catch (e) {
       if (e instanceof DataNotFoundError) return false;
@@ -70,13 +70,14 @@ export class DataStore {
   }
 
   private async load(path: string, kind: 'json' | 'text' | 'binary'): Promise<unknown> {
-    const hit = this.cache.get(path);
+    const key = `${kind}:${path}`;
+    const hit = this.cache.get(key);
     const now = Date.now();
     if (hit && now - hit.fetchedAt < this.ttlMs) {
-      this.touch(path, hit);
+      this.touch(key, hit);
       return hit.value;
     }
-    const pending = this.inflight.get(path);
+    const pending = this.inflight.get(key);
     if (pending) return pending;
     const p = (async () => {
       const headers: Record<string, string> = {};
@@ -84,7 +85,7 @@ export class DataStore {
       const res = await this.fetchImpl(this.url(path), { headers });
       if (res.status === 304 && hit) {
         hit.fetchedAt = now;
-        this.touch(path, hit);
+        this.touch(key, hit);
         return hit.value;
       }
       if (res.status === 404) throw new DataNotFoundError(path);
@@ -101,12 +102,12 @@ export class DataStore {
         value = kind === 'json' ? JSON.parse(t) : t;
       }
       if (hit) this.bytes -= hit.bytes;
-      this.cache.set(path, { value, etag: res.headers.get('etag'), bytes, fetchedAt: now });
+      this.cache.set(key, { value, etag: res.headers.get('etag'), bytes, fetchedAt: now });
       this.bytes += bytes;
       this.evict();
       return value;
-    })().finally(() => this.inflight.delete(path));
-    this.inflight.set(path, p);
+    })().finally(() => this.inflight.delete(key));
+    this.inflight.set(key, p);
     return p;
   }
 

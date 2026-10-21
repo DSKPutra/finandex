@@ -11,11 +11,14 @@ export class AnthropicLlm implements Llm {
   readonly model: string;
   private readonly client: Anthropic;
 
-  constructor(private readonly env: Env) {
+  constructor(
+    private readonly env: Env,
+    opts: { fetch?: typeof fetch } = {},
+  ) {
     if (!env.ANTHROPIC_API_KEY) throw new LlmError('UPSTREAM', 'ANTHROPIC_API_KEY is not configured');
     this.model = env.ANTHROPIC_MODEL;
     // one retry for 429/529 (the SDK backs off with jitter and honours retry-after)
-    this.client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY, maxRetries: 1, timeout: env.CHAT_DEADLINE_MS });
+    this.client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY, maxRetries: 1, timeout: env.CHAT_DEADLINE_MS, ...(opts.fetch ? { fetch: opts.fetch } : {}) });
   }
 
   async turn(req: LlmRequest, onText: (delta: string) => void): Promise<LlmResult> {

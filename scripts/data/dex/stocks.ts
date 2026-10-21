@@ -228,7 +228,7 @@ export function buildMatrix(byT: Map<string, Bars>, useAdj: boolean): { bin: Uin
   return { bin: new Uint8Array(f.buffer), meta: { dates, tickers, shape: [dates.length, tickers.length] } };
 }
 
-function seriesFile(t: string, b: Bars, quality: unknown) {
+export function seriesFile(t: string, b: Bars, quality: unknown) {
   return seriesDoc(t, b.d, { o: b.o, h: b.h, l: b.l, c: b.c, ...(b.ac ? { ac: b.ac } : {}), ...(b.v ? { v: b.v } : {}), ...(b.div ? { div: b.div, split: b.split ?? [] } : {}) }, { quality });
 }
 
@@ -355,6 +355,55 @@ export function simulate(b: Bars, start: CalDate, amount: number) {
   };
 }
 
+/** Dividend, split and volume profile of one S&P 500 series (§4.3). */
+export function dividendProfile(b: Bars): Record<string, unknown> {
+  const L = b.d[b.d.length - 1]!;
+  const a1 = anchorDate(L, '1Y');
+  let ttm = 0;
+  const annual = new Map<number, number>();
+  let lastDiv: { date: CalDate; amount: number | null } | null = null;
+  b.d.forEach((d, i) => {
+    const dv = b.div![i]!;
+    if (dv > 0) {
+      if (d > a1) ttm += dv;
+      const y = Number(d.slice(0, 4));
+      annual.set(y, (annual.get(y) ?? 0) + dv);
+      lastDiv = { date: d, amount: fnum(dv) };
+    }
+  });
+  const lastFull = Number(L.slice(0, 4)) - 1;
+  const firstYear = Number(b.d[0]!.slice(0, 4));
+  const ann = new Map<number, number>();
+  for (let y = firstYear; y <= lastFull; y++) ann.set(y, annual.get(y) ?? 0);
+  let streak = 0;
+  for (let y = lastFull; ann.has(y - 1) && ann.get(y)! > 0 && ann.get(y)! > ann.get(y - 1)!; y--) streak++;
+  const dcagr = (n: number) => {
+    const a = ann.get(lastFull - n) ?? 0;
+    const z = ann.get(lastFull) ?? 0;
+    return a > 0 && z > 0 ? fnum((z / a) ** (1 / n) - 1) : null;
+  };
+  const vol = b.v!.map((v) => (v > 0 ? v : NaN));
+  const c = b.c;
+  const a3 = anchorDate(L, '3M');
+  const last20 = vol.slice(-20);
+  const anyFinite = (xs: number[]) => xs.some((v) => Number.isFinite(v));
+  const v3 = vol.filter((_, i) => b.d[i]! > a3);
+  return {
+    ttm_dividends: fnum(ttm),
+    ttm_yield: ttm > 0 ? fnum(ttm / c[c.length - 1]!) : 0.0,
+    annual_dividends: Object.fromEntries([...ann.entries()].filter(([, v]) => v > 0).map(([k, v]) => [String(k), fnum(v)])),
+    last_full_year: lastFull,
+    dividend_increase_streak_years: streak,
+    dividend_cagr_5Y: dcagr(5),
+    dividend_cagr_10Y: dcagr(10),
+    last_dividend: lastDiv,
+    splits: b.d.map((d, i) => ({ date: d, ratio: b.split![i]! })).filter((s) => s.ratio > 0).map((s) => ({ date: s.date, ratio: fnum(s.ratio) })),
+    avg_volume_20d: anyFinite(last20) ? fnum(nanmean(last20)) : null,
+    avg_volume_3M: anyFinite(v3) ? fnum(nanmean(v3)) : null,
+    avg_dollar_volume_20d: anyFinite(last20) ? fnum(nanmean(c.slice(-20).map((cc, i) => cc * last20[i]!))) : null,
+  };
+}
+
 export const sp500Module: DexModule = {
   name: 'sp500',
   dex: ['snp500dex'],
@@ -392,52 +441,8 @@ export const sp500Module: DexModule = {
     const files: Record<string, unknown> = {};
     for (const t of [...byT.keys()].sort()) {
       const b = byT.get(t)!;
-      const L = b.d[b.d.length - 1]!;
-      const a1 = anchorDate(L, '1Y');
-      let ttm = 0;
-      const annual = new Map<number, number>();
-      let lastDiv: { date: CalDate; amount: number | null } | null = null;
-      b.d.forEach((d, i) => {
-        const dv = b.div![i]!;
-        if (dv > 0) {
-          if (d > a1) ttm += dv;
-          const y = Number(d.slice(0, 4));
-          annual.set(y, (annual.get(y) ?? 0) + dv);
-          lastDiv = { date: d, amount: fnum(dv) };
-        }
-      });
-      const lastFull = Number(L.slice(0, 4)) - 1;
-      const firstYear = Number(b.d[0]!.slice(0, 4));
-      const ann = new Map<number, number>();
-      for (let y = firstYear; y <= lastFull; y++) ann.set(y, annual.get(y) ?? 0);
-      let streak = 0;
-      for (let y = lastFull; ann.has(y - 1) && ann.get(y)! > 0 && ann.get(y)! > ann.get(y - 1)!; y--) streak++;
-      const dcagr = (n: number) => {
-        const a = ann.get(lastFull - n) ?? 0;
-        const z = ann.get(lastFull) ?? 0;
-        return a > 0 && z > 0 ? fnum((z / a) ** (1 / n) - 1) : null;
-      };
-      const vol = b.v!.map((v) => (v > 0 ? v : NaN));
-      const c = b.c;
-      const a3 = anchorDate(L, '3M');
-      const last20 = vol.slice(-20);
-      const anyFinite = (xs: number[]) => xs.some((v) => Number.isFinite(v));
-      const v3 = vol.filter((_, i) => b.d[i]! > a3);
-      divs[t] = {
-        ttm_dividends: fnum(ttm),
-        ttm_yield: ttm > 0 ? fnum(ttm / c[c.length - 1]!) : 0.0,
-        annual_dividends: Object.fromEntries([...ann.entries()].filter(([, v]) => v > 0).map(([k, v]) => [String(k), fnum(v)])),
-        last_full_year: lastFull,
-        dividend_increase_streak_years: streak,
-        dividend_cagr_5Y: dcagr(5),
-        dividend_cagr_10Y: dcagr(10),
-        last_dividend: lastDiv,
-        splits: b.d.map((d, i) => ({ date: d, ratio: b.split![i]! })).filter((s) => s.ratio > 0).map((s) => ({ date: s.date, ratio: fnum(s.ratio) })),
-        avg_volume_20d: anyFinite(last20) ? fnum(nanmean(last20)) : null,
-        avg_volume_3M: anyFinite(v3) ? fnum(nanmean(v3)) : null,
-        avg_dollar_volume_20d: anyFinite(last20) ? fnum(nanmean(c.slice(-20).map((cc, i) => cc * last20[i]!))) : null,
-      };
-      Object.assign(metrics[t]!, { ttm_yield: divs[t]!.ttm_yield, dividend_increase_streak_years: streak, avg_dollar_volume_20d: divs[t]!.avg_dollar_volume_20d });
+      divs[t] = dividendProfile(b);
+      Object.assign(metrics[t]!, { ttm_yield: divs[t]!.ttm_yield, dividend_increase_streak_years: divs[t]!.dividend_increase_streak_years, avg_dollar_volume_20d: divs[t]!.avg_dollar_volume_20d });
       const ext: { date: CalDate; ret: number | null }[] = [];
       for (let i = 1; i < b.ac!.length; i++) {
         const r = b.ac![i]! / b.ac![i - 1]! - 1;

@@ -4,17 +4,9 @@
 // rank, correlation, drawdowns, extreme_moves) for price-based Dex.
 import { z } from 'zod';
 import { APP_NAME, COPYRIGHT_EN, COPYRIGHT_ID, CREATOR, CREDIT_EN, CREDIT_ID } from '../../src/config/brand.ts';
-import { DEX_BY_ID, DEX_IDS, type DexId } from '../../src/config/dex-registry.ts';
+import { DEX_BY_ID, DEX_IDS } from '../../src/config/dex-registry.ts';
 import { inputsForDex } from '../../src/config/data-sources.ts';
-import {
-  anchorDate,
-  idxOnOrBefore,
-  PERIODS,
-  addYears,
-  daysBetween,
-  type CalDate,
-  type Period,
-} from '../../src/shared/dates.ts';
+import { anchorDate, idxOnOrBefore, PERIODS, daysBetween, type CalDate } from '../../src/shared/dates.ts';
 import { corr, drawdownEpisodes, largestMoves, maxDrawdown, type Series } from '../../src/shared/analytics/series.ts';
 import { std } from '../../src/shared/analytics/stats.ts';
 import { fmtDate, fmtPct } from '../../src/shared/format.ts';
@@ -951,15 +943,3 @@ export function timeSeriesTools(ad: TsAdapter): Tool<never>[] {
   ];
   return tools as unknown as Tool<never>[];
 }
-
-/** Value on/before a date for an entity (helper for Dex tools). */
-export function valueOn(s: { d: CalDate[]; p: number[] }, date: CalDate): { date: CalDate; value: number } | null {
-  const i = idxOnOrBefore(s.d, date);
-  return i < 0 ? null : { date: s.d[i]!, value: s.p[i]! };
-}
-
-export function isDexIdStr(x: string): x is DexId {
-  return (DEX_IDS as readonly string[]).includes(x);
-}
-
-export { addYears, type Period };
