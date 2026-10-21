@@ -1,0 +1,78 @@
+{
+ "rows": 217,
+ "rows_with_inflation": 179,
+ "inflation_year_counts": {
+  "2024": 174,
+  "2022": 3,
+  "2023": 2
+ },
+ "rows_with_cost_living_index": 45,
+ "top5_inflation": [
+  {
+   "country": "Argentina",
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": 219.883929014578
+  },
+  {
+   "country": "Sudan",
+   "inflation_year": 2022.0,
+   "inflation_annual_pct": 138.80846024176
+  },
+  {
+   "country": "Zimbabwe",
+   "inflation_year": 2022.0,
+   "inflation_annual_pct": 104.705170628667
+  },
+  {
+   "country": "South Sudan",
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": 91.4408220769046
+  },
+  {
+   "country": "Turkiye",
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": 58.5064507300342
+  }
+ ],
+ "bottom5_inflation": [
+  {
+   "country": "Afghanistan",
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": -6.60118564073726
+  },
+  {
+   "country": "St. Lucia",
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": -0.674240853418779
+  },
+  {
+   "country": "Sri Lanka",
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": -0.42936004906973
+  },
+  {
+   "country": "Costa Rica",
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": -0.412853001047069
+  },
+  {
+   "country": "Brunei Darussalam",
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": -0.388674165036461
+  }
+ ],
+ "median_inflation_latest": 3.09143630919166,
+ "indonesia": [
+  {
+   "inflation_year": 2024.0,
+   "inflation_annual_pct": 2.18151273615189,
+   "cost_living_index": 47.2,
+   "rent_monthly_usd": 305.0
+  }
+ ],
+ "notes": {
+  "columns": "country_code_x is always empty -> drop; use country_code_y as ISO3; region has trailing spaces -> trim",
+  "year": "inflation_year differs per country (mostly 2024) -> always show the year next to the value",
+  "xlsx": "inflation_cost_of_living_dataset.xlsx duplicates the CSV; CSV is primary"
+ }
+}

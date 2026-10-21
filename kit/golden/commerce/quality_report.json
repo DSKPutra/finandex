@@ -1,0 +1,191 @@
+{
+ "rows_dropped_null_close": 13,
+ "financials_currency_override": {
+  "alibaba": "CNY",
+  "jdcom": "CNY",
+  "pinduoduo": "CNY",
+  "vipshop": "CNY",
+  "stoneco": "BRL"
+ },
+ "tickers": {
+  "affirm": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "alibaba": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "allegro": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "amazon": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "ao": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "asos": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "autotrader": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "block": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "boohoo": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "cartrade": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "carvana": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "chewy": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "coupang": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "delhivery": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "doordash": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "easetrip": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "ebay": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "etsy": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "firstcry": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "gotogroup": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "honasa": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "indiamart": {
+   "spikes_removed": [
+    "2019-10-27"
+   ],
+   "extreme_moves": [
+    {
+     "date": "2020-11-17",
+     "ret": -0.5120739042221922
+    }
+   ]
+  },
+  "infoedge": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "instacart": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "ixigo": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "jdcom": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "mercadolibre": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "nykaa": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "ocado": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "paypal": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "paytm": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "pinduoduo": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "policybazaar": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "rakuten": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "revolve": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "sea": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "shopify": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "stitchfix": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "stoneco": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "vipshop": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "wayfair": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "zalando": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  },
+  "zomato": {
+   "spikes_removed": [],
+   "extreme_moves": []
+  }
+ }
+}

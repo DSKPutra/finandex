@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="StartupDex">
+  <title>StartupDex</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121B15"/><stop offset="1" stop-color="#040705"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.72" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#19F23A" stop-opacity="0.16"/><stop offset="1" stop-color="#19F23A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#halo)"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="2"/>
+
+  <path d="M256 104 C316 140 338 214 324 300 H188 C174 214 196 140 256 104 Z" fill="#EEF3EF"/>
+  <circle cx="256" cy="204" r="30" fill="#08100B"/><circle cx="256" cy="204" r="14" fill="#19F23A"/>
+  <path d="M188 250 L144 300 L188 300 Z" fill="#EEF3EF"/><path d="M324 250 L368 300 L324 300 Z" fill="#EEF3EF"/>
+  <path d="M226 318 C226 360 256 402 256 410 C256 402 286 360 286 318 Z" fill="#19F23A" filter="url(#glow)"/>
+</svg>

@@ -1,0 +1,35 @@
+[
+ {
+  "ticker": "MSFT",
+  "start_request": "2010-01-04",
+  "start_date": "2010-01-04",
+  "end_date": "2026-08-31",
+  "amount_usd": 10000.0,
+  "value_with_reinvestment": 220712.07647437675,
+  "value_price_only": 163906.2992051256,
+  "dividends_cash_no_reinvest": 10038.771965784324,
+  "value_without_reinvestment_incl_cash": 173945.0711709099
+ },
+ {
+  "ticker": "KO",
+  "start_request": "2000-01-03",
+  "start_date": "2000-01-03",
+  "end_date": "2026-08-31",
+  "amount_usd": 10000.0,
+  "value_with_reinvestment": 65998.1232067894,
+  "value_price_only": 31457.205558827605,
+  "dividends_cash_no_reinvest": 10699.778270509978,
+  "value_without_reinvestment_incl_cash": 42156.98382933758
+ },
+ {
+  "ticker": "AAPL",
+  "start_request": "2015-01-02",
+  "start_date": "2015-01-02",
+  "end_date": "2026-08-31",
+  "amount_usd": 10000.0,
+  "value_with_reinvestment": 131082.7381949066,
+  "value_price_only": 115924.26627528542,
+  "dividends_cash_no_reinvest": 3474.8010028121225,
+  "value_without_reinvestment_incl_cash": 119399.06727809754
+ }
+]

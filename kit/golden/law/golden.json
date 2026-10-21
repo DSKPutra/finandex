@@ -1,0 +1,160 @@
+{
+ "documents": [
+  {
+   "file": "UUD_45.pdf",
+   "doc_id": "uud-1945-naskah-asli",
+   "role": "primary",
+   "title": "Undang-Undang Dasar 1945 — NASKAH ASLI sebelum Perubahan I–IV (1999–2002), termasuk Aturan Peralihan, Aturan Tambahan, dan Penjelasan",
+   "max_pasal": 37,
+   "sha256": "1d6543303b4134daa74c0d91dc8bb1f7b4cc5ab95bf309f41bddfdd07e67e7a4",
+   "bytes": 88588,
+   "pages": 18,
+   "pages_total": 18,
+   "penjelasan_starts_page": 8,
+   "pasal_headings_detected": 37,
+   "pasal_missing_headings": [],
+   "first_pasal_page": 1,
+   "effective_clause_raw": []
+  },
+  {
+   "file": "KUHP_Lama.pdf",
+   "doc_id": "uu-8-1981-kuhap",
+   "role": "primary",
+   "title": "UU No. 8 Tahun 1981 tentang Hukum Acara Pidana (KUHAP lama) — teks resmi",
+   "max_pasal": 286,
+   "sha256": "b181015ac811f3fcb244bcc844fb0d54f86da8496f894c10ac53e181eb2ae255",
+   "bytes": 431399,
+   "pages": 108,
+   "pages_total": 108,
+   "penjelasan_starts_page": 69,
+   "pasal_headings_detected": 286,
+   "pasal_missing_headings": [],
+   "first_pasal_page": 2,
+   "effective_clause_raw": [
+    "Undang-undang ini mulai berlaku pada tanggal diundangkan."
+   ]
+  },
+  {
+   "file": "UU_Nomor_20_Tahun_2025_KUHP.pdf",
+   "doc_id": "uu-20-2025-kuhap",
+   "role": "primary",
+   "title": "UU No. 20 Tahun 2025 tentang Kitab Undang-Undang Hukum Acara Pidana (KUHAP baru) — salinan hasil pindai (OCR)",
+   "max_pasal": 369,
+   "sha256": "40e8b444aa7efabe1597bf104228e053deec452ae385c0433ca62701161cec3a",
+   "bytes": 13630882,
+   "pages": 238,
+   "pages_total": 238,
+   "penjelasan_starts_page": 185,
+   "pasal_headings_detected": 355,
+   "pasal_missing_headings": [
+    74,
+    77,
+    91,
+    191,
+    211,
+    213,
+    216,
+    222,
+    270,
+    301,
+    311,
+    315,
+    317,
+    321
+   ],
+   "first_pasal_page": 2,
+   "effective_clause_raw": [
+    "Undang-Undang ini muLai berlaku pada tanegal 2 Jarvari,2O26."
+   ]
+  },
+  {
+   "file": "Undang-undang_UU_No._1_Tahun_1946_Peraturan_tentang_Hukum_Pidana.pdf",
+   "doc_id": "uu-1-1946-peraturan-hukum-pidana",
+   "role": "primary",
+   "title": "UU No. 1 Tahun 1946 tentang Peraturan Hukum Pidana (dasar berlakunya KUHP lama/WvS; 17 pasal + penjelasan) — BUKAN teks lengkap KUHP",
+   "max_pasal": 17,
+   "sha256": "18853c15a6d875155b0ba2d3401a35726970ba4842f4ca420974501a01f30636",
+   "bytes": 82134,
+   "pages": 10,
+   "pages_total": 10,
+   "penjelasan_starts_page": 6,
+   "pasal_headings_detected": 17,
+   "pasal_missing_headings": [],
+   "first_pasal_page": 1,
+   "effective_clause_raw": []
+  },
+  {
+   "file": "KUHAP.pdf",
+   "doc_id": "uu-8-1981-kuhap-kompilasi",
+   "role": "secondary",
+   "title": "KUHAP (UU No. 8 Tahun 1981) — versi kompilasi tidak resmi",
+   "max_pasal": 286,
+   "sha256": "c13c801c56c633ace142b5ef290e9d9466e2c0bdc66072a25a952d3e43d51d26",
+   "bytes": 233764,
+   "pages": 81,
+   "pages_total": 81,
+   "penjelasan_starts_page": null,
+   "pasal_headings_detected": 280,
+   "pasal_missing_headings": [
+    84,
+    85,
+    86,
+    143,
+    235,
+    256
+   ],
+   "first_pasal_page": 2,
+   "effective_clause_raw": [
+    "Undang-undang ini mulai berlaku pada tanggal diundangkan."
+   ]
+  },
+  {
+   "file": "KUHP.pdf",
+   "doc_id": null,
+   "role": "duplicate_of:KUHAP.pdf",
+   "title": "Duplikat byte-identik dari KUHAP.pdf (isinya KUHAP 1981, BUKAN KUHP)",
+   "max_pasal": null,
+   "sha256": "c13c801c56c633ace142b5ef290e9d9466e2c0bdc66072a25a952d3e43d51d26",
+   "bytes": 233764
+  }
+ ],
+ "kuhp_pdf_is_identical_to_kuhap_pdf": true,
+ "coverage": {
+  "available": [
+   "UUD 1945 naskah asli (sebelum perubahan) — dasar acuan konstitusional; teks UUD NRI 1945 hasil Perubahan I–IV belum tersedia",
+   "Hukum Acara Pidana lama (UU 8/1981)",
+   "Hukum Acara Pidana baru (UU 20/2025, berlaku 2 Januari 2026 menurut Pasal penutupnya)",
+   "UU 1/1946 tentang Peraturan Hukum Pidana (dasar berlakunya WvS/KUHP lama dan perubahan sebagian pasalnya)"
+  ],
+  "missing_sources": [
+   "UUD NRI Tahun 1945 hasil Perubahan I–IV (1999–2002) — naskah yang berlaku saat ini",
+   "Teks lengkap KUHP lama (Wetboek van Strafrecht, +/- 569 pasal)",
+   "KUHP baru (UU 1/2023)",
+   "KUHPerdata (Burgerlijk Wetboek)",
+   "Hukum acara perdata (HIR/RBg)"
+  ]
+ },
+ "golden_quotes": {
+  "uu-8-1981-kuhap|Pasal 1|1": "Penyidik adalah pejabat polisi negara Republik Indonesia atau pejabat pegawai negeri sipil tertentu yang diberi wewenang khusus oleh undang-undang untuk melakukan penyidikan.",
+  "uu-8-1981-kuhap|penutup": "Undang-undang ini mulai berlaku pada tanggal diundangkan.",
+  "uu-1-1946-peraturan-hukum-pidana|Pasal 6|1": "Nama Undang-undang hukum pidana \"Wetboek van Strafrecht voor Nederlandsh-Indie\" dirobah menjadi \"Wetboek van Strafrecht\".",
+  "uu-1-1946-peraturan-hukum-pidana|penutup": "Undang-undang ini mulai berlaku buat pulau Jawa dan Madura pada hari diumumkannya",
+  "uud-1945-naskah-asli|Pasal 1|1": "Negara Indonesia ialah Negara kesatuan yang berbentuk Republik.",
+  "uud-1945-naskah-asli|Pasal 1|2": "Kedaulatan adalah di tangan rakyat, dan dilakukan sepenuhnya oleh Majelis Permusyawaratan Rakyat."
+ },
+ "golden_quotes_found_after_normalisation": {
+  "uu-8-1981-kuhap|Pasal 1|1": true,
+  "uu-8-1981-kuhap|penutup": true,
+  "uud-1945-naskah-asli|Pasal 1|1": true,
+  "uud-1945-naskah-asli|Pasal 1|2": true,
+  "uu-1-1946-peraturan-hukum-pidana|Pasal 6|1": true,
+  "uu-1-1946-peraturan-hukum-pidana|penutup": true
+ },
+ "rules": {
+  "identity": "Identify each document by its CONTENT (title page), never by its file name; the file names KUHP*.pdf are misleading",
+  "normalise": "join hyphenated line breaks then collapse whitespace (see normalise())",
+  "dedupe": "Exclude byte-identical duplicates (same SHA-256) from the index",
+  "chunks": "One chunk per Pasal (body) + one chunk per Pasal in PENJELASAN + one chunk per page as fallback; every chunk carries doc_id, pasal (if known), page",
+  "ocr": "UU 20/2025 is a scanned copy with an OCR layer: use OCR-tolerant heading regex; where a heading is not detected, cite the page only and offer 'Lihat halaman asli'"
+ }
+}

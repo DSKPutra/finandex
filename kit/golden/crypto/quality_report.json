@@ -1,0 +1,204 @@
+{
+ "tickers": {
+  "ADA": {
+   "spikes_removed": [],
+   "extreme_moves": [
+    {
+     "date": "2017-11-28",
+     "ret": 1.366809697718676
+    }
+   ],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "AVAX": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "BCH": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "BNB": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "BTC": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 248,
+   "stale": false
+  },
+  "DOGE": {
+   "spikes_removed": [],
+   "extreme_moves": [
+    {
+     "date": "2013-12-19",
+     "ret": 2.2145749398511723
+    },
+    {
+     "date": "2021-01-28",
+     "ret": 3.5557120898215597
+    },
+    {
+     "date": "2021-04-16",
+     "ret": 1.0079861722441192
+    }
+   ],
+   "zero_volume_rows": 11,
+   "stale": false
+  },
+  "DOT": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "ETH": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "LEO": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "LINK": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "LTC": {
+   "spikes_removed": [],
+   "extreme_moves": [
+    {
+     "date": "2013-11-18",
+     "ret": 1.2916201617823115
+    }
+   ],
+   "zero_volume_rows": 242,
+   "stale": false
+  },
+  "NEAR": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "SHIB": {
+   "spikes_removed": [
+    "2021-01-31"
+   ],
+   "extreme_moves": [
+    {
+     "date": "2020-08-03",
+     "ret": -0.7152550350048046
+    },
+    {
+     "date": "2020-09-02",
+     "ret": 4.670405209840811
+    },
+    {
+     "date": "2020-09-05",
+     "ret": -0.5846940678191843
+    },
+    {
+     "date": "2021-01-30",
+     "ret": 58.44243000653867
+    },
+    {
+     "date": "2021-02-02",
+     "ret": 1.0
+    },
+    {
+     "date": "2021-02-03",
+     "ret": -0.5
+    },
+    {
+     "date": "2021-03-02",
+     "ret": 1.0
+    },
+    {
+     "date": "2021-03-14",
+     "ret": 1.5
+    },
+    {
+     "date": "2021-04-16",
+     "ret": 1.615384615384615
+    },
+    {
+     "date": "2021-04-17",
+     "ret": 1.9117647058823533
+    },
+    {
+     "date": "2021-05-08",
+     "ret": 4.655913978494624
+    },
+    {
+     "date": "2021-05-10",
+     "ret": 1.242637644046095
+    }
+   ],
+   "zero_volume_rows": 42,
+   "stale": false
+  },
+  "SOL": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "TON": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "TRX": {
+   "spikes_removed": [],
+   "extreme_moves": [
+    {
+     "date": "2017-12-13",
+     "ret": 1.162023003486746
+    },
+    {
+     "date": "2018-01-04",
+     "ret": 1.1960701910631735
+    }
+   ],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "UNI": {
+   "spikes_removed": [],
+   "extreme_moves": [],
+   "zero_volume_rows": 0,
+   "stale": false
+  },
+  "XRP": {
+   "spikes_removed": [],
+   "extreme_moves": [
+    {
+     "date": "2017-04-02",
+     "ret": 1.7937326160845033
+    }
+   ],
+   "zero_volume_rows": 144,
+   "stale": false
+  }
+ },
+ "notes": {
+  "TON_GRAM": "TON.csv changes ticker from TON to GRAM on 2026-06-16 with a continuous price (close 2026-06-15 = open 2026-06-16); treat as ONE asset with ticker_history, display 'TON -> GRAM'.",
+  "defi": "DeFi notebook references 7 DefiLlama CSVs that were NOT supplied; DeFi module is 'pending data'."
+ }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="SalaryDex">
+  <title>SalaryDex</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121B15"/><stop offset="1" stop-color="#040705"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.72" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#19F23A" stop-opacity="0.16"/><stop offset="1" stop-color="#19F23A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#halo)"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="2"/>
+
+  <path d="M212 186 V164 A20 20 0 0 1 232 144 H280 A20 20 0 0 1 300 164 V186" fill="none" stroke="#EEF3EF" stroke-width="20"/>
+  <rect x="120" y="186" width="272" height="188" rx="28" fill="#EEF3EF"/>
+  <rect x="120" y="258" width="272" height="16" fill="#08100B"/>
+  <g filter="url(#glow)"><line x1="256" y1="348" x2="256" y2="236" stroke="#19F23A" stroke-width="22" stroke-linecap="round"/>
+  <polyline points="216,272 256,232 296,272" fill="none" stroke="#19F23A" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

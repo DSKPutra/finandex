@@ -1,0 +1,96 @@
+{
+ "rows": 100060,
+ "posted_month_range": [
+  "2024-01",
+  "2026-06"
+ ],
+ "countries": 44,
+ "role_families": 23,
+ "median_salary_mid_usd_all": 48214.0,
+ "median_salary_mid_usd_by_country_top10": {
+  "US": 60000.0,
+  "CA": 44643.0,
+  "FR": 31551.0,
+  "IN": 6977.0,
+  "DE": 44638.0,
+  "SG": 35267.0,
+  "NL": 47191.0,
+  "GB": 46053.0,
+  "AT": 55056.0,
+  "CH": 116867.5
+ },
+ "count_by_country_top10": {
+  "US": 56906,
+  "CA": 18617,
+  "FR": 10938,
+  "IN": 7040,
+  "DE": 2703,
+  "SG": 1319,
+  "NL": 883,
+  "GB": 371,
+  "AT": 360,
+  "CH": 354
+ },
+ "median_salary_mid_usd_by_role_family": {
+  "admin": 41600.0,
+  "construction": 56160.0,
+  "customer-service": 37440.0,
+  "data": 70013.5,
+  "design": 64286.0,
+  "devops-cloud": 68702.0,
+  "education": 45760.0,
+  "finance": 62500.0,
+  "healthcare": 59155.0,
+  "hr": 52000.0,
+  "it-support": 52000.0,
+  "legal": 65000.0,
+  "logistics": 39839.5,
+  "manufacturing": 45760.0,
+  "marketing": 53634.0,
+  "operations": 70000.0,
+  "other": 47543.0,
+  "product": 91603.0,
+  "retail-hospitality": 34971.0,
+  "sales": 52000.0,
+  "science-research": 64480.0,
+  "security": 45760.0,
+  "software-eng": 40698.0
+ },
+ "software_eng_median_usd": {
+  "US": 124800.0,
+  "CA": 67857.0,
+  "IN": 8721.0,
+  "GB": 80822.5,
+  "DE": 81798.0,
+  "FR": 40811.0
+ },
+ "top10_skills_by_postings": {
+  "excel": 1146,
+  "microsoft office": 945,
+  "python": 760,
+  "sql": 666,
+  "sales": 576,
+  "customer service": 473,
+  "word": 471,
+  "communication skills": 468,
+  "java": 421,
+  "project management": 413
+ },
+ "median_by_top10_skill_usd": {
+  "excel": 70000.0,
+  "microsoft office": 47840.0,
+  "python": 16279.0,
+  "sql": 17442.0,
+  "sales": 6977.0,
+  "customer service": 21985.0,
+  "word": 71696.0,
+  "communication skills": 8140.0,
+  "java": 16860.0,
+  "project management": 48092.0
+ },
+ "notes": {
+  "sample": "16% sample (100,060 of 620,752 postings); REPORT.md figures are computed on the FULL data and will differ",
+  "fx": "salary_*_usd use the dataset's fixed exchange-rate table (approx. 2025 averages); not PPP",
+  "licence": "CC BY-NC 4.0 (Fliar Research) — non-commercial only"
+ }
+}

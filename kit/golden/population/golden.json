@@ -1,0 +1,86 @@
+{
+ "sample_rows": 10606,
+ "sample_date_range": [
+  "2019-01-01",
+  "2026-07-29"
+ ],
+ "sample_tone_share": {
+  "positive": 0.4899943364168397,
+  "negative": 0.47489144798942795,
+  "neutral": 0.035114215593732304
+ },
+ "monthly_rows": 91,
+ "monthly_range": [
+  "2019-01",
+  "2026-07"
+ ],
+ "latest_month": [
+  {
+   "month": "2026-07",
+   "articles": 15,
+   "all_news_articles": 48500,
+   "per_10k_news": 3.09
+  }
+ ],
+ "peak_month_per_10k": [
+  {
+   "month": "2021-07",
+   "articles": 798,
+   "all_news_articles": 1430284,
+   "per_10k_news": 5.58
+  }
+ ],
+ "top5_countries_2023_2026": [
+  {
+   "country": "united states",
+   "articles_2023_2026": 3964,
+   "share_pct": 29.39
+  },
+  {
+   "country": "india",
+   "articles_2023_2026": 1714,
+   "share_pct": 12.71
+  },
+  {
+   "country": "china",
+   "articles_2023_2026": 1380,
+   "share_pct": 10.23
+  },
+  {
+   "country": "japan",
+   "articles_2023_2026": 698,
+   "share_pct": 5.18
+  },
+  {
+   "country": "australia",
+   "articles_2023_2026": 640,
+   "share_pct": 4.75
+  }
+ ],
+ "aggregate_files": [
+  "cities.csv",
+  "continents.csv",
+  "countries.csv",
+  "country_tone.csv",
+  "country_trend.csv",
+  "monthly.csv",
+  "organisations.csv",
+  "patent_cpc.csv",
+  "patent_offices.csv",
+  "patents_by_year.csv",
+  "population-news-sample.csv",
+  "research_by_year.csv",
+  "states_india.csv",
+  "states_us.csv",
+  "themes.csv",
+  "tone_by_year.csv",
+  "top_papers.csv"
+ ],
+ "notes": {
+  "what": "measures NEWS COVERAGE, not real-world counts (e.g. not the number of homeless people)",
+  "aggregates": "data/*.csv aggregates and FINDINGS.md are provider-computed on the full news index; *-news-sample.csv is a sample of article records",
+  "findings_grades": "FINDINGS.md grades A (exact count) / B (keyword rule, measured precision) / C (outlet-sensitive) -> show the grade with any finding",
+  "api_url": "api_url points to the provider API -> do not fetch; no article text is included",
+  "licence": "provider: Fliar BI (Prism News API) — licence per provider; confirm before commercial use"
+ }
+}

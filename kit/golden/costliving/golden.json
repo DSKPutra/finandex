@@ -1,0 +1,81 @@
+{
+ "rows": 296,
+ "cities": 148,
+ "countries": 92,
+ "survey_dates": [
+  "2023-06-15",
+  "2024-06-15"
+ ],
+ "data_source_pattern": {
+  "Synthetic-Numbeo-pattern": 156,
+  "Synthetic-Mercer-pattern": 86,
+  "Synthetic-EIU-pattern": 54
+ },
+ "synthetic": true,
+ "latest_top5_cost_of_living": [
+  {
+   "city": "Geneva",
+   "country": "Switzerland",
+   "cost_of_living_index": 113.29
+  },
+  {
+   "city": "Seattle",
+   "country": "United States",
+   "cost_of_living_index": 112.47
+  },
+  {
+   "city": "Zurich",
+   "country": "Switzerland",
+   "cost_of_living_index": 109.28
+  },
+  {
+   "city": "Dublin",
+   "country": "Ireland",
+   "cost_of_living_index": 108.46
+  },
+  {
+   "city": "Reykjavik",
+   "country": "Iceland",
+   "cost_of_living_index": 108.24
+  }
+ ],
+ "latest_top5_quality_of_life": [
+  {
+   "city": "Berlin",
+   "country": "Germany",
+   "quality_of_life_index": 88.71
+  },
+  {
+   "city": "Copenhagen",
+   "country": "Denmark",
+   "quality_of_life_index": 85.07
+  },
+  {
+   "city": "Oslo",
+   "country": "Norway",
+   "quality_of_life_index": 82.9
+  },
+  {
+   "city": "Montreal",
+   "country": "Canada",
+   "quality_of_life_index": 81.61
+  },
+  {
+   "city": "Seattle",
+   "country": "United States",
+   "quality_of_life_index": 80.19
+  }
+ ],
+ "indonesia_latest": [
+  {
+   "city": "Jakarta",
+   "cost_of_living_index": 43.1,
+   "quality_of_life_index": 37.48,
+   "avg_monthly_net_salary_usd": 2372.62
+  }
+ ],
+ "notes": {
+  "synthetic": "Every row's data_source_pattern starts with 'Synthetic-' -> the values are SYNTHETIC (pattern-based), not real survey results; label everywhere",
+  "analyst_note": "free text from the dataset author -> show as provider note"
+ }
+}

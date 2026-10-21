@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="My LAIwyer">
+  <title>My LAIwyer</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121B15"/><stop offset="1" stop-color="#040705"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.72" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#19F23A" stop-opacity="0.16"/><stop offset="1" stop-color="#19F23A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#halo)"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="2"/>
+
+  <rect x="246" y="132" width="20" height="236" rx="8" fill="#EEF3EF"/>
+  <rect x="176" y="368" width="160" height="22" rx="10" fill="#EEF3EF"/>
+  <rect x="136" y="160" width="240" height="16" rx="8" fill="#EEF3EF"/>
+  <circle cx="256" cy="128" r="18" fill="#EEF3EF"/>
+  <g stroke="#EEF3EF" stroke-width="6"><line x1="150" y1="176" x2="116" y2="268"/><line x1="150" y1="176" x2="184" y2="268"/><line x1="362" y1="176" x2="328" y2="268"/><line x1="362" y1="176" x2="396" y2="268"/></g>
+  <path d="M104 268 H196 A46 46 0 0 1 104 268 Z" fill="#EEF3EF"/>
+  <path d="M316 268 H408 A46 46 0 0 1 316 268 Z" fill="#19F23A" filter="url(#glow)"/>
+  <path d="M352 96 l7 17 17 7 -17 7 -7 17 -7 -17 -17 -7 17 -7 Z" fill="#FFFFFF"/>
+</svg>

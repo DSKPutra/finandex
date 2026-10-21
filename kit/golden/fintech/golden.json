@@ -1,0 +1,120 @@
+{
+ "rows": 3946,
+ "columns": 337,
+ "platforms": {
+  "mastodon": 901,
+  "lemmy": 846,
+  "youtube": 827,
+  "bluesky": 326,
+  "dexscreener": 305,
+  "reddit": 184,
+  "medium": 183,
+  "theguardian": 126,
+  "steemit": 110,
+  "substack": 99,
+  "pump.fun": 14,
+  "coinmarketcap": 10,
+  "seekingalpha": 9,
+  "wikipedia": 6
+ },
+ "published_range": [
+  "2013-10-25",
+  "2026-09-08"
+ ],
+ "sentiment_counts": {
+  "neutral": 2567,
+  "positive": 1090,
+  "negative": 289
+ },
+ "sentiment_share": {
+  "neutral": 0.6505321844906234,
+  "positive": 0.27622909275215407,
+  "negative": 0.0732387227572225
+ },
+ "sentiment_share_by_platform": {
+  "bluesky": {
+   "negative": 0.05521472392638037,
+   "neutral": 0.5920245398773006,
+   "positive": 0.35276073619631904
+  },
+  "coinmarketcap": {
+   "negative": 0.0,
+   "neutral": 1.0,
+   "positive": 0.0
+  },
+  "dexscreener": {
+   "negative": 0.0,
+   "neutral": 0.9770491803278688,
+   "positive": 0.022950819672131147
+  },
+  "lemmy": {
+   "negative": 0.16193853427895982,
+   "neutral": 0.2907801418439716,
+   "positive": 0.5472813238770685
+  },
+  "mastodon": {
+   "negative": 0.0932297447280799,
+   "neutral": 0.6914539400665927,
+   "positive": 0.2153163152053274
+  },
+  "medium": {
+   "negative": 0.00546448087431694,
+   "neutral": 0.819672131147541,
+   "positive": 0.17486338797814208
+  },
+  "pump.fun": {
+   "negative": 0.0,
+   "neutral": 0.5714285714285714,
+   "positive": 0.42857142857142855
+  },
+  "reddit": {
+   "negative": 0.03804347826086957,
+   "neutral": 0.8641304347826086,
+   "positive": 0.09782608695652174
+  },
+  "seekingalpha": {
+   "negative": 0.0,
+   "neutral": 0.8888888888888888,
+   "positive": 0.1111111111111111
+  },
+  "steemit": {
+   "negative": 0.06363636363636363,
+   "neutral": 0.20909090909090908,
+   "positive": 0.7272727272727273
+  },
+  "substack": {
+   "negative": 0.030303030303030304,
+   "neutral": 0.898989898989899,
+   "positive": 0.0707070707070707
+  },
+  "theguardian": {
+   "negative": 0.11904761904761904,
+   "neutral": 0.4126984126984127,
+   "positive": 0.46825396825396826
+  },
+  "wikipedia": {
+   "negative": 0.0,
+   "neutral": 1.0,
+   "positive": 0.0
+  },
+  "youtube": {
+   "negative": 0.020556227327690448,
+   "neutral": 0.848851269649335,
+   "positive": 0.13059250302297462
+  }
+ },
+ "languages": {
+  "en": 3806,
+  "es": 115,
+  "unknown": 12,
+  "fr": 6,
+  "de": 5,
+  "zh": 1,
+  "ko": 1
+ },
+ "privacy_rule": "Drop author, author_followers, mentions and any user handle before processing; never display them.",
+ "notes": {
+  "snapshot": "collected/updated 2026-09-08 (file name)",
+  "duplicates": "JSON/JSONL/Parquet copies hold the same records; CSV is primary"
+ }
+}

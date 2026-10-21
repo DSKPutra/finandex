@@ -1,0 +1,414 @@
+{
+ "AR|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 81.7442446865007
+ },
+ "AR|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 1.82409522925391
+ },
+ "AR|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 13969.7836603737
+ },
+ "AR|internet_users_pct": {
+  "year": 2024,
+  "value": 89.66715228
+ },
+ "AR|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 140.234979049333
+ },
+ "AR|population_total": {
+  "year": 2024,
+  "value": 45696159.0
+ },
+ "AR|urban_population_pct": {
+  "year": 2024,
+  "value": 92.2742315972952
+ },
+ "BR|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 86.3811782311541
+ },
+ "BR|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 3.38960802616211
+ },
+ "BR|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 10310.5488778166
+ },
+ "BR|gdp_total_usd": {
+  "year": 2024,
+  "value": 2185821648943.86
+ },
+ "BR|internet_users_pct": {
+  "year": 2024,
+  "value": 84.46347227
+ },
+ "BR|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 101.926846460424
+ },
+ "BR|population_total": {
+  "year": 2024,
+  "value": 211998573.0
+ },
+ "BR|urban_population_pct": {
+  "year": 2024,
+  "value": 87.8958549533146
+ },
+ "CA|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 98.4047126063262
+ },
+ "CA|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 2.81029565355294
+ },
+ "CA|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 54340.3477224733
+ },
+ "CA|gdp_total_usd": {
+  "year": 2024,
+  "value": 2243636826633.76
+ },
+ "CA|internet_users_pct": {
+  "year": 2024,
+  "value": 94.353302
+ },
+ "CA|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 94.1059718794246
+ },
+ "CA|population_total": {
+  "year": 2024,
+  "value": 41288599.0
+ },
+ "CA|urban_population_pct": {
+  "year": 2024,
+  "value": 82.7002565766633
+ },
+ "CN|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 89.3830319754266
+ },
+ "CN|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 0.0989988051182737
+ },
+ "CN|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 13303.1481543868
+ },
+ "CN|gdp_total_usd": {
+  "year": 2024,
+  "value": 18743803170827.2
+ },
+ "CN|internet_users_pct": {
+  "year": 2025,
+  "value": 91.6
+ },
+ "CN|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 131.753932036803
+ },
+ "CN|population_total": {
+  "year": 2024,
+  "value": 1408975000.0
+ },
+ "CN|urban_population_pct": {
+  "year": 2024,
+  "value": 65.8946980998325
+ },
+ "DE|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 98.2983235670699
+ },
+ "DE|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 1.01586176558023
+ },
+ "DE|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 56103.7323182554
+ },
+ "DE|gdp_total_usd": {
+  "year": 2024,
+  "value": 4685592577804.69
+ },
+ "DE|internet_users_pct": {
+  "year": 2024,
+  "value": 93.49999579
+ },
+ "DE|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 129.150921864378
+ },
+ "DE|population_total": {
+  "year": 2024,
+  "value": 83516593.0
+ },
+ "DE|urban_population_pct": {
+  "year": 2024,
+  "value": 82.0211432579125
+ },
+ "GB|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 99.2843092777584
+ },
+ "GB|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": -0.351465690300773
+ },
+ "GB|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 53246.3676145108
+ },
+ "GB|gdp_total_usd": {
+  "year": 2024,
+  "value": 3686033044482.13
+ },
+ "GB|internet_users_pct": {
+  "year": 2024,
+  "value": 95.4720993
+ },
+ "GB|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 121.643331373201
+ },
+ "GB|population_total": {
+  "year": 2024,
+  "value": 69226000.0
+ },
+ "GB|urban_population_pct": {
+  "year": 2024,
+  "value": 83.2429544416085
+ },
+ "ID|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 56.3278493718021
+ },
+ "ID|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 1.73855500774354
+ },
+ "ID|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 4925.43048751861
+ },
+ "ID|gdp_total_usd": {
+  "year": 2024,
+  "value": 1396300098190.97
+ },
+ "ID|internet_users_pct": {
+  "year": 2024,
+  "value": 72.78075544
+ },
+ "ID|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 122.514946500491
+ },
+ "ID|population_total": {
+  "year": 2024,
+  "value": 283487931.0
+ },
+ "ID|urban_population_pct": {
+  "year": 2024,
+  "value": 58.7509635387997
+ },
+ "IN|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 89.0248224502547
+ },
+ "IN|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 0.694133152879562
+ },
+ "IN|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 2694.73780859961
+ },
+ "IN|gdp_total_usd": {
+  "year": 2024,
+  "value": 3909891533858.08
+ },
+ "IN|internet_users_pct": {
+  "year": 2025,
+  "value": 70.0
+ },
+ "IN|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 79.3526921826412
+ },
+ "IN|population_total": {
+  "year": 2024,
+  "value": 1450935791.0
+ },
+ "IN|urban_population_pct": {
+  "year": 2024,
+  "value": 35.3788972368389
+ },
+ "JP|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 98.5235592091779
+ },
+ "JP|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 0.401239653950032
+ },
+ "JP|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 32487.0778047567
+ },
+ "JP|gdp_total_usd": {
+  "year": 2024,
+  "value": 4027597523550.58
+ },
+ "JP|internet_users_pct": {
+  "year": 2024,
+  "value": 85.54153081
+ },
+ "JP|mobile_subs_per_100": {
+  "year": 2023,
+  "value": 178.432441299977
+ },
+ "JP|population_total": {
+  "year": 2024,
+  "value": 123975371.0
+ },
+ "JP|urban_population_pct": {
+  "year": 2024,
+  "value": 92.1901718034531
+ },
+ "KR|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 96.8949448884961
+ },
+ "KR|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 0.685857996519477
+ },
+ "KR|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 36238.639908315
+ },
+ "KR|gdp_total_usd": {
+  "year": 2024,
+  "value": 1875388209406.8
+ },
+ "KR|internet_users_pct": {
+  "year": 2024,
+  "value": 97.89563777
+ },
+ "KR|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 172.520241179065
+ },
+ "KR|population_total": {
+  "year": 2024,
+  "value": 51751065.0
+ },
+ "KR|urban_population_pct": {
+  "year": 2024,
+  "value": 81.1682528469686
+ },
+ "PL|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 86.1367117566539
+ },
+ "PL|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 2.24523191798779
+ },
+ "PL|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 25103.565661423
+ },
+ "PL|gdp_total_usd": {
+  "year": 2024,
+  "value": 917767106146.761
+ },
+ "PL|internet_users_pct": {
+  "year": 2024,
+  "value": 88.58496367
+ },
+ "PL|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 138.016156588197
+ },
+ "PL|population_total": {
+  "year": 2024,
+  "value": 36559233.0
+ },
+ "PL|urban_population_pct": {
+  "year": 2024,
+  "value": 59.9705468695101
+ },
+ "SG|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 97.9718288419762
+ },
+ "SG|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 24.676735941018
+ },
+ "SG|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 90674.066632628
+ },
+ "SG|gdp_total_usd": {
+  "year": 2024,
+  "value": 547386645891.847
+ },
+ "SG|internet_users_pct": {
+  "year": 2024,
+  "value": 94.37757178
+ },
+ "SG|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 170.78256295407
+ },
+ "SG|population_total": {
+  "year": 2024,
+  "value": 6036860.0
+ },
+ "SG|urban_population_pct": {
+  "year": 2024,
+  "value": 100.0
+ },
+ "US|account_ownership_pct_adult": {
+  "year": 2024,
+  "value": 97.0230983290589
+ },
+ "US|fdi_inflow_pct_gdp": {
+  "year": 2024,
+  "value": 1.03321085618604
+ },
+ "US|gdp_per_capita_usd": {
+  "year": 2024,
+  "value": 84534.0407841548
+ },
+ "US|gdp_total_usd": {
+  "year": 2024,
+  "value": 28750956130731.2
+ },
+ "US|internet_users_pct": {
+  "year": 2024,
+  "value": 94.69380188
+ },
+ "US|mobile_subs_per_100": {
+  "year": 2024,
+  "value": 113.190481805755
+ },
+ "US|population_total": {
+  "year": 2024,
+  "value": 340110988.0
+ },
+ "US|urban_population_pct": {
+  "year": 2024,
+  "value": 80.1247798047184
+ }
+}

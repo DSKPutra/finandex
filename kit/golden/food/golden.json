@@ -1,0 +1,51 @@
+{
+ "rows": 10000,
+ "merchants": 737,
+ "cities": {
+  "Jabodetabek": 2629,
+  "Bandung": 2568,
+  "Medan": 2534,
+  "Surabaya": 2269
+ },
+ "cuisines": {
+  "Indonesian": 2325,
+  "Fast Food": 1587,
+  "Beverages": 1507,
+  "Japanese": 1320,
+  "Bakery": 968,
+  "Western": 850,
+  "Chinese": 747,
+  "Korean": 696
+ },
+ "cloud_kitchen_items": 4271,
+ "median_markup_pct": 23.73,
+ "mean_markup_pct": 23.736148999999997,
+ "median_markup_by_city": {
+  "Bandung": 23.91,
+  "Jabodetabek": 23.68,
+  "Medan": 23.75,
+  "Surabaya": 23.53
+ },
+ "median_markup_by_cuisine": {
+  "Bakery": 23.805,
+  "Beverages": 25.0,
+  "Chinese": 23.53,
+  "Fast Food": 24.07,
+  "Indonesian": 23.47,
+  "Japanese": 22.86,
+  "Korean": 23.44,
+  "Western": 23.33
+ },
+ "median_markup_cloud_vs_not": {
+  "False": 26.47,
+  "True": 20.0
+ },
+ "median_online_price_idr": 48500.0,
+ "median_packaging_fee_idr": 3000.0,
+ "median_promo_discount_pct": 15.0,
+ "markup_formula_max_abs_diff_pp": 0.005000000000006111,
+ "notes": {
+  "estimates": "estimated_dine_in_price_idr is an ESTIMATE from the dataset author; tiers/bias/burden columns, evidence_span, cot_rationale, confidence_score are author-generated labels",
+  "parquet": "indonesian_food_delivery_benchmark.parquet duplicates the CSV; CSV is primary"
+ }
+}

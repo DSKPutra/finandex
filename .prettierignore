@@ -1,0 +1,8 @@
+kit/
+data/
+public/data/
+dist/
+coverage/
+android/
+ios/
+package-lock.json

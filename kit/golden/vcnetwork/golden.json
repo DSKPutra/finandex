@@ -1,0 +1,150 @@
+{
+ "rows": 75855,
+ "unique_investors": 23670,
+ "year_range": [
+  2019,
+  2026
+ ],
+ "top10_pairs_by_shared_deals": [
+  {
+   "investor_a": "Index Ventures",
+   "investor_b": "Sequoia Capital",
+   "shared_deals": 54,
+   "first_year": 2019,
+   "last_year": 2026,
+   "top_shared_sector": "Enterprise Applications",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "Dragoneer Investment Group",
+   "investor_b": "Tiger Global",
+   "shared_deals": 46,
+   "first_year": 2019,
+   "last_year": 2026,
+   "top_shared_sector": "Fintech",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "Coatue",
+   "investor_b": "Lightspeed Venture Partners",
+   "shared_deals": 44,
+   "first_year": 2019,
+   "last_year": 2026,
+   "top_shared_sector": "Enterprise Infrastructure",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "Andreessen Horowitz",
+   "investor_b": "Y Combinator",
+   "shared_deals": 42,
+   "first_year": 2019,
+   "last_year": 2026,
+   "top_shared_sector": "Fintech",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "Coatue",
+   "investor_b": "Dragoneer Investment Group",
+   "shared_deals": 42,
+   "first_year": 2019,
+   "last_year": 2026,
+   "top_shared_sector": "Fintech",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "Sequoia Capital",
+   "investor_b": "Y Combinator",
+   "shared_deals": 38,
+   "first_year": 2019,
+   "last_year": 2025,
+   "top_shared_sector": "Fintech",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "Kleiner Perkins",
+   "investor_b": "Sequoia Capital",
+   "shared_deals": 36,
+   "first_year": 2019,
+   "last_year": 2026,
+   "top_shared_sector": "Enterprise Applications",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "Index Ventures",
+   "investor_b": "Tiger Global",
+   "shared_deals": 33,
+   "first_year": 2019,
+   "last_year": 2025,
+   "top_shared_sector": "Enterprise Infrastructure",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "DST Global",
+   "investor_b": "Tiger Global",
+   "shared_deals": 32,
+   "first_year": 2019,
+   "last_year": 2026,
+   "top_shared_sector": "Fintech",
+   "top_shared_country": "United States"
+  },
+  {
+   "investor_a": "Atreides Management",
+   "investor_b": "Valor Equity Partners",
+   "shared_deals": 31,
+   "first_year": 2019,
+   "last_year": 2026,
+   "top_shared_sector": "High Tech",
+   "top_shared_country": "United States"
+  }
+ ],
+ "top10_investors_by_partners_in_sample": {
+  "Y Combinator": 424,
+  "Tiger Global": 365,
+  "Gaingels": 354,
+  "Alumni Ventures": 316,
+  "Andreessen Horowitz": 314,
+  "Insight Partners": 304,
+  "Lightspeed Venture Partners": 298,
+  "Sequoia Capital": 296,
+  "Accel": 279,
+  "Temasek": 272
+ },
+ "top10_investors_by_weighted_degree": {
+  "Tiger Global": 1013,
+  "Y Combinator": 994,
+  "Sequoia Capital": 936,
+  "Andreessen Horowitz": 752,
+  "Lightspeed Venture Partners": 743,
+  "Insight Partners": 689,
+  "Accel": 662,
+  "Gaingels": 569,
+  "Bessemer Venture Partners": 506,
+  "Coatue": 501
+ },
+ "pairs_shared_deals_1_share": 0.8315338474721509,
+ "top5_shared_sectors": {
+  "Fintech": 12180,
+  "Enterprise Applications": 8437,
+  "High Tech": 7492,
+  "Life Sciences": 6000,
+  "Consumer": 5134
+ },
+ "top5_shared_countries": {
+  "United States": 37078,
+  "India": 7524,
+  "United Kingdom": 4909,
+  "Canada": 2658,
+  "Germany": 2223
+ },
+ "investor_type_pairs_top5": {
+  "VC + VC": 45408,
+  "VC + PE": 3376,
+  "PE + VC": 3275,
+  "VC + CVC": 3144,
+  "VC + other": 2815
+ },
+ "notes": {
+  "sample": "25% sample (75,855 of 303,421 pairs) chosen by pair hash -> partner counts are sample counts, not full-network degrees",
+  "licence": "CC BY-NC 4.0 (Fliar Research) — non-commercial only"
+ }
+}

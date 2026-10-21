@@ -1,0 +1,84 @@
+{
+ "rows": 20227,
+ "announced_range": [
+  "2019-01-01",
+  "2026-06-12"
+ ],
+ "companies": 11853,
+ "rounds_with_amount": 16770,
+ "total_disclosed_usd": 582519636011.0,
+ "rounds_by_year": {
+  "2019": 1939,
+  "2020": 2407,
+  "2021": 3623,
+  "2022": 3505,
+  "2023": 3019,
+  "2024": 2862,
+  "2025": 2133,
+  "2026": 739
+ },
+ "disclosed_usd_by_year": {
+  "2019": 52005496280.0,
+  "2020": 61474607090.0,
+  "2021": 121911115735.0,
+  "2022": 95930712703.0,
+  "2023": 74394956000.0,
+  "2024": 73380085503.0,
+  "2025": 72318122700.0,
+  "2026": 31104540000.0
+ },
+ "median_amount_by_stage_usd": {
+  "Angel": 350000.0,
+  "Bridge": 2000000.0,
+  "Convertible note": 9600000.0,
+  "Crowdfunding": 1060000.0,
+  "Debt": 20000000.0,
+  "Grant": 884000.0,
+  "Growth / PE": 30000000.0,
+  "Pre-Series A": 2200000.0,
+  "Pre-Series B": 7600000.0,
+  "Pre-Series C": 11500000.0,
+  "Pre-Series D": 30000000.0,
+  "Pre-seed": 1200000.0,
+  "Seed": 3200000.0,
+  "Series A": 11600000.0,
+  "Series B": 30000000.0,
+  "Series C": 52250000.0,
+  "Series D": 80000000.0,
+  "Series E": 129000000.0,
+  "Series F": 150000000.0,
+  "Series G": 170000000.0,
+  "Series H": 200000000.0,
+  "Strategic": 18000000.0,
+  "Undisclosed": 8100000.0,
+  "Venture debt": 5400000.0
+ },
+ "top5_countries_by_disclosed_usd": {
+  "United States": 285673970170.0,
+  "India": 59823122510.0,
+  "United Kingdom": 42286725900.0,
+  "Canada": 20582452803.0,
+  "France": 19302985200.0
+ },
+ "top5_sectors_by_rounds": {
+  "Fintech": 2594,
+  "Enterprise Applications": 2465,
+  "Consumer": 1673,
+  "High Tech": 1385,
+  "Healthtech": 1379
+ },
+ "mega_round_share_of_rounds": 0.09844961240310078,
+ "mega_round_share_of_dollars": 0.6110506461850471,
+ "amount_status_counts": {
+  "verified": 15951,
+  "not_disclosed": 2776,
+  "unchecked": 819,
+  "failed_check": 681
+ },
+ "indonesia_rounds": 163,
+ "notes": {
+  "sample": "25% sample (20,227 of 80,911 rounds); REPORT.md figures are on the FULL data",
+  "amount_status": "use verified amounts by default; show unchecked/failed_check separately",
+  "licence": "CC BY-NC 4.0 (Fliar Research) — non-commercial only; news_excerpt = short quotes, always show news_source/news_url"
+ }
+}

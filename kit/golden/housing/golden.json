@@ -1,0 +1,72 @@
+{
+ "rows_raw": 88905,
+ "exact_duplicates_removed": 5325,
+ "rows": 83580,
+ "price_invalid_rows": 2223,
+ "geo_invalid_or_missing_rows": 186,
+ "provinces": 34,
+ "city_regency": 451,
+ "projects": 30883,
+ "developers": 13545,
+ "subsidy_counts": {
+  "komersil": 45167,
+  "subsidi": 38413
+ },
+ "median_price_by_subsidy_idr": {
+  "komersil": 589000000.0,
+  "subsidi": 162000000.0
+ },
+ "median_price_per_m2_building_by_subsidy_idr": {
+  "subsidi": 4611111.111111111,
+  "komersil": 12087844.827586208
+ },
+ "top10_provinces_by_listings": {
+  "JAWA BARAT": 22646,
+  "JAWA TIMUR": 11602,
+  "BANTEN": 9539,
+  "JAWA TENGAH": 7964,
+  "SULAWESI SELATAN": 3596,
+  "SUMATERA UTARA": 3349,
+  "SUMATERA SELATAN": 3075,
+  "KALIMANTAN SELATAN": 2264,
+  "RIAU": 1824,
+  "KALIMANTAN BARAT": 1806
+ },
+ "median_subsidi_price_by_province_top10_listings": {
+  "JAWA BARAT": 162000000.0,
+  "JAWA TIMUR": 150500000.0,
+  "BANTEN": 162000000.0,
+  "JAWA TENGAH": 160000000.0,
+  "SULAWESI SELATAN": 156500000.0,
+  "SUMATERA UTARA": 150500000.0,
+  "SUMATERA SELATAN": 150500000.0,
+  "KALIMANTAN SELATAN": 164500000.0,
+  "RIAU": 150500000.0,
+  "KALIMANTAN BARAT": 164500000.0
+ },
+ "developer_association_share": {
+  "REI": 0.5717994735582675,
+  "APERSI": 0.21823402727925342,
+  "HIMPERRA": 0.09510648480497727,
+  "APERNAS": 0.02780569514237856,
+  "PI": 0.01756401052883465,
+  "ASPRUMNAS": 0.013041397463508016,
+  "APPERNAS JAYA": 0.012275664034458005,
+  "PERUMNAS": 0.009643455372098588
+ },
+ "median_building_area_m2_subsidi": 36.0,
+ "median_land_area_m2_subsidi": 81.0,
+ "bedrooms_mode_subsidi": 2,
+ "rules": {
+  "dedup": "drop exact duplicate rows",
+  "price_valid": "50000000 <= price_idr <= 100000000000",
+  "geo": "lat in [-11.5, 6.5] and lon in [94, 141.5]; otherwise not plotted",
+  "bedrooms_0": "0 = not reported",
+  "price_per_m2": "recompute from price_idr / area (area > 0); dataset columns are kept only for cross-check"
+ },
+ "notes": {
+  "csv_multiline": "CSV has quoted multi-line fields: wc -l (134,185) != rows; always use a real CSV parser",
+  "property_type": "single value 'Rumah Tapak'",
+  "subsidy_status": "'subsidi' or 'komersil' (as written in the data)"
+ }
+}

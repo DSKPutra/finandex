@@ -1,0 +1,77 @@
+{
+ "total_rows": 252,
+ "status_counts": {
+  "Closed": 243,
+  "Canceled": 8,
+  "Offering": 1
+ },
+ "listing_date_range": [
+  "2021-03-08",
+  "2026-07-10"
+ ],
+ "closed_by_year": {
+  "2021": 31,
+  "2022": 59,
+  "2023": 79,
+  "2024": 41,
+  "2025": 26,
+  "2026": 7
+ },
+ "median_return_D1": 0.144,
+ "mean_return_D1": 0.24566800447899315,
+ "share_positive_D1": 0.6707818930041153,
+ "median_return_from_listing": -0.1627906976744186,
+ "by_sector_median_D1": {
+  "Basic Materials": 0.113208,
+  "Consumer Cyclicals": 0.090226,
+  "Consumer Discretionary": 0.342593,
+  "Consumer Non-Cyclicals": 0.209552,
+  "Energy": 0.248173,
+  "Financials": 0.244094,
+  "Healthcare": 0.248,
+  "Industrials": 0.115,
+  "Infrastructures": 0.06,
+  "Materials": 0.328125,
+  "Properties & Real Estate": -0.040741,
+  "Technology": 0.050534,
+  "Transportation & Logistic": 0.249242
+ },
+ "by_board_count": {
+  "Pengembangan": 133,
+  "Utama": 58,
+  "Akselerasi": 33,
+  "(kosong)": 19
+ },
+ "top_participant_admin_by_count": [
+  {
+   "participant_admin": "AI - UOB KAY HIAN SEKURITAS",
+   "ipos": 23,
+   "mean_D1": 0.14514999048259886,
+   "median_D1": 0.1986301369863013
+  },
+  {
+   "participant_admin": "XA - NH KORINDO SEKURITAS INDONESIA",
+   "ipos": 20,
+   "mean_D1": 0.048728450994419484,
+   "median_D1": -0.0666666666666666
+  },
+  {
+   "participant_admin": "CC - MANDIRI SEKURITAS",
+   "ipos": 12,
+   "mean_D1": 0.06911103955553612,
+   "median_D1": 0.0121212121212121
+  },
+  {
+   "participant_admin": "HD - KGI SEKURITAS INDONESIA",
+   "ipos": 12,
+   "mean_D1": 0.2689616574154358,
+   "median_D1": 0.24229885057471262
+  },
+  {
+   "participant_admin": "AH - SHINHAN SEKURITAS INDONESIA",
+   "ipos": 12,
+   "mean_D1": -0.007700829503849177,
+   "median_D1": -0.013628421665695951
+  }
+ ]
+}

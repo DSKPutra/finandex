@@ -1,0 +1,169 @@
+{
+ "snapshot_date": "2026-10-20",
+ "coins": 250,
+ "total_market_cap_top250_usd": 2831120544818.0,
+ "btc_dominance_top250": 0.5856006073448841,
+ "eth_dominance_top250": 0.10520988931262487,
+ "stablecoins_heuristic": [
+  "apxusd",
+  "ausd",
+  "avusd",
+  "bfusd",
+  "crvusd",
+  "dai",
+  "fdusd",
+  "frax",
+  "gho",
+  "gusd",
+  "ousd",
+  "pyusd",
+  "rlusd",
+  "sofid",
+  "tusd",
+  "u",
+  "usd0",
+  "usd1",
+  "usdai",
+  "usdc",
+  "usdd",
+  "usde",
+  "usdf",
+  "usdg",
+  "usdgo",
+  "usds",
+  "usdt"
+ ],
+ "stablecoin_market_cap_usd": 299341476604.0,
+ "stablecoin_share_top250": 0.10573250833557965,
+ "top10_by_market_cap": [
+  {
+   "market_cap_rank": 1,
+   "symbol": "btc",
+   "name": "Bitcoin",
+   "current_price_usd": 82488.0,
+   "market_cap_usd": 1657905910512
+  },
+  {
+   "market_cap_rank": 2,
+   "symbol": "eth",
+   "name": "Ethereum",
+   "current_price_usd": 2438.33,
+   "market_cap_usd": 297861879151
+  },
+  {
+   "market_cap_rank": 3,
+   "symbol": "usdt",
+   "name": "Tether",
+   "current_price_usd": 0.999248,
+   "market_cap_usd": 183038324785
+  },
+  {
+   "market_cap_rank": 4,
+   "symbol": "bnb",
+   "name": "BNB",
+   "current_price_usd": 736.8,
+   "market_cap_usd": 96902527028
+  },
+  {
+   "market_cap_rank": 5,
+   "symbol": "xrp",
+   "name": "XRP",
+   "current_price_usd": 1.32,
+   "market_cap_usd": 83439713546
+  },
+  {
+   "market_cap_rank": 6,
+   "symbol": "usdc",
+   "name": "USDC",
+   "current_price_usd": 0.999816,
+   "market_cap_usd": 72197911194
+  },
+  {
+   "market_cap_rank": 7,
+   "symbol": "sol",
+   "name": "Solana",
+   "current_price_usd": 106.07,
+   "market_cap_usd": 62535913653
+  },
+  {
+   "market_cap_rank": 8,
+   "symbol": "trx",
+   "name": "TRON",
+   "current_price_usd": 0.330657,
+   "market_cap_usd": 31412692639
+  },
+  {
+   "market_cap_rank": 9,
+   "symbol": "figr_heloc",
+   "name": "Figure Heloc",
+   "current_price_usd": 1.055,
+   "market_cap_usd": 25423855248
+  },
+  {
+   "market_cap_rank": 10,
+   "symbol": "zec",
+   "name": "Zcash",
+   "current_price_usd": 1205.6,
+   "market_cap_usd": 20488466418
+  }
+ ],
+ "top5_7d_gainers_top100": [
+  {
+   "symbol": "ake",
+   "name": "Akedo",
+   "price_change_pct_7d": 24.2776
+  },
+  {
+   "symbol": "vvv",
+   "name": "Venice Token",
+   "price_change_pct_7d": 18.0832
+  },
+  {
+   "symbol": "xmr",
+   "name": "Monero",
+   "price_change_pct_7d": 17.5113
+  },
+  {
+   "symbol": "pearl",
+   "name": "Pearl",
+   "price_change_pct_7d": 13.8859
+  },
+  {
+   "symbol": "wld",
+   "name": "Worldcoin",
+   "price_change_pct_7d": 11.8296
+  }
+ ],
+ "top5_7d_losers_top100": [
+  {
+   "symbol": "stx",
+   "name": "Stacks",
+   "price_change_pct_7d": -19.8697
+  },
+  {
+   "symbol": "cc",
+   "name": "Canton",
+   "price_change_pct_7d": -18.3597
+  },
+  {
+   "symbol": "night",
+   "name": "Midnight",
+   "price_change_pct_7d": -11.6031
+  },
+  {
+   "symbol": "rain",
+   "name": "Rain",
+   "price_change_pct_7d": -11.3632
+  },
+  {
+   "symbol": "m",
+   "name": "MemeCore",
+   "price_change_pct_7d": -10.83
+  }
+ ],
+ "median_ath_change_pct_top100": -63.790375,
+ "notes": {
+  "pct_fields": "price_change_pct_* and ath_change_pct are already in PERCENT units (e.g. 0.86634 = 0.87%)",
+  "max_supply_null": "null = no fixed max supply (or not reported)"
+ }
+}

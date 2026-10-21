@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="RupiahDex">
+  <title>RupiahDex</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121B15"/><stop offset="1" stop-color="#040705"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.72" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#19F23A" stop-opacity="0.16"/><stop offset="1" stop-color="#19F23A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#halo)"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="2"/>
+
+  <rect x="122" y="140" width="52" height="210" fill="#EEF3EF"/>
+  <path fill-rule="evenodd" fill="#EEF3EF" d="M174 140 H232 A64 64 0 0 1 232 268 H174 Z M174 186 H228 A18 18 0 0 1 228 222 H174 Z"/>
+  <polygon points="200,268 254,268 294,350 238,350" fill="#EEF3EF"/>
+  <rect x="312" y="214" width="46" height="176" fill="#EEF3EF"/>
+  <path fill-rule="evenodd" fill="#EEF3EF" d="M358 214 H364 A56 56 0 0 1 364 326 H358 Z M358 252 H362 A18 18 0 0 1 362 288 H358 Z"/>
+  <g stroke="#19F23A" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)">
+    <path d="M136 414 H376"/><path d="M158 392 L136 414 L158 436"/><path d="M354 392 L376 414 L354 436"/>
+  </g>
+</svg>

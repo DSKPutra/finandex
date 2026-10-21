@@ -1,0 +1,238 @@
+{
+ "as_of": "2026-05-29",
+ "rows_total": 278888,
+ "rows_active": 217237,
+ "active_funds_as_of": 1491,
+ "aum_total_idr_as_of": 689723088640553.9,
+ "aum_by_type_as_of": {
+  "Capital Protected Fund": {
+   "count": 337,
+   "aum": 143638369877512.53
+  },
+  "Equity Fund": {
+   "count": 256,
+   "aum": 67851430414978.086
+  },
+  "Exchanged Traded Fund": {
+   "count": 41,
+   "aum": 16627600779463.291
+  },
+  "Fixed Income Fund": {
+   "count": 356,
+   "aum": 240748832093231.75
+  },
+  "Global Fund": {
+   "count": 43,
+   "aum": 15764699998409.58
+  },
+  "Index Fund": {
+   "count": 62,
+   "aum": 9549925947613.23
+  },
+  "Mixed Asset Fund": {
+   "count": 164,
+   "aum": 35706865580536.44
+  },
+  "Money Market Fund": {
+   "count": 215,
+   "aum": 152534582431698.56
+  },
+  "Sukuk Based Fund": {
+   "count": 17,
+   "aum": 7300781517110.44
+  }
+ },
+ "aum_by_ccy_as_of": {
+  "IDR": 633071687170992.8,
+  "USD": 56651401469561.16
+ },
+ "top10_mi_by_aum": [
+  {
+   "mi": "Manulife Aset Manajemen Indonesia, PT",
+   "aum": 66358837880925.05,
+   "share": 0.09621084022534102
+  },
+  {
+   "mi": "Trimegah Asset Management, PT",
+   "aum": 60550316974677.06,
+   "share": 0.08778931425076969
+  },
+  {
+   "mi": "Bahana TCW Investment Management, PT",
+   "aum": 55511080373193.35,
+   "share": 0.08048314067984276
+  },
+  {
+   "mi": "Mandiri Manajemen Investasi, PT",
+   "aum": 49268898769087.7,
+   "share": 0.07143286861136813
+  },
+  {
+   "mi": "Batavia Prosperindo Aset Manajemen, PT",
+   "aum": 47789916008266.91,
+   "share": 0.06928855477704968
+  },
+  {
+   "mi": "Sucorinvest Asset Management, PT",
+   "aum": 46707871179195.81,
+   "share": 0.0677197442690474
+  },
+  {
+   "mi": "PT BRI Manajemen Investasi",
+   "aum": 45357139314303.32,
+   "share": 0.06576137592218693
+  },
+  {
+   "mi": "Syailendra Capital, PT",
+   "aum": 39669484409871.12,
+   "share": 0.057515088393024195
+  },
+  {
+   "mi": "BNI Asset Management, PT",
+   "aum": 29882664078230.918,
+   "share": 0.0433255962724544
+  },
+  {
+   "mi": "Sinarmas Asset Management, PT",
+   "aum": 28390168607672.29,
+   "share": 0.04116169093835816
+  }
+ ],
+ "top5_bk_by_aum": [
+  {
+   "bk": "BANK CENTRAL ASIA - CUSTODY, Tbk, PT",
+   "aum": 109825536521042.62,
+   "share": 0.15923134708671136
+  },
+  {
+   "bk": "STANDARD CHARTERED BANK - CUSTODY",
+   "aum": 108624081287748.94,
+   "share": 0.15748940854198068
+  },
+  {
+   "bk": "PT Bank HSBC Indonesia",
+   "aum": 94882088854462.05,
+   "share": 0.13756548159272863
+  },
+  {
+   "bk": "BANK CIMB NIAGA - CUSTODY, Tbk, PT",
+   "aum": 71365594208134.8,
+   "share": 0.10346992203609796
+  },
+  {
+   "bk": "BANK DBS INDONESIA - CUSTODY, PT",
+   "aum": 45225515716527.95,
+   "share": 0.0655705404986044
+  }
+ ],
+ "aum_total_by_year_end": {
+  "2013": 193574331084326.3,
+  "2014": 242463414281080.06,
+  "2015": 272785882641589.06,
+  "2016": 339170341136019.1,
+  "2017": 456894250572203.6,
+  "2018": 506908834843966.4,
+  "2019": 542174195669827.6,
+  "2020": 573468520538360.6,
+  "2021": 580126514134793.1,
+  "2022": 507739296852732.44,
+  "2023": 504947273560068.9,
+  "2024": 502919861785777.6,
+  "2025": 679239604291668.0,
+  "2026": 689723088640554.0
+ },
+ "active_funds_by_year_end": {
+  "2013": 698,
+  "2014": 802,
+  "2015": 978,
+  "2016": 1268,
+  "2017": 1549,
+  "2018": 1779,
+  "2019": 1862,
+  "2020": 1736,
+  "2021": 1618,
+  "2022": 1442,
+  "2023": 1382,
+  "2024": 1410,
+  "2025": 1458,
+  "2026": 1491
+ },
+ "median_ret_1Y_by_type": {
+  "Capital Protected Fund": 0.0009919121164085887,
+  "Equity Fund": -0.048232901077562285,
+  "Exchanged Traded Fund": -0.1451548009690546,
+  "Fixed Income Fund": 0.0399956967283126,
+  "Global Fund": 0.39453204481531867,
+  "Index Fund": -0.17549041523184095,
+  "Mixed Asset Fund": 0.0,
+  "Money Market Fund": 0.043743375844102816,
+  "Sukuk Based Fund": 0.042691489623157164
+ },
+ "top10_funds_by_aum": [
+  {
+   "fund": "Reksa Dana Batavia Dana Kas Maxima",
+   "mi": "Batavia Prosperindo Aset Manajemen, PT",
+   "type": "Money Market Fund",
+   "aum": 16391584492691.1
+  },
+  {
+   "fund": "DANAMAS STABIL",
+   "mi": "Sinarmas Asset Management, PT",
+   "type": "Fixed Income Fund",
+   "aum": 15300444346932.4
+  },
+  {
+   "fund": "REKSA DANA STAR STABLE INCOME FUND KELAS UTAMA",
+   "mi": "Surya Timur Alam Raya Asset Management, PT",
+   "type": "Fixed Income Fund",
+   "aum": 13548868436691.9
+  },
+  {
+   "fund": "REKSA DANA MANDIRI MONEY MARKET USD",
+   "mi": "Mandiri Manajemen Investasi, PT",
+   "type": "Money Market Fund",
+   "aum": 13318393221533.0
+  },
+  {
+   "fund": "REKSA DANA MANULIFE OBLIGASI UNGGULAN KELAS A",
+   "mi": "Manulife Aset Manajemen Indonesia, PT",
+   "type": "Fixed Income Fund",
+   "aum": 12243562599223.5
+  },
+  {
+   "fund": "Reksa Dana Sucorinvest Money Market Fund",
+   "mi": "Sucorinvest Asset Management, PT",
+   "type": "Money Market Fund",
+   "aum": 12208218644750.0
+  },
+  {
+   "fund": "REKSA DANA ASHMORE DANA OBLIGASI NUSANTARA KELAS A",
+   "mi": "PT Ashmore Asset Management Indonesia, Tbk",
+   "type": "Fixed Income Fund",
+   "aum": 11328063574599.9
+  },
+  {
+   "fund": "REKSA DANA TRIM KAS 2 KELAS A",
+   "mi": "Trimegah Asset Management, PT",
+   "type": "Money Market Fund",
+   "aum": 10468582728200.0
+  },
+  {
+   "fund": "Reksa Dana Syariah Sucorinvest Sharia Money Market Fund",
+   "mi": "Sucorinvest Asset Management, PT",
+   "type": "Money Market Fund",
+   "aum": 9049156334074.0
+  },
+  {
+   "fund": "REKSA DANA MANDIRI INVESTA PASAR UANG KELAS A",
+   "mi": "Mandiri Manajemen Investasi, PT",
+   "type": "Money Market Fund",
+   "aum": 8882893656545.6
+  }
+ ],
+ "notes": {
+  "aum_currency": "All NAB and NAB per Unit values are in IDR, including USD-denominated funds (verified: USD fund NAV/unit median ~Rp15,095).",
+  "returns": "Month-over-month NAV/unit change, only for consecutive months; excludes distributions (dividend-paying / capital-protected funds understate total return).",
+  "extreme_rule": "monthly r >= +100% or <= -50% flagged and excluded from aggregates"
+ }
+}

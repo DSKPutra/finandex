@@ -1,0 +1,86 @@
+{
+ "rows": 21469,
+ "snapshot_range": [
+  "2026-09-18",
+  "2026-10-20"
+ ],
+ "snapshots": 32,
+ "duplicate_name_date_rows": 1224,
+ "fully_identical_duplicate_rows": 492,
+ "rows_after_dedup": 20857,
+ "latest_protocols": 643,
+ "latest_top10_by_total24h": [
+  {
+   "name": "Tether",
+   "category": "Stablecoin Issuer",
+   "total24h": 17534480.0,
+   "dailyRevenue": 17534480.0
+  },
+  {
+   "name": "Circle USDC",
+   "category": "Stablecoin Issuer",
+   "total24h": 6976623.0,
+   "dailyRevenue": 6976623.0
+  },
+  {
+   "name": "PumpSwap",
+   "category": "Dexs",
+   "total24h": 3128280.0,
+   "dailyRevenue": 416010.0
+  },
+  {
+   "name": "Hyperliquid Perps",
+   "category": "Derivatives",
+   "total24h": 2411182.0,
+   "dailyRevenue": 1883722.0
+  },
+  {
+   "name": "pump.fun",
+   "category": "Launchpad",
+   "total24h": 2190389.0,
+   "dailyRevenue": 1542411.0
+  },
+  {
+   "name": "Collector Crypt",
+   "category": "Physical TCG",
+   "total24h": 2153407.0,
+   "dailyRevenue": 2153407.0
+  },
+  {
+   "name": "Polymarket US",
+   "category": "Prediction Market",
+   "total24h": 1701673.0,
+   "dailyRevenue": null
+  },
+  {
+   "name": "Lido",
+   "category": "Liquid Staking",
+   "total24h": 1575400.0,
+   "dailyRevenue": 95880.0
+  },
+  {
+   "name": "Papertrade",
+   "category": "Derivatives",
+   "total24h": 1465897.0,
+   "dailyRevenue": 1465897.0
+  },
+  {
+   "name": "Maple",
+   "category": "Lending",
+   "total24h": 1426371.0,
+   "dailyRevenue": 228746.0
+  }
+ ],
+ "latest_total24h_by_category_top5": {
+  "Stablecoin Issuer": 25430420.0,
+  "Dexs": 8338126.0,
+  "Derivatives": 5333901.0,
+  "Lending": 4935826.0,
+  "Launchpad": 3961195.0
+ },
+ "notes": {
+  "dedup": "key = (name, snapshot_date); keep first occurrence",
+  "fields": "total24h/7d/30d/1y = fees (USD); dailyRevenue = protocol revenue (USD); change_* in percent",
+  "chains": "chains column is a Python-list string -> parse safely (no eval)"
+ }
+}

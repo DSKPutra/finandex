@@ -1,0 +1,175 @@
+{
+ "rows": 1404,
+ "countries": 108,
+ "indicators": [
+  {
+   "indicatorCode": "mpi_value",
+   "indicator": "MPI Value (Range: 0 to 1)"
+  },
+  {
+   "indicatorCode": "mpi_headcount",
+   "indicator": "MPI Headcount (%)"
+  },
+  {
+   "indicatorCode": "mpi_intensity",
+   "indicator": "MPI Intensity (%)"
+  },
+  {
+   "indicatorCode": "nutrition",
+   "indicator": "Contribution of Nutrition to MPI (%)"
+  },
+  {
+   "indicatorCode": "child_mortality",
+   "indicator": "Contribution of Child mortality to MPI (%)"
+  },
+  {
+   "indicatorCode": "years_of_schooling",
+   "indicator": "Contribution of Years of schooling to MPI (%)"
+  },
+  {
+   "indicatorCode": "school_attendance",
+   "indicator": "Contribution of School attendance to MPI (%)"
+  },
+  {
+   "indicatorCode": "cooking_fuel",
+   "indicator": "Contribution of Cooking fuel to MPI (%)"
+  },
+  {
+   "indicatorCode": "sanitation",
+   "indicator": "Contribution of Sanitation to MPI (%)"
+  },
+  {
+   "indicatorCode": "drinking_water",
+   "indicator": "Contribution of Drinking water to MPI (%)"
+  },
+  {
+   "indicatorCode": "electricity",
+   "indicator": "Contribution of Electricity to MPI (%)"
+  },
+  {
+   "indicatorCode": "housing",
+   "indicator": "Contribution of Housing to MPI (%)"
+  },
+  {
+   "indicatorCode": "assets",
+   "indicator": "Contribution of Assets to MPI (%)"
+  }
+ ],
+ "mpi_countries_with_value": 108,
+ "top5_mpi": [
+  {
+   "country": "Chad",
+   "yearStr": "2019",
+   "actualValue": 0.5170112,
+   "note": "Survey: MICS (2019)"
+  },
+  {
+   "country": "Niger",
+   "yearStr": "2021",
+   "actualValue": 0.4703162,
+   "note": "Survey: ENAFEME (2021)"
+  },
+  {
+   "country": "Central African Republic",
+   "yearStr": "2018/2019",
+   "actualValue": 0.4613475,
+   "note": "Survey: MICS (2018/2019)"
+  },
+  {
+   "country": "Burundi",
+   "yearStr": "2016/2017",
+   "actualValue": 0.408861094240289,
+   "note": "Survey: DHS (2016/2017)"
+  },
+  {
+   "country": "Madagascar",
+   "yearStr": "2021",
+   "actualValue": 0.3859274,
+   "note": "Survey: DHS (2021)"
+  }
+ ],
+ "indonesia": [
+  {
+   "indicatorCode": "mpi_value",
+   "yearStr": "2017",
+   "actualValue": 0.0140107,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "mpi_headcount",
+   "yearStr": "2017",
+   "actualValue": 3.6,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "mpi_intensity",
+   "yearStr": "2017",
+   "actualValue": 38.7,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "nutrition",
+   "yearStr": "2017",
+   "actualValue": null,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "child_mortality",
+   "yearStr": "2017",
+   "actualValue": 34.7420916771759,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "years_of_schooling",
+   "yearStr": "2017",
+   "actualValue": 18.4564332027319,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "school_attendance",
+   "yearStr": "2017",
+   "actualValue": 8.31135400213951,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "cooking_fuel",
+   "yearStr": "2017",
+   "actualValue": 9.43595654175494,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "sanitation",
+   "yearStr": "2017",
+   "actualValue": 8.65187571131977,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "drinking_water",
+   "yearStr": "2017",
+   "actualValue": 5.35562728798035,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "electricity",
+   "yearStr": "2017",
+   "actualValue": 3.05575300557758,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "assets",
+   "yearStr": "2017",
+   "actualValue": 6.79974062081122,
+   "note": "Survey: DHS (2017)"
+  },
+  {
+   "indicatorCode": "housing",
+   "yearStr": "2017",
+   "actualValue": 5.19116795050603,
+   "note": "Survey: DHS (2017)"
+  }
+ ],
+ "notes": {
+  "year": "each country has its own survey year (yearStr, e.g. 2022/2023) -> always show it; values not comparable as same-year",
+  "value_vs_actual": "value = rounded display, actualValue = full precision (use actualValue)"
+ }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="IDXDex">
+  <title>IDXDex</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121B15"/><stop offset="1" stop-color="#040705"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.72" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#19F23A" stop-opacity="0.16"/><stop offset="1" stop-color="#19F23A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#halo)"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="2"/>
+
+  <line x1="168" y1="214" x2="168" y2="372" stroke="#EEF3EF" stroke-width="10" stroke-linecap="round"/>
+  <rect x="144" y="250" width="48" height="90" rx="6" fill="#EEF3EF"/>
+  <line x1="256" y1="168" x2="256" y2="336" stroke="#EEF3EF" stroke-width="10" stroke-linecap="round"/>
+  <rect x="232" y="206" width="48" height="96" rx="6" fill="none" stroke="#EEF3EF" stroke-width="12"/>
+  <g filter="url(#glow)">
+    <line x1="344" y1="116" x2="344" y2="300" stroke="#19F23A" stroke-width="10" stroke-linecap="round"/>
+    <rect x="320" y="146" width="48" height="118" rx="6" fill="#19F23A"/>
+  </g>
+  <rect x="124" y="392" width="264" height="10" rx="5" fill="#EEF3EF" fill-opacity="0.35"/>
+</svg>

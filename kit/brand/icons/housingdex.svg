@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="HousingDex">
+  <title>HousingDex</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121B15"/><stop offset="1" stop-color="#040705"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.72" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#19F23A" stop-opacity="0.16"/><stop offset="1" stop-color="#19F23A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#halo)"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="2"/>
+
+  <rect x="120" y="140" width="272" height="232" rx="20" fill="none" stroke="#EEF3EF" stroke-width="20"/>
+  <g fill="#EEF3EF"><rect x="148" y="172" width="216" height="18" rx="9"/><rect x="148" y="206" width="96" height="10" rx="5" fill-opacity="0.6"/><rect x="148" y="228" width="96" height="10" rx="5" fill-opacity="0.6"/><rect x="148" y="250" width="96" height="10" rx="5" fill-opacity="0.6"/></g>
+  <polygon points="312,212 362,252 350,252 350,338 274,338 274,252 262,252" fill="#19F23A" filter="url(#glow)"/>
+</svg>

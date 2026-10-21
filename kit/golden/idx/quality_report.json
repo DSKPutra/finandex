@@ -1,0 +1,4693 @@
+{
+ "prices_as_of": "2024-05-17",
+ "tickers_in_prices": 931,
+ "tickers_with_metrics": 931,
+ "companies_listed_file": 941,
+ "tickers_without_company_name": [
+  "BORN",
+  "CKRA",
+  "CNTB",
+  "ITTG",
+  "MYRXP"
+ ],
+ "companies_without_prices": [
+  "BATR",
+  "BLES",
+  "BOAT",
+  "DAAZ",
+  "DOSS",
+  "GOLF",
+  "GUNA",
+  "ISEA",
+  "LABS",
+  "NAIK",
+  "NEST",
+  "PART",
+  "PTMR",
+  "SPRE",
+  "VERN"
+ ],
+ "rows_dropped_null_close": 3846,
+ "rules": {
+  "adj_close<=0": "row excluded from total-return series",
+  "spike": "same rule as NASDAQ (r>+100% then <-50% round-trip, or reverse)",
+  "listing_date": "Indonesian month abbreviations Jan Feb Mar Apr Mei Jun Jul Agt Sep Okt Nov Des"
+ },
+ "tickers": {
+  "AALI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ABBA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ABDA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "ABMM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ACES": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ACRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ACST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ADCP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ADES": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ADHI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ADMF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ADMG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ADMR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ADRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AEGS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AGAR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AGII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AGRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AGRS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AHAP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AIMS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AISA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AKKU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AKPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AKRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "AKSI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ALDO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ALII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ALKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ALMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ALTO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMAG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMAN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMAR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMFG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMMN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMMS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMOR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AMRT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ANDI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ANJT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ANTM": {
+   "spikes_removed_count": 5,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "APEX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "APIC": {
+   "spikes_removed_count": 21,
+   "extreme_moves_count": 18,
+   "stale": false
+  },
+  "APII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "APLI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "APLN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARCI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AREA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARGO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARKO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARMY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "ARNA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARTA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARTI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ARTO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASBI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": true
+  },
+  "ASDM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASGR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASHA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASJT": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASLC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASLI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASRI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASRM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ASSA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ATAP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "ATIC": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ATLA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AUTO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AVIA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AWAN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AXIO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AYAM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "AYLS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BABP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BABY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BACA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BAIK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BAJA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BALI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BANK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BAPA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BAPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "BATA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "BAUT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BAYU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBCA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBHI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBKP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBLD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBMD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "BBNI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBRI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBRM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "BBSI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBSS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBTN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BBYB": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BCAP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BCIC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "BCIP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BDKR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BDMN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BEBS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BEEF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BEER": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BEKS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BELI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BELL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BESS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BEST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BFIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BGTG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BHAT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "BHIT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BIKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BIKE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BIMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BINA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BINO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BIPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BIPP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BIRD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BISI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "BJBR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BJTM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BKDP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BKSL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "BKSW": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BLTA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BLTZ": {
+   "spikes_removed_count": 2,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "BLUE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BMAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "BMBL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BMHS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BMRI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BMSR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BMTR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BNBA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BNBR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "BNGA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BNII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BNLI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BOBA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BOGA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BOLA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BOLT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BORN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "BOSS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "BPFI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BPII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BPTR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BRAM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BREN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BRIS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BRMS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BRNA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BRPT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BSBK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BSDE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BSIM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BSML": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BSSR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BSWD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "BTEK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BTEL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "BTON": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BTPN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BTPS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BUAH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BUDI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BUKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BUKK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BULL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BUMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BUVA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BVIC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BWPT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "BYAN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CAKK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CAMP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CANI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "CARE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CARS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CASA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CASH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CASS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CBMF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "CBPE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CBRE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CBUT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CCSI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CEKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CENT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CFIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CGAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CHEM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CHIP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CINT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CITA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "CITY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CKRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "CLAY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CLEO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CLPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CMNP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CMNT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CMPP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CMRY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CNKO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CNMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CNTB": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "CNTX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "COAL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "COCO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "COWL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "CPIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CPRI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "CPRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CRAB": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CRSN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CSAP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CSIS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CSMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "CSRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CTBN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CTRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CTTH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CUAN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "CYBR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DADA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DART": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "DATA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DAYA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DCII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "DEAL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "DEFI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "DEPO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DEWA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DEWI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DFAM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DGIK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DGNS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DIGI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DILD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DIVA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DKFT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DLTA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DMAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DMMX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DMND": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DNAR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DNET": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DOID": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "DOOH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DPNS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DPUM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DRMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DSFI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DSNG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DSSA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "DUCK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "DUTI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DVLA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DWGL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "DYAN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "EAST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ECII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "EDGE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "EKAD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ELIT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ELPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ELSA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ELTY": {
+   "spikes_removed_count": 4,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "EMDE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "EMTK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ENAK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ENRG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ENVY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "ENZO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "EPAC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "EPMT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ERAA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ERAL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ERTX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ESIP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ESSA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ESTA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ESTI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ETWA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": true
+  },
+  "EURO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "EXCL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FAPA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FAST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FASW": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "FILM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FIMP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FIRE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FISH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "FITT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FLMC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FMII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FOLK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FOOD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FORU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "FORZ": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "FPNI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FREN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "FUJI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FUTR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "FWCT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GAMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "GDST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GDYR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "GEMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GEMS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GGRM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GGRP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GHON": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GIAA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GJTL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GLOB": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "GLVA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GMFI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GMTD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "GOLD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GOLL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "GOOD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GOTO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GPRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GPSO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GRIA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GRPH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GRPM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GSMF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "GTBO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GTRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GTSI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GULA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GWSA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "GZCO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HADE": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "HAIS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HAJJ": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HALO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HATM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HBAT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HDFA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HDIT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HDTX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "HEAL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HELI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HERO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "HEXA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HILL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HITS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "HKMU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "HMSP": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HOKI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HOME": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "HOMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HOPE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HOTL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "HRME": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HRTA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HRUM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HUMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "HYGN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IATA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IBFN": {
+   "spikes_removed_count": 3,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "IBOS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IBST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "ICBP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ICON": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "IDEA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IDPR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IFII": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IFSH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "IGAR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IIKP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "IKAI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IKAN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IKBI": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IKPM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IMAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IMJS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IMPC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INAF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INAI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INCF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "INCI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INCO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INDF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INDO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INDR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INDS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "INDX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 3,
+   "stale": false
+  },
+  "INDY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INET": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INKP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INOV": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INPC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "INPP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "INPS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "INRU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INTA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INTD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "INTP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IOTF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IPAC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "IPCC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IPCM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IPOL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IPPE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IPTV": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IRRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "IRSX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ISAP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ISAT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ISSP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ITIC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ITMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "ITMG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ITTG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "JARR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JAST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JATI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JAWA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JAYA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JECC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JGLE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JIHD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JKON": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JKSW": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "JMAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JPFA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "JRPT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JSKY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "JSMR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JSPT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "JTPE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KAEF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KARW": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KAYU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KBAG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KBLI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KBLM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "KBLV": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KBRI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KDSI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KDTN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KEEN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KEJU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KETR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KIAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KICI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KIJA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KING": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KINO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KIOS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KJEN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KKES": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KKGI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KLAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KLBF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "KLIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KMDS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KMTR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KOBX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KOCI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KOIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KOKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KONI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KOPI": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 27,
+   "stale": false
+  },
+  "KOTA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KPAL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KPAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KPIG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KRAH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "KRAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KREN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KRYA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "KUAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LABA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "LAJU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LAND": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LAPD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LCGP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "LCKM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "LEAD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LFLO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LIFE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "LINK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LION": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "LIVE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LMAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "LMAX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LMPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "LMSH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "LOPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LPCK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LPGI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LPIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "LPKR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LPLI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "LPPF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "LPPS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LRNA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LSIP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LTLS": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "LUCK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "LUCY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MABA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "MAGP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "MAHA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MAIN": {
+   "spikes_removed_count": 2,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "MAMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "MANG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MAPA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MAPB": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MAPI": {
+   "spikes_removed_count": 4,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MARI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MARK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MASA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MASB": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MAXI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MAYA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MBAP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MBMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MBSS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MBTO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MCAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MCOL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MCOR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MDIA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MDKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MDKI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MDLN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MDRN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MEDC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MEDS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MEGA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MEJA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MENN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MERK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "META": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "MFIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MFMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MGLV": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MGNA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MGRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MHKI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MICE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MIDI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MIKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MINA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MIRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "MITI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MKAP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MKNT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 10,
+   "stale": false
+  },
+  "MKPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MKTR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MLBI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MLIA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MLPL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MLPT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MMIX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MMLP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MNCN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MOLI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MORA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MPIX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MPMX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MPOW": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MPPA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MPRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MPXL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MRAT": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MREI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MSIE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MSIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MSJA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MSKY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MSTI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MTDL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MTEL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MTFN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "MTLA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MTMH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MTPS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MTRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "MTSM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "MTWI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MUTU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MYOH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MYOR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "MYRX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "MYRXP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 17,
+   "stale": true
+  },
+  "MYTX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "NANO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NASA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NASI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NATO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NAYZ": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NCKL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NELY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NETV": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NFCX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NICE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NICK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NICL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NIKL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NINE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NIPS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "NIRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NISP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "NOBU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NPGF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NRCA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NSSS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NTBK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "NUSA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "NZIA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "OASA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "OBMD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "OCAP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": true
+  },
+  "OILS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "OKAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "OLIV": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "OMED": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "OMRE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "OPMS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PACK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PADA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PADI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PALM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PAMG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PANI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PANR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PANS": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PBID": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PBRX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PBSA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PCAR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PDES": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PDPP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PEGE": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PEHA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PEVE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PGAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PGEO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PGJO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PGLI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 5,
+   "stale": false
+  },
+  "PGUN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "PICO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PIPA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PJAA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PKPK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PLAN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PLAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": true
+  },
+  "PLIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PMJS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PMMP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PNBN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PNBS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PNGO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PNIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PNLF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PNSE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "POLA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "POLI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "POLL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "POLU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "POLY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "POOL": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "PORT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "POSA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "POWR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PPGL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PPRE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PPRI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PPRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PRAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "PRAY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PRDA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PRIM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PSAB": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "PSDN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PSGO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PSKT": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PSSI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTBA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTDU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTIS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTMP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTPP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTPS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTPW": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTSN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PTSP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PUDP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PURA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PURE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "PURI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PWON": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "PYFA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "PZZA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RAAM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RAFI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RAJA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "RALS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RANC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RBMS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RCCC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RDTX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "REAL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RELF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RELI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RGAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RICY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RIGS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RIMO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "RISE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RMKE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RMKO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ROCK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "RODA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RONY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ROTI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RSCH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RSGK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RUIS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "RUNS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SAFE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SAGE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SAME": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SAMF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SAPX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SATU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SBAT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 8,
+   "stale": false
+  },
+  "SBMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SCCO": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "SCMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SCNP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SCPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": true
+  },
+  "SDMU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SDPC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SDRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SEMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SFAN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SGER": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SGRO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SHID": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SHIP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SICO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SIDO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SILO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SIMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SIMP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SINI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SIPD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SKBM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SKLT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SKRN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SKYB": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SLIS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMAR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMBR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMCB": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMDM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMDR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMGA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMGR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMIL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMKL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMKM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMLE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "SMMT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SMRU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SMSM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SNLK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SOCI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SOFA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SOHO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SOLA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SONA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SOSS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SOTS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SOUL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SPMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SPTO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SQMI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SRAJ": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SRIL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SRSN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SRTG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SSIA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SSMS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SSTM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "STAA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "STAR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "STRK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "STTP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SUGI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SULI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SUNI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SUPR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "SURE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SURI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SWAT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "SWID": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TALF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TAMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TAMU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "TAPG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TARA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TAXI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "TAYS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TBIG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TBLA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TBMS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TCID": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TCPI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TDPM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "TEBE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TECH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "TELE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TFAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TFCO": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "TGKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TGRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TGUK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TIFA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TINS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TIRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TIRT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TKIM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TLDN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TLKM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TMAS": {
+   "spikes_removed_count": 29,
+   "extreme_moves_count": 12,
+   "stale": false
+  },
+  "TMPO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 2,
+   "stale": false
+  },
+  "TNCA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TOBA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TOOL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TOPS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TOSK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TOTL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TOTO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TOWR": {
+   "spikes_removed_count": 3,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TOYS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TPIA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": false
+  },
+  "TPMA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRAM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "TRGU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRIL": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "TRIM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRIN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRIO": {
+   "spikes_removed_count": 1,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "TRIS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRJA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRON": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRUE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRUK": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TRUS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TSPC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TUGU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "TYRE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UANG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UCID": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UDNG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UFOE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ULTJ": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UNIC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UNIQ": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UNIT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 1,
+   "stale": true
+  },
+  "UNSP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UNTD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UNTR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UNVR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "URBN": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "UVCR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VAST": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VICI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VICO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VINS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VISI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VIVA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VKTR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VOKS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VRNA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "VTNY": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WAPO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WEGE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WEHA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WGSH": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WICO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "WIDI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WIFI": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WIIM": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WIKA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WINE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WINR": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WINS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WIRG": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WMPP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "WMUU": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WOMF": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WOOD": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WOWS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WSBP": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "WSKT": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "WTON": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "YELO": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "YPAS": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "YULE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": true
+  },
+  "ZATA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ZBRA": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ZINC": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ZONE": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  },
+  "ZYRX": {
+   "spikes_removed_count": 0,
+   "extreme_moves_count": 0,
+   "stale": false
+  }
+ }
+}

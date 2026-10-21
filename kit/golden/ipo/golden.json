@@ -1,0 +1,39 @@
+{
+ "rows": 5000,
+ "first_report_range": [
+  "2018-06-01",
+  "2026-06-18"
+ ],
+ "countries": 104,
+ "top6_countries": {
+  "United States": 1289,
+  "India": 1069,
+  "China": 305,
+  "Canada": 259,
+  "United Kingdom": 184,
+  "Australia": 175
+ },
+ "listing_status": {
+  "Announced / filed": 3835,
+  "Completed": 1084,
+  "Withdrawn / postponed": 81
+ },
+ "amount_status": {
+  "failed_check": 2465,
+  "not_disclosed": 1753,
+  "verified": 718,
+  "unchecked": 64
+ },
+ "verified_total_usd": 202506396870.0,
+ "verified_median_usd": 79518072.0,
+ "india_board_counts": {
+  "Mainboard": 355,
+  "SME": 339
+ },
+ "indonesia_rows": 32,
+ "notes": {
+  "sample": "38% sample (5,000 of 13,316 company IPOs); REPORT.md figures are on the FULL data",
+  "status": "Announced / filed rows are not listings; use listing_status='Completed' for listed IPOs",
+  "licence": "CC BY-NC 4.0 (Fliar Research)"
+ }
+}

@@ -1,0 +1,105 @@
+{
+ "rows": 8827,
+ "countries": 106,
+ "top10_hq_countries": {
+  "United States": 1618,
+  "India": 310,
+  "United Kingdom": 293,
+  "China": 146,
+  "Canada": 146,
+  "Germany": 143,
+  "France": 137,
+  "Singapore": 110,
+  "Australia": 98,
+  "Japan": 97
+ },
+ "investor_types": {
+  "VC": 6080,
+  "other": 1274,
+  "PE": 526,
+  "bank-debt": 467,
+  "CVC": 208,
+  "government": 152,
+  "accelerator": 120
+ },
+ "top10_by_deals": [
+  {
+   "investor_name": "Tiger Global",
+   "investor_type": "PE",
+   "hq_country": "United States",
+   "deals": 897,
+   "lead_deals": 95
+  },
+  {
+   "investor_name": "Sequoia Capital",
+   "investor_type": "VC",
+   "hq_country": "United States",
+   "deals": 827,
+   "lead_deals": 68
+  },
+  {
+   "investor_name": "Goldman Sachs",
+   "investor_type": "PE",
+   "hq_country": "United States",
+   "deals": 362,
+   "lead_deals": 63
+  },
+  {
+   "investor_name": "Gaingels",
+   "investor_type": "other",
+   "hq_country": "United States",
+   "deals": 336,
+   "lead_deals": 1
+  },
+  {
+   "investor_name": "FJ Labs",
+   "investor_type": "VC",
+   "hq_country": "United States",
+   "deals": 307,
+   "lead_deals": 1
+  },
+  {
+   "investor_name": "Citi Ventures",
+   "investor_type": "CVC",
+   "hq_country": "United States",
+   "deals": 271,
+   "lead_deals": 25
+  },
+  {
+   "investor_name": "Kleiner Perkins",
+   "investor_type": "VC",
+   "hq_country": "United States",
+   "deals": 254,
+   "lead_deals": 9
+  },
+  {
+   "investor_name": "Blackrock",
+   "investor_type": "PE",
+   "hq_country": "United States",
+   "deals": 245,
+   "lead_deals": 30
+  },
+  {
+   "investor_name": "General Atlantic",
+   "investor_type": "PE",
+   "hq_country": "United States",
+   "deals": 218,
+   "lead_deals": 43
+  },
+  {
+   "investor_name": "Battery Ventures",
+   "investor_type": "VC",
+   "hq_country": "United States",
+   "deals": 213,
+   "lead_deals": 17
+  }
+ ],
+ "median_deals": 1.0,
+ "median_round_usd_median": 10000000.0,
+ "active_2025_2026_share": 0.31335674634643707,
+ "indonesia_hq_investors": 23,
+ "notes": {
+  "sample": "25% sample (8,827 of 35,310 investors); REPORT.md figures are on the FULL data",
+  "licence": "CC BY-NC 4.0 (Fliar Research) — non-commercial only"
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "rows": 2000,
+ "snapshot_dates": [
+  "2026-10-20"
+ ],
+ "pools": 2000,
+ "stablecoin_pools": 732,
+ "stable_median_apy_pct": 4.15318,
+ "median_apy_pct_all": 2.1101650000000003,
+ "top5_by_tvl": [
+  {
+   "project": "lido",
+   "chain": "Ethereum",
+   "symbol": "STETH",
+   "tvlUsd": 23696381836,
+   "apy": 2.225
+  },
+  {
+   "project": "binance-staked-eth",
+   "chain": "Ethereum",
+   "symbol": "WBETH",
+   "tvlUsd": 8644904572,
+   "apy": 2.24073
+  },
+  {
+   "project": "ether.fi-stake",
+   "chain": "Ethereum",
+   "symbol": "WEETH",
+   "tvlUsd": 5377128674,
+   "apy": 2.21626
+  },
+  {
+   "project": "sky-lending",
+   "chain": "Ethereum",
+   "symbol": "SUSDS",
+   "tvlUsd": 4833587678,
+   "apy": 3.8
+  },
+  {
+   "project": "aave-v3",
+   "chain": "Ethereum",
+   "symbol": "WEETH",
+   "tvlUsd": 3732758671,
+   "apy": 2e-05
+  }
+ ],
+ "notes": {
+  "single_snapshot": "file name says 'Daily' but this file holds one snapshot date",
+  "units": "apy in percent; apyPct* = change in percentage points"
+ }
+}

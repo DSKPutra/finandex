@@ -1,0 +1,1012 @@
+{
+ "rows_dropped_null_close": 4,
+ "rules": {
+  "extreme_up": 1.0,
+  "extreme_dn": -0.5,
+  "returns_basis": "Adj Close"
+ },
+ "tickers_insufficient_history": [
+  "EA"
+ ],
+ "tickers": {
+  "A": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AAPL": {
+   "extreme_moves": [
+    {
+     "date": "2000-09-29",
+     "ret": -0.518692133595964
+    }
+   ],
+   "insufficient_history": false
+  },
+  "ABBV": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ABT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ACN": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ADI": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ADM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ADP": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ADSK": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AEP": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AFL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AIG": {
+   "extreme_moves": [
+    {
+     "date": "2008-09-15",
+     "ret": -0.6079078486617697
+    }
+   ],
+   "insufficient_history": false
+  },
+  "AJG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ALL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AMAT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AMD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AME": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AMGN": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AMZN": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ANET": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AON": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "APA": {
+   "extreme_moves": [
+    {
+     "date": "2020-03-09",
+     "ret": -0.5386473995875369
+    }
+   ],
+   "insufficient_history": false
+  },
+  "APD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "APH": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AVGO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AXP": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "AZO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BA": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BAC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BAX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BBY": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BDX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BKNG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BKR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BLK": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BMY": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BRK-B": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "BSX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "C": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CAH": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CARR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CAT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CB": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CDNS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CEG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CFG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CHTR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CI": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CICC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CMCSA": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CME": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CMG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CNC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "COF": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "COO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "COP": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "COR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "COST": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CRM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CRWD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CSCO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CSX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CVS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "CVX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "D": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DDOG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DHR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DIS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DLTR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DOV": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DOW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DRI": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DUK": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DVN": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "DXCM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "EA": {
+   "extreme_moves": [],
+   "insufficient_history": true
+  },
+  "EBAY": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ECL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "EL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ELV": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "EMR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "EOG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "EQT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ETN": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "EW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "EXC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "EXPE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "FANG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "FAST": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "FCX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "FDX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "FITB": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "FOXA": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "FTNT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "GD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "GE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "GILD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "GIS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "GOOGL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "GS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "HAL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "HCA": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "HD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "HIG": {
+   "extreme_moves": [
+    {
+     "date": "2008-10-30",
+     "ret": -0.5156094526880332
+    },
+    {
+     "date": "2008-12-05",
+     "ret": 1.023577804304447
+    }
+   ],
+   "insufficient_history": false
+  },
+  "HLT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "HON": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "HSY": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "HUM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "IBM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ICE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "IDXX": {
+   "extreme_moves": [
+    {
+     "date": "1997-03-24",
+     "ret": -0.625
+    }
+   ],
+   "insufficient_history": false
+  },
+  "INTC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "IQV": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "IR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ISRG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ITW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "JCI": {
+   "extreme_moves": [
+    {
+     "date": "2007-07-02",
+     "ret": -0.5344618795443609
+    }
+   ],
+   "insufficient_history": false
+  },
+  "JNJ": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "JPM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "KEY": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "KLAC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "KMB": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "KMI": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "KO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "KR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "LIN": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "LLY": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "LMT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "LOW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "LRCX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "LVS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "LYV": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MA": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MAR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MCD": {
+   "extreme_moves": [
+    {
+     "date": "1968-05-21",
+     "ret": -0.5071939477408136
+    },
+    {
+     "date": "1969-06-13",
+     "ret": -0.500959363080147
+    }
+   ],
+   "insufficient_history": false
+  },
+  "MCHP": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MCK": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MCO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MDLZ": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MET": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "META": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MGM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MPC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MPWR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MRK": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MSFT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MSI": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MTD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "MU": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NEE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NEM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NFLX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NKE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NOC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NOW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NSC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NUE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "NVDA": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "OMC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ON": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ORCL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ORLY": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "OTIS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "OXY": {
+   "extreme_moves": [
+    {
+     "date": "2020-03-09",
+     "ret": -0.5201380779195486
+    }
+   ],
+   "insufficient_history": false
+  },
+  "PANW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PCAR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PEG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PEP": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PFE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PGR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PH": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PLTR": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PNC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PPG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PRU": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "PSX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "QCOM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "REGN": {
+   "extreme_moves": [
+    {
+     "date": "2003-03-31",
+     "ret": -0.5655690237218209
+    }
+   ],
+   "insufficient_history": false
+  },
+  "RMD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ROP": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ROST": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "RTX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SBUX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SCHW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SHW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SLB": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SNPS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SPGI": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SRE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "STE": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "STZ": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SYF": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SYK": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "SYY": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "T": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TDG": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TEL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TGT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TJX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TMO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TMUS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TROW": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TRV": {
+   "extreme_moves": [
+    {
+     "date": "1986-06-09",
+     "ret": -0.5207759678155313
+    }
+   ],
+   "insufficient_history": false
+  },
+  "TSLA": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TTWO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "TXN": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "UNH": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "UNP": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "UPS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "URI": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "USB": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "V": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "VLO": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "VRTX": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "VZ": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "WBD": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "WFC": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "WM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "WMB": {
+   "extreme_moves": [
+    {
+     "date": "2002-07-22",
+     "ret": -0.6104651602404854
+    },
+    {
+     "date": "2002-07-29",
+     "ret": 1.010099459603405
+    }
+   ],
+   "insufficient_history": false
+  },
+  "WMT": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "XEL": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "XOM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "YUM": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  },
+  "ZTS": {
+   "extreme_moves": [],
+   "insufficient_history": false
+  }
+ }
+}

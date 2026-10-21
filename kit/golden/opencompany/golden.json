@@ -1,0 +1,59 @@
+{
+ "rows": 100000,
+ "with_country": 66442,
+ "countries": 182,
+ "top10_countries": {
+  "United States": 22161,
+  "India": 6962,
+  "United Kingdom": 6636,
+  "Canada": 3114,
+  "Germany": 2417,
+  "China": 2250,
+  "Australia": 2008,
+  "France": 1675,
+  "Netherlands": 1052,
+  "Italy": 940
+ },
+ "share_us_of_known_country": 0.3335390265193703,
+ "status_counts": {
+  "Unfunded": 35322,
+  "Closed": 8497,
+  "Acquired": 7381,
+  "Private": 3909,
+  "Funded (stage not disclosed)": 3469,
+  "Public": 1749,
+  "Seed": 1613,
+  "Series A": 691,
+  "Series B": 289,
+  "Acqui-hired": 249,
+  "Late Stage": 121,
+  "Series C": 93,
+  "Early Stage": 63,
+  "Series D": 49,
+  "Series E": 11,
+  "Series F": 9,
+  "Series G": 2,
+  "Series H": 1
+ },
+ "funded_share": 0.08903,
+ "median_founded_year": 2013.0,
+ "share_founded_2015_plus_of_dated": 0.44950231014915193,
+ "top10_sectors": {
+  "Business Services": 16270,
+  "Consumer": 7049,
+  "Real Estate and Construction": 6648,
+  "Healthcare": 6132,
+  "Enterprise Applications": 6047,
+  "Financial Services": 4555,
+  "Retail": 4167,
+  "Consumer Goods": 3949,
+  "Food and Agriculture": 3865,
+  "Fintech": 3218
+ },
+ "indonesia_companies": 509,
+ "notes": {
+  "sample": "2% sample (100,000 of 4,863,273 companies); REPORT.md figures are on the FULL data",
+  "licence": "CC BY-NC 4.0 (Fliar Research) — non-commercial only",
+  "links": "fliar_profile_url carries UTM parameters; show as an attribution link, never auto-fetch"
+ }
+}

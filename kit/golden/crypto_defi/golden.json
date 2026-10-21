@@ -1,0 +1,265 @@
+{
+ "as_of": "2026-10-20",
+ "tvl": {
+  "rows": 3311,
+  "first_date": "2017-09-27",
+  "first_positive_date": "2018-02-12",
+  "latest_usd": 89236999991.0,
+  "ath_usd": 177493346508.0,
+  "ath_date": "2021-11-09",
+  "latest_pct_of_ath": 0.5027625077032276,
+  "ret_1Y": -0.40053521157327465,
+  "ret_YTD": -0.21248282246126238
+ },
+ "stablecoin_supply": {
+  "rows": 3248,
+  "first_date": "2017-11-29",
+  "latest_usd": 305489737013.93,
+  "ath_usd": 317092209746.0,
+  "ath_date": "2026-05-17",
+  "ret_1Y": -0.0018461166717971267
+ },
+ "stablecoin_to_tvl_ratio_latest": 3.423352836208525,
+ "dex": {
+  "rows": 4629,
+  "first_date": "2014-02-17",
+  "fees_null_rows": 1498,
+  "last_complete_month": "2026-09",
+  "last_complete_month_volume_usd": 318355614500.31,
+  "last_complete_month_fees_usd": 2538286299.59,
+  "max_month_volume": {
+   "month": "2025-10",
+   "usd": 588147637319.72
+  }
+ },
+ "chain_tvl_history": {
+  "rows": 34434,
+  "chains": 25
+ },
+ "chains_latest": {
+  "rows": 420,
+  "top8_share": {
+   "Ethereum": 0.5554902018227303,
+   "Base": 0.06919925127513998,
+   "BSC": 0.06638844781202194,
+   "Solana": 0.06608829011484588,
+   "Tron": 0.06190970610600743,
+   "Bitcoin": 0.049057499830967,
+   "Arbitrum": 0.01581005891458329,
+   "Robinhood Chain": 0.01272931122701915
+  }
+ },
+ "protocols_latest": {
+  "rows": 6452,
+  "cex_rows": 80,
+  "sum_tvl_excl_cex_usd": 275642498491.8176,
+  "double_counting_ratio_vs_headline": 3.088881277044472,
+  "top10_categories_usd": {
+   "Bridge": 60359646127.78536,
+   "Liquid Staking": 54892682968.91032,
+   "Lending": 51531234296.35111,
+   "Staking Pool": 14419604279.410421,
+   "Dexs": 14208838275.298845,
+   "Canonical Bridge": 10570500306.006777,
+   "Restaking": 9865288566.981823,
+   "Risk Curators": 9620601205.736792,
+   "Onchain Capital Allocator": 9378043331.123486,
+   "CDP": 7756825730.981773
+  },
+  "top10_protocols": [
+   {
+    "name": "Lido",
+    "category": "Liquid Staking",
+    "tvl_usd": 23347854973.07017
+   },
+   {
+    "name": "Aave V3",
+    "category": "Lending",
+    "tvl_usd": 16947327349.537275
+   },
+   {
+    "name": "LayerZero V2",
+    "category": "Bridge",
+    "tvl_usd": 13898575007.66067
+   },
+   {
+    "name": "SSV Network",
+    "category": "Staking Pool",
+    "tvl_usd": 12597182506.069004
+   },
+   {
+    "name": "Morpho Blue",
+    "category": "Lending",
+    "tvl_usd": 11115099903.1121
+   },
+   {
+    "name": "WBTC",
+    "category": "Bridge",
+    "tvl_usd": 9545776962.677635
+   },
+   {
+    "name": "Binance staked ETH",
+    "category": "Liquid Staking",
+    "tvl_usd": 9002592996.814161
+   },
+   {
+    "name": "Coinbase Bridge",
+    "category": "Bridge",
+    "tvl_usd": 7999708525.395411
+   },
+   {
+    "name": "Hyperliquid Bridge",
+    "category": "Bridge",
+    "tvl_usd": 6743273569.2027
+   },
+   {
+    "name": "EigenCloud",
+    "category": "Restaking",
+    "tvl_usd": 6214797238.16117
+   }
+  ]
+ },
+ "stablecoins_latest": {
+  "rows": 423,
+  "top6_usd_pegged": [
+   {
+    "symbol": "USDT",
+    "circulating": 183007319825.9244,
+    "share_of_total_supply": 0.5990620883528388
+   },
+   {
+    "symbol": "USDC",
+    "circulating": 72299481564.86806,
+    "share_of_total_supply": 0.23666746474553835
+   },
+   {
+    "symbol": "USDS",
+    "circulating": 6855042651.894354,
+    "share_of_total_supply": 0.02243951865257513
+   },
+   {
+    "symbol": "DAI",
+    "circulating": 4728940239.634557,
+    "share_of_total_supply": 0.015479866151506498
+   },
+   {
+    "symbol": "USDe",
+    "circulating": 4686714160.2760725,
+    "share_of_total_supply": 0.015341641935625365
+   },
+   {
+    "symbol": "USD1",
+    "circulating": 4024074950.260069,
+    "share_of_total_supply": 0.013172537282575144
+   }
+  ],
+  "peg_mechanism_counts": {
+   "crypto-backed": 249,
+   "fiat-backed": 146,
+   "algorithmic": 27,
+   "crytpo-backed": 1
+  }
+ },
+ "yield_pools_latest": {
+  "rows": 2721,
+  "stablecoin_pools": 976,
+  "stable_median_apy_pct": 4.344245,
+  "stable_p90_apy_pct": 9.998345,
+  "stable_pools_apy_gt5_with_reward_share": 0.46733668341708545
+ },
+ "parquet_snapshots": {
+  "chains_snapshots.parquet": {
+   "rows": 4838,
+   "columns": [
+    "snapshot_date",
+    "chain",
+    "tvl_usd",
+    "token_symbol",
+    "chain_id"
+   ],
+   "date_range": [
+    "2026-10-10",
+    "2026-10-20"
+   ],
+   "dates": 11
+  },
+  "protocols_snapshots.parquet": {
+   "rows": 74168,
+   "columns": [
+    "snapshot_date",
+    "protocol_id",
+    "name",
+    "slug",
+    "symbol",
+    "category",
+    "primary_chain",
+    "chains",
+    "n_chains",
+    "tvl_usd",
+    "change_1h_pct",
+    "change_1d_pct",
+    "change_7d_pct",
+    "mcap_usd",
+    "parent_protocol",
+    "listed_at"
+   ],
+   "date_range": [
+    "2026-10-10",
+    "2026-10-20"
+   ],
+   "dates": 11
+  },
+  "stablecoins_snapshots.parquet": {
+   "rows": 4688,
+   "columns": [
+    "snapshot_date",
+    "stablecoin_id",
+    "name",
+    "symbol",
+    "peg_type",
+    "peg_mechanism",
+    "circulating",
+    "circulating_prev_day",
+    "circulating_prev_week",
+    "circulating_prev_month",
+    "price",
+    "n_chains"
+   ],
+   "date_range": [
+    "2026-10-10",
+    "2026-10-20"
+   ],
+   "dates": 11
+  },
+  "yield_pools_snapshots.parquet": {
+   "rows": 30287,
+   "columns": [
+    "snapshot_date",
+    "pool_id",
+    "chain",
+    "project",
+    "symbol",
+    "pool_meta",
+    "tvl_usd",
+    "apy",
+    "apy_base",
+    "apy_reward",
+    "apy_mean_30d",
+    "stablecoin",
+    "il_risk",
+    "exposure",
+    "volume_usd_1d"
+   ],
+   "date_range": [
+    "2026-10-10",
+    "2026-10-20"
+   ],
+   "dates": 11
+  }
+ },
+ "notes": {
+  "double_counting": "Sum of protocol TVLs (excl. CEX) double-counts; use only to compare categories, never as a market total",
+  "parquet": "*_snapshots.parquet hold historical daily snapshots of the *_latest tables; read with a parquet reader (e.g. hyparquet in Node)",
+  "units": "apy fields are in PERCENT (4.34 = 4.34%)"
+ }
+}

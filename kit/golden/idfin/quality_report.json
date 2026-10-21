@@ -1,0 +1,46 @@
+{
+ "OIL": {
+  "carried_forward_rows_excluded": 164,
+  "spikes_removed": [],
+  "nonpositive_values": [
+   "2020-04-20"
+  ]
+ },
+ "GOLD": {
+  "carried_forward_rows_excluded": 164,
+  "spikes_removed": [],
+  "nonpositive_values": []
+ },
+ "USDIDR": {
+  "carried_forward_rows_excluded": 102,
+  "spikes_removed": [
+   "2010-11-01",
+   "2012-02-07",
+   "2013-10-14",
+   "2013-10-28",
+   "2013-11-11",
+   "2013-11-18",
+   "2013-11-25",
+   "2013-11-29",
+   "2013-12-06",
+   "2013-12-09",
+   "2024-12-26"
+  ],
+  "nonpositive_values": []
+ },
+ "SP500": {
+  "carried_forward_rows_excluded": 151,
+  "spikes_removed": [],
+  "nonpositive_values": []
+ },
+ "IHSG": {
+  "carried_forward_rows_excluded": 300,
+  "spikes_removed": [],
+  "nonpositive_values": []
+ },
+ "VIX": {
+  "carried_forward_rows_excluded": 168,
+  "spikes_removed": [],
+  "nonpositive_values": []
+ }
+}

@@ -1,0 +1,6267 @@
+{
+ "systemic_dates": [
+  "1990-03-26",
+  "1999-11-16",
+  "1999-11-17",
+  "2002-08-15",
+  "2002-09-16",
+  "2005-02-25",
+  "2011-02-17"
+ ],
+ "rules": {
+  "spike_up": 1.0,
+  "spike_dn": -0.5,
+  "spike_roundtrip": [
+   0.67,
+   1.5
+  ],
+  "systemic_abs_r": 0.4,
+  "systemic_min_n": 5,
+  "systemic_min_share": 0.02,
+  "extreme_up": 1.0,
+  "extreme_dn": -0.5
+ },
+ "totals": {
+  "spikes_removed": 269,
+  "systemic_break_rows": 90,
+  "tickers_with_reliable_from": 68,
+  "extreme_moves": 296
+ },
+ "tickers": {
+  "AAL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5277,
+   "rows_in_analysis_window": 5277,
+   "insufficient_history": false
+  },
+  "AAOI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3264,
+   "rows_in_analysis_window": 3264,
+   "insufficient_history": false
+  },
+  "AAON": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8497,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "AAPL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2000-09-29",
+     "ret": -0.5184751772164848
+    }
+   ],
+   "rows_raw_after_spike_removal": 11535,
+   "rows_in_analysis_window": 11535,
+   "insufficient_history": false
+  },
+  "ABNB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1449,
+   "rows_in_analysis_window": 1449,
+   "insufficient_history": false
+  },
+  "ABVX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2025-07-23",
+     "ret": 5.859999999999999
+    }
+   ],
+   "rows_raw_after_spike_removal": 730,
+   "rows_in_analysis_window": 730,
+   "insufficient_history": false
+  },
+  "ACGL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7804,
+   "rows_in_analysis_window": 7804,
+   "insufficient_history": false
+  },
+  "ACIW": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7944,
+   "rows_in_analysis_window": 7944,
+   "insufficient_history": false
+  },
+  "ACT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1257,
+   "rows_in_analysis_window": 1257,
+   "insufficient_history": false
+  },
+  "ADBE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10102,
+   "rows_in_analysis_window": 10102,
+   "insufficient_history": false
+  },
+  "ADI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 11722,
+   "insufficient_history": false
+  },
+  "ADP": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "ADSK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10386,
+   "rows_in_analysis_window": 10386,
+   "insufficient_history": false
+  },
+  "AEIS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7758,
+   "rows_in_analysis_window": 7758,
+   "insufficient_history": false
+  },
+  "AEP": {
+   "spikes_removed": [
+    "1970-11-16"
+   ],
+   "systemic_breaks": [
+    "1999-11-16",
+    "1999-11-17"
+   ],
+   "reliable_from": "1999-11-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 16286,
+   "rows_in_analysis_window": 6749,
+   "insufficient_history": false
+  },
+  "AFRM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1427,
+   "rows_in_analysis_window": 1427,
+   "insufficient_history": false
+  },
+  "AGNC": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4615,
+   "rows_in_analysis_window": 4615,
+   "insufficient_history": false
+  },
+  "AGNCM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1896,
+   "rows_in_analysis_window": 1896,
+   "insufficient_history": false
+  },
+  "AKAM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6762,
+   "rows_in_analysis_window": 6762,
+   "insufficient_history": false
+  },
+  "ALAB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 627,
+   "rows_in_analysis_window": 627,
+   "insufficient_history": false
+  },
+  "ALGM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1478,
+   "rows_in_analysis_window": 1478,
+   "insufficient_history": false
+  },
+  "ALGN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6447,
+   "rows_in_analysis_window": 6447,
+   "insufficient_history": false
+  },
+  "ALKS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2002-07-01",
+     "ret": -0.6783260462211118
+    }
+   ],
+   "rows_raw_after_spike_removal": 8858,
+   "rows_in_analysis_window": 8858,
+   "insufficient_history": false
+  },
+  "ALNY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5610,
+   "rows_in_analysis_window": 5610,
+   "insufficient_history": false
+  },
+  "AMAT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11723,
+   "rows_in_analysis_window": 11723,
+   "insufficient_history": false
+  },
+  "AMD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 11722,
+   "insufficient_history": false
+  },
+  "AMGN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10900,
+   "rows_in_analysis_window": 10900,
+   "insufficient_history": false
+  },
+  "AMKR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7140,
+   "rows_in_analysis_window": 7140,
+   "insufficient_history": false
+  },
+  "AMRX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2009-01-14",
+     "ret": -0.718785151856018
+    }
+   ],
+   "rows_raw_after_spike_removal": 5253,
+   "rows_in_analysis_window": 5253,
+   "insufficient_history": false
+  },
+  "AMZN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7382,
+   "rows_in_analysis_window": 7382,
+   "insufficient_history": false
+  },
+  "APA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2020-03-09",
+     "ret": -0.5386470636398992
+    }
+   ],
+   "rows_raw_after_spike_removal": 11934,
+   "rows_in_analysis_window": 11934,
+   "insufficient_history": false
+  },
+  "APLD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2022-06-13",
+     "ret": -0.5255474452554745
+    },
+    {
+     "date": "2022-07-19",
+     "ret": 1.0
+    }
+   ],
+   "rows_raw_after_spike_removal": 1112,
+   "rows_in_analysis_window": 1112,
+   "insufficient_history": false
+  },
+  "APP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1364,
+   "rows_in_analysis_window": 1364,
+   "insufficient_history": false
+  },
+  "APPF": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2824,
+   "rows_in_analysis_window": 2824,
+   "insufficient_history": false
+  },
+  "ARCC": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5523,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "ARGX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2347,
+   "rows_in_analysis_window": 2347,
+   "insufficient_history": false
+  },
+  "ARM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 756,
+   "rows_in_analysis_window": 756,
+   "insufficient_history": false
+  },
+  "ARWR": {
+   "spikes_removed": [
+    "1995-01-09",
+    "1997-05-05",
+    "1997-05-06"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1994-05-06",
+     "ret": -0.6
+    },
+    {
+     "date": "1994-05-13",
+     "ret": 2.0
+    },
+    {
+     "date": "1994-06-22",
+     "ret": -0.5
+    },
+    {
+     "date": "1994-06-23",
+     "ret": 1.0
+    },
+    {
+     "date": "1994-08-11",
+     "ret": -0.6
+    },
+    {
+     "date": "1994-08-12",
+     "ret": 1.0
+    },
+    {
+     "date": "1994-08-16",
+     "ret": -0.5
+    },
+    {
+     "date": "1994-09-09",
+     "ret": 1.0
+    },
+    {
+     "date": "1994-09-21",
+     "ret": 1.436
+    },
+    {
+     "date": "1994-11-14",
+     "ret": -0.5
+    },
+    {
+     "date": "1994-12-21",
+     "ret": -0.5
+    },
+    {
+     "date": "1995-01-16",
+     "ret": 1.9841269841269842
+    },
+    {
+     "date": "1995-01-27",
+     "ret": -0.6648936170212766
+    },
+    {
+     "date": "1995-03-02",
+     "ret": 1.0
+    },
+    {
+     "date": "1995-03-22",
+     "ret": 1.0
+    },
+    {
+     "date": "1995-06-09",
+     "ret": 1.0
+    },
+    {
+     "date": "1995-06-27",
+     "ret": -0.5
+    },
+    {
+     "date": "1995-08-28",
+     "ret": 1.6595744680851063
+    },
+    {
+     "date": "1995-11-20",
+     "ret": 2.329787234042553
+    },
+    {
+     "date": "1995-12-26",
+     "ret": -0.5
+    },
+    {
+     "date": "1995-12-29",
+     "ret": -0.6
+    },
+    {
+     "date": "1996-01-03",
+     "ret": 1.2519999999999998
+    },
+    {
+     "date": "1996-08-20",
+     "ret": 1.504
+    },
+    {
+     "date": "1996-09-06",
+     "ret": 1.329787234042553
+    },
+    {
+     "date": "1997-05-07",
+     "ret": 1.010752688172043
+    },
+    {
+     "date": "1997-07-31",
+     "ret": 1.2580645161290325
+    },
+    {
+     "date": "1997-08-19",
+     "ret": -0.5571428571428572
+    },
+    {
+     "date": "1997-08-25",
+     "ret": 1.2580645161290325
+    },
+    {
+     "date": "1997-12-18",
+     "ret": -0.5
+    },
+    {
+     "date": "1997-12-19",
+     "ret": 1.0
+    },
+    {
+     "date": "2000-01-19",
+     "ret": 1.727272727272727
+    },
+    {
+     "date": "2000-03-03",
+     "ret": 1.0
+    },
+    {
+     "date": "2000-03-10",
+     "ret": -0.5
+    },
+    {
+     "date": "2000-03-14",
+     "ret": 1.0
+    },
+    {
+     "date": "2001-05-24",
+     "ret": 1.0
+    },
+    {
+     "date": "2002-03-26",
+     "ret": -0.5833333333333333
+    },
+    {
+     "date": "2002-03-28",
+     "ret": 2.0
+    },
+    {
+     "date": "2002-04-26",
+     "ret": 3.0
+    },
+    {
+     "date": "2002-05-24",
+     "ret": -0.875
+    },
+    {
+     "date": "2002-05-30",
+     "ret": 3.0
+    },
+    {
+     "date": "2002-06-11",
+     "ret": -0.5
+    },
+    {
+     "date": "2002-06-12",
+     "ret": 1.0
+    },
+    {
+     "date": "2002-08-28",
+     "ret": -0.5
+    },
+    {
+     "date": "2002-08-30",
+     "ret": 5.0
+    },
+    {
+     "date": "2002-09-19",
+     "ret": -0.8333333333333334
+    },
+    {
+     "date": "2002-10-02",
+     "ret": 3.0
+    },
+    {
+     "date": "2002-10-10",
+     "ret": -0.75
+    },
+    {
+     "date": "2002-10-23",
+     "ret": 1.0
+    },
+    {
+     "date": "2003-04-22",
+     "ret": 2.0
+    },
+    {
+     "date": "2003-10-09",
+     "ret": 1.2222222222222223
+    },
+    {
+     "date": "2003-10-10",
+     "ret": -0.5
+    },
+    {
+     "date": "2003-10-13",
+     "ret": 1.5
+    },
+    {
+     "date": "2003-10-27",
+     "ret": -0.6000000000000001
+    },
+    {
+     "date": "2003-12-05",
+     "ret": 1.7142857142857144
+    },
+    {
+     "date": "2003-12-10",
+     "ret": 1.2222222222222223
+    },
+    {
+     "date": "2016-11-30",
+     "ret": -0.6719817767653758
+    }
+   ],
+   "rows_raw_after_spike_removal": 8241,
+   "rows_in_analysis_window": 8241,
+   "insufficient_history": false
+  },
+  "ARXS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 108,
+   "rows_in_analysis_window": 108,
+   "insufficient_history": false
+  },
+  "ASML": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7931,
+   "rows_in_analysis_window": 7931,
+   "insufficient_history": false
+  },
+  "ASND": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2928,
+   "rows_in_analysis_window": 2928,
+   "insufficient_history": false
+  },
+  "ASTS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1728,
+   "rows_in_analysis_window": 1728,
+   "insufficient_history": false
+  },
+  "AUGO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 297,
+   "rows_in_analysis_window": 297,
+   "insufficient_history": false
+  },
+  "AUR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1347,
+   "rows_in_analysis_window": 1347,
+   "insufficient_history": false
+  },
+  "AVAV": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4947,
+   "rows_in_analysis_window": 4947,
+   "insufficient_history": false
+  },
+  "AVGO": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4306,
+   "rows_in_analysis_window": 4306,
+   "insufficient_history": false
+  },
+  "AVT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13458,
+   "rows_in_analysis_window": 13458,
+   "insufficient_history": false
+  },
+  "AXON": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6350,
+   "rows_in_analysis_window": 6350,
+   "insufficient_history": false
+  },
+  "AXSM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2019-01-07",
+     "ret": 1.6121673003802282
+    }
+   ],
+   "rows_raw_after_spike_removal": 2722,
+   "rows_in_analysis_window": 2722,
+   "insufficient_history": false
+  },
+  "BBIO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2021-12-27",
+     "ret": -0.7198424421467258
+    }
+   ],
+   "rows_raw_after_spike_removal": 1817,
+   "rows_in_analysis_window": 1817,
+   "insufficient_history": false
+  },
+  "BCPC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10152,
+   "rows_in_analysis_window": 10152,
+   "insufficient_history": false
+  },
+  "BGC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5424,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "BIDU": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2005-08-05",
+     "ret": 3.5370370370370363
+    }
+   ],
+   "rows_raw_after_spike_removal": 5314,
+   "rows_in_analysis_window": 5314,
+   "insufficient_history": false
+  },
+  "BIIB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8813,
+   "rows_in_analysis_window": 8813,
+   "insufficient_history": false
+  },
+  "BILI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2131,
+   "rows_in_analysis_window": 2131,
+   "insufficient_history": false
+  },
+  "BKNG": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6909,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "BKR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9939,
+   "rows_in_analysis_window": 9939,
+   "insufficient_history": false
+  },
+  "BLLN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 217,
+   "rows_in_analysis_window": 217,
+   "insufficient_history": false
+  },
+  "BLTE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1101,
+   "rows_in_analysis_window": 1101,
+   "insufficient_history": false
+  },
+  "BMRN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6830,
+   "rows_in_analysis_window": 6830,
+   "insufficient_history": false
+  },
+  "BNTX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1744,
+   "rows_in_analysis_window": 1744,
+   "insufficient_history": false
+  },
+  "BOKF": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1991-10-29",
+     "ret": -0.7501881113619262
+    },
+    {
+     "date": "1991-10-30",
+     "ret": 1.0
+    },
+    {
+     "date": "1991-11-12",
+     "ret": -0.5011286681715575
+    }
+   ],
+   "rows_raw_after_spike_removal": 8822,
+   "rows_in_analysis_window": 8822,
+   "insufficient_history": false
+  },
+  "BPOP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2009-01-22",
+     "ret": -0.5059929820465869
+    }
+   ],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 11722,
+   "insufficient_history": false
+  },
+  "BRKR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6569,
+   "rows_in_analysis_window": 6569,
+   "insufficient_history": false
+  },
+  "BSP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 55,
+   "rows_in_analysis_window": 55,
+   "insufficient_history": true
+  },
+  "BSY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1504,
+   "rows_in_analysis_window": 1504,
+   "insufficient_history": false
+  },
+  "BTSG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 664,
+   "rows_in_analysis_window": 664,
+   "insufficient_history": false
+  },
+  "BULL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2025-04-14",
+     "ret": 3.747169811320755
+    }
+   ],
+   "rows_raw_after_spike_removal": 361,
+   "rows_in_analysis_window": 361,
+   "insufficient_history": false
+  },
+  "BZ": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1324,
+   "rows_in_analysis_window": 1324,
+   "insufficient_history": false
+  },
+  "CACC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8632,
+   "rows_in_analysis_window": 8632,
+   "insufficient_history": false
+  },
+  "CAE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6075,
+   "rows_in_analysis_window": 6075,
+   "insufficient_history": false
+  },
+  "CAI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 315,
+   "rows_in_analysis_window": 315,
+   "insufficient_history": false
+  },
+  "CAKE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8559,
+   "rows_in_analysis_window": 8559,
+   "insufficient_history": false
+  },
+  "CAMT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6574,
+   "rows_in_analysis_window": 6574,
+   "insufficient_history": false
+  },
+  "CART": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 753,
+   "rows_in_analysis_window": 753,
+   "insufficient_history": false
+  },
+  "CASY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10812,
+   "rows_in_analysis_window": 10812,
+   "insufficient_history": false
+  },
+  "CBC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 207,
+   "rows_in_analysis_window": 207,
+   "insufficient_history": false
+  },
+  "CBRS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 88,
+   "rows_in_analysis_window": 88,
+   "insufficient_history": false
+  },
+  "CBSH": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11721,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "CCEP": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16",
+    "1999-11-17"
+   ],
+   "reliable_from": "1999-11-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10030,
+   "rows_in_analysis_window": 6749,
+   "insufficient_history": false
+  },
+  "CDNS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9894,
+   "rows_in_analysis_window": 9894,
+   "insufficient_history": false
+  },
+  "CDW": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3327,
+   "rows_in_analysis_window": 3327,
+   "insufficient_history": false
+  },
+  "CEG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1171,
+   "rows_in_analysis_window": 1171,
+   "insufficient_history": false
+  },
+  "CELH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2008-10-20",
+     "ret": 1.3333333333333335
+    },
+    {
+     "date": "2017-05-24",
+     "ret": -0.6575063613231552
+    }
+   ],
+   "rows_raw_after_spike_removal": 4947,
+   "rows_in_analysis_window": 4947,
+   "insufficient_history": false
+  },
+  "CG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3615,
+   "rows_in_analysis_window": 3615,
+   "insufficient_history": false
+  },
+  "CGNX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9360,
+   "rows_in_analysis_window": 9360,
+   "insufficient_history": false
+  },
+  "CGON": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 665,
+   "rows_in_analysis_window": 665,
+   "insufficient_history": false
+  },
+  "CHDN": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8426,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "CHKP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7604,
+   "rows_in_analysis_window": 7604,
+   "insufficient_history": false
+  },
+  "CHRD": {
+   "spikes_removed": [
+    "2020-03-13"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2020-03-09",
+     "ret": -0.6162790697674418
+    },
+    {
+     "date": "2020-04-23",
+     "ret": 1.3103448275862073
+    },
+    {
+     "date": "2020-06-05",
+     "ret": 1.25
+    },
+    {
+     "date": "2020-11-20",
+     "ret": 257.33333333333337
+    }
+   ],
+   "rows_raw_after_spike_removal": 4088,
+   "rows_in_analysis_window": 4088,
+   "insufficient_history": false
+  },
+  "CHRW": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7275,
+   "rows_in_analysis_window": 7275,
+   "insufficient_history": false
+  },
+  "CHTR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4217,
+   "rows_in_analysis_window": 4217,
+   "insufficient_history": false
+  },
+  "CHYM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 319,
+   "rows_in_analysis_window": 319,
+   "insufficient_history": false
+  },
+  "CIFR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1485,
+   "rows_in_analysis_window": 1485,
+   "insufficient_history": false
+  },
+  "CIGI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7968,
+   "rows_in_analysis_window": 7968,
+   "insufficient_history": false
+  },
+  "CINF": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1990-03-26",
+    "1999-11-16",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "reliable_from": "2002-09-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 6041,
+   "insufficient_history": false
+  },
+  "CLMT": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5195,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "CMCSA": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "reliable_from": "2002-09-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 6041,
+   "insufficient_history": false
+  },
+  "CME": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5983,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "COGT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2020-07-06",
+     "ret": 3.9460431654676267
+    },
+    {
+     "date": "2023-12-11",
+     "ret": -0.5300925925925927
+    },
+    {
+     "date": "2025-11-10",
+     "ret": 1.1902834008097165
+    }
+   ],
+   "rows_raw_after_spike_removal": 2130,
+   "rows_in_analysis_window": 2130,
+   "insufficient_history": false
+  },
+  "COIN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1365,
+   "rows_in_analysis_window": 1365,
+   "insufficient_history": false
+  },
+  "COKE": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13507,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "COLB": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8625,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "COO": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11000,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "CORT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2006-08-25",
+     "ret": -0.56
+    },
+    {
+     "date": "2014-05-07",
+     "ret": -0.5049751243781094
+    },
+    {
+     "date": "2025-03-31",
+     "ret": 1.0907926047958996
+    },
+    {
+     "date": "2025-12-31",
+     "ret": -0.504238193603533
+    }
+   ],
+   "rows_raw_after_spike_removal": 5644,
+   "rows_in_analysis_window": 5644,
+   "insufficient_history": false
+  },
+  "CORZ": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 666,
+   "rows_in_analysis_window": 666,
+   "insufficient_history": false
+  },
+  "COST": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10127,
+   "rows_in_analysis_window": 10127,
+   "insufficient_history": false
+  },
+  "CPB": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13508,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "CPRT": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2005-02-25",
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8181,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "CRDO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1165,
+   "rows_in_analysis_window": 1165,
+   "insufficient_history": false
+  },
+  "CROX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5186,
+   "rows_in_analysis_window": 5186,
+   "insufficient_history": false
+  },
+  "CRSP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2491,
+   "rows_in_analysis_window": 2491,
+   "insufficient_history": false
+  },
+  "CRUS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9388,
+   "rows_in_analysis_window": 9388,
+   "insufficient_history": false
+  },
+  "CRWD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1828,
+   "rows_in_analysis_window": 1828,
+   "insufficient_history": false
+  },
+  "CRWV": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 371,
+   "rows_in_analysis_window": 371,
+   "insufficient_history": false
+  },
+  "CSCO": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9213,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "CSGP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7098,
+   "rows_in_analysis_window": 7098,
+   "insufficient_history": false
+  },
+  "CSX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11561,
+   "rows_in_analysis_window": 11561,
+   "insufficient_history": false
+  },
+  "CTAS": {
+   "spikes_removed": [
+    "1999-11-16",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "systemic_breaks": [
+    "1990-03-26"
+   ],
+   "reliable_from": "1990-03-26",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10852,
+   "rows_in_analysis_window": 9185,
+   "insufficient_history": false
+  },
+  "CTSH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7106,
+   "rows_in_analysis_window": 7106,
+   "insufficient_history": false
+  },
+  "CVLT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5029,
+   "rows_in_analysis_window": 5029,
+   "insufficient_history": false
+  },
+  "CWST": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2000-11-17",
+     "ret": -0.5
+    }
+   ],
+   "rows_raw_after_spike_removal": 7266,
+   "rows_in_analysis_window": 7266,
+   "insufficient_history": false
+  },
+  "CYTK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2014-04-25",
+     "ret": -0.6466512702078522
+    }
+   ],
+   "rows_raw_after_spike_removal": 5632,
+   "rows_in_analysis_window": 5632,
+   "insufficient_history": false
+  },
+  "CZR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3016,
+   "rows_in_analysis_window": 3016,
+   "insufficient_history": false
+  },
+  "DASH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1450,
+   "rows_in_analysis_window": 1450,
+   "insufficient_history": false
+  },
+  "DBX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2134,
+   "rows_in_analysis_window": 2134,
+   "insufficient_history": false
+  },
+  "DDOG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1759,
+   "rows_in_analysis_window": 1759,
+   "insufficient_history": false
+  },
+  "DFTX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1355,
+   "rows_in_analysis_window": 1355,
+   "insufficient_history": false
+  },
+  "DKNG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1798,
+   "rows_in_analysis_window": 1798,
+   "insufficient_history": false
+  },
+  "DLTR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7937,
+   "rows_in_analysis_window": 7937,
+   "insufficient_history": false
+  },
+  "DNTH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2022-12-20",
+     "ret": -0.5271084337349397
+    }
+   ],
+   "rows_raw_after_spike_removal": 2072,
+   "rows_in_analysis_window": 2072,
+   "insufficient_history": false
+  },
+  "DOCU": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2110,
+   "rows_in_analysis_window": 2110,
+   "insufficient_history": false
+  },
+  "DOX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7106,
+   "rows_in_analysis_window": 7106,
+   "insufficient_history": false
+  },
+  "DPZ": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5583,
+   "rows_in_analysis_window": 5425,
+   "insufficient_history": false
+  },
+  "DRS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1990-10-23",
+     "ret": -0.5999206191704703
+    },
+    {
+     "date": "1990-10-24",
+     "ret": 2.90625
+    },
+    {
+     "date": "2014-09-08",
+     "ret": 1.369047619047619
+    }
+   ],
+   "rows_raw_after_spike_removal": 10389,
+   "rows_in_analysis_window": 10389,
+   "insufficient_history": false
+  },
+  "DSGX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6954,
+   "rows_in_analysis_window": 6954,
+   "insufficient_history": false
+  },
+  "DUOL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1292,
+   "rows_in_analysis_window": 1292,
+   "insufficient_history": false
+  },
+  "DXCM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5393,
+   "rows_in_analysis_window": 5393,
+   "insufficient_history": false
+  },
+  "EBAY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7039,
+   "rows_in_analysis_window": 7039,
+   "insufficient_history": false
+  },
+  "EBC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1488,
+   "rows_in_analysis_window": 1488,
+   "insufficient_history": false
+  },
+  "ECHO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4708,
+   "rows_in_analysis_window": 4708,
+   "insufficient_history": false
+  },
+  "ENLT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2023-02-10",
+     "ret": 5.826923076923077
+    }
+   ],
+   "rows_raw_after_spike_removal": 931,
+   "rows_in_analysis_window": 931,
+   "insufficient_history": false
+  },
+  "ENPH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3638,
+   "rows_in_analysis_window": 3638,
+   "insufficient_history": false
+  },
+  "ENSG": {
+   "spikes_removed": [
+    "2011-03-22"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4743,
+   "rows_in_analysis_window": 4743,
+   "insufficient_history": false
+  },
+  "ENTG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6587,
+   "rows_in_analysis_window": 6587,
+   "insufficient_history": false
+  },
+  "EQIX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6564,
+   "rows_in_analysis_window": 6564,
+   "insufficient_history": false
+  },
+  "ERAS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1300,
+   "rows_in_analysis_window": 1300,
+   "insufficient_history": false
+  },
+  "ERIC": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11359,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "ERIE": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7792,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "ESLT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7498,
+   "rows_in_analysis_window": 7498,
+   "insufficient_history": false
+  },
+  "EVRG": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13508,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "EWBC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6949,
+   "rows_in_analysis_window": 6949,
+   "insufficient_history": false
+  },
+  "EWTX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1377,
+   "rows_in_analysis_window": 1377,
+   "insufficient_history": false
+  },
+  "EXC": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16",
+    "1999-11-17",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "reliable_from": "2002-09-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13459,
+   "rows_in_analysis_window": 6041,
+   "insufficient_history": false
+  },
+  "EXE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1407,
+   "rows_in_analysis_window": 1407,
+   "insufficient_history": false
+  },
+  "EXEL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2014-09-02",
+     "ret": -0.5531400966183575
+    }
+   ],
+   "rows_raw_after_spike_removal": 6645,
+   "rows_in_analysis_window": 6645,
+   "insufficient_history": false
+  },
+  "EXLS": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5008,
+   "rows_in_analysis_window": 5008,
+   "insufficient_history": false
+  },
+  "EXPE": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5324,
+   "rows_in_analysis_window": 5324,
+   "insufficient_history": false
+  },
+  "FANG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3502,
+   "rows_in_analysis_window": 3502,
+   "insufficient_history": false
+  },
+  "FAST": {
+   "spikes_removed": [
+    "1991-07-05",
+    "1999-11-16",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "systemic_breaks": [
+    "1990-03-26"
+   ],
+   "reliable_from": "1990-03-26",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9840,
+   "rows_in_analysis_window": 9184,
+   "insufficient_history": false
+  },
+  "FCFS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8883,
+   "rows_in_analysis_window": 8883,
+   "insufficient_history": false
+  },
+  "FCNCA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10053,
+   "rows_in_analysis_window": 10053,
+   "insufficient_history": false
+  },
+  "FER": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 592,
+   "rows_in_analysis_window": 592,
+   "insufficient_history": false
+  },
+  "FFIV": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6865,
+   "rows_in_analysis_window": 6865,
+   "insufficient_history": false
+  },
+  "FIGR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 257,
+   "rows_in_analysis_window": 257,
+   "insufficient_history": false
+  },
+  "FISV": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10072,
+   "rows_in_analysis_window": 10072,
+   "insufficient_history": false
+  },
+  "FIVE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3562,
+   "rows_in_analysis_window": 3562,
+   "insufficient_history": false
+  },
+  "FLEX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8180,
+   "rows_in_analysis_window": 8180,
+   "insufficient_history": false
+  },
+  "FORM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5855,
+   "rows_in_analysis_window": 5855,
+   "insufficient_history": false
+  },
+  "FOX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1891,
+   "rows_in_analysis_window": 1891,
+   "insufficient_history": false
+  },
+  "FOXA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1892,
+   "rows_in_analysis_window": 1892,
+   "insufficient_history": false
+  },
+  "FRHC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2165,
+   "rows_in_analysis_window": 2165,
+   "insufficient_history": false
+  },
+  "FROG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1509,
+   "rows_in_analysis_window": 1509,
+   "insufficient_history": false
+  },
+  "FSLR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4989,
+   "rows_in_analysis_window": 4989,
+   "insufficient_history": false
+  },
+  "FSV": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2842,
+   "rows_in_analysis_window": 2842,
+   "insufficient_history": false
+  },
+  "FTAI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2854,
+   "rows_in_analysis_window": 2854,
+   "insufficient_history": false
+  },
+  "FTDR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2014,
+   "rows_in_analysis_window": 2014,
+   "insufficient_history": false
+  },
+  "FTNT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4234,
+   "rows_in_analysis_window": 4234,
+   "insufficient_history": false
+  },
+  "FUTU": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1894,
+   "rows_in_analysis_window": 1894,
+   "insufficient_history": false
+  },
+  "FWONA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2016-04-18",
+     "ret": -0.5128008192524321
+    }
+   ],
+   "rows_raw_after_spike_removal": 5119,
+   "rows_in_analysis_window": 5119,
+   "insufficient_history": false
+  },
+  "FWONK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2016-04-18",
+     "ret": -0.525614218504966
+    }
+   ],
+   "rows_raw_after_spike_removal": 3054,
+   "rows_in_analysis_window": 3054,
+   "insufficient_history": false
+  },
+  "GDS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2482,
+   "rows_in_analysis_window": 2482,
+   "insufficient_history": false
+  },
+  "GEHC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 942,
+   "rows_in_analysis_window": 942,
+   "insufficient_history": false
+  },
+  "GEN": {
+   "spikes_removed": [
+    "1999-11-16"
+   ],
+   "systemic_breaks": [
+    "1990-03-26"
+   ],
+   "reliable_from": "1990-03-26",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9377,
+   "rows_in_analysis_window": 9187,
+   "insufficient_history": false
+  },
+  "GFS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1227,
+   "rows_in_analysis_window": 1227,
+   "insufficient_history": false
+  },
+  "GGAL": {
+   "spikes_removed": [
+    "2002-08-27"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2019-08-12",
+     "ret": -0.5611714128319478
+    }
+   ],
+   "rows_raw_after_spike_removal": 6576,
+   "rows_in_analysis_window": 6576,
+   "insufficient_history": false
+  },
+  "GH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1998,
+   "rows_in_analysis_window": 1998,
+   "insufficient_history": false
+  },
+  "GILD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8726,
+   "rows_in_analysis_window": 8726,
+   "insufficient_history": false
+  },
+  "GLBE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1345,
+   "rows_in_analysis_window": 1345,
+   "insufficient_history": false
+  },
+  "GLNG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5833,
+   "rows_in_analysis_window": 5833,
+   "insufficient_history": false
+  },
+  "GLPI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2013-11-07",
+     "ret": -0.6105565031982942
+    }
+   ],
+   "rows_raw_after_spike_removal": 3252,
+   "rows_in_analysis_window": 3252,
+   "insufficient_history": false
+  },
+  "GLXY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 336,
+   "rows_in_analysis_window": 336,
+   "insufficient_history": false
+  },
+  "GMAB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4353,
+   "rows_in_analysis_window": 4353,
+   "insufficient_history": false
+  },
+  "GNTX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11275,
+   "rows_in_analysis_window": 11275,
+   "insufficient_history": false
+  },
+  "GOOG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3139,
+   "rows_in_analysis_window": 3139,
+   "insufficient_history": false
+  },
+  "GOOGL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5556,
+   "rows_in_analysis_window": 5556,
+   "insufficient_history": false
+  },
+  "GRAB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1456,
+   "rows_in_analysis_window": 1456,
+   "insufficient_history": false
+  },
+  "GRFS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3847,
+   "rows_in_analysis_window": 3847,
+   "insufficient_history": false
+  },
+  "GSAT": {
+   "spikes_removed": [
+    "2025-02-11"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2008-12-10",
+     "ret": 1.043478260869565
+    },
+    {
+     "date": "2016-06-03",
+     "ret": -0.5484688995215311
+    }
+   ],
+   "rows_raw_after_spike_removal": 4998,
+   "rows_in_analysis_window": 4998,
+   "insufficient_history": false
+  },
+  "GTLB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1237,
+   "rows_in_analysis_window": 1237,
+   "insufficient_history": false
+  },
+  "GTX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2012,
+   "rows_in_analysis_window": 2012,
+   "insufficient_history": false
+  },
+  "HALO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5664,
+   "rows_in_analysis_window": 5664,
+   "insufficient_history": false
+  },
+  "HAS": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "HBAN": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1990-03-26",
+    "1999-11-16",
+    "1999-11-17"
+   ],
+   "reliable_from": "1999-11-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 6749,
+   "insufficient_history": false
+  },
+  "HLNE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2402,
+   "rows_in_analysis_window": 2402,
+   "insufficient_history": false
+  },
+  "HON": {
+   "spikes_removed": [
+    "1970-11-16"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1970-01-02",
+     "ret": -0.7647457364341086
+    },
+    {
+     "date": "1982-09-23",
+     "ret": 1.4150272235469514
+    },
+    {
+     "date": "1982-09-27",
+     "ret": -0.6182851985559566
+    }
+   ],
+   "rows_raw_after_spike_removal": 16286,
+   "rows_in_analysis_window": 16286,
+   "insufficient_history": false
+  },
+  "HONA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 67,
+   "rows_in_analysis_window": 67,
+   "insufficient_history": false
+  },
+  "HOOD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1291,
+   "rows_in_analysis_window": 1291,
+   "insufficient_history": false
+  },
+  "HQY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3052,
+   "rows_in_analysis_window": 3052,
+   "insufficient_history": false
+  },
+  "HSIC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7768,
+   "rows_in_analysis_window": 7768,
+   "insufficient_history": false
+  },
+  "HST": {
+   "spikes_removed": [
+    "2009-11-12"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1993-10-12",
+     "ret": -0.8082758620689655
+    }
+   ],
+   "rows_raw_after_spike_removal": 11721,
+   "rows_in_analysis_window": 11721,
+   "insufficient_history": false
+  },
+  "HTHT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4147,
+   "rows_in_analysis_window": 4147,
+   "insufficient_history": false
+  },
+  "HUT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2021-06-16",
+     "ret": 3.6270396270396272
+    }
+   ],
+   "rows_raw_after_spike_removal": 2145,
+   "rows_in_analysis_window": 2145,
+   "insufficient_history": false
+  },
+  "HWC": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8887,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "IBKR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2019-09-03",
+     "ret": -0.7581419491525424
+    }
+   ],
+   "rows_raw_after_spike_removal": 4875,
+   "rows_in_analysis_window": 4875,
+   "insufficient_history": false
+  },
+  "IBRX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2023-05-11",
+     "ret": -0.5514469453376205
+    }
+   ],
+   "rows_raw_after_spike_removal": 2803,
+   "rows_in_analysis_window": 2803,
+   "insufficient_history": false
+  },
+  "ICLR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1999-03-30",
+     "ret": -0.5097159940209268
+    }
+   ],
+   "rows_raw_after_spike_removal": 7130,
+   "rows_in_analysis_window": 7130,
+   "insufficient_history": false
+  },
+  "IDCC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1999-12-29",
+     "ret": 1.1222410865874366
+    }
+   ],
+   "rows_raw_after_spike_removal": 11302,
+   "rows_in_analysis_window": 11302,
+   "insufficient_history": false
+  },
+  "IDXX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1997-03-24",
+     "ret": -0.625
+    }
+   ],
+   "rows_raw_after_spike_removal": 8874,
+   "rows_in_analysis_window": 8874,
+   "insufficient_history": false
+  },
+  "IEP": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9863,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "IESC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2005-11-03",
+     "ret": -0.5189753320683113
+    },
+    {
+     "date": "2026-08-24",
+     "ret": -0.526859745416326
+    }
+   ],
+   "rows_raw_after_spike_removal": 7205,
+   "rows_in_analysis_window": 7205,
+   "insufficient_history": false
+  },
+  "ILMN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6574,
+   "rows_in_analysis_window": 6574,
+   "insufficient_history": false
+  },
+  "IMVT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1821,
+   "rows_in_analysis_window": 1821,
+   "insufficient_history": false
+  },
+  "INCY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8273,
+   "rows_in_analysis_window": 8273,
+   "insufficient_history": false
+  },
+  "INIO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 74,
+   "rows_in_analysis_window": 74,
+   "insufficient_history": false
+  },
+  "INSM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2002-09-10",
+     "ret": -0.7015706806282722
+    },
+    {
+     "date": "2009-06-25",
+     "ret": -0.5364806866952789
+    },
+    {
+     "date": "2011-08-02",
+     "ret": -0.5251101321585903
+    },
+    {
+     "date": "2017-09-05",
+     "ret": 1.1960943856794142
+    },
+    {
+     "date": "2024-05-28",
+     "ret": 1.1845454545454546
+    }
+   ],
+   "rows_raw_after_spike_removal": 6614,
+   "rows_in_analysis_window": 6614,
+   "insufficient_history": false
+  },
+  "INTC": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13781,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "INTU": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8438,
+   "rows_in_analysis_window": 8438,
+   "insufficient_history": false
+  },
+  "IONS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1999-12-15",
+     "ret": -0.6393548387096775
+    }
+   ],
+   "rows_raw_after_spike_removal": 8898,
+   "rows_in_analysis_window": 8898,
+   "insufficient_history": false
+  },
+  "IRDM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4654,
+   "rows_in_analysis_window": 4654,
+   "insufficient_history": false
+  },
+  "IREN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1213,
+   "rows_in_analysis_window": 1213,
+   "insufficient_history": false
+  },
+  "ISRG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6603,
+   "rows_in_analysis_window": 6603,
+   "insufficient_history": false
+  },
+  "JAZZ": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2009-06-10",
+     "ret": 2.0980392156862746
+    }
+   ],
+   "rows_raw_after_spike_removal": 4857,
+   "rows_in_analysis_window": 4857,
+   "insufficient_history": false
+  },
+  "JBHT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10789,
+   "rows_in_analysis_window": 10789,
+   "insufficient_history": false
+  },
+  "JD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3100,
+   "rows_in_analysis_window": 3100,
+   "insufficient_history": false
+  },
+  "JKHY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10285,
+   "rows_in_analysis_window": 10285,
+   "insufficient_history": false
+  },
+  "KDP": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4627,
+   "rows_in_analysis_window": 4627,
+   "insufficient_history": false
+  },
+  "KLAC": {
+   "spikes_removed": [
+    "1999-11-16",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "systemic_breaks": [
+    "1990-03-26"
+   ],
+   "reliable_from": "1990-03-26",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11576,
+   "rows_in_analysis_window": 9185,
+   "insufficient_history": false
+  },
+  "KMB": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "KNSA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2091,
+   "rows_in_analysis_window": 2091,
+   "insufficient_history": false
+  },
+  "KRSA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8,
+   "rows_in_analysis_window": 8,
+   "insufficient_history": true
+  },
+  "KRYS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2021-11-29",
+     "ret": 1.2165285104245163
+    }
+   ],
+   "rows_raw_after_spike_removal": 2261,
+   "rows_in_analysis_window": 2261,
+   "insufficient_history": false
+  },
+  "KSPI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 669,
+   "rows_in_analysis_window": 669,
+   "insufficient_history": false
+  },
+  "KTOS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6757,
+   "rows_in_analysis_window": 6757,
+   "insufficient_history": false
+  },
+  "KYMR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1526,
+   "rows_in_analysis_window": 1526,
+   "insufficient_history": false
+  },
+  "LAMR": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "reliable_from": "2002-09-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7580,
+   "rows_in_analysis_window": 6041,
+   "insufficient_history": false
+  },
+  "LAUR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2421,
+   "rows_in_analysis_window": 2421,
+   "insufficient_history": false
+  },
+  "LECO": {
+   "spikes_removed": [
+    "2009-05-19"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8166,
+   "rows_in_analysis_window": 8166,
+   "insufficient_history": false
+  },
+  "LFST": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1325,
+   "rows_in_analysis_window": 1325,
+   "insufficient_history": false
+  },
+  "LFUS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8557,
+   "rows_in_analysis_window": 8557,
+   "insufficient_history": false
+  },
+  "LGN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 256,
+   "rows_in_analysis_window": 256,
+   "insufficient_history": false
+  },
+  "LGND": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8516,
+   "rows_in_analysis_window": 8516,
+   "insufficient_history": false
+  },
+  "LI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1542,
+   "rows_in_analysis_window": 1542,
+   "insufficient_history": false
+  },
+  "LIN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8624,
+   "rows_in_analysis_window": 8624,
+   "insufficient_history": false
+  },
+  "LINE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 540,
+   "rows_in_analysis_window": 540,
+   "insufficient_history": false
+  },
+  "LITE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2806,
+   "rows_in_analysis_window": 2806,
+   "insufficient_history": false
+  },
+  "LKQ": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5775,
+   "rows_in_analysis_window": 5775,
+   "insufficient_history": false
+  },
+  "LLYVA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 784,
+   "rows_in_analysis_window": 784,
+   "insufficient_history": false
+  },
+  "LLYVK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 784,
+   "rows_in_analysis_window": 784,
+   "insufficient_history": false
+  },
+  "LNT": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13508,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "LNTH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2825,
+   "rows_in_analysis_window": 2825,
+   "insufficient_history": false
+  },
+  "LOGI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7416,
+   "rows_in_analysis_window": 7416,
+   "insufficient_history": false
+  },
+  "LPLA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3981,
+   "rows_in_analysis_window": 3981,
+   "insufficient_history": false
+  },
+  "LQDA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2048,
+   "rows_in_analysis_window": 2048,
+   "insufficient_history": false
+  },
+  "LRCX": {
+   "spikes_removed": [
+    "1990-10-16",
+    "1999-11-16",
+    "2000-02-23",
+    "2000-06-02",
+    "2000-06-09",
+    "2002-02-01",
+    "2002-04-09"
+   ],
+   "systemic_breaks": [
+    "1990-03-26"
+   ],
+   "reliable_from": "1990-03-26",
+   "extreme_moves": [
+    {
+     "date": "2000-08-28",
+     "ret": 10.793050482053122
+    },
+    {
+     "date": "2000-08-30",
+     "ret": -0.9200537634408602
+    }
+   ],
+   "rows_raw_after_spike_removal": 10669,
+   "rows_in_analysis_window": 9181,
+   "insufficient_history": false
+  },
+  "LSCC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9281,
+   "rows_in_analysis_window": 9281,
+   "insufficient_history": false
+  },
+  "LSTR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8443,
+   "rows_in_analysis_window": 8443,
+   "insufficient_history": false
+  },
+  "LULU": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4818,
+   "rows_in_analysis_window": 4818,
+   "insufficient_history": false
+  },
+  "LYFT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1879,
+   "rows_in_analysis_window": 1879,
+   "insufficient_history": false
+  },
+  "MAAS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2025-06-23",
+     "ret": 2.6777777777777776
+    }
+   ],
+   "rows_raw_after_spike_removal": 1740,
+   "rows_in_analysis_window": 1740,
+   "insufficient_history": false
+  },
+  "MANH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7146,
+   "rows_in_analysis_window": 7146,
+   "insufficient_history": false
+  },
+  "MAR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8289,
+   "rows_in_analysis_window": 8289,
+   "insufficient_history": false
+  },
+  "MBLY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 977,
+   "rows_in_analysis_window": 977,
+   "insufficient_history": false
+  },
+  "MCHP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8433,
+   "rows_in_analysis_window": 8433,
+   "insufficient_history": false
+  },
+  "MDB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2240,
+   "rows_in_analysis_window": 2240,
+   "insufficient_history": false
+  },
+  "MDGL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2009-02-27",
+     "ret": -0.7871674491392802
+    },
+    {
+     "date": "2015-10-21",
+     "ret": -0.6372549019607844
+    },
+    {
+     "date": "2018-05-31",
+     "ret": 1.4495988195148946
+    },
+    {
+     "date": "2022-12-19",
+     "ret": 2.6807210031347966
+    }
+   ],
+   "rows_raw_after_spike_removal": 4937,
+   "rows_in_analysis_window": 4937,
+   "insufficient_history": false
+  },
+  "MDLN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 189,
+   "rows_in_analysis_window": 189,
+   "insufficient_history": false
+  },
+  "MDLZ": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6354,
+   "rows_in_analysis_window": 6354,
+   "insufficient_history": false
+  },
+  "MEDP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2540,
+   "rows_in_analysis_window": 2540,
+   "insufficient_history": false
+  },
+  "MELI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4808,
+   "rows_in_analysis_window": 4808,
+   "insufficient_history": false
+  },
+  "MEOH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8644,
+   "rows_in_analysis_window": 8644,
+   "insufficient_history": false
+  },
+  "META": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3604,
+   "rows_in_analysis_window": 3604,
+   "insufficient_history": false
+  },
+  "MIDD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9852,
+   "rows_in_analysis_window": 9852,
+   "insufficient_history": false
+  },
+  "MIRM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2019-12-16",
+     "ret": 1.10989010989011
+    }
+   ],
+   "rows_raw_after_spike_removal": 1803,
+   "rows_in_analysis_window": 1803,
+   "insufficient_history": false
+  },
+  "MKSI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6911,
+   "rows_in_analysis_window": 6911,
+   "insufficient_history": false
+  },
+  "MKTX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5501,
+   "rows_in_analysis_window": 5501,
+   "insufficient_history": false
+  },
+  "MMED": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 136,
+   "rows_in_analysis_window": 136,
+   "insufficient_history": false
+  },
+  "MMSI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9154,
+   "rows_in_analysis_window": 9154,
+   "insufficient_history": false
+  },
+  "MMYT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4051,
+   "rows_in_analysis_window": 4051,
+   "insufficient_history": false
+  },
+  "MNST": {
+   "spikes_removed": [
+    "1989-06-22",
+    "1989-08-09",
+    "1989-08-18",
+    "1989-08-24",
+    "1989-09-25",
+    "1989-11-20",
+    "1989-11-24",
+    "1989-12-11",
+    "1989-12-26",
+    "1990-01-24",
+    "1990-05-23",
+    "1990-05-24",
+    "1990-05-30",
+    "1990-06-18",
+    "1990-06-29",
+    "1990-07-06",
+    "1990-07-19",
+    "1990-07-31",
+    "1990-08-06",
+    "1990-08-07",
+    "1990-08-08",
+    "1990-08-09",
+    "1990-08-10",
+    "1990-08-13",
+    "1990-08-14",
+    "1990-08-22",
+    "1990-09-04",
+    "1990-09-12",
+    "1990-10-08",
+    "1990-10-09",
+    "1990-10-10",
+    "1990-10-24",
+    "1990-11-19",
+    "1990-12-14",
+    "1990-12-19",
+    "1991-01-08",
+    "1991-01-09",
+    "1991-01-18",
+    "1991-01-28",
+    "1991-01-29",
+    "1991-02-05",
+    "1991-02-08",
+    "1991-02-11",
+    "1991-02-27",
+    "1991-03-28",
+    "1991-04-01",
+    "1991-04-02",
+    "1991-05-17",
+    "1991-05-20",
+    "1991-05-21",
+    "1991-06-14",
+    "1991-06-25",
+    "1991-06-26",
+    "1991-06-27",
+    "1991-07-15",
+    "1991-07-16",
+    "1991-07-17",
+    "1991-07-18",
+    "1991-07-19",
+    "1991-07-26",
+    "1991-07-31",
+    "1991-08-12",
+    "1991-08-15",
+    "1991-08-16",
+    "1991-08-23",
+    "1991-08-26",
+    "1991-09-09",
+    "1991-09-20",
+    "1991-09-23",
+    "1991-09-26",
+    "1991-10-10",
+    "1991-10-11",
+    "1991-10-17",
+    "1991-10-18",
+    "1991-10-25",
+    "1991-11-04",
+    "1992-02-07",
+    "1992-02-10",
+    "1992-02-13",
+    "1992-03-04",
+    "1992-03-05",
+    "1992-03-06",
+    "1992-03-09",
+    "1992-03-16",
+    "1992-03-24",
+    "1992-03-27",
+    "1992-03-30",
+    "1992-03-31",
+    "1992-04-03",
+    "1992-05-28",
+    "1992-05-29",
+    "1992-06-08",
+    "1992-06-09",
+    "1992-06-10",
+    "1992-07-07",
+    "1992-07-23",
+    "1992-08-31",
+    "1992-09-21",
+    "1992-10-02",
+    "1992-10-05",
+    "1992-10-09",
+    "1992-10-12",
+    "1992-10-13",
+    "1992-11-27",
+    "1993-02-24",
+    "1993-05-20",
+    "1993-05-25",
+    "1993-07-09",
+    "1993-09-10",
+    "1993-09-13",
+    "1993-09-22",
+    "1993-12-23",
+    "1994-04-13",
+    "1994-06-01",
+    "1994-07-13",
+    "1994-09-27",
+    "1994-10-12",
+    "1994-12-14",
+    "1995-01-05",
+    "1995-01-23",
+    "1995-02-21",
+    "1995-03-07",
+    "1995-03-29",
+    "1995-05-02",
+    "1995-09-18",
+    "1995-12-26",
+    "1996-01-02",
+    "1996-02-08",
+    "1996-02-27",
+    "1996-03-06",
+    "1996-03-07",
+    "1996-03-15",
+    "1996-03-18",
+    "1996-03-19",
+    "1996-03-20",
+    "1996-03-25",
+    "1996-03-26",
+    "1996-04-02",
+    "1996-04-09",
+    "1996-04-15",
+    "1996-04-16",
+    "1996-04-17",
+    "1997-12-19",
+    "1998-01-02",
+    "2000-11-24",
+    "2003-01-27",
+    "2003-02-14",
+    "2003-02-21",
+    "2003-10-30"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1985-12-10",
+     "ret": -0.58384375
+    },
+    {
+     "date": "1987-10-20",
+     "ret": -0.5
+    },
+    {
+     "date": "1987-11-17",
+     "ret": 1.0
+    },
+    {
+     "date": "1987-11-30",
+     "ret": -0.5
+    },
+    {
+     "date": "1987-12-24",
+     "ret": 1.0
+    },
+    {
+     "date": "1987-12-28",
+     "ret": -0.5
+    },
+    {
+     "date": "1988-01-08",
+     "ret": 1.0
+    },
+    {
+     "date": "1990-01-02",
+     "ret": 1.5031289111389237
+    },
+    {
+     "date": "1990-01-04",
+     "ret": -0.5738749999999999
+    },
+    {
+     "date": "1990-03-05",
+     "ret": 1.0858319862335089
+    },
+    {
+     "date": "1990-05-21",
+     "ret": 1.3465915757362432
+    },
+    {
+     "date": "1990-05-25",
+     "ret": -0.57385
+    },
+    {
+     "date": "1990-10-02",
+     "ret": 1.5599453878317262
+    },
+    {
+     "date": "1990-10-04",
+     "ret": -0.6093666666666666
+    },
+    {
+     "date": "1990-10-31",
+     "ret": 1.6818638954073082
+    },
+    {
+     "date": "1991-01-04",
+     "ret": 1.0480262147355486
+    },
+    {
+     "date": "1991-01-10",
+     "ret": -0.609375
+    },
+    {
+     "date": "1991-01-30",
+     "ret": 1.1943057765099567
+    },
+    {
+     "date": "1991-02-12",
+     "ret": -0.641925
+    },
+    {
+     "date": "1991-02-20",
+     "ret": 1.56
+    },
+    {
+     "date": "1991-02-25",
+     "ret": -0.5768249999999999
+    },
+    {
+     "date": "1991-03-11",
+     "ret": 1.363088556743664
+    },
+    {
+     "date": "1991-03-13",
+     "ret": -0.5768249999999999
+    },
+    {
+     "date": "1991-03-26",
+     "ret": 1.0480262147355486
+    },
+    {
+     "date": "1991-04-05",
+     "ret": -0.511725
+    },
+    {
+     "date": "1991-04-15",
+     "ret": 1.56
+    },
+    {
+     "date": "1991-04-23",
+     "ret": -0.641925
+    },
+    {
+     "date": "1991-05-09",
+     "ret": 1.56
+    },
+    {
+     "date": "1991-05-14",
+     "ret": -0.609375
+    },
+    {
+     "date": "1991-05-24",
+     "ret": 1.56
+    },
+    {
+     "date": "1991-05-29",
+     "ret": -0.609375
+    },
+    {
+     "date": "1991-06-05",
+     "ret": 1.56
+    },
+    {
+     "date": "1991-06-10",
+     "ret": -0.5768249999999999
+    },
+    {
+     "date": "1991-06-12",
+     "ret": 1.363088556743664
+    },
+    {
+     "date": "1991-06-19",
+     "ret": -0.5442750000000001
+    },
+    {
+     "date": "1991-07-05",
+     "ret": 1.1943057765099567
+    },
+    {
+     "date": "1991-07-09",
+     "ret": -0.5442750000000001
+    },
+    {
+     "date": "1991-07-11",
+     "ret": 1.1943057765099567
+    },
+    {
+     "date": "1991-08-08",
+     "ret": -0.5442750000000001
+    },
+    {
+     "date": "1991-08-19",
+     "ret": 1.1943057765099567
+    },
+    {
+     "date": "1991-08-27",
+     "ret": -0.511725
+    },
+    {
+     "date": "1991-08-29",
+     "ret": 1.0480262147355486
+    },
+    {
+     "date": "1991-09-05",
+     "ret": -0.511725
+    },
+    {
+     "date": "1991-09-13",
+     "ret": 1.0480262147355486
+    },
+    {
+     "date": "1991-09-24",
+     "ret": -0.511725
+    },
+    {
+     "date": "1991-10-02",
+     "ret": 1.363088556743664
+    },
+    {
+     "date": "1991-10-14",
+     "ret": -0.5768249999999999
+    },
+    {
+     "date": "1991-10-21",
+     "ret": 1.363088556743664
+    },
+    {
+     "date": "1991-10-23",
+     "ret": -0.5768249999999999
+    },
+    {
+     "date": "1991-11-13",
+     "ret": 1.1943057765099567
+    },
+    {
+     "date": "1992-02-04",
+     "ret": -0.511725
+    },
+    {
+     "date": "1992-02-11",
+     "ret": 1.0480262147355486
+    },
+    {
+     "date": "1992-02-27",
+     "ret": 1.1942656524283204
+    },
+    {
+     "date": "1992-03-02",
+     "ret": -0.5225666666666666
+    },
+    {
+     "date": "1992-03-10",
+     "ret": 1.1942656524283204
+    },
+    {
+     "date": "1992-03-12",
+     "ret": -0.5442666666666667
+    },
+    {
+     "date": "1992-05-18",
+     "ret": -0.511725
+    },
+    {
+     "date": "1992-05-20",
+     "ret": 1.363088556743664
+    },
+    {
+     "date": "1992-05-26",
+     "ret": -0.5768249999999999
+    },
+    {
+     "date": "1992-06-01",
+     "ret": 1.363088556743664
+    },
+    {
+     "date": "1992-06-04",
+     "ret": -0.5768249999999999
+    },
+    {
+     "date": "1992-09-25",
+     "ret": 1.0945332681700761
+    },
+    {
+     "date": "1992-10-06",
+     "ret": -0.5659666666666667
+    },
+    {
+     "date": "1992-12-02",
+     "ret": 1.0210594393581114
+    },
+    {
+     "date": "1993-05-12",
+     "ret": 1.1942656524283204
+    },
+    {
+     "date": "1993-07-30",
+     "ret": -0.5008666666666667
+    },
+    {
+     "date": "1993-09-14",
+     "ret": 1.0945332681700761
+    },
+    {
+     "date": "1993-11-29",
+     "ret": -0.5008666666666667
+    },
+    {
+     "date": "1994-06-08",
+     "ret": 1.1942656524283204
+    },
+    {
+     "date": "1994-06-10",
+     "ret": -0.5442666666666667
+    },
+    {
+     "date": "1994-10-03",
+     "ret": 1.1432398642614752
+    },
+    {
+     "date": "1994-10-05",
+     "ret": -0.5442666666666667
+    },
+    {
+     "date": "1994-11-25",
+     "ret": 1.0480262147355486
+    },
+    {
+     "date": "1995-02-10",
+     "ret": 1.0480262147355486
+    },
+    {
+     "date": "1995-02-16",
+     "ret": -0.5442750000000001
+    },
+    {
+     "date": "1995-03-01",
+     "ret": -0.528
+    },
+    {
+     "date": "1995-05-05",
+     "ret": 1.4576062914721062
+    },
+    {
+     "date": "1995-05-09",
+     "ret": -0.62565
+    },
+    {
+     "date": "1996-01-11",
+     "ret": -0.64195
+    },
+    {
+     "date": "1996-03-08",
+     "ret": 1.9256875365710941
+    },
+    {
+     "date": "1996-03-12",
+     "ret": -0.64195
+    },
+    {
+     "date": "1996-03-21",
+     "ret": 1.7929060187124706
+    },
+    {
+     "date": "1996-03-27",
+     "ret": -0.62565
+    },
+    {
+     "date": "1996-08-01",
+     "ret": 1.0480262147355486
+    },
+    {
+     "date": "2001-10-25",
+     "ret": 1.0210696511128514
+    },
+    {
+     "date": "2026-08-11",
+     "ret": -0.5020234058842831
+    }
+   ],
+   "rows_raw_after_spike_removal": 10124,
+   "rows_in_analysis_window": 10124,
+   "insufficient_history": false
+  },
+  "MORN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5380,
+   "rows_in_analysis_window": 5380,
+   "insufficient_history": false
+  },
+  "MPWR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5491,
+   "rows_in_analysis_window": 5491,
+   "insufficient_history": false
+  },
+  "MRCY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7203,
+   "rows_in_analysis_window": 7203,
+   "insufficient_history": false
+  },
+  "MRNA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2026-08-19",
+     "ret": 1.7696950444726811
+    }
+   ],
+   "rows_raw_after_spike_removal": 1955,
+   "rows_in_analysis_window": 1955,
+   "insufficient_history": false
+  },
+  "MRVL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6593,
+   "rows_in_analysis_window": 6593,
+   "insufficient_history": false
+  },
+  "MRX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 602,
+   "rows_in_analysis_window": 602,
+   "insufficient_history": false
+  },
+  "MSFT": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10208,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "MSTR": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7111,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "MTCH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8475,
+   "rows_in_analysis_window": 8475,
+   "insufficient_history": false
+  },
+  "MTSI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3649,
+   "rows_in_analysis_window": 3649,
+   "insufficient_history": false
+  },
+  "MU": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10657,
+   "rows_in_analysis_window": 10657,
+   "insufficient_history": false
+  },
+  "MWH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 152,
+   "rows_in_analysis_window": 152,
+   "insufficient_history": false
+  },
+  "MXL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4149,
+   "rows_in_analysis_window": 4149,
+   "insufficient_history": false
+  },
+  "NAVN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 222,
+   "rows_in_analysis_window": 222,
+   "insufficient_history": false
+  },
+  "NBIS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 478,
+   "rows_in_analysis_window": 478,
+   "insufficient_history": false
+  },
+  "NBIX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2006-05-16",
+     "ret": -0.6199890170236133
+    }
+   ],
+   "rows_raw_after_spike_removal": 7629,
+   "rows_in_analysis_window": 7629,
+   "insufficient_history": false
+  },
+  "NDAQ": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6094,
+   "rows_in_analysis_window": 6094,
+   "insufficient_history": false
+  },
+  "NDSN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11721,
+   "rows_in_analysis_window": 11721,
+   "insufficient_history": false
+  },
+  "NFLX": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6119,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "NICE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2000-12-28",
+     "ret": -0.6111111111111112
+    }
+   ],
+   "rows_raw_after_spike_removal": 7712,
+   "rows_in_analysis_window": 7712,
+   "insufficient_history": false
+  },
+  "NOVT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6915,
+   "rows_in_analysis_window": 6915,
+   "insufficient_history": false
+  },
+  "NTAP": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7756,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "NTES": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6593,
+   "rows_in_analysis_window": 6593,
+   "insufficient_history": false
+  },
+  "NTNX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2505,
+   "rows_in_analysis_window": 2505,
+   "insufficient_history": false
+  },
+  "NTRA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2821,
+   "rows_in_analysis_window": 2821,
+   "insufficient_history": false
+  },
+  "NTRS": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "NTSK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 252,
+   "rows_in_analysis_window": 252,
+   "insufficient_history": false
+  },
+  "NVDA": {
+   "spikes_removed": [
+    "1999-11-16"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6956,
+   "rows_in_analysis_window": 6956,
+   "insufficient_history": false
+  },
+  "NVMI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6649,
+   "rows_in_analysis_window": 6649,
+   "insufficient_history": false
+  },
+  "NWS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3330,
+   "rows_in_analysis_window": 3330,
+   "insufficient_history": false
+  },
+  "NWSA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3333,
+   "rows_in_analysis_window": 3333,
+   "insufficient_history": false
+  },
+  "NXPI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4055,
+   "rows_in_analysis_window": 4055,
+   "insufficient_history": false
+  },
+  "NXST": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5739,
+   "rows_in_analysis_window": 5739,
+   "insufficient_history": false
+  },
+  "NXT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 905,
+   "rows_in_analysis_window": 905,
+   "insufficient_history": false
+  },
+  "OCTV": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 83,
+   "rows_in_analysis_window": 83,
+   "insufficient_history": false
+  },
+  "ODFL": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8787,
+   "rows_in_analysis_window": 5425,
+   "insufficient_history": false
+  },
+  "OKTA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2375,
+   "rows_in_analysis_window": 2375,
+   "insufficient_history": false
+  },
+  "ON": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6635,
+   "rows_in_analysis_window": 6635,
+   "insufficient_history": false
+  },
+  "ONB": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10644,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "ONC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2672,
+   "rows_in_analysis_window": 2672,
+   "insufficient_history": false
+  },
+  "ORKA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2006-12-11",
+     "ret": -0.7928388344546684
+    },
+    {
+     "date": "2010-03-26",
+     "ret": 2.101884369633492
+    },
+    {
+     "date": "2018-02-26",
+     "ret": -0.7187496636855756
+    },
+    {
+     "date": "2020-05-28",
+     "ret": 3.863290215510646
+    }
+   ],
+   "rows_raw_after_spike_removal": 5424,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "ORLY": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8408,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "OTEX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7713,
+   "rows_in_analysis_window": 7713,
+   "insufficient_history": false
+  },
+  "OZK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7339,
+   "rows_in_analysis_window": 7339,
+   "insufficient_history": false
+  },
+  "PAA": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6999,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "PAGP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3250,
+   "rows_in_analysis_window": 3250,
+   "insufficient_history": false
+  },
+  "PANW": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3561,
+   "rows_in_analysis_window": 3561,
+   "insufficient_history": false
+  },
+  "PAYP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 132,
+   "rows_in_analysis_window": 132,
+   "insufficient_history": false
+  },
+  "PAYX": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10850,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "PCAR": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16",
+    "1999-11-17",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "reliable_from": "2002-09-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 6041,
+   "insufficient_history": false
+  },
+  "PCTY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3145,
+   "rows_in_analysis_window": 3145,
+   "insufficient_history": false
+  },
+  "PCVX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1575,
+   "rows_in_analysis_window": 1575,
+   "insufficient_history": false
+  },
+  "PDD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2048,
+   "rows_in_analysis_window": 2048,
+   "insufficient_history": false
+  },
+  "PECO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2021-07-06",
+     "ret": 2.0
+    },
+    {
+     "date": "2021-07-12",
+     "ret": -0.6639004149377594
+    },
+    {
+     "date": "2021-07-15",
+     "ret": 2.6500137174211247
+    }
+   ],
+   "rows_raw_after_spike_removal": 1398,
+   "rows_in_analysis_window": 1398,
+   "insufficient_history": false
+  },
+  "PEGA": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7589,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "PEP": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13688,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "PFG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6266,
+   "rows_in_analysis_window": 6266,
+   "insufficient_history": false
+  },
+  "PI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2555,
+   "rows_in_analysis_window": 2555,
+   "insufficient_history": false
+  },
+  "PLTR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1499,
+   "rows_in_analysis_window": 1499,
+   "insufficient_history": false
+  },
+  "PLXS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10233,
+   "rows_in_analysis_window": 10233,
+   "insufficient_history": false
+  },
+  "PODD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4869,
+   "rows_in_analysis_window": 4869,
+   "insufficient_history": false
+  },
+  "POOL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7783,
+   "rows_in_analysis_window": 7783,
+   "insufficient_history": false
+  },
+  "POWL": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11721,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "PPC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2008-12-02",
+     "ret": -0.7742121322038962
+    },
+    {
+     "date": "2008-12-03",
+     "ret": 1.0000945000945003
+    }
+   ],
+   "rows_raw_after_spike_removal": 9753,
+   "rows_in_analysis_window": 9753,
+   "insufficient_history": false
+  },
+  "PRAX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2022-06-06",
+     "ret": -0.7811408614668218
+    },
+    {
+     "date": "2023-03-03",
+     "ret": -0.6587328767123288
+    },
+    {
+     "date": "2025-10-16",
+     "ret": 1.8371403661726244
+    }
+   ],
+   "rows_raw_after_spike_removal": 1487,
+   "rows_in_analysis_window": 1487,
+   "insufficient_history": false
+  },
+  "PSKY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5424,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "PSMT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7307,
+   "rows_in_analysis_window": 7307,
+   "insufficient_history": false
+  },
+  "PTC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9261,
+   "rows_in_analysis_window": 9261,
+   "insufficient_history": false
+  },
+  "PTCT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2016-02-23",
+     "ret": -0.6164189667374381
+    }
+   ],
+   "rows_raw_after_spike_removal": 3332,
+   "rows_in_analysis_window": 3332,
+   "insufficient_history": false
+  },
+  "PTGX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2018-03-26",
+     "ret": -0.5717082721488007
+    },
+    {
+     "date": "2021-09-17",
+     "ret": -0.6199869932798612
+    }
+   ],
+   "rows_raw_after_spike_removal": 2540,
+   "rows_in_analysis_window": 2540,
+   "insufficient_history": false
+  },
+  "PYPL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2819,
+   "rows_in_analysis_window": 2819,
+   "insufficient_history": false
+  },
+  "QBTS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2023-05-22",
+     "ret": 1.1070026853955794
+    }
+   ],
+   "rows_raw_after_spike_removal": 1448,
+   "rows_in_analysis_window": 1448,
+   "insufficient_history": false
+  },
+  "QCOM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8752,
+   "rows_in_analysis_window": 8752,
+   "insufficient_history": false
+  },
+  "QLYS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3512,
+   "rows_in_analysis_window": 3512,
+   "insufficient_history": false
+  },
+  "QNT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 74,
+   "rows_in_analysis_window": 74,
+   "insufficient_history": false
+  },
+  "QRVO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2945,
+   "rows_in_analysis_window": 2945,
+   "insufficient_history": false
+  },
+  "RDNT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2000-02-14",
+     "ret": 1.0
+    }
+   ],
+   "rows_raw_after_spike_removal": 7474,
+   "rows_in_analysis_window": 7474,
+   "insufficient_history": false
+  },
+  "REG": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8277,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "REGN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2003-03-31",
+     "ret": -0.5655690352397458
+    }
+   ],
+   "rows_raw_after_spike_removal": 8931,
+   "rows_in_analysis_window": 8931,
+   "insufficient_history": false
+  },
+  "RGEN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1998-05-04",
+     "ret": 1.0408163265306123
+    }
+   ],
+   "rows_raw_after_spike_removal": 10176,
+   "rows_in_analysis_window": 10176,
+   "insufficient_history": false
+  },
+  "RGLD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1991-10-31",
+     "ret": -0.5
+    },
+    {
+     "date": "1991-12-02",
+     "ret": -0.5
+    },
+    {
+     "date": "1992-03-02",
+     "ret": 2.0
+    },
+    {
+     "date": "1992-06-01",
+     "ret": 2.166666666666667
+    },
+    {
+     "date": "1992-06-05",
+     "ret": 1.0
+    }
+   ],
+   "rows_raw_after_spike_removal": 11412,
+   "rows_in_analysis_window": 11412,
+   "insufficient_history": false
+  },
+  "RGTI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1359,
+   "rows_in_analysis_window": 1359,
+   "insufficient_history": false
+  },
+  "RIOT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2015-01-29",
+     "ret": -0.7303971416792634
+    }
+   ],
+   "rows_raw_after_spike_removal": 3786,
+   "rows_in_analysis_window": 3786,
+   "insufficient_history": false
+  },
+  "RIVN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1218,
+   "rows_in_analysis_window": 1218,
+   "insufficient_history": false
+  },
+  "RKLB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1460,
+   "rows_in_analysis_window": 1460,
+   "insufficient_history": false
+  },
+  "RMBS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2011-11-16",
+     "ret": -0.6058758314855875
+    }
+   ],
+   "rows_raw_after_spike_removal": 7383,
+   "rows_in_analysis_window": 7383,
+   "insufficient_history": false
+  },
+  "ROAD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2105,
+   "rows_in_analysis_window": 2105,
+   "insufficient_history": false
+  },
+  "ROIV": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1451,
+   "rows_in_analysis_window": 1451,
+   "insufficient_history": false
+  },
+  "ROKU": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2255,
+   "rows_in_analysis_window": 2255,
+   "insufficient_history": false
+  },
+  "ROP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8710,
+   "rows_in_analysis_window": 8710,
+   "insufficient_history": false
+  },
+  "ROST": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10357,
+   "rows_in_analysis_window": 10357,
+   "insufficient_history": false
+  },
+  "RPRX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1573,
+   "rows_in_analysis_window": 1573,
+   "insufficient_history": false
+  },
+  "RRR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2614,
+   "rows_in_analysis_window": 2614,
+   "insufficient_history": false
+  },
+  "RUSHA": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5774,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "RUSHB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7619,
+   "rows_in_analysis_window": 7619,
+   "insufficient_history": false
+  },
+  "RVMD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1658,
+   "rows_in_analysis_window": 1658,
+   "insufficient_history": false
+  },
+  "RYAAY": {
+   "spikes_removed": [
+    "1998-05-26",
+    "1999-11-16",
+    "1999-12-15",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1997-06-02",
+     "ret": -0.6647634069400631
+    }
+   ],
+   "rows_raw_after_spike_removal": 7368,
+   "rows_in_analysis_window": 7368,
+   "insufficient_history": false
+  },
+  "RYTM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2250,
+   "rows_in_analysis_window": 2250,
+   "insufficient_history": false
+  },
+  "SAIA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6044,
+   "rows_in_analysis_window": 6044,
+   "insufficient_history": false
+  },
+  "SAIC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3272,
+   "rows_in_analysis_window": 3272,
+   "insufficient_history": false
+  },
+  "SAIL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 401,
+   "rows_in_analysis_window": 401,
+   "insufficient_history": false
+  },
+  "SANM": {
+   "spikes_removed": [
+    "1993-07-19",
+    "1993-07-29",
+    "1999-11-16",
+    "2002-08-15",
+    "2002-09-16"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1993-06-22",
+     "ret": -0.8289241622574957
+    },
+    {
+     "date": "2009-08-17",
+     "ret": 4.5625
+    }
+   ],
+   "rows_raw_after_spike_removal": 8411,
+   "rows_in_analysis_window": 8411,
+   "insufficient_history": false
+  },
+  "SBAC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6857,
+   "rows_in_analysis_window": 6857,
+   "insufficient_history": false
+  },
+  "SBRA": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6157,
+   "rows_in_analysis_window": 5425,
+   "insufficient_history": false
+  },
+  "SBUX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8617,
+   "rows_in_analysis_window": 8617,
+   "insufficient_history": false
+  },
+  "SEIC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11464,
+   "rows_in_analysis_window": 11464,
+   "insufficient_history": false
+  },
+  "SFD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 413,
+   "rows_in_analysis_window": 413,
+   "insufficient_history": false
+  },
+  "SFM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3303,
+   "rows_in_analysis_window": 3303,
+   "insufficient_history": false
+  },
+  "SHC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1462,
+   "rows_in_analysis_window": 1462,
+   "insufficient_history": false
+  },
+  "SHOP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2850,
+   "rows_in_analysis_window": 2850,
+   "insufficient_history": false
+  },
+  "SIGI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 11722,
+   "insufficient_history": false
+  },
+  "SIMO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5339,
+   "rows_in_analysis_window": 5339,
+   "insufficient_history": false
+  },
+  "SIRI": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2002-08-15",
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8057,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "SITM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1715,
+   "rows_in_analysis_window": 1715,
+   "insufficient_history": false
+  },
+  "SKHY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 50,
+   "rows_in_analysis_window": 50,
+   "insufficient_history": true
+  },
+  "SLAB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6661,
+   "rows_in_analysis_window": 6661,
+   "insufficient_history": false
+  },
+  "SLM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10831,
+   "rows_in_analysis_window": 10831,
+   "insufficient_history": false
+  },
+  "SMCI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2020-01-15",
+     "ret": -0.90007215007215
+    }
+   ],
+   "rows_raw_after_spike_removal": 4900,
+   "rows_in_analysis_window": 4900,
+   "insufficient_history": false
+  },
+  "SMMT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2018-06-27",
+     "ret": -0.7984189723320159
+    },
+    {
+     "date": "2022-12-06",
+     "ret": 1.9426751592356686
+    },
+    {
+     "date": "2024-05-30",
+     "ret": 2.7206132879045994
+    }
+   ],
+   "rows_raw_after_spike_removal": 2903,
+   "rows_in_analysis_window": 2903,
+   "insufficient_history": false
+  },
+  "SMTC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 11722,
+   "insufficient_history": false
+  },
+  "SNDK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 401,
+   "rows_in_analysis_window": 401,
+   "insufficient_history": false
+  },
+  "SNEX": {
+   "spikes_removed": [
+    "2005-04-19",
+    "2005-05-26",
+    "2005-06-22",
+    "2005-07-26",
+    "2005-08-04",
+    "2005-08-26",
+    "2005-09-12",
+    "2005-11-29"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [
+    {
+     "date": "2005-09-02",
+     "ret": 4.062502715934933
+    },
+    {
+     "date": "2005-09-07",
+     "ret": -0.7990772532188841
+    }
+   ],
+   "rows_raw_after_spike_removal": 7930,
+   "rows_in_analysis_window": 5417,
+   "insufficient_history": false
+  },
+  "SNPS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8702,
+   "rows_in_analysis_window": 8702,
+   "insufficient_history": false
+  },
+  "SNY": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6094,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "SOFI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1456,
+   "rows_in_analysis_window": 1456,
+   "insufficient_history": false
+  },
+  "SOLS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 230,
+   "rows_in_analysis_window": 230,
+   "insufficient_history": false
+  },
+  "SPCX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2026-06-12",
+     "ret": 6.369505494505494
+    }
+   ],
+   "rows_raw_after_spike_removal": 1285,
+   "rows_in_analysis_window": 1285,
+   "insufficient_history": false
+  },
+  "SRRK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2020-10-27",
+     "ret": 1.1880466472303204
+    },
+    {
+     "date": "2024-10-07",
+     "ret": 3.6199460916442048
+    }
+   ],
+   "rows_raw_after_spike_removal": 2091,
+   "rows_in_analysis_window": 2091,
+   "insufficient_history": false
+  },
+  "SSNC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4144,
+   "rows_in_analysis_window": 4144,
+   "insufficient_history": false
+  },
+  "SSRM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2024-02-13",
+     "ret": -0.5370370370370371
+    }
+   ],
+   "rows_raw_after_spike_removal": 7581,
+   "rows_in_analysis_window": 7581,
+   "insufficient_history": false
+  },
+  "STEP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1509,
+   "rows_in_analysis_window": 1509,
+   "insufficient_history": false
+  },
+  "STLD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7501,
+   "rows_in_analysis_window": 7501,
+   "insufficient_history": false
+  },
+  "STRL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1997-07-02",
+     "ret": -0.6
+    },
+    {
+     "date": "1997-07-03",
+     "ret": 1.0
+    },
+    {
+     "date": "1998-12-31",
+     "ret": 1.4193548387096775
+    }
+   ],
+   "rows_raw_after_spike_removal": 8860,
+   "rows_in_analysis_window": 8860,
+   "insufficient_history": false
+  },
+  "STX": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2005-02-25",
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5980,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "SWKS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10589,
+   "rows_in_analysis_window": 10589,
+   "insufficient_history": false
+  },
+  "SYM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2022-06-08",
+     "ret": 1.2054945054945057
+    }
+   ],
+   "rows_raw_after_spike_removal": 1390,
+   "rows_in_analysis_window": 1390,
+   "insufficient_history": false
+  },
+  "SYRE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2022-06-02",
+     "ret": -0.5133333333333333
+    },
+    {
+     "date": "2022-11-30",
+     "ret": -0.6598360655737705
+    },
+    {
+     "date": "2023-06-22",
+     "ret": 3.2866541353383454
+    }
+   ],
+   "rows_raw_after_spike_removal": 2628,
+   "rows_in_analysis_window": 2628,
+   "insufficient_history": false
+  },
+  "TCOM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5730,
+   "rows_in_analysis_window": 5730,
+   "insufficient_history": false
+  },
+  "TEAM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2709,
+   "rows_in_analysis_window": 2709,
+   "insufficient_history": false
+  },
+  "TECH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9471,
+   "rows_in_analysis_window": 9471,
+   "insufficient_history": false
+  },
+  "TEM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 567,
+   "rows_in_analysis_window": 567,
+   "insufficient_history": false
+  },
+  "TER": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13508,
+   "rows_in_analysis_window": 13508,
+   "insufficient_history": false
+  },
+  "TFSL": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4884,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "TGTX": {
+   "spikes_removed": [
+    "2011-10-27"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2010-10-18",
+     "ret": -0.5
+    },
+    {
+     "date": "2011-07-19",
+     "ret": -0.7145759268664297
+    },
+    {
+     "date": "2011-07-21",
+     "ret": 2.0010460251046025
+    },
+    {
+     "date": "2011-08-02",
+     "ret": -0.5
+    },
+    {
+     "date": "2011-10-26",
+     "ret": -0.5008077544426495
+    },
+    {
+     "date": "2012-02-06",
+     "ret": 5.671936758893281
+    }
+   ],
+   "rows_raw_after_spike_removal": 4120,
+   "rows_in_analysis_window": 4120,
+   "insufficient_history": false
+  },
+  "TIGO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1934,
+   "rows_in_analysis_window": 1934,
+   "insufficient_history": false
+  },
+  "TLN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 551,
+   "rows_in_analysis_window": 551,
+   "insufficient_history": false
+  },
+  "TMUS": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4887,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "TPG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1174,
+   "rows_in_analysis_window": 1174,
+   "insufficient_history": false
+  },
+  "TRI": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6107,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "TRMB": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9107,
+   "rows_in_analysis_window": 9107,
+   "insufficient_history": false
+  },
+  "TROW": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "1999-11-16"
+   ],
+   "reliable_from": "1999-11-16",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 10195,
+   "rows_in_analysis_window": 6750,
+   "insufficient_history": false
+  },
+  "TSCO": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8199,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "TSEM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8027,
+   "rows_in_analysis_window": 8027,
+   "insufficient_history": false
+  },
+  "TSLA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4082,
+   "rows_in_analysis_window": 4082,
+   "insufficient_history": false
+  },
+  "TTAN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 442,
+   "rows_in_analysis_window": 442,
+   "insufficient_history": false
+  },
+  "TTD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2512,
+   "rows_in_analysis_window": 2512,
+   "insufficient_history": false
+  },
+  "TTEK": {
+   "spikes_removed": [
+    "2011-02-17"
+   ],
+   "systemic_breaks": [
+    "2005-02-25"
+   ],
+   "reliable_from": "2005-02-25",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8749,
+   "rows_in_analysis_window": 5424,
+   "insufficient_history": false
+  },
+  "TTMI": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6534,
+   "rows_in_analysis_window": 6534,
+   "insufficient_history": false
+  },
+  "TTWO": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7404,
+   "rows_in_analysis_window": 7404,
+   "insufficient_history": false
+  },
+  "TVTX": {
+   "spikes_removed": [
+    "2008-08-12",
+    "2009-02-17"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2008-01-28",
+     "ret": -0.5789670658682635
+    },
+    {
+     "date": "2008-02-27",
+     "ret": 2.375111111111111
+    },
+    {
+     "date": "2008-03-12",
+     "ret": -0.6296418224914406
+    },
+    {
+     "date": "2009-07-02",
+     "ret": 3.0
+    },
+    {
+     "date": "2012-11-02",
+     "ret": 1.077777777777778
+    },
+    {
+     "date": "2012-12-03",
+     "ret": 1.338308457711443
+    },
+    {
+     "date": "2012-12-17",
+     "ret": 2.076
+    }
+   ],
+   "rows_raw_after_spike_removal": 3560,
+   "rows_in_analysis_window": 3560,
+   "insufficient_history": false
+  },
+  "TW": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1875,
+   "rows_in_analysis_window": 1875,
+   "insufficient_history": false
+  },
+  "TWST": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1980,
+   "rows_in_analysis_window": 1980,
+   "insufficient_history": false
+  },
+  "TXG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1764,
+   "rows_in_analysis_window": 1764,
+   "insufficient_history": false
+  },
+  "TXN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 13688,
+   "rows_in_analysis_window": 13688,
+   "insufficient_history": false
+  },
+  "TXRH": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5524,
+   "rows_in_analysis_window": 5524,
+   "insufficient_history": false
+  },
+  "UAL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5195,
+   "rows_in_analysis_window": 5195,
+   "insufficient_history": false
+  },
+  "UBSI": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9898,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "ULTA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4755,
+   "rows_in_analysis_window": 4755,
+   "insufficient_history": false
+  },
+  "UMBF": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 11722,
+   "insufficient_history": false
+  },
+  "URBN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8270,
+   "rows_in_analysis_window": 8270,
+   "insufficient_history": false
+  },
+  "UTHR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2000-12-04",
+     "ret": -0.623267534649307
+    }
+   ],
+   "rows_raw_after_spike_removal": 6856,
+   "rows_in_analysis_window": 6856,
+   "insufficient_history": false
+  },
+  "VCTR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2164,
+   "rows_in_analysis_window": 2164,
+   "insufficient_history": false
+  },
+  "VFS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2023-08-15",
+     "ret": 2.546411483253589
+    },
+    {
+     "date": "2023-08-22",
+     "ret": 1.0887372013651877
+    }
+   ],
+   "rows_raw_after_spike_removal": 1128,
+   "rows_in_analysis_window": 1128,
+   "insufficient_history": false
+  },
+  "VIAV": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8264,
+   "rows_in_analysis_window": 8264,
+   "insufficient_history": false
+  },
+  "VICR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9182,
+   "rows_in_analysis_window": 9182,
+   "insufficient_history": false
+  },
+  "VLY": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9189,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "VNOM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3082,
+   "rows_in_analysis_window": 3082,
+   "insufficient_history": false
+  },
+  "VOD": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2005-02-25",
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 9539,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "VRNS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3158,
+   "rows_in_analysis_window": 3158,
+   "insufficient_history": false
+  },
+  "VRSK": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 4264,
+   "rows_in_analysis_window": 4264,
+   "insufficient_history": false
+  },
+  "VRSN": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7203,
+   "rows_in_analysis_window": 7203,
+   "insufficient_history": false
+  },
+  "VRTX": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8852,
+   "rows_in_analysis_window": 8852,
+   "insufficient_history": false
+  },
+  "VSAT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7495,
+   "rows_in_analysis_window": 7495,
+   "insufficient_history": false
+  },
+  "VSEC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11064,
+   "rows_in_analysis_window": 11064,
+   "insufficient_history": false
+  },
+  "VSNT": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 191,
+   "rows_in_analysis_window": 191,
+   "insufficient_history": false
+  },
+  "VTRS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1981-11-16",
+     "ret": -0.5425
+    },
+    {
+     "date": "1985-02-19",
+     "ret": -0.5245283018867924
+    }
+   ],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 11722,
+   "insufficient_history": false
+  },
+  "WAY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 572,
+   "rows_in_analysis_window": 572,
+   "insufficient_history": false
+  },
+  "WBD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 5333,
+   "rows_in_analysis_window": 5333,
+   "insufficient_history": false
+  },
+  "WDAY": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3502,
+   "rows_in_analysis_window": 3502,
+   "insufficient_history": false
+  },
+  "WDC": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 12069,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "WFRD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1434,
+   "rows_in_analysis_window": 1434,
+   "insufficient_history": false
+  },
+  "WMG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1582,
+   "rows_in_analysis_window": 1582,
+   "insufficient_history": false
+  },
+  "WMT": {
+   "spikes_removed": [
+    "1972-10-10",
+    "1972-11-10",
+    "1973-01-18",
+    "1973-04-17",
+    "1973-05-08",
+    "1973-05-16",
+    "1973-07-05",
+    "1973-08-13",
+    "1973-08-14",
+    "1973-08-15",
+    "1973-09-05",
+    "1973-09-10",
+    "1973-09-21",
+    "1973-09-28",
+    "1973-10-17",
+    "1973-10-24",
+    "1974-01-17",
+    "1974-02-06",
+    "1974-02-14",
+    "1974-02-20",
+    "1974-02-27",
+    "1974-04-01",
+    "1974-04-04",
+    "1974-04-11",
+    "1974-05-02",
+    "1974-05-03",
+    "1974-05-06",
+    "1974-05-15",
+    "1974-07-12",
+    "1974-07-15",
+    "1974-08-09",
+    "1974-08-30",
+    "1974-09-05",
+    "1974-09-06",
+    "1974-09-09",
+    "1974-09-10",
+    "1974-09-11",
+    "1974-09-23",
+    "1974-09-24",
+    "1974-10-28",
+    "1975-02-20",
+    "1975-05-01",
+    "1975-08-13",
+    "1975-09-02",
+    "1979-03-15",
+    "1979-05-24",
+    "1999-11-16",
+    "2000-03-01"
+   ],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "1973-06-01",
+     "ret": 2.942945577493667
+    },
+    {
+     "date": "1973-06-05",
+     "ret": -0.7463825
+    },
+    {
+     "date": "1974-03-25",
+     "ret": 2.965421524308034
+    },
+    {
+     "date": "1974-03-28",
+     "ret": -0.7478199999999999
+    },
+    {
+     "date": "1974-07-16",
+     "ret": 4.287228699077379
+    },
+    {
+     "date": "1974-07-18",
+     "ret": -0.810865
+    },
+    {
+     "date": "1974-08-01",
+     "ret": 4.287228699077379
+    },
+    {
+     "date": "1974-08-05",
+     "ret": -0.810865
+    },
+    {
+     "date": "1974-09-25",
+     "ret": 4.8747848360053805
+    },
+    {
+     "date": "1974-09-27",
+     "ret": -0.829781
+    },
+    {
+     "date": "1974-10-17",
+     "ret": 4.8747848360053805
+    },
+    {
+     "date": "1974-10-21",
+     "ret": -0.829781
+    },
+    {
+     "date": "1974-12-06",
+     "ret": -0.5204080233894768
+    },
+    {
+     "date": "1974-12-18",
+     "ret": 1.0851057748451458
+    }
+   ],
+   "rows_raw_after_spike_removal": 13673,
+   "rows_in_analysis_window": 13673,
+   "insufficient_history": false
+  },
+  "WSE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 91,
+   "rows_in_analysis_window": 91,
+   "insufficient_history": false
+  },
+  "WTFC": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 7151,
+   "rows_in_analysis_window": 7151,
+   "insufficient_history": false
+  },
+  "WTW": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6355,
+   "rows_in_analysis_window": 6355,
+   "insufficient_history": false
+  },
+  "WULF": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8169,
+   "rows_in_analysis_window": 8169,
+   "insufficient_history": false
+  },
+  "WWD": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8170,
+   "rows_in_analysis_window": 8170,
+   "insufficient_history": false
+  },
+  "WYNN": {
+   "spikes_removed": [],
+   "systemic_breaks": [
+    "2005-02-25",
+    "2011-02-17"
+   ],
+   "reliable_from": "2011-02-17",
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 6012,
+   "rows_in_analysis_window": 3919,
+   "insufficient_history": false
+  },
+  "XE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 102,
+   "rows_in_analysis_window": 102,
+   "insufficient_history": false
+  },
+  "XEL": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2000-08-21",
+     "ret": -0.5149104761904761
+    }
+   ],
+   "rows_raw_after_spike_removal": 13508,
+   "rows_in_analysis_window": 13508,
+   "insufficient_history": false
+  },
+  "XENE": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [
+    {
+     "date": "2017-03-24",
+     "ret": -0.5279187817258884
+    },
+    {
+     "date": "2021-10-04",
+     "ret": 1.0192307692307692
+    }
+   ],
+   "rows_raw_after_spike_removal": 2984,
+   "rows_in_analysis_window": 2984,
+   "insufficient_history": false
+  },
+  "XMTR": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1311,
+   "rows_in_analysis_window": 1311,
+   "insufficient_history": false
+  },
+  "XP": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1701,
+   "rows_in_analysis_window": 1701,
+   "insufficient_history": false
+  },
+  "Z": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2799,
+   "rows_in_analysis_window": 2799,
+   "insufficient_history": false
+  },
+  "ZBRA": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 8836,
+   "rows_in_analysis_window": 8836,
+   "insufficient_history": false
+  },
+  "ZG": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 3814,
+   "rows_in_analysis_window": 3814,
+   "insufficient_history": false
+  },
+  "ZION": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 11722,
+   "rows_in_analysis_window": 11722,
+   "insufficient_history": false
+  },
+  "ZM": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 1865,
+   "rows_in_analysis_window": 1865,
+   "insufficient_history": false
+  },
+  "ZS": {
+   "spikes_removed": [],
+   "systemic_breaks": [],
+   "reliable_from": null,
+   "extreme_moves": [],
+   "rows_raw_after_spike_removal": 2139,
+   "rows_in_analysis_window": 2139,
+   "insufficient_history": false
+  }
+ }
+}
