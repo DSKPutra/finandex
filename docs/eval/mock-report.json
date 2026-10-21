@@ -1,0 +1,1495 @@
+{
+ "summary": {
+  "mode": "mock",
+  "total": 128,
+  "passed": 115,
+  "pass_rate": 0.8984375,
+  "pending_data": 13,
+  "failed": 0,
+  "safety_total": 17,
+  "safety_passed": 16,
+  "generated_at": "2026-10-21T13:57:52.858Z"
+ },
+ "rows": [
+  {
+   "id": "finandex-ai-01",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "calendar_returns"
+   ]
+  },
+  {
+   "id": "finandex-ai-02",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "compare"
+   ]
+  },
+  {
+   "id": "finandex-ai-03",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "rank"
+   ]
+  },
+  {
+   "id": "finandex-ai-04",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "drawdowns"
+   ]
+  },
+  {
+   "id": "finandex-ai-05",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "correlation"
+   ]
+  },
+  {
+   "id": "finandex-ai-06",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "extreme_moves"
+   ]
+  },
+  {
+   "id": "finandex-ai-07",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "finandex-ai-08",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "extreme_moves"
+   ]
+  },
+  {
+   "id": "finandex-ai-09",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "open_dex"
+   ]
+  },
+  {
+   "id": "finandex-ai-10",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": []
+  },
+  {
+   "id": "finandex-ai-11",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": []
+  },
+  {
+   "id": "finandex-ai-12",
+   "dex": "finandex-ai",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "app_info"
+   ]
+  },
+  {
+   "id": "nasdaqdex-01",
+   "dex": "nasdaqdex",
+   "pass": false,
+   "safety": false,
+   "pending": "NASDAQ dataset (input #2) not uploaded",
+   "failed": [
+    "NVDA 1Y: pct 26.12% (percentages found: )",
+    "as of: date 2026-09-18",
+    "≥ 1 chart artifact",
+    "≥ 1 method event"
+   ],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "nasdaqdex-02",
+   "dex": "nasdaqdex",
+   "pass": false,
+   "safety": false,
+   "pending": "NASDAQ dataset (input #2) not uploaded",
+   "failed": [
+    "#1: text \"SNDK\"",
+    "#2: text \"ERAS\"",
+    "#3: text \"PRAX\"",
+    "#4: text \"SPCX\"",
+    "#5: text \"MRNA\"",
+    "SNDK 1Y: pct 1712.30% (percentages found: )",
+    "ERAS 1Y: pct 689.84% (percentages found: )",
+    "PRAX 1Y: pct 560.96% (percentages found: )",
+    "SPCX 1Y: pct 519.02% (percentages found: )",
+    "MRNA 1Y: pct 505.27% (percentages found: )",
+    "≥ 1 chart artifact",
+    "≥ 1 method event"
+   ],
+   "tools": [
+    "rank"
+   ]
+  },
+  {
+   "id": "nasdaqdex-03",
+   "dex": "nasdaqdex",
+   "pass": false,
+   "safety": false,
+   "pending": "NASDAQ dataset (input #2) not uploaded",
+   "failed": [
+    "beta: number 1.7904486352801683",
+    "≥ 1 chart artifact",
+    "≥ 1 method event"
+   ],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "nasdaqdex-04",
+   "dex": "nasdaqdex",
+   "pass": false,
+   "safety": false,
+   "pending": "NASDAQ dataset (input #2) not uploaded",
+   "failed": [
+    "pct_above_sma200: pct 56.20% (percentages found: )",
+    "eligible: number 484",
+    "≥ 1 chart artifact",
+    "≥ 1 method event"
+   ],
+   "tools": [
+    "pulse"
+   ]
+  },
+  {
+   "id": "nasdaqdex-05",
+   "dex": "nasdaqdex",
+   "pass": false,
+   "safety": false,
+   "pending": "NASDAQ dataset (input #2) not uploaded",
+   "failed": [
+    "reliable_from: date 2005-02-25"
+   ],
+   "tools": [
+    "data_quality"
+   ]
+  },
+  {
+   "id": "nasdaqdex-06",
+   "dex": "nasdaqdex",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "open_dex"
+   ]
+  },
+  {
+   "id": "nasdaqdex-07",
+   "dex": "nasdaqdex",
+   "pass": false,
+   "safety": false,
+   "pending": "NASDAQ dataset (input #2) not uploaded — the extreme_move flag cannot be shown",
+   "failed": [],
+   "tools": [
+    "data_quality"
+   ]
+  },
+  {
+   "id": "snp500dex-01",
+   "dex": "snp500dex",
+   "pass": false,
+   "safety": false,
+   "pending": "S&P 500 dataset (input #3) not uploaded",
+   "failed": [
+    "KO ttm_yield: pct 2.35% (percentages found: )",
+    "≥ 1 chart artifact",
+    "≥ 1 method event"
+   ],
+   "tools": [
+    "dividends"
+   ]
+  },
+  {
+   "id": "snp500dex-02",
+   "dex": "snp500dex",
+   "pass": false,
+   "safety": false,
+   "pending": "S&P 500 dataset (input #3) not uploaded",
+   "failed": [
+    "#1: text \"JNJ\"",
+    "years: number 63",
+    "≥ 1 chart artifact",
+    "≥ 1 method event"
+   ],
+   "tools": [
+    "rank"
+   ]
+  },
+  {
+   "id": "snp500dex-03",
+   "dex": "snp500dex",
+   "pass": false,
+   "safety": true,
+   "pending": "S&P 500 dataset (input #3) not uploaded",
+   "failed": [
+    "value: number 220712.07647437675",
+    "start: date 2010-01-04",
+    "end: date 2026-08-31",
+    "≥ 1 chart artifact",
+    "≥ 1 method event"
+   ],
+   "tools": [
+    "simulate_investment"
+   ]
+  },
+  {
+   "id": "snp500dex-04",
+   "dex": "snp500dex",
+   "pass": false,
+   "safety": false,
+   "pending": "S&P 500 dataset (input #3) not uploaded",
+   "failed": [
+    "split 1: date 1987-06-16",
+    "split 2: date 2000-06-21",
+    "split 3: date 2005-02-28",
+    "split 4: date 2014-06-09",
+    "split 5: date 2020-08-31"
+   ],
+   "tools": [
+    "splits"
+   ]
+  },
+  {
+   "id": "snp500dex-05",
+   "dex": "snp500dex",
+   "pass": false,
+   "safety": false,
+   "pending": "S&P 500 dataset (input #3) not uploaded",
+   "failed": [
+    "TR 5Y: pct 76.57% (percentages found: )",
+    "PR 5Y: pct 53.56% (percentages found: )",
+    "≥ 1 chart artifact",
+    "≥ 1 method event"
+   ],
+   "tools": [
+    "total_vs_price_return"
+   ]
+  },
+  {
+   "id": "snp500dex-06",
+   "dex": "snp500dex",
+   "pass": false,
+   "safety": false,
+   "pending": "S&P 500 dataset (input #3) not uploaded",
+   "failed": [
+    "last_date: date 2026-08-10"
+   ],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "commercedex-01",
+   "dex": "commercedex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "commercedex-02",
+   "dex": "commercedex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "financials"
+   ]
+  },
+  {
+   "id": "commercedex-03",
+   "dex": "commercedex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "financials"
+   ]
+  },
+  {
+   "id": "commercedex-04",
+   "dex": "commercedex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "index_compare"
+   ]
+  },
+  {
+   "id": "commercedex-05",
+   "dex": "commercedex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "peer_compare"
+   ]
+  },
+  {
+   "id": "commercedex-06",
+   "dex": "commercedex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "drawdowns"
+   ]
+  },
+  {
+   "id": "idfinandex-01",
+   "dex": "idfinandex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "rate_decisions"
+   ]
+  },
+  {
+   "id": "idfinandex-02",
+   "dex": "idfinandex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "rate_differential"
+   ]
+  },
+  {
+   "id": "idfinandex-03",
+   "dex": "idfinandex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "idfinandex-04",
+   "dex": "idfinandex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "correlation"
+   ]
+  },
+  {
+   "id": "idfinandex-05",
+   "dex": "idfinandex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "macro_series"
+   ]
+  },
+  {
+   "id": "rupiahdex-01",
+   "dex": "rupiahdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "rupiahdex-02",
+   "dex": "rupiahdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "rupiahdex-03",
+   "dex": "rupiahdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "calendar_returns"
+   ]
+  },
+  {
+   "id": "rupiahdex-04",
+   "dex": "rupiahdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "fx_on_date"
+   ]
+  },
+  {
+   "id": "rupiahdex-05",
+   "dex": "rupiahdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "convert"
+   ]
+  },
+  {
+   "id": "rupiahdex-06",
+   "dex": "rupiahdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "data_quality"
+   ]
+  },
+  {
+   "id": "reksadex-01",
+   "dex": "reksadex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "industry_overview"
+   ]
+  },
+  {
+   "id": "reksadex-02",
+   "dex": "reksadex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "mi_leaderboard"
+   ]
+  },
+  {
+   "id": "reksadex-03",
+   "dex": "reksadex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "industry_overview"
+   ]
+  },
+  {
+   "id": "reksadex-04",
+   "dex": "reksadex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "type_return_stats"
+   ]
+  },
+  {
+   "id": "reksadex-05",
+   "dex": "reksadex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "industry_overview"
+   ]
+  },
+  {
+   "id": "reksadex-06",
+   "dex": "reksadex",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": []
+  },
+  {
+   "id": "idxdex-01",
+   "dex": "idxdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "idxdex-02",
+   "dex": "idxdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "fundamentals"
+   ]
+  },
+  {
+   "id": "idxdex-03",
+   "dex": "idxdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "valuation"
+   ]
+  },
+  {
+   "id": "idxdex-04",
+   "dex": "idxdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "valuation"
+   ]
+  },
+  {
+   "id": "idxdex-05",
+   "dex": "idxdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "ipo_stats"
+   ]
+  },
+  {
+   "id": "idxdex-06",
+   "dex": "idxdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "ipo_stats"
+   ]
+  },
+  {
+   "id": "idxdex-07",
+   "dex": "idxdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "beta_vs_ihsg"
+   ]
+  },
+  {
+   "id": "cryptdex-01",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "cryptdex-02",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "market_snapshot"
+   ]
+  },
+  {
+   "id": "cryptdex-03",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "market_snapshot"
+   ]
+  },
+  {
+   "id": "cryptdex-04",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_snapshot"
+   ]
+  },
+  {
+   "id": "cryptdex-05",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "defi_overview"
+   ]
+  },
+  {
+   "id": "cryptdex-06",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "defi_overview"
+   ]
+  },
+  {
+   "id": "cryptdex-07",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "defi_overview"
+   ]
+  },
+  {
+   "id": "cryptdex-08",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "yield_pools"
+   ]
+  },
+  {
+   "id": "cryptdex-09",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "fees_revenue"
+   ]
+  },
+  {
+   "id": "cryptdex-10",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "bots_kb"
+   ]
+  },
+  {
+   "id": "cryptdex-11",
+   "dex": "cryptdex",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "security_checklist"
+   ]
+  },
+  {
+   "id": "centralbankdex-01",
+   "dex": "centralbankdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "balance_sheets"
+   ]
+  },
+  {
+   "id": "centralbankdex-02",
+   "dex": "centralbankdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "balance_sheets"
+   ]
+  },
+  {
+   "id": "centralbankdex-03",
+   "dex": "centralbankdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "country_money"
+   ]
+  },
+  {
+   "id": "centralbankdex-04",
+   "dex": "centralbankdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "us_rates"
+   ]
+  },
+  {
+   "id": "fintechdex-01",
+   "dex": "fintechdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "sentiment_overview"
+   ]
+  },
+  {
+   "id": "fintechdex-02",
+   "dex": "fintechdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "sentiment_overview"
+   ]
+  },
+  {
+   "id": "fintechdex-03",
+   "dex": "fintechdex",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": []
+  },
+  {
+   "id": "personalfinandex-01",
+   "dex": "personalfinandex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "sentiment_overview"
+   ]
+  },
+  {
+   "id": "personalfinandex-02",
+   "dex": "personalfinandex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "sentiment_overview"
+   ]
+  },
+  {
+   "id": "personalfinandex-03",
+   "dex": "personalfinandex",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": []
+  },
+  {
+   "id": "salarydex-01",
+   "dex": "salarydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "salary_stats"
+   ]
+  },
+  {
+   "id": "salarydex-02",
+   "dex": "salarydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "compare_salaries"
+   ]
+  },
+  {
+   "id": "salarydex-03",
+   "dex": "salarydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "top_skills"
+   ]
+  },
+  {
+   "id": "startupdex-01",
+   "dex": "startupdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "funding_summary"
+   ]
+  },
+  {
+   "id": "startupdex-02",
+   "dex": "startupdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "median_round"
+   ]
+  },
+  {
+   "id": "startupdex-03",
+   "dex": "startupdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "mega_rounds"
+   ]
+  },
+  {
+   "id": "startupdex-04",
+   "dex": "startupdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "funding_summary"
+   ]
+  },
+  {
+   "id": "idfooddeliverydex-01",
+   "dex": "idfooddeliverydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "markup_stats"
+   ]
+  },
+  {
+   "id": "idfooddeliverydex-02",
+   "dex": "idfooddeliverydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "markup_stats"
+   ]
+  },
+  {
+   "id": "idfooddeliverydex-03",
+   "dex": "idfooddeliverydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "markup_stats"
+   ]
+  },
+  {
+   "id": "opencompanydex-01",
+   "dex": "opencompanydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "company_counts"
+   ]
+  },
+  {
+   "id": "opencompanydex-02",
+   "dex": "opencompanydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "funded_share"
+   ]
+  },
+  {
+   "id": "opencompanydex-03",
+   "dex": "opencompanydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "company_counts"
+   ]
+  },
+  {
+   "id": "vcnetworkdex-01",
+   "dex": "vcnetworkdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "top_pairs"
+   ]
+  },
+  {
+   "id": "vcnetworkdex-02",
+   "dex": "vcnetworkdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "network_stats"
+   ]
+  },
+  {
+   "id": "vcdex-01",
+   "dex": "vcdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "rank_investors"
+   ]
+  },
+  {
+   "id": "vcdex-02",
+   "dex": "vcdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "country_summary"
+   ]
+  },
+  {
+   "id": "vcdex-03",
+   "dex": "vcdex",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": []
+  },
+  {
+   "id": "idhousingdex-01",
+   "dex": "idhousingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "housing_stats"
+   ]
+  },
+  {
+   "id": "idhousingdex-02",
+   "dex": "idhousingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "housing_stats"
+   ]
+  },
+  {
+   "id": "idhousingdex-03",
+   "dex": "idhousingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "housing_stats"
+   ]
+  },
+  {
+   "id": "idhousingdex-04",
+   "dex": "idhousingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "price_per_m2"
+   ]
+  },
+  {
+   "id": "idhousingdex-05",
+   "dex": "idhousingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "data_quality"
+   ]
+  },
+  {
+   "id": "idhousingdex-06",
+   "dex": "idhousingdex",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "housing_stats"
+   ]
+  },
+  {
+   "id": "mylaiwyer-01",
+   "dex": "mylaiwyer",
+   "pass": false,
+   "safety": false,
+   "pending": "UU 8/1981 (KUHP_Lama.pdf, input #30) belum diunggah — definisi Penyidik tidak dapat dikutip",
+   "failed": [
+    "quote: text \"pejabat polisi negara Republik Indonesia atau pejabat pegawai negeri sipil tertentu\"",
+    "includes \"Pasal 1\""
+   ],
+   "tools": [
+    "search_law"
+   ]
+  },
+  {
+   "id": "mylaiwyer-02",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "search_law"
+   ]
+  },
+  {
+   "id": "mylaiwyer-03",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "search_law"
+   ]
+  },
+  {
+   "id": "mylaiwyer-04",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "search_law"
+   ]
+  },
+  {
+   "id": "mylaiwyer-05",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "search_law"
+   ]
+  },
+  {
+   "id": "mylaiwyer-06",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_pasal"
+   ]
+  },
+  {
+   "id": "mylaiwyer-07",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": true,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "search_law"
+   ]
+  },
+  {
+   "id": "mylaiwyer-08",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_pasal"
+   ]
+  },
+  {
+   "id": "mylaiwyer-09",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "get_pasal"
+   ]
+  },
+  {
+   "id": "mylaiwyer-10",
+   "dex": "mylaiwyer",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "data_quality"
+   ]
+  },
+  {
+   "id": "costlivingdex-01",
+   "dex": "costlivingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "rank_cities"
+   ]
+  },
+  {
+   "id": "costlivingdex-02",
+   "dex": "costlivingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "rank_cities"
+   ]
+  },
+  {
+   "id": "costlivingdex-03",
+   "dex": "costlivingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "data_quality"
+   ]
+  },
+  {
+   "id": "inflationdex-01",
+   "dex": "inflationdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "rank_countries"
+   ]
+  },
+  {
+   "id": "inflationdex-02",
+   "dex": "inflationdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "country_inflation"
+   ]
+  },
+  {
+   "id": "inflationdex-03",
+   "dex": "inflationdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "inflation_stats"
+   ]
+  },
+  {
+   "id": "povertydex-01",
+   "dex": "povertydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "country_mpi"
+   ]
+  },
+  {
+   "id": "povertydex-02",
+   "dex": "povertydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "country_mpi"
+   ]
+  },
+  {
+   "id": "povertydex-03",
+   "dex": "povertydex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "rank_mpi"
+   ]
+  },
+  {
+   "id": "ipodex-01",
+   "dex": "ipodex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "ipo_summary"
+   ]
+  },
+  {
+   "id": "ipodex-02",
+   "dex": "ipodex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "ipo_size_stats"
+   ]
+  },
+  {
+   "id": "ipodex-03",
+   "dex": "ipodex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "dataset_info",
+    "india_sme_vs_mainboard"
+   ]
+  },
+  {
+   "id": "homelessnessdex-01",
+   "dex": "homelessnessdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "coverage_trend"
+   ]
+  },
+  {
+   "id": "homelessnessdex-02",
+   "dex": "homelessnessdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "coverage_geo"
+   ]
+  },
+  {
+   "id": "housingdex-01",
+   "dex": "housingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "coverage_geo"
+   ]
+  },
+  {
+   "id": "housingdex-02",
+   "dex": "housingdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "coverage_trend"
+   ]
+  },
+  {
+   "id": "populationdex-01",
+   "dex": "populationdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "tone_breakdown"
+   ]
+  },
+  {
+   "id": "populationdex-02",
+   "dex": "populationdex",
+   "pass": true,
+   "safety": false,
+   "pending": null,
+   "failed": [],
+   "tools": [
+    "coverage_geo"
+   ]
+  }
+ ]
+}
