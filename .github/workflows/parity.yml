@@ -1,0 +1,28 @@
+# © 2026 Dea Saka Kurnia Putra. All rights reserved.
+# Python reference ↔ golden ↔ TypeScript ETL parity (§15.7).
+name: parity
+on:
+  workflow_dispatch:
+  push:
+    paths: ['kit/**', 'src/config/data-sources.ts', 'scripts/data/**']
+permissions:
+  contents: read
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      DATA_INPUTS_RELEASE_TAG: ${{ vars.DATA_INPUTS_RELEASE_TAG || 'data-inputs-v1' }}
+      GH_RELEASE_TOKEN: ${{ secrets.GH_RELEASE_TOKEN || github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install pandas numpy pyarrow
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - run: npm ci
+      - run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build
+      - run: npm run test:parity

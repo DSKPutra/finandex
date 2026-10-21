@@ -8,7 +8,19 @@ const ROOT = process.cwd();
 const HEADER_TS = '// © 2026 Dea Saka Kurnia Putra. All rights reserved.';
 const HEADER_PY = '# © 2026 Dea Saka Kurnia Putra. All rights reserved.';
 const HEADER_CSS = '/* © 2026 Dea Saka Kurnia Putra. All rights reserved. */';
-const SKIP_DIRS = new Set(['node_modules', 'dist', 'coverage', 'kit', 'data', 'android', 'ios', '.git', 'public', 'playwright-report', 'test-results']);
+const SKIP_DIRS = new Set([
+  'node_modules',
+  'dist',
+  'coverage',
+  'kit',
+  'data',
+  'android',
+  'ios',
+  '.git',
+  'public',
+  'playwright-report',
+  'test-results',
+]);
 const errors: string[] = [];
 
 function walk(dir: string): string[] {
@@ -39,8 +51,14 @@ function mustContain(file: string, needles: string[]) {
   for (const n of needles) if (!txt.includes(n)) errors.push(`${file}: missing "${n}"`);
 }
 
-mustContain('LICENSE', ['Copyright © 2026 Dea Saka Kurnia Putra. All rights reserved.', 'without prior written permission']);
-mustContain('index.html', ['<meta name="author" content="Dea Saka Kurnia Putra"', '<meta name="copyright" content="© 2026 Dea Saka Kurnia Putra"']);
+mustContain('LICENSE', [
+  'Copyright © 2026 Dea Saka Kurnia Putra. All rights reserved.',
+  'without prior written permission',
+]);
+mustContain('index.html', [
+  '<meta name="author" content="Dea Saka Kurnia Putra"',
+  '<meta name="copyright" content="© 2026 Dea Saka Kurnia Putra"',
+]);
 mustContain('README.md', [COPYRIGHT_EN]);
 const pkg = JSON.parse(readFileSync(join(ROOT, 'package.json'), 'utf8')) as Record<string, unknown>;
 if (pkg.author !== 'Dea Saka Kurnia Putra') errors.push('package.json: author');

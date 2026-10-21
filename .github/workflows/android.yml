@@ -1,0 +1,51 @@
+# © 2026 Dea Saka Kurnia Putra. All rights reserved.
+# Android (§15.7): signed release AAB (keystore from secrets) + debug APK as artifacts.
+name: android
+on: { workflow_dispatch: {}, push: { branches: [release] } }
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PRODUCTION_ORIGIN: ${{ vars.PRODUCTION_ORIGIN || 'https://finandex.vercel.app' }}
+      BUNDLE_ID: ${{ vars.BUNDLE_ID || 'com.deasakakurniaputra.finandex' }}
+      HAS_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '21' }
+      - run: npm ci
+      - name: Fetch built core data from production (bundled into the app)
+        run: |
+          mkdir -p public/data && curl -fsSL "$PRODUCTION_ORIGIN/data/manifest.json" -o public/data/manifest.json
+          node -e "const m=require('./public/data/manifest.json');for(const d of Object.values(m.dex))for(const f of d.files||[])if(f.path.startsWith('core/'))console.log(f.path)" | while read p; do mkdir -p "public/data/$(dirname "$p")"; curl -fsSL "$PRODUCTION_ORIGIN/data/$p" -o "public/data/$p"; done
+      - run: npm run build:native && npx cap sync android
+      - name: Debug APK
+        working-directory: android
+        run: ./gradlew assembleDebug
+      - name: Signed release AAB
+        if: ${{ env.HAS_KEYSTORE == 'true' }}
+        env:
+          KEYSTORE: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASS: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        working-directory: android
+        run: |
+          echo "$KEYSTORE" | base64 -d > release.keystore
+          ./gradlew bundleRelease
+          "$ANDROID_HOME"/build-tools/*/apksigner --version >/dev/null 2>&1 || true
+          jarsigner -keystore release.keystore -storepass "$KS_PASS" -keypass "$KEY_PASS" app/build/outputs/bundle/release/app-release.aab "$KEY_ALIAS"
+          rm release.keystore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android
+          path: |
+            android/app/build/outputs/apk/debug/*.apk
+            android/app/build/outputs/bundle/release/*.aab
+          if-no-files-found: warn

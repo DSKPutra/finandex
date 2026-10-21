@@ -6,7 +6,7 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 import globals from 'globals';
 
 export default tseslint.config(
-  { ignores: ['dist', 'coverage', 'kit', 'data', 'public', 'android', 'ios', 'node_modules', 'playwright-report', 'test-results', 'dev-dist'] },
+  { ignores: ['server-dist/**', 'android/**', 'ios/**', 'dist', 'coverage', 'kit', 'data', 'public', 'android', 'ios', 'node_modules', 'playwright-report', 'test-results', 'dev-dist'] },
   js.configs.recommended,
   ...tseslint.configs.strict,
   {

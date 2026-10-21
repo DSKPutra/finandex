@@ -7,3 +7,4 @@ android/
 ios/
 package-lock.json
 server/chat/prompts.generated.ts
+server-dist

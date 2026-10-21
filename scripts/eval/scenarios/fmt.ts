@@ -13,7 +13,6 @@ export const date = (x: unknown) => (typeof x === 'string' ? fmtDate(x.slice(0, 
 
 /** data of the first (or n-th) successful call of a tool */
 export function res(r: ToolResult[], tool: string, n = 0): any {
-
   const hits = r.filter((x) => x.tool === tool);
   const h = hits[n];
   if (!h) throw new Error(`scenario: no result for ${tool}#${n}`);

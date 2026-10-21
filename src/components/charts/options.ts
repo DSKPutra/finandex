@@ -2,7 +2,7 @@
 // ChartSpec (zod, from tools) → ECharts option (§8.8 / §10.4): units, locale tooltips, toggleable legend, zoom for long
 // series, log axis only when allowed and all values > 0, zero line for returns, event annotations, faint watermark.
 import type { ChartSpec, ValueFormat } from '../../shared/chart-spec.ts';
-import { CHART_PALETTE } from '../../config/brand.ts';
+import { CHART_PALETTE, CHART_PALETTE_LIGHT } from '../../config/brand.ts';
 import { fmtDate } from '../../shared/format.ts';
 import type { Locale } from '../../i18n/index.ts';
 import { formatValue } from './format-value.ts';
@@ -15,6 +15,7 @@ interface Theme {
   surface: string;
   negative: string;
   positive: string;
+  palette: readonly string[];
 }
 
 export function themeColors(): Theme {
@@ -27,6 +28,7 @@ export function themeColors(): Theme {
     surface: v('--surface'),
     negative: v('--negative'),
     positive: v('--positive'),
+    palette: document.documentElement.dataset.theme === 'light' ? CHART_PALETTE_LIGHT : CHART_PALETTE,
   };
 }
 
@@ -37,7 +39,7 @@ export function toOption(spec: ChartSpec, locale: Locale, th: Theme, log = false
   const axisLabel = { color: th.muted, fontSize: 11 };
   const split = { lineStyle: { color: th.border } };
   const base: Opt = {
-    color: [...CHART_PALETTE],
+    color: [...th.palette],
     textStyle: { fontFamily: 'Inter, sans-serif', color: th.text },
     animation: false,
     graphic: [
@@ -301,7 +303,7 @@ export function toOption(spec: ChartSpec, locale: Locale, th: Theme, log = false
               name: n.label,
               value: n.value,
               symbolSize: 8 + 26 * Math.sqrt(n.value / maxV),
-              itemStyle: n.center ? { color: CHART_PALETTE[0] } : { color: CHART_PALETTE[1] },
+              itemStyle: { color: n.center ? th.palette[0] : th.palette[1] },
             })),
             links: spec.edges.map((e) => ({
               source: e.source,

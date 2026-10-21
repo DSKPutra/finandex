@@ -1,0 +1,49 @@
+# © 2026 Dea Saka Kurnia Putra. All rights reserved.
+# CI (§15.7): all §18 gates on push & PR. Inputs come from the GitHub release DATA_INPUTS_RELEASE_TAG (never committed).
+name: ci
+on:
+  push: { branches: [main, release] }
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      DATA_INPUTS_RELEASE_TAG: ${{ vars.DATA_INPUTS_RELEASE_TAG || 'data-inputs-v1' }}
+      GH_RELEASE_TOKEN: ${{ secrets.GH_RELEASE_TOKEN || github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm ci
+      - name: Cache dataset inputs (keyed by the kit manifest)
+        uses: actions/cache@v4
+        with:
+          path: data/inputs
+          key: inputs-${{ hashFiles('kit/manifest/**', 'src/config/data-sources.ts') }}
+      - run: npm run data:fetch
+      - run: npm run data:verify
+      - run: npm run data:extract
+      - run: npm run data:build
+      - run: npx playwright install --with-deps chromium webkit firefox
+      - name: Secret scan (gitleaks)
+        uses: gitleaks/gitleaks-action@v2
+        env: { GITHUB_TOKEN: '${{ github.token }}' }
+      - run: npm run verify
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reports
+          path: |
+            coverage/
+            playwright-report/
+            .lighthouseci/
+            docs/eval/mock-report.*
+          if-no-files-found: ignore

@@ -1,0 +1,52 @@
+# © 2026 Dea Saka Kurnia Putra. All rights reserved.
+# iOS (§15.7): archive + signed IPA on macOS (certificate & profile from secrets); optional TestFlight upload.
+name: ios
+on: { workflow_dispatch: {} }
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 90
+    env:
+      PRODUCTION_ORIGIN: ${{ vars.PRODUCTION_ORIGIN || 'https://finandex.vercel.app' }}
+      BUNDLE_ID: ${{ vars.BUNDLE_ID || 'com.deasakakurniaputra.finandex' }}
+      HAS_ASC: ${{ secrets.APP_STORE_CONNECT_API_KEY_P8_BASE64 != '' }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm ci
+      - name: Fetch built core data from production
+        run: |
+          mkdir -p public/data && curl -fsSL "$PRODUCTION_ORIGIN/data/manifest.json" -o public/data/manifest.json
+          node -e "const m=require('./public/data/manifest.json');for(const d of Object.values(m.dex))for(const f of d.files||[])if(f.path.startsWith('core/'))console.log(f.path)" | while read p; do mkdir -p "public/data/$(dirname "$p")"; curl -fsSL "$PRODUCTION_ORIGIN/data/$p" -o "public/data/$p"; done
+      - run: npm run build:native && npx cap sync ios
+      - name: Import signing certificate & profile
+        env:
+          P12: ${{ secrets.IOS_CERTIFICATE_P12_BASE64 }}
+          P12_PASS: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+          PROFILE: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64 }}
+        run: |
+          test -n "$P12" || { echo "iOS signing secrets not configured"; exit 1; }
+          KC=$RUNNER_TEMP/build.keychain; security create-keychain -p "" "$KC"; security set-keychain-settings "$KC"; security unlock-keychain -p "" "$KC"
+          echo "$P12" | base64 -d > $RUNNER_TEMP/c.p12; security import $RUNNER_TEMP/c.p12 -k "$KC" -P "$P12_PASS" -T /usr/bin/codesign
+          security list-keychains -d user -s "$KC"; security set-key-partition-list -S apple-tool:,apple: -s -k "" "$KC"
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles; echo "$PROFILE" | base64 -d > ~/Library/MobileDevice/Provisioning\ Profiles/finandex.mobileprovision
+      - name: Archive & export IPA
+        working-directory: ios/App
+        run: |
+          xcodebuild -workspace App.xcworkspace -scheme App -configuration Release -archivePath $RUNNER_TEMP/App.xcarchive archive PRODUCT_BUNDLE_IDENTIFIER="$BUNDLE_ID"
+          xcodebuild -exportArchive -archivePath $RUNNER_TEMP/App.xcarchive -exportPath $RUNNER_TEMP/ipa -exportOptionsPlist ExportOptions.plist
+      - name: Upload to TestFlight (optional)
+        if: ${{ env.HAS_ASC == 'true' }}
+        env:
+          ASC_KEY: ${{ secrets.APP_STORE_CONNECT_API_KEY_P8_BASE64 }}
+          ASC_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+          ASC_ISSUER: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+        run: |
+          mkdir -p ~/.appstoreconnect/private_keys; echo "$ASC_KEY" | base64 -d > ~/.appstoreconnect/private_keys/AuthKey_$ASC_KEY_ID.p8
+          xcrun altool --upload-app -f $RUNNER_TEMP/ipa/*.ipa -t ios --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER"
+      - uses: actions/upload-artifact@v4
+        with: { name: ios, path: '${{ runner.temp }}/ipa/*.ipa', if-no-files-found: warn }

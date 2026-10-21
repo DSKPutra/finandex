@@ -35,3 +35,9 @@
 - Resolusi runtime §15.6 (`src/config/runtime.ts`): env → same-origin `/data/manifest.json` → `PRODUCTION_ORIGIN`.
 - Capacitor 8: `android/` & `ios/` ditambahkan; `npm run build:native` (API + data heavy dari produksi, `data/core` dibundel). Integrasi native: status bar & splash, tombol back Android (tutup sheet → kembali → konfirmasi keluar), haptic saat kirim, share sheet PNG, tautan eksternal via in-app browser, keyboard resize. `NSHumanReadableCopyright` di Info.plist.
 - Ikon & splash native dirender dari artwork kit (`npm run assets:generate`, Chromium headless; logo tidak digambar ulang).
+
+## Fase 8 — CI/CD & deploy · HIJAU (koneksi akun menunggu pemilik)
+- `vercel.json` (build `build:ci`, fungsi `api/[[...route]].mjs` dari handler yang dibundel esbuild ke `server-dist/`, rewrites SPA, CSP & header keamanan, CORS data), `netlify.toml` (fungsi `netlify/functions/api.mts` path `/api/*`, header, redirect SPA).
+- Workflow: `ci.yml` (semua gate + gitleaks + unggah laporan), `parity.yml` (Python 3.12 + pandas/numpy/pyarrow/poppler), `promote.yml` (fast-forward `release`), `android.yml`, `ios.yml`, `deploy-fallback.yml`, `eval-live.yml`; Dependabot npm + actions.
+- Gate baru: `check:licenses` (878 paket OK), `check:secrets` (repo + dist), `check:contrast` (dua tema + palet grafik + buta warna), `test:parity`, `size` (entry 153,88 KB gzip ≤ 250 KB).
+- Dokumen: `docs/RELEASE.md`, `docs/DATA.md`, `docs/ARCHITECTURE.md`, `docs/ADD_NEW_DEX.md`.

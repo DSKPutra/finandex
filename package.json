@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.server.json --noEmit && vite build",
+    "build": "tsc -p tsconfig.server.json --noEmit && tsx scripts/build/bundle-server.ts && vite build && tsx scripts/build/oss-licenses.ts",
     "build:ci": "npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build && npm run test:golden && npm run build",
     "preview": "vite preview",
     "data:fetch": "tsx scripts/data/fetch-inputs.ts",

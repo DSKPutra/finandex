@@ -86,3 +86,5 @@ export const CHART_PALETTE = [
   '#FF7AC6',
   '#C9D46C',
 ] as const;
+/** Same hues darkened for the light theme so every series keeps ≥ 3:1 against light surfaces (§10.3). */
+export const CHART_PALETTE_LIGHT = ['#0A7D24', '#1565C0', '#A15C00', '#C62828', '#7B4FD6', '#00796B', '#C2185B', '#6B7A00'] as const;

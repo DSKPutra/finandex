@@ -1,0 +1,27 @@
+# © 2026 Dea Saka Kurnia Putra. All rights reserved.
+# Live chatbot eval (§18.6): manual + weekly; needs ANTHROPIC_API_KEY.
+name: eval-live
+on:
+  workflow_dispatch:
+  schedule: [{ cron: '17 3 * * 1' }]
+permissions:
+  contents: read
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      DATA_INPUTS_RELEASE_TAG: ${{ vars.DATA_INPUTS_RELEASE_TAG || 'data-inputs-v1' }}
+      GH_RELEASE_TOKEN: ${{ secrets.GH_RELEASE_TOKEN || github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@v4
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm ci
+      - run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build
+      - run: npm run eval:chat
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: eval-live, path: docs/eval/live-report.*, if-no-files-found: ignore }
