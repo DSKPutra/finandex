@@ -96,7 +96,8 @@
     "suggested": "Suggested questions",
     "empty": "Ask anything about the data in {{dex}}.",
     "tool": "Running {{label}}",
-    "rateLimited": "Too many requests. Try again in {{s}} seconds."
+    "rateLimited": "Too many requests. Try again in {{s}} seconds.",
+    "offline": "Chat needs an internet connection."
   },
   "data": {
     "title": "Data & sources",
@@ -119,7 +120,10 @@
     "cleared": "Deleted",
     "resetConsent": "Ask for chat consent again"
   },
-  "watchlist": { "title": "Watchlist", "empty": "Your watchlist is empty. Add assets from a detail page." },
+  "watchlist": {
+    "title": "Watchlist",
+    "empty": "Your watchlist is empty. Add assets from a detail page."
+  },
   "about": {
     "title": "About Finandex",
     "version": "Version",
@@ -140,5 +144,10 @@
     "dex": "Dex",
     "entities": "Entities",
     "none": "No results."
+  },
+  "pwa": {
+    "update": "A new version of Finandex is available.",
+    "reload": "Reload",
+    "exit": "Exit Finandex?"
   }
 }

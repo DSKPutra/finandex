@@ -9,6 +9,7 @@ import type { Artifact } from '../shared/chart-spec.ts';
 import { fmtAsOf } from '../shared/format.ts';
 import { useTranslation, type Locale } from '../i18n/index.ts';
 import { exportCsv, exportPng } from '../lib/export.ts';
+import { sharePng } from '../native/native.ts';
 import { ChartView, type ChartHandle } from './charts/ChartView.tsx';
 import { specTable } from './charts/options.ts';
 
@@ -81,7 +82,8 @@ export function ArtifactCard({
               title={t('common.exportPng')}
               onClick={() => {
                 const url = chart.current?.toDataUrl();
-                if (url) void exportPng(url, a.title, src);
+                if (url)
+                  void sharePng(url, a.title).then((shared) => (shared ? undefined : exportPng(url, a.title, src)));
               }}
             >
               PNG

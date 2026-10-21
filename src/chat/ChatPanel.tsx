@@ -33,6 +33,8 @@ import {
 } from './history.ts';
 import { sensitiveKinds } from './sensitive.ts';
 import { useChat } from './useChat.ts';
+import { useOnline } from '../components/States.tsx';
+import { hapticTap } from '../native/native.ts';
 
 const DISCLAIMER: Record<string, { id: string; en: string }> = {
   mylaiwyer: { id: DISCLAIMER_LAW_ID, en: DISCLAIMER_LAW_EN },
@@ -132,11 +134,12 @@ export function ChatPanel({
   const end = useRef<HTMLDivElement>(null);
   const entry = DEX_BY_ID[dex];
   const needConsent = consent < CONSENT_VERSION;
+  const online = useOnline();
 
   const submit = useCallback(
     async (q: string) => {
       const s = q.trim();
-      if (!s || chat.busy) return;
+      if (!s || chat.busy || !online) return;
       const kinds = await sensitiveKinds(s);
       if (kinds.length) {
         setWarn(t('chat.sensitive', { kinds: kinds.join(', ') }));
@@ -144,6 +147,7 @@ export function ChatPanel({
       }
       setWarn(null);
       setText('');
+      void hapticTap();
       void chat.send(s, context);
     },
     [chat, context, t],
@@ -255,6 +259,11 @@ export function ChatPanel({
           void submit(text);
         }}
       >
+        {!online && (
+          <p role="status" className="text-sm m-0 mb-2" style={{ color: 'var(--warning)' }}>
+            {t('chat.offline')}
+          </p>
+        )}
         {warn && (
           <p role="alert" className="text-sm m-0 mb-2" style={{ color: 'var(--negative)' }}>
             {warn}
@@ -285,7 +294,12 @@ export function ChatPanel({
               <Square size={16} />
             </button>
           ) : (
-            <button type="submit" className="btn btn-primary" aria-label={t('chat.send')} disabled={!text.trim()}>
+            <button
+              type="submit"
+              className="btn btn-primary"
+              aria-label={t('chat.send')}
+              disabled={!text.trim() || !online}
+            >
               <Send size={16} />
             </button>
           )}

@@ -96,7 +96,8 @@
     "suggested": "Saran pertanyaan",
     "empty": "Tanyakan apa saja tentang data di {{dex}}.",
     "tool": "Menjalankan {{label}}",
-    "rateLimited": "Terlalu banyak permintaan. Coba lagi dalam {{s}} detik."
+    "rateLimited": "Terlalu banyak permintaan. Coba lagi dalam {{s}} detik.",
+    "offline": "Butuh koneksi internet untuk chat."
   },
   "data": {
     "title": "Data & sumber",
@@ -119,7 +120,10 @@
     "cleared": "Dihapus",
     "resetConsent": "Minta ulang persetujuan chat"
   },
-  "watchlist": { "title": "Watchlist", "empty": "Watchlist masih kosong. Tambahkan aset dari halaman detail." },
+  "watchlist": {
+    "title": "Watchlist",
+    "empty": "Watchlist masih kosong. Tambahkan aset dari halaman detail."
+  },
   "about": {
     "title": "Tentang Finandex",
     "version": "Versi",
@@ -140,5 +144,10 @@
     "dex": "Dex",
     "entities": "Entitas",
     "none": "Tidak ada hasil."
+  },
+  "pwa": {
+    "update": "Versi baru Finandex tersedia.",
+    "reload": "Muat ulang",
+    "exit": "Keluar dari Finandex?"
   }
 }

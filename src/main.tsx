@@ -1,35 +1,52 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Entry: splash (§11.1) shown until the first render settles, then the app.
+// Entry: resolve API/data origins (§15.6), splash (§11.1), then the app; native init inside Capacitor.
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { StrictMode, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
-import './i18n/index.ts';
+import { i18n } from './i18n/index.ts';
 import { App } from './app/App.tsx';
 import { Splash } from './app/Splash.tsx';
+import { UpdatePrompt } from './app/UpdatePrompt.tsx';
+import { initRuntime } from './lib/data.ts';
+import { initNative, isNative } from './native/native.ts';
 
 const qc = new QueryClient({ defaultOptions: { queries: { retry: 1, refetchOnWindowFocus: false } } });
 
 function Root() {
-  const [splash, setSplash] = useState(() => !sessionStorage.getItem('finandex-splash'));
+  const [splash, setSplash] = useState(() => {
+    try {
+      return !sessionStorage.getItem('finandex-splash');
+    } catch {
+      return false;
+    }
+  });
   useEffect(() => {
     if (!splash) return;
     const h = setTimeout(() => {
       setSplash(false);
-      sessionStorage.setItem('finandex-splash', '1');
+      try {
+        sessionStorage.setItem('finandex-splash', '1');
+      } catch {
+        /* ignore */
+      }
     }, 900);
     return () => clearTimeout(h);
   }, [splash]);
   return (
     <QueryClientProvider client={qc}>
       <App />
+      {!isNative() && <UpdatePrompt />}
       {splash && <Splash />}
     </QueryClientProvider>
   );
 }
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Root />
-  </StrictMode>,
-);
+void initRuntime().finally(() => {
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <Root />
+    </StrictMode>,
+  );
+  void initNative({ dark: document.documentElement.dataset.theme !== 'light', exitPrompt: String(i18n.t('pwa.exit')) });
+});

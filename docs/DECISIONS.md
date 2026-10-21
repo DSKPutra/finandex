@@ -29,3 +29,6 @@ Format: tanggal · keputusan · alasan · alternatif yang ditolak.
 - 2026-10-21 · **Label Dex/tab/tagline dari registry (`Label {id,en}`), string UI lain di `src/i18n/{id,en}.json`.** · Registry adalah sumber tunggal nama & tab (§6.2).
 - 2026-10-21 · **Judul percakapan otomatis = potongan pertanyaan pertama** (bukan via model FAST). · Hemat panggilan API & tidak mengirim riwayat untuk judul; bisa diganti nanti.
 - 2026-10-21 · **"Lihat halaman asli" (My LAIwyer) menampilkan teks halaman hasil ekstraksi**; render PDF dengan pdf.js menyusul bila PDF disalin ke `public/data` pada build. · PDF input tidak ikut ter-deploy saat ini.
+- 2026-10-21 · **Batas cache heavy 300 MB diwujudkan sebagai LRU 4.000 entri + `purgeOnQuotaError`** (Workbox tidak mendukung batas byte). · Rata-rata file heavy < 75 KB → ±300 MB; kuota browser tetap menjadi pengaman.
+- 2026-10-21 · **Ikon/splash native dibuat dengan Chromium headless dari PNG kit**, bukan `@capacitor/assets`. · Tanpa dependensi `sharp` native; hasil identik dengan artwork kit.
+- 2026-10-21 · **BUNDLE_ID default `com.deasakakurniaputra.finandex` dipakai sementara** (bisa ditimpa env `BUNDLE_ID`). · [KONFIRMASI] sebelum unggahan store pertama (§16.3).

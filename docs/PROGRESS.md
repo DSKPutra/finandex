@@ -28,3 +28,10 @@
 - Grafik ECharts dari ChartSpec (line/candle/bar/heatmap/histogram/graph/map-scatter), tabel tervirtualisasi, ekspor PNG/CSV bertanda air, layar penuh, tabel tersembunyi untuk pembaca layar.
 - Halaman: Dex Hub, Watchlist, Pengaturan (bahasa, tema, buta warna, hapus data lokal), Tentang (wordmark, kredit, tagline, versi/build), Legal (privasi UU 27/2022, syarat, disclaimer, sumber data dari registry+manifest, lisensi OSS).
 - Test: `tests/tools/views.test.ts` (setiap tab fitur 27 Dex punya view; panggilan default sukses; ≥ 6 saran id/en). Bundel entry 151 KB gzip; ECharts dimuat malas.
+
+## Fase 7 — PWA & native · HIJAU (build native di CI macOS/Android menunggu secret)
+- PWA (vite-plugin-pwa): manifest (Finandex, ikon kit, `#0A0F0C`, standalone), precache shell + `data/core` (378 entri), `heavy/` stale-while-revalidate (LRU 4.000 entri + purge saat kuota penuh), `/api` NetworkOnly, prompt "Versi baru tersedia".
+- Offline: banner global; chat menonaktifkan kirim dengan pesan "Butuh koneksi internet".
+- Resolusi runtime §15.6 (`src/config/runtime.ts`): env → same-origin `/data/manifest.json` → `PRODUCTION_ORIGIN`.
+- Capacitor 8: `android/` & `ios/` ditambahkan; `npm run build:native` (API + data heavy dari produksi, `data/core` dibundel). Integrasi native: status bar & splash, tombol back Android (tutup sheet → kembali → konfirmasi keluar), haptic saat kirim, share sheet PNG, tautan eksternal via in-app browser, keyboard resize. `NSHumanReadableCopyright` di Info.plist.
+- Ikon & splash native dirender dari artwork kit (`npm run assets:generate`, Chromium headless; logo tidak digambar ulang).

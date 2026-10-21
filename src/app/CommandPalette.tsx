@@ -115,7 +115,6 @@ export function CommandPalette({ open, onOpenChange }: { open: boolean; onOpenCh
           <Dialog.Title className="sr-only">{t('nav.search')}</Dialog.Title>
           <Dialog.Description className="sr-only">{t('palette.placeholder')}</Dialog.Description>
           <input
-           
             className="input"
             type="search"
             placeholder={t('palette.placeholder')}

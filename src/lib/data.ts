@@ -8,12 +8,27 @@ import { DataStore } from '../../server/data/store.ts';
 import { ToolError, type Tool, type ToolContext, type ToolOutput } from '../../server/tools/types.ts';
 import type { Locale } from '../i18n/index.ts';
 
-export const DATA_BASE = (import.meta.env.VITE_DATA_BASE_URL as string | undefined) ?? `${location.origin}/data`;
-export const API_BASE = (import.meta.env.VITE_API_BASE_URL as string | undefined) ?? '';
+import { resolveRuntime, type Runtime } from '../config/runtime.ts';
+
+export let API_BASE = '';
 export const DISTRIBUTION = ((import.meta.env.VITE_DISTRIBUTION as string | undefined) ?? 'noncommercial') as
   'noncommercial' | 'commercial';
 
-export const store = new DataStore(DATA_BASE);
+export let store = new DataStore(`${location.origin}/data`);
+export let runtime: Runtime = { apiBase: '', dataBase: `${location.origin}/data`, source: 'same-origin' };
+
+/** Resolve API/data origins once at start-up (before the first render). */
+export async function initRuntime(): Promise<Runtime> {
+  runtime = await resolveRuntime();
+  API_BASE = runtime.apiBase;
+  // native builds bundle data/core only; heavy files come from VITE_HEAVY_DATA_BASE_URL (production) (§14)
+  const heavy = (import.meta.env.VITE_HEAVY_DATA_BASE_URL as string | undefined)?.replace(/\/$/, '');
+  const base = runtime.dataBase;
+  store = new DataStore(base, (u, i) =>
+    fetch(heavy && u.startsWith(`${base}/heavy/`) ? `${heavy}${u.slice(base.length)}` : u, i),
+  );
+  return runtime;
+}
 export type Manifest = NonNullable<ToolContext['manifest']> & { built_at?: string; distribution?: string };
 
 export function useManifest() {
