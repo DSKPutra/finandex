@@ -90,8 +90,8 @@ export const LAW_SOURCES: readonly LawSource[] = [
     input: 32,
     file: 'KUHAP.pdf',
     title: {
-      id: 'KUHAP (UU No. 8 Tahun 1981) — versi kompilasi tidak resmi (sekunder, tidak diindeks; hanya cross-check)',
-      en: 'KUHAP (Law No. 8 of 1981) — unofficial compilation (secondary, not indexed; cross-check only)',
+      id: 'KUHAP (UU No. 8 Tahun 1981) — versi kompilasi tidak resmi',
+      en: 'KUHAP (Law No. 8 of 1981) — unofficial compilation',
     },
     short: 'KUHAP (kompilasi)',
     role: 'secondary',
