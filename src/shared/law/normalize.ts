@@ -73,7 +73,9 @@ function deprefix(w: string): { rest: string; prefixed: boolean } {
  */
 export function stemId(w: string): string {
   if (w.length <= 4) return w.toLowerCase();
-  let { rest, prefixed } = deprefix(w);
+  const d = deprefix(w);
+  let rest = d.rest;
+  const prefixed = d.prefixed;
   if (prefixed) {
     const t = rest.replace(/(kan|an|i)$/, '');
     if (t.length >= 4) rest = t;
