@@ -149,5 +149,8 @@
     "update": "Versi baru Finandex tersedia.",
     "reload": "Muat ulang",
     "exit": "Keluar dari Finandex?"
+  },
+  "law": {
+    "originalPage": "Halaman asli {{page}} dari {{pages}} (PDF sumber)"
   }
 }

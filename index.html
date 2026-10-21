@@ -10,10 +10,14 @@
     <meta name="theme-color" content="#0A0F0C" />
     <link rel="icon" type="image/png" href="/icons/finandex-192.png" />
     <link rel="apple-touch-icon" href="/icons/finandex-192.png" />
+    <script src="/boot.js"></script>
     <style>
       body{margin:0}
-      .splash{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.25rem;background:#0a0f0c;z-index:100}
+      .splash{position:fixed;inset:0;animation:fx-splash .6s ease-in 1.2s forwards;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.25rem;background:#0a0f0c;z-index:100}
       .splash-by{display:flex;align-items:center;gap:.5rem;font-size:14px;color:#9db0a4}
+      html[lang='en'] [data-pre='id'],html:not([lang='en']) [data-pre='en']{display:none}
+      [data-theme='light'] .splash{background:#f6f8f7}
+      @keyframes fx-splash{to{opacity:0;visibility:hidden}}
     </style>
   </head>
   <body>
@@ -22,6 +26,7 @@
         <img src="/icons/finandex-192.png" width="96" height="96" alt="Finandex" />
         <div class="splash-by"><img src="/brand/dskp-mark-on-dark-64.png" width="24" height="24" alt="" /><span>by Dea Saka Kurnia Putra</span></div>
       </div>
+      <!--prerender-->
     </div>
     <noscript>Finandex membutuhkan JavaScript. © 2026 Dea Saka Kurnia Putra. All rights reserved.</noscript>
     <script type="module" src="/src/main.tsx"></script>

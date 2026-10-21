@@ -13,6 +13,8 @@ import { FeatureMap } from '../components/FeatureMap.tsx';
 import { Skeleton } from '../components/States.tsx';
 
 const SUMMARY = ['^GSPC', '^IXIC', 'GC=F', 'BTC-USD', 'CL=F', 'EURUSD=X'];
+/** fixed tile height so the prerendered skeleton row and the loaded tiles occupy the same space (no layout shift) */
+const TILE_H = 136;
 
 function MarketSummary() {
   const { t } = useTranslation();
@@ -34,9 +36,9 @@ function MarketSummary() {
         {t('home.marketSummary')}
       </h2>
       <div className="grid gap-2 grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
-        {q.isLoading && SUMMARY.map((s) => <Skeleton key={s} h={96} />)}
+        {(q.isLoading || q.isPending) && SUMMARY.map((s) => <Skeleton key={s} h={TILE_H} />)}
         {q.data?.map((r, i) => {
-          if (!r.ok) return null;
+          if (!r.ok) return <div key={SUMMARY[i]} className="card" style={{ height: TILE_H }} />;
           const d = r.out.data as { id: string; name: string; metrics: Record<string, number | string> };
           const m = d.metrics;
           const tone = (v: unknown) => (typeof v === 'number' ? (v >= 0 ? 'pos' : 'neg') : '');

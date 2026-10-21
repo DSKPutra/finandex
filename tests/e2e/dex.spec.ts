@@ -43,6 +43,8 @@ test('My LAIwyer: quote card, fixed UUD note, original page view', async ({ prim
   await expect(page.getByText(/naskah asli sebelum perubahan/).first()).toBeVisible();
   await page.getByRole('link', { name: 'Lihat halaman asli' }).first().click();
   await expect(page.getByText(/UNDANG-UNDANG DASAR/).first()).toBeVisible();
+  // original PDF page rendered with pdf.js
+  await expect(page.getByRole('img', { name: /Halaman asli 1 dari 18/ })).toBeVisible({ timeout: 30_000 });
 });
 
 test('command palette finds Dex and entities', async ({ primed: page }, info) => {

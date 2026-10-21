@@ -149,5 +149,8 @@
     "update": "A new version of Finandex is available.",
     "reload": "Reload",
     "exit": "Exit Finandex?"
+  },
+  "law": {
+    "originalPage": "Original page {{page}} of {{pages}} (source PDF)"
   }
 }

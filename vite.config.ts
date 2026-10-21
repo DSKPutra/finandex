@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { scriptsLast } from './scripts/build/html-scripts-last.ts';
 
 // PWA (§14): precache the app shell + data/core; heavy data cached at runtime (stale-while-revalidate, LRU by
 // entry count + purge on quota errors); /api is never cached.
@@ -10,6 +11,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    scriptsLast(),
     VitePWA({
       registerType: 'prompt',
       injectRegister: false,

@@ -2,6 +2,7 @@
 // Dex page (§9): header (icon, name, tagline, badges) + horizontal tabs. First tab Chat, last tab Data; feature tabs
 // come from the declarative views. Route: /dex/:dexId/:tab?/:entity?
 import { useQuery } from '@tanstack/react-query';
+import { lazy, Suspense } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DISCLAIMER_LAW_EN, DISCLAIMER_LAW_ID } from '../config/brand.ts';
 import { DEX_BY_ID, isDexId } from '../config/dex-registry.ts';
@@ -16,6 +17,8 @@ import { viewsFor } from '../dex/views/index.ts';
 import type { DexViews } from '../dex/views/types.ts';
 import { DataTab } from './DataTab.tsx';
 import NotFound from './NotFound.tsx';
+
+const PdfPage = lazy(() => import('../components/PdfPage.tsx'));
 
 export default function DexPage({ fixedDex }: { fixedDex?: string }) {
   const params = useParams();
@@ -81,7 +84,16 @@ export default function DexPage({ fixedDex }: { fixedDex?: string }) {
         ) : views.isLoading ? (
           <Skeleton />
         ) : views.data?.[tab] ? (
-          <TabView key={`${id}/${tab}/${entity ?? ''}`} dex={id} tab={tab} view={views.data[tab]} entity={entity} />
+          <>
+            {id === 'mylaiwyer' && tab === 'browse' && entity?.includes('@') && (
+              <div className="mb-3">
+                <Suspense fallback={<Skeleton h={480} />}>
+                  <PdfPage docId={entity.split('@')[0]!} page={Number(entity.split('@')[1]) || 1} />
+                </Suspense>
+              </div>
+            )}
+            <TabView key={`${id}/${tab}/${entity ?? ''}`} dex={id} tab={tab} view={views.data[tab]} entity={entity} />
+          </>
         ) : (
           <ErrorState onRetry={() => nav(0)} />
         )}

@@ -13,8 +13,9 @@ import { resolveRuntime, type Runtime } from '../config/runtime.ts';
 export let API_BASE = '';
 export { DISTRIBUTION } from '../config/visible-dex.ts';
 
-export let store = new DataStore(`${location.origin}/data`);
-export let runtime: Runtime = { apiBase: '', dataBase: `${location.origin}/data`, source: 'same-origin' };
+const ORIGIN = typeof location !== 'undefined' ? location.origin : '';
+export let store = new DataStore(`${ORIGIN}/data`);
+export let runtime: Runtime = { apiBase: '', dataBase: `${ORIGIN}/data`, source: 'same-origin' };
 
 /** Resolve API/data origins once at start-up; data access awaits `ready` (rendering does not). */
 let readyResolve!: (r: Runtime) => void;

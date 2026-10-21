@@ -130,6 +130,8 @@ export const lawModule: DexModule = {
   async build(ctx): Promise<ModuleResult> {
     const docs: Record<string, unknown>[] = [];
     const files: Record<string, unknown> = {};
+    // original PDFs of indexed primary documents, for the "view original page" renderer (pdf.js)
+    const binaries: Record<string, Uint8Array> = {};
     const shaByFile = new Map<string, string>();
     const normText = new Map<string, string>();
     const available: string[] = [];
@@ -156,6 +158,7 @@ export const lawModule: DexModule = {
           files[`heavy/law/${src.docId}/chunks.json`] = { doc_id: src.docId, title: src.title, chunks };
           files[`heavy/law/${src.docId}/index.json`] = ms.toJSON();
           pages.forEach((pg, i) => (files[`heavy/law/${src.docId}/pages/${i + 1}.txt`] = pg));
+          binaries[`heavy/law/${src.docId}/source.pdf`] = new Uint8Array(readFileSync(p));
           ctx.log(`law: ${src.docId} ${chunks.length} chunks, ${a.pasal_headings_detected}/${src.maxPasal} headings`);
         }
       }
@@ -189,6 +192,7 @@ export const lawModule: DexModule = {
       asOf: null,
       golden: { 'law/golden.json': golden },
       files,
+      binaries,
     };
   },
 };
