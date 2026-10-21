@@ -13,7 +13,8 @@
     "search": "Search",
     "collapse": "Collapse menu",
     "expand": "Expand menu",
-    "menu": "Main navigation"
+    "menu": "Main navigation",
+    "whitepaper": "Whitepaper"
   },
   "common": {
     "open": "Open",
@@ -64,7 +65,11 @@
       "What is the latest USD/IDR rate?",
       "What is total DeFi TVL now?",
       "What is the median software engineer salary in the United States?"
-    ]
+    ],
+    "whitepaper": "Whitepaper",
+    "whitepaperLead": "Understand what FinanDex is: how the 27 Dex work, where the data comes from, how numbers are computed, security and limitations.",
+    "whitepaperRead": "Read the whitepaper",
+    "whitepaperPdf": "Download PDF"
   },
   "chat": {
     "placeholder": "Type a question…",

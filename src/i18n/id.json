@@ -13,7 +13,8 @@
     "search": "Cari",
     "collapse": "Ciutkan menu",
     "expand": "Buka menu",
-    "menu": "Navigasi utama"
+    "menu": "Navigasi utama",
+    "whitepaper": "Whitepaper"
   },
   "common": {
     "open": "Buka",
@@ -64,7 +65,11 @@
       "Berapa kurs USD/IDR terakhir?",
       "Berapa total TVL DeFi saat ini?",
       "Berapa median gaji software engineer di Amerika Serikat?"
-    ]
+    ],
+    "whitepaper": "Whitepaper",
+    "whitepaperLead": "Pahami apa itu FinanDex: cara kerja 27 Dex, asal data, metode perhitungan, keamanan, dan batasannya.",
+    "whitepaperRead": "Baca whitepaper",
+    "whitepaperPdf": "Unduh PDF"
   },
   "chat": {
     "placeholder": "Tulis pertanyaan…",

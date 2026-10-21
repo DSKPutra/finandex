@@ -44,7 +44,8 @@
     "prompts:build": "tsx scripts/chat/bundle-prompts.ts",
     "dev:api": "tsx scripts/dev/api-server.ts",
     "build:native": "tsx scripts/build/native-web.ts",
-    "dev:web": "vite"
+    "dev:web": "vite",
+    "whitepaper:pdf": "tsx --tsconfig tsconfig.app.json scripts/build/whitepaper-pdf.tsx"
   },
   "size-limit": [
     {

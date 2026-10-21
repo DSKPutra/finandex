@@ -11,6 +11,7 @@ for (const theme of ['dark', 'light'] as const)
     '/dex/rupiahdex/chat',
     '/dex/mylaiwyer/browse',
     '/about',
+    '/whitepaper/cara-kerja',
     '/settings',
     '/legal/data-sources',
   ]) {

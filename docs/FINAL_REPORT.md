@@ -36,6 +36,12 @@ Semua konfigurasi siap: `vercel.json`, `netlify.toml`, fungsi `api/[[...route]].
 | Aksesibilitas (axe WCAG 2.2 AA) | ✅ 8 halaman × 2 tema, 0 pelanggaran *serious/critical* |
 | Lighthouse mobile — Beranda | ✅ `lhci` lulus (median 3 run): **Performance 91** (run 91/93/82) · Accessibility 100 · Best Practices 100 · SEO 92; LCP ±2,0 dtk, CLS ≈ 0. Dicapai dengan prerender shell Beranda (id & en) saat build, `boot.js` yang menerapkan bahasa/tema sebelum paint, skrip entry di akhir `<body>`, dan tinggi tetap kartu ringkasan pasar. Skor lab bervariasi antar-run; workflow `lighthouse.yml` menjaganya |
 
+## 3a. Whitepaper
+- Halaman `/whitepaper/:chapter?` bergaya GitBook (daftar isi kiri, satu bab per halaman dengan tombol sebelumnya/berikutnya, "Di halaman ini" kanan; di ponsel daftar isi menjadi dropdown). Tersedia di menu samping/“Lainnya” dan sebagai kartu di Beranda.
+- Tombol pertama di Beranda dan di header whitepaper: **Unduh PDF** (`/whitepaper/finandex-whitepaper-id.pdf`, versi EN di tombol kedua).
+- Isi (12 bab, ID & EN) di `src/content/whitepaper.ts`; tabel Dex dibangkitkan dari registry. PDF (A4, 15 halaman) dibangun dari teks yang sama dengan `npm run whitepaper:pdf` (Playwright Chromium; set `CHROMIUM_PATH` bila perlu). `tests/unit/whitepaper.test.ts` gagal bila PDF lebih lama dari teks.
+- Diuji: unit 384/384, E2E whitepaper (desktop + Pixel) 6/6, axe kedua tema pada `/whitepaper/cara-kerja` tanpa pelanggaran serius; JS awal 130,54 KB gzip.
+
 ## 4. Status Dex
 
 | Dex | Status | Data per |

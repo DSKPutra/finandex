@@ -42,6 +42,8 @@ for (const path of [
   '/watchlist',
   '/settings',
   '/about',
+  '/whitepaper',
+  '/whitepaper/keamanan',
   '/legal/privacy',
   '/legal/data-sources',
 ]) {

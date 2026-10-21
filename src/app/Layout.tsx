@@ -13,6 +13,7 @@ import {
   Settings,
   Star,
   Info,
+  BookOpen,
 } from 'lucide-react';
 import { lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
@@ -127,6 +128,7 @@ export function Layout() {
         <div className="mt-3 flex flex-col gap-1">
           <SideLink to="/watchlist" icon={<Star size={18} />} label={t('nav.watchlist')} collapsed={collapsed} />
           <SideLink to="/settings" icon={<Settings size={18} />} label={t('nav.settings')} collapsed={collapsed} />
+          <SideLink to="/whitepaper" icon={<BookOpen size={18} />} label={t('nav.whitepaper')} collapsed={collapsed} />
           <SideLink to="/about" icon={<Info size={18} />} label={t('nav.about')} collapsed={collapsed} />
         </div>
       </aside>
@@ -218,6 +220,7 @@ export function Layout() {
             {[
               ['/watchlist', t('nav.watchlist')],
               ['/settings', t('nav.settings')],
+              ['/whitepaper', t('nav.whitepaper')],
               ['/about', t('nav.about')],
               ['/legal/privacy', t('nav.legal')],
             ].map(([to, label]) => (

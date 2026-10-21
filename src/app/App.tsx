@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Routes (§10.1): /, /ai, /dex, /dex/:dexId/:tab?/:entity?, /markets/:slug?, /watchlist, /settings, /about, /legal/:page.
+// Routes (§10.1): /, /ai, /dex, /dex/:dexId/:tab?/:entity?, /markets/:slug?, /watchlist, /settings, /about, /whitepaper/:chapter?, /legal/:page.
 import { lazy, Suspense, useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { applySettings, useSettings } from '../lib/settings.ts';
@@ -14,6 +14,7 @@ const Markets = lazy(() => import('../pages/Markets.tsx'));
 const Watchlist = lazy(() => import('../pages/Watchlist.tsx'));
 const Settings = lazy(() => import('../pages/Settings.tsx'));
 const About = lazy(() => import('../pages/About.tsx'));
+const Whitepaper = lazy(() => import('../pages/Whitepaper.tsx'));
 const Legal = lazy(() => import('../pages/Legal.tsx'));
 const NotFound = lazy(() => import('../pages/NotFound.tsx'));
 
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       { path: '/watchlist', element: S(<Watchlist />) },
       { path: '/settings', element: S(<Settings />) },
       { path: '/about', element: S(<About />) },
+      { path: '/whitepaper/:chapter?', element: S(<Whitepaper />) },
       { path: '/legal/:page', element: S(<Legal />) },
       { path: '*', element: S(<NotFound />) },
     ],

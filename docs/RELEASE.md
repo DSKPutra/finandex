@@ -46,3 +46,6 @@ Lovable menghosting frontend dari repo yang sama. `npm install && npm run dev` b
 
 ## 8. Rollback
 Vercel: *Instant Rollback* ke deployment sebelumnya. Netlify: *Deploys → Publish deploy* sebelumnya. Git: `git push origin <sha-lama>:release --force-with-lease` (hanya bila disepakati).
+
+## Whitepaper
+Setelah mengubah `src/content/whitepaper.ts`, jalankan `npm run whitepaper:pdf` dan commit `public/whitepaper/*` (unit test memeriksa hash isi).

@@ -1,10 +1,12 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Beranda (§10.2): hero with "Ask Finandex AI", market summary, feature map of all 27 Dex in 8 categories, as-of strip.
+// Beranda (§10.2): hero with "Ask Finandex AI", whitepaper card (PDF first), market summary, feature map of all 27 Dex in 8 categories, as-of strip.
 import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
+import { BookOpen, Download } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { APP_TAGLINE_EN, APP_TAGLINE_ID } from '../config/brand.ts';
 import { DEX_REGISTRY } from '../config/dex-registry.ts';
+import { pdfPath, whitepaper } from '../content/whitepaper.ts';
 import { fmtAsOf, fmtPct, fmtPrice } from '../shared/format.ts';
 import { useTranslation } from '../i18n/index.ts';
 import { runTool, useManifest } from '../lib/data.ts';
@@ -69,6 +71,40 @@ function MarketSummary() {
   );
 }
 
+function WhitepaperCard() {
+  const { t } = useTranslation();
+  const locale = useSettings((s) => s.locale);
+  const chapters = whitepaper(locale);
+  return (
+    <section aria-labelledby="wp" className="card p-5 flex flex-col gap-3">
+      <div className="flex items-center gap-2">
+        <BookOpen size={22} aria-hidden="true" style={{ color: 'var(--brand-text)' }} />
+        <h2 id="wp" className="text-xl m-0">
+          {t('home.whitepaper')}
+        </h2>
+      </div>
+      <p className="m-0 muted">{t('home.whitepaperLead')}</p>
+      <div className="flex flex-wrap gap-2">
+        <a className="btn btn-primary" href={pdfPath(locale)} download>
+          <Download size={18} aria-hidden="true" /> {t('home.whitepaperPdf')}
+        </a>
+        <Link className="btn" to="/whitepaper">
+          {t('home.whitepaperRead')}
+        </Link>
+      </div>
+      <ol className="grid gap-1 sm:grid-cols-2 lg:grid-cols-3 m-0 p-0" style={{ listStyle: 'none' }}>
+        {chapters.map((c, i) => (
+          <li key={c.slug}>
+            <Link to={`/whitepaper/${c.slug}`} className="text-sm">
+              <span className="num muted">{String(i + 1).padStart(2, '0')}</span> {c.title}
+            </Link>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
 export default function Home() {
   const { t } = useTranslation();
   const locale = useSettings((s) => s.locale);
@@ -123,6 +159,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <WhitepaperCard />
       <MarketSummary />
       <FeatureMap locale={locale} />
       <section aria-labelledby="asof" className="flex flex-col gap-2">
