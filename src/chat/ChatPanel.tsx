@@ -150,7 +150,7 @@ export function ChatPanel({
       void hapticTap();
       void chat.send(s, context);
     },
-    [chat, context, t],
+    [chat, context, t, online],
   );
 
   useEffect(() => {
