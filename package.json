@@ -10,7 +10,7 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "tsx scripts/dev/dev.ts",
     "build": "tsc -p tsconfig.server.json --noEmit && tsx scripts/build/bundle-server.ts && vite build && tsx scripts/build/oss-licenses.ts",
     "build:ci": "npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build && npm run test:golden && npm run build",
     "preview": "vite preview",
@@ -43,7 +43,8 @@
     "assets:generate": "tsx scripts/brand/native-assets.ts",
     "prompts:build": "tsx scripts/chat/bundle-prompts.ts",
     "dev:api": "tsx scripts/dev/api-server.ts",
-    "build:native": "tsx scripts/build/native-web.ts"
+    "build:native": "tsx scripts/build/native-web.ts",
+    "dev:web": "vite"
   },
   "size-limit": [
     {

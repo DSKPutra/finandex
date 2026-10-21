@@ -10,7 +10,8 @@ Finandex adalah aplikasi *insights* indeks pasar keuangan global & Indonesia den
 
 ```bash
 npm install
-npm run dev            # http://localhost:5173 (tanpa public/data lokal → data dari PRODUCTION_ORIGIN)
+npm run dev            # http://localhost:5173 + API lokal :8787 (tanpa ANTHROPIC_API_KEY → model tiruan)
+                       # tanpa public/data lokal → data & API dari PRODUCTION_ORIGIN (§15.6)
 ```
 
 Membangun data dari dataset mentah (lihat `docs/DATA.md`):
@@ -23,7 +24,9 @@ npm run test:golden    # bandingkan dengan kit/golden/**
 npm run verify         # semua gate kualitas
 ```
 
-Dokumentasi: `docs/ARCHITECTURE.md`, `docs/DATA.md`, `docs/DECISIONS.md`, `docs/PROGRESS.md`, `docs/RELEASE.md`, `docs/ADD_NEW_DEX.md`.
+Chat dengan Claude secara lokal: `ANTHROPIC_API_KEY=… npm run dev`. Native: `npm run cap:android` / `npm run cap:ios`.
+
+Dokumentasi: `docs/ARCHITECTURE.md`, `docs/DATA.md`, `docs/DECISIONS.md`, `docs/PROGRESS.md`, `docs/RELEASE.md`, `docs/ADD_NEW_DEX.md`, `docs/FINAL_REPORT.md`.
 
 ## Hak cipta
 
