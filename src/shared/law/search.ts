@@ -1,7 +1,7 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
 // BM25 search over legal chunks (MiniSearch). The SAME options are used to build (ETL) and to load (server/client).
 import { fold } from '../text.ts';
-import { LAW_SYNONYMS, stemId } from './normalize.ts';
+import { LAW_SYNONYMS, stemVariants } from './normalize.ts';
 
 export interface LawChunk {
   id: string;
@@ -21,7 +21,7 @@ const STOP = new Set(['dan', 'atau', 'yang', 'di', 'ke', 'dari', 'untuk', 'denga
 export function tokenizeLaw(text: string): string[] {
   return fold(text)
     .split(/[^a-z0-9]+/)
-    .filter((w) => w.length > 1 && !STOP.has(w));
+    .filter((w) => (w.length > 1 || /^\d$/.test(w)) && !STOP.has(w));
 }
 
 export const LAW_SEARCH_OPTIONS = {
@@ -29,7 +29,7 @@ export const LAW_SEARCH_OPTIONS = {
   fields: ['label', 'text'],
   storeFields: ['doc_id', 'part', 'label', 'pasal', 'bab', 'page', 'page_end'],
   tokenize: (s: string) => tokenizeLaw(s),
-  processTerm: (t: string) => stemId(t),
+  processTerm: (t: string) => stemVariants(t),
   searchOptions: { boost: { label: 2 }, prefix: false, fuzzy: 0 },
 };
 

@@ -43,15 +43,53 @@ export function splitAyat(text: string): { ayat: number | null; text: string }[]
     .filter((p) => p.text.length);
 }
 
-/** Light Indonesian stemming for BM25 (prefix/suffix stripping, conservative). */
+function deprefix(w: string): { rest: string; prefixed: boolean } {
+  let s = w.toLowerCase().replace(/(lah|kah|tah|pun)$/, '').replace(/(nya|ku|mu)$/, '');
+  if (s.length <= 4) return { rest: s, prefixed: false };
+  const vowel = (c: string | undefined) => c !== undefined && 'aiueo'.includes(c);
+  const rules: [RegExp, (rest: string) => string][] = [
+    [/^(meng|peng)/, (r) => r],
+    [/^(meny|peny)/, (r) => (vowel(r[0]) ? 's' + r : r)],
+    [/^(mem|pem)/, (r) => (vowel(r[0]) ? 'p' + r : r)],
+    [/^(men|pen)/, (r) => (vowel(r[0]) ? 't' + r : r)],
+    [/^(ter|ber|per)/, (r) => r],
+    [/^(di|ke|se|me|pe)/, (r) => r],
+  ];
+  for (const [re, recode] of rules) {
+    const m = re.exec(s);
+    if (m && s.length - m[0].length >= 4) {
+      s = recode(s.slice(m[0].length));
+      return { rest: s, prefixed: true };
+    }
+  }
+  return { rest: s, prefixed: false };
+}
+
+/**
+ * Light Indonesian stemmer for BM25 (no dictionary): strip particles/possessives, then a derivational prefix with the
+ * usual nasal recoding (peN-/meN- + vowel → t, peny-/meny- + vowel → s, pem-/mem- + vowel → p), then -kan/-an/-i only
+ * when a prefix was removed (confixes like pe-an, di-kan) and ≥ 4 letters remain. The same function is used for indexing
+ * and querying, so imperfect stems still match each other.
+ */
 export function stemId(w: string): string {
-  let s = w.toLowerCase();
-  if (s.length <= 4) return s;
-  s = s.replace(/(lah|kah|tah|pun)$/, '');
-  s = s.replace(/(nya|ku|mu)$/, '');
-  if (s.length > 6) s = s.replace(/(kan|an|i)$/, '');
-  if (s.length > 6) s = s.replace(/^(meng|meny|mem|men|me|peng|peny|pem|pen|pe|di|ter|ber|ke|se)/, '');
-  return s.length >= 3 ? s : w.toLowerCase();
+  if (w.length <= 4) return w.toLowerCase();
+  let { rest, prefixed } = deprefix(w);
+  if (prefixed) {
+    const t = rest.replace(/(kan|an|i)$/, '');
+    if (t.length >= 4) rest = t;
+  }
+  return rest.length >= 3 ? rest : w.toLowerCase();
+}
+
+/** All plausible stems (ambiguous -kan/-an/-i emitted together) — MiniSearch processTerm, for recall. */
+export function stemVariants(w: string): string[] {
+  const out = new Set([w.toLowerCase(), stemId(w)]);
+  if (w.length > 4) {
+    const { rest } = deprefix(w);
+    out.add(rest);
+    for (const suf of ['kan', 'an', 'i']) if (rest.endsWith(suf) && rest.length - suf.length >= 4) out.add(rest.slice(0, -suf.length));
+  }
+  return [...out].filter((x) => x.length >= 2);
 }
 
 /** Small synonym table expanded at query time (§4.20). */
