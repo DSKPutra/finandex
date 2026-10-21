@@ -121,7 +121,10 @@ export const MISSING_LAW_SOURCES: readonly { id: string; en: string }[] = [
     id: 'UUD NRI Tahun 1945 hasil Perubahan I–IV (1999–2002) — naskah yang berlaku saat ini',
     en: 'The 1945 Constitution as amended (Amendments I–IV, 1999–2002) — the text currently in force',
   },
-  { id: 'Teks lengkap KUHP lama (Wetboek van Strafrecht, ±569 pasal)', en: 'Full text of the old Penal Code (Wetboek van Strafrecht, ±569 articles)' },
+  {
+    id: 'Teks lengkap KUHP lama (Wetboek van Strafrecht, ±569 pasal)',
+    en: 'Full text of the old Penal Code (Wetboek van Strafrecht, ±569 articles)',
+  },
   { id: 'KUHP baru (UU 1/2023)', en: 'The new Penal Code (Law 1/2023)' },
   { id: 'KUHPerdata (Burgerlijk Wetboek)', en: 'The Civil Code (Burgerlijk Wetboek)' },
   { id: 'Hukum acara perdata (HIR/RBg)', en: 'Civil procedure law (HIR/RBg)' },

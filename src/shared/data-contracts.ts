@@ -34,12 +34,18 @@ export const ColumnarTableSchema = z.object({
 });
 export type ColumnarTableFile = z.infer<typeof ColumnarTableSchema>;
 
-export const ManifestFileEntrySchema = z.object({ path: z.string(), bytes: z.number().int().nonnegative(), sha256: z.string().length(64) });
+export const ManifestFileEntrySchema = z.object({
+  path: z.string(),
+  bytes: z.number().int().nonnegative(),
+  sha256: z.string().length(64),
+});
 export const ManifestSchema = z.object({
   build_id: z.string(),
   built_at: z.string(),
   distribution: z.enum(['noncommercial', 'commercial']),
-  inputs: z.array(z.object({ no: z.number().int(), file: z.string(), sha256: z.string().length(64), present: z.boolean() })),
+  inputs: z.array(
+    z.object({ no: z.number().int(), file: z.string(), sha256: z.string().length(64), present: z.boolean() }),
+  ),
   dex: z.record(
     z.enum(DEX_IDS),
     z.object({
@@ -80,6 +86,11 @@ export const FORBIDDEN_SOCIAL_KEYS = ['author', 'author_followers', 'mentions', 
 /** Select a schema for a public/data path (others are checked by findUnsafe only). */
 export function schemaFor(path: string): z.ZodType | null {
   if (/\/series\/[^/]+\.json$/.test(path) || path === 'core/rupiah/series.json') return SeriesFileSchema;
-  if (/heavy\/(salary|startup|opencompany|vcdirectory|vcnetwork|food|housing|ipo|fintech|personalfinance|population|homelessness|housingnews)\/[^/]+\.json$/.test(path)) return ColumnarTableSchema;
+  if (
+    /heavy\/(salary|startup|opencompany|vcdirectory|vcnetwork|food|housing|ipo|fintech|personalfinance|population|homelessness|housingnews)\/[^/]+\.json$/.test(
+      path,
+    )
+  )
+    return ColumnarTableSchema;
   return null;
 }

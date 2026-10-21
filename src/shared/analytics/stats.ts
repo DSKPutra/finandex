@@ -124,7 +124,8 @@ export function nanmean(xs: ArrayLike<number>): number {
 /** pandas value_counts(): counts sorted by count desc; ties keep first-appearance order. */
 export function valueCounts<T extends string | number | boolean>(xs: Iterable<T | null | undefined>): [T, number][] {
   const m = new Map<T, number>();
-  for (const x of xs) if (x !== null && x !== undefined && !(typeof x === 'number' && Number.isNaN(x))) m.set(x, (m.get(x) ?? 0) + 1);
+  for (const x of xs)
+    if (x !== null && x !== undefined && !(typeof x === 'number' && Number.isNaN(x))) m.set(x, (m.get(x) ?? 0) + 1);
   return [...m.entries()].sort((a, b) => b[1] - a[1]);
 }
 

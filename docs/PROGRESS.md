@@ -19,3 +19,12 @@
 - System prompt global + 27 Dex (`server/chat/system-prompts/*.md`, dibundel ke `prompts.generated.ts`).
 - `test:tools` + unit: 326 tes lulus; coverage `src/shared` + `server` **98,6% statement · 90,9% branch · 99,7% function · 99,4% line** (matriks tool memanggil setiap tool; fixture saham SINTETIS untuk tool NASDAQ/S&P yang datanya belum ada).
 - `eval:chat:mock`: **115/128 lulus, 0 gagal, 13 pending-data** (NASDAQ 7, S&P 500 6 → input #2/#3; mylaiwyer-01 → input #30). Laporan: `docs/eval/mock-report.md`.
+
+## Fase 5–6 — UI · HIJAU (E2E menyusul di Fase 9)
+- Shell: sidebar 8 kategori (desktop, bisa diciutkan), bottom tab bar 5 item (mobile, AI di tengah), Ctrl/Cmd+K pencarian global (Dex + entitas lintas Dex + pasal), offline banner, splash §11.1, footer hak cipta.
+- Beranda: hero "Tanya Finandex AI…", ringkasan pasar 6 aset, Peta Fitur 27 Dex dalam 8 kategori (cari, filter kategori, Indonesia, sembunyikan NC), strip "Data per".
+- Halaman Dex: header + badge (as-of, status, sampel, NC, sintetis) + tab; Chat pertama, Data terakhir; tab fitur deklaratif (`src/dex/views/*.ts`) menjalankan tool yang SAMA dengan chatbot di browser → angka identik.
+- Chat: streaming SSE, chip status tool, kartu jawaban §8.8 (teks → grafik → panel "Kenapa jawabannya begini?" dari event `method` → sitasi), stop/ulangi/salin/bagikan, riwayat lokal (IndexedDB, 50/Dex), persetujuan pertama §13.3, detektor data sensitif klien, disclaimer per Dex.
+- Grafik ECharts dari ChartSpec (line/candle/bar/heatmap/histogram/graph/map-scatter), tabel tervirtualisasi, ekspor PNG/CSV bertanda air, layar penuh, tabel tersembunyi untuk pembaca layar.
+- Halaman: Dex Hub, Watchlist, Pengaturan (bahasa, tema, buta warna, hapus data lokal), Tentang (wordmark, kredit, tagline, versi/build), Legal (privasi UU 27/2022, syarat, disclaimer, sumber data dari registry+manifest, lisensi OSS).
+- Test: `tests/tools/views.test.ts` (setiap tab fitur 27 Dex punya view; panggilan default sukses; ≥ 6 saran id/en). Bundel entry 151 KB gzip; ECharts dimuat malas.

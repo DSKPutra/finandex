@@ -41,7 +41,8 @@
     "cap:android": "cap sync android && cap open android",
     "cap:ios": "cap sync ios && cap open ios",
     "assets:generate": "capacitor-assets generate --iconBackgroundColor '#0A0F0C' --splashBackgroundColor '#0A0F0C'",
-    "prompts:build": "tsx scripts/chat/bundle-prompts.ts"
+    "prompts:build": "tsx scripts/chat/bundle-prompts.ts",
+    "dev:api": "tsx scripts/dev/api-server.ts"
   },
   "size-limit": [
     {

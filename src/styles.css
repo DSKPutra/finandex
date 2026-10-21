@@ -1,0 +1,295 @@
+/* © 2026 Dea Saka Kurnia Putra. All rights reserved. */
+/* Design tokens (§10.3) as CSS variables + base component styles. */
+@import 'tailwindcss';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/montserrat/600.css';
+@import '@fontsource/montserrat/700.css';
+
+:root,
+[data-theme='dark'] {
+  --bg: #0a0f0c;
+  --surface: #111915;
+  --surface-2: #17221c;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #eef3ef;
+  --text-muted: #9db0a4;
+  --brand: #19f23a;
+  --brand-text: #19f23a;
+  --positive: #19f23a;
+  --negative: #ff5a5f;
+  --warning: #ffb020;
+  --info: #4da3ff;
+  --on-brand: #0a0f0c;
+  color-scheme: dark;
+}
+[data-theme='light'] {
+  --bg: #f6f8f7;
+  --surface: #ffffff;
+  --surface-2: #eef2f0;
+  --border: rgba(10, 15, 12, 0.1);
+  --text: #0a0f0c;
+  --text-muted: #4a5b51;
+  --brand: #19f23a;
+  --brand-text: #0a7d24;
+  --positive: #0a7d24;
+  --negative: #c62828;
+  --warning: #a15c00;
+  --info: #1565c0;
+  --on-brand: #0a0f0c;
+  color-scheme: light;
+}
+[data-colorblind='true'] {
+  --positive: #4da3ff;
+  --negative: #ff9f1c;
+}
+[data-theme='light'][data-colorblind='true'] {
+  --positive: #1565c0;
+  --negative: #a15c00;
+}
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Montserrat', 'Inter', sans-serif;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-fg: var(--text);
+  --color-muted: var(--text-muted);
+  --color-brand: var(--brand);
+  --color-brand-text: var(--brand-text);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+a {
+  color: var(--brand-text);
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 0.9rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn:hover {
+  border-color: var(--brand);
+}
+.btn-primary {
+  background: var(--brand);
+  color: var(--on-brand);
+  border-color: transparent;
+  font-weight: 600;
+}
+.btn-ghost {
+  background: transparent;
+  border-color: transparent;
+}
+.btn-sm {
+  min-height: 36px;
+  padding: 0 0.6rem;
+  font-size: 13px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 13px;
+  cursor: pointer;
+  text-align: left;
+}
+.chip[aria-pressed='true'] {
+  border-color: var(--brand);
+  color: var(--brand-text);
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.badge-live {
+  color: var(--positive);
+  border-color: currentColor;
+}
+.badge-partial {
+  color: var(--warning);
+  border-color: currentColor;
+}
+.badge-pending {
+  color: var(--negative);
+  border-color: currentColor;
+}
+.input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font: inherit;
+}
+.muted {
+  color: var(--text-muted);
+}
+.pos {
+  color: var(--positive);
+}
+.neg {
+  color: var(--negative);
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2), var(--surface), var(--surface-2));
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 10px;
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.tabs-scroll {
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--border);
+}
+.tab {
+  white-space: nowrap;
+  min-height: 44px;
+  padding: 0 0.9rem;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.tab[aria-selected='true'] {
+  color: var(--text);
+  border-bottom-color: var(--brand);
+}
+.prose-chat p {
+  margin: 0.4rem 0;
+}
+.prose-chat ul {
+  margin: 0.3rem 0 0.3rem 1.2rem;
+  padding: 0;
+}
+.prose-chat table {
+  border-collapse: collapse;
+}
+.prose-chat td,
+.prose-chat th {
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.4rem;
+}
+
+.splash {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: #0a0f0c;
+  color: #eef3ef;
+  z-index: 100;
+}
+.splash-by {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  color: #9db0a4;
+}
+.footer {
+  padding: 1.5rem 1rem 6rem;
+  color: var(--text-muted);
+  font-size: 13px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding-bottom: 1.5rem;
+  }
+}

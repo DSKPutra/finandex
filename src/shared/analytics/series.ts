@@ -142,7 +142,10 @@ export function drawdownEpisodes(dates: readonly CalDate[], px: readonly number[
 }
 
 /** 52-week (trailing 1Y) close high/low with dates. */
-export function windowHiLo(dates: readonly CalDate[], px: readonly number[]): [Num, CalDate | null, Num, CalDate | null] {
+export function windowHiLo(
+  dates: readonly CalDate[],
+  px: readonly number[],
+): [Num, CalDate | null, Num, CalDate | null] {
   const a = anchorDate(dates[dates.length - 1]!, '1Y');
   let s = -1;
   for (let i = 0; i < dates.length; i++)
@@ -174,7 +177,9 @@ export function calendarYearReturns(dates: readonly CalDate[], px: readonly numb
     while (j + 1 < px.length && year(dates[j + 1]!) === y) j++;
     const v = px[j]!;
     out[String(y)] =
-      prev === null ? { ret: fnum(v / px[0]! - 1), partial: true } : { ret: fnum(v / prev - 1), partial: y === lastYear };
+      prev === null
+        ? { ret: fnum(v / px[0]! - 1), partial: true }
+        : { ret: fnum(v / prev - 1), partial: y === lastYear };
     prev = v;
     i = j + 1;
   }
@@ -248,13 +253,18 @@ function windowMean(px: readonly number[], end: number, n: number): number {
 }
 
 /** Most recent SMA50/SMA200 cross within the last `lookback` rows. */
-export function lastCross(px: readonly number[], dates: readonly CalDate[], lookback = 60): { type: 'golden_cross' | 'death_cross'; date: CalDate } | null {
+export function lastCross(
+  px: readonly number[],
+  dates: readonly CalDate[],
+  lookback = 60,
+): { type: 'golden_cross' | 'death_cross'; date: CalDate } | null {
   if (px.length < 200 + lookback) return null;
   const sign = (i: number) => Math.sign(windowMean(px, i, 50) - windowMean(px, i, 200));
   for (let i = px.length - 1; i > px.length - lookback - 1; i--) {
     const cur = sign(i);
     const prev = sign(i - 1);
-    if (!Number.isNaN(prev) && cur !== prev && cur !== 0) return { type: cur > 0 ? 'golden_cross' : 'death_cross', date: dates[i]! };
+    if (!Number.isNaN(prev) && cur !== prev && cur !== 0)
+      return { type: cur > 0 ? 'golden_cross' : 'death_cross', date: dates[i]! };
   }
   return null;
 }
@@ -277,13 +287,21 @@ export function assetCoreMetrics(dates: readonly CalDate[], px: readonly number[
   return m;
 }
 
-export function athMetrics(dates: readonly CalDate[], px: readonly number[]): { ath_close: Num; ath_date: CalDate; pct_from_ath: Num } {
+export function athMetrics(
+  dates: readonly CalDate[],
+  px: readonly number[],
+): { ath_close: Num; ath_date: CalDate; pct_from_ath: Num } {
   const ia = argmax(px);
   return { ath_close: fnum(px[ia]), ath_date: dates[ia]!, pct_from_ath: fnum(px[px.length - 1]! / px[ia]! - 1) };
 }
 
 /** spike_mask(): one-day round-trip spike (§4.2). Returns a boolean mask over px. */
-export function spikeMask(px: readonly number[], up = SPIKE_UP, dn = SPIKE_DN, rt: readonly [number, number] = SPIKE_RT): boolean[] {
+export function spikeMask(
+  px: readonly number[],
+  up = SPIKE_UP,
+  dn = SPIKE_DN,
+  rt: readonly [number, number] = SPIKE_RT,
+): boolean[] {
   const n = px.length;
   const m: boolean[] = new Array(n).fill(false);
   for (let i = 1; i + 1 < n; i++) {
@@ -307,7 +325,12 @@ function fxSpikeMask(px: readonly number[]): boolean[] {
     const r = px[i]! / px[i - 1]! - 1;
     const rn = px[i + 1]! / px[i]! - 1;
     const q = px[i + 1]! / px[i - 1]!;
-    m[i] = Math.abs(r) >= FX_SPIKE_ABS && Math.abs(rn) >= FX_SPIKE_ABS && Math.sign(r) !== Math.sign(rn) && q >= FX_SPIKE_RT[0] && q <= FX_SPIKE_RT[1];
+    m[i] =
+      Math.abs(r) >= FX_SPIKE_ABS &&
+      Math.abs(rn) >= FX_SPIKE_ABS &&
+      Math.sign(r) !== Math.sign(rn) &&
+      q >= FX_SPIKE_RT[0] &&
+      q <= FX_SPIKE_RT[1];
   }
   return m;
 }
@@ -330,7 +353,10 @@ function fxMedianMask(px: readonly number[]): boolean[] {
 }
 
 /** FX bad-print removal, iterated until stable (max 5 passes) (§4.6). */
-export function fxClean(dates: readonly CalDate[], px: readonly number[]): { d: CalDate[]; p: number[]; removed: CalDate[] } {
+export function fxClean(
+  dates: readonly CalDate[],
+  px: readonly number[],
+): { d: CalDate[]; p: number[]; removed: CalDate[] } {
   let d = [...dates];
   let p = [...px];
   const removed: CalDate[] = [];
@@ -365,7 +391,12 @@ export function extremeMoves(dates: readonly CalDate[], px: readonly number[]): 
 }
 
 /** Largest daily moves (for the extreme_moves tool). */
-export function largestMoves(dates: readonly CalDate[], px: readonly number[], direction: 'up' | 'down' | 'both', topN: number): { date: CalDate; ret: number; prev_close: number; close: number }[] {
+export function largestMoves(
+  dates: readonly CalDate[],
+  px: readonly number[],
+  direction: 'up' | 'down' | 'both',
+  topN: number,
+): { date: CalDate; ret: number; prev_close: number; close: number }[] {
   const rows: { date: CalDate; ret: number; prev_close: number; close: number }[] = [];
   for (let i = 1; i < px.length; i++) {
     const r = px[i]! / px[i - 1]! - 1;

@@ -16,7 +16,30 @@ export interface LawChunk {
   text: string;
 }
 
-const STOP = new Set(['dan', 'atau', 'yang', 'di', 'ke', 'dari', 'untuk', 'dengan', 'pada', 'ini', 'itu', 'oleh', 'dalam', 'adalah', 'apa', 'bagaimana', 'menurut', 'tentang', 'saya', 'the', 'of', 'and']);
+const STOP = new Set([
+  'dan',
+  'atau',
+  'yang',
+  'di',
+  'ke',
+  'dari',
+  'untuk',
+  'dengan',
+  'pada',
+  'ini',
+  'itu',
+  'oleh',
+  'dalam',
+  'adalah',
+  'apa',
+  'bagaimana',
+  'menurut',
+  'tentang',
+  'saya',
+  'the',
+  'of',
+  'and',
+]);
 
 export function tokenizeLaw(text: string): string[] {
   return fold(text)

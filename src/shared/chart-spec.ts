@@ -3,14 +3,29 @@
 // them with ECharts. Kept declarative so the server never ships executable chart code.
 import { z } from 'zod';
 
-export const ValueFormat = z.enum(['pct', 'pct_points', 'pp', 'num', 'int', 'price', 'money_idr', 'money_usd', 'compact', 'text', 'date']);
+export const ValueFormat = z.enum([
+  'pct',
+  'pct_points',
+  'pp',
+  'num',
+  'int',
+  'price',
+  'money_idr',
+  'money_usd',
+  'compact',
+  'text',
+  'date',
+]);
 export type ValueFormat = z.infer<typeof ValueFormat>;
 const num = z.number().finite().nullable();
 
 const LineSpec = z.object({
   type: z.literal('line'),
   x: z.array(z.string()),
-  series: z.array(z.object({ name: z.string(), y: z.array(num), step: z.boolean().optional(), area: z.boolean().optional() })).min(1).max(8),
+  series: z
+    .array(z.object({ name: z.string(), y: z.array(num), step: z.boolean().optional(), area: z.boolean().optional() }))
+    .min(1)
+    .max(8),
   y_format: ValueFormat,
   log_allowed: z.boolean(),
   zero_line: z.boolean().optional(),
@@ -30,7 +45,10 @@ const CandleSpec = z.object({
 const BarSpec = z.object({
   type: z.literal('bar'),
   categories: z.array(z.string()),
-  series: z.array(z.object({ name: z.string(), values: z.array(num) })).min(1).max(8),
+  series: z
+    .array(z.object({ name: z.string(), values: z.array(num) }))
+    .min(1)
+    .max(8),
   horizontal: z.boolean(),
   stacked: z.boolean().optional(),
   percent_stack: z.boolean().optional(),
@@ -61,12 +79,16 @@ const TableSpec = z.object({
 });
 const GraphSpec = z.object({
   type: z.literal('graph'),
-  nodes: z.array(z.object({ id: z.string(), label: z.string(), value: z.number(), center: z.boolean().optional() })).max(51),
+  nodes: z
+    .array(z.object({ id: z.string(), label: z.string(), value: z.number(), center: z.boolean().optional() }))
+    .max(51),
   edges: z.array(z.object({ source: z.string(), target: z.string(), value: z.number() })),
 });
 const MapSpec = z.object({
   type: z.literal('map'),
-  points: z.array(z.object({ lat: z.number(), lon: z.number(), value: num, label: z.string(), group: z.string().optional() })).max(2000),
+  points: z
+    .array(z.object({ lat: z.number(), lon: z.number(), value: num, label: z.string(), group: z.string().optional() }))
+    .max(2000),
   value_format: ValueFormat,
 });
 const QuoteSpec = z.object({
@@ -87,7 +109,18 @@ const CardSpec = z.object({
   items: z.array(z.string()).optional(),
 });
 
-export const ChartSpec = z.discriminatedUnion('type', [LineSpec, CandleSpec, BarSpec, HeatmapSpec, HistogramSpec, TableSpec, GraphSpec, MapSpec, QuoteSpec, CardSpec]);
+export const ChartSpec = z.discriminatedUnion('type', [
+  LineSpec,
+  CandleSpec,
+  BarSpec,
+  HeatmapSpec,
+  HistogramSpec,
+  TableSpec,
+  GraphSpec,
+  MapSpec,
+  QuoteSpec,
+  CardSpec,
+]);
 export type ChartSpec = z.infer<typeof ChartSpec>;
 
 export const ArtifactSchema = z.object({

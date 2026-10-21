@@ -76,4 +76,13 @@ export const TOKENS = {
 } as const;
 
 /** Categorical chart palette (max 8 series). */
-export const CHART_PALETTE = ['#19F23A', '#4DA3FF', '#FFB020', '#FF5A5F', '#B98CFF', '#2ED3C6', '#FF7AC6', '#C9D46C'] as const;
+export const CHART_PALETTE = [
+  '#19F23A',
+  '#4DA3FF',
+  '#FFB020',
+  '#FF5A5F',
+  '#B98CFF',
+  '#2ED3C6',
+  '#FF7AC6',
+  '#C9D46C',
+] as const;

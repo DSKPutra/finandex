@@ -31,7 +31,11 @@ export function isNum(x: unknown): x is number {
 /** Fraction → percent with 2 decimals (0.1235 → "12,35%"). */
 export function fmtPct(x: number | null | undefined, locale: Locale, digits = 2, signed = false): string {
   if (!isNum(x)) return DASH;
-  const s = nf(locale, { minimumFractionDigits: digits, maximumFractionDigits: digits, signDisplay: signed ? 'exceptZero' : 'auto' }).format(x * 100);
+  const s = nf(locale, {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
+    signDisplay: signed ? 'exceptZero' : 'auto',
+  }).format(x * 100);
   return ascii(s) + '%';
 }
 
@@ -90,19 +94,54 @@ export function fmtCompact(x: number | null | undefined, locale: Locale, digits 
 }
 
 /** Currency with compact magnitude: IDR → "Rp689,72 T" / "IDR 689.72T"; USD → "US$89,24 miliar" / "US$89.24B". */
-export function fmtMoney(x: number | null | undefined, ccy: string, locale: Locale, compact = true, digits = 2): string {
+export function fmtMoney(
+  x: number | null | undefined,
+  ccy: string,
+  locale: Locale,
+  compact = true,
+  digits = 2,
+): string {
   if (!isNum(x)) return DASH;
   const neg = x < 0 ? '-' : '';
   const a = Math.abs(x);
-  const body = compact && a >= 1e3 ? fmtCompact(a, locale, digits, ccy !== 'IDR') : fmtNum(a, locale, digits, ccy === 'IDR' ? 0 : Math.min(digits, 2));
+  const body =
+    compact && a >= 1e3
+      ? fmtCompact(a, locale, digits, ccy !== 'IDR')
+      : fmtNum(a, locale, digits, ccy === 'IDR' ? 0 : Math.min(digits, 2));
   if (ccy === 'IDR') return locale === 'id' ? `${neg}Rp${body}` : `${neg}IDR ${body}`;
   if (ccy === 'USD') return `${neg}US$${body}`;
   return `${neg}${ccy} ${body}`;
 }
 
 const MONTHS: Record<Locale, string[]> = {
-  id: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
-  en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+  id: [
+    'Januari',
+    'Februari',
+    'Maret',
+    'April',
+    'Mei',
+    'Juni',
+    'Juli',
+    'Agustus',
+    'September',
+    'Oktober',
+    'November',
+    'Desember',
+  ],
+  en: [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ],
 };
 const MONTHS_SHORT: Record<Locale, string[]> = {
   id: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'],

@@ -159,7 +159,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'SnP500Dex',
     group: 'global-markets',
     order: 3,
-    tagline: t('233 saham S&P 500: total return, dividen, volume', '233 S&P 500 stocks: total return, dividends, volume'),
+    tagline: t(
+      '233 saham S&P 500: total return, dividen, volume',
+      '233 S&P 500 stocks: total return, dividends, volume',
+    ),
     icon: 'snp500dex',
     inputs: [3],
     asOf: '2026-08-31',
@@ -181,7 +184,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     ),
     indonesia: false,
     dataKey: 'sp500',
-    scope: t('233 saham S&P 500: harga, total return, dividen, split, volume', '233 S&P 500 stocks: prices, total return, dividends, splits, volume'),
+    scope: t(
+      '233 saham S&P 500: harga, total return, dividen, split, volume',
+      '233 S&P 500 stocks: prices, total return, dividends, splits, volume',
+    ),
     keywords: ['s&p', 'sp500', 'dividen', 'dividend', 'drip', 'saham'],
   },
   {
@@ -189,7 +195,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'CommerceDex',
     group: 'global-markets',
     order: 4,
-    tagline: t('43 raksasa e-commerce dunia: harga, fundamental, makro', '43 global e-commerce giants: prices, fundamentals, macro'),
+    tagline: t(
+      '43 raksasa e-commerce dunia: harga, fundamental, makro',
+      '43 global e-commerce giants: prices, fundamentals, macro',
+    ),
     icon: 'commercedex',
     inputs: [4],
     asOf: '2026-05-13',
@@ -218,7 +227,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'IPODex',
     group: 'global-markets',
     order: 5,
-    tagline: t('IPO global 2019–2026: India, AS, Inggris & 100+ negara', 'Global IPOs 2019–2026: India, US, UK & 100+ countries'),
+    tagline: t(
+      'IPO global 2019–2026: India, AS, Inggris & 100+ negara',
+      'Global IPOs 2019–2026: India, US, UK & 100+ countries',
+    ),
     icon: 'ipodex',
     inputs: [40],
     asOf: '2026-06-18',
@@ -236,7 +248,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     sample: 0.38,
     indonesia: false,
     dataKey: 'ipo',
-    scope: t('sampel 38% (5.000) IPO perusahaan global 2019–2026', '38% sample (5,000) of global company IPOs 2019–2026'),
+    scope: t(
+      'sampel 38% (5.000) IPO perusahaan global 2019–2026',
+      '38% sample (5,000) of global company IPOs 2019–2026',
+    ),
     keywords: ['ipo', 'listing', 'india', 'sme', 'mainboard'],
   },
   {
@@ -244,7 +259,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'IDFinanDex',
     group: 'indonesia',
     order: 1,
-    tagline: t('Indonesia multi-aset & makro: IHSG, USD/IDR, BI rate', 'Indonesia multi-asset & macro: IHSG, USD/IDR, BI rate'),
+    tagline: t(
+      'Indonesia multi-aset & makro: IHSG, USD/IDR, BI rate',
+      'Indonesia multi-asset & macro: IHSG, USD/IDR, BI rate',
+    ),
     icon: 'idfinandex',
     inputs: [5, 6],
     asOf: '2026-05-29',
@@ -298,7 +316,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'IDXDex',
     group: 'indonesia',
     order: 3,
-    tagline: t('Saham Bursa Efek Indonesia: harga, fundamental, IPO', 'Indonesia Stock Exchange equities: prices, fundamentals, IPOs'),
+    tagline: t(
+      'Saham Bursa Efek Indonesia: harga, fundamental, IPO',
+      'Indonesia Stock Exchange equities: prices, fundamentals, IPOs',
+    ),
     icon: 'idxdex',
     inputs: [9, 10, 11, 12],
     asOf: '2024-05-17',
@@ -326,7 +347,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'ReksaDex',
     group: 'indonesia',
     order: 4,
-    tagline: t('Reksa dana Indonesia: AUM, manajer investasi, kinerja', 'Indonesian mutual funds: AUM, investment managers, performance'),
+    tagline: t(
+      'Reksa dana Indonesia: AUM, manajer investasi, kinerja',
+      'Indonesian mutual funds: AUM, investment managers, performance',
+    ),
     icon: 'reksadex',
     inputs: [8],
     asOf: '2026-05-29',
@@ -467,7 +491,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     sample: 0.25,
     indonesia: false,
     dataKey: 'startup',
-    scope: t('sampel 25% (20.227) putaran pendanaan startup global 2019–2026', '25% sample (20,227) of global startup funding rounds 2019–2026'),
+    scope: t(
+      'sampel 25% (20.227) putaran pendanaan startup global 2019–2026',
+      '25% sample (20,227) of global startup funding rounds 2019–2026',
+    ),
     keywords: ['startup', 'funding', 'pendanaan', 'seed', 'series a', 'venture'],
   },
   {
@@ -493,7 +520,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     sample: 0.25,
     indonesia: false,
     dataKey: 'vcdirectory',
-    scope: t('sampel 25% (8.827) investor startup dengan deal 2019–2026', '25% sample (8,827) of startup investors with deals 2019–2026'),
+    scope: t(
+      'sampel 25% (8.827) investor startup dengan deal 2019–2026',
+      '25% sample (8,827) of startup investors with deals 2019–2026',
+    ),
     keywords: ['vc', 'investor', 'venture capital', 'sequoia', 'tiger global'],
   },
   {
@@ -518,7 +548,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     sample: 0.25,
     indonesia: false,
     dataKey: 'vcnetwork',
-    scope: t('sampel 25% (75.855) pasangan co-investor 2019–2026', '25% sample (75,855) of co-investor pairs 2019–2026'),
+    scope: t(
+      'sampel 25% (75.855) pasangan co-investor 2019–2026',
+      '25% sample (75,855) of co-investor pairs 2019–2026',
+    ),
     keywords: ['co-invest', 'network', 'jaringan', 'vc', 'graph'],
   },
   {
@@ -547,7 +580,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     sample: 0.02,
     indonesia: false,
     dataKey: 'opencompany',
-    scope: t('sampel 2% (100.000) perusahaan dari Open Company Database', '2% sample (100,000) of companies from the Open Company Database'),
+    scope: t(
+      'sampel 2% (100.000) perusahaan dari Open Company Database',
+      '2% sample (100,000) of companies from the Open Company Database',
+    ),
     keywords: ['company', 'perusahaan', 'directory', 'sektor'],
   },
   {
@@ -555,7 +591,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'SalaryDex',
     group: 'cost-of-living',
     order: 1,
-    tagline: t('Gaji global per skill & peran (sampel 100 ribu lowongan)', 'Global salaries by skill & role (100k-posting sample)'),
+    tagline: t(
+      'Gaji global per skill & peran (sampel 100 ribu lowongan)',
+      'Global salaries by skill & role (100k-posting sample)',
+    ),
     icon: 'salarydex',
     inputs: [18],
     asOf: '2026-06',
@@ -573,7 +612,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     sample: 0.16,
     indonesia: false,
     dataKey: 'salary',
-    scope: t('sampel 16% (100.060) lowongan kerja global 2024-01 s/d 2026-06 dengan gaji', '16% sample (100,060) of global job postings 2024-01 to 2026-06 with salaries'),
+    scope: t(
+      'sampel 16% (100.060) lowongan kerja global 2024-01 s/d 2026-06 dengan gaji',
+      '16% sample (100,060) of global job postings 2024-01 to 2026-06 with salaries',
+    ),
     keywords: ['gaji', 'salary', 'skill', 'software engineer', 'lowongan'],
   },
   {
@@ -581,7 +623,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'CostLivingDex',
     group: 'cost-of-living',
     order: 2,
-    tagline: t('Biaya & kualitas hidup 148 kota (data sintetis)', 'Cost & quality of life in 148 cities (synthetic data)'),
+    tagline: t(
+      'Biaya & kualitas hidup 148 kota (data sintetis)',
+      'Cost & quality of life in 148 cities (synthetic data)',
+    ),
     icon: 'costlivingdex',
     inputs: [36],
     asOf: '2024-06-15',
@@ -610,7 +655,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'IDHousingDex',
     group: 'cost-of-living',
     order: 3,
-    tagline: t('Perumahan subsidi & komersil Indonesia (listing proyek)', 'Indonesian subsidised & commercial housing (project listings)'),
+    tagline: t(
+      'Perumahan subsidi & komersil Indonesia (listing proyek)',
+      'Indonesian subsidised & commercial housing (project listings)',
+    ),
     icon: 'idhousingdex',
     inputs: [29],
     asOf: 'tidak dicantumkan',
@@ -639,7 +687,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'IDFoodDeliveryDex',
     group: 'cost-of-living',
     order: 4,
-    tagline: t('Benchmark harga 10 ribu menu food delivery Indonesia', 'Price benchmark of 10k Indonesian food-delivery menu items'),
+    tagline: t(
+      'Benchmark harga 10 ribu menu food delivery Indonesia',
+      'Price benchmark of 10k Indonesian food-delivery menu items',
+    ),
     icon: 'idfooddeliverydex',
     inputs: [20],
     asOf: 'tidak dicantumkan',
@@ -668,7 +719,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'PovertyDex',
     group: 'social',
     order: 1,
-    tagline: t('Indeks Kemiskinan Multidimensi (MPI) 108 negara', 'Multidimensional Poverty Index (MPI) for 108 countries'),
+    tagline: t(
+      'Indeks Kemiskinan Multidimensi (MPI) 108 negara',
+      'Multidimensional Poverty Index (MPI) for 108 countries',
+    ),
     icon: 'povertydex',
     inputs: [41],
     asOf: 'tahun survei per negara',
@@ -706,7 +760,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     status: 'live',
     indonesia: false,
     dataKey: 'population',
-    scope: t('liputan berita global bertema kependudukan 2019–2026 (bukan jumlah penduduk)', 'global news coverage about population 2019–2026 (not population counts)'),
+    scope: t(
+      'liputan berita global bertema kependudukan 2019–2026 (bukan jumlah penduduk)',
+      'global news coverage about population 2019–2026 (not population counts)',
+    ),
     keywords: ['populasi', 'population', 'penduduk', 'berita', 'news'],
   },
   {
@@ -724,7 +781,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     status: 'live',
     indonesia: false,
     dataKey: 'homelessness',
-    scope: t('liputan berita global tentang tunawisma 2019–2026 (bukan jumlah tunawisma)', 'global news coverage about homelessness 2019–2026 (not counts of homeless people)'),
+    scope: t(
+      'liputan berita global tentang tunawisma 2019–2026 (bukan jumlah tunawisma)',
+      'global news coverage about homelessness 2019–2026 (not counts of homeless people)',
+    ),
     keywords: ['tunawisma', 'homelessness', 'berita', 'news'],
   },
   {
@@ -750,7 +810,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'FintechDex',
     group: 'sentiment',
     order: 1,
-    tagline: t('Adopsi & ulasan produk fintech dari 14 platform', 'Fintech product adoption & reviews from 14 platforms'),
+    tagline: t(
+      'Adopsi & ulasan produk fintech dari 14 platform',
+      'Fintech product adoption & reviews from 14 platforms',
+    ),
     icon: 'fintechdex',
     inputs: [17],
     asOf: '2026-09-08',
@@ -767,7 +830,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     status: 'live',
     indonesia: false,
     dataKey: 'fintech',
-    scope: t('3.946 unggahan/ulasan publik tentang produk fintech dari 14 platform', '3,946 public posts/reviews about fintech products from 14 platforms'),
+    scope: t(
+      '3.946 unggahan/ulasan publik tentang produk fintech dari 14 platform',
+      '3,946 public posts/reviews about fintech products from 14 platforms',
+    ),
     keywords: ['fintech', 'ulasan', 'review', 'sentimen', 'sentiment'],
   },
   {
@@ -775,7 +841,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     name: 'PersonalFinanDex',
     group: 'sentiment',
     order: 2,
-    tagline: t('Diskusi keuangan pribadi & kebebasan finansial', 'Personal finance & financial independence discussions'),
+    tagline: t(
+      'Diskusi keuangan pribadi & kebebasan finansial',
+      'Personal finance & financial independence discussions',
+    ),
     icon: 'personalfinandex',
     inputs: [22],
     asOf: '2026-09-16',
@@ -792,7 +861,10 @@ export const DEX_REGISTRY: readonly DexEntry[] = [
     status: 'live',
     indonesia: false,
     dataKey: 'personalfinance',
-    scope: t('5.130 unggahan publik tentang keuangan pribadi & FIRE dari 15 platform', '5,130 public posts about personal finance & FIRE from 15 platforms'),
+    scope: t(
+      '5.130 unggahan publik tentang keuangan pribadi & FIRE dari 15 platform',
+      '5,130 public posts about personal finance & FIRE from 15 platforms',
+    ),
     keywords: ['keuangan pribadi', 'personal finance', 'fire', 'pensiun', 'tabungan'],
   },
   {

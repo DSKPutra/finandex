@@ -17,7 +17,8 @@ export function ocrDigits(s: string): string {
 }
 
 /** A line that is only a Pasal heading: "Pasal 12", "P a s a l 1 2", OCR variants l/1/I/| and O→0 etc. */
-export const PASAL_HEADING = /^\s*P\s*[aeo]\s*[s5]\s*[aeo]\s*[l1I|]\s*[.,]?\s*([0-9OoIlSBZ]{1,4})\s*([A-Z]?)\s*[.,]?\s*$/;
+export const PASAL_HEADING =
+  /^\s*P\s*[aeo]\s*[s5]\s*[aeo]\s*[l1I|]\s*[.,]?\s*([0-9OoIlSBZ]{1,4})\s*([A-Z]?)\s*[.,]?\s*$/;
 export const PENJELASAN_HEADING = /^\s*PENJELASAN(\s+(ATAS|TENTANG)\b.*)?\s*$/;
 /** Roman-numbered transitional articles of the 1945 Constitution ("Pasal I" … "Pasal IV"). */
 export const PASAL_ROMAN = /^\s*Pasal\s+(I{1,3}|IV)\s*\.?\s*$/;
@@ -25,7 +26,8 @@ export const BAB_HEADING = /^\s*BAB\s+([IVXLC]+)\b(.*)$/;
 export const ATURAN_HEADING = /^\s*(ATURAN\s+PERALIHAN|ATURAN\s+TAMBAHAN|PEMBUKAAN)\s*$/i;
 
 /** Effective-date clause (OCR-tolerant), e.g. "Undang-Undang ini mulai berlaku pada tanggal …". */
-export const EFFECTIVE_CLAUSE = /[^\n]*m\s*u\s*[lL]\s*a\s*i\s+b\s*e\s*r\s*l\s*a\s*k\s*u\s+p\s*a\s*d\s*a\s+t\s*a\s*n\s*[eg]\s*g\s*a\s*l[^\n]*/g;
+export const EFFECTIVE_CLAUSE =
+  /[^\n]*m\s*u\s*[lL]\s*a\s*i\s+b\s*e\s*r\s*l\s*a\s*k\s*u\s+p\s*a\s*d\s*a\s+t\s*a\s*n\s*[eg]\s*g\s*a\s*l[^\n]*/g;
 
 export function parsePasalNumber(raw: string): number | null {
   const n = Number(ocrDigits(raw));
@@ -44,7 +46,10 @@ export function splitAyat(text: string): { ayat: number | null; text: string }[]
 }
 
 function deprefix(w: string): { rest: string; prefixed: boolean } {
-  let s = w.toLowerCase().replace(/(lah|kah|tah|pun)$/, '').replace(/(nya|ku|mu)$/, '');
+  let s = w
+    .toLowerCase()
+    .replace(/(lah|kah|tah|pun)$/, '')
+    .replace(/(nya|ku|mu)$/, '');
   if (s.length <= 4) return { rest: s, prefixed: false };
   const vowel = (c: string | undefined) => c !== undefined && 'aiueo'.includes(c);
   const rules: [RegExp, (rest: string) => string][] = [
@@ -89,7 +94,8 @@ export function stemVariants(w: string): string[] {
   if (w.length > 4) {
     const { rest } = deprefix(w);
     out.add(rest);
-    for (const suf of ['kan', 'an', 'i']) if (rest.endsWith(suf) && rest.length - suf.length >= 4) out.add(rest.slice(0, -suf.length));
+    for (const suf of ['kan', 'an', 'i'])
+      if (rest.endsWith(suf) && rest.length - suf.length >= 4) out.add(rest.slice(0, -suf.length));
   }
   return [...out].filter((x) => x.length >= 2);
 }

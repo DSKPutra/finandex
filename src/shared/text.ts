@@ -3,12 +3,7 @@
 
 /** Lower-case, strip diacritics, collapse whitespace — for accent/case-insensitive matching. */
 export function fold(s: string): string {
-  return s
-    .normalize('NFKD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-    .trim();
+  return s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
 }
 
 /** Remove control characters (except \n and \t) and cap length — applied to untrusted dataset text. */
@@ -23,7 +18,10 @@ export function sanitizeText(s: string | null | undefined, maxLen = 500): string
 export function scrubHandles(s: string, placeholder = '[pengguna]'): string {
   return s
     .replace(/(^|[^\w/])\/?u\/[A-Za-z0-9_-]{2,}/g, `$1${placeholder}`)
-    .replace(/(^|[^\w@.])@[A-Za-z0-9_](?:[A-Za-z0-9_.-]*[A-Za-z0-9_])?(?:@[A-Za-z0-9.-]+\.[a-z]{2,})?/g, `$1${placeholder}`);
+    .replace(
+      /(^|[^\w@.])@[A-Za-z0-9_](?:[A-Za-z0-9_.-]*[A-Za-z0-9_])?(?:@[A-Za-z0-9.-]+\.[a-z]{2,})?/g,
+      `$1${placeholder}`,
+    );
 }
 
 /** Truncate to n chars on a word boundary. */
@@ -78,7 +76,8 @@ export function detectSensitive(text: string, bip39: ReadonlySet<string>): Sensi
     const prov = Number(d.slice(0, 2));
     const dd = Number(d.slice(6, 8));
     const mm = Number(d.slice(8, 10));
-    if (prov >= 11 && prov <= 94 && ((dd >= 1 && dd <= 31) || (dd >= 41 && dd <= 71)) && mm >= 1 && mm <= 12) found.add('nik');
+    if (prov >= 11 && prov <= 94 && ((dd >= 1 && dd <= 31) || (dd >= 41 && dd <= 71)) && mm >= 1 && mm <= 12)
+      found.add('nik');
   }
   const words = text.toLowerCase().match(/[a-z]+/g) ?? [];
   let run = 0;

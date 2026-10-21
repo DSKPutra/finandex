@@ -2,14 +2,7 @@
 // Menu & homepage categories (§10.2). Order is fixed; used by Home, sidebar and Dex Hub.
 
 export type DexGroupId =
-  | 'global-markets'
-  | 'indonesia'
-  | 'crypto-macro'
-  | 'startup-vc'
-  | 'cost-of-living'
-  | 'social'
-  | 'sentiment'
-  | 'law';
+  'global-markets' | 'indonesia' | 'crypto-macro' | 'startup-vc' | 'cost-of-living' | 'social' | 'sentiment' | 'law';
 
 export interface DexGroup {
   id: DexGroupId;
