@@ -3,15 +3,13 @@
 // filter and "hide NC Dex" (forced on in commercial builds). Shared by Home and Dex Hub.
 import { useMemo, useState } from 'react';
 import { DEX_GROUPS } from '../config/dex-groups.ts';
-import { DEX_REGISTRY } from '../config/dex-registry.ts';
 import { fold } from '../shared/text.ts';
 import { useTranslation, type Locale } from '../i18n/index.ts';
-import { DISTRIBUTION, useManifest } from '../lib/data.ts';
-import { DexCard } from './DexCard.tsx';
+import { useManifest } from '../lib/data.ts';
+import { DISTRIBUTION, visibleDex } from '../config/visible-dex.ts';
 
-export function visibleDex(hideNc: boolean) {
-  return DEX_REGISTRY.filter((d) => !(hideNc || DISTRIBUTION === 'commercial') || d.commercialUseAllowed !== false);
-}
+export { visibleDex };
+import { DexCard } from './DexCard.tsx';
 
 export function FeatureMap({ locale }: { locale: Locale }) {
   const { t } = useTranslation();

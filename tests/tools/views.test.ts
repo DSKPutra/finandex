@@ -20,20 +20,36 @@ describe('dex views', () => {
       expect(Object.keys(views).sort()).toEqual([...featureTabs].sort());
       for (const [tab, v] of Object.entries(views)) {
         const vals = Object.fromEntries((v.controls ?? []).map((c) => [c.key, c.default]));
-        for (const c of v.controls ?? []) if (c.kind === 'select') expect(c.options.some((o) => o.value === c.default), `${tab}.${c.key} default`).toBe(true);
+        for (const c of v.controls ?? [])
+          if (c.kind === 'select')
+            expect(
+              c.options.some((o) => o.value === c.default),
+              `${tab}.${c.key} default`,
+            ).toBe(true);
         const calls = v.calls(vals);
         expect(calls.length, `${tab} calls`).toBeGreaterThan(0);
         for (const call of calls) {
           const tool = findTool(dex.id, call.tool);
           expect(tool, `${dex.id}/${tab}: tool ${call.tool}`).toBeDefined();
           const parsed = tool!.input.safeParse(call.input);
-          expect(parsed.success, `${dex.id}/${tab}: ${call.tool} input ${JSON.stringify(call.input)} ${parsed.success ? '' : JSON.stringify(parsed.error.issues[0])}`).toBe(true);
+          expect(
+            parsed.success,
+            `${dex.id}/${tab}: ${call.tool} input ${JSON.stringify(call.input)} ${parsed.success ? '' : JSON.stringify(parsed.error.issues[0])}`,
+          ).toBe(true);
           try {
-            const out = await tool!.run({ dex: DEX_BY_ID[dex.id], store, locale: 'id', manifest }, parsed.data as never);
+            const out = await tool!.run(
+              { dex: DEX_BY_ID[dex.id], store, locale: 'id', manifest },
+              parsed.data as never,
+            );
             for (const a of out.ui ?? []) expect(ArtifactSchema.safeParse(a).success).toBe(true);
           } catch (e) {
-            expect(e, `${dex.id}/${tab}: ${call.tool} ${e instanceof Error ? e.message : ''}`).toBeInstanceOf(ToolError);
-            expect(dex.status, `${dex.id}/${tab}: only pending-data Dex may fail (${e instanceof Error ? e.message : ''})`).toBe('pending-data');
+            expect(e, `${dex.id}/${tab}: ${call.tool} ${e instanceof Error ? e.message : ''}`).toBeInstanceOf(
+              ToolError,
+            );
+            expect(
+              dex.status,
+              `${dex.id}/${tab}: only pending-data Dex may fail (${e instanceof Error ? e.message : ''})`,
+            ).toBe('pending-data');
           }
         }
       }

@@ -24,6 +24,7 @@ export default tseslint.config(
     plugins: { 'react-hooks': reactHooks, 'jsx-a11y': jsxA11y },
     rules: { ...reactHooks.configs.recommended.rules, ...jsxA11y.configs.recommended.rules },
   },
+  { files: ['**/*.cjs'], languageOptions: { sourceType: 'commonjs', globals: { ...globals.node } } },
   // mock-eval scenarios read untyped tool JSON
   { files: ['scripts/eval/**/*.ts'], rules: { '@typescript-eslint/no-explicit-any': 'off' } },
 );

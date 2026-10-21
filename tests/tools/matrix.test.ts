@@ -36,11 +36,16 @@ describe('tool matrix', () => {
           expect(tool, `${dex.id}.${c.tool}`).toBeDefined();
           const input = tool!.input.parse(c.input);
           if (c.error) {
-            await expect(tool!.run(ctx, input as never), `${c.tool} ${JSON.stringify(c.input)} should fail`).rejects.toBeInstanceOf(ToolError);
+            await expect(
+              tool!.run(ctx, input as never),
+              `${c.tool} ${JSON.stringify(c.input)} should fail`,
+            ).rejects.toBeInstanceOf(ToolError);
             continue;
           }
           const out = await tool!.run(ctx, input as never).catch((e: unknown) => {
-            throw new Error(`${dex.id}.${c.tool}(${JSON.stringify(c.input)}): ${e instanceof Error ? e.message : String(e)}`);
+            throw new Error(
+              `${dex.id}.${c.tool}(${JSON.stringify(c.input)}): ${e instanceof Error ? e.message : String(e)}`,
+            );
           });
           if (tool!.numeric) {
             expect(out.ui?.length ?? 0, `${c.tool} ui`).toBeGreaterThan(0);

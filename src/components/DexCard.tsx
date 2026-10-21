@@ -6,19 +6,9 @@ import { SUGGESTIONS } from '../config/suggestions.ts';
 import { useTranslation, type Locale } from '../i18n/index.ts';
 import type { Manifest } from '../lib/data.ts';
 import { DexBadges } from './Badges.tsx';
+import { DexIcon } from './DexIcon.tsx';
 
-export function DexIcon({ id, size = 40 }: { id: string; size?: number }) {
-  return (
-    <img
-      src={`/icons/${id}.svg`}
-      width={size}
-      height={size}
-      alt=""
-      style={{ borderRadius: size * 0.22 }}
-      loading="lazy"
-    />
-  );
-}
+export { DexIcon };
 
 export function DexCard({ dex, locale, manifest }: { dex: DexEntry; locale: Locale; manifest: Manifest | undefined }) {
   const { t } = useTranslation();

@@ -31,15 +31,30 @@ describe('series metrics', () => {
   });
   it('vol needs ≥ 60 returns in the trailing year', () => {
     const d = days('2020-01-01', 50);
-    expect(A.vol1Y(d, d.map((_, i) => 100 + (i % 2)), 252)).toBeNull();
+    expect(
+      A.vol1Y(
+        d,
+        d.map((_, i) => 100 + (i % 2)),
+        252,
+      ),
+    ).toBeNull();
     expect(A.vol1Y(['2020-01-01'], [1], 252)).toBeNull();
     const d2 = days('2020-01-01', 200);
-    const v = A.vol1Y(d2, d2.map((_, i) => 100 + (i % 2)), 365);
+    const v = A.vol1Y(
+      d2,
+      d2.map((_, i) => 100 + (i % 2)),
+      365,
+    );
     expect(v).toBeGreaterThan(0);
   });
   it('max drawdown with recovery / no recovery / negative prices (WTI)', () => {
     const d = days('2020-01-01', 6);
-    expect(A.maxDrawdown(d, [10, 12, 6, 9, 12, 13])).toEqual({ mdd: -0.5, mdd_peak_date: d[1], mdd_trough_date: d[2], mdd_recovery_date: d[4] });
+    expect(A.maxDrawdown(d, [10, 12, 6, 9, 12, 13])).toEqual({
+      mdd: -0.5,
+      mdd_peak_date: d[1],
+      mdd_trough_date: d[2],
+      mdd_recovery_date: d[4],
+    });
     expect(A.maxDrawdown(d, [10, 12, 6, 9, 10, 11]).mdd_recovery_date).toBeNull();
     expect(A.maxDrawdown(d, [1, 2, 3, 4, 5, 6]).mdd).toBe(0);
     expect(A.maxDrawdown(['2020-01-01'], [1]).mdd).toBeNull();
@@ -76,8 +91,12 @@ describe('series metrics', () => {
     expect(a.length).toBe(b.length);
     expect(A.corr(crypto, stock, 3)).toBeCloseTo(1, 10);
     expect(A.beta(crypto, stock, 3)).toBeCloseTo(1, 10);
-    expect(A.corr({ d: ['2020-01-01', '2020-01-02'], p: [1, 2] }, { d: ['2020-01-01', '2020-01-02'], p: [1, 2] })).toBeNull();
-    expect(A.beta({ d: ['2020-01-01', '2020-01-02'], p: [1, 2] }, { d: ['2020-01-01', '2020-01-02'], p: [1, 2] })).toBeNull();
+    expect(
+      A.corr({ d: ['2020-01-01', '2020-01-02'], p: [1, 2] }, { d: ['2020-01-01', '2020-01-02'], p: [1, 2] }),
+    ).toBeNull();
+    expect(
+      A.beta({ d: ['2020-01-01', '2020-01-02'], p: [1, 2] }, { d: ['2020-01-01', '2020-01-02'], p: [1, 2] }),
+    ).toBeNull();
   });
   it('SMA, RSI (Wilder) and cross detection', () => {
     expect(A.sma([1, 2, 3], 5)).toBeNull();
@@ -94,7 +113,12 @@ describe('series metrics', () => {
     const up = Array.from({ length: n }, (_, i) => (i < 270 ? 100 + i : 370 - (i - 270) * 20));
     expect(A.lastCross(up, d)?.type).toBe('death_cross');
     expect(A.lastCross([1, 2, 3], d)).toBeNull();
-    expect(A.lastCross(Array.from({ length: n }, (_, i) => i), d)).toBeNull();
+    expect(
+      A.lastCross(
+        Array.from({ length: n }, (_, i) => i),
+        d,
+      ),
+    ).toBeNull();
   });
   it('spike rule, FX bad prints & extreme moves', () => {
     expect(A.spikeMask([10, 25, 10.5, 11])).toEqual([false, true, false, false]);
@@ -109,7 +133,12 @@ describe('series metrics', () => {
     const p2 = d.map(() => 10000);
     p2[10] = 10600; // round-trip spike +6% / -5.7%
     expect(A.fxClean(d, p2).removed).toEqual([d[10]]);
-    expect(A.fxClean(d, d.map(() => 1)).removed).toEqual([]);
+    expect(
+      A.fxClean(
+        d,
+        d.map(() => 1),
+      ).removed,
+    ).toEqual([]);
     expect(A.extremeMoves(['a', 'b', 'c'], [1, 2.5, 1])).toEqual([
       { date: 'b', ret: 1.5 },
       { date: 'c', ret: -0.6 },

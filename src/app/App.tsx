@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { applySettings, useSettings } from '../lib/settings.ts';
 import { Skeleton } from '../components/States.tsx';
 import { Layout } from './Layout.tsx';
+import { RouteError } from './RouteError.tsx';
 
 const Home = lazy(() => import('../pages/Home.tsx'));
 const DexHub = lazy(() => import('../pages/DexHub.tsx'));
@@ -21,6 +22,7 @@ const S = (el: React.ReactNode) => <Suspense fallback={<Skeleton h={320} />}>{el
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    errorElement: <RouteError />,
     children: [
       { path: '/', element: S(<Home />) },
       { path: '/ai/:tab?/:entity?', element: S(<DexPage fixedDex="finandex-ai" />) },

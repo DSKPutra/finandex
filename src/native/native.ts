@@ -5,6 +5,7 @@
 import { Capacitor } from '@capacitor/core';
 
 export const isNative = () => Capacitor.isNativePlatform();
+export { isNative as isNativePlatform };
 
 export async function initNative(opts: { dark: boolean; exitPrompt: string }): Promise<void> {
   if (!isNative()) return;

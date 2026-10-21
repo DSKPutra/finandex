@@ -29,7 +29,9 @@ describe('law text normalisation & OCR-tolerant headings', () => {
   });
   it('finds the OCR-damaged effective clause', () => {
     const t = 'bla\nUndang-Undang ini muLai berlaku pada tanegal 2 Jarvari,2O26.\nend';
-    expect([...t.matchAll(N.EFFECTIVE_CLAUSE)].map((m) => m[0])).toEqual(['Undang-Undang ini muLai berlaku pada tanegal 2 Jarvari,2O26.']);
+    expect([...t.matchAll(N.EFFECTIVE_CLAUSE)].map((m) => m[0])).toEqual([
+      'Undang-Undang ini muLai berlaku pada tanegal 2 Jarvari,2O26.',
+    ]);
   });
   it('splits ayat', () => {
     expect(N.splitAyat('(1) Negara Indonesia ialah Negara kesatuan. (2) Kedaulatan adalah di tangan rakyat.')).toEqual([
@@ -54,8 +56,30 @@ describe('law text normalisation & OCR-tolerant headings', () => {
   });
   it('BM25 search with synonyms', () => {
     const chunks: LawChunk[] = [
-      { id: 'a', doc_id: 'x', part: 'batang_tubuh', label: 'Pasal 1', pasal: '1', bab: null, ayat: null, page: 1, page_end: 1, text: 'Penyidik adalah pejabat polisi negara.' },
-      { id: 'b', doc_id: 'x', part: 'batang_tubuh', label: 'Pasal 21', pasal: '21', bab: null, ayat: null, page: 5, page_end: 5, text: 'Perintah penahanan terhadap tersangka.' },
+      {
+        id: 'a',
+        doc_id: 'x',
+        part: 'batang_tubuh',
+        label: 'Pasal 1',
+        pasal: '1',
+        bab: null,
+        ayat: null,
+        page: 1,
+        page_end: 1,
+        text: 'Penyidik adalah pejabat polisi negara.',
+      },
+      {
+        id: 'b',
+        doc_id: 'x',
+        part: 'batang_tubuh',
+        label: 'Pasal 21',
+        pasal: '21',
+        bab: null,
+        ayat: null,
+        page: 5,
+        page_end: 5,
+        text: 'Perintah penahanan terhadap tersangka.',
+      },
     ];
     const ms = new MiniSearch<LawChunk>(LAW_SEARCH_OPTIONS);
     ms.addAll(chunks);

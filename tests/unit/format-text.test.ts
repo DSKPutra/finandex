@@ -68,7 +68,9 @@ describe('text & privacy', () => {
     expect(T.slugify('RD Saham Indonesia — Seri #1')).toBe('rd-saham-indonesia-seri-1');
   });
   it('scrubs social handles', () => {
-    expect(T.scrubHandles('kata @budi_123 dan u/anon_x di /u/foo')).toBe('kata [pengguna] dan [pengguna] di [pengguna]');
+    expect(T.scrubHandles('kata @budi_123 dan u/anon_x di /u/foo')).toBe(
+      'kata [pengguna] dan [pengguna] di [pengguna]',
+    );
     expect(T.scrubHandles('email me@example.com tetap')).toBe('email me@example.com tetap');
     expect(T.scrubHandles('@akun.mastodon@mastodon.social hi')).toBe('[pengguna] hi');
   });
@@ -76,7 +78,9 @@ describe('text & privacy', () => {
     const bip = new Set(wordlist);
     const seed = 'abandon ability able about above absent absorb abstract absurd abuse access accident';
     expect(T.detectSensitive(`ini seed phrase saya: ${seed}`, bip)).toContain('seed_phrase');
-    expect(T.detectSensitive('Saya ingin tahu kurs rupiah hari ini dan besok kalau bisa ya terima kasih banyak', bip)).toEqual([]);
+    expect(
+      T.detectSensitive('Saya ingin tahu kurs rupiah hari ini dan besok kalau bisa ya terima kasih banyak', bip),
+    ).toEqual([]);
     expect(T.detectSensitive('0x' + 'a'.repeat(64), bip)).toContain('private_key');
     expect(T.detectSensitive('kartu 4111 1111 1111 1111', bip)).toContain('card_number');
     expect(T.detectSensitive('kartu 4111 1111 1111 1112', bip)).not.toContain('card_number');

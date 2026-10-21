@@ -35,15 +35,27 @@ describe('brand & registry', () => {
       expect(d.tabs.at(-1)!.id).toBe('data');
       expect(DEX_GROUPS.some((g) => g.id === d.group)).toBe(true);
     }
-    const counts = Object.fromEntries(DEX_GROUPS.map((g) => [g.id, DEX_REGISTRY.filter((d) => d.group === g.id).length]));
-    expect(counts).toEqual({ 'global-markets': 5, indonesia: 4, 'crypto-macro': 3, 'startup-vc': 4, 'cost-of-living': 4, social: 4, sentiment: 2, law: 1 });
+    const counts = Object.fromEntries(
+      DEX_GROUPS.map((g) => [g.id, DEX_REGISTRY.filter((d) => d.group === g.id).length]),
+    );
+    expect(counts).toEqual({
+      'global-markets': 5,
+      indonesia: 4,
+      'crypto-macro': 3,
+      'startup-vc': 4,
+      'cost-of-living': 4,
+      social: 4,
+      sentiment: 2,
+      law: 1,
+    });
     expect(isDexId('cryptdex')).toBe(true);
     expect(isDexId('nope')).toBe(false);
     expect(DEX_BY_ID.mylaiwyer.name).toBe('My LAIwyer');
   });
   it('commercial build hides NC Dex', () => {
     const nc = visibleDex('commercial').map((d) => d.id);
-    for (const id of ['salarydex', 'startupdex', 'vcdex', 'vcnetworkdex', 'opencompanydex', 'ipodex']) expect(nc).not.toContain(id);
+    for (const id of ['salarydex', 'startupdex', 'vcdex', 'vcnetworkdex', 'opencompanydex', 'ipodex'])
+      expect(nc).not.toContain(id);
     expect(visibleDex('noncommercial').length).toBe(27);
   });
 });

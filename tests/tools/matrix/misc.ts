@@ -76,7 +76,10 @@ export const matrix: Matrix = {
   costlivingdex: [
     ...U,
     { tool: 'rank_cities', input: {}, check: (d) => expect(d.synthetic).toBe(true) },
-    { tool: 'rank_cities', input: { metric: 'avg_monthly_net_salary_usd', order: 'asc', limit: 3, survey_date: '2023-06-15' } },
+    {
+      tool: 'rank_cities',
+      input: { metric: 'avg_monthly_net_salary_usd', order: 'asc', limit: 3, survey_date: '2023-06-15' },
+    },
     { tool: 'rank_cities', input: { metric: 'safety_index', country: 'Indonesia', region: 'Asia' } },
     { tool: 'city_profile', input: { cities: ['Jakarta', 'Atlantis'] } },
     { tool: 'city_profile', input: { cities: ['geneva switzerland'] } },
@@ -98,7 +101,11 @@ export const matrix: Matrix = {
   idhousingdex: [
     ...U,
     { tool: 'housing_stats', input: { group_by: 'subsidy_status', stat: 'median' } },
-    { tool: 'housing_stats', input: { group_by: 'province', stat: 'count' }, check: (d) => expect(d.results[0].key).toBe('JAWA BARAT') },
+    {
+      tool: 'housing_stats',
+      input: { group_by: 'province', stat: 'count' },
+      check: (d) => expect(d.results[0].key).toBe('JAWA BARAT'),
+    },
     { tool: 'housing_stats', input: { group_by: 'developer_association', stat: 'share' } },
     { tool: 'housing_stats', input: { group_by: 'city_regency', stat: 'mean', limit: 5 } },
     { tool: 'housing_stats', input: { group_by: 'province', stat: 'p25', filters: { subsidy_status: 'subsidi' } } },
@@ -119,15 +126,27 @@ export const matrix: Matrix = {
   mylaiwyer: [
     ...U,
     { tool: 'list_sources', input: {} },
-    { tool: 'search_law', input: { query: 'kedaulatan rakyat' }, check: (d) => expect(d.results.length).toBeGreaterThan(0) },
+    {
+      tool: 'search_law',
+      input: { query: 'kedaulatan rakyat' },
+      check: (d) => expect(d.results.length).toBeGreaterThan(0),
+    },
     { tool: 'search_law', input: { query: 'presiden', doc: 'UUD 1945', limit: 2 } },
     { tool: 'search_law', input: { query: 'penyidik', doc: 'KUHAP' }, check: (d) => expect(d.available).toBe(false) },
     { tool: 'search_law', input: { query: 'pencurian' }, check: (d) => expect(d.available).toBe(false) },
     { tool: 'search_law', input: { query: 'Wetboek van Strafrecht' } },
     { tool: 'search_law', input: { query: 'cerai perdata' } },
-    { tool: 'get_pasal', input: { doc: 'UUD 1945', pasal: 'Pasal 1', ayat: 1 }, check: (d) => expect(d.text).toContain('Negara Indonesia ialah Negara kesatuan') },
+    {
+      tool: 'get_pasal',
+      input: { doc: 'UUD 1945', pasal: 'Pasal 1', ayat: 1 },
+      check: (d) => expect(d.text).toContain('Negara Indonesia ialah Negara kesatuan'),
+    },
     { tool: 'get_pasal', input: { doc: 'uu-1-1946-peraturan-hukum-pidana', pasal: '6' } },
-    { tool: 'get_pasal', input: { doc: 'UU 20/2025', pasal: '1' }, check: (d) => expect(d.effective_date_registry).toBe('2026-01-02') },
+    {
+      tool: 'get_pasal',
+      input: { doc: 'UU 20/2025', pasal: '1' },
+      check: (d) => expect(d.effective_date_registry).toBe('2026-01-02'),
+    },
     { tool: 'get_pasal', input: { doc: 'buku resep', pasal: '1' }, error: true },
     { tool: 'get_pasal', input: { doc: 'UUD 1945', pasal: '999' }, error: true },
     { tool: 'get_pasal', input: { doc: 'UUD 1945', pasal: '1', ayat: 9 }, error: true },

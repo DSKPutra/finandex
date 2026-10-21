@@ -32,7 +32,8 @@ describe('dates (pure UTC calendar math)', () => {
     expect(D.anchorDate('2026-10-19', '10Y')).toBe('2016-10-19');
   });
   it('day numbers round-trip without time-zone shifts', () => {
-    for (const d of ['1962-01-02', '2000-02-29', '2026-10-20', '1970-01-01']) expect(D.fromDayNumber(D.toDayNumber(d))).toBe(d);
+    for (const d of ['1962-01-02', '2000-02-29', '2026-10-20', '1970-01-01'])
+      expect(D.fromDayNumber(D.toDayNumber(d))).toBe(d);
     expect(D.daysBetween('2024-02-28', '2024-03-01')).toBe(2);
     expect(D.addDays('2024-12-31', 1)).toBe('2025-01-01');
   });

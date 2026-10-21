@@ -389,6 +389,15 @@ const openPage = defineTool({
     const text = await ctx.store.text(`heavy/law/${src.docId}/pages/${input.page}.txt`);
     return {
       data: { doc: src.short, page: input.page, text: text.slice(0, 6000), note: noteFor(ctx, src.docId) },
+      ui: [
+        artifact(ctx, {
+          title: `${src.short} — ${ctx.locale === 'id' ? 'hal.' : 'p.'} ${input.page}`,
+          summary: text.slice(0, 160),
+          dataset: DS,
+          tab: 'browse',
+          spec: { type: 'card', body: text.slice(0, 6000), tone: 'info', link: null, ...(noteFor(ctx, src.docId) ? { items: [noteFor(ctx, src.docId)!] } : {}) },
+        }),
+      ],
       citations: [{ dex: 'mylaiwyer', dataset: src.short, as_of: null, ref: { doc_id: src.docId, page: input.page } }],
     };
   },

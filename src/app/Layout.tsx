@@ -14,16 +14,16 @@ import {
   Star,
   Info,
 } from 'lucide-react';
-import { useEffect, useState, type ReactNode } from 'react';
+import { lazy, Suspense, useEffect, useState, type ReactNode } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { DEX_GROUPS } from '../config/dex-groups.ts';
 import { useTranslation } from '../i18n/index.ts';
 import { useSettings } from '../lib/settings.ts';
-import { DexIcon } from '../components/DexCard.tsx';
-import { visibleDex } from '../components/FeatureMap.tsx';
+import { DexIcon } from '../components/DexIcon.tsx';
+import { visibleDex } from '../config/visible-dex.ts';
 import { Footer } from '../components/Footer.tsx';
 import { OfflineBanner } from '../components/States.tsx';
-import { CommandPalette } from './CommandPalette.tsx';
+const CommandPalette = lazy(() => import('./CommandPalette.tsx').then((m) => ({ default: m.CommandPalette })));
 
 function SideLink({ to, icon, label, collapsed }: { to: string; icon: ReactNode; label: string; collapsed: boolean }) {
   return (
@@ -152,7 +152,7 @@ export function Layout() {
           </button>
         </header>
         <OfflineBanner />
-        <main id="main" className="flex-1 w-full mx-auto p-4 md:p-6" style={{ maxWidth: 1400 }}>
+        <main id="main" className="flex-1 w-full mx-auto p-4 md:p-6" style={{ maxWidth: 1400, minHeight: '100vh' }}>
           <Outlet />
         </main>
         <Footer locale={locale} />
@@ -234,7 +234,11 @@ export function Layout() {
           </div>
         )}
       </nav>
-      <CommandPalette open={palette} onOpenChange={setPalette} />
+      {palette && (
+        <Suspense fallback={null}>
+          <CommandPalette open={palette} onOpenChange={setPalette} />
+        </Suspense>
+      )}
     </div>
   );
 }

@@ -11,13 +11,14 @@ import type { Locale } from '../i18n/index.ts';
 import { resolveRuntime, type Runtime } from '../config/runtime.ts';
 
 export let API_BASE = '';
-export const DISTRIBUTION = ((import.meta.env.VITE_DISTRIBUTION as string | undefined) ?? 'noncommercial') as
-  'noncommercial' | 'commercial';
+export { DISTRIBUTION } from '../config/visible-dex.ts';
 
 export let store = new DataStore(`${location.origin}/data`);
 export let runtime: Runtime = { apiBase: '', dataBase: `${location.origin}/data`, source: 'same-origin' };
 
-/** Resolve API/data origins once at start-up (before the first render). */
+/** Resolve API/data origins once at start-up; data access awaits `ready` (rendering does not). */
+let readyResolve!: (r: Runtime) => void;
+export const ready: Promise<Runtime> = new Promise((r) => (readyResolve = r));
 export async function initRuntime(): Promise<Runtime> {
   runtime = await resolveRuntime();
   API_BASE = runtime.apiBase;
@@ -27,6 +28,7 @@ export async function initRuntime(): Promise<Runtime> {
   store = new DataStore(base, (u, i) =>
     fetch(heavy && u.startsWith(`${base}/heavy/`) ? `${heavy}${u.slice(base.length)}` : u, i),
   );
+  readyResolve(runtime);
   return runtime;
 }
 export type Manifest = NonNullable<ToolContext['manifest']> & { built_at?: string; distribution?: string };
@@ -34,7 +36,7 @@ export type Manifest = NonNullable<ToolContext['manifest']> & { built_at?: strin
 export function useManifest() {
   return useQuery({
     queryKey: ['manifest'],
-    queryFn: () => store.json<Manifest>('manifest.json'),
+    queryFn: async () => (await ready, store.json<Manifest>('manifest.json')),
     staleTime: 10 * 60_000,
   });
 }
@@ -76,6 +78,7 @@ export interface Call {
 export type CallResult = { ok: true; out: ToolOutput } | { ok: false; error: string; pending: boolean };
 
 export async function runTool(dex: DexId, call: Call, locale: Locale, manifest: Manifest | null): Promise<CallResult> {
+  await ready;
   const { tools } = await LOADERS[dex]();
   const tool = tools.find((t) => t.name === call.tool);
   if (!tool) return { ok: false, error: `unknown tool ${call.tool}`, pending: false };

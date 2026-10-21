@@ -6,12 +6,19 @@ import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { addDays, type CalDate } from '../../../src/shared/dates.ts';
 import type { DataStore } from '../../../server/data/store.ts';
-import { buildMatrix, dividendProfile, pulse, seriesFile, stockUniverse, type Bars } from '../../../scripts/data/dex/stocks.ts';
+import {
+  buildMatrix,
+  dividendProfile,
+  pulse,
+  seriesFile,
+  stockUniverse,
+  type Bars,
+} from '../../../scripts/data/dex/stocks.ts';
 import { fileStore } from '../../../scripts/eval/fs-store.ts';
 
 function rng(seed: number) {
   let s = seed;
-  return () => ((s = (s * 1664525 + 1013904223) % 2 ** 32) / 2 ** 32);
+  return () => (s = (s * 1664525 + 1013904223) % 2 ** 32) / 2 ** 32;
 }
 
 function days(from: CalDate, to: CalDate): CalDate[] {
@@ -69,18 +76,30 @@ export function stockStore(): Promise<DataStore> {
       const quality: Record<string, unknown> = {};
       const divs: Record<string, unknown> = {};
       for (const [t, b] of byT) {
-        const q = { extreme_moves: [], insufficient_history: b.d.length < 30, reliable_from: t === 'DDD' ? b.d[0] : null };
+        const q = {
+          extreme_moves: [],
+          insufficient_history: b.d.length < 30,
+          reliable_from: t === 'DDD' ? b.d[0] : null,
+        };
         quality[t] = q;
         metrics[t]!.quality_flags = q.insufficient_history ? ['insufficient_history'] : [];
         if (adj) {
           divs[t] = dividendProfile(b);
-          Object.assign(metrics[t]!, { ttm_yield: (divs[t] as Record<string, unknown>).ttm_yield, dividend_increase_streak_years: (divs[t] as Record<string, unknown>).dividend_increase_streak_years, avg_dollar_volume_20d: (divs[t] as Record<string, unknown>).avg_dollar_volume_20d });
+          Object.assign(metrics[t]!, {
+            ttm_yield: (divs[t] as Record<string, unknown>).ttm_yield,
+            dividend_increase_streak_years: (divs[t] as Record<string, unknown>).dividend_increase_streak_years,
+            avg_dollar_volume_20d: (divs[t] as Record<string, unknown>).avg_dollar_volume_20d,
+          });
         }
         put(`heavy/${key}/series/${t}.json`, seriesFile(t, adj ? b : { d: b.d, o: b.o, h: b.h, l: b.l, c: b.c }, q));
       }
       const pul = pulse(byT, adj, metrics, '2015-01-02');
       const { _ew_series, ...rest } = pul;
-      put(`core/${key}/catalog.json`, { as_of: pul.as_of, note: 'SYNTHETIC TEST FIXTURE', stocks: Object.values(metrics) });
+      put(`core/${key}/catalog.json`, {
+        as_of: pul.as_of,
+        note: 'SYNTHETIC TEST FIXTURE',
+        stocks: Object.values(metrics),
+      });
       put(`core/${key}/pulse.json`, { ...rest, ew_series: _ew_series, survivorship_bias: true });
       put(`core/${key}/quality.json`, { rules: {}, totals: {}, tickers: quality });
       if (adj) put('core/sp500/dividends.json', divs);

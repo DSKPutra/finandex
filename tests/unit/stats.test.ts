@@ -57,7 +57,14 @@ describe('stats (numpy/pandas semantics)', () => {
     ]);
     const g = S.groupBy([1, 2, 3, 4], (x) => x % 2);
     expect([...g.keys()]).toEqual([1, 0]);
-    expect(S.sortedKeys(new Map([['b', 1], ['a', 2]]))).toEqual(['a', 'b']);
+    expect(
+      S.sortedKeys(
+        new Map([
+          ['b', 1],
+          ['a', 2],
+        ]),
+      ),
+    ).toEqual(['a', 'b']);
     expect(S.dropNaN([1, NaN, 2])).toEqual([1, 2]);
   });
 });

@@ -68,7 +68,11 @@ describe('env', () => {
     expect(f.ANTHROPIC_SERVER_FALLBACK).toBe(false);
     expect(f.CHAT_MAX_TOKENS).toBe(1024);
     expect(() => readEnv({ CHAT_EFFORT: 'turbo' })).toThrow();
-    expect(parseOrigins('https://a.com, https://b.com', 'https://p.com')).toEqual(['https://a.com', 'https://b.com', 'https://p.com']);
+    expect(parseOrigins('https://a.com, https://b.com', 'https://p.com')).toEqual([
+      'https://a.com',
+      'https://b.com',
+      'https://p.com',
+    ]);
     expect(parseOrigins(undefined).length).toBeGreaterThan(3);
   });
 });
@@ -99,7 +103,9 @@ describe('rate limiters', () => {
     const f = (async (_url: string, init: RequestInit) => {
       const cmds = JSON.parse(String(init.body)) as unknown[][];
       sent.push(cmds);
-      return new Response(JSON.stringify(cmds.map((c) => ({ result: c[0] === 'INCR' ? ++counter : c[0] === 'INCRBY' ? 7 : 1 }))));
+      return new Response(
+        JSON.stringify(cmds.map((c) => ({ result: c[0] === 'INCR' ? ++counter : c[0] === 'INCRBY' ? 7 : 1 }))),
+      );
     }) as unknown as typeof fetch;
     const u = new UpstashLimiter('https://redis.example', 'tok', 5, () => Date.UTC(2026, 0, 1), f);
     expect((await u.hit('k')).ok).toBe(true);
@@ -108,7 +114,13 @@ describe('rate limiters', () => {
     expect(await u.tokensLeft()).toBe(false);
     await u.addTokens(3);
     expect(JSON.stringify(sent[0])).toContain('EXPIRE');
-    const bad = new UpstashLimiter('https://r', 't', 5, Date.now, (async () => new Response('x', { status: 500 })) as unknown as typeof fetch);
+    const bad = new UpstashLimiter(
+      'https://r',
+      't',
+      5,
+      Date.now,
+      (async () => new Response('x', { status: 500 })) as unknown as typeof fetch,
+    );
     await expect(bad.hit('k')).rejects.toThrow(/upstash/);
   });
 });
@@ -125,7 +137,14 @@ describe('SSE', () => {
     const txt = await new Response(stream).text();
     expect(txt).toContain(': ping');
     expect(parseSse(txt)).toEqual([{ event: 'text', data: { delta: 'a' } }]);
-    expect(new TextDecoder().decode(encodeEvent({ event: 'done', data: { usage: { input_tokens: 1, output_tokens: 2 }, tools_used: [], elapsed_ms: 3 } }))).toMatch(/^event: done\ndata: /);
+    expect(
+      new TextDecoder().decode(
+        encodeEvent({
+          event: 'done',
+          data: { usage: { input_tokens: 1, output_tokens: 2 }, tools_used: [], elapsed_ms: 3 },
+        }),
+      ),
+    ).toMatch(/^event: done\ndata: /);
     const c = sseStream(1000);
     await c.stream.cancel();
     expect(c.sink.closed).toBe(true);
@@ -144,16 +163,53 @@ describe('log', () => {
 });
 
 describe('Claude adapter', () => {
-  const sseBody = (events: [string, unknown][]) => events.map(([e, d]) => `event: ${e}\ndata: ${JSON.stringify(d)}\n\n`).join('');
+  const sseBody = (events: [string, unknown][]) =>
+    events.map(([e, d]) => `event: ${e}\ndata: ${JSON.stringify(d)}\n\n`).join('');
   const message = (stop: string, content: unknown[]) =>
     sseBody([
-      ['message_start', { type: 'message_start', message: { id: 'm', type: 'message', role: 'assistant', model: 'claude-sonnet-5-5', content: [], stop_reason: null, stop_sequence: null, usage: { input_tokens: 11, output_tokens: 0, cache_read_input_tokens: 4 } } }],
+      [
+        'message_start',
+        {
+          type: 'message_start',
+          message: {
+            id: 'm',
+            type: 'message',
+            role: 'assistant',
+            model: 'claude-sonnet-5-5',
+            content: [],
+            stop_reason: null,
+            stop_sequence: null,
+            usage: { input_tokens: 11, output_tokens: 0, cache_read_input_tokens: 4 },
+          },
+        },
+      ],
       ...content.flatMap((c, i): [string, unknown][] => [
-        ['content_block_start', { type: 'content_block_start', index: i, content_block: (c as { type: string }).type === 'text' ? { type: 'text', text: '' } : c }],
-        ...((c as { type: string }).type === 'text' ? ([['content_block_delta', { type: 'content_block_delta', index: i, delta: { type: 'text_delta', text: (c as { text: string }).text } }]] as [string, unknown][]) : []),
+        [
+          'content_block_start',
+          {
+            type: 'content_block_start',
+            index: i,
+            content_block: (c as { type: string }).type === 'text' ? { type: 'text', text: '' } : c,
+          },
+        ],
+        ...((c as { type: string }).type === 'text'
+          ? ([
+              [
+                'content_block_delta',
+                {
+                  type: 'content_block_delta',
+                  index: i,
+                  delta: { type: 'text_delta', text: (c as { text: string }).text },
+                },
+              ],
+            ] as [string, unknown][])
+          : []),
         ['content_block_stop', { type: 'content_block_stop', index: i }],
       ]),
-      ['message_delta', { type: 'message_delta', delta: { stop_reason: stop, stop_sequence: null }, usage: { output_tokens: 7 } }],
+      [
+        'message_delta',
+        { type: 'message_delta', delta: { stop_reason: stop, stop_sequence: null }, usage: { output_tokens: 7 } },
+      ],
       ['message_stop', { type: 'message_stop' }],
     ]);
 
@@ -163,11 +219,30 @@ describe('Claude adapter', () => {
     const f = (async (_u: string, init: RequestInit) => {
       body = JSON.parse(String(init.body));
       headers = new Headers(init.headers);
-      return new Response(message('end_turn', [{ type: 'text', text: 'Halo dunia' }]), { headers: { 'content-type': 'text/event-stream' } });
+      return new Response(message('end_turn', [{ type: 'text', text: 'Halo dunia' }]), {
+        headers: { 'content-type': 'text/event-stream' },
+      });
     }) as unknown as typeof fetch;
     const llm = new AnthropicLlm(readEnv({ ANTHROPIC_API_KEY: 'sk-test' }), { fetch: f });
     const deltas: string[] = [];
-    const r = await llm.turn({ system: 'S', tools: [{ name: 'x', description: 'd', input_schema: { type: 'object', properties: {}, additionalProperties: false }, strict: true, cache_control: { type: 'ephemeral' } }], messages: [{ role: 'user', content: 'hi' }], maxTokens: 2048, signal: new AbortController().signal }, (d) => deltas.push(d));
+    const r = await llm.turn(
+      {
+        system: 'S',
+        tools: [
+          {
+            name: 'x',
+            description: 'd',
+            input_schema: { type: 'object', properties: {}, additionalProperties: false },
+            strict: true,
+            cache_control: { type: 'ephemeral' },
+          },
+        ],
+        messages: [{ role: 'user', content: 'hi' }],
+        maxTokens: 2048,
+        signal: new AbortController().signal,
+      },
+      (d) => deltas.push(d),
+    );
     expect(deltas.join('')).toBe('Halo dunia');
     expect(r.stop_reason).toBe('end_turn');
     expect(r.usage).toEqual({ input_tokens: 15, output_tokens: 7 });
@@ -184,14 +259,45 @@ describe('Claude adapter', () => {
 
   it('omits the fallback beta when disabled and maps errors', async () => {
     let body: Record<string, unknown> = {};
-    const f = (async (_u: string, init: RequestInit) => ((body = JSON.parse(String(init.body))), new Response(message('tool_use', [{ type: 'tool_use', id: 't1', name: 'x', input: {} }]), { headers: { 'content-type': 'text/event-stream' } }))) as unknown as typeof fetch;
-    const llm = new AnthropicLlm(readEnv({ ANTHROPIC_API_KEY: 'sk-test', ANTHROPIC_SERVER_FALLBACK: 'false' }), { fetch: f });
-    const r = await llm.turn({ system: 'S', tools: [], messages: [{ role: 'user', content: 'hi' }], maxTokens: 100, signal: new AbortController().signal }, () => {});
+    const f = (async (_u: string, init: RequestInit) => (
+      (body = JSON.parse(String(init.body))),
+      new Response(message('tool_use', [{ type: 'tool_use', id: 't1', name: 'x', input: {} }]), {
+        headers: { 'content-type': 'text/event-stream' },
+      })
+    )) as unknown as typeof fetch;
+    const llm = new AnthropicLlm(readEnv({ ANTHROPIC_API_KEY: 'sk-test', ANTHROPIC_SERVER_FALLBACK: 'false' }), {
+      fetch: f,
+    });
+    const r = await llm.turn(
+      {
+        system: 'S',
+        tools: [],
+        messages: [{ role: 'user', content: 'hi' }],
+        maxTokens: 100,
+        signal: new AbortController().signal,
+      },
+      () => {},
+    );
     expect(body).not.toHaveProperty('fallbacks');
     expect(r.content[0]!.type).toBe('tool_use');
-    const rl = (async () => new Response(JSON.stringify({ type: 'error', error: { type: 'rate_limit_error', message: 'x' } }), { status: 429, headers: { 'retry-after': '0' } })) as unknown as typeof fetch;
+    const rl = (async () =>
+      new Response(JSON.stringify({ type: 'error', error: { type: 'rate_limit_error', message: 'x' } }), {
+        status: 429,
+        headers: { 'retry-after': '0' },
+      })) as unknown as typeof fetch;
     const llm2 = new AnthropicLlm(readEnv({ ANTHROPIC_API_KEY: 'sk-test' }), { fetch: rl });
-    await expect(llm2.turn({ system: 'S', tools: [], messages: [{ role: 'user', content: 'hi' }], maxTokens: 100, signal: new AbortController().signal }, () => {})).rejects.toMatchObject({ code: 'RATE_LIMIT' });
+    await expect(
+      llm2.turn(
+        {
+          system: 'S',
+          tools: [],
+          messages: [{ role: 'user', content: 'hi' }],
+          maxTokens: 100,
+          signal: new AbortController().signal,
+        },
+        () => {},
+      ),
+    ).rejects.toMatchObject({ code: 'RATE_LIMIT' });
     expect(() => new AnthropicLlm(readEnv({}))).toThrow(LlmError);
     expect(classify(new Error('x')).code).toBe('UPSTREAM');
     expect(classify(new LlmError('TIMEOUT', 't')).code).toBe('TIMEOUT');

@@ -139,23 +139,55 @@ describe('handler', () => {
 
   it('accepts feedback and maps the Netlify function path', async () => {
     const h = handler();
-    const fb = (b: unknown) => h(new Request('http://x/.netlify/functions/api/feedback', { method: 'POST', body: JSON.stringify(b), headers: { 'Content-Type': 'application/json' } }));
-    expect((await fb({ requestId: 'r', dex: 'rupiahdex', rating: 'up', clientId: crypto.randomUUID() })).status).toBe(202);
-    expect((await fb({ requestId: 'r', dex: 'rupiahdex', rating: 'meh', clientId: crypto.randomUUID() })).status).toBe(400);
-    expect((await h(new Request('http://x/api/feedback', { method: 'POST', body: 'x'.repeat(5000) }))).status).toBe(413);
+    const fb = (b: unknown) =>
+      h(
+        new Request('http://x/.netlify/functions/api/feedback', {
+          method: 'POST',
+          body: JSON.stringify(b),
+          headers: { 'Content-Type': 'application/json' },
+        }),
+      );
+    expect((await fb({ requestId: 'r', dex: 'rupiahdex', rating: 'up', clientId: crypto.randomUUID() })).status).toBe(
+      202,
+    );
+    expect((await fb({ requestId: 'r', dex: 'rupiahdex', rating: 'meh', clientId: crypto.randomUUID() })).status).toBe(
+      400,
+    );
+    expect((await h(new Request('http://x/api/feedback', { method: 'POST', body: 'x'.repeat(5000) }))).status).toBe(
+      413,
+    );
     expect((await h(new Request('http://x/api/chat', { method: 'POST' }))).status).toBe(400);
   });
 
   it('passes UI context to the model and aborts cleanly', async () => {
     let sys = '';
-    const spy: Llm = { model: 'spy', turn: async (r) => ((sys = r.system), { content: [{ type: 'text', text: 'x' }], stop_reason: 'end_turn', usage: { input_tokens: 0, output_tokens: 0 }, model: 'spy' }) };
+    const spy: Llm = {
+      model: 'spy',
+      turn: async (r) => (
+        (sys = r.system),
+        {
+          content: [{ type: 'text', text: 'x' }],
+          stop_reason: 'end_turn',
+          usage: { input_tokens: 0, output_tokens: 0 },
+          model: 'spy',
+        }
+      ),
+    };
     const h = createHandler({ env, store, limiter: new MemoryLimiter(1e12), llm: () => spy });
-    await (await h(post(body({ context: { entity: 'USDIDR', view: 'chart', period: { start: '2024-01-01' } } })))).text();
+    await (
+      await h(post(body({ context: { entity: 'USDIDR', view: 'chart', period: { start: '2024-01-01' } } })))
+    ).text();
     expect(sys).toContain('UI context');
     const ac = new AbortController();
-    const r = await h(new Request('http://x/api/chat', { method: 'POST', body: body(), headers: { 'Content-Type': 'application/json' }, signal: ac.signal }));
+    const r = await h(
+      new Request('http://x/api/chat', {
+        method: 'POST',
+        body: body(),
+        headers: { 'Content-Type': 'application/json' },
+        signal: ac.signal,
+      }),
+    );
     ac.abort();
     expect(r.status).toBe(200);
   });
 });
-
