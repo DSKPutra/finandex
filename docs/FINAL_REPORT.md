@@ -5,7 +5,11 @@
 Tanggal: 2026-10-21 · Branch: `main` (repo lokal; belum ada remote GitHub).
 
 ## 1. URL preview & produksi
-**Belum ada.** Repo GitHub/Lovable, project Vercel dan Netlify belum dibuat karena membutuhkan akun & secret milik Anda (§15.1, §19). Semua konfigurasi siap: `vercel.json`, `netlify.toml`, fungsi `api/[[...route]].mjs` dan `netlify/functions/api.mts`, workflow `.github/workflows/*`. Langkah lengkap: `docs/RELEASE.md`.
+**Belum ada URL live.**
+- **Netlify:** site `finandex` sudah dibuat di akun Anda (https://app.netlify.com/projects/finandex → `https://finandex.netlify.app`), tetapi unggahan deploy ditolak oleh kebijakan jaringan sesi ini (host `api.netlify.com` dan `netlify-mcp.netlify.app` diblokir, 403). Bundel siap-deploy dibuat oleh `npx tsx scripts/deploy/stage-prebuilt.ts <folder>` (dist + API terbundel, tanpa input mentah).
+- **Vercel:** akun terhubung, tetapi deploy tanpa Git berarti mengirim ±2.900 file (±230 MB) satu per satu — tidak praktis; deploy via Git menunggu repo GitHub.
+- **GitHub/Lovable:** repo `finandex` belum ada dan sesi ini tidak punya kredensial GitHub untuk membuatnya.
+Semua konfigurasi siap: `vercel.json`, `netlify.toml`, fungsi `api/[[...route]].mjs` dan `netlify/functions/api.mts`, workflow `.github/workflows/*`. Langkah lengkap: `docs/RELEASE.md`.
 
 ## 2. Artefak APK/AAB & IPA
 **Belum dibangun.** Lingkungan ini tidak memiliki Android SDK maupun Xcode. Proyek `android/` dan `ios/` (Capacitor 8) sudah ditambahkan dan disinkronkan; ikon & splash dibangkitkan dari artwork kit. `android.yml` menghasilkan APK debug + AAB rilis bertanda tangan, `ios.yml` mengarsip & mengekspor IPA (opsional TestFlight). Keduanya butuh secret penandatanganan (§19).
@@ -20,7 +24,7 @@ Tanggal: 2026-10-21 · Branch: `main` (repo lokal; belum ada remote GitHub).
 | `check:contrast` (WCAG AA, dua tema, palet grafik, buta warna) | ✅ |
 | `check:licenses` | ✅ 1.129 paket (lihat DECISIONS untuk dedikasi domain publik & lisensi dev) |
 | `check:secrets` (repo + `dist/`) | ✅ 924 file; gitleaks berjalan di CI |
-| Unit + tools test | ✅ 380/380 |
+| Unit + tools test | ✅ 380/380 (golden + tools: 400/400) |
 | Coverage `src/shared/**` + `server/**` | ✅ statement **98,64%** · branch **90,87%** · function **99,65%** · line **99,39%** |
 | Golden (`test:golden`) | ✅ 60/60 tes; **49 file golden identik** (rel 1e-6 / abs 1e-9); 10 file NASDAQ/S&P 500 dilaporkan *pending* (input #2/#3 tidak ada); `law/golden.json` dibandingkan parsial (dokumen #30/#31 tidak ada) |
 | Parity Python ↔ golden ↔ TS (`test:parity`) | ✅ 48 file golden: **0 selisih**; 11 dilewati (NASDAQ, S&P 500, hukum) |
@@ -28,9 +32,9 @@ Tanggal: 2026-10-21 · Branch: `main` (repo lokal; belum ada remote GitHub).
 | `eval:chat` live | ⏸ belum dijalankan — butuh `ANTHROPIC_API_KEY` |
 | `build` | ✅ (handler server dibundel; PWA: 378 entri precache, ±24,5 MB termasuk `data/core`) |
 | `size` (JS awal) | ✅ **130,27 KB gzip** ≤ 250 KB |
-| E2E Playwright | ✅ Chromium desktop **72/72** (rute & deep link + refresh, 27 kartu dalam 8 kategori, setiap tab dari 27 Dex, chat streaming/stop/persetujuan/data sensitif/offline, watermark CSV, halaman hukum, ID/EN, tema); Chromium Pixel **44 lulus**, 28 dilewati sesuai desain (sapuan tab penuh hanya di desktop). WebKit & Firefox **belum dijalankan di sini** (hanya Chromium terpasang) — CI menjalankan ketiganya |
+| E2E Playwright | ✅ Chromium desktop + Pixel **116 lulus** (28 dilewati sesuai desain); desktop 72/72 (rute & deep link + refresh, 27 kartu dalam 8 kategori, setiap tab dari 27 Dex, chat streaming/stop/persetujuan/data sensitif/offline, watermark CSV, halaman hukum + render PDF asli, ID/EN, tema); Chromium Pixel **44 lulus**, 28 dilewati sesuai desain (sapuan tab penuh hanya di desktop). WebKit & Firefox **belum dijalankan di sini** (hanya Chromium terpasang) — CI menjalankan ketiganya |
 | Aksesibilitas (axe WCAG 2.2 AA) | ✅ 8 halaman × 2 tema, 0 pelanggaran *serious/critical* |
-| Lighthouse mobile — Beranda | ⚠️ **Performance 81–83 (target ≥ 90 BELUM tercapai)** · Accessibility 100 · Best Practices 100 · SEO 92. Metrik: FCP 1,1–2,0 dtk, LCP 3,2–3,3 dtk, TBT 230–360 ms, CLS 0–0,12 (3 run). Penyebab: waktu eksekusi React + router di CPU yang diperlambat 4×. Langkah lanjut yang disarankan: prerender HTML hero Beranda saat build, preload font, dan memecah `react-router`. Gate ini berjalan di workflow terpisah `lighthouse.yml` agar terlihat merah tanpa memblokir promosi |
+| Lighthouse mobile — Beranda | ✅ `lhci` lulus (median 3 run): **Performance 91** (run 91/93/82) · Accessibility 100 · Best Practices 100 · SEO 92; LCP ±2,0 dtk, CLS ≈ 0. Dicapai dengan prerender shell Beranda (id & en) saat build, `boot.js` yang menerapkan bahasa/tema sebelum paint, skrip entry di akhir `<body>`, dan tinggi tetap kartu ringkasan pasar. Skor lab bervariasi antar-run; workflow `lighthouse.yml` menjaganya |
 
 ## 4. Status Dex
 
@@ -74,6 +78,6 @@ Lihat `docs/DECISIONS.md` — antara lain: perlakuan input yang belum ada (`pend
 6. **`SUPPORT_EMAIL`** untuk halaman privasi/syarat dan store.
 7. **Eval live** (`npm run eval:chat` / `eval-live.yml`) setelah kunci API tersedia — target ≥ 95% & 100% item keamanan.
 8. **Ukuran data** ±215 MB di `dist/data`; bila melebihi batas paket hosting, layani dari CDN/penyimpanan objek via `VITE_DATA_BASE_URL`/`DATA_BASE_URL`.
-9. **Performance Lighthouse** belum ≥ 90 (lihat §3).
-10. **"Lihat halaman asli"** My LAIwyer saat ini menampilkan teks halaman hasil ekstraksi; render PDF pdf.js menyusul bila PDF ikut di-deploy.
+9. **Akses jaringan untuk deploy dari sesi:** izinkan `api.netlify.com` dan `netlify-mcp.netlify.app` (dan `api.vercel.com` bila perlu) di pengaturan *Network access* environment, lalu saya bisa mengunggah bundel siap-deploy ke site `finandex`.
+10. **E2E WebKit/Firefox** dan **build APK/AAB/IPA** berjalan di CI (browser & SDK tidak tersedia di sesi ini).
 11. **Peta** memakai scatter/bar (tanpa GeoJSON, karena tidak ada di input dan tidak boleh diunduh).

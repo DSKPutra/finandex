@@ -44,4 +44,4 @@
 
 ## Fase 9 — QA · SEBAGIAN (lihat `docs/FINAL_REPORT.md`)
 - Hijau: lint, typecheck, copyright, kontras, lisensi, secret, 380 tes unit+tools (coverage 98,64/90,87/99,65/99,39), golden 60/60, parity 0 selisih, eval mock 115/128 (0 gagal, 13 pending-data), build, size 130,27 KB gzip, E2E Chromium 72/72 + Pixel 44, axe 16/16.
-- Belum: Lighthouse Performance 81–83 (< 90), E2E WebKit/Firefox (hanya di CI), eval live (butuh kunci API), deploy & build native (butuh akun/secret).
+- Lighthouse kini lulus (median Performance 91). Belum: E2E WebKit/Firefox (hanya di CI), eval live (butuh kunci API), deploy & build native (butuh akun/secret).
