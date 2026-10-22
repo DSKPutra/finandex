@@ -35,7 +35,20 @@ jobs:
       - name: Secret scan (gitleaks)
         uses: gitleaks/gitleaks-action@v2
         env: { GITHUB_TOKEN: '${{ github.token }}' }
-      - run: npm run verify
+      # The §18 gates of `npm run verify`, one step each so a failure is visible per gate.
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run check:copyright
+      - run: npm run check:contrast
+      - run: npm run check:licenses
+      - run: npm run check:secrets
+      - run: npm run test:coverage -- --reporter=default --reporter=github-actions
+      - run: npm run test:golden
+      - run: npm run test:tools
+      - run: npm run eval:chat:mock
+      - run: npm run build
+      - run: npm run size
+      - run: npm run e2e
       - name: Upload reports
         if: always()
         uses: actions/upload-artifact@v4
