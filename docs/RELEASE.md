@@ -49,3 +49,6 @@ Vercel: *Instant Rollback* ke deployment sebelumnya. Netlify: *Deploys → Publi
 
 ## Whitepaper
 Setelah mengubah `src/content/whitepaper.ts`, jalankan `npm run whitepaper:pdf` dan commit `public/whitepaper/*` (unit test memeriksa hash isi).
+
+## Paket ekspor (`npm run export`)
+Setelah `npm run build`, `npm run export` menulis ke `exports/` (gitignored): `finandex-source.zip` (kode di HEAD), `finandex-netlify-prebuilt.zip` (build + API + data, deploy dengan `npx netlify-cli deploy --prod --site finandex`), `finandex-vercel-prebuilt.zip` (`.vercel/output`, deploy dengan `npx vercel link` lalu `npx vercel deploy --prebuilt --prod`) dan `EXPORT.md`.

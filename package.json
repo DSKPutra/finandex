@@ -45,7 +45,8 @@
     "dev:api": "tsx scripts/dev/api-server.ts",
     "build:native": "tsx scripts/build/native-web.ts",
     "dev:web": "vite",
-    "whitepaper:pdf": "tsx --tsconfig tsconfig.app.json scripts/build/whitepaper-pdf.tsx"
+    "whitepaper:pdf": "tsx --tsconfig tsconfig.app.json scripts/build/whitepaper-pdf.tsx",
+    "export": "tsx scripts/deploy/export.ts"
   },
   "size-limit": [
     {

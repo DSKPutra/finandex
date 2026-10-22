@@ -21,3 +21,4 @@ ios/App/Pods/
 ios/App/build/
 server-dist/
 .lighthouseci/
+exports/
