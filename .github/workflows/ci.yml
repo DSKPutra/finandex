@@ -33,7 +33,7 @@ jobs:
       - run: npm run data:build
       - run: npx playwright install --with-deps chromium webkit firefox
       - name: Secret scan (gitleaks)
-        uses: gitleaks/gitleaks-action@v2
+        uses: gitleaks/gitleaks-action@v3
         env: { GITHUB_TOKEN: '${{ github.token }}' }
       # The §18 gates of `npm run verify`, one step each so a failure is visible per gate.
       - run: npm run lint
