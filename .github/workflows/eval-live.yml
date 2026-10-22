@@ -22,6 +22,6 @@ jobs:
       - run: npm ci
       - run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build
       - run: npm run eval:chat
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with: { name: eval-live, path: docs/eval/live-report.*, if-no-files-found: ignore }

@@ -48,5 +48,5 @@ jobs:
         run: |
           mkdir -p ~/.appstoreconnect/private_keys; echo "$ASC_KEY" | base64 -d > ~/.appstoreconnect/private_keys/AuthKey_$ASC_KEY_ID.p8
           xcrun altool --upload-app -f $RUNNER_TEMP/ipa/*.ipa -t ios --apiKey "$ASC_KEY_ID" --apiIssuer "$ASC_ISSUER"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with: { name: ios, path: '${{ runner.temp }}/ipa/*.ipa', if-no-files-found: warn }

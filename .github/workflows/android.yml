@@ -42,7 +42,7 @@ jobs:
           "$ANDROID_HOME"/build-tools/*/apksigner --version >/dev/null 2>&1 || true
           jarsigner -keystore release.keystore -storepass "$KS_PASS" -keypass "$KEY_PASS" app/build/outputs/bundle/release/app-release.aab "$KEY_ALIAS"
           rm release.keystore
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: android
           path: |
