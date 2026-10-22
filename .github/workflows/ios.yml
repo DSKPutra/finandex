@@ -13,7 +13,7 @@ jobs:
       BUNDLE_ID: ${{ vars.BUNDLE_ID || 'com.deasakakurniaputra.finandex' }}
       HAS_ASC: ${{ secrets.APP_STORE_CONNECT_API_KEY_P8_BASE64 != '' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with: { persist-credentials: false }
       - uses: actions/setup-node@v4
         with: { node-version-file: .nvmrc, cache: npm }
