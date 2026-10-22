@@ -42,6 +42,8 @@ const router = createBrowserRouter([
 
 export function App() {
   const s = useSettings();
-  useEffect(() => applySettings(s), [s.locale, s.theme, s.colorblind]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    applySettings(s);
+  }, [s.locale, s.theme, s.colorblind]); // eslint-disable-line react-hooks/exhaustive-deps
   return <RouterProvider router={router} />;
 }

@@ -160,7 +160,10 @@ export function ChatPanel({
       void submit(q);
     }
   }, [needConsent, submit]);
-  useEffect(() => end.current?.scrollIntoView?.({ block: 'end' }), [chat.conv.messages.length, chat.busy]);
+  // braces matter: newer Chromium returns a Promise from scrollIntoView, which React would call as the cleanup
+  useEffect(() => {
+    end.current?.scrollIntoView?.({ block: 'end' });
+  }, [chat.conv.messages.length, chat.busy]);
 
   const sugg = SUGGESTIONS[dex]?.[locale] ?? [];
   return (
