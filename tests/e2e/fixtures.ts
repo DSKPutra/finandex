@@ -25,10 +25,38 @@ export async function prime(
   }, opts);
 }
 
-export const test = base.extend<{ primed: Page }>({
+export const test = base.extend<{ primed: Page; diagnostics: undefined }>({
   primed: async ({ page }, use) => {
     await prime(page);
     await use(page);
   },
+  // On CI, a failing test prints console errors, failed/4xx-5xx requests and the visible page text as a GitHub
+  // workflow annotation, so failures can be diagnosed without downloading the trace.
+  diagnostics: [
+    async ({ page }, use, info) => {
+      const log: string[] = [];
+      page.on('console', (m) => m.type() === 'error' && log.push(`console: ${m.text()}`));
+      page.on('pageerror', (e) => log.push(`pageerror: ${e.message}`));
+      page.on('requestfailed', (r) =>
+        log.push(`requestfailed: ${r.method()} ${r.url()} ${r.failure()?.errorText ?? ''}`),
+      );
+      page.on(
+        'response',
+        (r) => r.status() >= 400 && log.push(`http ${r.status()}: ${r.request().method()} ${r.url()}`),
+      );
+      await use(undefined);
+      if (!process.env.CI || info.status === info.expectedStatus) return;
+      const text = await page
+        .locator('main')
+        .innerText({ timeout: 2000 })
+        .catch(() => '(no main)');
+      const body = [...log.slice(-30), `main: ${text.slice(0, 1500)}`]
+        .join('\n')
+        .replace(/%/g, '%25')
+        .replace(/\r?\n/g, '%0A');
+      console.log(`::error title=e2e diagnostics ${info.project.name} ${info.title}::${body}`);
+    },
+    { auto: true },
+  ],
 });
 export { expect } from '@playwright/test';
