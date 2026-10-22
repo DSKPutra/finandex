@@ -2,13 +2,14 @@
 
 © 2026 Dea Saka Kurnia Putra. All rights reserved.
 
-Tanggal: 2026-10-21 · Branch: `main` (repo lokal; belum ada remote GitHub).
+Tanggal: 2026-10-22 · Repo: https://github.com/DSKPutra/finandex (publik, branch `main`; dataset input di branch `data-inputs`).
 
 ## 1. URL preview & produksi
-**Belum ada URL live.**
-- **Netlify:** site `finandex` sudah dibuat di akun Anda (https://app.netlify.com/projects/finandex → `https://finandex.netlify.app`), tetapi unggahan deploy ditolak oleh kebijakan jaringan sesi ini (host `api.netlify.com` dan `netlify-mcp.netlify.app` diblokir, 403). Bundel siap-deploy dibuat oleh `npx tsx scripts/deploy/stage-prebuilt.ts <folder>` (dist + API terbundel, tanpa input mentah).
-- **Vercel:** akun terhubung, tetapi deploy tanpa Git berarti mengirim ±2.900 file (±230 MB) satu per satu — tidak praktis; deploy via Git menunggu repo GitHub.
-- **GitHub/Lovable:** repo `finandex` belum ada dan sesi ini tidak punya kredensial GitHub untuk membuatnya.
+**GitHub: selesai.** Kode di `main`; 38 dataset input di branch `data-inputs` (build mengambilnya dari sana dan memverifikasi SHA-256, karena sesi ini tidak diizinkan membuat GitHub Release). CI GitHub Actions berjalan pada setiap push.
+**Vercel & Netlify: belum live.**
+- **Vercel:** konektor menolak pembuatan project (`403 forbidden — You don't have permission to create the project`), baik lewat import Git maupun pembuatan project biasa.
+- **Netlify:** site `finandex` (https://finandex.netlify.app) sudah ada, tetapi konektor tidak punya operasi untuk menyambungkan repo GitHub, dan unggahan langsung diblokir jaringan sesi (`api.netlify.com`).
+- Keduanya cukup di-*import* dari repo `DSKPutra/finandex` di dashboard; `vercel.json`/`netlify.toml` sudah mengatur build (`npm run build:ci` mengambil dataset dari branch `data-inputs`).
 Semua konfigurasi siap: `vercel.json`, `netlify.toml`, fungsi `api/[[...route]].mjs` dan `netlify/functions/api.mts`, workflow `.github/workflows/*`. Langkah lengkap: `docs/RELEASE.md`.
 
 ## 2. Artefak APK/AAB & IPA
