@@ -13,7 +13,7 @@ File input **tidak pernah di-commit**. Unggah 42 file input (nama persis §3.1) 
 ```bash
 gh release create data-inputs-v1 data/inputs/* --title "Finandex data inputs v1" --notes "42 input datasets (§3.1)"
 ```
-`npm run data:fetch` mengunduh hanya dari release ini dan memverifikasi SHA-256 terhadap `kit/manifest`. Repo privat → set `GH_RELEASE_TOKEN` (fine-grained, read-only Contents) di Vercel, Netlify, dan GitHub Secrets.
+Tanpa release, `npm run data:fetch` mengambil file dari branch `data-inputs` di repo yang sama (`DATA_INPUTS_BRANCH`; repo dibaca dari env Git Vercel/Netlify) — saat ini dataset diunggah ke branch ini. `npm run data:fetch` mengunduh hanya dari repo ini dan memverifikasi SHA-256 terhadap `kit/manifest`. Repo privat → set `GH_RELEASE_TOKEN` (fine-grained, read-only Contents) di Vercel, Netlify, dan GitHub Secrets.
 
 **Saat ini belum diunggah oleh pemilik:** #2 NASDAQ, #3 S&P 500, #30 `KUHP_Lama.pdf`, #31 `UU_Nomor_20_Tahun_2025_KUHP.pdf` → Dex terkait berstatus `pending-data`/`partial` sampai file ditambahkan ke release dan build diulang. Tidak ada kode yang perlu diubah.
 
