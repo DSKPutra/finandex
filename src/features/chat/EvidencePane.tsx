@@ -1,7 +1,7 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
 // Evidence Pane (§10.1, §10.6): the "Bukti" column of the chat — charts, tables, official quotations, guided-consultation
 // steps, the deterministic "Kenapa jawabannya begini?" panel, citations, and the provenance legend ("Arti warna") for the
-// selected answer. Separating AI narration from evidence is a Askfolio signature.
+// selected answer. Separating AI narration from evidence is a Finandex signature.
 import { clsx } from 'clsx';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';

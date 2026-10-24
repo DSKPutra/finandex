@@ -3,7 +3,7 @@
     "home": "Beranda",
     "markets": "Pasar",
     "ai": "AI",
-    "dex": "Topik",
+    "dex": "Dex",
     "more": "Lainnya",
     "watchlist": "Watchlist",
     "settings": "Pengaturan",
@@ -15,37 +15,35 @@
     "collapse": "Ciutkan menu",
     "expand": "Buka menu",
     "whitepaper": "Whitepaper",
-    "asOfHint": "Data terbaru di antara semua topik; setiap topik menampilkan tanggal datanya sendiri.",
+    "asOfHint": "Data terbaru di antara semua Dex; setiap Dex menampilkan tanggal datanya sendiri.",
     "bottom": "Navigasi bawah",
     "dataAsOf": "Data per {{date}}",
     "rail": "Orbit Rail",
     "agents": "Ruang Agen",
     "guide": "Panduan fitur",
-    "install": "Pasang aplikasi",
-    "profile": "Profil",
-    "data": "Data"
+    "install": "Pasang aplikasi"
   },
   "home": {
-    "askPlaceholder": "Tanya Askfolio…",
+    "askPlaceholder": "Tanya Finandex AI…",
     "ask": "Tanya",
     "marketSummary": "Ringkasan pasar",
     "featureMap": "Peta Fitur",
     "featureMapIntro": "Semua 27 chatbot, dikelompokkan menurut kemiripan fungsi.",
-    "filterPlaceholder": "Cari topik (nama, tema, kata kunci)…",
+    "filterPlaceholder": "Cari Dex (nama, topik, kata kunci)…",
     "allCategories": "Semua kategori",
     "indonesia": "Indonesia",
-    "hideNc": "Sembunyikan data non-komersial",
+    "hideNc": "Sembunyikan Dex NC",
     "asOfStrip": "Data per",
-    "noMatch": "Tidak ada topik yang cocok.",
+    "noMatch": "Tidak ada Dex yang cocok.",
     "suggest": [
       "Bandingkan emas dan Bitcoin 5 tahun terakhir",
       "Apa bunyi Pasal 1 UUD 1945?",
       "Kurs USD/IDR tertinggi sepanjang data",
       "Median gaji software engineer AS vs India"
     ],
-    "constellation": "Konstelasi Indeks — peta 29 topik",
-    "constellationHelp": "Tekan Tab untuk masuk, panah untuk berpindah antar-topik, Enter untuk membuka, Esc untuk keluar. Terang = data lebih baru; cincin penuh = live, putus-putus = sebagian sumber menunggu dokumen.",
-    "constellationLegend": "Setiap bintang adalah satu topik. Makin terang, makin baru datanya; cincin putus-putus berarti sebagian sumber menunggu dokumen.",
+    "constellation": "Konstelasi Indeks — peta 29 Dex",
+    "constellationHelp": "Tekan Tab untuk masuk, panah untuk berpindah antar-Dex, Enter untuk membuka, Esc untuk keluar. Terang = data lebih baru; cincin penuh = live, putus-putus = sebagian sumber menunggu dokumen.",
+    "constellationLegend": "Setiap bintang adalah satu Dex. Makin terang, makin baru datanya; cincin putus-putus berarti sebagian sumber menunggu dokumen.",
     "justScammed": "Baru kena scam?",
     "qa_finlaw": "Tanya hukum keuangan",
     "qa_guide": "Panduan fitur",
@@ -75,9 +73,9 @@
     "license": "Lisensi",
     "watch": "Tambah ke watchlist",
     "unwatch": "Hapus dari watchlist",
-    "hub": "Semua topik",
-    "notFound": "Topik tidak ditemukan.",
-    "notInBuild": "Topik ini tidak tersedia pada distribusi komersial (lisensi data non-komersial).",
+    "hub": "Semua Dex",
+    "notFound": "Dex tidak ditemukan.",
+    "notInBuild": "Dex ini tidak tersedia pada distribusi komersial (lisensi data non-komersial).",
     "entity": "Entitas",
     "period": "Periode",
     "loading": "Memuat…",
@@ -120,7 +118,7 @@
     "offline": "Butuh koneksi internet untuk chat.",
     "sensitive": "Pesan memuat data sensitif (seed phrase, private key, nomor kartu, atau NIK). Hapus dulu sebelum mengirim.",
     "consentTitle": "Sebelum memakai chat",
-    "consentBody": "Pesan Anda dikirim ke server Askfolio dan diproses oleh penyedia AI (Anthropic) untuk menghasilkan jawaban. Jangan memasukkan data pribadi. Riwayat chat hanya disimpan di perangkat ini.",
+    "consentBody": "Pesan Anda dikirim ke server Finandex dan diproses oleh penyedia AI (Anthropic) untuk menghasilkan jawaban. Jangan memasukkan data pribadi. Riwayat chat hanya disimpan di perangkat ini.",
     "consentAccept": "Saya mengerti",
     "privacyLink": "Kebijakan Privasi",
     "thinking": "Berpikir…",
@@ -154,7 +152,7 @@
     "reduceHaptics": "Matikan getaran (haptic)"
   },
   "about": {
-    "title": "Tentang Askfolio",
+    "title": "Tentang Finandex",
     "version": "Versi",
     "build": "Build",
     "sources": "Sumber data & lisensi",
@@ -185,15 +183,15 @@
     "offlineHelp": "Fitur data yang pernah dibuka tetap tersedia offline; chat butuh koneksi internet."
   },
   "disclaimer": {
-    "general": "Askfolio menyajikan data historis untuk tujuan informasi dan edukasi. Bukan rekomendasi investasi, ajakan membeli/menjual efek atau aset kripto, maupun nasihat keuangan atau hukum. Kinerja masa lalu tidak menjamin kinerja masa depan. Data tidak real-time dan dapat mengandung kesalahan dari sumbernya.",
+    "general": "Finandex menyajikan data historis untuk tujuan informasi dan edukasi. Bukan rekomendasi investasi, ajakan membeli/menjual efek atau aset kripto, maupun nasihat keuangan atau hukum. Kinerja masa lalu tidak menjamin kinerja masa depan. Data tidak real-time dan dapat mengandung kesalahan dari sumbernya.",
     "law": "Informasi hukum berdasarkan dokumen yang tersedia, bukan nasihat hukum dan tidak menggantikan advokat. Untuk kasus nyata, hubungi advokat atau Lembaga Bantuan Hukum. Dalam keadaan darurat, hubungi 112.",
-    "cryptoBot": "Bot trading dan pool yield berisiko tinggi, termasuk kehilangan seluruh dana. Askfolio tidak merekomendasikan atau berafiliasi dengan bot/protokol mana pun. Jangan pernah membagikan seed phrase atau private key.",
+    "cryptoBot": "Bot trading dan pool yield berisiko tinggi, termasuk kehilangan seluruh dana. Finandex tidak merekomendasikan atau berafiliasi dengan bot/protokol mana pun. Jangan pernah membagikan seed phrase atau private key.",
     "sample": "Statistik dari sampel data; bukan penawaran kerja, penilaian properti, atau rencana keuangan pribadi.",
-    "trademark": "NASDAQ®, S&P 500®, IDX, IHSG, nama bursa, nama koin/protokol, nama merchant, dan merek lain adalah milik pemiliknya masing-masing. Askfolio tidak berafiliasi dengan, disponsori, atau didukung oleh Nasdaq, Inc., S&P Dow Jones Indices LLC, PT Bursa Efek Indonesia, Otoritas Jasa Keuangan, Bank Indonesia, maupun pemilik merek lainnya.",
+    "trademark": "NASDAQ®, S&P 500®, IDX, IHSG, nama bursa, nama koin/protokol, nama merchant, dan merek lain adalah milik pemiliknya masing-masing. Finandex tidak berafiliasi dengan, disponsori, atau didukung oleh Nasdaq, Inc., S&P Dow Jones Indices LLC, PT Bursa Efek Indonesia, Otoritas Jasa Keuangan, Bank Indonesia, maupun pemilik merek lainnya.",
     "short": "Data historis untuk edukasi — bukan nasihat investasi, keuangan, atau hukum.",
     "mylaiwyer": "Informasi hukum berdasarkan dokumen resmi yang tersedia, bukan nasihat hukum dan tidak menggantikan advokat. Untuk kasus nyata, hubungi advokat atau Lembaga Bantuan Hukum. Dalam keadaan darurat, hubungi 112.",
-    "finlaiwyer": "Informasi hukum keuangan dan perbankan berdasarkan dokumen resmi yang tersedia, bukan nasihat hukum. Askfolio tidak berafiliasi dengan OJK, Bank Indonesia, IASC, atau Polri, tidak meneruskan laporan, dan tidak dapat memulihkan dana. Ancaman pidana dapat telah disesuaikan oleh UU 1/2026.",
-    "antiscamdex": "Informasi publik dari OJK, Bank Indonesia, Satgas PASTI, dan portal IASC, dirangkum oleh Askfolio. Askfolio bukan IASC dan tidak berafiliasi dengan lembaga tersebut. Laporan resmi hanya di iasc.ojk.go.id. Jangan pernah membagikan OTP, PIN, atau kata sandi."
+    "finlaiwyer": "Informasi hukum keuangan dan perbankan berdasarkan dokumen resmi yang tersedia, bukan nasihat hukum. Finandex tidak berafiliasi dengan OJK, Bank Indonesia, IASC, atau Polri, tidak meneruskan laporan, dan tidak dapat memulihkan dana. Ancaman pidana dapat telah disesuaikan oleh UU 1/2026.",
+    "antiscamdex": "Informasi publik dari OJK, Bank Indonesia, Satgas PASTI, dan portal IASC, dirangkum oleh Finandex. Finandex bukan IASC dan tidak berafiliasi dengan lembaga tersebut. Laporan resmi hanya di iasc.ojk.go.id. Jangan pernah membagikan OTP, PIN, atau kata sandi."
   },
   "chips": {
     "finandex-ai": [
@@ -434,8 +432,8 @@
     "download": "Unduh PDF",
     "downloadOther": "PDF (English)",
     "toc": "Daftar isi",
-    "homeTitle": "Whitepaper Askfolio",
-    "homeBody": "Cara Askfolio bekerja: data terverifikasi, metodologi, arsitektur chatbot, kualitas, keamanan, lisensi, dan keterbatasan.",
+    "homeTitle": "Whitepaper Finandex",
+    "homeBody": "Cara Finandex bekerja: data terverifikasi, metodologi, arsitektur chatbot, kualitas, keamanan, lisensi, dan keterbatasan.",
     "version": "Versi",
     "updated": "Diperbarui",
     "category": "Kategori",
@@ -503,7 +501,7 @@
     "showQuote": "Tampilkan kutipan resmi",
     "situation": "Situasi {{n}}",
     "sourcesCount": "{{n}} dari {{total}} dokumen tersedia (teks resmi sudah diingest dan diverifikasi).",
-    "supplement": "suplemen Askfolio",
+    "supplement": "suplemen Finandex",
     "tocCount": "{{n}} bagian",
     "trail": "Jejak konsultasi",
     "viewFirstPage": "Lihat halaman 1",
@@ -513,7 +511,7 @@
     "chat": "Mulai dari tab Chat: tanya dengan bahasa sehari-hari; angka dan kutipan selalu dari data.",
     "data": "Tab Data menunjukkan file sumber, tanggal data, aturan pembersihan, dan lisensi.",
     "done": "Selesai",
-    "main": "Buka tab {{tab}} untuk menjelajah fitur utama topik ini tanpa chat.",
+    "main": "Buka tab {{tab}} untuk menjelajah fitur utama Dex ini tanpa chat.",
     "next": "Berikutnya",
     "skip": "Lewati",
     "title": "Tur singkat"
@@ -521,7 +519,7 @@
   "compare": {
     "add": "Tambahkan {{name}} ke baki banding",
     "clear": "Kosongkan",
-    "full": "Baki penuh (maks. {{n}}) atau berisi topik lain",
+    "full": "Baki penuh (maks. {{n}}) atau berisi Dex lain",
     "go": "Bandingkan",
     "label": "Banding",
     "remove": "Keluarkan {{name}} dari baki",
@@ -530,8 +528,8 @@
   },
   "banner": {
     "mylaiwyer": "Informasi hukum, bukan nasihat hukum. Untuk kasus nyata, hubungi advokat atau LBH.",
-    "finlaiwyer": "Informasi hukum keuangan, bukan nasihat hukum. Askfolio tidak berafiliasi dengan OJK, BI, atau IASC dan tidak meneruskan laporan.",
-    "antiscamdex": "Askfolio tidak berafiliasi dengan IASC, OJK, BI, atau Satgas PASTI. Laporan resmi hanya di iasc.ojk.go.id."
+    "finlaiwyer": "Informasi hukum keuangan, bukan nasihat hukum. Finandex tidak berafiliasi dengan OJK, BI, atau IASC dan tidak meneruskan laporan.",
+    "antiscamdex": "Finandex tidak berafiliasi dengan IASC, OJK, BI, atau Satgas PASTI. Laporan resmi hanya di iasc.ojk.go.id."
   },
   "entity": {
     "byDate": "Lihat per tanggal",
@@ -557,27 +555,27 @@
     "appFunctions": "Fungsi aplikasi",
     "data": "Data",
     "functions": "Fungsi & tab",
-    "intro": "Panduan {{n}} topik per kategori: fungsi, contoh pertanyaan, tab, data, keterbatasan, dan topik terkait.",
+    "intro": "Panduan {{n}} Dex per kategori: fungsi, contoh pertanyaan, tab, data, keterbatasan, dan Dex terkait.",
     "limits": "Tidak bisa",
     "open": "Buka tab {{tab}}",
     "openShort": "Buka",
-    "related": "Topik terkait",
+    "related": "Dex terkait",
     "title": "Panduan fitur",
     "youCanAsk": "Anda bisa bertanya…"
   },
   "install": {
     "android": "Pasang di Android",
-    "androidHow": "Di Chrome/Edge/Samsung Internet, tekan tombol pasang; ikon Askfolio muncul di layar utama.",
+    "androidHow": "Di Chrome/Edge/Samsung Internet, tekan tombol pasang; ikon Finandex muncul di layar utama.",
     "copied": "Tautan disalin",
     "copyLink": "Salin tautan untuk dibuka di browser",
     "dismiss": "Tutup pita pemasangan (30 hari)",
-    "inappHelp": "Anda sedang di dalam aplikasi {{app}}. Buka di Safari (iPhone/iPad) atau Chrome (Android) untuk memasang Askfolio.",
+    "inappHelp": "Anda sedang di dalam aplikasi {{app}}. Buka di Safari (iPhone/iPad) atau Chrome (Android) untuk memasang Finandex.",
     "installed": "Terpasang · versi {{version}}",
-    "intro": "Pasang Askfolio di perangkat Anda. Tombol utama menyesuaikan perangkat; tidak ada data perangkat yang dikirim.",
+    "intro": "Pasang Finandex di perangkat Anda. Tombol utama menyesuaikan perangkat; tidak ada data perangkat yang dikirim.",
     "ios": "Pasang di iPhone/iPad",
     "ios1": "Buka finandex di Safari, lalu ketuk tombol Bagikan.",
     "ios2": "Pilih \"Tambahkan ke Layar Utama\".",
-    "ios3": "Ketuk \"Tambah\" — ikon Askfolio muncul di layar utama.",
+    "ios3": "Ketuk \"Tambah\" — ikon Finandex muncul di layar utama.",
     "lawApps": "Pasang My LAIwyer & FinLAIwyer terpisah",
     "lawAppsBody": "Dua aplikasi tanya-jawab hukum bisa dipasang sebagai ikon sendiri (web app terpisah).",
     "linux": "Pasang di Linux",
@@ -590,7 +588,7 @@
     "outcome_unavailable": "Browser ini belum menawarkan pemasangan; lihat panduan di /install.",
     "pwa": "Pasang sebagai web app",
     "ribbonBody": "Akses cepat, bisa offline untuk data yang pernah dibuka, tanpa akun.",
-    "ribbonTitle": "Pasang Askfolio",
+    "ribbonTitle": "Pasang Finandex",
     "scan": "Pindai untuk memasang di ponsel",
     "scanLong": "Pindai kode ini dengan kamera ponsel untuk membuka halaman pemasangan di ponsel Anda.",
     "soon": "Segera hadir — rilis desktop bertanda tangan belum tersedia.",
@@ -599,7 +597,7 @@
     "t_macos": "macOS",
     "t_windows": "Windows 10/11",
     "thisDevice": "perangkat ini",
-    "title": "Pasang Askfolio",
+    "title": "Pasang Finandex",
     "winPwa": "Sementara itu: Edge/Chrome → ikon pasang di bilah alamat.",
     "windows": "Unduh untuk Windows"
   },
@@ -608,7 +606,7 @@
     "help": "Daftar pintasan",
     "search": "Index Search",
     "home": "Ke Beranda",
-    "hub": "Ke daftar topik",
+    "hub": "Ke Dex Hub",
     "close": "Tutup panel",
     "chips": "Pilih chip Konsultasi Terpandu",
     "slides": "Pindah bab (mode fokus)"
@@ -666,7 +664,7 @@
   },
   "scam": {
     "bank": "Rekening bank",
-    "calm": "Tarik napas. Ikuti langkah ini berurutan — semakin cepat dilaporkan, semakin besar peluang dana diselamatkan. Askfolio tidak meminta data apa pun di layar ini.",
+    "calm": "Tarik napas. Ikuti langkah ini berurutan — semakin cepat dilaporkan, semakin besar peluang dana diselamatkan. Finandex tidak meminta data apa pun di layar ini.",
     "crypto": "Aset kripto",
     "gt24h": "Lebih dari 24 jam lalu",
     "legalBasis": "Dasar hukum (FinLAIwyer)",
@@ -682,14 +680,14 @@
   },
   "search": {
     "open": "Buka Index Search",
-    "placeholder": "Cari topik, aset, saham, reksa dana, pasal, modus scam — atau ketik pertanyaan"
+    "placeholder": "Cari Dex, aset, saham, reksa dana, pasal, modus scam — atau ketik pertanyaan"
   },
   "wp": {
     "downloadEn": "Download PDF — English",
     "downloadId": "Unduh PDF — Bahasa Indonesia",
     "downloadPptx": "Unduh presentasi (.pptx)",
     "focus": "Mode fokus",
-    "intro": "Whitepaper Askfolio menjelaskan produk, data, mesin chatbot, hukum & AntiScamDex, tech stack lengkap, sistem desain, kepatuhan, dan peta jalan.",
+    "intro": "Whitepaper Finandex menjelaskan produk, data, mesin chatbot, hukum & AntiScamDex, tech stack lengkap, sistem desain, kepatuhan, dan peta jalan.",
     "language": "Bahasa whitepaper",
     "next": "Bab berikutnya",
     "prev": "Bab sebelumnya",
@@ -705,7 +703,7 @@
   },
   "agents": {
     "title": "Ruang Agen",
-    "intro": "Setiap topik dijalankan agen AI sendiri: {{agents}} agen (1 Konduktor, 29 agen topik, Verifikator, Penjaga) dengan {{skills}} keahlian. Ajukan pertanyaan dan lihat agen-agen bekerja — setiap gerakan di kantor berasal dari event nyata.",
+    "intro": "Setiap Dex dijalankan agen AI sendiri: {{agents}} agen (1 Konduktor, 29 agen Dex, Verifikator, Penjaga) dengan {{skills}} keahlian. Ajukan pertanyaan dan lihat agen-agen bekerja — setiap gerakan di kantor berasal dari event nyata.",
     "sourceAgent": "Agen sumber",
     "strip": "Agen yang mengerjakan jawaban ini",
     "viewOffice": "Lihat kantor",
@@ -756,7 +754,7 @@
     "noWebgl": "Perangkat ini tidak mendukung WebGL — status agen ditampilkan sebagai daftar.",
     "log": "Aliran event",
     "logEmpty": "Belum ada aktivitas. Ajukan pertanyaan.",
-    "openDex": "Topik yang dibuka",
+    "openDex": "Dex yang dibuka",
     "askLabel": "Pertanyaan",
     "askPlaceholder": "Tanya apa saja — bisa lintas domain, mis. \"kena scam + kurs rupiah + pasal penipuan\"",
     "run": "Jalankan agen",
@@ -770,9 +768,5 @@
     "evalLatency": "Median waktu (1 / 3 agen)",
     "evalLatencyNote": "Mode data di mesin build; mode AI lebih lambat.",
     "evalItems": "{{n}} butir"
-  },
-  "explore": {
-    "title": "Jelajah data",
-    "intro": "Semua 29 topik data dalam satu peta: setiap bintang adalah satu topik, makin terang makin baru datanya."
   }
 }

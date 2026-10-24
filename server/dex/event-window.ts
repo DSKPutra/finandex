@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Event-window analysis shared by Askfolio and RupiahDex.
+// Event-window analysis shared by Finandex AI and RupiahDex.
 import { z } from 'zod';
 import type { DexId } from '../../src/config/dex-registry';
 import { toDayNumber } from '../../src/shared/dates';

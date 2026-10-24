@@ -56,7 +56,7 @@ function inlineCss(): Plugin {
 /** Stand-alone law apps (§14): apps/<id>/index.html = the final index.html with its own manifest, title and icon, emitted
  *  into the bundle so the service worker precaches it and /apps/<id>/ is installable as a separate app. */
 function lawAppHtml(): Plugin {
-  const APPS = { mylaiwyer: 'Tanya Hukum Umum', finlaiwyer: 'Tanya Hak Keuangan' } as const;
+  const APPS = { mylaiwyer: 'My LAIwyer', finlaiwyer: 'FinLAIwyer' } as const;
   return {
     name: 'finandex-law-app-html',
     apply: 'build',
@@ -92,9 +92,9 @@ export default defineConfig({
       registerType: 'prompt',
       injectRegister: false,
       manifest: {
-        name: 'Askfolio',
-        short_name: 'Askfolio',
-        description: 'Askfolio — asisten AI investasi dengan angka terverifikasi. © 2026 Dea Saka Kurnia Putra.',
+        name: 'Finandex',
+        short_name: 'Finandex',
+        description: 'Finandex — Wawasan Indeks Pasar Keuangan Global. © 2026 Dea Saka Kurnia Putra.',
         lang: 'id',
         theme_color: '#F7F7FA',
         background_color: '#F7F7FA',
@@ -108,9 +108,9 @@ export default defineConfig({
         ],
         shortcuts: [
           { name: 'Baru kena scam?', short_name: 'Darurat scam', url: '/darurat-scam', icons: [{ src: '/icons/antiscamdex-192.png', sizes: '192x192', type: 'image/png' }] },
-          { name: 'Tanya hukum umum', short_name: 'Hukum umum', url: '/dex/mylaiwyer', icons: [{ src: '/icons/mylaiwyer-192.png', sizes: '192x192', type: 'image/png' }] },
-          { name: 'Tanya hak keuangan', short_name: 'Hak keuangan', url: '/dex/finlaiwyer', icons: [{ src: '/icons/finlaiwyer-192.png', sizes: '192x192', type: 'image/png' }] },
-          { name: 'Askfolio', short_name: 'Asisten', url: '/ai', icons: [{ src: '/icons/finandex-ai-192.png', sizes: '192x192', type: 'image/png' }] },
+          { name: 'My LAIwyer — tanya hukum', short_name: 'My LAIwyer', url: '/dex/mylaiwyer', icons: [{ src: '/icons/mylaiwyer-192.png', sizes: '192x192', type: 'image/png' }] },
+          { name: 'FinLAIwyer — hukum keuangan', short_name: 'FinLAIwyer', url: '/dex/finlaiwyer', icons: [{ src: '/icons/finlaiwyer-192.png', sizes: '192x192', type: 'image/png' }] },
+          { name: 'Finandex AI', short_name: 'Finandex AI', url: '/ai', icons: [{ src: '/icons/finandex-ai-192.png', sizes: '192x192', type: 'image/png' }] },
         ],
       },
       injectManifest: {

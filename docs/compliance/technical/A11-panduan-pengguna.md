@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | A11 |
 | Judul | Informasi untuk pengguna (ID & EN) |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Publik |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,13 +21,13 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
 
 ## 1. Memulai · Getting started
 Buka https://finandex.vercel.app. Tanpa akun. Beranda menampilkan Index Constellation: setiap bintang adalah satu Dex. — *No account needed. The home page shows the Index Constellation: each star is one Dex.*
 
 ## 2. Setiap Dex · Every Dex
-### Pasar Global
+### Finandex AI
 Asisten pasar global: indeks, komoditas, kripto, mata uang (chatbot utama & router)
 
 | Tab | Fungsi |
@@ -40,7 +40,7 @@ Asisten pasar global: indeks, komoditas, kripto, mata uang (chatbot utama & rout
 | Peristiwa | Pergerakan harga di sekitar peristiwa bertanggal pasti (krisis, keputusan bank sentral, halving). |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Saham Teknologi AS
+### NASDAQDex
 500 saham NASDAQ, 1962–2026
 
 | Tab | Fungsi |
@@ -53,7 +53,7 @@ Asisten pasar global: indeks, komoditas, kripto, mata uang (chatbot utama & rout
 | Bandingkan | Bandingkan 2–5 entitas dalam satu grafik (rebase 100) plus tabel metrik. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### 500 Saham Besar AS
+### SnP500Dex
 233 saham S&P 500: total return, dividen, volume
 
 | Tab | Fungsi |
@@ -66,7 +66,7 @@ Asisten pasar global: indeks, komoditas, kripto, mata uang (chatbot utama & rout
 | Volume & Likuiditas | Volume, nilai transaksi, dan likuiditas saham. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Raksasa E-Commerce
+### CommerceDex
 43 raksasa e-commerce dunia: harga, fundamental, makro
 
 | Tab | Fungsi |
@@ -79,7 +79,7 @@ Asisten pasar global: indeks, komoditas, kripto, mata uang (chatbot utama & rout
 | Makro | Indikator makro negara terkait perusahaan e-commerce (World Bank). |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### IPO Global
+### IPODex
 IPO global 2019–2026: India, AS, Inggris & 100+ negara
 
 | Tab | Fungsi |
@@ -91,7 +91,7 @@ IPO global 2019–2026: India, AS, Inggris & 100+ negara
 | Cari IPO | Cari IPO berdasarkan nama, negara, bursa, sektor, atau status. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Ekonomi Indonesia
+### IDFinanDex
 Indonesia multi-aset & makro: IHSG, USD/IDR, BI rate
 
 | Tab | Fungsi |
@@ -104,7 +104,7 @@ Indonesia multi-aset & makro: IHSG, USD/IDR, BI rate
 | Rezim Suku Bunga | Return aset saat BI rate naik, turun, atau tetap. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Kurs Rupiah
+### RupiahDex
 Kurs USD/IDR harian sejak 2001
 
 | Tab | Fungsi |
@@ -116,7 +116,7 @@ Kurs USD/IDR harian sejak 2001
 | Peristiwa | Pergerakan harga di sekitar peristiwa bertanggal pasti (krisis, keputusan bank sentral, halving). |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Saham Indonesia
+### IDXDex
 Saham Bursa Efek Indonesia: harga, fundamental, IPO
 
 | Tab | Fungsi |
@@ -128,7 +128,7 @@ Saham Bursa Efek Indonesia: harga, fundamental, IPO
 | Direktori Emiten | Profil emiten BEI: sektor, papan, tanggal pencatatan, informasi perusahaan. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Reksa Dana
+### ReksaDex
 Reksa dana Indonesia: AUM, manajer investasi, kinerja
 
 | Tab | Fungsi |
@@ -141,7 +141,7 @@ Reksa dana Indonesia: AUM, manajer investasi, kinerja
 | Bank Kustodian | Pangsa bank kustodian reksa dana berdasarkan dana kelolaan. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Kripto & DeFi
+### CryptDex
 Kripto: harga, snapshot pasar, DeFi, fee protokol, edukasi bot
 
 | Tab | Fungsi |
@@ -155,7 +155,7 @@ Kripto: harga, snapshot pasar, DeFi, fee protokol, edukasi bot
 | Bot & AI Agent | Edukasi bot trading & AI agent kripto: profil, fakta terverifikasi, uji nyata, checklist keamanan — tanpa rekomendasi & tanpa tautan referral. (edukasi + keamanan) |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Bank Sentral Dunia
+### CentralBankDex
 Neraca bank sentral & likuiditas global (Fed, ECB, BoJ, 167 negara)
 
 | Tab | Fungsi |
@@ -168,7 +168,7 @@ Neraca bank sentral & likuiditas global (Fed, ECB, BoJ, 167 negara)
 | Label Rezim | Label rezim likuiditas buatan penyedia dataset (ditandai sebagai label penyedia, bukan fakta). (penyedia) |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Inflasi Dunia
+### InflationDex
 Inflasi & biaya hidup antarnegara
 
 | Tab | Fungsi |
@@ -180,7 +180,7 @@ Inflasi & biaya hidup antarnegara
 | Wilayah & Pendapatan | Ringkasan per wilayah dunia dan kelompok pendapatan. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Pendanaan Startup
+### StartupDex
 Putaran pendanaan startup global 2019–2026
 
 | Tab | Fungsi |
@@ -193,7 +193,7 @@ Putaran pendanaan startup global 2019–2026
 | Cari Putaran | Cari putaran pendanaan startup berdasarkan perusahaan, tahap, negara, sektor, atau investor. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Direktori Investor
+### VCDex
 Direktori investor startup 2026
 
 | Tab | Fungsi |
@@ -205,7 +205,7 @@ Direktori investor startup 2026
 | Negara | Statistik per negara untuk cakupan Dex ini. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Jaringan Investor
+### VCNetworkDex
 Jaringan co-investment antar investor VC
 
 | Tab | Fungsi |
@@ -216,7 +216,7 @@ Jaringan co-investment antar investor VC
 | Investor | Profil investor dalam jaringan: mitra co-investment terbanyak & statistik. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Data Perusahaan
+### OpenCompanyDex
 Direktori 100 ribu perusahaan (sampel Open Company Database)
 
 | Tab | Fungsi |
@@ -228,7 +228,7 @@ Direktori 100 ribu perusahaan (sampel Open Company Database)
 | Cari Perusahaan | Cari perusahaan di direktori berdasarkan nama, negara, atau sektor. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Gaji Global
+### SalaryDex
 Gaji global per skill & peran (sampel 100 ribu lowongan)
 
 | Tab | Fungsi |
@@ -240,7 +240,7 @@ Gaji global per skill & peran (sampel 100 ribu lowongan)
 | Skill | Skill paling dicari dan premi gaji per skill. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Biaya Hidup Kota
+### CostLivingDex
 Biaya & kualitas hidup 148 kota (data sintetis)
 
 | Tab | Fungsi |
@@ -252,7 +252,7 @@ Biaya & kualitas hidup 148 kota (data sintetis)
 | Perubahan 2023→2024 | Perubahan indeks kota antara dua survei. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Rumah Subsidi
+### IDHousingDex
 Perumahan subsidi & komersil Indonesia (listing proyek)
 
 | Tab | Fungsi |
@@ -265,7 +265,7 @@ Perumahan subsidi & komersil Indonesia (listing proyek)
 | Pengembang | Ringkasan pengembang & asosiasi pengembang perumahan. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Harga Pesan-Antar Makanan
+### IDFoodDeliveryDex
 Benchmark harga 10 ribu menu food delivery Indonesia
 
 | Tab | Fungsi |
@@ -278,7 +278,7 @@ Benchmark harga 10 ribu menu food delivery Indonesia
 | Cari Menu | Cari menu food delivery berdasarkan nama, kota, atau kuliner, lengkap dengan markup. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Kemiskinan Multidimensi
+### PovertyDex
 Indeks Kemiskinan Multidimensi (MPI) 108 negara
 
 | Tab | Fungsi |
@@ -290,7 +290,7 @@ Indeks Kemiskinan Multidimensi (MPI) 108 negara
 | Bandingkan | Bandingkan 2–5 entitas dalam satu grafik (rebase 100) plus tabel metrik. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Berita Kependudukan
+### PopulationDex
 Liputan berita kependudukan global 2019–2026
 
 | Tab | Fungsi |
@@ -303,7 +303,7 @@ Liputan berita kependudukan global 2019–2026
 | Temuan Penyedia | Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Finandex). |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Berita Tunawisma
+### HomelessnessDex
 Liputan berita isu tunawisma global 2019–2026
 
 | Tab | Fungsi |
@@ -316,7 +316,7 @@ Liputan berita isu tunawisma global 2019–2026
 | Temuan Penyedia | Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Finandex). |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Berita Perumahan
+### HousingDex
 Liputan berita perumahan global 2019–2026
 
 | Tab | Fungsi |
@@ -329,7 +329,7 @@ Liputan berita perumahan global 2019–2026
 | Temuan Penyedia | Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Finandex). |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Ulasan Aplikasi Fintech
+### FintechDex
 Adopsi & ulasan produk fintech dari 14 platform
 
 | Tab | Fungsi |
@@ -341,7 +341,7 @@ Adopsi & ulasan produk fintech dari 14 platform
 | Tren | Tren bulanan jumlah unggahan dan porsi sentimen. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Diskusi Keuangan Pribadi
+### PersonalFinanDex
 Diskusi keuangan pribadi & kebebasan finansial
 
 | Tab | Fungsi |
@@ -353,7 +353,7 @@ Diskusi keuangan pribadi & kebebasan finansial
 | Tren | Tren bulanan jumlah unggahan dan porsi sentimen. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Tanya Hukum Umum
+### My LAIwyer
 Tanya-jawab hukum umum: konstitusi, pidana & acara pidana, perdata dasar, bantuan hukum
 
 | Tab | Fungsi |
@@ -366,7 +366,7 @@ Tanya-jawab hukum umum: konstitusi, pidana & acara pidana, perdata dasar, bantua
 | Glosarium | Istilah hukum/keuangan dijelaskan dalam bahasa awam. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Tanya Hak Keuangan
+### FinLAIwyer
 Tanya-jawab hukum keuangan & perbankan Indonesia — fokus korban scam & sengketa lembaga keuangan
 
 | Tab | Fungsi |
@@ -380,7 +380,7 @@ Tanya-jawab hukum keuangan & perbankan Indonesia — fokus korban scam & sengket
 | Glosarium | Istilah hukum/keuangan dijelaskan dalam bahasa awam. |
 | Data | File sumber persis, cakupan, tanggal data (as-of), aturan pembersihan, laporan kualitas, lisensi & atribusi. |
 
-### Lawan Penipuan
+### AntiScamDex
 Adopsi informasi publik IASC, Satgas PASTI, OJK & BI: langkah darurat, siapkan laporan, statistik, modus
 
 | Tab | Fungsi |

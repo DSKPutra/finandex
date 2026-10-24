@@ -17,7 +17,7 @@
  "chat_mock": "npm run eval:chat:mock",
  "latency": {
   "median_ms_1_agent": 21,
-  "median_ms_3_agents": 15
+  "median_ms_3_agents": 16
  },
  "per_agent": {
   "conductor": {

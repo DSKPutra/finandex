@@ -103,10 +103,10 @@ async function collaboration(): Promise<Item[]> {
   // Cross-domain: plan with ≥ 2 agents, both sections in the answer, parallel run.
   const a = await ask('finlaiwyer', 'Saya kena scam + kurs rupiah hari itu + pasal penipuan online');
   const plan = a.ev.find((e) => e.event === 'plan') as Extract<SseEvent, { event: 'plan' }> | undefined;
-  out.push({ suite: 'collaboration', id: 'cross-domain', pass: (plan?.data.agents.length ?? 0) >= 2 && plan!.data.parallel && /\*\*Agen Tanya Hak Keuangan[^*]*\*\*/.test(a.text) && /\*\*Agen Kurs Rupiah[^*]*\*\*/.test(a.text) && has(a.ev, 'verify') });
+  out.push({ suite: 'collaboration', id: 'cross-domain', pass: (plan?.data.agents.length ?? 0) >= 2 && plan!.data.parallel && /\*\*Agen FinLAIwyer\*\*/.test(a.text) && /\*\*Agen RupiahDex\*\*/.test(a.text) && has(a.ev, 'verify') });
   // Partial: one agent never finishes → labelled, done.partial, the other agent's answer is still delivered.
   const b = await ask('finlaiwyer', 'Saya kena scam + kurs rupiah hari itu', { llmFor: (d) => (d === 'rupiahdex' ? new StubLlm('hang') : new DataLlm(d, store, 'id', KNOWN_QUESTIONS)), deadlineMs: 25_000 });
-  out.push({ suite: 'collaboration', id: 'partial-labelled', pass: /Sebagian agen belum selesai/.test(b.text) && b.done?.data.partial === true && /\*\*Agen Tanya Hak Keuangan[^*]*\*\*/.test(b.text) });
+  out.push({ suite: 'collaboration', id: 'partial-labelled', pass: /Sebagian agen belum selesai/.test(b.text) && b.done?.data.partial === true && /\*\*Agen FinLAIwyer\*\*/.test(b.text) });
   // No unverified claim passes: a fabricated number is removed before it reaches the user.
   const c = await ask('rupiahdex', 'Berapa return 1 tahun?', { llmFor: () => new StubLlm('fabricate') });
   const v = c.ev.find((e) => e.event === 'verify') as Extract<SseEvent, { event: 'verify' }> | undefined;

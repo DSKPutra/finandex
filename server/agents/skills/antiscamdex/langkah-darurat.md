@@ -22,7 +22,7 @@ Langkah segera setelah tertipu (≤ 24 jam vs lebih lama; bank/PJP/kripto) denga
 3. Tampilkan kanal resmi (`channel_directory`) dan daftar bukti (`evidence_checklist`).
 
 ## Aturan data
-- Askfolio tidak berafiliasi dengan OJK/IASC/Polri dan tidak meneruskan laporan.
+- Finandex tidak berafiliasi dengan OJK/IASC/Polri dan tidak meneruskan laporan.
 
 ## Format hasil
 - Langkah bernomor, yang mendesak di atas.

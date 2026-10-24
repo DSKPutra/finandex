@@ -33,7 +33,7 @@ test('CSV export contains the watermark', async ({ page }) => {
   await page.getByRole('button', { name: 'CSV', exact: true }).first().click();
   const file = await dl;
   const text = await (await file.createReadStream()).toArray();
-  expect(Buffer.concat(text).toString('utf8')).toContain('Askfolio · © Dea Saka Kurnia Putra');
+  expect(Buffer.concat(text).toString('utf8')).toContain('Finandex · © Dea Saka Kurnia Putra');
 });
 
 test('My LAIwyer original page preview renders the scanned PDF', async ({ page }) => {

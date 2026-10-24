@@ -13,8 +13,8 @@ sources:
     terms_checked_at: 2026-10-24
     allowed_use: commercial
     terms_summary: '"All publicly available ESCB statistics may be reused free of charge on the condition that the source is quoted (e.g. Source: ECB statistics.) and that the statistics (including metadata) are not modified."'
-    attribution: 'Sumber: ECB statistics (kurs referensi euro). USD/IDR dihitung Askfolio dari dua kurs referensi ECB tanpa mengubah nilai aslinya.'
-    attribution_en: 'Source: ECB statistics (euro reference rates). USD/IDR is calculated by Askfolio from two ECB reference rates without modifying the original values.'
+    attribution: 'Sumber: ECB statistics (kurs referensi euro). USD/IDR dihitung Finandex dari dua kurs referensi ECB tanpa mengubah nilai aslinya.'
+    attribution_en: 'Source: ECB statistics (euro reference rates). USD/IDR is calculated by Finandex from two ECB reference rates without modifying the original values.'
     rate_limit: 1 request per run; ≥ 2 s between requests
     redistribution: allowed with source quoted; original values stored unmodified next to the derived rate
     status: enabled

@@ -1,7 +1,6 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
 // Routes (§10.1): /, /ai, /dex, /dex/:dexId/:tab?/:entity?, /markets/:slug, /watchlist, /settings,
-// /about, /legal/:page, /more, /whitepaper, /darurat-scam, /install, /panduan, /agents, /data (all datasets),
-// /profil-risiko (risk questionnaire). Pages are lazy-loaded (initial JS budget §14).
+// /about, /legal/:page, /more, /whitepaper, /darurat-scam, /install, /panduan. Pages are lazy-loaded (initial JS budget §14).
 import { lazy, Suspense } from 'react';
 import type { ReactNode } from 'react';
 import { createBrowserRouter, Navigate } from 'react-router';
@@ -25,8 +24,6 @@ const DaruratScam = lazy(() => import('../pages/DaruratScam'));
 const Install = lazy(() => import('../pages/Install'));
 const Guide = lazy(() => import('../pages/Guide'));
 const Agents = lazy(() => import('../pages/Agents'));
-const Explore = lazy(() => import('../pages/Explore'));
-const RiskProfile = lazy(() => import('../pages/RiskProfile'));
 
 const page = (el: ReactNode) => <Suspense fallback={<LoadingBlock />}>{el}</Suspense>;
 
@@ -53,14 +50,12 @@ export const routes = [
       { path: 'install', element: page(<Install />) },
       { path: 'panduan', element: page(<Guide />) },
       { path: 'agents', element: page(<Agents />) },
-      { path: 'data', element: page(<Explore />) },
-      { path: 'profil-risiko', element: page(<RiskProfile />) },
       { path: '*', element: page(<NotFound />) },
     ],
   },
 ];
 
-/** Full Askfolio, or a stand-alone law app when opened under /apps/mylaiwyer/ or /apps/finlaiwyer/ (§14). */
+/** Full Finandex, or a stand-alone law app when opened under /apps/mylaiwyer/ or /apps/finlaiwyer/ (§14). */
 export const createRouter = () => {
   const law = typeof window !== 'undefined' ? lawAppFromPath(window.location.pathname) : null;
   return law ? createLawRouter(law) : createBrowserRouter(routes);

@@ -46,7 +46,7 @@ export const DOMAIN_RULES: [RegExp, DexId][] = [
 const CLAUSE_SPLIT = /\s*(?:\+|;|\bdan juga\b|\bserta\b|\blalu\b|\bkemudian\b|\bplus\b|\band also\b|\bthen\b|,\s*(?:dan|and)\b)\s*/i;
 
 /** Domain hits for a clause; a hit is skipped when the words that triggered it are covered by the open Dex itself
- *  (e.g. "Bitcoin" in Askfolio, which has BTC-USD; "IHSG" in IDXDex, which computes beta vs IHSG). */
+ *  (e.g. "Bitcoin" in Finandex AI, which has BTC-USD; "IHSG" in IDXDex, which computes beta vs IHSG). */
 export function routeClause(text: string, open?: DexId): DexId[] {
   const hits: DexId[] = [];
   const own = open ? [getDex(open)!.name, ...getDex(open)!.keywords].map((k) => normaliseKey(k).trim()).filter((k) => k.length >= 3) : [];
@@ -142,7 +142,7 @@ export async function planWithModel(llm: Llm, question: string, open: DexId, sig
   try {
     const catalogue = DEX_REGISTRY.map((d) => `${d.id}: ${d.name} — ${d.tagline.en}`).join('\n');
     const res = await llm.turn({
-      system: `You are the Askfolio Conductor. Split the user's question into at most ${AGENT_LIMITS.maxSpecialists} tasks for specialist agents (one per domain). The open Dex is "${open}" and leads when the question is in its domain. Call submit_plan exactly once.\nAgents:\n${catalogue}\nDeterministic suggestion: ${JSON.stringify(base.agents.map((a) => a.id))}`,
+      system: `You are the Finandex Conductor. Split the user's question into at most ${AGENT_LIMITS.maxSpecialists} tasks for specialist agents (one per domain). The open Dex is "${open}" and leads when the question is in its domain. Call submit_plan exactly once.\nAgents:\n${catalogue}\nDeterministic suggestion: ${JSON.stringify(base.agents.map((a) => a.id))}`,
       tools: [PLAN_TOOL],
       messages: [{ role: 'user', content: question }],
       signal,

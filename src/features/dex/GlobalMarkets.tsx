@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Askfolio "Pasar Global" (§9): 34 assets with sparklines, filters by category and region.
+// Finandex AI "Pasar Global" (§9): 34 assets with sparklines, filters by category and region.
 import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { StatTile } from '../../components/StatTile';

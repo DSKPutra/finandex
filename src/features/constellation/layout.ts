@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Deterministic layout of the Index Constellation (§10.0.1): one core (Askfolio) and every other Dex in 8 category
+// Deterministic layout of the Index Constellation (§10.0.1): one core (Finandex AI) and every other Dex in 8 category
 // clusters on a ring. Positions depend only on the registry (seeded per id) — never random per load. Visual = information:
 // brightness = freshness of the as-of date, ring = status (live solid / partial dashed / pending-data empty).
 import type { DexGroupId } from '../../config/dex-groups';

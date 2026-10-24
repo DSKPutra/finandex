@@ -19,7 +19,7 @@ function base(c: ChartColors): Opt {
     backgroundColor: 'transparent',
     textStyle: { color: c.text, fontFamily: 'IBM Plex Sans, system-ui, sans-serif' },
     animationDuration: 300,
-    graphic: [{ type: 'text', right: 12, bottom: 8, silent: true, style: { text: 'Askfolio', fill: c.muted, opacity: 0.35, fontSize: 11 } }],
+    graphic: [{ type: 'text', right: 12, bottom: 8, silent: true, style: { text: 'Finandex', fill: c.muted, opacity: 0.35, fontSize: 11 } }],
   };
 }
 

@@ -16,7 +16,6 @@ import { normaliseKey } from '../shared/text';
 import { TABS } from '../features/dex/panels';
 import { getJson } from '../lib/data';
 import { suggestDex } from '../shared/dex-router';
-import { dexName } from '../config/dex-registry';
 
 type Hit = { key: string; label: string; sub: string; href: string };
 type EntityRow = { dex: DexId; id: string; name: string; aliases: string[] };
@@ -66,9 +65,9 @@ export default function IndexSearch({ open, onOpenChange }: { open: boolean; onO
     const k = normaliseKey(q);
     const dexList = visibleDex(DISTRIBUTION);
     const dexHits = dexList
-      .filter((d) => !k || normaliseKey(`${d.name} ${d.nameEn} ${d.legacyName} ${d.tagline.id} ${d.tagline.en} ${d.keywords.join(' ')}`).includes(k))
+      .filter((d) => !k || normaliseKey(`${d.name} ${d.tagline.id} ${d.tagline.en} ${d.keywords.join(' ')}`).includes(k))
       .slice(0, k ? 6 : 29)
-      .map((d) => ({ key: `dex:${d.id}`, label: dexName(d, locale), sub: d.tagline[locale], href: `/dex/${d.id}` }));
+      .map((d) => ({ key: `dex:${d.id}`, label: d.name, sub: d.tagline[locale], href: `/dex/${d.id}` }));
     if (!k) return dexHits;
     const ent = entities
       .filter((e) => normaliseKey(e.id).startsWith(k) || normaliseKey(e.name).includes(k) || e.aliases.some((a) => normaliseKey(a).startsWith(k)))
@@ -79,7 +78,7 @@ export default function IndexSearch({ open, onOpenChange }: { open: boolean; onO
       Object.entries(TABS[d.id])
         .filter(([, c]) => c.searchKey)
         .slice(0, 1)
-        .map(([tab]) => ({ key: `s:${d.id}`, label: `${locale === 'id' ? 'Cari' : 'Search'} “${q}” — ${dexName(d, locale)}`, sub: d.tagline[locale], href: `/dex/${d.id}/${tab}?q=${encodeURIComponent(q)}` })),
+        .map(([tab]) => ({ key: `s:${d.id}`, label: `${locale === 'id' ? 'Cari' : 'Search'} “${q}” — ${d.name}`, sub: d.tagline[locale], href: `/dex/${d.id}/${tab}?q=${encodeURIComponent(q)}` })),
     );
     const docs = extra.docs
       .filter((d) => normaliseKey(`${d.short} ${d.title}`).includes(k))
@@ -99,7 +98,7 @@ export default function IndexSearch({ open, onOpenChange }: { open: boolean; onO
           .slice(0, 2)
           .map(({ id }) => {
             const d = dexList.find((x) => x.id === id)!;
-            return { key: `ask:${id}`, label: `${locale === 'id' ? 'Tanya di' : 'Ask in'} ${dexName(d, locale)}: “${q.trim()}”`, sub: d.tagline[locale], href: `/dex/${id}/chat?q=${encodeURIComponent(q.trim())}` };
+            return { key: `ask:${id}`, label: `${locale === 'id' ? 'Tanya di' : 'Ask in'} ${d.name}: “${q.trim()}”`, sub: d.tagline[locale], href: `/dex/${id}/chat?q=${encodeURIComponent(q.trim())}` };
           })
       : [];
     return [...asks, ...dexHits, ...ent, ...docs, ...modus, ...searchable];

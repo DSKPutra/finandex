@@ -1,10 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Askfolio">
-  <title>Askfolio</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Finandex">
+  <title>Finandex</title>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#1E1B4B"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.72" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" filterUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
   <rect width="512" height="512" rx="116" fill="url(#bg)"/>
-  <path d="M152 120 H360 A48 48 0 0 1 408 168 V304 A48 48 0 0 1 360 352 H236 L168 404 V352 H152 A48 48 0 0 1 104 304 V168 A48 48 0 0 1 152 120 Z" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linejoin="round"/>
-  <polyline points="164,286 222,232 264,262 340,186" fill="none" stroke="#C7D2FE" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="340" cy="186" r="16" fill="#FFFFFF"/>
+  <rect width="512" height="512" rx="116" fill="url(#halo)"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="2"/>
+
+  <polygon points="140,128 380,128 380,192 184,192" fill="#FFFFFF"/>
+  <rect x="184" y="192" width="66" height="200" fill="#FFFFFF"/>
+  <polyline points="250,318 296,284 330,302 392,232" fill="none" stroke="#C7D2FE" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="392" cy="232" r="14" fill="#FFFFFF"/>
 </svg>

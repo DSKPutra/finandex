@@ -2,7 +2,7 @@
 
 > © 2026 Dea Saka Kurnia Putra. All rights reserved.
 
-Dibangkitkan 2026-10-25 dari teks resmi di `public/data/heavy/law/keuangan/uu-27-2022-pdp/chunks.json`. UU 27/2022: PDF resmi https://peraturan.bpk.go.id/Download/224884/UU%20Nomor%2027%20Tahun%202022.pdf (SHA-256 `ed952dea04b87d14ecf037f9f324a65d50b396ddd34fc28ddf9ff014391971f6`, 50 halaman, diambil 2026-10-22). PP 33/2026: **belum tersedia** — https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed; semua rujukan PP 33/2026 di Paket C berasal dari prompt (ringkasan sekunder) dan **belum diverifikasi**. Kutipan teks peraturan diperbolehkan (UU 28/2014 Pasal 42).
+Dibangkitkan 2026-10-24 dari teks resmi di `public/data/heavy/law/keuangan/uu-27-2022-pdp/chunks.json`. UU 27/2022: PDF resmi https://peraturan.bpk.go.id/Download/224884/UU%20Nomor%2027%20Tahun%202022.pdf (SHA-256 `ed952dea04b87d14ecf037f9f324a65d50b396ddd34fc28ddf9ff014391971f6`, 50 halaman, diambil 2026-10-22). PP 33/2026: **belum tersedia** — https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8); semua rujukan PP 33/2026 di Paket C berasal dari prompt (ringkasan sekunder) dan **belum diverifikasi**. Kutipan teks peraturan diperbolehkan (UU 28/2014 Pasal 42).
 
 | Peraturan | Pasal | Topik yang dirujuk | Dipakai di | Status | Hal. | Kutipan awal teks resmi |
 |---|---|---|---|---|---|---|
@@ -20,16 +20,16 @@ Dibangkitkan 2026-10-25 dari teks resmi di `public/data/heavy/law/keuangan/uu-27
 | UU PDP | 46 | pemberitahuan kegagalan PDP (3 × 24 jam) | C07 | cocok | 19 | Pasal 46 (1) Dalam hal terjadi kegagalan Pelindungan Data Pribadi, Pengendali Data Pribadi wajib pemberitahuan secara tertulis paling lambat 3 x 24 (tiga kali dua puluh empat) jam kepada: a. Subjek Data Pribadi; dan b. l … |
 | UU PDP | 53 | pejabat/petugas PDP | C11 | cocok | 22 | Pasal 53 (1) Pengendali Data Pribadi dan Prosesor Data Pribadi wajib menunjuk pejabat atau petugas yang melaksanakan fungsi Pelindungan Data Pribadi dalam hal: a. pemros(:san Data Pribadi untuk kepentingan pelayanan publ … |
 | UU PDP | 56 | transfer data ke luar wilayah hukum RI | C09 | cocok | 24 | Pasal 56 (1) Pengendali Data Pribadi dapat melakukan transfer Data Pribadi kepada Pengendali Data Pribadi dan/atau Prosesor Data Pribadi di luar wilayah hukum Negara Republik Indonesia sesuai dengan ketentuan yang diatur … |
-| PP 33/2026 | 30–36 | persetujuan & bukti persetujuan | C05 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 33 | informasi sebelum persetujuan | C04 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 71 | koreksi | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 74 | rekaman kegiatan pemrosesan (butir minimum) | C02 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 77 | akses | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 92 | penghentian setelah penarikan persetujuan | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 93–96 | keberatan atas keputusan otomatis | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 99 | pembatasan (3 × 24 jam) | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 114–118 | pemberitahuan kegagalan PDP | C07 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 120–121 | penilaian dampak PDP | C03 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 123–124 | privacy by design & by default | C12 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 142–146 | pejabat/petugas PDP | C11 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
-| PP 33/2026 | 160–167 | transfer lintas batas | C09 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed) |
+| PP 33/2026 | 30–36 | persetujuan & bukti persetujuan | C05 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 33 | informasi sebelum persetujuan | C04 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 71 | koreksi | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 74 | rekaman kegiatan pemrosesan (butir minimum) | C02 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 77 | akses | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 92 | penghentian setelah penarikan persetujuan | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 93–96 | keberatan atas keputusan otomatis | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 99 | pembatasan (3 × 24 jam) | C06 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 114–118 | pemberitahuan kegagalan PDP | C07 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 120–121 | penilaian dampak PDP | C03 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 123–124 | privacy by design & by default | C12 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 142–146 | pejabat/petugas PDP | C11 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |
+| PP 33/2026 | 160–167 | transfer lintas batas | C09 | belum dapat diverifikasi | — | teks resmi belum tersedia (https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)) |

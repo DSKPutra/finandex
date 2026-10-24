@@ -59,13 +59,13 @@ export async function runTool(tools: ToolDef[], use: ToolUse, ctx: ToolCtx) {
 }
 
 export const SENSITIVE_REPLY = {
-  id: 'Pesan Anda tampaknya memuat data sensitif (OTP/PIN, nomor rekening atau kartu, NIK, seed phrase, atau private key). Demi keamanan, Askfolio tidak memproses data tersebut. Hapus data itu dari pesan dan jangan pernah membagikan OTP, PIN, seed phrase, atau private key kepada siapa pun — bank, OJK, dan IASC tidak pernah memintanya.',
-  en: 'Your message appears to contain sensitive data (OTP/PIN, account or card number, national ID, seed phrase, or private key). For your safety, Askfolio does not process it. Please remove it and never share an OTP, PIN, seed phrase, or private key with anyone — banks, OJK, and IASC never ask for them.',
+  id: 'Pesan Anda tampaknya memuat data sensitif (OTP/PIN, nomor rekening atau kartu, NIK, seed phrase, atau private key). Demi keamanan, Finandex tidak memproses data tersebut. Hapus data itu dari pesan dan jangan pernah membagikan OTP, PIN, seed phrase, atau private key kepada siapa pun — bank, OJK, dan IASC tidak pernah memintanya.',
+  en: 'Your message appears to contain sensitive data (OTP/PIN, account or card number, national ID, seed phrase, or private key). For your safety, Finandex does not process it. Please remove it and never share an OTP, PIN, seed phrase, or private key with anyone — banks, OJK, and IASC never ask for them.',
 };
-/** Extra line for the law & consumer-protection Dex (§12.6: Askfolio never collects or forwards reports). */
+/** Extra line for the law & consumer-protection Dex (§12.6: Finandex never collects or forwards reports). */
 export const SENSITIVE_LAW_NOTE = {
-  id: ' Askfolio tidak meneruskan laporan dan bukan IASC; laporan resmi hanya di iasc.ojk.go.id, diisi sendiri oleh Anda. Untuk menyiapkan laporan tanpa mengirim data, pakai "Siapkan Laporan" di AntiScamDex (tersimpan hanya di perangkat).',
-  en: ' Askfolio does not forward reports and is not IASC; official reports only at iasc.ojk.go.id, filed by you. To prepare a report without sending data, use "Prepare a Report" in AntiScamDex (stored only on your device).',
+  id: ' Finandex tidak meneruskan laporan dan bukan IASC; laporan resmi hanya di iasc.ojk.go.id, diisi sendiri oleh Anda. Untuk menyiapkan laporan tanpa mengirim data, pakai "Siapkan Laporan" di AntiScamDex (tersimpan hanya di perangkat).',
+  en: ' Finandex does not forward reports and is not IASC; official reports only at iasc.ojk.go.id, filed by you. To prepare a report without sending data, use "Prepare a Report" in AntiScamDex (stored only on your device).',
 };
 
 export async function orchestrate(req: ChatRequest, deps: OrchestratorDeps, emit: (e: SseEvent) => void, signal: AbortSignal, requestId: string): Promise<void> {

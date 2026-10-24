@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "Askfolio",
+  "productName": "Finandex",
   "version": "../package.json",
   "identifier": "com.deasakakurniaputra.finandex",
   "build": {
@@ -14,7 +14,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "Askfolio",
+        "title": "Finandex",
         "width": 1280,
         "height": 820,
         "minWidth": 380,
@@ -28,46 +28,23 @@
   },
   "bundle": {
     "active": true,
-    "targets": [
-      "app",
-      "dmg",
-      "nsis",
-      "msi"
-    ],
+    "targets": ["app", "dmg", "nsis", "msi"],
     "createUpdaterArtifacts": true,
     "copyright": "© 2026 Dea Saka Kurnia Putra. All rights reserved.",
     "publisher": "Dea Saka Kurnia Putra",
     "category": "Finance",
-    "shortDescription": "Asisten AI investasi dengan angka terverifikasi",
-    "icon": [
-      "icons/32x32.png",
-      "icons/128x128.png",
-      "icons/128x128@2x.png",
-      "icons/icon.icns",
-      "icons/icon.ico"
-    ],
-    "macOS": {
-      "minimumSystemVersion": "11.0"
-    },
-    "windows": {
-      "nsis": {
-        "installMode": "currentUser"
-      }
-    }
+    "shortDescription": "Wawasan Indeks Pasar Keuangan Global",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
+    "macOS": { "minimumSystemVersion": "11.0" },
+    "windows": { "nsis": { "installMode": "currentUser" } }
   },
   "plugins": {
     "updater": {
       "pubkey": "REPLACE_WITH_TAURI_SIGNING_PUBLIC_KEY",
-      "endpoints": [
-        "https://github.com/DSKPutra/finandex/releases/latest/download/latest.json"
-      ]
+      "endpoints": ["https://github.com/DSKPutra/finandex/releases/latest/download/latest.json"]
     },
     "deep-link": {
-      "desktop": {
-        "schemes": [
-          "finandex"
-        ]
-      }
+      "desktop": { "schemes": ["finandex"] }
     }
   }
 }

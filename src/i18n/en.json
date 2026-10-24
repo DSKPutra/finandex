@@ -3,7 +3,7 @@
     "home": "Home",
     "markets": "Markets",
     "ai": "AI",
-    "dex": "Topics",
+    "dex": "Dex",
     "more": "More",
     "watchlist": "Watchlist",
     "settings": "Settings",
@@ -15,37 +15,35 @@
     "collapse": "Collapse menu",
     "expand": "Expand menu",
     "whitepaper": "Whitepaper",
-    "asOfHint": "Newest data among all topic; every topic shows its own data date.",
+    "asOfHint": "Newest data among all Dex; every Dex shows its own data date.",
     "bottom": "Bottom navigation",
     "dataAsOf": "Data as of {{date}}",
     "rail": "Orbit Rail",
     "agents": "Agent Room",
     "guide": "Feature guide",
-    "install": "Install the app",
-    "profile": "Profile",
-    "data": "Data"
+    "install": "Install the app"
   },
   "home": {
-    "askPlaceholder": "Ask Askfolio…",
+    "askPlaceholder": "Ask Finandex AI…",
     "ask": "Ask",
     "marketSummary": "Market summary",
     "featureMap": "Feature Map",
     "featureMapIntro": "All 27 chatbots, grouped by similar function.",
-    "filterPlaceholder": "Search topics (name, theme, keyword)…",
+    "filterPlaceholder": "Search Dex (name, topic, keyword)…",
     "allCategories": "All categories",
     "indonesia": "Indonesia",
-    "hideNc": "Hide non-commercial data",
+    "hideNc": "Hide NC Dex",
     "asOfStrip": "Data as of",
-    "noMatch": "No topic matches.",
+    "noMatch": "No Dex matches.",
     "suggest": [
       "Compare gold and Bitcoin over the last 5 years",
       "What does Article 1 of the 1945 Constitution say?",
       "Highest USD/IDR rate in the data",
       "Median software engineer salary US vs India"
     ],
-    "constellation": "Index Constellation — map of 29 topic",
-    "constellationHelp": "Press Tab to enter, arrow keys to move between topic, Enter to open, Esc to leave. Brighter = fresher data; solid ring = live, dashed = some sources pending.",
-    "constellationLegend": "Each star is a topic. Brighter means fresher data; a dashed ring means some sources are pending.",
+    "constellation": "Index Constellation — map of 29 Dex",
+    "constellationHelp": "Press Tab to enter, arrow keys to move between Dex, Enter to open, Esc to leave. Brighter = fresher data; solid ring = live, dashed = some sources pending.",
+    "constellationLegend": "Each star is a Dex. Brighter means fresher data; a dashed ring means some sources are pending.",
     "justScammed": "Just scammed?",
     "qa_finlaw": "Ask financial law",
     "qa_guide": "Feature guide",
@@ -75,9 +73,9 @@
     "license": "Licence",
     "watch": "Add to watchlist",
     "unwatch": "Remove from watchlist",
-    "hub": "All topics",
-    "notFound": "Topic not found.",
-    "notInBuild": "This topic is not available in the commercial distribution (non-commercial data licence).",
+    "hub": "All Dex",
+    "notFound": "Dex not found.",
+    "notInBuild": "This Dex is not available in the commercial distribution (non-commercial data licence).",
     "entity": "Entity",
     "period": "Period",
     "loading": "Loading…",
@@ -120,7 +118,7 @@
     "offline": "Chat needs an internet connection.",
     "sensitive": "The message contains sensitive data (seed phrase, private key, card number, or national ID). Remove it before sending.",
     "consentTitle": "Before using chat",
-    "consentBody": "Your messages are sent to the Askfolio server and processed by the AI provider (Anthropic) to generate answers. Do not enter personal data. Chat history is stored only on this device.",
+    "consentBody": "Your messages are sent to the Finandex server and processed by the AI provider (Anthropic) to generate answers. Do not enter personal data. Chat history is stored only on this device.",
     "consentAccept": "I understand",
     "privacyLink": "Privacy Policy",
     "thinking": "Thinking…",
@@ -154,7 +152,7 @@
     "reduceHaptics": "Turn off haptics"
   },
   "about": {
-    "title": "About Askfolio",
+    "title": "About Finandex",
     "version": "Version",
     "build": "Build",
     "sources": "Data sources & licences",
@@ -185,15 +183,15 @@
     "offlineHelp": "Data you opened before stays available offline; chat needs an internet connection."
   },
   "disclaimer": {
-    "general": "Askfolio presents historical data for information and education. It is not investment advice, a solicitation to buy or sell securities or crypto assets, or financial or legal advice. Past performance does not guarantee future results. Data is not real-time and may contain errors from its sources.",
+    "general": "Finandex presents historical data for information and education. It is not investment advice, a solicitation to buy or sell securities or crypto assets, or financial or legal advice. Past performance does not guarantee future results. Data is not real-time and may contain errors from its sources.",
     "law": "Legal information based on the available documents; not legal advice and not a substitute for a lawyer. For real cases, contact a lawyer or a Legal Aid Institute (LBH). In an emergency, call 112.",
-    "cryptoBot": "Trading bots and yield pools are high-risk, including total loss of funds. Askfolio does not recommend or affiliate with any bot/protocol. Never share a seed phrase or private key.",
+    "cryptoBot": "Trading bots and yield pools are high-risk, including total loss of funds. Finandex does not recommend or affiliate with any bot/protocol. Never share a seed phrase or private key.",
     "sample": "Statistics from a data sample; not a job offer, property valuation, or personal financial plan.",
-    "trademark": "NASDAQ®, S&P 500®, IDX, IHSG, exchange names, coin/protocol names, merchant names, and other marks belong to their respective owners. Askfolio is not affiliated with, sponsored, or endorsed by Nasdaq, Inc., S&P Dow Jones Indices LLC, PT Bursa Efek Indonesia, Otoritas Jasa Keuangan, Bank Indonesia, or any other trademark owner.",
+    "trademark": "NASDAQ®, S&P 500®, IDX, IHSG, exchange names, coin/protocol names, merchant names, and other marks belong to their respective owners. Finandex is not affiliated with, sponsored, or endorsed by Nasdaq, Inc., S&P Dow Jones Indices LLC, PT Bursa Efek Indonesia, Otoritas Jasa Keuangan, Bank Indonesia, or any other trademark owner.",
     "short": "Historical data for education — not investment, financial, or legal advice.",
     "mylaiwyer": "Legal information based on the available official documents; not legal advice and not a substitute for a lawyer. For real cases, contact a lawyer or a Legal Aid Institute. In an emergency, call 112.",
-    "finlaiwyer": "Financial and banking law information based on the available official documents; not legal advice. Askfolio is not affiliated with OJK, Bank Indonesia, IASC, or Polri, does not forward reports, and cannot recover funds. Criminal penalties may have been adjusted by Law 1/2026.",
-    "antiscamdex": "Public information from OJK, Bank Indonesia, Satgas PASTI, and the IASC portal, summarised by Askfolio. Askfolio is not IASC and is not affiliated with those institutions. Official reports only at iasc.ojk.go.id. Never share your OTP, PIN, or password."
+    "finlaiwyer": "Financial and banking law information based on the available official documents; not legal advice. Finandex is not affiliated with OJK, Bank Indonesia, IASC, or Polri, does not forward reports, and cannot recover funds. Criminal penalties may have been adjusted by Law 1/2026.",
+    "antiscamdex": "Public information from OJK, Bank Indonesia, Satgas PASTI, and the IASC portal, summarised by Finandex. Finandex is not IASC and is not affiliated with those institutions. Official reports only at iasc.ojk.go.id. Never share your OTP, PIN, or password."
   },
   "chips": {
     "finandex-ai": [
@@ -434,8 +432,8 @@
     "download": "Download PDF",
     "downloadOther": "PDF (Bahasa Indonesia)",
     "toc": "Contents",
-    "homeTitle": "Askfolio Whitepaper",
-    "homeBody": "How Askfolio works: verified data, methodology, chatbot architecture, quality, security, licensing, and limitations.",
+    "homeTitle": "Finandex Whitepaper",
+    "homeBody": "How Finandex works: verified data, methodology, chatbot architecture, quality, security, licensing, and limitations.",
     "version": "Version",
     "updated": "Updated",
     "category": "Category",
@@ -503,7 +501,7 @@
     "showQuote": "Show official quote",
     "situation": "Situation {{n}}",
     "sourcesCount": "{{n}} of {{total}} documents available (official text ingested and verified).",
-    "supplement": "Askfolio supplement",
+    "supplement": "Finandex supplement",
     "tocCount": "{{n}} sections",
     "trail": "Consultation trail",
     "viewFirstPage": "View page 1",
@@ -513,7 +511,7 @@
     "chat": "Start in the Chat tab: ask in plain language; numbers and quotes always come from the data.",
     "data": "The Data tab shows the source files, data date, cleaning rules, and licence.",
     "done": "Done",
-    "main": "Open the {{tab}} tab to explore this topic's main feature without chatting.",
+    "main": "Open the {{tab}} tab to explore this Dex's main feature without chatting.",
     "next": "Next",
     "skip": "Skip",
     "title": "Quick tour"
@@ -521,7 +519,7 @@
   "compare": {
     "add": "Add {{name}} to the compare tray",
     "clear": "Clear",
-    "full": "Tray full (max {{n}}) or holds another topic",
+    "full": "Tray full (max {{n}}) or holds another Dex",
     "go": "Compare",
     "label": "Compare",
     "remove": "Remove {{name}} from the tray",
@@ -530,8 +528,8 @@
   },
   "banner": {
     "mylaiwyer": "Legal information, not legal advice. For real cases, contact a lawyer or a legal aid institute (LBH).",
-    "finlaiwyer": "Financial-law information, not legal advice. Askfolio is not affiliated with OJK, BI, or IASC and does not forward reports.",
-    "antiscamdex": "Askfolio is not affiliated with IASC, OJK, BI, or Satgas PASTI. Official reports only at iasc.ojk.go.id."
+    "finlaiwyer": "Financial-law information, not legal advice. Finandex is not affiliated with OJK, BI, or IASC and does not forward reports.",
+    "antiscamdex": "Finandex is not affiliated with IASC, OJK, BI, or Satgas PASTI. Official reports only at iasc.ojk.go.id."
   },
   "entity": {
     "byDate": "View by date",
@@ -557,27 +555,27 @@
     "appFunctions": "App functions",
     "data": "Data",
     "functions": "Functions & tabs",
-    "intro": "Guide to {{n}} topic by category: purpose, example questions, tabs, data, limitations, and related topic.",
+    "intro": "Guide to {{n}} Dex by category: purpose, example questions, tabs, data, limitations, and related Dex.",
     "limits": "Cannot do",
     "open": "Open the {{tab}} tab",
     "openShort": "Open",
-    "related": "Related topic",
+    "related": "Related Dex",
     "title": "Feature guide",
     "youCanAsk": "You can ask…"
   },
   "install": {
     "android": "Install on Android",
-    "androidHow": "In Chrome/Edge/Samsung Internet, tap install; the Askfolio icon appears on your home screen.",
+    "androidHow": "In Chrome/Edge/Samsung Internet, tap install; the Finandex icon appears on your home screen.",
     "copied": "Link copied",
     "copyLink": "Copy the link to open in your browser",
     "dismiss": "Dismiss the install ribbon (30 days)",
-    "inappHelp": "You are inside the {{app}} app. Open in Safari (iPhone/iPad) or Chrome (Android) to install Askfolio.",
+    "inappHelp": "You are inside the {{app}} app. Open in Safari (iPhone/iPad) or Chrome (Android) to install Finandex.",
     "installed": "Installed · version {{version}}",
-    "intro": "Install Askfolio on your device. The main button adapts to your device; no device data is sent.",
+    "intro": "Install Finandex on your device. The main button adapts to your device; no device data is sent.",
     "ios": "Install on iPhone/iPad",
-    "ios1": "Open Askfolio in Safari, then tap the Share button.",
+    "ios1": "Open Finandex in Safari, then tap the Share button.",
     "ios2": "Choose \"Add to Home Screen\".",
-    "ios3": "Tap \"Add\" — the Askfolio icon appears on your home screen.",
+    "ios3": "Tap \"Add\" — the Finandex icon appears on your home screen.",
     "lawApps": "Install My LAIwyer & FinLAIwyer separately",
     "lawAppsBody": "The two legal Q&A apps can be installed as their own icons (separate web apps).",
     "linux": "Install on Linux",
@@ -590,7 +588,7 @@
     "outcome_unavailable": "This browser has not offered install yet; see the guide at /install.",
     "pwa": "Install as a web app",
     "ribbonBody": "Quick access, offline for data you opened, no account.",
-    "ribbonTitle": "Install Askfolio",
+    "ribbonTitle": "Install Finandex",
     "scan": "Scan to install on your phone",
     "scanLong": "Scan this code with your phone camera to open the install page on your phone.",
     "soon": "Coming soon — the signed desktop release is not available yet.",
@@ -599,7 +597,7 @@
     "t_macos": "macOS",
     "t_windows": "Windows 10/11",
     "thisDevice": "this device",
-    "title": "Install Askfolio",
+    "title": "Install Finandex",
     "winPwa": "Meanwhile: Edge/Chrome → install icon in the address bar.",
     "windows": "Download for Windows"
   },
@@ -608,7 +606,7 @@
     "help": "Shortcut list",
     "search": "Index Search",
     "home": "Go home",
-    "hub": "Go to topic list",
+    "hub": "Go to Dex Hub",
     "close": "Close panel",
     "chips": "Pick a Guided Consultation chip",
     "slides": "Change chapter (focus mode)"
@@ -666,7 +664,7 @@
   },
   "scam": {
     "bank": "Bank account",
-    "calm": "Take a breath. Follow these steps in order — the sooner you report, the better the chance funds are saved. Askfolio asks for no data on this screen.",
+    "calm": "Take a breath. Follow these steps in order — the sooner you report, the better the chance funds are saved. Finandex asks for no data on this screen.",
     "crypto": "Crypto asset",
     "gt24h": "More than 24 hours ago",
     "legalBasis": "Legal basis (FinLAIwyer)",
@@ -682,14 +680,14 @@
   },
   "search": {
     "open": "Open Index Search",
-    "placeholder": "Search topic, assets, stocks, funds, articles, scam types — or type a question"
+    "placeholder": "Search Dex, assets, stocks, funds, articles, scam types — or type a question"
   },
   "wp": {
     "downloadEn": "Download PDF — English",
     "downloadId": "Unduh PDF — Bahasa Indonesia",
     "downloadPptx": "Download presentation (.pptx)",
     "focus": "Focus mode",
-    "intro": "The Askfolio whitepaper covers the product, data, chatbot engine, law & AntiScamDex, the full tech stack, design system, compliance, and roadmap.",
+    "intro": "The Finandex whitepaper covers the product, data, chatbot engine, law & AntiScamDex, the full tech stack, design system, compliance, and roadmap.",
     "language": "Whitepaper language",
     "next": "Next chapter",
     "prev": "Previous chapter",
@@ -705,7 +703,7 @@
   },
   "agents": {
     "title": "Agent Room",
-    "intro": "Every topic runs as its own AI agent: {{agents}} agents (1 Conductor, 29 topic agents, Verifier, Guard) with {{skills}} skills. Ask a question and watch the agents work — every movement in the office comes from a real event.",
+    "intro": "Every Dex runs as its own AI agent: {{agents}} agents (1 Conductor, 29 Dex agents, Verifier, Guard) with {{skills}} skills. Ask a question and watch the agents work — every movement in the office comes from a real event.",
     "sourceAgent": "Source agent",
     "strip": "Agents working on this answer",
     "viewOffice": "View office",
@@ -756,7 +754,7 @@
     "noWebgl": "This device does not support WebGL — agent status is shown as a list.",
     "log": "Event stream",
     "logEmpty": "No activity yet. Ask a question.",
-    "openDex": "Open topic",
+    "openDex": "Open Dex",
     "askLabel": "Question",
     "askPlaceholder": "Ask anything — even across domains, e.g. \"scammed + rupiah rate + fraud article\"",
     "run": "Run agents",
@@ -770,9 +768,5 @@
     "evalLatency": "Median time (1 / 3 agents)",
     "evalLatencyNote": "Data mode on the build machine; AI mode is slower.",
     "evalItems": "{{n}} items"
-  },
-  "explore": {
-    "title": "Explore data",
-    "intro": "All 29 data topics on one map: each star is a topic; brighter means fresher data."
   }
 }

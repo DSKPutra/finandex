@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// ConstellationMap (§10.0.1, §10.9): the signature element of Askfolio. Lines and ink dots are drawn by a Web Worker on an
+// ConstellationMap (§10.0.1, §10.9): the signature element of Finandex. Lines and ink dots are drawn by a Web Worker on an
 // OffscreenCanvas (static SVG fallback); nodes are real buttons above it — Tab enters, arrow keys move between nodes,
 // Enter opens the Dex, Esc leaves; hover/focus shows a summary card (icon, name, tagline, as-of, 2 suggestions); a long
 // press on touch shows the preview instead of navigating. Filters dim non-matching nodes. The accessible equivalent is
@@ -18,7 +18,6 @@ import { useLocale } from '../../lib/locale';
 import { useApp } from '../../lib/store';
 import type { CNode } from './layout';
 import { layout, neighbour, VIEW } from './layout';
-import { dexName } from '../../config/dex-registry';
 
 function cssColors() {
   const cs = getComputedStyle(document.documentElement);
@@ -169,7 +168,7 @@ export function ConstellationMap({ match, compact = false }: { match?: Set<strin
               }}
               type="button"
               tabIndex={tabIndexFor(n.id)}
-              aria-label={`${dexName(d, locale)} — ${d.tagline[locale]} — ${t('dex.asOf')} ${fmt(asOf[n.id] ?? d.asOf)} — ${t(`status.${n.status}`)}`}
+              aria-label={`${d.name} — ${d.tagline[locale]} — ${t('dex.asOf')} ${fmt(asOf[n.id] ?? d.asOf)} — ${t(`status.${n.status}`)}`}
               onFocus={() => setActive(n.id)}
               onMouseEnter={() => setHover(n.id)}
               onMouseLeave={() => setHover(null)}
@@ -194,7 +193,7 @@ export function ConstellationMap({ match, compact = false }: { match?: Set<strin
               style={{ left: `${(n.x / VIEW.w) * 100}%`, top: `${(n.y / VIEW.h) * 100}%` }}
             >
               <span aria-hidden className="block rounded-full" style={{ width: size, height: size }} />
-              <span className={clsx('pointer-events-none absolute left-1/2 top-[72%] mt-1 -translate-x-1/2 whitespace-nowrap leading-tight', n.core ? 'font-display text-sm text-ink' : 'text-xs text-ink-muted', !n.core && 'hidden sm:block', (active === n.id || hover === n.id) && 'text-primary')}>{dexName(d, locale)}</span>
+              <span className={clsx('pointer-events-none absolute left-1/2 top-[72%] mt-1 -translate-x-1/2 whitespace-nowrap leading-tight', n.core ? 'font-display text-sm text-ink' : 'text-xs text-ink-muted', !n.core && 'hidden sm:block', (active === n.id || hover === n.id) && 'text-primary')}>{d.name}</span>
             </button>
           );
         })}
@@ -209,7 +208,7 @@ export function ConstellationMap({ match, compact = false }: { match?: Set<strin
               <img src={`/icons/${entry.icon}.svg`} alt="" width={32} height={32} className="rounded-xl" />
             </span>
             <div className="min-w-0">
-              <p className="font-display text-base">{dexName(entry, locale)}</p>
+              <p className="font-display text-base">{entry.name}</p>
               <p className="text-xs text-ink-muted">
                 {t('dex.asOf')} {fmt(asOf[entry.id] ?? entry.asOf)} · {DEX_GROUPS.find((g) => g.id === entry.group)?.name[locale]}
               </p>

@@ -4,7 +4,7 @@
 // native; a new tab with noopener on the web). Phone/WhatsApp/email become tel:, wa.me and mailto: links.
 const isNative = () => !!(globalThis as { Capacitor?: { isNativePlatform?: () => boolean } }).Capacitor?.isNativePlatform?.();
 
-/** Hosts of official channels (and regulation sources) that Askfolio may link to. */
+/** Hosts of official channels (and regulation sources) that Finandex may link to. */
 export const OFFICIAL_HOSTS = [/(^|\.)ojk\.go\.id$/, /(^|\.)bi\.go\.id$/, /^cekrekening\.id$/, /^aduannomor\.id$/, /^lapssjk\.id$/, /(^|\.)peraturan\.go\.id$/, /(^|\.)bpk\.go\.id$/, /(^|\.)kemenkeu\.go\.id$/, /(^|\.)ppatk\.go\.id$/, /(^|\.)setneg\.go\.id$/, /(^|\.)komdigi\.go\.id$/, /(^|\.)polri\.go\.id$/, /(^|\.)mahkamahagung\.go\.id$/, /(^|\.)jdihn\.go\.id$/, /(^|\.)dpr\.go\.id$/];
 
 export function isOfficialUrl(url: string): boolean {

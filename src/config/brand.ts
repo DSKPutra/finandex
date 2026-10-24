@@ -6,13 +6,13 @@ export const COPYRIGHT_BASE_YEAR = 2026;
 
 export const COPYRIGHT_EN = '© 2026 Dea Saka Kurnia Putra. All rights reserved.';
 export const COPYRIGHT_ID = '© 2026 Dea Saka Kurnia Putra. Hak cipta dilindungi undang-undang.';
-export const CREDIT_ID = 'Askfolio dirancang dan dikembangkan oleh Dea Saka Kurnia Putra.';
-export const CREDIT_EN = 'Askfolio is designed and developed by Dea Saka Kurnia Putra.';
+export const CREDIT_ID = 'Finandex dirancang dan dikembangkan oleh Dea Saka Kurnia Putra.';
+export const CREDIT_EN = 'Finandex is designed and developed by Dea Saka Kurnia Putra.';
 export const PERSONAL_TAGLINE = 'A BRIGHTER TOMORROW THROUGH MEANINGFUL WORK';
-export const APP_NAME = 'Askfolio';
-export const APP_TAGLINE_ID = 'Asisten AI investasi dengan angka terverifikasi';
-export const APP_TAGLINE_EN = 'Your AI investing assistant, with verified numbers';
-export const EXPORT_WATERMARK = 'Askfolio · © Dea Saka Kurnia Putra';
+export const APP_NAME = 'Finandex';
+export const APP_TAGLINE_ID = 'Wawasan Indeks Pasar Keuangan Global';
+export const APP_TAGLINE_EN = 'Global Financial Market Indexing Insights';
+export const EXPORT_WATERMARK = 'Finandex · © Dea Saka Kurnia Putra';
 export const SPLASH_BYLINE = 'by Dea Saka Kurnia Putra';
 
 export type Locale = 'id' | 'en';

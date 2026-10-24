@@ -5,7 +5,7 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: process.env.BUNDLE_ID ?? 'com.deasakakurniaputra.finandex',
-  appName: 'Askfolio',
+  appName: 'Finandex',
   webDir: 'dist',
   server: { androidScheme: 'https' },
   backgroundColor: '#F7F7FA',

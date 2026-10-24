@@ -6,7 +6,6 @@ import { DEX_GROUPS, groupStyle } from '../config/dex-groups';
 import type { DexEntry } from '../config/dex-registry';
 import { useLocale } from '../lib/locale';
 import { AsOfBadge, LicenseBadge, SampleBadge, StatusBadge } from './badges';
-import { DexName } from './DexName';
 
 export function DexIcon({ dex, size = 40 }: { dex: Pick<DexEntry, 'icon'> & Partial<Pick<DexEntry, 'group'>>; size?: number }) {
   const img = <img src={`/icons/${dex.icon}.svg`} alt="" width={size} height={size} className="shrink-0 rounded-xl" loading="lazy" decoding="async" />;
@@ -30,7 +29,7 @@ export function DexCard({ dex, asOf }: { dex: DexEntry; asOf: string | undefined
         <DexIcon dex={dex} />
         <div className="min-w-0 flex-1">
           <p className="g-text text-[11px] font-semibold uppercase tracking-wide">{DEX_GROUPS.find((g) => g.id === dex.group)?.name[locale]}</p>
-          <h3 className="truncate text-base font-semibold"><DexName dex={dex} /></h3>
+          <h3 className="truncate text-base font-semibold">{dex.name}</h3>
           <p className="line-clamp-2 text-sm text-muted">{dex.tagline[locale]}</p>
         </div>
       </div>

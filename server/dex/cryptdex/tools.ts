@@ -298,7 +298,7 @@ export function tools(_ad: TsAdapter): ToolDef[] {
     }),
     defineTool({
       name: 'security_checklist',
-      description: 'Askfolio safety checklist for crypto bots and DeFi (editorial). Use whenever bots, yields, wallets, seed phrases, or private keys come up.',
+      description: 'Finandex safety checklist for crypto bots and DeFi (editorial). Use whenever bots, yields, wallets, seed phrases, or private keys come up.',
       input: z.object({}).strict(),
       label: { id: 'Menyiapkan checklist keamanan…', en: 'Preparing safety checklist…' },
       run: async (_i, ctx) => {

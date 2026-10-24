@@ -110,7 +110,7 @@ describe('tool kit', () => {
     expect(globalPrompt('id')).toMatch(/^Anda adalah \{DEX_NAME\}/);
     expect(globalPrompt('en')).toMatch(/^You are \{DEX_NAME\}/);
     const sp = systemPrompt('rupiahdex', 'id', { build_id: 'x', dex: { rupiahdex: { as_of: '2026-10-20', quality: {} } } });
-    expect(sp).toContain('Anda adalah Kurs Rupiah');
+    expect(sp).toContain('Anda adalah RupiahDex');
     expect(sp).toContain('Data per 2026-10-20');
     expect(sp).toContain('USDIDR_daily_exchange_rate.zip');
     expect(datasetCard('salarydex', null)).toContain('SAMPLE');

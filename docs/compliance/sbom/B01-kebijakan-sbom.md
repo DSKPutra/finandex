@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | B01 |
 | Judul | Kebijakan & prosedur SBOM |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Publik |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,7 +21,7 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari artefak SBOM rilis ini. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari artefak SBOM rilis ini. |
 
 ## 1. Tujuan
 Setiap rilis Finandex disertai *Software Bill of Materials* (SBOM) yang dapat diproses mesin, ditandatangani, beratestasi, dan disertai pernyataan VEX, agar penerima dapat menilai komponen, lisensi, dan kerentanan perangkat lunak secara mandiri.
@@ -65,7 +65,7 @@ Cakupan mencakup semua dependensi transitif tanpa batas kedalaman. Lockfile beri
 | Coverage | seluruh komponen transitif; `compositions[].aggregate` | — | ya (selisih lockfile = 0 atau *known unknown*) |
 | Distribution and Delivery, Frequency | proses di dokumen ini (§6) | proses | — |
 
-Hasil pemeriksaan terakhir: **156 pemeriksaan, 0 gagal** (`docs/compliance/sbom/SBOM_CHECK.json`, dibangkitkan oleh scripts/compliance/check-sbom-min-elements.ts @ fd1db6c).
+Hasil pemeriksaan terakhir: **156 pemeriksaan, 0 gagal** (`docs/compliance/sbom/SBOM_CHECK.json`, dibangkitkan oleh scripts/compliance/check-sbom-min-elements.ts @ ae7d11b).
 
 ## 5. Informasi yang tidak diketahui (*known unknowns*)
 Informasi yang tidak diketahui dinyatakan eksplisit dan dibedakan dari yang sengaja dirahasiakan (Finandex tidak merahasiakan komponen apa pun):

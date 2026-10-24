@@ -8,8 +8,8 @@ import { isMobile, prime } from './helpers';
 
 test.beforeEach(async ({ page }) => prime(page));
 
-test('data page shows every topic in 8 categories with copyright', async ({ page }) => {
-  await page.goto('/data');
+test('home shows every Dex in 8 categories with copyright', async ({ page }) => {
+  await page.goto('/');
   await expect(page.getByRole('heading', { name: 'Peta Fitur' })).toBeVisible();
   await expect(page.locator('#feature-map ~ * article, section[aria-labelledby="feature-map"] article')).toHaveCount(DEX_REGISTRY.length);
   for (const g of DEX_GROUPS) await expect(page.getByRole('heading', { level: 3, name: g.name.id, exact: true })).toBeVisible();
@@ -23,7 +23,7 @@ test('splash in index.html carries the byline', async ({ request }) => {
   expect(html).toContain('<meta name="author" content="Dea Saka Kurnia Putra"');
 });
 
-const DEEP = ['/', '/data', '/profil-risiko', '/ai', '/dex', '/dex/nasdaqdex/screener', '/dex/rupiahdex/converter', '/dex/mylaiwyer/sources', '/markets/GSPC', '/dex/idxdex/stocks/BBCA', '/watchlist', '/settings', '/about', '/legal/privacy', '/legal/data-sources', '/legal/licenses', '/legal/sbom', '/legal/security', '/install', '/agents', '/more'];
+const DEEP = ['/', '/ai', '/dex', '/dex/nasdaqdex/screener', '/dex/rupiahdex/converter', '/dex/mylaiwyer/sources', '/markets/GSPC', '/dex/idxdex/stocks/BBCA', '/watchlist', '/settings', '/about', '/legal/privacy', '/legal/data-sources', '/legal/licenses', '/legal/sbom', '/legal/security', '/install', '/agents', '/more'];
 for (const path of DEEP) {
   test(`deep link survives refresh: ${path}`, async ({ page }) => {
     await page.goto(path);
@@ -54,13 +54,13 @@ test('light theme applies tokens', async ({ page }) => {
 test('navigation: sidebar on desktop, bottom tabs on mobile', async ({ page }) => {
   await page.goto('/');
   if (isMobile(page)) {
-    await page.getByRole('link', { name: 'Data', exact: true }).click();
-    await expect(page).toHaveURL(/\/data$/);
+    await page.getByRole('link', { name: 'Dex', exact: true }).click();
+    await expect(page).toHaveURL(/\/dex$/);
     await page.getByRole('link', { name: 'Lainnya' }).click();
     await expect(page.getByRole('heading', { name: 'Lainnya' })).toBeVisible();
   } else {
-    await page.getByRole('link', { name: 'Kurs Rupiah' }).first().click();
-    await expect(page.getByRole('heading', { level: 1, name: 'Kurs Rupiah' })).toBeVisible();
+    await page.getByRole('link', { name: 'RupiahDex' }).first().click();
+    await expect(page.getByRole('heading', { level: 1, name: 'RupiahDex' })).toBeVisible();
   }
 });
 
@@ -74,33 +74,19 @@ test('global search opens a stock detail', async ({ page }) => {
 });
 
 for (const [id, name] of [
-  ['mylaiwyer', 'Tanya Hukum Umum'],
-  ['finlaiwyer', 'Tanya Hak Keuangan'],
+  ['mylaiwyer', 'My LAIwyer'],
+  ['finlaiwyer', 'FinLAIwyer'],
 ] as const) {
   test(`stand-alone law app /apps/${id}/ has its own manifest and only its Dex`, async ({ page, request }) => {
     const html = await (await request.get(`/apps/${id}/`)).text();
     expect(html).toContain(`<link rel="manifest" href="/apps/${id}/manifest.webmanifest"`);
     expect(html).toContain(`<title>${name}</title>`);
     const manifest = (await (await request.get(`/apps/${id}/manifest.webmanifest`)).json()) as { name: string; scope: string; start_url: string };
-    expect(manifest).toMatchObject({ scope: `/apps/${id}/`, start_url: `/apps/${id}/` });
-    expect(manifest.name).toContain(name);
+    expect(manifest).toMatchObject({ name, scope: `/apps/${id}/`, start_url: `/apps/${id}/` });
     await page.goto(`/apps/${id}/`);
     await expect(page).toHaveURL(new RegExp(`/apps/${id}/dex/${id}`));
     await expect(page.getByRole('heading', { level: 1, name })).toBeVisible();
     await page.goto(`/apps/${id}/dex/rupiahdex`);
-    await expect(page.getByRole('link', { name: /Kurs Rupiah/ })).toHaveAttribute('href', '/dex/rupiahdex');
+    await expect(page.getByRole('link', { name: /RupiahDex/ })).toHaveAttribute('href', '/dex/rupiahdex');
   });
 }
-
-test('home is the investing assistant; the risk questionnaire produces a profile', async ({ page }) => {
-  await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1, name: 'Tanya apa saja soal investasimu' })).toBeVisible();
-  await page.getByRole('link', { name: 'Mulai' }).click();
-  for (let i = 0; i < 8; i++) {
-    await page.getByRole('radio').nth(2).check();
-    await page.getByRole('button', { name: i === 7 ? 'Lihat profil saya' : 'Lanjut' }).click();
-  }
-  await expect(page.getByText('Moderat', { exact: true }).first()).toBeVisible();
-  await page.goto('/');
-  await expect(page.getByText('Kelas aset yang umumnya sesuai')).toBeVisible();
-});

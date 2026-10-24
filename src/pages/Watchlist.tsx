@@ -7,7 +7,6 @@ import { Button, EmptyState } from '../components/ui';
 import { getDex, isDexId } from '../config/dex-registry';
 import { entityHref } from '../lib/links';
 import { useApp } from '../lib/store';
-import { DexName } from '../components/DexName';
 
 export default function Watchlist() {
   const { t } = useTranslation();
@@ -28,7 +27,7 @@ export default function Watchlist() {
                 <DexIcon dex={d} size={32} />
                 <Link to={entityHref(w.dexId, w.entity)} className="min-w-0 flex-1">
                   <span className="block truncate font-medium">{w.label}</span>
-                  <span className="text-xs text-muted"><DexName dex={d} /></span>
+                  <span className="text-xs text-muted">{d.name}</span>
                 </Link>
                 <Button size="sm" variant="ghost" onClick={() => toggle(w)} aria-label={`${t('dex.unwatch')} ${w.label}`}>
                   ✕

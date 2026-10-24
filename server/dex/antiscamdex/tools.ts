@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// AntiScamDex tools (§8.5, §4.29): public information from IASC, Satgas PASTI, OJK, and BI, summarised by Askfolio.
+// AntiScamDex tools (§8.5, §4.29): public information from IASC, Satgas PASTI, OJK, and BI, summarised by Finandex.
 // No tool accepts identity data, account numbers, or report contents. Cumulative series use only exact-date points;
 // headline-only points are marked; source conflicts are shown, never reconciled silently.
 import { z } from 'zod';
@@ -187,8 +187,8 @@ export function tools(): ToolDef[] {
         return {
           data: i,
           ui: [
-            artifact('steps', tr(L, 'Melapor ke IASC (iasc.ojk.go.id)', 'Reporting to IASC (iasc.ojk.go.id)'), { type: 'steps', steps: i.reporting_steps.map((s) => ({ text: s.label, urgent: s.n <= 2, channels: s.n === 2 ? [{ id: 'iasc-lapor', name: 'iasc.ojk.go.id', url: 'https://iasc.ojk.go.id' }] : [] })), notes: i.rules.map((r) => r.text), disclaimer: tr(L, 'Askfolio bukan IASC dan tidak meneruskan laporan. Laporan resmi hanya di iasc.ojk.go.id.', 'Askfolio is not IASC and does not forward reports. Official reports only at iasc.ojk.go.id.') }, srcOf('2026-10-23')),
-            artifact('card', tr(L, 'Data yang perlu disiapkan', 'Data to prepare'), { type: 'card', tone: 'info', body: tr(L, 'Siapkan sendiri; jangan kirim ke Askfolio.', 'Prepare it yourself; do not send it to Askfolio.'), items: groups.map(([g, xs]) => `${g}: ${xs.join('; ')}`) }, srcOf('2026-10-23')),
+            artifact('steps', tr(L, 'Melapor ke IASC (iasc.ojk.go.id)', 'Reporting to IASC (iasc.ojk.go.id)'), { type: 'steps', steps: i.reporting_steps.map((s) => ({ text: s.label, urgent: s.n <= 2, channels: s.n === 2 ? [{ id: 'iasc-lapor', name: 'iasc.ojk.go.id', url: 'https://iasc.ojk.go.id' }] : [] })), notes: i.rules.map((r) => r.text), disclaimer: tr(L, 'Finandex bukan IASC dan tidak meneruskan laporan. Laporan resmi hanya di iasc.ojk.go.id.', 'Finandex is not IASC and does not forward reports. Official reports only at iasc.ojk.go.id.') }, srcOf('2026-10-23')),
+            artifact('card', tr(L, 'Data yang perlu disiapkan', 'Data to prepare'), { type: 'card', tone: 'info', body: tr(L, 'Siapkan sendiri; jangan kirim ke Finandex.', 'Prepare it yourself; do not send it to Finandex.'), items: groups.map(([g, xs]) => `${g}: ${xs.join('; ')}`) }, srcOf('2026-10-23')),
           ],
           citations: [{ dex: DEX, dataset: 'antiscam_kb.json', as_of: '2026-10-23' }],
         };
@@ -238,7 +238,7 @@ export function tools(): ToolDef[] {
             artifact('gauge', tr(L, 'Skor tanda bahaya', 'Red-flag score'), { type: 'gauge', value: r.score / r.max, label: verdict, cutoff: '—', numerator: { label: tr(L, 'Skor', 'Score'), value: r.score }, denominator: { label: tr(L, 'Maksimum', 'Maximum'), value: r.max }, unit: 'count' }, srcOf('2026-10-23')),
             artifact('card', tr(L, 'Penjelasan', 'Explanation'), { type: 'card', tone: r.level === 'low' ? 'info' : 'warning', body: verdict, items: SELF_CHECK_QUESTIONS.filter((_, i) => answers[i]).map((q) => q.why[L]) }, srcOf('2026-10-23')),
           ],
-          method: method('scam_selfcheck', [], { inputs: { answers }, rows_used: answers.length, dataset: 'scam_selfcheck (Askfolio)', as_of: '2026-10-23', flags: ['deterministic_score', 'not_a_verdict'] }),
+          method: method('scam_selfcheck', [], { inputs: { answers }, rows_used: answers.length, dataset: 'scam_selfcheck (Finandex)', as_of: '2026-10-23', flags: ['deterministic_score', 'not_a_verdict'] }),
         };
       },
     }),
@@ -259,7 +259,7 @@ export function tools(): ToolDef[] {
         const steps = res.steps.map((s) => ({ text: L === 'en' && s.text_en ? s.text_en : s.text, urgent: s.urgent, channels: s.channels.map((id) => ({ id, name: ch.get(id)?.name ?? id, ...(ch.get(id)?.url ? { url: ch.get(id)!.url! } : {}), ...(ch.get(id)?.phone ? { phone: ch.get(id)!.phone! } : {}), ...(ch.get(id)?.whatsapp ? { whatsapp: ch.get(id)!.whatsapp! } : {}), ...(ch.get(id)?.email ? { email: ch.get(id)!.email! } : {}) })) }));
         return {
           data: { flow: r, steps: steps.map((s) => ({ text: s.text, urgent: s.urgent, channels: s.channels.map((c) => c.name) })), legal_bases: res.legal_bases, open_dex: res.open_dex },
-          ui: [artifact('steps', L === 'en' && res.title_en ? res.title_en : res.title, { type: 'steps', steps, legal_bases: res.legal_bases.map((b) => ({ doc_id: b.doc_id, label: b.doc_id, ref: b.ref, why: b.why, available: true })), notes: res.notes ?? [], open_dex: res.open_dex, flow: { flow_id: r.flow_id, path: r.path }, trail: v.trail, disclaimer: tr(L, 'Askfolio tidak berafiliasi dengan IASC, OJK, BI, atau Satgas PASTI. Laporan resmi hanya di iasc.ojk.go.id.', 'Askfolio is not affiliated with IASC, OJK, BI, or Satgas PASTI. Official reports only at iasc.ojk.go.id.') }, srcOf('2026-10-23'))],
+          ui: [artifact('steps', L === 'en' && res.title_en ? res.title_en : res.title, { type: 'steps', steps, legal_bases: res.legal_bases.map((b) => ({ doc_id: b.doc_id, label: b.doc_id, ref: b.ref, why: b.why, available: true })), notes: res.notes ?? [], open_dex: res.open_dex, flow: { flow_id: r.flow_id, path: r.path }, trail: v.trail, disclaimer: tr(L, 'Finandex tidak berafiliasi dengan IASC, OJK, BI, atau Satgas PASTI. Laporan resmi hanya di iasc.ojk.go.id.', 'Finandex is not affiliated with IASC, OJK, BI, or Satgas PASTI. Official reports only at iasc.ojk.go.id.') }, srcOf('2026-10-23'))],
           method: method('emergency_steps', [], { inputs: { elapsed, method: m }, rows_used: steps.length, dataset: 'legal_qa_flows.json + antiscam_kb.json', as_of: '2026-10-23', flags: ['deterministic_flow'] }),
         };
       },

@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | B04 |
 | Judul | Register kerentanan & VEX |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Internal |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,7 +21,7 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari artefak SBOM rilis ini. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari artefak SBOM rilis ini. |
 
 ## 1. Ringkasan rilis 0.1.0
 - Sumber temuan: `npm audit` (GitHub Advisory Database) atas seluruh pohon dependensi; osv-scanner & grype dijalankan di CI (compliance.yml).
@@ -65,4 +65,4 @@
 ## 3. Riwayat
 | Rilis | Tanggal | Temuan | Keputusan |
 |---|---|---|---|
-| 0.1.0 | 2026-10-25 | 27 | not_affected 27 |
+| 0.1.0 | 2026-10-24 | 27 | not_affected 27 |

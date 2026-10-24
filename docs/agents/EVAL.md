@@ -9,7 +9,7 @@ Mode: data (deterministic Dex composers; mock for collaboration stubs). Live-mod
 | Routing | 67 | precision 100.0% · recall 100.0% · exact 100.0% |
 | Skills (load · run · pick) | 534 (178 skills × 3) | 100.0% |
 | Collaboration | 8 | 100.0% |
-| Latency (data mode, this machine) | 8 | median 1 agent 21 ms · 3 agents 15 ms · tokens 0 |
+| Latency (data mode, this machine) | 8 | median 1 agent 21 ms · 3 agents 16 ms · tokens 0 |
 
 ## Per agent
 
@@ -22,12 +22,12 @@ Mode: data (deterministic Dex composers; mock for collaboration stubs). Live-mod
 | commercedex | 6 | 19 | 18 | 100% |
 | ipodex | 5 | 10 | 15 | 100% |
 | idfinandex | 6 | 19 | 18 | 100% |
-| rupiahdex | 7 | 21 | 21 | 100% |
+| rupiahdex | 7 | 20 | 21 | 100% |
 | idxdex | 7 | 23 | 21 | 100% |
 | reksadex | 6 | 22 | 18 | 100% |
 | cryptdex | 9 | 29 | 27 | 100% |
 | centralbankdex | 6 | 11 | 18 | 100% |
-| inflationdex | 5 | 11 | 15 | 100% |
+| inflationdex | 5 | 10 | 15 | 100% |
 | startupdex | 6 | 11 | 18 | 100% |
 | vcdex | 5 | 10 | 15 | 100% |
 | vcnetworkdex | 4 | 10 | 12 | 100% |

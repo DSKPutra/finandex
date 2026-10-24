@@ -2,7 +2,7 @@
 
 > © 2026 Dea Saka Kurnia Putra. All rights reserved.
 
-Diperiksa 2026-10-25. "belum diverifikasi ulang" berarti edisi diambil dari prompt dan wajib dicek ke katalog resmi sebelum dokumen disetujui.
+Diperiksa 2026-10-24. "belum diverifikasi ulang" berarti edisi diambil dari prompt dan wajib dicek ke katalog resmi sebelum dokumen disetujui.
 
 | Area | Rujukan | Edisi / tanggal | Verifikasi |
 |---|---|---|---|

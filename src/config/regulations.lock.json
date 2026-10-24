@@ -373,7 +373,7 @@
    "fetched_at": null,
    "title_detected": null,
    "status": "failed",
-   "reason": "https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → fetch failed"
+   "reason": "https://peraturan.go.id/files/pp-no-33-tahun-2026.pdf → not a PDF (text/html; charset=UTF-8)"
   }
  ]
 }

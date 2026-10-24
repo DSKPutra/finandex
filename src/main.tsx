@@ -28,4 +28,4 @@ createRoot(root).render(
 );
 registerPwa();
 initDesktop();
-void import('./native').then(({ initNative }) => initNative(() => window.confirm(document.documentElement.lang === 'en' ? 'Exit Askfolio?' : 'Keluar dari Askfolio?')));
+void import('./native').then(({ initNative }) => initNative(() => window.confirm(document.documentElement.lang === 'en' ? 'Exit Finandex?' : 'Keluar dari Finandex?')));

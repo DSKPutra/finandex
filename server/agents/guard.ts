@@ -24,12 +24,12 @@ export function inboundCheck(text: string): InboundCheck {
 }
 
 const NON_AFFILIATION = {
-  id: 'Askfolio tidak berafiliasi dengan OJK, IASC, Bank Indonesia, atau Polri dan tidak meneruskan laporan — laporan resmi diisi sendiri lewat kanal resminya.',
-  en: 'Askfolio is not affiliated with OJK, IASC, Bank Indonesia or the police and does not forward reports — official reports are filed by you through their official channels.',
+  id: 'Finandex tidak berafiliasi dengan OJK, IASC, Bank Indonesia, atau Polri dan tidak meneruskan laporan — laporan resmi diisi sendiri lewat kanal resminya.',
+  en: 'Finandex is not affiliated with OJK, IASC, Bank Indonesia or the police and does not forward reports — official reports are filed by you through their official channels.',
 };
 export const ADVICE_NOTE = {
-  id: 'Catatan: Askfolio menyajikan data dan teks resmi, bukan rekomendasi investasi atau nasihat hukum pribadi.',
-  en: 'Note: Askfolio presents data and official texts, not investment recommendations or personal legal advice.',
+  id: 'Catatan: Finandex menyajikan data dan teks resmi, bukan rekomendasi investasi atau nasihat hukum pribadi.',
+  en: 'Note: Finandex presents data and official texts, not investment recommendations or personal legal advice.',
 };
 
 /** Exit check on one claim unit of the answer; returns the (possibly replaced) unit and the flags raised. */

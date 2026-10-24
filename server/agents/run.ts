@@ -55,12 +55,6 @@ const LOAD_SKILL_TOOL = { name: 'load_skill', description: 'Load the step-by-ste
 
 const label = (L: Locale, id: string, en: string) => (L === 'id' ? id : en);
 const agentName = (id: AgentId) => agentCard(id)?.name ?? id;
-/** Section heading for a Dex agent in a combined answer: also names the topic's former "…Dex" name (dexRefName). */
-const agentRef = (id: AgentId, L: 'id' | 'en') => {
-  const d = getDex(id as DexId);
-  if (!d || d.legacyName === d.name) return agentName(id);
-  return `${agentName(id)} (${L === 'id' ? 'sebelumnya' : 'formerly'} ${d.legacyName})`;
-};
 
 /** Numeric leaves of a tool result with their key path (labels for AgentResult facts). */
 function factsOf(data: unknown, toolCallId: string, asOf: string, source: string, cap = 40): Fact[] {
@@ -376,7 +370,7 @@ export async function orchestrateAgents(req: ChatRequest, deps: OrchestratorDeps
   // 3. Specialists — the single main agent streams; several agents run in parallel and the Conductor composes.
   if (single) {
     // Delegated to another Dex than the open one: say who answers.
-    if (plan.agents[0]!.id !== req.dex) pushText(`**${agentRef(plan.agents[0]!.id as AgentId, L)}**\n\n`);
+    if (plan.agents[0]!.id !== req.dex) pushText(`**${agentName(plan.agents[0]!.id as AgentId)}**\n\n`);
     const r = await runOne(plan.agents[0]!.id as DexId, plan.agents[0]!.task, true);
     runs.push(r);
     finish(r);
@@ -402,7 +396,7 @@ export async function orchestrateAgents(req: ChatRequest, deps: OrchestratorDeps
         verifierStarted = true;
         verifierStart();
       }
-      gate.push(`\n\n**${agentRef(r.agentId, L)}**\n\n`);
+      gate.push(`\n\n**${agentName(r.agentId)}**\n\n`);
       gate.push(r.text);
     }
   }
@@ -411,7 +405,7 @@ export async function orchestrateAgents(req: ChatRequest, deps: OrchestratorDeps
   emit({ event: 'agent_status', data: { agentId: 'conductor', phase: 'writing', label: label(L, 'Menggabungkan hasil agen', 'Merging agent results') } });
   if (!single) {
     const sections = runs.slice(0, plan.agents.length).filter((r) => r.text.trim());
-    for (const [i, r] of sections.entries()) pushText(`${i ? '\n\n' : ''}**${agentRef(r.agentId, L)}**\n\n${r.text.trim()}\n`);
+    for (const [i, r] of sections.entries()) pushText(`${i ? '\n\n' : ''}**${agentName(r.agentId)}**\n\n${r.text.trim()}\n`);
   }
   const notes: string[] = [];
   for (const c of conflicts(runs))

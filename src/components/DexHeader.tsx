@@ -10,7 +10,6 @@ import { useLocale } from '../lib/locale';
 import { AsOfBadge, LicenseBadge, LiveBadge, QualityBadge, SampleBadge, StatusBadge } from './badges';
 import { DexIcon } from './DexCard';
 import { EmergencyScamButton } from './EmergencyScamButton';
-import { DexName } from './DexName';
 
 export function DexHeader({ dex, asOf, quality }: { dex: DexEntry; asOf: string | undefined; quality: Record<string, unknown> | undefined }) {
   const locale = useLocale();
@@ -22,7 +21,7 @@ export function DexHeader({ dex, asOf, quality }: { dex: DexEntry; asOf: string 
         <DexIcon dex={dex} size={56} />
         <div className="min-w-0 flex-1">
           <p className="g-text text-xs font-semibold uppercase tracking-wide">{DEX_GROUPS.find((g) => g.id === dex.group)?.name[locale]}</p>
-          <h1 className="font-display text-2xl sm:text-3xl"><DexName dex={dex} /></h1>
+          <h1 className="font-display text-2xl sm:text-3xl">{dex.name}</h1>
           <p className="measure text-sm text-ink-muted">{dex.tagline[locale]}</p>
           <div className="mt-2 flex flex-wrap gap-1">
             <AsOfBadge asOf={asOf ?? dex.asOf} />

@@ -25,7 +25,7 @@ export function suggestDex(question: string, dex: readonly DexEntry[]): { id: De
   const out = new Map<DexId, number>();
   for (const [re, id] of RULES) if (re.test(question) && dex.some((d) => d.id === id)) out.set(id, (out.get(id) ?? 0) + 10);
   for (const d of dex) {
-    const hay = normaliseKey(`${d.name} ${d.nameEn} ${d.legacyName} ${d.tagline.id} ${d.tagline.en} ${d.keywords.join(' ')}`);
+    const hay = normaliseKey(`${d.name} ${d.tagline.id} ${d.tagline.en} ${d.keywords.join(' ')}`);
     let s = 0;
     for (const w of words) if (hay.includes(w)) s += d.keywords.some((k) => normaliseKey(k) === w) ? 3 : 1;
     if (s) out.set(d.id, (out.get(d.id) ?? 0) + s);

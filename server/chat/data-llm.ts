@@ -532,8 +532,8 @@ function describe(tool: string, data: Record<string, unknown>, L: Locale): strin
 /** §12.2 disclaimers appended to answers of the law & consumer-protection Dex. */
 const DISCLAIMER_NOTE = {
   mylaiwyer: { id: 'Informasi hukum berdasarkan dokumen resmi yang tersedia, bukan nasihat hukum dan tidak menggantikan advokat. Untuk kasus nyata, hubungi advokat atau Lembaga Bantuan Hukum. Dalam keadaan darurat, hubungi 112.', en: 'Legal information based on the available official documents; not legal advice and not a substitute for a lawyer. For real cases, contact a lawyer or a Legal Aid Institute. In an emergency, call 112.' },
-  finlaiwyer: { id: 'Informasi hukum keuangan dan perbankan berdasarkan dokumen resmi yang tersedia, bukan nasihat hukum. Askfolio tidak berafiliasi dengan OJK, Bank Indonesia, IASC, atau Polri, tidak meneruskan laporan, dan tidak dapat memulihkan dana. Ancaman pidana dapat telah disesuaikan oleh UU 1/2026.', en: 'Financial and banking law information based on the available official documents; not legal advice. Askfolio is not affiliated with OJK, Bank Indonesia, IASC, or Polri, does not forward reports, and cannot recover funds. Criminal penalties may have been adjusted by Law 1/2026.' },
-  antiscamdex: { id: 'Informasi publik dari OJK, Bank Indonesia, Satgas PASTI, dan portal IASC, dirangkum oleh Askfolio. Askfolio bukan IASC dan tidak berafiliasi dengan lembaga tersebut. Laporan resmi hanya di iasc.ojk.go.id. Jangan pernah membagikan OTP, PIN, atau kata sandi.', en: 'Public information from OJK, Bank Indonesia, Satgas PASTI, and the IASC portal, summarised by Askfolio. Askfolio is not IASC and is not affiliated with those institutions. Official reports only at iasc.ojk.go.id. Never share your OTP, PIN, or password.' },
+  finlaiwyer: { id: 'Informasi hukum keuangan dan perbankan berdasarkan dokumen resmi yang tersedia, bukan nasihat hukum. Finandex tidak berafiliasi dengan OJK, Bank Indonesia, IASC, atau Polri, tidak meneruskan laporan, dan tidak dapat memulihkan dana. Ancaman pidana dapat telah disesuaikan oleh UU 1/2026.', en: 'Financial and banking law information based on the available official documents; not legal advice. Finandex is not affiliated with OJK, Bank Indonesia, IASC, or Polri, does not forward reports, and cannot recover funds. Criminal penalties may have been adjusted by Law 1/2026.' },
+  antiscamdex: { id: 'Informasi publik dari OJK, Bank Indonesia, Satgas PASTI, dan portal IASC, dirangkum oleh Finandex. Finandex bukan IASC dan tidak berafiliasi dengan lembaga tersebut. Laporan resmi hanya di iasc.ojk.go.id. Jangan pernah membagikan OTP, PIN, atau kata sandi.', en: 'Public information from OJK, Bank Indonesia, Satgas PASTI, and the IASC portal, summarised by Finandex. Finandex is not IASC and is not affiliated with those institutions. Official reports only at iasc.ojk.go.id. Never share your OTP, PIN, or password.' },
 } as const;
 
 export function compose(results: Results, dex: DexId, L: Locale, tools: ToolDef[]): string {
@@ -551,7 +551,7 @@ export function compose(results: Results, dex: DexId, L: Locale, tools: ToolDef[
       const label = (t ? t.label[L] : tool).replace(/…$/, '');
       const lines = describe(tool, data ?? {}, L);
       if (tool === 'app_info') {
-        parts.push(L === 'id' ? 'Askfolio dirancang dan dikembangkan oleh Dea Saka Kurnia Putra.' : 'Askfolio is designed and developed by Dea Saka Kurnia Putra.');
+        parts.push(L === 'id' ? 'Finandex dirancang dan dikembangkan oleh Dea Saka Kurnia Putra.' : 'Finandex is designed and developed by Dea Saka Kurnia Putra.');
         continue;
       }
       const page = L === 'id' ? 'hal.' : 'p.';
@@ -559,7 +559,7 @@ export function compose(results: Results, dex: DexId, L: Locale, tools: ToolDef[
       if (tool === 'feature_guide') {
         const g = data as { dex?: string; purpose?: string; ask_examples?: string[]; functions?: { tab: string; what: string }[]; data_as_of?: string; limitations?: string; related?: { name: string }[]; groups?: { name: string; dex: string[] }[]; app_functions?: { name: string; what: string }[]; dex_count?: number };
         if (g.groups) {
-          parts.push([L === 'id' ? `**Askfolio berisi ${g.dex_count} chatbot (Dex) dalam ${g.groups.length} kategori:**` : `**Askfolio has ${g.dex_count} chatbots (Dex) in ${g.groups.length} categories:**`, ...g.groups.map((x) => `- **${x.name}** — ${x.dex.join(', ')}`), L === 'id' ? '\n**Fungsi aplikasi:**' : '\n**App functions:**', ...(g.app_functions ?? []).map((f) => `- **${f.name}** — ${f.what}`)].join('\n'));
+          parts.push([L === 'id' ? `**Finandex berisi ${g.dex_count} chatbot (Dex) dalam ${g.groups.length} kategori:**` : `**Finandex has ${g.dex_count} chatbots (Dex) in ${g.groups.length} categories:**`, ...g.groups.map((x) => `- **${x.name}** — ${x.dex.join(', ')}`), L === 'id' ? '\n**Fungsi aplikasi:**' : '\n**App functions:**', ...(g.app_functions ?? []).map((f) => `- **${f.name}** — ${f.what}`)].join('\n'));
           continue;
         }
         parts.push(
@@ -606,7 +606,7 @@ export function compose(results: Results, dex: DexId, L: Locale, tools: ToolDef[
         if (r.amended_by.length) lines.push(`- ${L === 'id' ? 'Diubah oleh' : 'Amended by'}: ${r.amended_by.map(name).join(', ')}`);
         if (r.amends.length) lines.push(`- ${L === 'id' ? 'Mengubah' : 'Amends'}: ${r.amends.map(name).join(', ')}`);
         if (r.penalty_note) lines.push(`- ${r.penalty_note}${r.uu_1_2026_references.length ? ` (${L === 'id' ? 'UU 1/2026 hal.' : 'Law 1/2026 p.'} ${r.uu_1_2026_references.map((x) => x.page).join(', ')})` : ''}`);
-        lines.push(`- ${L === 'id' ? 'Teks resmi di Askfolio' : 'Official text in Askfolio'}: ${r.text_available ? (L === 'id' ? 'tersedia' : 'available') : L === 'id' ? 'menunggu dokumen' : 'pending'}${r.official ? ` — ${r.official}` : ''}`);
+        lines.push(`- ${L === 'id' ? 'Teks resmi di Finandex' : 'Official text in Finandex'}: ${r.text_available ? (L === 'id' ? 'tersedia' : 'available') : L === 'id' ? 'menunggu dokumen' : 'pending'}${r.official ? ` — ${r.official}` : ''}`);
         parts.push(lines.join('\n'));
         continue;
       }

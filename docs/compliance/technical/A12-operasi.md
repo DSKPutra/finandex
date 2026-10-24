@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | A12 |
 | Judul | Operasi & pemeliharaan |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Internal |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,7 +21,7 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
 
 ## 1. Deploy
 - `main` → Vercel produksi (https://finandex.vercel.app); cadangan Netlify.
@@ -92,7 +92,6 @@
 | `tauri:dev` | `tauri dev` |
 | `tauri:build` | `tauri build` |
 | `assets:generate` | `python3 -I scripts/brand/make-native-assets.py` |
-| `icons:generate` | `tsx scripts/brand/make-icons.ts` |
 | `assets:pdfjs` | `tsx scripts/build/copy-pdfjs-assets.ts` |
 | `predev` | `npm run assets:pdfjs && npm run whitepaper:copy` |
 | `prebuild` | `npm run assets:pdfjs && npm run whitepaper:copy && npm run check:licenses` |

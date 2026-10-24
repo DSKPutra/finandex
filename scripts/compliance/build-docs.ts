@@ -72,7 +72,6 @@ const APP_REQS: [string, string, string, string[], string][] = [
   ['guided', 'Konsultasi Terpandu hukum: alur pertanyaan bercabang dengan rujukan pasal dari teks resmi', 'kit/datasets/law/legal_qa_flows.json', ['flow', 'law'], 'Kesesuaian fungsional'],
   ['guide', 'Panduan Fitur menjawab "fitur ini untuk apa?" dari feature_guide.json', 'kit/datasets/app/feature_guide.json', ['feature_guide'], 'Kapabilitas interaksi'],
   ['size', 'Bundel awal ≤ 250 KB gzip', 'package.json', ['size'], 'Efisiensi kinerja'],
-  ['risk', 'Kuesioner profil risiko (kemauan vs kemampuan, 8 pertanyaan) → profil = yang lebih rendah; pencocokan kelas aset edukatif tanpa produk, jawaban hanya di perangkat', 'src/shared/risk-profile.ts', ['scoreRisk', 'RISK_QUESTIONS'], 'Keselamatan'],
 ];
 APP_REQS.forEach(([k, text, src, keys, q], i) => reqs.push({ id: `REQ-app-${String(i + 1).padStart(3, '0')}`, area: `Aplikasi (${k})`, text, source: ref(src), keys, quality: q }));
 const testsFor = (r: Req) => f.tests.filter((t) => r.keys.some((k) => testText[t]!.includes(k)));
@@ -147,7 +146,6 @@ const ELEMENTS: Element[] = [
   { id: 'D05', data: 'Riwayat chat (≤ 50 percakapan per Dex)', where: 'perangkat (IndexedDB)', purpose: 'melanjutkan percakapan', role: 'tidak diproses Finandex', retention: 'sampai dihapus pengguna', basis: '— (tidak meninggalkan perangkat)', evidence: ref('src/lib/history.ts') },
   { id: 'D06', data: 'Watchlist, preferensi tema/bahasa/aksesibilitas, status persetujuan + versi kebijakan', where: 'perangkat (localStorage)', purpose: 'preferensi & bukti persetujuan lokal', role: 'tidak diproses Finandex', retention: 'sampai direset pengguna', basis: '—', evidence: ref('src/lib/store.ts', 'consentVersion') },
   { id: 'D07', data: 'Isian "Siapkan Laporan" (kronologi korban penipuan, nominal, kanal)', where: 'perangkat (IndexedDB, AES-GCM, kunci tidak dapat diekspor)', purpose: 'menyiapkan laporan ke kanal resmi', role: 'tidak diproses Finandex', retention: `${RETENTION_DAYS} hari otomatis, kecuali pengguna memilih simpan`, basis: '—', evidence: ref('src/lib/secure-store.ts', 'RETENTION_DAYS') },
-  { id: 'D10', data: 'Jawaban kuesioner profil risiko (tujuan, jangka waktu, dana darurat, porsi kekayaan, penghasilan, pengalaman, reaksi saat rugi, kerugian yang dapat diterima) + hasil profil', where: 'perangkat (localStorage)', purpose: 'mencocokkan kelas aset secara edukatif', role: 'tidak diproses Finandex', retention: 'sampai diulang atau direset pengguna', basis: '— (tidak meninggalkan perangkat)', evidence: ref('src/shared/risk-profile.ts') },
   { id: 'D08', data: 'Data pasar/regulasi yang dibuka (cache)', where: 'perangkat (Cache Storage)', purpose: 'pemakaian offline', role: 'bukan data pribadi', retention: 'sampai cache dibersihkan', basis: '—', evidence: ref('vite.config.ts') },
   { id: 'D09', data: 'Data unduhan/pembaruan aplikasi (akun store pengguna)', where: 'Apple App Store, Google Play, GitHub Releases', purpose: 'distribusi aplikasi', role: 'store = pengendali mandiri', retention: 'sesuai kebijakan store', basis: 'perjanjian pengguna dengan store', evidence: ref('capacitor.config.ts') },
 ];
@@ -846,8 +844,6 @@ const openItems = [
   ['Rating usia store', 'C13, C14', '—'],
   ['Izin DefiLlama untuk data DeFi CryptDex: dataset input menyebut DefiLlama sebagai sumber, sedangkan ketentuan DefiLlama (dibaca 2026-10-24) melarang "republish the data in any form without permission"', 'A06, docs/live-data/REPORT.md', 'minta izin tertulis atau batasi tampilan'],
   ['Lisensi penyedia harga saham/indeks/kripto (Yahoo Finance, CoinGecko, CoinMarketCap) untuk data live', 'scripts/live-data/sources.yaml', 'saat ini blocked-pending-license'],
-  ['Merek Askfolio: cek PDKI DJKI, beli domain askfolio.com, ganti domain/nama proyek Vercel (masih finandex.vercel.app), bundle ID & skema finandex:// (sengaja belum diubah agar pemasangan lama tidak putus)', 'A03, A12', 'keputusan pemilik'],
-  ['Tinjauan hukum fitur profil risiko & pencocokan kelas aset (rekomendasi investasi personal diatur OJK; saat ini edukasi tanpa produk)', 'A10, C12', 'sebelum peluncuran komersial'],
   ['Kunci tanda tangan updater Tauri (TAURI_SIGNING_PRIVATE_KEY/PUBLIC_KEY), sertifikat Apple Developer ID + notarisasi, tanda tangan Authenticode Windows', 'A12, desktop.yml', 'secret repo; tanpa itu build desktop tidak bertanda tangan'],
   ['Kompilasi Rust src-tauri belum diverifikasi lokal (index.crates.io tidak dapat di-resolve dari mesin pengembang); verifikasi pertama di desktop.yml', 'A03, A12', 'jalankan workflow desktop manual'],
 ];

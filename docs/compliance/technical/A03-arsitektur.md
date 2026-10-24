@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | A03 |
 | Judul | Deskripsi arsitektur |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Internal |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,7 +21,7 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
 
 ## 1. Concerns pemangku kepentingan
 | Concern | Pemangku kepentingan | View yang menjawab |
@@ -159,9 +159,3 @@ Lihat A10. Model dipilih lewat env (`ANTHROPIC_MODEL`, `ANTHROPIC_MODEL_FAST`); 
 | 2026-10-24 | Paket A (A01–A13) dan C (C01–C14) dibangkitkan oleh `scripts/compliance/build-docs.ts` dari registry, kode, konfigurasi, laporan CI, dan teks resmi UU PDP (chunk ber-hash); gate `docs:verify` (1.092 pemeriksaan) gagal bila Dex/tab, tool, rute, env, dataset, atau layanan baru tidak tercermin di dokumen. Rujukan PP 33/2026 ditandai "belum diverifikasi" karena teks resminya gagal diunduh · TECHNICAL_DOCS_PROMPT §0.1 (tidak boleh mengarang) · menulis dokumen secara manual. |
 | 2026-10-24 | VEX menilai "terkirim atau tidak" berdasarkan salinan terpasang yang terdampak (path node → versi), bukan nama paket: zod@3.25.76 (GHSA-mrhx-c7xc-m3w5) hanya ada di bawah @lhci/cli, sedangkan zod yang terkirim 4.6.7 sudah di luar rentang rentan · pencocokan nama menghasilkan `in_triage` palsu · mengabaikan temuan. |
 | 2026-10-24 | Pipeline data live (`scripts/live-data/`): hanya sumber yang ketentuannya dibaca dan mengizinkan penyimpanan & tampilan publik yang `enabled` — ECB (kurs referensi, USD/IDR turunan untuk RupiahDex) dan World Bank WDI (inflasi untuk InflationDex). CoinGecko, CoinMarketCap, DefiLlama, Yahoo Finance `blocked-pending-license`; FRED `disabled` (perlu API key). Data live disimpan sebagai snapshot append-only ber-hash (`data/live/`) dan dipublikasikan sebagai file ekstensi (`public/data/live/`) + tool `live_latest`; seri historis & golden tidak disentuh · LIVE_DATA_PROMPT §1 (jangan menebak izin) · menggabungkan langsung ke seri asli (mengubah golden) atau scraping. |
-| 2026-10-24 | Aplikasi hukum mandiri `/apps/mylaiwyer/` & `/apps/finlaiwyer/`: `index.html` per aplikasi dibangkitkan saat build dari `index.html` final (plugin Vite) dengan manifest, judul, dan ikon sendiri, di-precache SW; router terbatas dengan `basename` (hanya Dex itu, darurat, legal, Tentang, Pengaturan) · tombol di /install sudah menautkan ke sana tetapi entri belum ada · menyalin HTML statis (cepat usang). |
-| 2026-10-24 | Desktop Tauri 2 (`src-tauri/`, crate dipin tepat, capabilities minimum, CSP §13.1, deep link `finandex://dex/<id>`) dibangun dengan `npx tauri build` di `desktop.yml` tanpa action pihak ketiga (versi tauri-action tidak dapat diverifikasi saat ini) · §14.2 · tauri-action tanpa versi terverifikasi. |
-| 2026-10-24 | Regresi visual tanpa baseline ter-commit: `ui-review.yml` memotret cabang dasar di runner yang sama lalu membandingkan PR (ambang 0,1 %) · font berbeda per OS membuat baseline ter-commit rapuh · baseline PNG di repo. |
-| 2026-10-25 | "Spektrum" v2: tanpa hijau (umpan balik pemilik: "semua hijau, bikin mata sakit"). Primary indigo #4338CA / #A5B4FC, aksen amber, AI violet, data biru, latar netral lembut, mode gelap biru-malam (#161827, tanpa hitam pekat & tanpa neon); hijau hanya untuk angka naik. 30 ikon Dex + logo dibangkitkan ulang (`npm run icons:generate`) dengan kotak warna kategori, glyph putih, aksen pastel, tanpa glow; node konstelasi berwarna kategori. Service worker kini aktif otomatis + halaman memuat ulang sendiri, karena versi lama yang ter-cache membuat pengunjung tidak pernah melihat tampilan baru · teal masih terbaca hijau; banner "Reload" jarang diklik. |
-| 2026-10-25 | Arah produk: **asisten AI investasi untuk investor ritel Indonesia** dengan angka terverifikasi (anti-scam & hukum menjadi fitur pendukung). Merek baru **Askfolio** (askfolio.com tersedia per cek GoDaddy 2026-10-25; cek merek PDKI belum). Nama tampilan topik deskriptif (Kurs Rupiah, Saham Indonesia, Reksa Dana, …) menggantikan "…Dex": "DEX" berarti bursa kripto terdesentralisasi, tiga nama memakai merek pihak lain (Nasdaq, S&P 500, IDX), "LAIwyer" terbaca sebagai advokat. ID internal, nama berkas ikon, bundle ID, skema `finandex://` dan domain tetap (tidak memutus pemasangan/tautan lama); `legacyName` dipakai untuk pencarian dan dalam rujukan jawaban ("Kurs Rupiah (sebelumnya RupiahDex)") selama transisi. Teks kit tetap byte-identik; `src/shared/rebrand.ts` memetakan nama saat build · permintaan pemilik · mengganti ID internal (merusak data, golden, tautan). |
-| 2026-10-25 | Beranda = kotak tanya + profil risiko + pintasan kelas aset; konstelasi & peta fitur pindah ke `/data`; menu bawah Beranda · Profil · Tanya · Data · Lainnya. Profil risiko: 8 pertanyaan (4 kemauan, 4 kemampuan), profil = yang lebih rendah; hanya kelas aset (tanpa produk/penerbit), penafian OJK, jawaban hanya di perangkat · menghindari rekomendasi investasi personal yang memerlukan izin · robo-advisor dengan alokasi persentase/produk. |

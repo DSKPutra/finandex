@@ -27,7 +27,7 @@ self.addEventListener('message', (e) => {
   if ((e.data as { type?: string } | null)?.type === 'SKIP_WAITING') void self.skipWaiting();
 });
 
-// Stand-alone law apps (§14) navigate to their own shell (own manifest); everything else to the Askfolio shell.
+// Stand-alone law apps (§14) navigate to their own shell (own manifest); everything else to the Finandex shell.
 for (const app of ['mylaiwyer', 'finlaiwyer']) registerRoute(new NavigationRoute(createHandlerBoundToURL(`/apps/${app}/index.html`), { allowlist: [new RegExp(`^/apps/${app}(/|$)`)] }));
 registerRoute(new NavigationRoute(createHandlerBoundToURL('/index.html'), { denylist: [/^\/api\//, /^\/data\//, /^\/pdfjs\//] }));
 

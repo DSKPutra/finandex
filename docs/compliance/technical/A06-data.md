@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | A06 |
 | Judul | Spesifikasi data & kamus data |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Internal |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,7 +21,7 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
 
 ## 1. File input (terverifikasi SHA-256)
 | No | Nama | File | Ukuran (byte) | SHA-256 |

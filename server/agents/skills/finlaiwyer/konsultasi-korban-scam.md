@@ -24,7 +24,7 @@ Konsultasi Terpandu untuk korban penipuan: langkah berurutan, kanal resmi, dasar
 
 ## Aturan data
 - Bukan nasihat hukum; tidak menjanjikan dana kembali.
-- Askfolio tidak menerima/meneruskan laporan; laporan resmi diisi sendiri di iasc.ojk.go.id.
+- Finandex tidak menerima/meneruskan laporan; laporan resmi diisi sendiri di iasc.ojk.go.id.
 
 ## Format hasil
 - Langkah bernomor (urgent ditandai) + kanal resmi + kutipan pasal resmi.

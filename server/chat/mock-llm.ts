@@ -79,7 +79,7 @@ export const genericScenario: ScenarioResolver = (question) => {
   return {
     calls: () => (creator ? [{ name: 'app_info', input: {} }] : [{ name: 'dataset_info', input: {} }]),
     answer: (r, locale) => {
-      if (creator) return locale === 'id' ? 'Askfolio dirancang dan dikembangkan oleh Dea Saka Kurnia Putra.' : 'Askfolio is designed and developed by Dea Saka Kurnia Putra.';
+      if (creator) return locale === 'id' ? 'Finandex dirancang dan dikembangkan oleh Dea Saka Kurnia Putra.' : 'Finandex is designed and developed by Dea Saka Kurnia Putra.';
       const d = (r.dataset_info?.[0] ?? {}) as { dex?: string; as_of?: string; source_files?: { file: string }[] };
       return locale === 'id'
         ? `Mode demo offline: saya hanya dapat menjelaskan dataset ${d.dex ?? ''} (data per ${d.as_of ?? '-'}; sumber: ${(d.source_files ?? []).map((f) => f.file).join(', ')}). Aktifkan layanan AI untuk jawaban lengkap. Data tidak real-time dan bukan rekomendasi investasi.`

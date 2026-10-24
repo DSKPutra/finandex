@@ -45,24 +45,9 @@ describe('dex registry (§1, §6.2, §10.2)', () => {
     expect(visibleDex('commercial')).toHaveLength(23);
   });
   it('looks up ids', () => {
-    expect(getDex('rupiahdex')?.name).toBe('Kurs Rupiah');
+    expect(getDex('rupiahdex')?.name).toBe('RupiahDex');
     expect(getDex('nope')).toBeUndefined();
     expect(isDexId('mylaiwyer')).toBe(true);
     expect(isDexId('x')).toBe(false);
-  });
-});
-
-describe('display names after the rebrand', () => {
-  it('keeps the former …Dex name for search and has an English name', async () => {
-    const { DEX_REGISTRY, dexName } = await import('../../src/config/dex-registry');
-    for (const d of DEX_REGISTRY) {
-      expect(d.name).not.toMatch(/Dex$|LAIwyer|NASDAQ|S&P|SnP/);
-      expect(d.nameEn.length).toBeGreaterThan(2);
-      expect(d.legacyName.length).toBeGreaterThan(2);
-    }
-    const r = DEX_REGISTRY.find((d) => d.id === 'rupiahdex')!;
-    expect(dexName(r, 'en')).toBe('Rupiah Exchange Rate');
-    const { suggestDex } = await import('../../src/shared/dex-router');
-    expect(suggestDex('RupiahDex', DEX_REGISTRY)[0]?.id).toBe('rupiahdex');
   });
 });

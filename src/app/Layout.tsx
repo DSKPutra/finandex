@@ -68,14 +68,14 @@ function BottomNav() {
   return (
     <nav aria-label={t('nav.bottom')} className="safe-bottom fixed inset-x-0 bottom-0 z-40 flex border-t border-edge bg-field-0 md:hidden">
       {item('/', t('nav.home'), '⌂', true)}
-      {item('/profil-risiko', t('nav.profile'), '◎')}
-      <NavLink to="/ai" className="flex flex-1 items-center justify-center" aria-label="Askfolio">
+      {item('/dex/finandex-ai/markets', t('nav.markets'), '◎')}
+      <NavLink to="/ai" className="flex flex-1 items-center justify-center" aria-label="Finandex AI">
         <span className="relative -mt-6 inline-flex h-14 w-14 items-center justify-center rounded-full border border-primary bg-field-0">
           <span aria-hidden className="absolute inset-[4px] rounded-full border border-dashed border-edge" />
           <img src="/icons/finandex-ai.svg" alt="" width={38} height={38} className="rounded-full" />
         </span>
       </NavLink>
-      {item('/data', t('nav.data'), '✦')}
+      {item('/dex', t('nav.dex'), '✦', true)}
       {item('/more', t('nav.more'), '☰')}
     </nav>
   );

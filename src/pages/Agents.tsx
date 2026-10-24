@@ -17,7 +17,6 @@ import { useAgentActivity } from '../features/agents/activity';
 import { AgentTracePanel } from '../features/agents/AgentUi';
 import { applyAgentEvent, emptyTrace, isAgentEvent } from '../features/agents/trace';
 import { Md } from '../features/chat/AnswerCard';
-import { DexName } from '../components/DexName';
 
 const AgentOffice = lazy(() => import('../features/agents/office/AgentOffice'));
 
@@ -97,7 +96,7 @@ export default function Agents() {
           <select id="agents-dex" value={dex} onChange={(e) => setDex(e.target.value as DexId)} className="min-h-11 rounded-xl border border-edge bg-pane px-3 text-sm">
             {DEX_REGISTRY.map((d) => (
               <option key={d.id} value={d.id}>
-                <DexName dex={d} />
+                {d.name}
               </option>
             ))}
           </select>

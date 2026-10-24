@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | C04 |
 | Judul | Kebijakan Privasi publik (ID & EN) |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Publik |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,14 +21,14 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
 
-Versi kebijakan aktif di aplikasi: `2026-10-25` (`src/lib/store.ts#L9 @ fd1db6c`). Teks di bawah dibangkitkan dari `src/content/legal.ts` — sumber yang sama dengan /legal/privacy.
+Versi kebijakan aktif di aplikasi: `2026-10-23` (`src/lib/store.ts#L8 @ ae7d11b`). Teks di bawah dibangkitkan dari `src/content/legal.ts` — sumber yang sama dengan /legal/privacy.
 
 ### Ringkasan · Summary
-Askfolio tidak memakai akun, tidak memasang analytics pihak ketiga, dan tidak melacak Anda. Kebijakan ini disusun dengan mengacu pada Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP).
+Finandex tidak memakai akun, tidak memasang analytics pihak ketiga, dan tidak melacak Anda. Kebijakan ini disusun dengan mengacu pada Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP).
 
-*Askfolio has no accounts, no third-party analytics, and no tracking. This policy was prepared with reference to Indonesian Law No. 27 of 2022 on Personal Data Protection (UU PDP).*
+*Finandex has no accounts, no third-party analytics, and no tracking. This policy was prepared with reference to Indonesian Law No. 27 of 2022 on Personal Data Protection (UU PDP).*
 
 ### Data yang disimpan di perangkat Anda · Data stored on your device
 Riwayat chat (maksimal 50 percakapan per Dex), watchlist, preferensi tampilan/bahasa, status persetujuan chat, dan pengenal acak (clientId) disimpan hanya di perangkat Anda (IndexedDB/penyimpanan lokal). Semuanya dapat dihapus kapan saja dari Pengaturan.
@@ -39,18 +39,14 @@ Data pasar yang pernah dibuka disimpan dalam cache perangkat agar dapat dipakai 
 
 *Market data you have opened is cached on the device for offline use.*
 
-Jawaban kuesioner profil risiko dan hasilnya (Konservatif/Moderat/Agresif) hanya disimpan di perangkat Anda dan tidak dikirim ke server. Anda dapat mengulang atau menghapusnya kapan saja.
-
-*Your risk-questionnaire answers and the resulting profile (Conservative/Moderate/Aggressive) are stored only on your device and are never sent to the server. You can retake or delete them at any time.*
-
 ### Data yang dikirim saat memakai chat · Data sent when you use chat
-Saat Anda mengirim pertanyaan, isi percakapan (maksimal 20 pesan terakhir), bahasa, Dex yang dipakai, konteks tampilan (entitas/periode), dan clientId dikirim ke server Askfolio, lalu diproses oleh penyedia AI (Anthropic) untuk menghasilkan jawaban.
+Saat Anda mengirim pertanyaan, isi percakapan (maksimal 20 pesan terakhir), bahasa, Dex yang dipakai, konteks tampilan (entitas/periode), dan clientId dikirim ke server Finandex, lalu diproses oleh penyedia AI (Anthropic) untuk menghasilkan jawaban.
 
-*When you send a question, the conversation (up to the last 20 messages), language, the Dex used, view context (entity/period), and clientId are sent to the Askfolio server and processed by the AI provider (Anthropic) to generate an answer.*
+*When you send a question, the conversation (up to the last 20 messages), language, the Dex used, view context (entity/period), and clientId are sent to the Finandex server and processed by the AI provider (Anthropic) to generate an answer.*
 
-Server Askfolio tidak menyimpan isi pesan. Log server hanya memuat ID permintaan, Dex, nama tool, latensi, jumlah token, dan kode error. Alamat IP dan clientId dipakai sementara untuk pembatasan laju (rate limit).
+Server Finandex tidak menyimpan isi pesan. Log server hanya memuat ID permintaan, Dex, nama tool, latensi, jumlah token, dan kode error. Alamat IP dan clientId dipakai sementara untuk pembatasan laju (rate limit).
 
-*The Askfolio server does not store message contents. Server logs contain only the request ID, Dex, tool names, latency, token counts, and error codes. IP address and clientId are used transiently for rate limiting.*
+*The Finandex server does not store message contents. Server logs contain only the request ID, Dex, tool names, latency, token counts, and error codes. IP address and clientId are used transiently for rate limiting.*
 
 Jangan memasukkan data pribadi. Aplikasi memblokir pengiriman pesan yang tampak berisi seed phrase, private key, nomor kartu, atau NIK.
 

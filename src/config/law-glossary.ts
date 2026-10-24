@@ -1,13 +1,13 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Plain-language legal glossary (tool `glossary`, §8.5). These one-line glosses are Askfolio editorial text, always
-// labelled "Penjelasan bahasa awam (karya Askfolio, bukan kutipan)"; the statutory definition is quoted separately
+// Plain-language legal glossary (tool `glossary`, §8.5). These one-line glosses are Finandex editorial text, always
+// labelled "Penjelasan bahasa awam (karya Finandex, bukan kutipan)"; the statutory definition is quoted separately
 // from the official text (Ketentuan Umum) by the tool. `docs` lists where the official definition is searched first.
 
 export type GlossaryTerm = { term: string; aliases: string[]; plain: { id: string; en: string }; corpus: 'umum' | 'keuangan'; docs: string[] };
 
 export const GLOSSARY_LABEL = {
-  id: 'Penjelasan bahasa awam (karya Askfolio, bukan kutipan)',
-  en: 'Plain-language explanation (written by Askfolio, not a quotation)',
+  id: 'Penjelasan bahasa awam (karya Finandex, bukan kutipan)',
+  en: 'Plain-language explanation (written by Finandex, not a quotation)',
 } as const;
 
 export const GLOSSARY: GlossaryTerm[] = [

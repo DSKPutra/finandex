@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Askfolio desktop (§14.2): single instance (a second launch focuses the window and forwards a finandex:// deep link),
+// Finandex desktop (§14.2): single instance (a second launch focuses the window and forwards a finandex:// deep link),
 // saved window size/position, native menu (Finandex / Edit / Tampilan / Bantuan → Tentang with copyright & version),
 // deep link finandex://dex/<id>, save dialogs + fs scoped to user-chosen paths, auto-update from GitHub Releases.
 use tauri::menu::{AboutMetadataBuilder, MenuBuilder, PredefinedMenuItem, SubmenuBuilder};
@@ -46,13 +46,13 @@ pub fn run() {
         .plugin(tauri_plugin_updater::Builder::new().build())
         .setup(|app| {
             let about = AboutMetadataBuilder::new()
-                .name(Some("Askfolio"))
+                .name(Some("Finandex"))
                 .version(Some(app.package_info().version.to_string()))
                 .copyright(Some(COPYRIGHT))
                 .authors(Some(vec!["Dea Saka Kurnia Putra".to_string()]))
                 .build();
-            let finandex = SubmenuBuilder::new(app, "Askfolio")
-                .item(&PredefinedMenuItem::about(app, Some("Tentang Askfolio"), Some(about))?)
+            let finandex = SubmenuBuilder::new(app, "Finandex")
+                .item(&PredefinedMenuItem::about(app, Some("Tentang Finandex"), Some(about))?)
                 .separator()
                 .item(&PredefinedMenuItem::hide(app, None)?)
                 .item(&PredefinedMenuItem::quit(app, Some("Keluar"))?)
@@ -79,7 +79,7 @@ pub fn run() {
             Ok(())
         })
         .run(tauri::generate_context!())
-        .expect("error while running Askfolio");
+        .expect("error while running Finandex");
 }
 
 #[cfg(test)]

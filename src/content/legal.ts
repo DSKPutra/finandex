@@ -4,13 +4,13 @@
 type B = { id: string; en: string };
 export type LegalSection = { title: B; body: B[] };
 
-export const LEGAL_UPDATED = '2026-10-25';
+export const LEGAL_UPDATED = '2026-10-22';
 
 export const PRIVACY: LegalSection[] = [
   {
     title: { id: 'Ringkasan', en: 'Summary' },
     body: [
-      { id: 'Askfolio tidak memakai akun, tidak memasang analytics pihak ketiga, dan tidak melacak Anda. Kebijakan ini disusun dengan mengacu pada Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP).', en: 'Askfolio has no accounts, no third-party analytics, and no tracking. This policy was prepared with reference to Indonesian Law No. 27 of 2022 on Personal Data Protection (UU PDP).' },
+      { id: 'Finandex tidak memakai akun, tidak memasang analytics pihak ketiga, dan tidak melacak Anda. Kebijakan ini disusun dengan mengacu pada Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP).', en: 'Finandex has no accounts, no third-party analytics, and no tracking. This policy was prepared with reference to Indonesian Law No. 27 of 2022 on Personal Data Protection (UU PDP).' },
     ],
   },
   {
@@ -18,14 +18,13 @@ export const PRIVACY: LegalSection[] = [
     body: [
       { id: 'Riwayat chat (maksimal 50 percakapan per Dex), watchlist, preferensi tampilan/bahasa, status persetujuan chat, dan pengenal acak (clientId) disimpan hanya di perangkat Anda (IndexedDB/penyimpanan lokal). Semuanya dapat dihapus kapan saja dari Pengaturan.', en: 'Chat history (up to 50 conversations per Dex), watchlist, display/language preferences, chat consent status, and a random identifier (clientId) are stored only on your device (IndexedDB/local storage). All of it can be deleted at any time from Settings.' },
       { id: 'Data pasar yang pernah dibuka disimpan dalam cache perangkat agar dapat dipakai offline.', en: 'Market data you have opened is cached on the device for offline use.' },
-      { id: 'Jawaban kuesioner profil risiko dan hasilnya (Konservatif/Moderat/Agresif) hanya disimpan di perangkat Anda dan tidak dikirim ke server. Anda dapat mengulang atau menghapusnya kapan saja.', en: 'Your risk-questionnaire answers and the resulting profile (Conservative/Moderate/Aggressive) are stored only on your device and are never sent to the server. You can retake or delete them at any time.' },
     ],
   },
   {
     title: { id: 'Data yang dikirim saat memakai chat', en: 'Data sent when you use chat' },
     body: [
-      { id: 'Saat Anda mengirim pertanyaan, isi percakapan (maksimal 20 pesan terakhir), bahasa, Dex yang dipakai, konteks tampilan (entitas/periode), dan clientId dikirim ke server Askfolio, lalu diproses oleh penyedia AI (Anthropic) untuk menghasilkan jawaban.', en: 'When you send a question, the conversation (up to the last 20 messages), language, the Dex used, view context (entity/period), and clientId are sent to the Askfolio server and processed by the AI provider (Anthropic) to generate an answer.' },
-      { id: 'Server Askfolio tidak menyimpan isi pesan. Log server hanya memuat ID permintaan, Dex, nama tool, latensi, jumlah token, dan kode error. Alamat IP dan clientId dipakai sementara untuk pembatasan laju (rate limit).', en: 'The Askfolio server does not store message contents. Server logs contain only the request ID, Dex, tool names, latency, token counts, and error codes. IP address and clientId are used transiently for rate limiting.' },
+      { id: 'Saat Anda mengirim pertanyaan, isi percakapan (maksimal 20 pesan terakhir), bahasa, Dex yang dipakai, konteks tampilan (entitas/periode), dan clientId dikirim ke server Finandex, lalu diproses oleh penyedia AI (Anthropic) untuk menghasilkan jawaban.', en: 'When you send a question, the conversation (up to the last 20 messages), language, the Dex used, view context (entity/period), and clientId are sent to the Finandex server and processed by the AI provider (Anthropic) to generate an answer.' },
+      { id: 'Server Finandex tidak menyimpan isi pesan. Log server hanya memuat ID permintaan, Dex, nama tool, latensi, jumlah token, dan kode error. Alamat IP dan clientId dipakai sementara untuk pembatasan laju (rate limit).', en: 'The Finandex server does not store message contents. Server logs contain only the request ID, Dex, tool names, latency, token counts, and error codes. IP address and clientId are used transiently for rate limiting.' },
       { id: 'Jangan memasukkan data pribadi. Aplikasi memblokir pengiriman pesan yang tampak berisi seed phrase, private key, nomor kartu, atau NIK.', en: 'Do not enter personal data. The app blocks messages that appear to contain a seed phrase, private key, card number, or national ID number (NIK).' },
     ],
   },
@@ -51,14 +50,14 @@ export const TERMS: LegalSection[] = [
   {
     title: { id: 'Penggunaan', en: 'Use' },
     body: [
-      { id: 'Askfolio disediakan untuk informasi dan edukasi. Dengan memakai aplikasi ini Anda setuju untuk tidak menyalahgunakan layanan (misalnya mengirim permintaan otomatis berlebihan, mencoba menembus pembatasan, atau memasukkan konten yang melanggar hukum).', en: 'Askfolio is provided for information and education. By using the app you agree not to misuse the service (e.g. sending excessive automated requests, attempting to bypass limits, or submitting unlawful content).' },
+      { id: 'Finandex disediakan untuk informasi dan edukasi. Dengan memakai aplikasi ini Anda setuju untuk tidak menyalahgunakan layanan (misalnya mengirim permintaan otomatis berlebihan, mencoba menembus pembatasan, atau memasukkan konten yang melanggar hukum).', en: 'Finandex is provided for information and education. By using the app you agree not to misuse the service (e.g. sending excessive automated requests, attempting to bypass limits, or submitting unlawful content).' },
       { id: 'Batas pemakaian chat berlaku (per perangkat/IP dan anggaran harian) dan dapat berubah.', en: 'Chat usage limits apply (per device/IP and a daily budget) and may change.' },
     ],
   },
   {
     title: { id: 'Bukan nasihat', en: 'No advice' },
     body: [
-      { id: 'Konten Askfolio bukan rekomendasi investasi, nasihat keuangan, nasihat pajak, maupun nasihat hukum. Keputusan Anda sepenuhnya tanggung jawab Anda.', en: 'Askfolio content is not investment recommendation, financial, tax, or legal advice. Your decisions are your own responsibility.' },
+      { id: 'Konten Finandex bukan rekomendasi investasi, nasihat keuangan, nasihat pajak, maupun nasihat hukum. Keputusan Anda sepenuhnya tanggung jawab Anda.', en: 'Finandex content is not investment recommendation, financial, tax, or legal advice. Your decisions are your own responsibility.' },
     ],
   },
   {
@@ -70,13 +69,13 @@ export const TERMS: LegalSection[] = [
   {
     title: { id: 'Hak kekayaan intelektual', en: 'Intellectual property' },
     body: [
-      { id: 'Perangkat lunak, desain, dan merek Askfolio adalah milik Dea Saka Kurnia Putra. Tidak ada bagian yang boleh digunakan, disalin, diubah, atau didistribusikan tanpa izin tertulis sebelumnya.', en: 'The Askfolio software, design, and brand belong to Dea Saka Kurnia Putra. No part may be used, copied, modified, or distributed without prior written permission.' },
+      { id: 'Perangkat lunak, desain, dan merek Finandex adalah milik Dea Saka Kurnia Putra. Tidak ada bagian yang boleh digunakan, disalin, diubah, atau didistribusikan tanpa izin tertulis sebelumnya.', en: 'The Finandex software, design, and brand belong to Dea Saka Kurnia Putra. No part may be used, copied, modified, or distributed without prior written permission.' },
     ],
   },
   {
     title: { id: 'Batasan tanggung jawab', en: 'Limitation of liability' },
     body: [
-      { id: 'Layanan disediakan "sebagaimana adanya" tanpa jaminan. Sejauh diizinkan hukum, Askfolio tidak bertanggung jawab atas kerugian yang timbul dari penggunaan informasi di aplikasi ini.', en: 'The service is provided "as is" without warranties. To the extent permitted by law, Askfolio is not liable for losses arising from the use of information in this app.' },
+      { id: 'Layanan disediakan "sebagaimana adanya" tanpa jaminan. Sejauh diizinkan hukum, Finandex tidak bertanggung jawab atas kerugian yang timbul dari penggunaan informasi di aplikasi ini.', en: 'The service is provided "as is" without warranties. To the extent permitted by law, Finandex is not liable for losses arising from the use of information in this app.' },
     ],
   },
   {

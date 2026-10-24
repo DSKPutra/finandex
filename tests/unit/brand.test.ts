@@ -9,11 +9,11 @@ describe('brand strings (§11)', () => {
   it('are exact', () => {
     expect(COPYRIGHT_EN).toBe('© 2026 Dea Saka Kurnia Putra. All rights reserved.');
     expect(COPYRIGHT_ID).toBe('© 2026 Dea Saka Kurnia Putra. Hak cipta dilindungi undang-undang.');
-    expect(CREDIT_ID).toBe('Askfolio dirancang dan dikembangkan oleh Dea Saka Kurnia Putra.');
-    expect(CREDIT_EN).toBe('Askfolio is designed and developed by Dea Saka Kurnia Putra.');
+    expect(CREDIT_ID).toBe('Finandex dirancang dan dikembangkan oleh Dea Saka Kurnia Putra.');
+    expect(CREDIT_EN).toBe('Finandex is designed and developed by Dea Saka Kurnia Putra.');
     expect(PERSONAL_TAGLINE).toBe('A BRIGHTER TOMORROW THROUGH MEANINGFUL WORK');
-    expect(APP_TAGLINE_ID).toBe('Asisten AI investasi dengan angka terverifikasi');
-    expect(APP_TAGLINE_EN).toBe('Your AI investing assistant, with verified numbers');
+    expect(APP_TAGLINE_ID).toBe('Wawasan Indeks Pasar Keuangan Global');
+    expect(APP_TAGLINE_EN).toBe('Global Financial Market Indexing Insights');
   });
   it('widens the year range after 2026', () => {
     expect(copyrightFor('en', 2026)).toBe(COPYRIGHT_EN);

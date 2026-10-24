@@ -150,7 +150,7 @@ export function InstallCta({ compact = false }: { compact?: boolean }) {
   );
 }
 
-/** "Pasang Askfolio" ribbon on the home page (hidden when installed; dismissible for 30 days). */
+/** "Pasang Finandex" ribbon on the home page (hidden when installed; dismissible for 30 days). */
 export function InstallRibbon() {
   const { t } = useTranslation();
   const until = useApp((s) => s.installRibbonUntil);

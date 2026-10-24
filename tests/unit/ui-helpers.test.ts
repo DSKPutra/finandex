@@ -134,7 +134,7 @@ describe('panels & tabs', () => {
 describe('exports & chat helpers', () => {
   it('writes CSV with watermark, escaping, and formula-injection guard', () => {
     const csv = toCsv(['a', 'b'], [['=cmd()', 'x,"y"'], [-1.5, null]], { source: 'f.csv', asOf: '2024-01-02' });
-    expect(csv.startsWith('﻿# Askfolio · © Dea Saka Kurnia Putra')).toBe(true);
+    expect(csv.startsWith('﻿# Finandex · © Dea Saka Kurnia Putra')).toBe(true);
     expect(csv).toContain("'=cmd()");
     expect(csv).toContain('"x,""y"""');
     expect(csv).toContain('-1.5,');
@@ -191,9 +191,9 @@ describe('i18n', () => {
     }
   });
   it('keeps the exact §12.2 / §12.5 wording', () => {
-    expect(id.disclaimer.general).toBe('Askfolio menyajikan data historis untuk tujuan informasi dan edukasi. Bukan rekomendasi investasi, ajakan membeli/menjual efek atau aset kripto, maupun nasihat keuangan atau hukum. Kinerja masa lalu tidak menjamin kinerja masa depan. Data tidak real-time dan dapat mengandung kesalahan dari sumbernya.');
+    expect(id.disclaimer.general).toBe('Finandex menyajikan data historis untuk tujuan informasi dan edukasi. Bukan rekomendasi investasi, ajakan membeli/menjual efek atau aset kripto, maupun nasihat keuangan atau hukum. Kinerja masa lalu tidak menjamin kinerja masa depan. Data tidak real-time dan dapat mengandung kesalahan dari sumbernya.');
     expect(id.disclaimer.law).toBe('Informasi hukum berdasarkan dokumen yang tersedia, bukan nasihat hukum dan tidak menggantikan advokat. Untuk kasus nyata, hubungi advokat atau Lembaga Bantuan Hukum. Dalam keadaan darurat, hubungi 112.');
-    expect(id.disclaimer.trademark).toContain('Askfolio tidak berafiliasi dengan, disponsori, atau didukung oleh Nasdaq, Inc.');
+    expect(id.disclaimer.trademark).toContain('Finandex tidak berafiliasi dengan, disponsori, atau didukung oleh Nasdaq, Inc.');
   });
 });
 

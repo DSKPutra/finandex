@@ -9,7 +9,6 @@ import { visibleDex } from '../config/dex-registry';
 import { APP_VERSION, BUILD_ID, DISTRIBUTION } from '../config/runtime';
 import { useManifest } from '../lib/data';
 import { useLocale } from '../lib/locale';
-import { DexName } from '../components/DexName';
 
 export default function About() {
   const { t } = useTranslation();
@@ -24,7 +23,7 @@ export default function About() {
         <p className="font-display text-xs tracking-[0.25em] text-muted">{PERSONAL_TAGLINE}</p>
         <p className="text-base">{creditFor(locale)}</p>
         <p className="text-sm text-muted">
-          Askfolio — {appTaglineFor(locale)}
+          Finandex — {appTaglineFor(locale)}
         </p>
         <p className="text-xs text-muted">
           {t('about.version')} {APP_VERSION} · {t('about.build')} {BUILD_ID}
@@ -41,7 +40,7 @@ export default function About() {
           {visibleDex(DISTRIBUTION).map((d) => (
             <li key={d.id} className="flex flex-wrap items-center justify-between gap-2 py-2">
               <Link to={`/dex/${d.id}/data`} className="font-medium underline-offset-2 hover:underline">
-                <DexName dex={d} />
+                {d.name}
               </Link>
               <span className="text-xs text-muted">{d.license === 'unknown' ? (locale === 'id' ? 'lisensi menurut penyedia dataset' : 'licence per dataset provider') : d.license}</span>
             </li>

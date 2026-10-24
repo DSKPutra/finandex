@@ -20,11 +20,9 @@ import { INPUTS, KIT, REGULATIONS } from '../lib/paths';
 import type { Writer } from '../lib/writer';
 import { computeLawGolden, loadLawPages } from '../load-law';
 import type { BuildResult, Ctx } from './context';
-import { rebrandJson } from '../../../src/shared/rebrand';
 
 const KB: AntiscamKb = JSON.parse(readFileSync(join(KIT, 'datasets/antiscam/antiscam_kb.json'), 'utf8'));
-// Published with the Askfolio names (the kit file itself stays unchanged).
-const FEATURE_GUIDE = rebrandJson(JSON.parse(readFileSync(join(KIT, 'datasets/app/feature_guide.json'), 'utf8')) as unknown);
+const FEATURE_GUIDE = JSON.parse(readFileSync(join(KIT, 'datasets/app/feature_guide.json'), 'utf8')) as unknown;
 
 const lockBy = new Map(LOCK.documents.map((e) => [e.doc_id, e]));
 const available = (d: CatalogDoc) => (d.source === 'input' ? d.id in INPUT_FILES : d.source === 'fetch' && lockBy.get(d.id)?.status === 'available');

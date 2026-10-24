@@ -96,9 +96,3 @@
 - `src-tauri/` (Tauri 2.12.2, plugin updater/dialog/fs/deep-link/single-instance/window-state/opener), origin desktop di CORS, `desktop.yml` (macOS universal, Windows x64 & ARM64, SHA256SUMS ke release). Kompilasi Rust belum terverifikasi lokal (DNS crates.io).
 - `regulations.yml` (bulanan, `--check`, membuka issue), `ui-review.yml` + `npm run ui:visual` (4 halaman × 3 viewport × 2 tema × 2 bahasa).
 - Tes E2E lama diperbarui (29 Dex, label tema "Terang", pratinjau PDF di tab Sumber Hukum).
-
-## Askfolio — asisten AI investasi (2026-10-25)
-- Rebrand Finandex → Askfolio (logo gelembung + garis tren, tagline "Asisten AI investasi dengan angka terverifikasi"); 29 nama topik deskriptif ID/EN; istilah "Dex" dihapus dari UI.
-- Beranda baru (tanya + profil risiko + kelas aset + ringkasan pasar + "Lindungi dirimu"), `/data` untuk konstelasi & peta fitur, `/profil-risiko` (kemauan vs kemampuan → Konservatif/Moderat/Agresif → kelas aset).
-- Palet tanpa hijau + update service worker otomatis (sebelumnya pengunjung tertahan di versi lama).
-- Tes: 942 unit, 72 golden, 682 tool, eval chat 161/161, eval agen 100 %, E2E 83 desktop + 29 mobile; bundel 241 KB.

@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | A01 |
 | Judul | Rencana & indeks dokumentasi |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Internal |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,7 +21,7 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
 
 ## 1. Tujuan
 Menetapkan dokumen apa yang dipelihara, siapa pemiliknya, dari mana isinya dibangkitkan, dan kapan diperbarui. Semua dokumen dibangun ulang otomatis (`npm run docs:build`) dan diperiksa (`npm run docs:verify`) di setiap rilis.

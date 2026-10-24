@@ -233,7 +233,7 @@ export class OfficeScene {
 
   private shortName(id: AgentId): string {
     const map: Record<string, string> = { conductor: this.opts.labels.conductor, guard: this.opts.labels.guard, verifier: this.opts.labels.verifier };
-    return map[id] ?? (id === 'finandex-ai' ? 'Askfolio' : id.replace(/dex$/, 'Dex').replace(/^./, (c) => c.toUpperCase()).replace('Mylaiwyer', 'My LAIwyer').replace('Finlaiwyer', 'FinLAIwyer'));
+    return map[id] ?? (id === 'finandex-ai' ? 'Finandex AI' : id.replace(/dex$/, 'Dex').replace(/^./, (c) => c.toUpperCase()).replace('Mylaiwyer', 'My LAIwyer').replace('Finlaiwyer', 'FinLAIwyer'));
   }
 
   private build() {

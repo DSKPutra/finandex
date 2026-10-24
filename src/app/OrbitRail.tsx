@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Orbit Rail (§10.1, desktop/tablet ≥ 768 px): 72 px rail with the core button (Askfolio, an orbit ring), 8 category
+// Orbit Rail (§10.1, desktop/tablet ≥ 768 px): 72 px rail with the core button (Finandex AI, an orbit ring), 8 category
 // glyphs (small constellations), Watchlist and Settings. Hover / focus / click opens a 300 px panel with that category's
 // Dex (icon, name, as-of). Esc closes the panel and returns focus to its glyph.
 import { clsx } from 'clsx';
@@ -15,7 +15,6 @@ import { DISTRIBUTION } from '../config/runtime';
 import { seed } from '../features/constellation/layout';
 import { useManifest } from '../lib/data';
 import { useLocale } from '../lib/locale';
-import { DexName } from '../components/DexName';
 
 /** A small constellation glyph per category (deterministic dots + lines, one per Dex in the category). */
 export function GroupGlyph({ group, gi, n, size = 28 }: { group: DexGroupId; gi: number; n: number; size?: number }) {
@@ -69,7 +68,7 @@ export function OrbitRail() {
       <Link to="/" aria-label={t('nav.home')} className="mb-2 flex h-12 w-12 items-center justify-center">
         <img src="/icons/finandex.svg" alt="" width={36} height={36} className="rounded-xl" />
       </Link>
-      <NavLink to="/ai" aria-label="Askfolio" className={({ isActive }) => clsx('relative flex h-14 w-14 items-center justify-center rounded-full', isActive && 'text-primary')}>
+      <NavLink to="/ai" aria-label="Finandex AI" className={({ isActive }) => clsx('relative flex h-14 w-14 items-center justify-center rounded-full', isActive && 'text-primary')}>
         <span aria-hidden className="absolute inset-0 rounded-full border border-primary/70" />
         <span aria-hidden className="absolute inset-[5px] rounded-full border border-dashed border-edge-hi" />
         <img src="/icons/finandex-ai.svg" alt="" width={34} height={34} className="rounded-full" />
@@ -120,7 +119,7 @@ export function OrbitRail() {
                 <Link to={d.id === 'finandex-ai' ? '/ai' : `/dex/${d.id}`} onClick={() => setOpen(null)} className="flex min-h-11 items-center gap-3 rounded-xl px-2 hover:bg-pane-2">
                   <img src={`/icons/${d.icon}.svg`} alt="" width={28} height={28} className="rounded-xl" />
                   <span className="min-w-0 flex-1">
-                    <span className="block truncate text-sm"><DexName dex={d} /></span>
+                    <span className="block truncate text-sm">{d.name}</span>
                     <span className="block text-xs text-ink-muted">
                       {t('dex.asOf')} {fmt(m.data?.dex[d.id]?.as_of ?? d.asOf)}
                     </span>

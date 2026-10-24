@@ -349,7 +349,7 @@ export function LawStatus({ dex }: { dex: DexEntry }) {
   );
 }
 
-/** Glossary: legal term ↔ plain language (official definition quoted + labelled Askfolio explanation). */
+/** Glossary: legal term ↔ plain language (official definition quoted + labelled Finandex explanation). */
 export function LawGlossary({ dex }: { dex: DexEntry }) {
   const locale = useLocale();
   const terms = GLOSSARY.filter((g) => g.corpus === corpusOf(dex));

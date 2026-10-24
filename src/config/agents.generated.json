@@ -107,7 +107,7 @@
   {
    "id": "finandex-ai",
    "dexId": "finandex-ai",
-   "name": "Agen Askfolio",
+   "name": "Agen Finandex AI",
    "role": {
     "id": "Asisten pasar global lintas kelas aset; juga router ke Dex lain",
     "en": "Global market assistant: indices, commodities, crypto, currencies (main chatbot & router)"
@@ -140,20 +140,20 @@
    "skills": [
     {
      "id": "tab-markets",
-     "title": "Pasar Global (Askfolio)",
+     "title": "Pasar Global (Finandex AI)",
      "description": "34 aset global (indeks, komoditas, kripto, mata uang) dengan sparkline dan filter. (34 aset, sparkline, filter kategori/wilayah)",
      "tools": [
       "rank"
      ],
      "examples": [
       "34 aset global",
-      "Tampilkan pasar global di Askfolio",
-      "Pasar Global Askfolio"
+      "Tampilkan pasar global di Finandex AI",
+      "Pasar Global Finandex AI"
      ]
     },
     {
      "id": "tab-compare",
-     "title": "Bandingkan (Askfolio)",
+     "title": "Bandingkan (Finandex AI)",
      "description": "Bandingkan 2–5 entitas dalam satu grafik (rebase 100) plus tabel metrik.",
      "tools": [
       "compare"
@@ -161,12 +161,12 @@
      "examples": [
       "Bandingkan emas dan Bitcoin 5 tahun terakhir",
       "Bandingkan 2–5 entitas dalam satu grafik",
-      "Tampilkan bandingkan di Askfolio"
+      "Tampilkan bandingkan di Finandex AI"
      ]
     },
     {
      "id": "tab-correlation",
-     "title": "Korelasi (Askfolio)",
+     "title": "Korelasi (Finandex AI)",
      "description": "Matriks korelasi return antar-aset (1/3/5 tahun). (heatmap)",
      "tools": [
       "correlation"
@@ -174,25 +174,25 @@
      "examples": [
       "Korelasi DAX dan FTSE 100 3 tahun",
       "Matriks korelasi return antar-aset",
-      "Tampilkan korelasi di Askfolio"
+      "Tampilkan korelasi di Finandex AI"
      ]
     },
     {
      "id": "tab-calendar",
-     "title": "Kalender Return (Askfolio)",
+     "title": "Kalender Return (Finandex AI)",
      "description": "Heatmap return tahunan per aset (tahun parsial ditandai). (heatmap tahun×aset)",
      "tools": [
       "calendar_returns"
      ],
      "examples": [
       "Heatmap return tahunan per aset",
-      "Tampilkan kalender return di Askfolio",
-      "Kalender Return Askfolio"
+      "Tampilkan kalender return di Finandex AI",
+      "Kalender Return Finandex AI"
      ]
     },
     {
      "id": "tab-events",
-     "title": "Peristiwa (Askfolio)",
+     "title": "Peristiwa (Finandex AI)",
      "description": "Pergerakan harga di sekitar peristiwa bertanggal pasti (krisis, keputusan bank sentral, halving).",
      "tools": [
       "event_window",
@@ -200,22 +200,22 @@
      ],
      "examples": [
       "Pergerakan harga di sekitar peristiwa bertanggal pasti",
-      "Tampilkan peristiwa di Askfolio",
-      "Peristiwa Askfolio"
+      "Tampilkan peristiwa di Finandex AI",
+      "Peristiwa Finandex AI"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Askfolio",
+     "title": "Jelaskan data & keterbatasan Finandex AI",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Askfolio sampai kapan?",
-      "Dari mana data Askfolio?",
-      "Apa keterbatasan data Askfolio?"
+      "Data Finandex AI sampai kapan?",
+      "Dari mana data Finandex AI?",
+      "Apa keterbatasan data Finandex AI?"
      ]
     }
    ],
@@ -240,7 +240,7 @@
   {
    "id": "nasdaqdex",
    "dexId": "nasdaqdex",
-   "name": "Agen Saham Teknologi AS",
+   "name": "Agen NASDAQDex",
    "role": {
     "id": "Analis saham NASDAQ (harga, risiko, teknikal deskriptif)",
     "en": "500 NASDAQ stocks, 1962–2026"
@@ -276,46 +276,46 @@
    "skills": [
     {
      "id": "tab-pulse",
-     "title": "Pulse (Saham Teknologi AS)",
+     "title": "Pulse (NASDAQDex)",
      "description": "Denyut pasar: breadth, % saham di atas SMA, indeks equal-weight vs indeks acuan. (breadth + indeks EW vs ^IXIC)",
      "tools": [
       "pulse"
      ],
      "examples": [
       "Denyut pasar: breadth, % saham di atas SMA, indeks equal-weight vs indeks acuan",
-      "Tampilkan pulse di Saham Teknologi AS",
-      "Pulse Saham Teknologi AS"
+      "Tampilkan pulse di NASDAQDex",
+      "Pulse NASDAQDex"
      ]
     },
     {
      "id": "tab-screener",
-     "title": "Screener (Saham Teknologi AS)",
+     "title": "Screener (NASDAQDex)",
      "description": "Saring saham dengan kriteria (return, volatilitas, valuasi, likuiditas).",
      "tools": [
       "rank"
      ],
      "examples": [
       "Saring saham dengan kriteria",
-      "Tampilkan screener di Saham Teknologi AS",
-      "Screener Saham Teknologi AS"
+      "Tampilkan screener di NASDAQDex",
+      "Screener NASDAQDex"
      ]
     },
     {
      "id": "tab-growth",
-     "title": "Growth Lab (Saham Teknologi AS)",
+     "title": "Growth Lab (NASDAQDex)",
      "description": "Saham dengan pertumbuhan terbesar: kelipatan harga, CAGR 5/10 tahun, jarak dari ATH.",
      "tools": [
       "growth_lab"
      ],
      "examples": [
       "Saham dengan pertumbuhan terbesar: kelipatan harga, CAGR 5/10 tahun, jarak dari ATH",
-      "Tampilkan growth lab di Saham Teknologi AS",
-      "Growth Lab Saham Teknologi AS"
+      "Tampilkan growth lab di NASDAQDex",
+      "Growth Lab NASDAQDex"
      ]
     },
     {
      "id": "tab-technical",
-     "title": "Teknikal (Saham Teknologi AS)",
+     "title": "Teknikal (NASDAQDex)",
      "description": "Indikator teknikal deskriptif (SMA50/200, RSI14, golden/death cross) — bukan sinyal beli/jual.",
      "tools": [
       "technical",
@@ -324,12 +324,12 @@
      "examples": [
       "Berapa beta NVDA terhadap NASDAQ Composite?",
       "Indikator teknikal deskriptif",
-      "Tampilkan teknikal di Saham Teknologi AS"
+      "Tampilkan teknikal di NASDAQDex"
      ]
     },
     {
      "id": "tab-compare",
-     "title": "Bandingkan (Saham Teknologi AS)",
+     "title": "Bandingkan (NASDAQDex)",
      "description": "Bandingkan 2–5 entitas dalam satu grafik (rebase 100) plus tabel metrik.",
      "tools": [
       "compare"
@@ -337,21 +337,21 @@
      "examples": [
       "Bandingkan AAPL, MSFT, dan GOOGL 10 tahun",
       "Bandingkan 2–5 entitas dalam satu grafik",
-      "Tampilkan bandingkan di Saham Teknologi AS"
+      "Tampilkan bandingkan di NASDAQDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Saham Teknologi AS",
+     "title": "Jelaskan data & keterbatasan NASDAQDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Saham Teknologi AS sampai kapan?",
-      "Dari mana data Saham Teknologi AS?",
-      "Apa keterbatasan data Saham Teknologi AS?"
+      "Data NASDAQDex sampai kapan?",
+      "Dari mana data NASDAQDex?",
+      "Apa keterbatasan data NASDAQDex?"
      ]
     }
    ],
@@ -376,7 +376,7 @@
   {
    "id": "snp500dex",
    "dexId": "snp500dex",
-   "name": "Agen 500 Saham Besar AS",
+   "name": "Agen SnP500Dex",
    "role": {
     "id": "Analis total return, dividen, volume S&P 500",
     "en": "233 S&P 500 stocks: total return, dividends, volume"
@@ -417,20 +417,20 @@
    "skills": [
     {
      "id": "tab-pulse",
-     "title": "Pulse (500 Saham Besar AS)",
+     "title": "Pulse (SnP500Dex)",
      "description": "Denyut pasar: breadth, % saham di atas SMA, indeks equal-weight vs indeks acuan.",
      "tools": [
       "pulse"
      ],
      "examples": [
       "Denyut pasar: breadth, % saham di atas SMA, indeks equal-weight vs indeks acuan",
-      "Tampilkan pulse di 500 Saham Besar AS",
-      "Pulse 500 Saham Besar AS"
+      "Tampilkan pulse di SnP500Dex",
+      "Pulse SnP500Dex"
      ]
     },
     {
      "id": "tab-dividends",
-     "title": "Dividen (500 Saham Besar AS)",
+     "title": "Dividen (SnP500Dex)",
      "description": "Riwayat dividen, dividend yield TTM, dan streak kenaikan dividen.",
      "tools": [
       "dividends",
@@ -439,12 +439,12 @@
      "examples": [
       "Saham dengan streak kenaikan dividen terpanjang",
       "Riwayat dividen, dividend yield TTM, dan streak kenaikan dividen",
-      "Tampilkan dividen di 500 Saham Besar AS"
+      "Tampilkan dividen di SnP500Dex"
      ]
     },
     {
      "id": "tab-simulator",
-     "title": "Simulator (500 Saham Besar AS)",
+     "title": "Simulator (SnP500Dex)",
      "description": "Simulasi nilai investasi historis dengan/tanpa reinvestasi dividen (bukan rekomendasi).",
      "tools": [
       "simulate_investment",
@@ -453,47 +453,47 @@
      "examples": [
       "Total return vs price return JNJ",
       "Simulasi nilai investasi historis dengan/tanpa reinvestasi dividen",
-      "Tampilkan simulator di 500 Saham Besar AS"
+      "Tampilkan simulator di SnP500Dex"
      ]
     },
     {
      "id": "tab-screener",
-     "title": "Screener (500 Saham Besar AS)",
+     "title": "Screener (SnP500Dex)",
      "description": "Saring saham dengan kriteria (return, volatilitas, valuasi, likuiditas).",
      "tools": [
       "rank"
      ],
      "examples": [
       "Saring saham dengan kriteria",
-      "Tampilkan screener di 500 Saham Besar AS",
-      "Screener 500 Saham Besar AS"
+      "Tampilkan screener di SnP500Dex",
+      "Screener SnP500Dex"
      ]
     },
     {
      "id": "tab-volume",
-     "title": "Volume & Likuiditas (500 Saham Besar AS)",
+     "title": "Volume & Likuiditas (SnP500Dex)",
      "description": "Volume, nilai transaksi, dan likuiditas saham.",
      "tools": [
       "volume_profile"
      ],
      "examples": [
       "Volume, nilai transaksi, dan likuiditas saham",
-      "Tampilkan volume & likuiditas di 500 Saham Besar AS",
-      "Volume & Likuiditas 500 Saham Besar AS"
+      "Tampilkan volume & likuiditas di SnP500Dex",
+      "Volume & Likuiditas SnP500Dex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan 500 Saham Besar AS",
+     "title": "Jelaskan data & keterbatasan SnP500Dex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data 500 Saham Besar AS sampai kapan?",
-      "Dari mana data 500 Saham Besar AS?",
-      "Apa keterbatasan data 500 Saham Besar AS?"
+      "Data SnP500Dex sampai kapan?",
+      "Dari mana data SnP500Dex?",
+      "Apa keterbatasan data SnP500Dex?"
      ]
     }
    ],
@@ -518,7 +518,7 @@
   {
    "id": "commercedex",
    "dexId": "commercedex",
-   "name": "Agen Raksasa E-Commerce",
+   "name": "Agen CommerceDex",
    "role": {
     "id": "Analis e-commerce global (harga + fundamental + makro)",
     "en": "43 global e-commerce giants: prices, fundamentals, macro"
@@ -554,20 +554,20 @@
    "skills": [
     {
      "id": "tab-map",
-     "title": "Peta Global (Raksasa E-Commerce)",
+     "title": "Peta Global (CommerceDex)",
      "description": "Peta dunia perusahaan e-commerce per negara.",
      "tools": [
       "peer_compare"
      ],
      "examples": [
       "Peta dunia perusahaan e-commerce per negara",
-      "Tampilkan peta global di Raksasa E-Commerce",
-      "Peta Global Raksasa E-Commerce"
+      "Tampilkan peta global di CommerceDex",
+      "Peta Global CommerceDex"
      ]
     },
     {
      "id": "tab-companies",
-     "title": "Perusahaan (Raksasa E-Commerce)",
+     "title": "Perusahaan (CommerceDex)",
      "description": "Profil perusahaan e-commerce dan kinerjanya.",
      "tools": [
       "rank",
@@ -576,25 +576,25 @@
      "examples": [
       "Margin bersih perusahaan India",
       "Profil perusahaan e-commerce dan kinerjanya",
-      "Tampilkan perusahaan di Raksasa E-Commerce"
+      "Tampilkan perusahaan di CommerceDex"
      ]
     },
     {
      "id": "tab-fundamentals",
-     "title": "Fundamental (Raksasa E-Commerce)",
+     "title": "Fundamental (CommerceDex)",
      "description": "Data fundamental (pendapatan, laba, margin, ROE, DER, dll.) per tahun fiskal dengan mata uang laporan.",
      "tools": [
       "financials"
      ],
      "examples": [
       "Data fundamental",
-      "Tampilkan fundamental di Raksasa E-Commerce",
-      "Fundamental Raksasa E-Commerce"
+      "Tampilkan fundamental di CommerceDex",
+      "Fundamental CommerceDex"
      ]
     },
     {
      "id": "tab-index",
-     "title": "Indeks E-Commerce (Raksasa E-Commerce)",
+     "title": "Indeks E-Commerce (CommerceDex)",
      "description": "Indeks equal-weight saham e-commerce dunia dan kinerjanya.",
      "tools": [
       "index_compare"
@@ -602,34 +602,34 @@
      "examples": [
       "Kinerja indeks e-commerce sejak 2015",
       "Indeks equal-weight saham e-commerce dunia dan kinerjanya",
-      "Tampilkan indeks e-commerce di Raksasa E-Commerce"
+      "Tampilkan indeks e-commerce di CommerceDex"
      ]
     },
     {
      "id": "tab-macro",
-     "title": "Makro (Raksasa E-Commerce)",
+     "title": "Makro (CommerceDex)",
      "description": "Indikator makro negara terkait perusahaan e-commerce (World Bank).",
      "tools": [
       "macro"
      ],
      "examples": [
       "Indikator makro negara terkait perusahaan e-commerce",
-      "Tampilkan makro di Raksasa E-Commerce",
-      "Makro Raksasa E-Commerce"
+      "Tampilkan makro di CommerceDex",
+      "Makro CommerceDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Raksasa E-Commerce",
+     "title": "Jelaskan data & keterbatasan CommerceDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Raksasa E-Commerce sampai kapan?",
-      "Dari mana data Raksasa E-Commerce?",
-      "Apa keterbatasan data Raksasa E-Commerce?"
+      "Data CommerceDex sampai kapan?",
+      "Dari mana data CommerceDex?",
+      "Apa keterbatasan data CommerceDex?"
      ]
     }
    ],
@@ -654,7 +654,7 @@
   {
    "id": "ipodex",
    "dexId": "ipodex",
-   "name": "Agen IPO Global",
+   "name": "Agen IPODex",
    "role": {
     "id": "Analis IPO global (India, AS, Inggris, 100+ negara)",
     "en": "Global IPOs 2019–2026: India, US, UK & 100+ countries"
@@ -681,7 +681,7 @@
    "skills": [
     {
      "id": "tab-overview",
-     "title": "Ringkasan (IPO Global)",
+     "title": "Ringkasan (IPODex)",
      "description": "Ringkasan utama dataset Dex ini dalam kartu & grafik.",
      "tools": [
       "ipo_summary",
@@ -690,25 +690,25 @@
      "examples": [
       "Jumlah IPO tercatat per tahun",
       "Ringkasan utama dataset Dex ini dalam kartu & grafik",
-      "Tampilkan ringkasan di IPO Global"
+      "Tampilkan ringkasan di IPODex"
      ]
     },
     {
      "id": "tab-countries",
-     "title": "Negara & Bursa (IPO Global)",
+     "title": "Negara & Bursa (IPODex)",
      "description": "IPO per negara dan bursa.",
      "tools": [
       "ipo_summary"
      ],
      "examples": [
       "IPO per negara dan bursa",
-      "Tampilkan negara & bursa di IPO Global",
-      "Negara & Bursa IPO Global"
+      "Tampilkan negara & bursa di IPODex",
+      "Negara & Bursa IPODex"
      ]
     },
     {
      "id": "tab-india",
-     "title": "India SME vs Mainboard (IPO Global)",
+     "title": "India SME vs Mainboard (IPODex)",
      "description": "Perbandingan IPO India papan SME dan Mainboard.",
      "tools": [
       "india_sme_vs_mainboard"
@@ -716,12 +716,12 @@
      "examples": [
       "SME vs Mainboard India",
       "Perbandingan IPO India papan SME dan Mainboard",
-      "Tampilkan india sme vs mainboard di IPO Global"
+      "Tampilkan india sme vs mainboard di IPODex"
      ]
     },
     {
      "id": "tab-search",
-     "title": "Cari IPO (IPO Global)",
+     "title": "Cari IPO (IPODex)",
      "description": "Cari IPO berdasarkan nama, negara, bursa, sektor, atau status.",
      "tools": [
       "ipo_search",
@@ -729,22 +729,22 @@
      ],
      "examples": [
       "Cari IPO berdasarkan nama, negara, bursa, sektor, atau status",
-      "Tampilkan cari ipo di IPO Global",
-      "Cari IPO IPO Global"
+      "Tampilkan cari ipo di IPODex",
+      "Cari IPO IPODex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan IPO Global",
+     "title": "Jelaskan data & keterbatasan IPODex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data IPO Global sampai kapan?",
-      "Dari mana data IPO Global?",
-      "Apa keterbatasan data IPO Global?"
+      "Data IPODex sampai kapan?",
+      "Dari mana data IPODex?",
+      "Apa keterbatasan data IPODex?"
      ]
     }
    ],
@@ -770,7 +770,7 @@
   {
    "id": "idfinandex",
    "dexId": "idfinandex",
-   "name": "Agen Ekonomi Indonesia",
+   "name": "Agen IDFinanDex",
    "role": {
     "id": "Analis makro & multi-aset Indonesia",
     "en": "Indonesia multi-asset & macro: IHSG, USD/IDR, BI rate"
@@ -807,7 +807,7 @@
    "skills": [
     {
      "id": "tab-macro",
-     "title": "Dashboard Makro (Ekonomi Indonesia)",
+     "title": "Dashboard Makro (IDFinanDex)",
      "description": "Ringkasan indikator makro Indonesia (BI rate, inflasi, kurs, suku bunga AS) dalam satu layar.",
      "tools": [
       "macro_series",
@@ -816,12 +816,12 @@
      "examples": [
       "Bagaimana IHSG saat BI rate naik vs turun?",
       "Ringkasan indikator makro Indonesia",
-      "Tampilkan dashboard makro di Ekonomi Indonesia"
+      "Tampilkan dashboard makro di IDFinanDex"
      ]
     },
     {
      "id": "tab-assets",
-     "title": "Aset (Ekonomi Indonesia)",
+     "title": "Aset (IDFinanDex)",
      "description": "Daftar aset dengan harga/nilai terakhir, perubahan, dan grafik per aset.",
      "tools": [
       "rank"
@@ -829,12 +829,12 @@
      "examples": [
       "Inflasi tahunan menurut dataset",
       "Daftar aset dengan harga/nilai terakhir, perubahan, dan grafik per aset",
-      "Tampilkan aset di Ekonomi Indonesia"
+      "Tampilkan aset di IDFinanDex"
      ]
     },
     {
      "id": "tab-normalized",
-     "title": "Tren Ter-normalisasi (Ekonomi Indonesia)",
+     "title": "Tren Ter-normalisasi (IDFinanDex)",
      "description": "Tren beberapa aset yang dinormalisasi ke titik awal yang sama.",
      "tools": [
       "normalized_trend"
@@ -842,12 +842,12 @@
      "examples": [
       "Tren ter-normalisasi IHSG, emas, S&P 500 sejak 2010",
       "Tren beberapa aset yang dinormalisasi ke titik awal yang sama",
-      "Tampilkan tren ter-normalisasi di Ekonomi Indonesia"
+      "Tampilkan tren ter-normalisasi di IDFinanDex"
      ]
     },
     {
      "id": "tab-correlation",
-     "title": "Korelasi (Ekonomi Indonesia)",
+     "title": "Korelasi (IDFinanDex)",
      "description": "Matriks korelasi return antar-aset (1/3/5 tahun).",
      "tools": [
       "correlation"
@@ -855,12 +855,12 @@
      "examples": [
       "Korelasi IHSG dengan VIX",
       "Matriks korelasi return antar-aset",
-      "Tampilkan korelasi di Ekonomi Indonesia"
+      "Tampilkan korelasi di IDFinanDex"
      ]
     },
     {
      "id": "tab-rates",
-     "title": "Rezim Suku Bunga (Ekonomi Indonesia)",
+     "title": "Rezim Suku Bunga (IDFinanDex)",
      "description": "Return aset saat BI rate naik, turun, atau tetap.",
      "tools": [
       "regime_returns",
@@ -868,22 +868,22 @@
      ],
      "examples": [
       "Return aset saat BI rate naik, turun, atau tetap",
-      "Tampilkan rezim suku bunga di Ekonomi Indonesia",
-      "Rezim Suku Bunga Ekonomi Indonesia"
+      "Tampilkan rezim suku bunga di IDFinanDex",
+      "Rezim Suku Bunga IDFinanDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Ekonomi Indonesia",
+     "title": "Jelaskan data & keterbatasan IDFinanDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Ekonomi Indonesia sampai kapan?",
-      "Dari mana data Ekonomi Indonesia?",
-      "Apa keterbatasan data Ekonomi Indonesia?"
+      "Data IDFinanDex sampai kapan?",
+      "Dari mana data IDFinanDex?",
+      "Apa keterbatasan data IDFinanDex?"
      ]
     }
    ],
@@ -907,7 +907,7 @@
   {
    "id": "rupiahdex",
    "dexId": "rupiahdex",
-   "name": "Agen Kurs Rupiah",
+   "name": "Agen RupiahDex",
    "role": {
     "id": "Spesialis kurs USD/IDR & konversi historis",
     "en": "Daily USD/IDR exchange rate since 2001"
@@ -939,8 +939,7 @@
     "yearly_average",
     "change",
     "compare_sources",
-    "event_window",
-    "live_latest"
+    "event_window"
    ],
    "skills": [
     {
@@ -972,7 +971,7 @@
     },
     {
      "id": "tab-rate",
-     "title": "Kurs (Kurs Rupiah)",
+     "title": "Kurs (RupiahDex)",
      "description": "Grafik kurs USD/IDR (garis & candlestick) dengan statistik. (garis + candlestick)",
      "tools": [
       "get_history",
@@ -981,25 +980,25 @@
      "examples": [
       "Kurs USD/IDR tertinggi sepanjang data",
       "Grafik kurs USD/IDR",
-      "Tampilkan kurs di Kurs Rupiah"
+      "Tampilkan kurs di RupiahDex"
      ]
     },
     {
      "id": "tab-converter",
-     "title": "Konverter Historis (Kurs Rupiah)",
+     "title": "Konverter Historis (RupiahDex)",
      "description": "Konversi USD↔IDR memakai kurs pada tanggal tertentu.",
      "tools": [
       "convert"
      ],
      "examples": [
       "Konversi USD↔IDR memakai kurs pada tanggal tertentu",
-      "Tampilkan konverter historis di Kurs Rupiah",
-      "Konverter Historis Kurs Rupiah"
+      "Tampilkan konverter historis di RupiahDex",
+      "Konverter Historis RupiahDex"
      ]
     },
     {
      "id": "tab-yearly",
-     "title": "Statistik Tahunan (Kurs Rupiah)",
+     "title": "Statistik Tahunan (RupiahDex)",
      "description": "Rata-rata, tertinggi, terendah, dan perubahan kurs per tahun.",
      "tools": [
       "yearly_average",
@@ -1007,13 +1006,13 @@
      ],
      "examples": [
       "Rata-rata, tertinggi, terendah, dan perubahan kurs per tahun",
-      "Tampilkan statistik tahunan di Kurs Rupiah",
-      "Statistik Tahunan Kurs Rupiah"
+      "Tampilkan statistik tahunan di RupiahDex",
+      "Statistik Tahunan RupiahDex"
      ]
     },
     {
      "id": "tab-events",
-     "title": "Peristiwa (Kurs Rupiah)",
+     "title": "Peristiwa (RupiahDex)",
      "description": "Pergerakan harga di sekitar peristiwa bertanggal pasti (krisis, keputusan bank sentral, halving).",
      "tools": [
       "event_window",
@@ -1021,22 +1020,22 @@
      ],
      "examples": [
       "Pergerakan harga di sekitar peristiwa bertanggal pasti",
-      "Tampilkan peristiwa di Kurs Rupiah",
-      "Peristiwa Kurs Rupiah"
+      "Tampilkan peristiwa di RupiahDex",
+      "Peristiwa RupiahDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Kurs Rupiah",
+     "title": "Jelaskan data & keterbatasan RupiahDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Kurs Rupiah sampai kapan?",
-      "Dari mana data Kurs Rupiah?",
-      "Apa keterbatasan data Kurs Rupiah?"
+      "Data RupiahDex sampai kapan?",
+      "Dari mana data RupiahDex?",
+      "Apa keterbatasan data RupiahDex?"
      ]
     }
    ],
@@ -1053,15 +1052,14 @@
    },
    "guardrails": [
     "Bukan rekomendasi investasi; angka hanya dari data.",
-    "USD/IDR naik = rupiah melemah.",
-    "Data setelah tanggal terakhir dataset berasal dari kurs referensi ECB (bukan harga penutupan pasar); batasnya ditandai source_switch_date."
+    "USD/IDR naik = rupiah melemah."
    ],
    "evalSuite": "agents/rupiahdex"
   },
   {
    "id": "idxdex",
    "dexId": "idxdex",
-   "name": "Agen Saham Indonesia",
+   "name": "Agen IDXDex",
    "role": {
     "id": "Analis saham BEI, fundamental, dan IPO",
     "en": "Indonesia Stock Exchange equities: prices, fundamentals, IPOs"
@@ -1132,7 +1130,7 @@
     },
     {
      "id": "tab-stocks",
-     "title": "Saham (Saham Indonesia)",
+     "title": "Saham (IDXDex)",
      "description": "Daftar & detail saham dengan grafik, return, risiko, dan likuiditas.",
      "tools": [
       "rank"
@@ -1140,12 +1138,12 @@
      "examples": [
       "Saham IDX dengan ROE > 20% dan PER < 15",
       "Daftar & detail saham dengan grafik, return, risiko, dan likuiditas",
-      "Tampilkan saham di Saham Indonesia"
+      "Tampilkan saham di IDXDex"
      ]
     },
     {
      "id": "tab-fundamentals",
-     "title": "Fundamental (Saham Indonesia)",
+     "title": "Fundamental (IDXDex)",
      "description": "Data fundamental (pendapatan, laba, margin, ROE, DER, dll.) per tahun fiskal dengan mata uang laporan.",
      "tools": [
       "screen_fundamentals",
@@ -1153,13 +1151,13 @@
      ],
      "examples": [
       "Data fundamental",
-      "Tampilkan fundamental di Saham Indonesia",
-      "Fundamental Saham Indonesia"
+      "Tampilkan fundamental di IDXDex",
+      "Fundamental IDXDex"
      ]
     },
     {
      "id": "tab-ipo",
-     "title": "IPO Center (Saham Indonesia)",
+     "title": "IPO Center (IDXDex)",
      "description": "Statistik & daftar IPO BEI (e-IPO): return hari pertama, sektor, papan, penjamin.",
      "tools": [
       "ipo_stats",
@@ -1168,34 +1166,34 @@
      "examples": [
       "Statistik IPO 2023 per papan",
       "Statistik & daftar IPO BEI",
-      "Tampilkan ipo center di Saham Indonesia"
+      "Tampilkan ipo center di IDXDex"
      ]
     },
     {
      "id": "tab-directory",
-     "title": "Direktori Emiten (Saham Indonesia)",
+     "title": "Direktori Emiten (IDXDex)",
      "description": "Profil emiten BEI: sektor, papan, tanggal pencatatan, informasi perusahaan.",
      "tools": [
       "company_profile"
      ],
      "examples": [
       "Profil emiten BEI: sektor, papan, tanggal pencatatan, informasi perusahaan",
-      "Tampilkan direktori emiten di Saham Indonesia",
-      "Direktori Emiten Saham Indonesia"
+      "Tampilkan direktori emiten di IDXDex",
+      "Direktori Emiten IDXDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Saham Indonesia",
+     "title": "Jelaskan data & keterbatasan IDXDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Saham Indonesia sampai kapan?",
-      "Dari mana data Saham Indonesia?",
-      "Apa keterbatasan data Saham Indonesia?"
+      "Data IDXDex sampai kapan?",
+      "Dari mana data IDXDex?",
+      "Apa keterbatasan data IDXDex?"
      ]
     }
    ],
@@ -1220,7 +1218,7 @@
   {
    "id": "reksadex",
    "dexId": "reksadex",
-   "name": "Agen Reksa Dana",
+   "name": "Agen ReksaDex",
    "role": {
     "id": "Analis industri reksa dana Indonesia",
     "en": "Indonesian mutual funds: AUM, investment managers, performance"
@@ -1259,7 +1257,7 @@
    "skills": [
     {
      "id": "tab-industry",
-     "title": "Industri (Reksa Dana)",
+     "title": "Industri (ReksaDex)",
      "description": "Ringkasan industri reksa dana: total dana kelolaan, jumlah produk, tren.",
      "tools": [
       "industry_overview",
@@ -1268,25 +1266,25 @@
      "examples": [
       "MI dengan AUM terbesar",
       "Ringkasan industri reksa dana: total dana kelolaan, jumlah produk, tren",
-      "Tampilkan industri di Reksa Dana"
+      "Tampilkan industri di ReksaDex"
      ]
     },
     {
      "id": "tab-managers",
-     "title": "Manajer Investasi (Reksa Dana)",
+     "title": "Manajer Investasi (ReksaDex)",
      "description": "Peringkat & pangsa manajer investasi berdasarkan dana kelolaan dan jumlah produk.",
      "tools": [
       "mi_leaderboard"
      ],
      "examples": [
       "Peringkat & pangsa manajer investasi berdasarkan dana kelolaan dan jumlah produk",
-      "Tampilkan manajer investasi di Reksa Dana",
-      "Manajer Investasi Reksa Dana"
+      "Tampilkan manajer investasi di ReksaDex",
+      "Manajer Investasi ReksaDex"
      ]
     },
     {
      "id": "tab-search",
-     "title": "Cari Reksa Dana (Reksa Dana)",
+     "title": "Cari Reksa Dana (ReksaDex)",
      "description": "Cari reksa dana berdasarkan nama, jenis, atau manajer investasi.",
      "tools": [
       "fund_search"
@@ -1294,25 +1292,25 @@
      "examples": [
       "Cari reksa dana indeks",
       "Cari reksa dana berdasarkan nama, jenis, atau manajer investasi",
-      "Tampilkan cari reksa dana di Reksa Dana"
+      "Tampilkan cari reksa dana di ReksaDex"
      ]
     },
     {
      "id": "tab-rankings",
-     "title": "Peringkat (Reksa Dana)",
+     "title": "Peringkat (ReksaDex)",
      "description": "Peringkat terurut berdasarkan metrik pilihan.",
      "tools": [
       "rank_funds"
      ],
      "examples": [
       "Peringkat terurut berdasarkan metrik pilihan",
-      "Tampilkan peringkat di Reksa Dana",
-      "Peringkat Reksa Dana"
+      "Tampilkan peringkat di ReksaDex",
+      "Peringkat ReksaDex"
      ]
     },
     {
      "id": "tab-custodians",
-     "title": "Bank Kustodian (Reksa Dana)",
+     "title": "Bank Kustodian (ReksaDex)",
      "description": "Pangsa bank kustodian reksa dana berdasarkan dana kelolaan.",
      "tools": [
       "custodian_share"
@@ -1320,21 +1318,21 @@
      "examples": [
       "Bank kustodian terbesar",
       "Pangsa bank kustodian reksa dana berdasarkan dana kelolaan",
-      "Tampilkan bank kustodian di Reksa Dana"
+      "Tampilkan bank kustodian di ReksaDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Reksa Dana",
+     "title": "Jelaskan data & keterbatasan ReksaDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Reksa Dana sampai kapan?",
-      "Dari mana data Reksa Dana?",
-      "Apa keterbatasan data Reksa Dana?"
+      "Data ReksaDex sampai kapan?",
+      "Dari mana data ReksaDex?",
+      "Apa keterbatasan data ReksaDex?"
      ]
     }
    ],
@@ -1359,7 +1357,7 @@
   {
    "id": "cryptdex",
    "dexId": "cryptdex",
-   "name": "Agen Kripto & DeFi",
+   "name": "Agen CryptDex",
    "role": {
     "id": "Analis kripto, DeFi, fee protokol, dan edukasi keamanan bot",
     "en": "Crypto: prices, market snapshot, DeFi, protocol fees, bot education"
@@ -1440,7 +1438,7 @@
     },
     {
      "id": "tab-market",
-     "title": "Pasar Kripto (Kripto & DeFi)",
+     "title": "Pasar Kripto (CryptDex)",
      "description": "Snapshot 250 koin: kapitalisasi, dominasi, perubahan harga, stablecoin (heuristik). (snapshot 250)",
      "tools": [
       "market_snapshot",
@@ -1448,13 +1446,13 @@
      ],
      "examples": [
       "Snapshot 250 koin: kapitalisasi, dominasi, perubahan harga, stablecoin",
-      "Tampilkan pasar kripto di Kripto & DeFi",
-      "Pasar Kripto Kripto & DeFi"
+      "Tampilkan pasar kripto di CryptDex",
+      "Pasar Kripto CryptDex"
      ]
     },
     {
      "id": "tab-history",
-     "title": "Harga Historis (Kripto & DeFi)",
+     "title": "Harga Historis (CryptDex)",
      "description": "Grafik harga historis koin (garis/candlestick) dengan return per periode.",
      "tools": [
       "get_history",
@@ -1462,13 +1460,13 @@
      ],
      "examples": [
       "Grafik harga historis koin",
-      "Tampilkan harga historis di Kripto & DeFi",
-      "Harga Historis Kripto & DeFi"
+      "Tampilkan harga historis di CryptDex",
+      "Harga Historis CryptDex"
      ]
     },
     {
      "id": "tab-defi",
-     "title": "DeFi (Kripto & DeFi)",
+     "title": "DeFi (CryptDex)",
      "description": "TVL DeFi, TVL per chain & protokol, suplai stablecoin, aktivitas DEX — dengan catatan hitung ganda. (TVL, chain, protokol, stablecoin, DEX)",
      "tools": [
       "defi_overview",
@@ -1481,25 +1479,25 @@
      "examples": [
       "TVL DeFi vs puncaknya",
       "TVL DeFi, TVL per chain & protokol, suplai stablecoin, aktivitas DEX — dengan catatan hitung ganda",
-      "Tampilkan defi di Kripto & DeFi"
+      "Tampilkan defi di CryptDex"
      ]
     },
     {
      "id": "tab-yield",
-     "title": "Yield (Kripto & DeFi)",
+     "title": "Yield (CryptDex)",
      "description": "Pool yield DeFi (APY dasar & reward, TVL) dengan peringatan risiko — bukan rekomendasi.",
      "tools": [
       "yield_pools"
      ],
      "examples": [
       "Pool yield DeFi",
-      "Tampilkan yield di Kripto & DeFi",
-      "Yield Kripto & DeFi"
+      "Tampilkan yield di CryptDex",
+      "Yield CryptDex"
      ]
     },
     {
      "id": "tab-fees",
-     "title": "Fees & Revenue (Kripto & DeFi)",
+     "title": "Fees & Revenue (CryptDex)",
      "description": "Fee & revenue protokol DeFi per protokol/kategori dan trennya.",
      "tools": [
       "fees_revenue",
@@ -1507,13 +1505,13 @@
      ],
      "examples": [
       "Fee & revenue protokol DeFi per protokol/kategori dan trennya",
-      "Tampilkan fees & revenue di Kripto & DeFi",
-      "Fees & Revenue Kripto & DeFi"
+      "Tampilkan fees & revenue di CryptDex",
+      "Fees & Revenue CryptDex"
      ]
     },
     {
      "id": "tab-bots",
-     "title": "Bot & AI Agent (Kripto & DeFi)",
+     "title": "Bot & AI Agent (CryptDex)",
      "description": "Edukasi bot trading & AI agent kripto: profil, fakta terverifikasi, uji nyata, checklist keamanan — tanpa rekomendasi & tanpa tautan referral. (edukasi + keamanan)",
      "tools": [
       "security_checklist",
@@ -1522,21 +1520,21 @@
      "examples": [
       "Checklist keamanan sebelum memakai bot trading",
       "Edukasi bot trading & AI agent kripto: profil, fakta terverifikasi, uji nyata, checklist keamanan — tanpa rekomendasi & tanpa tautan referral",
-      "Tampilkan bot & ai agent di Kripto & DeFi"
+      "Tampilkan bot & ai agent di CryptDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Kripto & DeFi",
+     "title": "Jelaskan data & keterbatasan CryptDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Kripto & DeFi sampai kapan?",
-      "Dari mana data Kripto & DeFi?",
-      "Apa keterbatasan data Kripto & DeFi?"
+      "Data CryptDex sampai kapan?",
+      "Dari mana data CryptDex?",
+      "Apa keterbatasan data CryptDex?"
      ]
     }
    ],
@@ -1560,7 +1558,7 @@
   {
    "id": "centralbankdex",
    "dexId": "centralbankdex",
-   "name": "Agen Bank Sentral Dunia",
+   "name": "Agen CentralBankDex",
    "role": {
     "id": "Analis neraca bank sentral & likuiditas global",
     "en": "Central bank balance sheets & global liquidity (Fed, ECB, BoJ, 167 countries)"
@@ -1588,7 +1586,7 @@
    "skills": [
     {
      "id": "tab-g3",
-     "title": "Neraca G3 (Bank Sentral Dunia)",
+     "title": "Neraca G3 (CentralBankDex)",
      "description": "Neraca bank sentral The Fed, ECB, BoJ, dan gabungan G3. (Fed/ECB/BoJ)",
      "tools": [
       "balance_sheets"
@@ -1596,12 +1594,12 @@
      "examples": [
       "Neraca The Fed sejak 2008",
       "Neraca bank sentral The Fed, ECB, BoJ, dan gabungan G3",
-      "Tampilkan neraca g3 di Bank Sentral Dunia"
+      "Tampilkan neraca g3 di CentralBankDex"
      ]
     },
     {
      "id": "tab-rates",
-     "title": "Suku Bunga & Kurva Imbal Hasil (Bank Sentral Dunia)",
+     "title": "Suku Bunga & Kurva Imbal Hasil (CentralBankDex)",
      "description": "Suku bunga kebijakan AS, imbal hasil Treasury, spread 10Y–2Y, dan periode inversi.",
      "tools": [
       "us_rates",
@@ -1609,13 +1607,13 @@
      ],
      "examples": [
       "Suku bunga kebijakan AS, imbal hasil Treasury, spread 10Y–2Y, dan periode inversi",
-      "Tampilkan suku bunga & kurva imbal hasil di Bank Sentral Dunia",
-      "Suku Bunga & Kurva Imbal Hasil Bank Sentral Dunia"
+      "Tampilkan suku bunga & kurva imbal hasil di CentralBankDex",
+      "Suku Bunga & Kurva Imbal Hasil CentralBankDex"
      ]
     },
     {
      "id": "tab-money",
-     "title": "Uang Beredar (Bank Sentral Dunia)",
+     "title": "Uang Beredar (CentralBankDex)",
      "description": "Uang beredar (M2/broad money) AS dan negara lain.",
      "tools": [
       "country_money"
@@ -1623,47 +1621,47 @@
      "examples": [
       "Pertumbuhan uang beredar Indonesia",
       "Uang beredar",
-      "Tampilkan uang beredar di Bank Sentral Dunia"
+      "Tampilkan uang beredar di CentralBankDex"
      ]
     },
     {
      "id": "tab-countries",
-     "title": "Peta Negara (Bank Sentral Dunia)",
+     "title": "Peta Negara (CentralBankDex)",
      "description": "Peta per negara untuk indikator Dex ini.",
      "tools": [
       "rank_countries"
      ],
      "examples": [
       "Peta per negara untuk indikator Dex ini",
-      "Tampilkan peta negara di Bank Sentral Dunia",
-      "Peta Negara Bank Sentral Dunia"
+      "Tampilkan peta negara di CentralBankDex",
+      "Peta Negara CentralBankDex"
      ]
     },
     {
      "id": "tab-regimes",
-     "title": "Label Rezim (Bank Sentral Dunia)",
+     "title": "Label Rezim (CentralBankDex)",
      "description": "Label rezim likuiditas buatan penyedia dataset (ditandai sebagai label penyedia, bukan fakta). (penyedia)",
      "tools": [
       "provider_labels"
      ],
      "examples": [
       "Label rezim likuiditas buatan penyedia dataset",
-      "Tampilkan label rezim di Bank Sentral Dunia",
-      "Label Rezim Bank Sentral Dunia"
+      "Tampilkan label rezim di CentralBankDex",
+      "Label Rezim CentralBankDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Bank Sentral Dunia",
+     "title": "Jelaskan data & keterbatasan CentralBankDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Bank Sentral Dunia sampai kapan?",
-      "Dari mana data Bank Sentral Dunia?",
-      "Apa keterbatasan data Bank Sentral Dunia?"
+      "Data CentralBankDex sampai kapan?",
+      "Dari mana data CentralBankDex?",
+      "Apa keterbatasan data CentralBankDex?"
      ]
     }
    ],
@@ -1687,7 +1685,7 @@
   {
    "id": "inflationdex",
    "dexId": "inflationdex",
-   "name": "Agen Inflasi Dunia",
+   "name": "Agen InflationDex",
    "role": {
     "id": "Analis inflasi & biaya hidup antarnegara",
     "en": "Inflation & cost of living across countries"
@@ -1709,52 +1707,51 @@
     "country_inflation",
     "cost_items",
     "region_summary",
-    "compare_countries",
-    "live_latest"
+    "compare_countries"
    ],
    "skills": [
     {
      "id": "tab-map",
-     "title": "Peta Inflasi (Inflasi Dunia)",
+     "title": "Peta Inflasi (InflationDex)",
      "description": "Peta inflasi antarnegara (tahun data ditampilkan).",
      "tools": [
       "inflation_rank"
      ],
      "examples": [
       "Peta inflasi antarnegara",
-      "Tampilkan peta inflasi di Inflasi Dunia",
-      "Peta Inflasi Inflasi Dunia"
+      "Tampilkan peta inflasi di InflationDex",
+      "Peta Inflasi InflationDex"
      ]
     },
     {
      "id": "tab-rankings",
-     "title": "Peringkat (Inflasi Dunia)",
+     "title": "Peringkat (InflationDex)",
      "description": "Peringkat terurut berdasarkan metrik pilihan.",
      "tools": [
       "inflation_rank"
      ],
      "examples": [
       "Peringkat terurut berdasarkan metrik pilihan",
-      "Tampilkan peringkat di Inflasi Dunia",
-      "Peringkat Inflasi Dunia"
+      "Tampilkan peringkat di InflationDex",
+      "Peringkat InflationDex"
      ]
     },
     {
      "id": "tab-goods",
-     "title": "Biaya Barang (Inflasi Dunia)",
+     "title": "Biaya Barang (InflationDex)",
      "description": "Harga barang & jasa sehari-hari antarnegara (roti, transport, sewa, utilitas).",
      "tools": [
       "cost_items"
      ],
      "examples": [
       "Harga barang & jasa sehari-hari antarnegara",
-      "Tampilkan biaya barang di Inflasi Dunia",
-      "Biaya Barang Inflasi Dunia"
+      "Tampilkan biaya barang di InflationDex",
+      "Biaya Barang InflationDex"
      ]
     },
     {
      "id": "tab-regions",
-     "title": "Wilayah & Pendapatan (Inflasi Dunia)",
+     "title": "Wilayah & Pendapatan (InflationDex)",
      "description": "Ringkasan per wilayah dunia dan kelompok pendapatan.",
      "tools": [
       "region_summary",
@@ -1762,22 +1759,22 @@
      ],
      "examples": [
       "Ringkasan per wilayah dunia dan kelompok pendapatan",
-      "Tampilkan wilayah & pendapatan di Inflasi Dunia",
-      "Wilayah & Pendapatan Inflasi Dunia"
+      "Tampilkan wilayah & pendapatan di InflationDex",
+      "Wilayah & Pendapatan InflationDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Inflasi Dunia",
+     "title": "Jelaskan data & keterbatasan InflationDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Inflasi Dunia sampai kapan?",
-      "Dari mana data Inflasi Dunia?",
-      "Apa keterbatasan data Inflasi Dunia?"
+      "Data InflationDex sampai kapan?",
+      "Dari mana data InflationDex?",
+      "Apa keterbatasan data InflationDex?"
      ]
     }
    ],
@@ -1801,7 +1798,7 @@
   {
    "id": "startupdex",
    "dexId": "startupdex",
-   "name": "Agen Pendanaan Startup",
+   "name": "Agen StartupDex",
    "role": {
     "id": "Analis pendanaan startup global",
     "en": "Global startup funding rounds 2019–2026"
@@ -1829,20 +1826,20 @@
    "skills": [
     {
      "id": "tab-overview",
-     "title": "Ringkasan (Pendanaan Startup)",
+     "title": "Ringkasan (StartupDex)",
      "description": "Ringkasan utama dataset Dex ini dalam kartu & grafik.",
      "tools": [
       "funding_summary"
      ],
      "examples": [
       "Ringkasan utama dataset Dex ini dalam kartu & grafik",
-      "Tampilkan ringkasan di Pendanaan Startup",
-      "Ringkasan Pendanaan Startup"
+      "Tampilkan ringkasan di StartupDex",
+      "Ringkasan StartupDex"
      ]
     },
     {
      "id": "tab-stages",
-     "title": "Tahapan (Pendanaan Startup)",
+     "title": "Tahapan (StartupDex)",
      "description": "Pendanaan startup per tahap (Seed, Series A, dst.) dan median ukurannya. (Stage)",
      "tools": [
       "median_round",
@@ -1851,25 +1848,25 @@
      "examples": [
       "Median Seed vs Series A",
       "Pendanaan startup per tahap",
-      "Tampilkan tahapan di Pendanaan Startup"
+      "Tampilkan tahapan di StartupDex"
      ]
     },
     {
      "id": "tab-countries",
-     "title": "Negara & Sektor (Pendanaan Startup)",
+     "title": "Negara & Sektor (StartupDex)",
      "description": "Pendanaan startup per negara dan sektor.",
      "tools": [
       "funding_summary"
      ],
      "examples": [
       "Pendanaan startup per negara dan sektor",
-      "Tampilkan negara & sektor di Pendanaan Startup",
-      "Negara & Sektor Pendanaan Startup"
+      "Tampilkan negara & sektor di StartupDex",
+      "Negara & Sektor StartupDex"
      ]
     },
     {
      "id": "tab-mega",
-     "title": "Mega-round (Pendanaan Startup)",
+     "title": "Mega-round (StartupDex)",
      "description": "Putaran pendanaan ≥ US$100 juta dan porsinya terhadap total.",
      "tools": [
       "mega_rounds"
@@ -1877,12 +1874,12 @@
      "examples": [
       "Mega-round 2025",
       "Putaran pendanaan ≥ US$100 juta dan porsinya terhadap total",
-      "Tampilkan mega-round di Pendanaan Startup"
+      "Tampilkan mega-round di StartupDex"
      ]
     },
     {
      "id": "tab-search",
-     "title": "Cari Putaran (Pendanaan Startup)",
+     "title": "Cari Putaran (StartupDex)",
      "description": "Cari putaran pendanaan startup berdasarkan perusahaan, tahap, negara, sektor, atau investor.",
      "tools": [
       "rounds_search",
@@ -1891,21 +1888,21 @@
      "examples": [
       "Investor yang paling sering memimpin",
       "Cari putaran pendanaan startup berdasarkan perusahaan, tahap, negara, sektor, atau investor",
-      "Tampilkan cari putaran di Pendanaan Startup"
+      "Tampilkan cari putaran di StartupDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Pendanaan Startup",
+     "title": "Jelaskan data & keterbatasan StartupDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Pendanaan Startup sampai kapan?",
-      "Dari mana data Pendanaan Startup?",
-      "Apa keterbatasan data Pendanaan Startup?"
+      "Data StartupDex sampai kapan?",
+      "Dari mana data StartupDex?",
+      "Apa keterbatasan data StartupDex?"
      ]
     }
    ],
@@ -1931,7 +1928,7 @@
   {
    "id": "vcdex",
    "dexId": "vcdex",
-   "name": "Agen Direktori Investor",
+   "name": "Agen VCDex",
    "role": {
     "id": "Analis direktori investor startup",
     "en": "Startup investor directory 2026"
@@ -1958,7 +1955,7 @@
    "skills": [
     {
      "id": "tab-directory",
-     "title": "Direktori (Direktori Investor)",
+     "title": "Direktori (VCDex)",
      "description": "Direktori investor yang bisa difilter (tipe, negara, tahap, jumlah deal).",
      "tools": [
       "investor_search"
@@ -1966,25 +1963,25 @@
      "examples": [
       "Investor dengan deal terbanyak",
       "Direktori investor yang bisa difilter",
-      "Tampilkan direktori di Direktori Investor"
+      "Tampilkan direktori di VCDex"
      ]
     },
     {
      "id": "tab-rankings",
-     "title": "Peringkat (Direktori Investor)",
+     "title": "Peringkat (VCDex)",
      "description": "Peringkat terurut berdasarkan metrik pilihan.",
      "tools": [
       "rank_investors"
      ],
      "examples": [
       "Peringkat terurut berdasarkan metrik pilihan",
-      "Tampilkan peringkat di Direktori Investor",
-      "Peringkat Direktori Investor"
+      "Tampilkan peringkat di VCDex",
+      "Peringkat VCDex"
      ]
     },
     {
      "id": "tab-stages",
-     "title": "Stage Mix (Direktori Investor)",
+     "title": "Stage Mix (VCDex)",
      "description": "Komposisi tahap pendanaan yang diikuti investor.",
      "tools": [
       "stage_mix"
@@ -1992,34 +1989,34 @@
      "examples": [
       "Stage mix Sequoia Capital",
       "Komposisi tahap pendanaan yang diikuti investor",
-      "Tampilkan stage mix di Direktori Investor"
+      "Tampilkan stage mix di VCDex"
      ]
     },
     {
      "id": "tab-countries",
-     "title": "Negara (Direktori Investor)",
+     "title": "Negara (VCDex)",
      "description": "Statistik per negara untuk cakupan Dex ini.",
      "tools": [
       "country_summary"
      ],
      "examples": [
       "Statistik per negara untuk cakupan Dex ini",
-      "Tampilkan negara di Direktori Investor",
-      "Negara Direktori Investor"
+      "Tampilkan negara di VCDex",
+      "Negara VCDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Direktori Investor",
+     "title": "Jelaskan data & keterbatasan VCDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Direktori Investor sampai kapan?",
-      "Dari mana data Direktori Investor?",
-      "Apa keterbatasan data Direktori Investor?"
+      "Data VCDex sampai kapan?",
+      "Dari mana data VCDex?",
+      "Apa keterbatasan data VCDex?"
      ]
     }
    ],
@@ -2045,7 +2042,7 @@
   {
    "id": "vcnetworkdex",
    "dexId": "vcnetworkdex",
-   "name": "Agen Jaringan Investor",
+   "name": "Agen VCNetworkDex",
    "role": {
     "id": "Analis jaringan co-investment",
     "en": "Co-investment network among VC investors"
@@ -2072,7 +2069,7 @@
    "skills": [
     {
      "id": "tab-graph",
-     "title": "Graf Jaringan (Jaringan Investor)",
+     "title": "Graf Jaringan (VCNetworkDex)",
      "description": "Graf ego jaringan co-investment investor (≤ 50 node) dengan ketebalan garis = jumlah deal bersama.",
      "tools": [
       "ego_graph",
@@ -2081,12 +2078,12 @@
      "examples": [
       "Ego-graph Tiger Global",
       "Graf ego jaringan co-investment investor",
-      "Tampilkan graf jaringan di Jaringan Investor"
+      "Tampilkan graf jaringan di VCNetworkDex"
      ]
     },
     {
      "id": "tab-pairs",
-     "title": "Pasangan Teratas (Jaringan Investor)",
+     "title": "Pasangan Teratas (VCNetworkDex)",
      "description": "Pasangan investor yang paling sering berinvestasi bersama.",
      "tools": [
       "top_pairs",
@@ -2095,34 +2092,34 @@
      "examples": [
       "Pasangan co-investor terkuat",
       "Pasangan investor yang paling sering berinvestasi bersama",
-      "Tampilkan pasangan teratas di Jaringan Investor"
+      "Tampilkan pasangan teratas di VCNetworkDex"
      ]
     },
     {
      "id": "tab-investors",
-     "title": "Investor (Jaringan Investor)",
+     "title": "Investor (VCNetworkDex)",
      "description": "Profil investor dalam jaringan: mitra co-investment terbanyak & statistik.",
      "tools": [
       "investor_partners"
      ],
      "examples": [
       "Profil investor dalam jaringan: mitra co-investment terbanyak & statistik",
-      "Tampilkan investor di Jaringan Investor",
-      "Investor Jaringan Investor"
+      "Tampilkan investor di VCNetworkDex",
+      "Investor VCNetworkDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Jaringan Investor",
+     "title": "Jelaskan data & keterbatasan VCNetworkDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Jaringan Investor sampai kapan?",
-      "Dari mana data Jaringan Investor?",
-      "Apa keterbatasan data Jaringan Investor?"
+      "Data VCNetworkDex sampai kapan?",
+      "Dari mana data VCNetworkDex?",
+      "Apa keterbatasan data VCNetworkDex?"
      ]
     }
    ],
@@ -2147,7 +2144,7 @@
   {
    "id": "opencompanydex",
    "dexId": "opencompanydex",
-   "name": "Agen Data Perusahaan",
+   "name": "Agen OpenCompanyDex",
    "role": {
     "id": "Analis demografi perusahaan global",
     "en": "Directory of 100k companies (Open Company Database sample)"
@@ -2173,20 +2170,20 @@
    "skills": [
     {
      "id": "tab-map",
-     "title": "Peta Negara (Data Perusahaan)",
+     "title": "Peta Negara (OpenCompanyDex)",
      "description": "Peta per negara untuk indikator Dex ini.",
      "tools": [
       "company_counts"
      ],
      "examples": [
       "Peta per negara untuk indikator Dex ini",
-      "Tampilkan peta negara di Data Perusahaan",
-      "Peta Negara Data Perusahaan"
+      "Tampilkan peta negara di OpenCompanyDex",
+      "Peta Negara OpenCompanyDex"
      ]
     },
     {
      "id": "tab-sectors",
-     "title": "Sektor & Industri (Data Perusahaan)",
+     "title": "Sektor & Industri (OpenCompanyDex)",
      "description": "Jumlah & karakteristik perusahaan per sektor dan industri.",
      "tools": [
       "company_counts",
@@ -2195,12 +2192,12 @@
      "examples": [
       "Median tahun berdiri per sektor",
       "Jumlah & karakteristik perusahaan per sektor dan industri",
-      "Tampilkan sektor & industri di Data Perusahaan"
+      "Tampilkan sektor & industri di OpenCompanyDex"
      ]
     },
     {
      "id": "tab-status",
-     "title": "Status & Pendanaan (Data Perusahaan)",
+     "title": "Status & Pendanaan (OpenCompanyDex)",
      "description": "Status perusahaan (aktif/tutup/diakuisisi) dan porsi yang pernah didanai.",
      "tools": [
       "funded_share"
@@ -2208,34 +2205,34 @@
      "examples": [
       "Status perusahaan (tutup/diakuisisi)",
       "Status perusahaan",
-      "Tampilkan status & pendanaan di Data Perusahaan"
+      "Tampilkan status & pendanaan di OpenCompanyDex"
      ]
     },
     {
      "id": "tab-search",
-     "title": "Cari Perusahaan (Data Perusahaan)",
+     "title": "Cari Perusahaan (OpenCompanyDex)",
      "description": "Cari perusahaan di direktori berdasarkan nama, negara, atau sektor.",
      "tools": [
       "company_search"
      ],
      "examples": [
       "Cari perusahaan di direktori berdasarkan nama, negara, atau sektor",
-      "Tampilkan cari perusahaan di Data Perusahaan",
-      "Cari Perusahaan Data Perusahaan"
+      "Tampilkan cari perusahaan di OpenCompanyDex",
+      "Cari Perusahaan OpenCompanyDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Data Perusahaan",
+     "title": "Jelaskan data & keterbatasan OpenCompanyDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Data Perusahaan sampai kapan?",
-      "Dari mana data Data Perusahaan?",
-      "Apa keterbatasan data Data Perusahaan?"
+      "Data OpenCompanyDex sampai kapan?",
+      "Dari mana data OpenCompanyDex?",
+      "Apa keterbatasan data OpenCompanyDex?"
      ]
     }
    ],
@@ -2261,7 +2258,7 @@
   {
    "id": "salarydex",
    "dexId": "salarydex",
-   "name": "Agen Gaji Global",
+   "name": "Agen SalaryDex",
    "role": {
     "id": "Analis gaji global per skill/peran/negara",
     "en": "Global salaries by skill & role (100k job-posting sample)"
@@ -2288,7 +2285,7 @@
    "skills": [
     {
      "id": "tab-benchmark",
-     "title": "Kalkulator Benchmark (Gaji Global)",
+     "title": "Kalkulator Benchmark (SalaryDex)",
      "description": "Bandingkan gaji dengan median/persentil berdasarkan negara, peran, senioritas, dan skill.",
      "tools": [
       "salary_stats",
@@ -2296,13 +2293,13 @@
      ],
      "examples": [
       "Bandingkan gaji dengan median/persentil berdasarkan negara, peran, senioritas, dan skill",
-      "Tampilkan kalkulator benchmark di Gaji Global",
-      "Kalkulator Benchmark Gaji Global"
+      "Tampilkan kalkulator benchmark di SalaryDex",
+      "Kalkulator Benchmark SalaryDex"
      ]
     },
     {
      "id": "tab-countries",
-     "title": "Negara (Gaji Global)",
+     "title": "Negara (SalaryDex)",
      "description": "Statistik per negara untuk cakupan Dex ini.",
      "tools": [
       "compare_salaries"
@@ -2310,25 +2307,25 @@
      "examples": [
       "Negara dengan median gaji tertinggi",
       "Statistik per negara untuk cakupan Dex ini",
-      "Tampilkan negara di Gaji Global"
+      "Tampilkan negara di SalaryDex"
      ]
     },
     {
      "id": "tab-roles",
-     "title": "Peran & Senioritas (Gaji Global)",
+     "title": "Peran & Senioritas (SalaryDex)",
      "description": "Gaji berdasarkan keluarga peran dan tingkat senioritas.",
      "tools": [
       "salary_stats"
      ],
      "examples": [
       "Gaji berdasarkan keluarga peran dan tingkat senioritas",
-      "Tampilkan peran & senioritas di Gaji Global",
-      "Peran & Senioritas Gaji Global"
+      "Tampilkan peran & senioritas di SalaryDex",
+      "Peran & Senioritas SalaryDex"
      ]
     },
     {
      "id": "tab-skills",
-     "title": "Skill (Gaji Global)",
+     "title": "Skill (SalaryDex)",
      "description": "Skill paling dicari dan premi gaji per skill.",
      "tools": [
       "top_skills",
@@ -2337,21 +2334,21 @@
      "examples": [
       "Skill dengan premi gaji tertinggi",
       "Skill paling dicari dan premi gaji per skill",
-      "Tampilkan skill di Gaji Global"
+      "Tampilkan skill di SalaryDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Gaji Global",
+     "title": "Jelaskan data & keterbatasan SalaryDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Gaji Global sampai kapan?",
-      "Dari mana data Gaji Global?",
-      "Apa keterbatasan data Gaji Global?"
+      "Data SalaryDex sampai kapan?",
+      "Dari mana data SalaryDex?",
+      "Apa keterbatasan data SalaryDex?"
      ]
     }
    ],
@@ -2377,7 +2374,7 @@
   {
    "id": "costlivingdex",
    "dexId": "costlivingdex",
-   "name": "Agen Biaya Hidup Kota",
+   "name": "Agen CostLivingDex",
    "role": {
     "id": "Analis biaya & kualitas hidup kota",
     "en": "Cost & quality of life in 148 cities (synthetic data)"
@@ -2404,33 +2401,33 @@
    "skills": [
     {
      "id": "tab-rankings",
-     "title": "Peringkat Kota (Biaya Hidup Kota)",
+     "title": "Peringkat Kota (CostLivingDex)",
      "description": "Peringkat kota menurut indeks biaya hidup, sewa, kualitas hidup, dll. (data sintetis).",
      "tools": [
       "city_rank"
      ],
      "examples": [
       "Peringkat kota menurut indeks biaya hidup, sewa, kualitas hidup, dll",
-      "Tampilkan peringkat kota di Biaya Hidup Kota",
-      "Peringkat Kota Biaya Hidup Kota"
+      "Tampilkan peringkat kota di CostLivingDex",
+      "Peringkat Kota CostLivingDex"
      ]
     },
     {
      "id": "tab-profile",
-     "title": "Profil Kota (Biaya Hidup Kota)",
+     "title": "Profil Kota (CostLivingDex)",
      "description": "Profil lengkap satu kota (biaya, kualitas hidup, keamanan, polusi, internet).",
      "tools": [
       "city_profile"
      ],
      "examples": [
       "Profil lengkap satu kota",
-      "Tampilkan profil kota di Biaya Hidup Kota",
-      "Profil Kota Biaya Hidup Kota"
+      "Tampilkan profil kota di CostLivingDex",
+      "Profil Kota CostLivingDex"
      ]
     },
     {
      "id": "tab-compare",
-     "title": "Bandingkan (Biaya Hidup Kota)",
+     "title": "Bandingkan (CostLivingDex)",
      "description": "Bandingkan 2–5 entitas dalam satu grafik (rebase 100) plus tabel metrik.",
      "tools": [
       "compare_cities"
@@ -2438,12 +2435,12 @@
      "examples": [
       "Bandingkan Jakarta dan Singapura",
       "Bandingkan 2–5 entitas dalam satu grafik",
-      "Tampilkan bandingkan di Biaya Hidup Kota"
+      "Tampilkan bandingkan di CostLivingDex"
      ]
     },
     {
      "id": "tab-change",
-     "title": "Perubahan 2023→2024 (Biaya Hidup Kota)",
+     "title": "Perubahan 2023→2024 (CostLivingDex)",
      "description": "Perubahan indeks kota antara dua survei.",
      "tools": [
       "survey_change",
@@ -2452,21 +2449,21 @@
      "examples": [
       "Perubahan indeks 2023→2024",
       "Perubahan indeks kota antara dua survei",
-      "Tampilkan perubahan 2023→2024 di Biaya Hidup Kota"
+      "Tampilkan perubahan 2023→2024 di CostLivingDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Biaya Hidup Kota",
+     "title": "Jelaskan data & keterbatasan CostLivingDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Biaya Hidup Kota sampai kapan?",
-      "Dari mana data Biaya Hidup Kota?",
-      "Apa keterbatasan data Biaya Hidup Kota?"
+      "Data CostLivingDex sampai kapan?",
+      "Dari mana data CostLivingDex?",
+      "Apa keterbatasan data CostLivingDex?"
      ]
     }
    ],
@@ -2490,7 +2487,7 @@
   {
    "id": "idhousingdex",
    "dexId": "idhousingdex",
-   "name": "Agen Rumah Subsidi",
+   "name": "Agen IDHousingDex",
    "role": {
     "id": "Analis perumahan (subsidi & komersil) Indonesia",
     "en": "Indonesian subsidised & commercial housing (project listings)"
@@ -2518,20 +2515,20 @@
    "skills": [
     {
      "id": "tab-overview",
-     "title": "Ringkasan (Rumah Subsidi)",
+     "title": "Ringkasan (IDHousingDex)",
      "description": "Ringkasan utama dataset Dex ini dalam kartu & grafik.",
      "tools": [
       "housing_stats"
      ],
      "examples": [
       "Ringkasan utama dataset Dex ini dalam kartu & grafik",
-      "Tampilkan ringkasan di Rumah Subsidi",
-      "Ringkasan Rumah Subsidi"
+      "Tampilkan ringkasan di IDHousingDex",
+      "Ringkasan IDHousingDex"
      ]
     },
     {
      "id": "tab-provinces",
-     "title": "Provinsi & Kota (Rumah Subsidi)",
+     "title": "Provinsi & Kota (IDHousingDex)",
      "description": "Statistik perumahan per provinsi dan kota/kabupaten.",
      "tools": [
       "housing_stats",
@@ -2540,12 +2537,12 @@
      "examples": [
       "Provinsi dengan listing terbanyak",
       "Statistik perumahan per provinsi dan kota/kabupaten",
-      "Tampilkan provinsi & kota di Rumah Subsidi"
+      "Tampilkan provinsi & kota di IDHousingDex"
      ]
     },
     {
      "id": "tab-map",
-     "title": "Peta Proyek (Rumah Subsidi)",
+     "title": "Peta Proyek (IDHousingDex)",
      "description": "Peta titik proyek perumahan (ter-cluster) dengan filter provinsi & status subsidi.",
      "tools": [
       "map_points"
@@ -2553,12 +2550,12 @@
      "examples": [
       "Peta proyek di Jawa Barat",
       "Peta titik proyek perumahan",
-      "Tampilkan peta proyek di Rumah Subsidi"
+      "Tampilkan peta proyek di IDHousingDex"
      ]
     },
     {
      "id": "tab-specs",
-     "title": "Spesifikasi (Rumah Subsidi)",
+     "title": "Spesifikasi (IDHousingDex)",
      "description": "Spesifikasi rumah (kamar, lantai, material) per segmen.",
      "tools": [
       "specs_breakdown"
@@ -2566,12 +2563,12 @@
      "examples": [
       "Spesifikasi umum rumah subsidi",
       "Spesifikasi rumah",
-      "Tampilkan spesifikasi di Rumah Subsidi"
+      "Tampilkan spesifikasi di IDHousingDex"
      ]
     },
     {
      "id": "tab-developers",
-     "title": "Pengembang (Rumah Subsidi)",
+     "title": "Pengembang (IDHousingDex)",
      "description": "Ringkasan pengembang & asosiasi pengembang perumahan.",
      "tools": [
       "developer_summary",
@@ -2580,21 +2577,21 @@
      "examples": [
       "Asosiasi pengembang terbesar",
       "Ringkasan pengembang & asosiasi pengembang perumahan",
-      "Tampilkan pengembang di Rumah Subsidi"
+      "Tampilkan pengembang di IDHousingDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Rumah Subsidi",
+     "title": "Jelaskan data & keterbatasan IDHousingDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Rumah Subsidi sampai kapan?",
-      "Dari mana data Rumah Subsidi?",
-      "Apa keterbatasan data Rumah Subsidi?"
+      "Data IDHousingDex sampai kapan?",
+      "Dari mana data IDHousingDex?",
+      "Apa keterbatasan data IDHousingDex?"
      ]
     }
    ],
@@ -2618,7 +2615,7 @@
   {
    "id": "idfooddeliverydex",
    "dexId": "idfooddeliverydex",
-   "name": "Agen Harga Pesan-Antar Makanan",
+   "name": "Agen IDFoodDeliveryDex",
    "role": {
     "id": "Analis harga & markup food delivery Indonesia",
     "en": "Price benchmark of 10k Indonesian food-delivery menu items"
@@ -2645,7 +2642,7 @@
    "skills": [
     {
      "id": "tab-markup",
-     "title": "Ringkasan Markup (Harga Pesan-Antar Makanan)",
+     "title": "Ringkasan Markup (IDFoodDeliveryDex)",
      "description": "Ringkasan markup harga online vs dine-in, biaya kemasan, dan promo.",
      "tools": [
       "markup_stats",
@@ -2654,38 +2651,38 @@
      "examples": [
       "Median markup online vs dine-in",
       "Ringkasan markup harga online vs dine-in, biaya kemasan, dan promo",
-      "Tampilkan ringkasan markup di Harga Pesan-Antar Makanan"
+      "Tampilkan ringkasan markup di IDFoodDeliveryDex"
      ]
     },
     {
      "id": "tab-cities",
-     "title": "Kota (Harga Pesan-Antar Makanan)",
+     "title": "Kota (IDFoodDeliveryDex)",
      "description": "Statistik per kota (markup food delivery).",
      "tools": [
       "markup_stats"
      ],
      "examples": [
       "Statistik per kota",
-      "Tampilkan kota di Harga Pesan-Antar Makanan",
-      "Kota Harga Pesan-Antar Makanan"
+      "Tampilkan kota di IDFoodDeliveryDex",
+      "Kota IDFoodDeliveryDex"
      ]
     },
     {
      "id": "tab-cuisines",
-     "title": "Kuliner (Harga Pesan-Antar Makanan)",
+     "title": "Kuliner (IDFoodDeliveryDex)",
      "description": "Statistik per jenis kuliner (harga, markup, promo).",
      "tools": [
       "markup_stats"
      ],
      "examples": [
       "Statistik per jenis kuliner",
-      "Tampilkan kuliner di Harga Pesan-Antar Makanan",
-      "Kuliner Harga Pesan-Antar Makanan"
+      "Tampilkan kuliner di IDFoodDeliveryDex",
+      "Kuliner IDFoodDeliveryDex"
      ]
     },
     {
      "id": "tab-cloud-kitchen",
-     "title": "Cloud Kitchen (Harga Pesan-Antar Makanan)",
+     "title": "Cloud Kitchen (IDFoodDeliveryDex)",
      "description": "Perbandingan harga & markup cloud kitchen dengan restoran biasa.",
      "tools": [
       "provider_tiers"
@@ -2693,12 +2690,12 @@
      "examples": [
       "Cloud kitchen vs restoran biasa",
       "Perbandingan harga & markup cloud kitchen dengan restoran biasa",
-      "Tampilkan cloud kitchen di Harga Pesan-Antar Makanan"
+      "Tampilkan cloud kitchen di IDFoodDeliveryDex"
      ]
     },
     {
      "id": "tab-search",
-     "title": "Cari Menu (Harga Pesan-Antar Makanan)",
+     "title": "Cari Menu (IDFoodDeliveryDex)",
      "description": "Cari menu food delivery berdasarkan nama, kota, atau kuliner, lengkap dengan markup.",
      "tools": [
       "item_search"
@@ -2706,21 +2703,21 @@
      "examples": [
       "Cari menu nasi goreng di Bandung",
       "Cari menu food delivery berdasarkan nama, kota, atau kuliner, lengkap dengan markup",
-      "Tampilkan cari menu di Harga Pesan-Antar Makanan"
+      "Tampilkan cari menu di IDFoodDeliveryDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Harga Pesan-Antar Makanan",
+     "title": "Jelaskan data & keterbatasan IDFoodDeliveryDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Harga Pesan-Antar Makanan sampai kapan?",
-      "Dari mana data Harga Pesan-Antar Makanan?",
-      "Apa keterbatasan data Harga Pesan-Antar Makanan?"
+      "Data IDFoodDeliveryDex sampai kapan?",
+      "Dari mana data IDFoodDeliveryDex?",
+      "Apa keterbatasan data IDFoodDeliveryDex?"
      ]
     }
    ],
@@ -2745,7 +2742,7 @@
   {
    "id": "povertydex",
    "dexId": "povertydex",
-   "name": "Agen Kemiskinan Multidimensi",
+   "name": "Agen PovertyDex",
    "role": {
     "id": "Analis kemiskinan multidimensi (MPI)",
     "en": "Multidimensional Poverty Index (MPI) for 108 countries"
@@ -2771,7 +2768,7 @@
    "skills": [
     {
      "id": "tab-map",
-     "title": "Peta MPI (Kemiskinan Multidimensi)",
+     "title": "Peta MPI (PovertyDex)",
      "description": "Peta Indeks Kemiskinan Multidimensi per negara.",
      "tools": [
       "mpi_rank"
@@ -2779,25 +2776,25 @@
      "examples": [
       "MPI Indonesia",
       "Peta Indeks Kemiskinan Multidimensi per negara",
-      "Tampilkan peta mpi di Kemiskinan Multidimensi"
+      "Tampilkan peta mpi di PovertyDex"
      ]
     },
     {
      "id": "tab-rankings",
-     "title": "Peringkat (Kemiskinan Multidimensi)",
+     "title": "Peringkat (PovertyDex)",
      "description": "Peringkat terurut berdasarkan metrik pilihan.",
      "tools": [
       "mpi_rank"
      ],
      "examples": [
       "Peringkat terurut berdasarkan metrik pilihan",
-      "Tampilkan peringkat di Kemiskinan Multidimensi",
-      "Peringkat Kemiskinan Multidimensi"
+      "Tampilkan peringkat di PovertyDex",
+      "Peringkat PovertyDex"
      ]
     },
     {
      "id": "tab-dimensions",
-     "title": "Dimensi (Kemiskinan Multidimensi)",
+     "title": "Dimensi (PovertyDex)",
      "description": "Kontribusi 10 dimensi kemiskinan multidimensi per negara.",
      "tools": [
       "dimension_breakdown"
@@ -2805,12 +2802,12 @@
      "examples": [
       "Dimensi penyumbang terbesar kemiskinan Indonesia",
       "Kontribusi 10 dimensi kemiskinan multidimensi per negara",
-      "Tampilkan dimensi di Kemiskinan Multidimensi"
+      "Tampilkan dimensi di PovertyDex"
      ]
     },
     {
      "id": "tab-compare",
-     "title": "Bandingkan (Kemiskinan Multidimensi)",
+     "title": "Bandingkan (PovertyDex)",
      "description": "Bandingkan 2–5 entitas dalam satu grafik (rebase 100) plus tabel metrik.",
      "tools": [
       "compare_countries"
@@ -2818,21 +2815,21 @@
      "examples": [
       "Bandingkan Indonesia, India, Filipina",
       "Bandingkan 2–5 entitas dalam satu grafik",
-      "Tampilkan bandingkan di Kemiskinan Multidimensi"
+      "Tampilkan bandingkan di PovertyDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Kemiskinan Multidimensi",
+     "title": "Jelaskan data & keterbatasan PovertyDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Kemiskinan Multidimensi sampai kapan?",
-      "Dari mana data Kemiskinan Multidimensi?",
-      "Apa keterbatasan data Kemiskinan Multidimensi?"
+      "Data PovertyDex sampai kapan?",
+      "Dari mana data PovertyDex?",
+      "Apa keterbatasan data PovertyDex?"
      ]
     }
    ],
@@ -2857,7 +2854,7 @@
   {
    "id": "populationdex",
    "dexId": "populationdex",
-   "name": "Agen Berita Kependudukan",
+   "name": "Agen PopulationDex",
    "role": {
     "id": "Analis liputan berita kependudukan",
     "en": "Global population news coverage 2019–2026"
@@ -2889,7 +2886,7 @@
    "skills": [
     {
      "id": "tab-coverage",
-     "title": "Tren Liputan (Berita Kependudukan)",
+     "title": "Tren Liputan (PopulationDex)",
      "description": "Tren liputan berita per bulan/tahun per 10 ribu berita (bulan parsial ditandai).",
      "tools": [
       "coverage_trend",
@@ -2898,25 +2895,25 @@
      "examples": [
       "Tren liputan berita populasi",
       "Tren liputan berita per bulan/tahun per 10 ribu berita",
-      "Tampilkan tren liputan di Berita Kependudukan"
+      "Tampilkan tren liputan di PopulationDex"
      ]
     },
     {
      "id": "tab-geography",
-     "title": "Geografi (Berita Kependudukan)",
+     "title": "Geografi (PopulationDex)",
      "description": "Sebaran liputan berita per benua, negara, kota, atau negara bagian.",
      "tools": [
       "coverage_geo"
      ],
      "examples": [
       "Sebaran liputan berita per benua, negara, kota, atau negara bagian",
-      "Tampilkan geografi di Berita Kependudukan",
-      "Geografi Berita Kependudukan"
+      "Tampilkan geografi di PopulationDex",
+      "Geografi PopulationDex"
      ]
     },
     {
      "id": "tab-themes",
-     "title": "Tema & Organisasi (Berita Kependudukan)",
+     "title": "Tema & Organisasi (PopulationDex)",
      "description": "Tema dan organisasi yang paling sering muncul dalam liputan berita.",
      "tools": [
       "themes",
@@ -2925,12 +2922,12 @@
      "examples": [
       "Tema yang paling sering muncul",
       "Tema dan organisasi yang paling sering muncul dalam liputan berita",
-      "Tampilkan tema & organisasi di Berita Kependudukan"
+      "Tampilkan tema & organisasi di PopulationDex"
      ]
     },
     {
      "id": "tab-research",
-     "title": "Riset & Paten (Berita Kependudukan)",
+     "title": "Riset & Paten (PopulationDex)",
      "description": "Tren publikasi riset dan paten terkait topik berita.",
      "tools": [
       "research_trend",
@@ -2940,13 +2937,13 @@
      "examples": [
       "Riset akademik per tahun",
       "Tren publikasi riset dan paten terkait topik berita",
-      "Tampilkan riset & paten di Berita Kependudukan"
+      "Tampilkan riset & paten di PopulationDex"
      ]
     },
     {
      "id": "tab-findings",
-     "title": "Temuan Penyedia (Berita Kependudukan)",
-     "description": "Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Askfolio).",
+     "title": "Temuan Penyedia (PopulationDex)",
+     "description": "Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Finandex).",
      "tools": [
       "provider_findings",
       "sample_articles"
@@ -2954,21 +2951,21 @@
      "examples": [
       "Temuan penyedia grade A",
       "Temuan penyedia dataset berlabel grade A/B/C",
-      "Tampilkan temuan penyedia di Berita Kependudukan"
+      "Tampilkan temuan penyedia di PopulationDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Berita Kependudukan",
+     "title": "Jelaskan data & keterbatasan PopulationDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Berita Kependudukan sampai kapan?",
-      "Dari mana data Berita Kependudukan?",
-      "Apa keterbatasan data Berita Kependudukan?"
+      "Data PopulationDex sampai kapan?",
+      "Dari mana data PopulationDex?",
+      "Apa keterbatasan data PopulationDex?"
      ]
     }
    ],
@@ -2991,7 +2988,7 @@
   {
    "id": "homelessnessdex",
    "dexId": "homelessnessdex",
-   "name": "Agen Berita Tunawisma",
+   "name": "Agen HomelessnessDex",
    "role": {
     "id": "Analis liputan berita tunawisma",
     "en": "Global homelessness news coverage 2019–2026"
@@ -3023,7 +3020,7 @@
    "skills": [
     {
      "id": "tab-coverage",
-     "title": "Tren Liputan (Berita Tunawisma)",
+     "title": "Tren Liputan (HomelessnessDex)",
      "description": "Tren liputan berita per bulan/tahun per 10 ribu berita (bulan parsial ditandai).",
      "tools": [
       "coverage_trend",
@@ -3032,25 +3029,25 @@
      "examples": [
       "Tren liputan tunawisma per bulan",
       "Tren liputan berita per bulan/tahun per 10 ribu berita",
-      "Tampilkan tren liputan di Berita Tunawisma"
+      "Tampilkan tren liputan di HomelessnessDex"
      ]
     },
     {
      "id": "tab-geography",
-     "title": "Geografi (Berita Tunawisma)",
+     "title": "Geografi (HomelessnessDex)",
      "description": "Sebaran liputan berita per benua, negara, kota, atau negara bagian.",
      "tools": [
       "coverage_geo"
      ],
      "examples": [
       "Sebaran liputan berita per benua, negara, kota, atau negara bagian",
-      "Tampilkan geografi di Berita Tunawisma",
-      "Geografi Berita Tunawisma"
+      "Tampilkan geografi di HomelessnessDex",
+      "Geografi HomelessnessDex"
      ]
     },
     {
      "id": "tab-themes",
-     "title": "Tema & Organisasi (Berita Tunawisma)",
+     "title": "Tema & Organisasi (HomelessnessDex)",
      "description": "Tema dan organisasi yang paling sering muncul dalam liputan berita.",
      "tools": [
       "themes",
@@ -3058,13 +3055,13 @@
      ],
      "examples": [
       "Tema dan organisasi yang paling sering muncul dalam liputan berita",
-      "Tampilkan tema & organisasi di Berita Tunawisma",
-      "Tema & Organisasi Berita Tunawisma"
+      "Tampilkan tema & organisasi di HomelessnessDex",
+      "Tema & Organisasi HomelessnessDex"
      ]
     },
     {
      "id": "tab-research",
-     "title": "Riset & Paten (Berita Tunawisma)",
+     "title": "Riset & Paten (HomelessnessDex)",
      "description": "Tren publikasi riset dan paten terkait topik berita.",
      "tools": [
       "research_trend",
@@ -3073,14 +3070,14 @@
      ],
      "examples": [
       "Tren publikasi riset dan paten terkait topik berita",
-      "Tampilkan riset & paten di Berita Tunawisma",
-      "Riset & Paten Berita Tunawisma"
+      "Tampilkan riset & paten di HomelessnessDex",
+      "Riset & Paten HomelessnessDex"
      ]
     },
     {
      "id": "tab-findings",
-     "title": "Temuan Penyedia (Berita Tunawisma)",
-     "description": "Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Askfolio).",
+     "title": "Temuan Penyedia (HomelessnessDex)",
+     "description": "Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Finandex).",
      "tools": [
       "provider_findings",
       "sample_articles"
@@ -3088,21 +3085,21 @@
      "examples": [
       "Temuan penyedia",
       "Temuan penyedia dataset berlabel grade A/B/C",
-      "Tampilkan temuan penyedia di Berita Tunawisma"
+      "Tampilkan temuan penyedia di HomelessnessDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Berita Tunawisma",
+     "title": "Jelaskan data & keterbatasan HomelessnessDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Berita Tunawisma sampai kapan?",
-      "Dari mana data Berita Tunawisma?",
-      "Apa keterbatasan data Berita Tunawisma?"
+      "Data HomelessnessDex sampai kapan?",
+      "Dari mana data HomelessnessDex?",
+      "Apa keterbatasan data HomelessnessDex?"
      ]
     }
    ],
@@ -3126,7 +3123,7 @@
   {
    "id": "housingdex",
    "dexId": "housingdex",
-   "name": "Agen Berita Perumahan",
+   "name": "Agen HousingDex",
    "role": {
     "id": "Analis liputan berita perumahan global",
     "en": "Global housing news coverage 2019–2026"
@@ -3158,7 +3155,7 @@
    "skills": [
     {
      "id": "tab-coverage",
-     "title": "Tren Liputan (Berita Perumahan)",
+     "title": "Tren Liputan (HousingDex)",
      "description": "Tren liputan berita per bulan/tahun per 10 ribu berita (bulan parsial ditandai).",
      "tools": [
       "coverage_trend",
@@ -3167,25 +3164,25 @@
      "examples": [
       "Tren liputan perumahan",
       "Tren liputan berita per bulan/tahun per 10 ribu berita",
-      "Tampilkan tren liputan di Berita Perumahan"
+      "Tampilkan tren liputan di HousingDex"
      ]
     },
     {
      "id": "tab-geography",
-     "title": "Geografi (Berita Perumahan)",
+     "title": "Geografi (HousingDex)",
      "description": "Sebaran liputan berita per benua, negara, kota, atau negara bagian.",
      "tools": [
       "coverage_geo"
      ],
      "examples": [
       "Sebaran liputan berita per benua, negara, kota, atau negara bagian",
-      "Tampilkan geografi di Berita Perumahan",
-      "Geografi Berita Perumahan"
+      "Tampilkan geografi di HousingDex",
+      "Geografi HousingDex"
      ]
     },
     {
      "id": "tab-themes",
-     "title": "Tema & Organisasi (Berita Perumahan)",
+     "title": "Tema & Organisasi (HousingDex)",
      "description": "Tema dan organisasi yang paling sering muncul dalam liputan berita.",
      "tools": [
       "themes",
@@ -3194,12 +3191,12 @@
      "examples": [
       "Tema perumahan teratas",
       "Tema dan organisasi yang paling sering muncul dalam liputan berita",
-      "Tampilkan tema & organisasi di Berita Perumahan"
+      "Tampilkan tema & organisasi di HousingDex"
      ]
     },
     {
      "id": "tab-research",
-     "title": "Riset & Paten (Berita Perumahan)",
+     "title": "Riset & Paten (HousingDex)",
      "description": "Tren publikasi riset dan paten terkait topik berita.",
      "tools": [
       "research_trend",
@@ -3208,36 +3205,36 @@
      ],
      "examples": [
       "Tren publikasi riset dan paten terkait topik berita",
-      "Tampilkan riset & paten di Berita Perumahan",
-      "Riset & Paten Berita Perumahan"
+      "Tampilkan riset & paten di HousingDex",
+      "Riset & Paten HousingDex"
      ]
     },
     {
      "id": "tab-findings",
-     "title": "Temuan Penyedia (Berita Perumahan)",
-     "description": "Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Askfolio).",
+     "title": "Temuan Penyedia (HousingDex)",
+     "description": "Temuan penyedia dataset berlabel grade A/B/C (bukan hitungan Finandex).",
      "tools": [
       "provider_findings",
       "sample_articles"
      ],
      "examples": [
       "Temuan penyedia dataset berlabel grade A/B/C",
-      "Tampilkan temuan penyedia di Berita Perumahan",
-      "Temuan Penyedia Berita Perumahan"
+      "Tampilkan temuan penyedia di HousingDex",
+      "Temuan Penyedia HousingDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Berita Perumahan",
+     "title": "Jelaskan data & keterbatasan HousingDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Berita Perumahan sampai kapan?",
-      "Dari mana data Berita Perumahan?",
-      "Apa keterbatasan data Berita Perumahan?"
+      "Data HousingDex sampai kapan?",
+      "Dari mana data HousingDex?",
+      "Apa keterbatasan data HousingDex?"
      ]
     }
    ],
@@ -3261,7 +3258,7 @@
   {
    "id": "fintechdex",
    "dexId": "fintechdex",
-   "name": "Agen Ulasan Aplikasi Fintech",
+   "name": "Agen FintechDex",
    "role": {
     "id": "Analis sentimen & adopsi produk fintech",
     "en": "Fintech product adoption & reviews from 14 platforms"
@@ -3288,7 +3285,7 @@
    "skills": [
     {
      "id": "tab-sentiment",
-     "title": "Sentimen (Ulasan Aplikasi Fintech)",
+     "title": "Sentimen (FintechDex)",
      "description": "Distribusi sentimen (label otomatis penyedia) per platform, bulan, atau bahasa.",
      "tools": [
       "sentiment_overview"
@@ -3296,12 +3293,12 @@
      "examples": [
       "Sentimen per platform",
       "Distribusi sentimen",
-      "Tampilkan sentimen di Ulasan Aplikasi Fintech"
+      "Tampilkan sentimen di FintechDex"
      ]
     },
     {
      "id": "tab-topics",
-     "title": "Topik & Aspek (Ulasan Aplikasi Fintech)",
+     "title": "Topik & Aspek (FintechDex)",
      "description": "Topik & aspek ulasan (UX, harga, produk, layanan, keamanan, merek) beserta sentimennya.",
      "tools": [
       "topic_breakdown",
@@ -3309,26 +3306,26 @@
      ],
      "examples": [
       "Topik & aspek ulasan",
-      "Tampilkan topik & aspek di Ulasan Aplikasi Fintech",
-      "Topik & Aspek Ulasan Aplikasi Fintech"
+      "Tampilkan topik & aspek di FintechDex",
+      "Topik & Aspek FintechDex"
      ]
     },
     {
      "id": "tab-explore",
-     "title": "Jelajah Ulasan (Ulasan Aplikasi Fintech)",
+     "title": "Jelajah Ulasan (FintechDex)",
      "description": "Telusuri ulasan produk fintech tanpa identitas penulis.",
      "tools": [
       "search_posts"
      ],
      "examples": [
       "Telusuri ulasan produk fintech tanpa identitas penulis",
-      "Tampilkan jelajah ulasan di Ulasan Aplikasi Fintech",
-      "Jelajah Ulasan Ulasan Aplikasi Fintech"
+      "Tampilkan jelajah ulasan di FintechDex",
+      "Jelajah Ulasan FintechDex"
      ]
     },
     {
      "id": "tab-trends",
-     "title": "Tren (Ulasan Aplikasi Fintech)",
+     "title": "Tren (FintechDex)",
      "description": "Tren bulanan jumlah unggahan dan porsi sentimen.",
      "tools": [
       "trend"
@@ -3336,21 +3333,21 @@
      "examples": [
       "Tren jumlah ulasan per bulan",
       "Tren bulanan jumlah unggahan dan porsi sentimen",
-      "Tampilkan tren di Ulasan Aplikasi Fintech"
+      "Tampilkan tren di FintechDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Ulasan Aplikasi Fintech",
+     "title": "Jelaskan data & keterbatasan FintechDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Ulasan Aplikasi Fintech sampai kapan?",
-      "Dari mana data Ulasan Aplikasi Fintech?",
-      "Apa keterbatasan data Ulasan Aplikasi Fintech?"
+      "Data FintechDex sampai kapan?",
+      "Dari mana data FintechDex?",
+      "Apa keterbatasan data FintechDex?"
      ]
     }
    ],
@@ -3372,7 +3369,7 @@
   {
    "id": "personalfinandex",
    "dexId": "personalfinandex",
-   "name": "Agen Diskusi Keuangan Pribadi",
+   "name": "Agen PersonalFinanDex",
    "role": {
     "id": "Analis diskusi keuangan pribadi & FIRE",
     "en": "Personal finance & financial independence discussions"
@@ -3399,7 +3396,7 @@
    "skills": [
     {
      "id": "tab-sentiment",
-     "title": "Sentimen (Diskusi Keuangan Pribadi)",
+     "title": "Sentimen (PersonalFinanDex)",
      "description": "Distribusi sentimen (label otomatis penyedia) per platform, bulan, atau bahasa.",
      "tools": [
       "sentiment_overview"
@@ -3407,12 +3404,12 @@
      "examples": [
       "Sentimen diskusi keuangan pribadi per platform",
       "Distribusi sentimen",
-      "Tampilkan sentimen di Diskusi Keuangan Pribadi"
+      "Tampilkan sentimen di PersonalFinanDex"
      ]
     },
     {
      "id": "tab-topics",
-     "title": "Topik (Diskusi Keuangan Pribadi)",
+     "title": "Topik (PersonalFinanDex)",
      "description": "Topik diskusi yang paling sering muncul.",
      "tools": [
       "topic_breakdown",
@@ -3421,25 +3418,25 @@
      "examples": [
       "Topik FIRE yang paling ramai",
       "Topik diskusi yang paling sering muncul",
-      "Tampilkan topik di Diskusi Keuangan Pribadi"
+      "Tampilkan topik di PersonalFinanDex"
      ]
     },
     {
      "id": "tab-explore",
-     "title": "Jelajah Diskusi (Diskusi Keuangan Pribadi)",
+     "title": "Jelajah Diskusi (PersonalFinanDex)",
      "description": "Telusuri diskusi keuangan pribadi (judul/ringkasan/platform/tanggal) tanpa identitas penulis.",
      "tools": [
       "search_posts"
      ],
      "examples": [
       "Telusuri diskusi keuangan pribadi",
-      "Tampilkan jelajah diskusi di Diskusi Keuangan Pribadi",
-      "Jelajah Diskusi Diskusi Keuangan Pribadi"
+      "Tampilkan jelajah diskusi di PersonalFinanDex",
+      "Jelajah Diskusi PersonalFinanDex"
      ]
     },
     {
      "id": "tab-trends",
-     "title": "Tren (Diskusi Keuangan Pribadi)",
+     "title": "Tren (PersonalFinanDex)",
      "description": "Tren bulanan jumlah unggahan dan porsi sentimen.",
      "tools": [
       "trend"
@@ -3447,21 +3444,21 @@
      "examples": [
       "Tren diskusi per bulan",
       "Tren bulanan jumlah unggahan dan porsi sentimen",
-      "Tampilkan tren di Diskusi Keuangan Pribadi"
+      "Tampilkan tren di PersonalFinanDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Diskusi Keuangan Pribadi",
+     "title": "Jelaskan data & keterbatasan PersonalFinanDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Diskusi Keuangan Pribadi sampai kapan?",
-      "Dari mana data Diskusi Keuangan Pribadi?",
-      "Apa keterbatasan data Diskusi Keuangan Pribadi?"
+      "Data PersonalFinanDex sampai kapan?",
+      "Dari mana data PersonalFinanDex?",
+      "Apa keterbatasan data PersonalFinanDex?"
      ]
     }
    ],
@@ -3483,7 +3480,7 @@
   {
    "id": "mylaiwyer",
    "dexId": "mylaiwyer",
-   "name": "Agen Tanya Hukum Umum",
+   "name": "Agen My LAIwyer",
    "role": {
     "id": "Asisten tanya-jawab hukum umum berbasis dokumen resmi (konstitusi, pidana & acara pidana, perdata dasar, bantuan hukum)",
     "en": "General legal Q&A: constitution, criminal law & procedure, basic civil law, legal aid"
@@ -3554,55 +3551,55 @@
     },
     {
      "id": "tab-sources",
-     "title": "Sumber Hukum (Tanya Hukum Umum)",
+     "title": "Sumber Hukum (My LAIwyer)",
      "description": "Daftar dokumen hukum: tersedia (sudah diverifikasi) dan menunggu dokumen, dengan tautan resmi. (tersedia & menunggu dokumen)",
      "tools": [
       "list_sources"
      ],
      "examples": [
       "Daftar dokumen hukum: tersedia",
-      "Tampilkan sumber hukum di Tanya Hukum Umum",
-      "Sumber Hukum Tanya Hukum Umum"
+      "Tampilkan sumber hukum di My LAIwyer",
+      "Sumber Hukum My LAIwyer"
      ]
     },
     {
      "id": "tab-articles",
-     "title": "Jelajah Pasal (Tanya Hukum Umum)",
+     "title": "Jelajah Pasal (My LAIwyer)",
      "description": "Daftar isi per dokumen hukum (Pembukaan/Bab/Pasal/Penjelasan/Lampiran) dengan pencarian.",
      "tools": [
       "search_law"
      ],
      "examples": [
       "Daftar isi per dokumen hukum",
-      "Tampilkan jelajah pasal di Tanya Hukum Umum",
-      "Jelajah Pasal Tanya Hukum Umum"
+      "Tampilkan jelajah pasal di My LAIwyer",
+      "Jelajah Pasal My LAIwyer"
      ]
     },
     {
      "id": "tab-compare",
-     "title": "Bandingkan Versi (Tanya Hukum Umum)",
+     "title": "Bandingkan Versi (My LAIwyer)",
      "description": "Teks pasal berdampingan antar-versi peraturan (KUHAP 1981 ↔ 2025; UUD naskah asli ↔ UUD NRI 1945). (KUHAP 1981–2025; UUD naskah asli–UUD NRI 1945)",
      "tools": [
       "compare_versions"
      ],
      "examples": [
       "Teks pasal berdampingan antar-versi peraturan",
-      "Tampilkan bandingkan versi di Tanya Hukum Umum",
-      "Bandingkan Versi Tanya Hukum Umum"
+      "Tampilkan bandingkan versi di My LAIwyer",
+      "Bandingkan Versi My LAIwyer"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Tanya Hukum Umum",
+     "title": "Jelaskan data & keterbatasan My LAIwyer",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Tanya Hukum Umum sampai kapan?",
-      "Dari mana data Tanya Hukum Umum?",
-      "Apa keterbatasan data Tanya Hukum Umum?"
+      "Data My LAIwyer sampai kapan?",
+      "Dari mana data My LAIwyer?",
+      "Apa keterbatasan data My LAIwyer?"
      ]
     }
    ],
@@ -3626,7 +3623,7 @@
   {
    "id": "finlaiwyer",
    "dexId": "finlaiwyer",
-   "name": "Agen Tanya Hak Keuangan",
+   "name": "Agen FinLAIwyer",
    "role": {
     "id": "Asisten tanya-jawab hukum keuangan & perbankan yang tenang dan praktis untuk korban scam & sengketa dengan lembaga keuangan",
     "en": "Indonesian financial & banking law Q&A — focused on scam victims & disputes with financial institutions"
@@ -3693,55 +3690,55 @@
     },
     {
      "id": "tab-articles",
-     "title": "Jelajah Pasal (Tanya Hak Keuangan)",
+     "title": "Jelajah Pasal (FinLAIwyer)",
      "description": "Daftar isi per dokumen hukum (Pembukaan/Bab/Pasal/Penjelasan/Lampiran) dengan pencarian.",
      "tools": [
       "search_law"
      ],
      "examples": [
       "Daftar isi per dokumen hukum",
-      "Tampilkan jelajah pasal di Tanya Hak Keuangan",
-      "Jelajah Pasal Tanya Hak Keuangan"
+      "Tampilkan jelajah pasal di FinLAIwyer",
+      "Jelajah Pasal FinLAIwyer"
      ]
     },
     {
      "id": "tab-status",
-     "title": "Status & Perubahan (Tanya Hak Keuangan)",
+     "title": "Status & Perubahan (FinLAIwyer)",
      "description": "Linimasa status peraturan: berlaku, diubah, dicabut, dan penyesuaian ancaman pidana oleh UU 1/2026. (linimasa + penyesuaian UU 1/2026)",
      "tools": [
       "regulation_status"
      ],
      "examples": [
       "Linimasa status peraturan: berlaku, diubah, dicabut, dan penyesuaian ancaman pidana oleh UU 1/2026",
-      "Tampilkan status & perubahan di Tanya Hak Keuangan",
-      "Status & Perubahan Tanya Hak Keuangan"
+      "Tampilkan status & perubahan di FinLAIwyer",
+      "Status & Perubahan FinLAIwyer"
      ]
     },
     {
      "id": "tab-channels",
-     "title": "Kanal Pengaduan (Tanya Hak Keuangan)",
+     "title": "Kanal Pengaduan (FinLAIwyer)",
      "description": "Ke mana mengadu (bank/PUJK, OJK 157/APPK, BI 131, LAPS SJK) dan urutannya.",
      "tools": [
       "channel_directory"
      ],
      "examples": [
       "Ke mana mengadu",
-      "Tampilkan kanal pengaduan di Tanya Hak Keuangan",
-      "Kanal Pengaduan Tanya Hak Keuangan"
+      "Tampilkan kanal pengaduan di FinLAIwyer",
+      "Kanal Pengaduan FinLAIwyer"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Tanya Hak Keuangan",
+     "title": "Jelaskan data & keterbatasan FinLAIwyer",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Tanya Hak Keuangan sampai kapan?",
-      "Dari mana data Tanya Hak Keuangan?",
-      "Apa keterbatasan data Tanya Hak Keuangan?"
+      "Data FinLAIwyer sampai kapan?",
+      "Dari mana data FinLAIwyer?",
+      "Apa keterbatasan data FinLAIwyer?"
      ]
     }
    ],
@@ -3758,7 +3755,7 @@
    "guardrails": [
     "Bukan nasihat hukum; kutipan hanya dari teks resmi.",
     "Tidak berafiliasi dengan OJK/IASC/Polri; tidak meneruskan laporan.",
-    "Informasi hukum keuangan, bukan nasihat hukum; Askfolio tidak meneruskan laporan dan tidak dapat memulihkan dana.",
+    "Informasi hukum keuangan, bukan nasihat hukum; Finandex tidak meneruskan laporan dan tidak dapat memulihkan dana.",
     "Ringkasan katalog bukan kutipan; dokumen \"menunggu dokumen\" tidak dikutip."
    ],
    "evalSuite": "agents/finlaiwyer"
@@ -3766,7 +3763,7 @@
   {
    "id": "antiscamdex",
    "dexId": "antiscamdex",
-   "name": "Agen Lawan Penipuan",
+   "name": "Agen AntiScamDex",
    "role": {
     "id": "Pemandu respons cepat & edukasi anti-scam berbasis informasi publik IASC/Satgas PASTI/OJK/BI",
     "en": "Public information from IASC, Satgas PASTI, OJK & BI: emergency steps, report prep, statistics, scam types"
@@ -3829,7 +3826,7 @@
     },
     {
      "id": "tab-stats",
-     "title": "Statistik Penanganan (Lawan Penipuan)",
+     "title": "Statistik Penanganan (AntiScamDex)",
      "description": "Statistik IASC & Satgas PASTI: laporan, rekening diblokir, dana diblokir & dikembalikan, modus, wilayah — per tanggal potong & sumber.",
      "tools": [
       "iasc_stats",
@@ -3841,12 +3838,12 @@
      "examples": [
       "Berapa laporan penipuan yang diterima IASC?",
       "Statistik IASC & Satgas PASTI: laporan, rekening diblokir, dana diblokir & dikembalikan, modus, wilayah — per tanggal potong & sumber",
-      "Tampilkan statistik penanganan di Lawan Penipuan"
+      "Tampilkan statistik penanganan di AntiScamDex"
      ]
     },
     {
      "id": "tab-modus",
-     "title": "Kenali Modus (Lawan Penipuan)",
+     "title": "Kenali Modus (AntiScamDex)",
      "description": "Pustaka modus scam, tanda bahaya, dan kuis cek-mandiri \"Apakah ini scam?\". (+ kuis cek-mandiri)",
      "tools": [
       "modus_library"
@@ -3854,25 +3851,25 @@
      "examples": [
       "Modus penipuan paling banyak",
       "Pustaka modus scam, tanda bahaya, dan kuis cek-mandiri \"Apakah ini scam?\"",
-      "Tampilkan kenali modus di Lawan Penipuan"
+      "Tampilkan kenali modus di AntiScamDex"
      ]
     },
     {
      "id": "tab-channels",
-     "title": "Kanal Resmi (Lawan Penipuan)",
+     "title": "Kanal Resmi (AntiScamDex)",
      "description": "Direktori kanal resmi (IASC, OJK, SiPASTI, BI, cekrekening.id, aduannomor.id, Polri, LAPS SJK) dan kapan memakainya.",
      "tools": [
       "channel_directory"
      ],
      "examples": [
       "Direktori kanal resmi",
-      "Tampilkan kanal resmi di Lawan Penipuan",
-      "Kanal Resmi Lawan Penipuan"
+      "Tampilkan kanal resmi di AntiScamDex",
+      "Kanal Resmi AntiScamDex"
      ]
     },
     {
      "id": "tab-prevent",
-     "title": "Cegah & Bukti (Lawan Penipuan)",
+     "title": "Cegah & Bukti (AntiScamDex)",
      "description": "Tips pencegahan scam dan daftar bukti yang perlu diamankan sebelum melapor.",
      "tools": [
       "prevention_tips",
@@ -3880,22 +3877,22 @@
      ],
      "examples": [
       "Tips pencegahan scam dan daftar bukti yang perlu diamankan sebelum melapor",
-      "Tampilkan cegah & bukti di Lawan Penipuan",
-      "Cegah & Bukti Lawan Penipuan"
+      "Tampilkan cegah & bukti di AntiScamDex",
+      "Cegah & Bukti AntiScamDex"
      ]
     },
     {
      "id": "jelaskan-data-keterbatasan",
-     "title": "Jelaskan data & keterbatasan Lawan Penipuan",
+     "title": "Jelaskan data & keterbatasan AntiScamDex",
      "description": "Menjelaskan file sumber, cakupan, tanggal data, aturan pembersihan, dan keterbatasan.",
      "tools": [
       "dataset_info",
       "data_quality"
      ],
      "examples": [
-      "Data Lawan Penipuan sampai kapan?",
-      "Dari mana data Lawan Penipuan?",
-      "Apa keterbatasan data Lawan Penipuan?"
+      "Data AntiScamDex sampai kapan?",
+      "Dari mana data AntiScamDex?",
+      "Apa keterbatasan data AntiScamDex?"
      ]
     }
    ],
@@ -3912,7 +3909,7 @@
    "guardrails": [
     "Bukan nasihat hukum; kutipan hanya dari teks resmi.",
     "Tidak berafiliasi dengan OJK/IASC/Polri; tidak meneruskan laporan.",
-    "Askfolio bukan IASC dan tidak berafiliasi dengan lembaga tersebut. Laporan resmi hanya di iasc.ojk.go.id.",
+    "Finandex bukan IASC dan tidak berafiliasi dengan lembaga tersebut. Laporan resmi hanya di iasc.ojk.go.id.",
     "Statistik per tanggal potong; diperbarui dengan menambah observasi bersumber."
    ],
    "evalSuite": "agents/antiscamdex"

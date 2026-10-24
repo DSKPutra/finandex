@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// /markets/:slug → Askfolio entity detail for one of the 34 global assets.
+// /markets/:slug → Finandex AI entity detail for one of the 34 global assets.
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router';
 import { DexHeader } from '../components/DexHeader';

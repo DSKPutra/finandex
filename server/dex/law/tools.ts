@@ -101,7 +101,7 @@ async function flowArtifacts(dex: LawDexId, ctx: ToolCtx, state: FlowState) {
   const L = ctx.locale;
   const f = getFlow(FLOWS, state.flow_id);
   const v = view(f, state, L);
-  const source = { dex, dataset: 'legal_qa_flows.json (Askfolio)', as_of: String(FLOWS.meta.version ?? '2026-10-23') };
+  const source = { dex, dataset: 'legal_qa_flows.json (Finandex)', as_of: String(FLOWS.meta.version ?? '2026-10-23') };
   if (v.node.type === 'question') {
     const n = v.node;
     return {
@@ -366,7 +366,7 @@ export function lawTools(dex: LawDexId): ToolDef[] {
           const list = order.map((id) => getFlow(FLOWS, id)).map((f) => ({ id: f.id, title: L === 'en' && f.title_en ? f.title_en : f.title }));
           return {
             data: { flows: list, best_match: ranked[0]?.id ?? null },
-            ui: [artifact('choices', tr(L, 'Konsultasi Terpandu — pilih situasi Anda', 'Guided Consultation — pick your situation'), { type: 'choices', flow_id: '', node_id: '', path: [], prompt: tr(L, 'Situasi mana yang paling sesuai?', 'Which situation fits best?'), options: [], trail: [], flows: list }, { dex, dataset: 'legal_qa_flows.json (Askfolio)', as_of: String(FLOWS.meta.version ?? '') })],
+            ui: [artifact('choices', tr(L, 'Konsultasi Terpandu — pilih situasi Anda', 'Guided Consultation — pick your situation'), { type: 'choices', flow_id: '', node_id: '', path: [], prompt: tr(L, 'Situasi mana yang paling sesuai?', 'Which situation fits best?'), options: [], trail: [], flows: list }, { dex, dataset: 'legal_qa_flows.json (Finandex)', as_of: String(FLOWS.meta.version ?? '') })],
           };
         }
         const f = getFlow(FLOWS, flow_id);
@@ -401,13 +401,13 @@ export function lawTools(dex: LawDexId): ToolDef[] {
     }),
     defineTool({
       name: 'glossary',
-      description: 'Legal term ↔ plain language: the official definition quoted from the general-provisions article of the relevant law (when found) plus a labelled plain-language explanation written by Askfolio. Lists the terms when term is null.',
+      description: 'Legal term ↔ plain language: the official definition quoted from the general-provisions article of the relevant law (when found) plus a labelled plain-language explanation written by Finandex. Lists the terms when term is null.',
       input: z.object({ term: z.string().min(2).max(60).nullable() }).strict(),
       label: { id: 'Membuka glosarium…', en: 'Opening glossary…' },
       run: async ({ term }, ctx) => {
         const L = ctx.locale;
         const terms = GLOSSARY.filter((g) => g.corpus === corpus);
-        if (!term) return { data: { terms: terms.map((g) => g.term), label: GLOSSARY_LABEL[L] }, ui: [artifact('card', tr(L, 'Glosarium', 'Glossary'), { type: 'card', tone: 'info', body: GLOSSARY_LABEL[L], chips: terms.map((g) => g.term) }, { dex, dataset: 'law-glossary (Askfolio)', as_of: AS_OF })] };
+        if (!term) return { data: { terms: terms.map((g) => g.term), label: GLOSSARY_LABEL[L] }, ui: [artifact('card', tr(L, 'Glosarium', 'Glossary'), { type: 'card', tone: 'info', body: GLOSSARY_LABEL[L], chips: terms.map((g) => g.term) }, { dex, dataset: 'law-glossary (Finandex)', as_of: AS_OF })] };
         const g = findGlossary(term);
         let def: LawChunk | null = null;
         const tryDocs = g ? g.docs.filter(isAvailable) : [];
@@ -424,7 +424,7 @@ export function lawTools(dex: LawDexId): ToolDef[] {
           const i = t.toLowerCase().indexOf(normaliseLaw(g!.term).toLowerCase());
           ui.push(quoteArtifact(dex, L, def, t.slice(Math.max(0, i - 40), i + 600)));
         }
-        if (g) ui.push(artifact('card', g.term, { type: 'card', tone: 'info', body: g.plain[L], items: [GLOSSARY_LABEL[L]] }, { dex, dataset: 'law-glossary (Askfolio)', as_of: AS_OF }));
+        if (g) ui.push(artifact('card', g.term, { type: 'card', tone: 'info', body: g.plain[L], items: [GLOSSARY_LABEL[L]] }, { dex, dataset: 'law-glossary (Finandex)', as_of: AS_OF }));
         return {
           data: { term: g?.term ?? term, plain: g?.plain[L] ?? null, plain_label: GLOSSARY_LABEL[L], official_definition: def ? { doc_id: def.doc_id, document: doc(def.doc_id).short, pasal: def.pasal, page: def.page, quote: def.text.slice(0, 900) } : null },
           ui,
@@ -511,7 +511,7 @@ export async function channelDirectory(dex: string, ctx: ToolCtx, situation: str
       artifact(
         'steps',
         tr(L, 'Kanal resmi', 'Official channels'),
-        { type: 'steps', steps: list.map((c) => ({ text: `${L === 'en' && c.name_en ? c.name_en : c.name} — ${L === 'en' && c.use_when_en ? c.use_when_en : c.use_when}`, urgent: false, channels: [{ id: c.id, name: L === 'en' && c.name_en ? c.name_en : c.name, ...(c.url ? { url: c.url } : {}), ...(c.phone ? { phone: c.phone } : {}), ...(c.whatsapp ? { whatsapp: c.whatsapp } : {}), ...(c.email ? { email: c.email } : {}) }] })), disclaimer: tr(L, 'Askfolio tidak berafiliasi dengan lembaga mana pun dan tidak meneruskan laporan.', 'Askfolio is not affiliated with any institution and does not forward reports.') },
+        { type: 'steps', steps: list.map((c) => ({ text: `${L === 'en' && c.name_en ? c.name_en : c.name} — ${L === 'en' && c.use_when_en ? c.use_when_en : c.use_when}`, urgent: false, channels: [{ id: c.id, name: L === 'en' && c.name_en ? c.name_en : c.name, ...(c.url ? { url: c.url } : {}), ...(c.phone ? { phone: c.phone } : {}), ...(c.whatsapp ? { whatsapp: c.whatsapp } : {}), ...(c.email ? { email: c.email } : {}) }] })), disclaimer: tr(L, 'Finandex tidak berafiliasi dengan lembaga mana pun dan tidak meneruskan laporan.', 'Finandex is not affiliated with any institution and does not forward reports.') },
         { dex, dataset: 'antiscam_kb.json', as_of: '2026-10-23' },
       ),
     ],

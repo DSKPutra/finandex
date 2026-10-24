@@ -16,7 +16,6 @@ import { LEGAL_PAGES } from '../app/Footer';
 import { useManifest } from '../lib/data';
 import { useLocale } from '../lib/locale';
 import { formatDate } from '../shared/format';
-import { DexName } from '../components/DexName';
 
 function Sections({ sections }: { sections: LegalSection[] }) {
   const locale = useLocale();
@@ -47,7 +46,7 @@ function DataSources() {
         <Card key={d.id} as="article">
           <h2 className="text-base font-semibold">
             <Link to={`/dex/${d.id}/data`} className="underline-offset-2 hover:underline">
-              <DexName dex={d} />
+              {d.name}
             </Link>
           </h2>
           <ul className="mt-1 space-y-0.5 text-xs">
@@ -86,8 +85,8 @@ function Sbom() {
     <div className="space-y-4 text-sm leading-relaxed">
       <p>
         {L(
-          'Software Bill of Materials (SBOM) adalah daftar semua komponen perangkat lunak dan data di dalam Askfolio — nama, versi, pemasok, lisensi, hash, dan relasi dependensi. Setiap rilis menyertakan SBOM per artefak (web/PWA & server, Android, iOS, desktop, data & aset, referensi Python, alat build) dan satu SBOM induk yang juga mencantumkan layanan eksternal dan model AI.',
-          'A Software Bill of Materials (SBOM) lists every software and data component in Askfolio — name, version, supplier, licence, hash and dependency relationships. Each release ships one SBOM per artefact (web/PWA & server, Android, iOS, desktop, data & assets, Python reference, build tooling) and a master SBOM that also lists external services and AI models.',
+          'Software Bill of Materials (SBOM) adalah daftar semua komponen perangkat lunak dan data di dalam Finandex — nama, versi, pemasok, lisensi, hash, dan relasi dependensi. Setiap rilis menyertakan SBOM per artefak (web/PWA & server, Android, iOS, desktop, data & aset, referensi Python, alat build) dan satu SBOM induk yang juga mencantumkan layanan eksternal dan model AI.',
+          'A Software Bill of Materials (SBOM) lists every software and data component in Finandex — name, version, supplier, licence, hash and dependency relationships. Each release ships one SBOM per artefact (web/PWA & server, Android, iOS, desktop, data & assets, Python reference, build tooling) and a master SBOM that also lists external services and AI models.',
         )}
       </p>
       <ul className="list-disc space-y-1 pl-5">

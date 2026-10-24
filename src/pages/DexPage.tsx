@@ -20,7 +20,6 @@ import { EmergencyScam, ReportPrepWizard, ScamLibrary } from '../features/antisc
 import { GuidedConsultation, LawArticles, LawGlossary, LawSources, LawStatus, RegulationMap } from '../features/law/LawViews';
 import { useManifest } from '../lib/data';
 import { useLocale } from '../lib/locale';
-import { dexName } from '../config/dex-registry';
 
 /** Specials that fully replace the tab's default tool panels. */
 const OWN_VIEW = new Set(['law-glossary', 'law-guided', 'law-sources', 'law-map', 'law-status', 'scam-emergency', 'scam-report']);
@@ -101,7 +100,7 @@ export default function DexPage() {
     <div className="space-y-4">
       <DexHeader dex={dex} asOf={entry?.as_of} quality={entry?.quality} />
       <CoachMarks dex={dex} />
-      <nav aria-label={dexName(dex, locale)} className="no-scrollbar -mx-4 flex gap-1 overflow-x-auto border-b border-edge px-4 md:mx-0 md:px-0">
+      <nav aria-label={dex.name} className="no-scrollbar -mx-4 flex gap-1 overflow-x-auto border-b border-edge px-4 md:mx-0 md:px-0">
         {dex.tabs.map((x) => (
           <NavLink
             key={x.id}

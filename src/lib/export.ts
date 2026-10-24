@@ -1,5 +1,5 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Exports (§11.4): every CSV/PNG/share carries the watermark "Askfolio · © Dea Saka Kurnia Putra".
+// Exports (§11.4): every CSV/PNG/share carries the watermark "Finandex · © Dea Saka Kurnia Putra".
 import { EXPORT_WATERMARK } from '../config/brand';
 
 type Cell = string | number | boolean | null | undefined;

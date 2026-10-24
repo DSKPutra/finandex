@@ -2,7 +2,7 @@
 // Shared tools (§8.4). Time-series tools are registered only for Dex that have an entity adapter.
 import { z } from 'zod';
 import { COPYRIGHT_EN, CREDIT_EN, CREDIT_ID, OWNER_NAME } from '../../src/config/brand';
-import { DEX_IDS, DEX_REGISTRY, dexName, dexRefName, getDex } from '../../src/config/dex-registry';
+import { DEX_IDS, DEX_REGISTRY, getDex } from '../../src/config/dex-registry';
 import type { DexId } from '../../src/config/dex-registry';
 import { INPUT_FILES } from '../../src/config/inputs';
 import { calendarYearReturns, corr } from '../../src/shared/analytics/series';
@@ -139,11 +139,11 @@ export function sharedTools(dex: DexId, ad: TsAdapter | undefined): ToolDef[] {
     }),
     defineTool({
       name: 'app_info',
-      description: 'Information about the Askfolio app and its creator. Use when asked who made the app.',
+      description: 'Information about the Finandex app and its creator. Use when asked who made the app.',
       input: z.object({}).strict(),
       label: { id: 'Info aplikasi…', en: 'App info…' },
       run: async (_i, ctx) => ({
-        data: { app: 'Askfolio', creator: OWNER_NAME, copyright: COPYRIGHT_EN, credit: ctx.locale === 'id' ? CREDIT_ID : CREDIT_EN, version: ctx.appVersion },
+        data: { app: 'Finandex', creator: OWNER_NAME, copyright: COPYRIGHT_EN, credit: ctx.locale === 'id' ? CREDIT_ID : CREDIT_EN, version: ctx.appVersion },
       }),
     }),
     defineTool({
@@ -155,13 +155,13 @@ export function sharedTools(dex: DexId, ad: TsAdapter | undefined): ToolDef[] {
       run: async ({ dexId, function: fn }, ctx) => {
         const L = ctx.locale;
         const g = await ctx.store.json<FeatureGuide>('core/app/feature_guide.json');
-        const source = { dex, dataset: 'feature_guide.json (Askfolio)', as_of: String((g as unknown as { meta?: { version?: string } }).meta?.version ?? '') };
+        const source = { dex, dataset: 'feature_guide.json (Finandex)', as_of: String((g as unknown as { meta?: { version?: string } }).meta?.version ?? '') };
         const id = dexId ?? dex;
         if (id === 'all') {
           return {
-            data: { app: g.app.name, creator: g.app.creator, dex_count: g.app.dex_count, groups: g.app.groups.map((x) => ({ name: L === 'en' ? x.name_en : x.name, what: x.what, dex: x.dex.map((d) => { const r = getDex(d); return r ? dexRefName(r, L) : d; }) })), app_functions: g.app.app_functions },
+            data: { app: g.app.name, creator: g.app.creator, dex_count: g.app.dex_count, groups: g.app.groups.map((x) => ({ name: L === 'en' ? x.name_en : x.name, what: x.what, dex: x.dex.map((d) => getDex(d)?.name ?? d) })), app_functions: g.app.app_functions },
             ui: [
-              artifact('card', tr(L, `Askfolio — ${g.app.dex_count} Dex dalam ${g.app.groups.length} kategori`, `Askfolio — ${g.app.dex_count} Dex in ${g.app.groups.length} categories`), { type: 'card', tone: 'info', body: tr(L, 'Fungsi aplikasi', 'App functions'), functions: g.app.app_functions.map((f) => ({ tab: f.name, tabId: null, what: f.what })), items: g.app.groups.map((x) => `${L === 'en' ? x.name_en : x.name}: ${x.dex.map((d) => { const r = getDex(d); return r ? dexRefName(r, L) : d; }).join(', ')}`) }, source),
+              artifact('card', tr(L, `Finandex — ${g.app.dex_count} Dex dalam ${g.app.groups.length} kategori`, `Finandex — ${g.app.dex_count} Dex in ${g.app.groups.length} categories`), { type: 'card', tone: 'info', body: tr(L, 'Fungsi aplikasi', 'App functions'), functions: g.app.app_functions.map((f) => ({ tab: f.name, tabId: null, what: f.what })), items: g.app.groups.map((x) => `${L === 'en' ? x.name_en : x.name}: ${x.dex.map((d) => getDex(d)?.name ?? d).join(', ')}`) }, source),
               artifact('bar', tr(L, 'Jumlah Dex per kategori', 'Dex per category'), { type: 'bar', categories: g.app.groups.map((x) => (L === 'en' ? x.name_en : x.name)), series: [{ name: 'Dex', data: g.app.groups.map((x) => x.dex.length) }], horizontal: true, yUnit: 'number' }, source),
             ],
             method: method('feature_guide', ['count'], { inputs: { dexId: 'all' }, rows_used: g.app.dex_count, dataset: 'feature_guide.json', as_of: source.as_of }),
@@ -175,7 +175,7 @@ export function sharedTools(dex: DexId, ad: TsAdapter | undefined): ToolDef[] {
         const tabId = (label: string) => reg.tabs.find((t) => t.label.id === label)?.id ?? null;
         const m = await ctx.manifest();
         return {
-          data: { dex: e.name, purpose: e.purpose, ask_examples: e.ask_examples, functions: funcs.map((f) => ({ tab: f.tab, what: f.what })), data_as_of: m.dex[id]?.as_of ?? e.data_as_of, limitations: e.limitations, related: e.related.map((r) => { const x = getDex(r); return { dexId: r, name: x ? dexRefName(x, L) : r }; }) },
+          data: { dex: e.name, purpose: e.purpose, ask_examples: e.ask_examples, functions: funcs.map((f) => ({ tab: f.tab, what: f.what })), data_as_of: m.dex[id]?.as_of ?? e.data_as_of, limitations: e.limitations, related: e.related.map((r) => ({ dexId: r, name: getDex(r)?.name ?? r })) },
           ui: [artifact('card', tr(L, `${e.name} — panduan fitur`, `${e.name} — feature guide`), { type: 'card', tone: 'info', body: e.purpose, functions: funcs.map((f) => ({ tab: L === 'en' ? (reg.tabs.find((t) => t.label.id === f.tab)?.label.en ?? f.tab) : f.tab, tabId: tabId(f.tab), what: f.what })), chips: e.ask_examples, items: [`${tr(L, 'Data per', 'Data as of')} ${m.dex[id]?.as_of ?? e.data_as_of}`, `${tr(L, 'Keterbatasan', 'Limitations')}: ${e.limitations}`] }, source)],
           citations: [source],
         };
@@ -184,7 +184,7 @@ export function sharedTools(dex: DexId, ad: TsAdapter | undefined): ToolDef[] {
     defineTool({
       name: 'open_dex',
       description:
-        'Offer the user a button that opens another Askfolio Dex (optionally on an entity) when the question belongs to a different dataset. Use instead of guessing numbers that this Dex does not have.',
+        'Offer the user a button that opens another Finandex Dex (optionally on an entity) when the question belongs to a different dataset. Use instead of guessing numbers that this Dex does not have.',
       input: z
         .object({
           dexId: z.enum(DEX_IDS),
@@ -195,12 +195,11 @@ export function sharedTools(dex: DexId, ad: TsAdapter | undefined): ToolDef[] {
       label: { id: 'Menyiapkan tautan Dex…', en: 'Preparing Dex link…' },
       run: async ({ dexId, entity, reason }, ctx) => {
         const target = getDex(dexId)!;
-        const name = dexRefName(target, ctx.locale);
-        const label = tr(ctx.locale, `Buka ${dexName(target, 'id')}`, `Open ${dexName(target, 'en')}`);
+        const label = tr(ctx.locale, `Buka ${target.name}`, `Open ${target.name}`);
         return {
-          data: { dex: name, dexId, entity, reason },
+          data: { dex: target.name, dexId, entity, reason },
           ui: [
-            artifact('card', name, { type: 'card', tone: 'link', body: reason, link: { dexId, ...(entity ? { entity } : {}), label } }, { dex: dexId, dataset: datasetLabel(dexId), as_of: (await ctx.manifest()).dex[dexId]?.as_of ?? target.asOf }),
+            artifact('card', target.name, { type: 'card', tone: 'link', body: reason, link: { dexId, ...(entity ? { entity } : {}), label } }, { dex: dexId, dataset: datasetLabel(dexId), as_of: (await ctx.manifest()).dex[dexId]?.as_of ?? target.asOf }),
           ],
         };
       },

@@ -27,8 +27,8 @@ export const INPUT_FILES: Record<string, { file: string; golden_id: string; max_
 
 export const NOTES = {
   uud_original: {
-    id: 'Naskah yang tersedia adalah UUD 1945 naskah asli sebelum perubahan; teks UUD NRI Tahun 1945 hasil Perubahan I–IV (yang berlaku saat ini) belum tersedia di Askfolio.',
-    en: 'The available text is the original 1945 Constitution before amendment; the text of the 1945 Constitution as amended (Amendments I–IV, currently in force) is not yet available in Askfolio.',
+    id: 'Naskah yang tersedia adalah UUD 1945 naskah asli sebelum perubahan; teks UUD NRI Tahun 1945 hasil Perubahan I–IV (yang berlaku saat ini) belum tersedia di Finandex.',
+    en: 'The available text is the original 1945 Constitution before amendment; the text of the 1945 Constitution as amended (Amendments I–IV, currently in force) is not yet available in Finandex.',
   },
   uud_both: {
     id: 'Naskah asli (1945) ditampilkan untuk sejarah; yang berlaku adalah UUD NRI Tahun 1945 setelah Perubahan I–IV.',
@@ -48,7 +48,7 @@ export const NOTES = {
 } as const;
 
 export type LawDoc = CatalogDoc & { supplement?: boolean };
-/** Askfolio supplement entries (same schema, labelled "suplemen"; not part of the kit golden). */
+/** Finandex supplement entries (same schema, labelled "suplemen"; not part of the kit golden). */
 export const SUPPLEMENT = (supplementJson as unknown as { documents: LawDoc[] }).documents;
 /** Kit catalogue + supplement. */
 export const ALL_DOCS: LawDoc[] = [...CATALOG.documents, ...SUPPLEMENT];

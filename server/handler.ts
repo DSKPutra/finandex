@@ -81,7 +81,7 @@ export async function handle(request: Request, rawEnv: Record<string, string | u
       }
       return json({ ok: true, data_build: data, chat: s.env.CHAT_MODE === 'live' && s.env.ANTHROPIC_API_KEY ? 'ai' : 'data' }, 200, cors);
     }
-    if (path === '/api/version' && request.method === 'GET') return json({ app: 'Askfolio', version: s.env.APP_VERSION, build: s.env.BUILD_ID, model: s.env.ANTHROPIC_MODEL }, 200, cors);
+    if (path === '/api/version' && request.method === 'GET') return json({ app: 'Finandex', version: s.env.APP_VERSION, build: s.env.BUILD_ID, model: s.env.ANTHROPIC_MODEL }, 200, cors);
     if (path === '/api/dex' && request.method === 'GET') {
       return json({ distribution: s.env.VITE_DISTRIBUTION, dex: visibleDex(s.env.VITE_DISTRIBUTION).map((d) => ({ id: d.id, name: d.name, group: d.group, tagline: d.tagline, asOf: d.asOf, status: d.status, license: d.license })) }, 200, cors);
     }

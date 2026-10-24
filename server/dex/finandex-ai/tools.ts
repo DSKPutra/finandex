@@ -1,7 +1,7 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
-// Askfolio tools (§8.5): event_window, cross_dex_lookup.
+// Finandex AI tools (§8.5): event_window, cross_dex_lookup.
 import { z } from 'zod';
-import { dexName, dexRefName, getDex } from '../../../src/config/dex-registry';
+import { getDex } from '../../../src/config/dex-registry';
 import type { DexId } from '../../../src/config/dex-registry';
 import { normaliseKey } from '../../../src/shared/text';
 import type { TsAdapter } from '../adapters';
@@ -30,7 +30,7 @@ export function tools(ad: TsAdapter): ToolDef[] {
     eventWindowTool('finandex-ai', ad, EVENTS, true),
     defineTool({
       name: 'cross_dex_lookup',
-      description: 'Suggest which Askfolio Dex holds data for a topic this dataset does not cover (e.g. IHSG, USD/IDR, Indonesian stocks, dividends, DeFi, central banks, law). Returns open_dex suggestions as buttons.',
+      description: 'Suggest which Finandex Dex holds data for a topic this dataset does not cover (e.g. IHSG, USD/IDR, Indonesian stocks, dividends, DeFi, central banks, law). Returns open_dex suggestions as buttons.',
       input: z.object({ query: z.string().min(1).max(200) }).strict(),
       label: { id: 'Mencari Dex yang tepat…', en: 'Finding the right Dex…' },
       run: async ({ query }, ctx) => {
@@ -39,9 +39,9 @@ export function tools(ad: TsAdapter): ToolDef[] {
         const m = await ctx.manifest();
         const ui = hits.slice(0, 3).map((dexId) => {
           const d = getDex(dexId)!;
-          return artifact('card', dexRefName(d, ctx.locale), { type: 'card', tone: 'link', body: d.tagline[ctx.locale], link: { dexId, label: tr(ctx.locale, `Buka ${dexName(d, 'id')}`, `Open ${dexName(d, 'en')}`) } }, { dex: dexId, dataset: datasetLabel(dexId), as_of: m.dex[dexId]?.as_of ?? d.asOf });
+          return artifact('card', d.name, { type: 'card', tone: 'link', body: d.tagline[ctx.locale], link: { dexId, label: tr(ctx.locale, `Buka ${d.name}`, `Open ${d.name}`) } }, { dex: dexId, dataset: datasetLabel(dexId), as_of: m.dex[dexId]?.as_of ?? d.asOf });
         });
-        return { data: { query, suggestions: hits.map((d) => ({ dexId: d, name: dexRefName(getDex(d)!, ctx.locale) })) }, ui };
+        return { data: { query, suggestions: hits.map((d) => ({ dexId: d, name: getDex(d)!.name })) }, ui };
       },
     }),
   ];

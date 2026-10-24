@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | B05 |
 | Judul | AI-BOM (SBOM untuk sistem AI) |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Publik |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,7 +21,7 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari artefak SBOM rilis ini. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari artefak SBOM rilis ini. |
 
 ## 1. Metadata & properti sistem
 - Finandex **tidak melatih** dan tidak menyempurnakan (*fine-tune*) model apa pun; model diakses lewat API penyedia.

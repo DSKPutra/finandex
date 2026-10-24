@@ -6,8 +6,8 @@
 |---|---|
 | ID dokumen | A07 |
 | Judul | Dokumentasi pengujian |
-| Versi | 0.1.0 (= versi aplikasi) · commit `fd1db6c` |
-| Tanggal | 2026-10-25 |
+| Versi | 0.1.0 (= versi aplikasi) · commit `ae7d11b` |
+| Tanggal | 2026-10-24 |
 | Status | Draf |
 | Klasifikasi | Internal |
 | Pemilik | Dea Saka Kurnia Putra |
@@ -21,12 +21,12 @@
 
 | Versi | Tanggal | Perubahan |
 |---|---|---|
-| 0.1.0 | 2026-10-25 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
+| 0.1.0 | 2026-10-24 | Versi pertama, dibangkitkan dari sumber kebenaran repo. |
 
 ## 1. Rencana uji
 | Tingkat | Alat | Lokasi | File |
 |---|---|---|---|
-| Unit & server | Vitest | `tests/unit/` | 14 |
+| Unit & server | Vitest | `tests/unit/` | 13 |
 | Komponen UI | Vitest + Testing Library | `tests/ui/` | 1 |
 | Golden data | Vitest | `tests/golden/` | 9 |
 | Tool | Vitest | `tests/tools/` | 3 |
@@ -42,7 +42,7 @@
 | Eval chat (mock) | 161/161 lulus; keamanan 27/27 |
 | Eval routing agen | 67 butir, presisi 100 %, recall 100 % |
 | Eval keahlian agen | 534 butir, 100 % lulus |
-| Audit UI | 0 temuan di 132 file |
+| Audit UI | 0 temuan di 127 file |
 | Gate SBOM | 156 pemeriksaan, 0 gagal |
 | Coverage, Lighthouse, E2E pada rilis | belum diukur |
 
@@ -76,7 +76,6 @@
 | `tests/unit/live-data.test.ts` |
 | `tests/unit/orchestrator.test.ts` |
 | `tests/unit/registry.test.ts` |
-| `tests/unit/risk-profile.test.ts` |
 | `tests/unit/server.test.ts` |
 | `tests/unit/ui-audit.test.ts` |
 | `tests/unit/ui-helpers.test.ts` |

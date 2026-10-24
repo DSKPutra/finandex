@@ -19,7 +19,7 @@ import { deleteSecure, loadSecure, RETENTION_DAYS, saveSecure } from '../../lib/
 import { runClientTool, useTool } from '../../lib/tools-client';
 import { ToolPanel } from '../dex/ToolPanel';
 
-export const NON_AFFILIATION = { id: 'Askfolio tidak berafiliasi dengan IASC, OJK, BI, atau Satgas PASTI. Laporan resmi hanya di iasc.ojk.go.id.', en: 'Askfolio is not affiliated with IASC, OJK, BI, or Satgas PASTI. Official reports only at iasc.ojk.go.id.' } as const;
+export const NON_AFFILIATION = { id: 'Finandex tidak berafiliasi dengan IASC, OJK, BI, atau Satgas PASTI. Laporan resmi hanya di iasc.ojk.go.id.', en: 'Finandex is not affiliated with IASC, OJK, BI, or Satgas PASTI. Official reports only at iasc.ojk.go.id.' } as const;
 
 export function NonAffiliationBanner() {
   const locale = useLocale();

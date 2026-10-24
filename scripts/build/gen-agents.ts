@@ -17,10 +17,9 @@ import type { AgentId } from '../../src/shared/agents';
 import { DataStore } from '../../server/data/store';
 import { toolsFor } from '../../server/dex/index';
 import { LOCAL_BASE, localFetcher } from '../eval/local-store';
-import { rebrandJson } from '../../src/shared/rebrand';
 
 type Guide = { dex: { id: string; name: string; purpose: string; persona: string; ask_examples: string[]; functions: { tab: string; what: string }[]; limitations: string; data_as_of: string; related: string[] }[] };
-const GUIDE = rebrandJson(JSON.parse(readFileSync('kit/datasets/app/feature_guide.json', 'utf8')) as Guide);
+const GUIDE = JSON.parse(readFileSync('kit/datasets/app/feature_guide.json', 'utf8')) as Guide;
 
 export type Skill = { id: string; agent: AgentId; title: string; description: string; tools: string[]; examples: string[]; steps: string[]; rules: string[]; output: string[]; pitfalls: string[] };
 
@@ -62,7 +61,7 @@ const HANDCRAFTED: Partial<Record<AgentId, Omit<Skill, 'agent'>[]>> = {
       id: 'konsultasi-korban-scam', title: 'Konsultasi korban scam', description: 'Konsultasi Terpandu untuk korban penipuan: langkah berurutan, kanal resmi, dasar hukum resmi.',
       tools: ['start_flow', 'flow_step', 'get_pasal', 'channel_directory'], examples: ['Saya baru kena scam dan sudah transfer — apa yang harus saya lakukan?', 'Ada uang nyasar ke rekening saya, boleh dipakai?', 'Saya diteror penagih pinjol, apa hak saya?'],
       steps: ['Panggil `start_flow` dengan alur yang cocok (mis. `fin-baru-tertipu`).', 'Ajukan pilihan dari node lewat chip; lanjutkan dengan `flow_step`.', 'Setelah hasil keluar, panggil `get_pasal` untuk setiap dasar hukum yang tersedia; tampilkan kanal resmi dari `channel_directory`.', 'Untuk statistik/kanal pelaporan, minta bantuan Agen AntiScamDex (handoff).'],
-      rules: ['Bukan nasihat hukum; tidak menjanjikan dana kembali.', 'Askfolio tidak menerima/meneruskan laporan; laporan resmi diisi sendiri di iasc.ojk.go.id.'], output: ['Langkah bernomor (urgent ditandai) + kanal resmi + kutipan pasal resmi.'], pitfalls: ['Jangan meminta OTP/PIN/nomor rekening lengkap.'],
+      rules: ['Bukan nasihat hukum; tidak menjanjikan dana kembali.', 'Finandex tidak menerima/meneruskan laporan; laporan resmi diisi sendiri di iasc.ojk.go.id.'], output: ['Langkah bernomor (urgent ditandai) + kanal resmi + kutipan pasal resmi.'], pitfalls: ['Jangan meminta OTP/PIN/nomor rekening lengkap.'],
     },
     {
       id: 'status-penyesuaian-pidana-uu-1-2026', title: 'Status & penyesuaian pidana UU 1/2026', description: 'Menjelaskan status regulasi dan ancaman pidana yang disesuaikan oleh lampiran UU 1/2026.',
@@ -86,7 +85,7 @@ const HANDCRAFTED: Partial<Record<AgentId, Omit<Skill, 'agent'>[]>> = {
     {
       id: 'langkah-darurat', title: 'Langkah darurat korban scam', description: 'Langkah segera setelah tertipu (≤ 24 jam vs lebih lama; bank/PJP/kripto) dengan kanal resmi.',
       tools: ['emergency_steps', 'channel_directory', 'evidence_checklist'], examples: ['Saya baru kena scam dan sudah transfer', 'Baru tertipu 2 jam lalu lewat e-wallet', 'Sudah transfer ke penipu kemarin, terlambat?'],
-      steps: ['Tanyakan kapan & lewat apa (chip).', 'Panggil `emergency_steps` dengan elapsed & method.', 'Tampilkan kanal resmi (`channel_directory`) dan daftar bukti (`evidence_checklist`).'], rules: ['Askfolio tidak berafiliasi dengan OJK/IASC/Polri dan tidak meneruskan laporan.'], output: ['Langkah bernomor, yang mendesak di atas.'], pitfalls: ['Jangan menjanjikan pemblokiran/pengembalian dana.'],
+      steps: ['Tanyakan kapan & lewat apa (chip).', 'Panggil `emergency_steps` dengan elapsed & method.', 'Tampilkan kanal resmi (`channel_directory`) dan daftar bukti (`evidence_checklist`).'], rules: ['Finandex tidak berafiliasi dengan OJK/IASC/Polri dan tidak meneruskan laporan.'], output: ['Langkah bernomor, yang mendesak di atas.'], pitfalls: ['Jangan menjanjikan pemblokiran/pengembalian dana.'],
     },
     {
       id: 'statistik-iasc-tanggal-potong', title: 'Baca statistik IASC per tanggal potong', description: 'Membaca statistik kumulatif IASC hanya pada titik bertanggal pasti, dengan rasio & tanggal potong.',

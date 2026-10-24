@@ -1,12 +1,11 @@
 // © 2026 Dea Saka Kurnia Putra. All rights reserved.
 // UI state (zustand) persisted on the device only (§13.2): theme, locale, colour-blind mode, watchlist,
-// consent (with policy version), client id, risk profile. Chat history lives in IndexedDB (lib/history.ts).
+// consent (with policy version), client id. Chat history lives in IndexedDB (lib/history.ts).
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { Locale } from '../config/brand';
-import type { RiskLevel } from '../shared/risk-profile';
 
-export const POLICY_VERSION = '2026-10-25';
+export const POLICY_VERSION = '2026-10-23';
 
 export type WatchItem = { dexId: string; entity: string; label: string };
 
@@ -22,15 +21,12 @@ type State = {
   reduceMotion: boolean;
   highContrast: boolean;
   reduceHaptics: boolean;
-  /** "Pasang Askfolio" ribbon dismissed until (ISO date), remembered 30 days (§10.2.2a). */
+  /** "Pasang Finandex" ribbon dismissed until (ISO date), remembered 30 days (§10.2.2a). */
   installRibbonUntil: string | null;
   /** Dex whose first-visit coach marks were seen (§9 Panduan Fitur). */
   coachSeen: string[];
   /** Compare tray (§10.9, max 5). */
   tray: { dexId: string; entity: string; label: string }[];
-  /** Risk profile (src/shared/risk-profile.ts) — answers and result stay on the device. */
-  riskProfile: { answers: number[]; level: RiskLevel; at: string } | null;
-  setRiskProfile: (p: State['riskProfile']) => void;
   setTheme: (t: State['theme']) => void;
   setLocale: (l: Locale) => void;
   setColorblind: (v: boolean) => void;
@@ -69,8 +65,6 @@ export const useApp = create<State>()(
       installRibbonUntil: null,
       coachSeen: [],
       tray: [],
-      riskProfile: null,
-      setRiskProfile: (riskProfile) => set({ riskProfile }),
       setTheme: (theme) => set({ theme }),
       setLocale: (locale) => set({ locale }),
       setColorblind: (colorblind) => set({ colorblind }),
@@ -80,7 +74,7 @@ export const useApp = create<State>()(
         set({ watchlist: has ? get().watchlist.filter((x) => !(x.dexId === w.dexId && x.entity === w.entity)) : [...get().watchlist, w] });
       },
       acceptConsent: () => set({ consentVersion: POLICY_VERSION }),
-      resetAll: () => set({ watchlist: [], consentVersion: null, clientId: uuid(), coachSeen: [], tray: [], installRibbonUntil: null, riskProfile: null }),
+      resetAll: () => set({ watchlist: [], consentVersion: null, clientId: uuid(), coachSeen: [], tray: [], installRibbonUntil: null }),
       setReduceMotion: (reduceMotion) => set({ reduceMotion }),
       setHighContrast: (highContrast) => set({ highContrast }),
       setReduceHaptics: (reduceHaptics) => set({ reduceHaptics }),
@@ -96,6 +90,6 @@ export const useApp = create<State>()(
       removeFromTray: (entity) => set({ tray: get().tray.filter((x) => x.entity !== entity) }),
       clearTray: () => set({ tray: [] }),
     }),
-    { name: 'finandex-ui', version: 2, migrate: (s) => ({ reduceMotion: false, highContrast: false, reduceHaptics: false, installRibbonUntil: null, coachSeen: [], tray: [], riskProfile: null, ...(s as object) }) as unknown as State },
+    { name: 'finandex-ui', version: 2, migrate: (s) => ({ reduceMotion: false, highContrast: false, reduceHaptics: false, installRibbonUntil: null, coachSeen: [], tray: [], ...(s as object) }) as unknown as State },
   ),
 );

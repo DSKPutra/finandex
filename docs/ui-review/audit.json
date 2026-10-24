@@ -1,6 +1,6 @@
 {
   "generated": "2026-10-24",
-  "files": 132,
+  "files": 127,
   "findings": 0,
   "by_rule": {
     "legacy-neon-hex": 0,

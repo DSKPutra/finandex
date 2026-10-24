@@ -63,7 +63,7 @@ export function makeAdapters(store: DataStore): Partial<Record<DexId, TsAdapter>
   const cat = (path: string) => memoize(() => store.json<Catalog>(path));
   const calFile = (path: string) => memoize(() => store.json<Record<string, CalendarReturns>>(path));
 
-  // Askfolio ------------------------------------------------------------------
+  // Finandex AI ------------------------------------------------------------------
   const gCat = cat('core/global/catalog.json');
   const gCal = calFile('core/global/calendar_returns.json');
   const gQual = memoize(() => store.json<Record<string, unknown>>('core/global/quality.json'));
