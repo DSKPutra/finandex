@@ -19,12 +19,12 @@ jobs:
         with: { node-version-file: .nvmrc, cache: npm }
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: '21' }
-      - uses: android-actions/setup-android@v3
+      # The ubuntu-latest image ships the Android SDK (ANDROID_HOME); no setup action, so CI never accepts SDK licences.
       - run: npm ci
       - name: Data core for the bundle
         env:
           GH_RELEASE_TOKEN: ${{ secrets.GH_RELEASE_TOKEN || github.token }}
-        run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build
+        run: npm run data:all
       - run: npm run build:native && npx cap sync android
       - name: Debug APK
         working-directory: android

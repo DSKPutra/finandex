@@ -26,7 +26,7 @@ jobs:
         with: { node-version: '24', cache: npm }
       - run: npm ci
       - name: Build the original datasets (needed for series junctions and cross-checks)
-        run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build
+        run: npm run data:all
       - name: Fetch enabled sources (append-only snapshots)
         run: npm run live:fetch
       - name: Validate (§4) and build public/data/live

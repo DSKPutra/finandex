@@ -15,16 +15,26 @@ jobs:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       GH_RELEASE_TOKEN: ${{ secrets.GH_RELEASE_TOKEN || github.token }}
     steps:
+      - name: Skip without an API key
+        id: key
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then echo "No ANTHROPIC_API_KEY secret — live eval skipped." >> "$GITHUB_STEP_SUMMARY"; echo has=false >> "$GITHUB_OUTPUT"; else echo has=true >> "$GITHUB_OUTPUT"; fi
       - uses: actions/checkout@v4
+        if: steps.key.outputs.has == 'true'
       - uses: actions/setup-node@v4
+        if: steps.key.outputs.has == 'true'
         with: { node-version-file: .nvmrc, cache: npm }
       - run: npm ci
+        if: steps.key.outputs.has == 'true'
       - uses: actions/cache@v4
+        if: steps.key.outputs.has == 'true'
         with:
           path: data/inputs
           key: inputs-${{ hashFiles('kit/manifest/input_files_manifest.json') }}
-      - run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build
+      - run: npm run data:all
+        if: steps.key.outputs.has == 'true'
       - run: npm run eval:chat
+        if: steps.key.outputs.has == 'true'
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: eval-live, path: reports/eval-live.json }

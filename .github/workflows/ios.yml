@@ -21,7 +21,7 @@ jobs:
       - name: Data core for the bundle
         env:
           GH_RELEASE_TOKEN: ${{ secrets.GH_RELEASE_TOKEN || github.token }}
-        run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:build
+        run: npm run data:all
       - run: npm run build:native && npx cap sync ios
       - name: Simulator build
         working-directory: ios/App

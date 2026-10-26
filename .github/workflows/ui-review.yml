@@ -21,7 +21,7 @@ jobs:
         with: { node-version: '24', cache: npm }
       - run: npm ci
       - name: Data (shared by base and PR builds; public/data is not tracked by git)
-        run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:fetch-regulations && npm run data:build
+        run: npm run data:all
       - run: npx playwright install --with-deps chromium
       - name: Baseline screenshots from the base branch
         run: |

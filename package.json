@@ -18,6 +18,7 @@
     "data:verify": "tsx scripts/data/verify-inputs.ts",
     "data:extract": "tsx scripts/data/extract.ts",
     "data:build": "tsx scripts/data/build-all.ts",
+    "data:all": "npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:fetch-regulations && npm run data:build",
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc -p tsconfig.app.json --noEmit && npm run typecheck:server",
     "typecheck:server": "tsc -p tsconfig.node.json --noEmit",

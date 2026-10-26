@@ -75,7 +75,7 @@ jobs:
             public/sbom/${{ steps.v.outputs.version }}/SHA256SUMS
       - name: Rebuild Packages A–C (Markdown, Mermaid SVG, PDF) and run the documentation gate
         run: |
-          npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:fetch-regulations && npm run data:build
+          npm run data:all
           npx playwright install --with-deps chromium
           npm run docs:build
           npm run docs:verify

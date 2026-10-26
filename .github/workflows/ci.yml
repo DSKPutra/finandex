@@ -30,10 +30,7 @@ jobs:
         with:
           path: data/inputs
           key: inputs-${{ hashFiles('kit/manifest/input_files_manifest.json') }}
-      - run: npm run data:fetch
-      - run: npm run data:verify
-      - run: npm run data:extract
-      - run: npm run data:build
+      - run: npm run data:all
       - run: npx playwright install --with-deps chromium firefox webkit
       - name: Gitleaks
         uses: gitleaks/gitleaks-action@v2

@@ -46,7 +46,7 @@ jobs:
           for t in $(echo "${{ matrix.rust_targets }}" | tr ',' ' '); do rustup target add "$t"; done
       - name: Data core for the bundled offline data
         shell: bash
-        run: npm run data:fetch && npm run data:verify && npm run data:extract && npm run data:fetch-regulations && npm run data:build
+        run: npm run data:all
       - name: Smoke test — Rust unit tests
         shell: bash
         run: cd src-tauri && cargo test

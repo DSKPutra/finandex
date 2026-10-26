@@ -27,6 +27,6 @@ jobs:
         with:
           path: data/inputs
           key: inputs-${{ hashFiles('kit/manifest/input_files_manifest.json') }}
-      - run: npm run data:fetch && npm run data:verify && npm run data:extract
+      - run: npm run data:all
       - run: npm run test:parity
       - run: npm run test:golden
