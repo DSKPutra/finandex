@@ -11,12 +11,16 @@ test('consent is required on first use, then the answer card renders', async ({ 
   await expect(page.getByRole('dialog', { name: 'Sebelum memakai chat' })).toBeVisible();
   await page.getByRole('button', { name: 'Saya mengerti' }).click();
   await expect(page.getByText(/Emas \(GC=F\) memberi return/)).toBeVisible();
-  await expect(page.getByRole('img', { name: /Perbandingan/ })).toBeVisible();
+  // Below 1024 px the evidence opens as a bottom sheet only when the reader taps "Bukti" (it never covers the answer).
+  const narrow = (page.viewportSize()?.width ?? 1280) < 1024;
+  if (narrow) await page.getByRole('button', { name: /^Bukti:/ }).first().click();
+  const evidence = narrow ? page.getByRole('dialog', { name: 'Bukti' }) : page;
+  await expect(evidence.getByRole('img', { name: /Perbandingan/ })).toBeVisible();
   // The method panel opens by default in the Evidence Pane (§10.0.2); open it only if it is collapsed.
-  const why = page.getByRole('button', { name: 'Kenapa jawabannya begini?' }).first();
+  const why = evidence.getByRole('button', { name: 'Kenapa jawabannya begini?' }).first();
   if ((await why.getAttribute('aria-expanded')) !== 'true') await why.click();
-  await expect(page.getByText(/baris dipakai/).first()).toBeVisible();
-  await expect(page.getByText(/Sumber: Global_Financial_Markets_Dataset_2000-Present\.zip/).first()).toBeVisible();
+  await expect(evidence.getByText(/baris dipakai/).first()).toBeVisible();
+  await expect(evidence.getByText(/Sumber: Global_Financial_Markets_Dataset_2000-Present\.zip/).first()).toBeVisible();
 });
 
 test('stop aborts a pending answer', async ({ page }) => {
