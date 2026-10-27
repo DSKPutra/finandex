@@ -5,7 +5,7 @@ import { useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { downloadCsv } from '../lib/export';
 import { useLocale } from '../lib/locale';
-import { normaliseKey } from '../shared/text';
+import { normaliseKey } from '../shared/normalise';
 import { formatValue } from './chart/format';
 import { Button } from './ui';
 

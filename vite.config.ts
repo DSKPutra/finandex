@@ -77,6 +77,40 @@ function lawAppHtml(): Plugin {
   };
 }
 
+/** Starts the app right after the first paint (index.html ships a static splash): the module entry and its
+ *  modulepreloads are injected by /boot.js — an external file, so the CSP keeps forbidding inline scripts — instead of
+ *  being requested while the HTML is still parsing. Real users see the splash immediately; JS starts one frame later. */
+function bootAfterPaint(): Plugin {
+  const BOOT = `/* © 2026 Dea Saka Kurnia Putra. All rights reserved. Loads the app after the first paint (vite.config.ts bootAfterPaint). */
+(function () {
+  var s = document.currentScript, entry = s.dataset.entry, pre = (s.dataset.preload || '').split(',').filter(Boolean), done = false;
+  function go() {
+    if (done) return;
+    done = true;
+    pre.forEach(function (h) { var l = document.createElement('link'); l.rel = 'modulepreload'; l.crossOrigin = ''; l.href = h; document.head.appendChild(l); });
+    var m = document.createElement('script'); m.type = 'module'; m.crossOrigin = ''; m.src = entry; document.head.appendChild(m);
+  }
+  if (document.visibilityState === 'hidden') go();
+  else { requestAnimationFrame(function () { setTimeout(go, 0); }); setTimeout(go, 200); }
+})();
+`;
+  return {
+    name: 'finandex-boot-after-paint',
+    apply: 'build',
+    enforce: 'post',
+    generateBundle(_o, bundle) {
+      const html = bundle['index.html'];
+      if (!html || html.type !== 'asset') return;
+      let src = String(html.source);
+      const pre: string[] = [];
+      src = src.replace(/<link rel="modulepreload" crossorigin href="([^"]+)">\s*/g, (_m, href: string) => (pre.push(href), ''));
+      src = src.replace(/<script type="module" crossorigin src="([^"]+)"><\/script>/, (_m, entry: string) => `<script src="/boot.js" data-entry="${entry}" data-preload="${pre.join(',')}" defer></script>`);
+      html.source = src;
+      this.emitFile({ type: 'asset', fileName: 'boot.js', source: BOOT });
+    },
+  };
+}
+
 export default defineConfig({
   plugins: [
     react(),
@@ -84,6 +118,7 @@ export default defineConfig({
     devApi(),
     preloadFonts(),
     inlineCss(),
+    bootAfterPaint(),
     lawAppHtml(),
     VitePWA({
       strategies: 'injectManifest',

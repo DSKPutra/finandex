@@ -6,15 +6,7 @@ import { wordlist } from '@scure/bip39/wordlists/english.js';
 
 const BIP39 = new Set(wordlist);
 
-/** Lower-case, strip diacritics, collapse whitespace — for search keys. */
-export function normaliseKey(s: string): string {
-  return s
-    .normalize('NFKD')
-    .replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-    .trim();
-}
+export { normaliseKey } from './normalise';
 
 /** Remove control characters (except tab/newline) and truncate untrusted text before it reaches the LLM. */
 export function sanitiseUntrusted(s: string | null | undefined, maxLen = 2000): string {

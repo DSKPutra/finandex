@@ -2,15 +2,12 @@
 // App shell (§10.1): Orbit Rail (≥ 768 px) + top bar (Index Search ⌘K, global "Data per", theme, language); on mobile a
 // header + 5-item bottom bar (Beranda · Pasar · AI · Dex · Lainnya). Global keyboard shortcuts (§10.9): ? list,
 // g h home, g d Dex Hub, / or ⌘K search, Esc closes panels. Offline banner, update prompt, compare tray, footer.
-import * as Dialog from '@radix-ui/react-dialog';
 import { clsx } from 'clsx';
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, NavLink, Outlet, ScrollRestoration, useLocation, useNavigate } from 'react-router';
 import { useAsOfLabel } from '../components/badges';
-import { Button } from '../components/ui';
 import { APP_NAME } from '../config/brand';
-import { CompareDnd, CompareTray } from '../features/compare/CompareTray';
 import { useManifest } from '../lib/data';
 import { useLocale } from '../lib/locale';
 import { useOnline } from '../lib/online';
@@ -20,6 +17,8 @@ import { OrbitRail } from './OrbitRail';
 import { UpdatePrompt } from './UpdatePrompt';
 
 const IndexSearch = lazy(() => import('../components/IndexSearch'));
+const CompareShell = lazy(() => import('../features/compare/CompareShell'));
+const ShortcutsDialog = lazy(() => import('./ShortcutsDialog'));
 
 function ThemeLangControls() {
   const { t } = useTranslation();
@@ -30,10 +29,21 @@ function ThemeLangControls() {
   const dark = theme !== 'light';
   return (
     <div className="flex items-center gap-1">
-      <button type="button" onClick={() => setTheme(dark ? 'light' : 'dark')} aria-label={dark ? t('settings.toLedger') : t('settings.toNocturne')} title={dark ? 'Ledger' : 'Nocturne'} className="inline-flex h-11 w-11 items-center justify-center rounded-xl hover:bg-pane-2">
+      <button
+        type="button"
+        onClick={() => setTheme(dark ? 'light' : 'dark')}
+        aria-label={dark ? t('settings.toLedger') : t('settings.toNocturne')}
+        title={dark ? 'Ledger' : 'Nocturne'}
+        className="inline-flex h-11 w-11 items-center justify-center rounded-xl hover:bg-pane-2"
+      >
         <span aria-hidden>{dark ? '☾' : '☼'}</span>
       </button>
-      <button type="button" onClick={() => setLocale(locale === 'id' ? 'en' : 'id')} aria-label={t('settings.switchLanguage')} className="inline-flex h-11 min-w-11 items-center justify-center rounded-xl px-2 text-sm font-medium hover:bg-pane-2">
+      <button
+        type="button"
+        onClick={() => setLocale(locale === 'id' ? 'en' : 'id')}
+        aria-label={t('settings.switchLanguage')}
+        className="inline-flex h-11 min-w-11 items-center justify-center rounded-xl px-2 text-sm font-medium hover:bg-pane-2"
+      >
         {locale === 'id' ? 'ID' : 'EN'}
       </button>
     </div>
@@ -45,10 +55,22 @@ function GlobalAsOf() {
   const { t } = useTranslation();
   const m = useManifest();
   const fmt = useAsOfLabel();
-  const newest = useMemo(() => Object.values(m.data?.dex ?? {}).map((d) => d.as_of).filter((x) => /^\d{4}-\d{2}-\d{2}$/.test(x)).sort().at(-1), [m.data]);
+  const newest = useMemo(
+    () =>
+      Object.values(m.data?.dex ?? {})
+        .map((d) => d.as_of)
+        .filter((x) => /^\d{4}-\d{2}-\d{2}$/.test(x))
+        .sort()
+        .at(-1),
+    [m.data],
+  );
   if (!newest) return null;
   return (
-    <Link to="/legal/data-sources" className="hidden items-center gap-2 rounded-full border border-edge px-3 py-1 text-xs text-ink-muted hover:text-ink lg:inline-flex" title={t('nav.asOfHint')}>
+    <Link
+      to="/legal/data-sources"
+      className="hidden items-center gap-2 rounded-full border border-edge px-3 py-1 text-xs text-ink-muted hover:text-ink lg:inline-flex"
+      title={t('nav.asOfHint')}
+    >
       <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-primary" />
       {t('nav.dataAsOf', { date: fmt(newest) })}
     </Link>
@@ -58,7 +80,16 @@ function GlobalAsOf() {
 function BottomNav() {
   const { t } = useTranslation();
   const item = (to: string, label: string, glyph: string, end = false) => (
-    <NavLink to={to} end={end} className={({ isActive }) => clsx('flex min-h-14 flex-1 flex-col items-center justify-center gap-0.5 text-[11px]', isActive ? 'text-data' : 'text-ink-muted')}>
+    <NavLink
+      to={to}
+      end={end}
+      className={({ isActive }) =>
+        clsx(
+          'flex min-h-14 flex-1 flex-col items-center justify-center gap-0.5 text-[11px]',
+          isActive ? 'text-data' : 'text-ink-muted',
+        )
+      }
+    >
       <span aria-hidden className="text-lg leading-none">
         {glyph}
       </span>
@@ -66,7 +97,10 @@ function BottomNav() {
     </NavLink>
   );
   return (
-    <nav aria-label={t('nav.bottom')} className="safe-bottom fixed inset-x-0 bottom-0 z-40 flex border-t border-edge bg-field-0 md:hidden">
+    <nav
+      aria-label={t('nav.bottom')}
+      className="safe-bottom fixed inset-x-0 bottom-0 z-40 flex border-t border-edge bg-field-0 md:hidden"
+    >
       {item('/', t('nav.home'), '⌂', true)}
       {item('/dex/finandex-ai/markets', t('nav.markets'), '◎')}
       <NavLink to="/ai" className="flex flex-1 items-center justify-center" aria-label="Finandex AI">
@@ -78,43 +112,6 @@ function BottomNav() {
       {item('/dex', t('nav.dex'), '✦', true)}
       {item('/more', t('nav.more'), '☰')}
     </nav>
-  );
-}
-
-const SHORTCUTS: [string, string][] = [
-  ['?', 'kb.help'],
-  ['⌘K / Ctrl+K / /', 'kb.search'],
-  ['g h', 'kb.home'],
-  ['g d', 'kb.hub'],
-  ['Esc', 'kb.close'],
-  ['1–9', 'kb.chips'],
-  ['← →', 'kb.slides'],
-];
-
-function ShortcutsDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (o: boolean) => void }) {
-  const { t } = useTranslation();
-  return (
-    <Dialog.Root open={open} onOpenChange={onOpenChange}>
-      <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 z-50 bg-field-0/80" />
-        <Dialog.Content className="pane fixed left-1/2 top-[15vh] z-50 w-[min(92vw,28rem)] -translate-x-1/2 p-5" aria-describedby={undefined}>
-          <Dialog.Title className="font-display text-lg">{t('kb.title')}</Dialog.Title>
-          <dl className="mt-3 space-y-2 text-sm">
-            {SHORTCUTS.map(([k, label]) => (
-              <div key={k} className="flex items-center justify-between gap-4">
-                <dt className="text-ink-muted">{t(label)}</dt>
-                <dd>
-                  <kbd className="rounded-xl border border-edge px-2 py-0.5 font-mono text-xs">{k}</kbd>
-                </dd>
-              </div>
-            ))}
-          </dl>
-          <Dialog.Close asChild>
-            <Button className="mt-4">{t('dex.close')}</Button>
-          </Dialog.Close>
-        </Dialog.Content>
-      </Dialog.Portal>
-    </Dialog.Root>
   );
 }
 
@@ -130,7 +127,12 @@ export function Layout() {
   useEffect(() => {
     const fn = (e: KeyboardEvent) => {
       const el = e.target as HTMLElement | null;
-      const typing = !!el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT' || el.isContentEditable);
+      const typing =
+        !!el &&
+        (el.tagName === 'INPUT' ||
+          el.tagName === 'TEXTAREA' ||
+          el.tagName === 'SELECT' ||
+          el.isContentEditable);
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         setSearch(true);
@@ -153,10 +155,14 @@ export function Layout() {
   useEffect(() => {
     document.getElementById('main')?.focus({ preventScroll: true });
   }, [loc.pathname]);
-  return (
-    <CompareDnd>
+  const trayCount = useApp((s) => s.tray.length);
+  const compare = trayCount > 0 || /^\/(dex|markets)\//.test(loc.pathname);
+  const page = (
     <div className="flex min-h-dvh">
-      <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:rounded-xl focus:bg-pane focus:p-2">
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:rounded-xl focus:bg-pane focus:p-2"
+      >
         {t('nav.skip')}
       </a>
       <OrbitRail />
@@ -166,7 +172,13 @@ export function Layout() {
             <img src="/icons/finandex.svg" alt="" width={28} height={28} className="rounded-xl" />
             <span className="font-display text-base">{APP_NAME}</span>
           </Link>
-          <button type="button" onClick={openSearch} aria-label={t('search.open')} aria-keyshortcuts="Control+K Meta+K /" className="ml-auto flex min-h-11 items-center gap-2 rounded-xl border border-edge bg-pane px-3 text-sm text-ink-muted hover:text-ink md:ml-0 md:w-[min(40rem,60%)]">
+          <button
+            type="button"
+            onClick={openSearch}
+            aria-label={t('search.open')}
+            aria-keyshortcuts="Control+K Meta+K /"
+            className="ml-auto flex min-h-11 items-center gap-2 rounded-xl border border-edge bg-pane px-3 text-sm text-ink-muted hover:text-ink md:ml-0 md:w-[min(40rem,60%)]"
+          >
             <span aria-hidden>⌕</span>
             <span className="hidden flex-1 text-left md:inline">{t('search.placeholder')}</span>
             <kbd className="hidden rounded-xl border border-edge px-1.5 text-xs md:inline">⌘K</kbd>
@@ -182,7 +194,11 @@ export function Layout() {
           </p>
         )}
         <UpdatePrompt />
-        <main id="main" tabIndex={-1} className="mx-auto w-full max-w-[90rem] flex-1 px-4 pb-28 pt-4 outline-none md:px-6 md:pb-10">
+        <main
+          id="main"
+          tabIndex={-1}
+          className="mx-auto w-full max-w-[90rem] flex-1 px-4 pb-28 pt-4 outline-none md:px-6 md:pb-10"
+        >
           <Outlet />
         </main>
         <div className="pb-20 md:pb-0">
@@ -190,15 +206,25 @@ export function Layout() {
         </div>
       </div>
       <BottomNav />
-      <CompareTray />
       {search && (
         <Suspense fallback={null}>
           <IndexSearch open={search} onOpenChange={setSearch} />
         </Suspense>
       )}
-      <ShortcutsDialog open={help} onOpenChange={setHelp} />
+      {help && (
+        <Suspense fallback={null}>
+          <ShortcutsDialog open={help} onOpenChange={setHelp} />
+        </Suspense>
+      )}
       <ScrollRestoration />
     </div>
-    </CompareDnd>
+  );
+  // The compare layer (dnd-kit, charts, tables) loads only where it is used or once the tray holds something.
+  return compare ? (
+    <Suspense fallback={page}>
+      <CompareShell>{page}</CompareShell>
+    </Suspense>
+  ) : (
+    page
   );
 }

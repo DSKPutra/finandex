@@ -15,6 +15,7 @@
       .splash{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#f7f7fa;color:#1f2133;font:14px system-ui,sans-serif}
       .splash-by{display:flex;align-items:center;gap:8px;color:#555770}
       .splash small{position:absolute;bottom:24px;color:#555770}
+      .splash-name{font:600 clamp(64px,20vw,104px)/1 system-ui,sans-serif;letter-spacing:-.03em}
       .splash .on-dark{display:none}
       @media (prefers-color-scheme: dark){.splash{background:#161827;color:#e7e8f2}.splash-by,.splash small{color:#a3a6bf}.splash .on-dark{display:inline}.splash .on-light{display:none}}
     </style>
@@ -23,6 +24,7 @@
     <div id="root">
       <div class="splash" role="img" aria-label="Finandex — by Dea Saka Kurnia Putra">
         <img src="/icons/finandex.svg" alt="" width="96" height="96" />
+        <div class="splash-name">Finandex</div>
         <div class="splash-by"><img class="on-light" src="/brand/dskp-mark-on-light-64.png" alt="" width="28" height="28" /><img class="on-dark" src="/brand/dskp-mark-on-dark-64.png" alt="" width="28" height="28" /><span>by Dea Saka Kurnia Putra</span></div>
         <small>© 2026 Dea Saka Kurnia Putra</small>
       </div>

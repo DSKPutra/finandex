@@ -12,7 +12,7 @@ import { DISTRIBUTION } from '../config/runtime';
 import { getStore } from '../lib/data';
 import { useLocale } from '../lib/locale';
 import { entityHref } from '../lib/links';
-import { normaliseKey } from '../shared/text';
+import { normaliseKey } from '../shared/normalise';
 import { TABS } from '../features/dex/panels';
 import { getJson } from '../lib/data';
 import { suggestDex } from '../shared/dex-router';

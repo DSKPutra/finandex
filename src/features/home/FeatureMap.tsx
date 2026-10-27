@@ -14,7 +14,7 @@ import { DISTRIBUTION } from '../../config/runtime';
 import { useManifest } from '../../lib/data';
 import { useLocale } from '../../lib/locale';
 import { useApp } from '../../lib/store';
-import { normaliseKey } from '../../shared/text';
+import { normaliseKey } from '../../shared/normalise';
 
 export function filterDex(list: DexEntry[], o: { q: string; group: DexGroupId | null; indonesia: boolean; hideNc: boolean }): DexEntry[] {
   const k = normaliseKey(o.q);
