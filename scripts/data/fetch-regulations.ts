@@ -270,7 +270,11 @@ async function main() {
       console.log(`MISS ${d.id.padEnd(30)} ${reason.slice(0, 160)}`);
     }
   }
-  const lock: Lock = { version: new Date().toISOString().slice(0, 10), catalog_version: CATALOG.meta.version, release: TAG, documents: out };
+  // The version date only moves when the documents change, so re-running the pipeline (CI, another day) leaves the lock —
+  // and the serverless bundle that embeds it — byte-identical.
+  const prevLock = existsSync(LOCK_PATH) ? (JSON.parse(readFileSync(LOCK_PATH, 'utf8')) as Lock) : null;
+  const same = prevLock && prevLock.catalog_version === CATALOG.meta.version && JSON.stringify(prevLock.documents) === JSON.stringify(out);
+  const lock: Lock = { version: same ? prevLock.version : new Date().toISOString().slice(0, 10), catalog_version: CATALOG.meta.version, release: TAG, documents: out };
   if (!CHECK) {
     writeFileSync(LOCK_PATH, JSON.stringify(lock, null, 1) + '\n');
     writeFileSync(join(REGULATIONS, 'regulations.lock.json'), JSON.stringify(lock, null, 1) + '\n');
