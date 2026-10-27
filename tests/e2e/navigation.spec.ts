@@ -67,6 +67,8 @@ test('navigation: sidebar on desktop, bottom tabs on mobile', async ({ page }) =
 test('global search opens a stock detail', async ({ page }) => {
   test.skip(isMobile(page), 'keyboard shortcut is desktop-only');
   await page.goto('/');
+  // The app boots right after the first paint (vite.config.ts bootAfterPaint): wait until it is interactive.
+  await page.locator('main#main').waitFor();
   await page.keyboard.press('Control+k');
   await page.getByRole('combobox').fill('BBCA');
   await page.getByRole('option').filter({ hasText: '· BBCA' }).first().click();
