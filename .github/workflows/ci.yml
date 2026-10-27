@@ -39,7 +39,11 @@ jobs:
       - run: npm audit --omit=dev --audit-level=high
       - run: npm run verify
       - name: Bundled Vercel function is up to date
-        run: git diff --exit-code api/index.mjs
+        run: |
+          git status --short
+          git diff --stat
+          git diff -- src/config/regulations.lock.json src/config/*.generated.* server/**/*.generated.ts | head -60
+          git diff --quiet api/index.mjs || { echo "api/index.mjs differs from a fresh build: run npm run build:api and commit"; exit 1; }
       - run: npm run lighthouse
       - uses: actions/upload-artifact@v4
         if: always()

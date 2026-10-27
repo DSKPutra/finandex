@@ -266,7 +266,8 @@ async function main() {
       console.log(`ok   ${d.id.padEnd(30)} ${found.pages} pages  ${found.url}`);
     } else {
       const reason = tried.length ? tried.slice(-3).join(' | ').slice(0, 600) : 'no official PDF link found';
-      out.push({ doc_id: d.id, url: null, sha256: null, bytes: null, pages: null, fetched_at: null, title_detected: null, status: tried.length ? 'failed' : 'pending', reason });
+      // Still unavailable: keep the committed entry (network error texts differ per machine and would churn the lock).
+      out.push(old && old.status !== 'available' ? old : { doc_id: d.id, url: null, sha256: null, bytes: null, pages: null, fetched_at: null, title_detected: null, status: tried.length ? 'failed' : 'pending', reason });
       console.log(`MISS ${d.id.padEnd(30)} ${reason.slice(0, 160)}`);
     }
   }
