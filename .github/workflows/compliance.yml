@@ -42,7 +42,7 @@ jobs:
           sudo dpkg -i sbomqs_2.1.2_amd64.deb
         env: { GH_TOKEN: '${{ github.token }}' }
       - name: Vulnerability scan of the SBOM (osv-scanner)
-        uses: google/osv-scanner-action/osv-scanner-action@v2.6.0
+        uses: google/osv-scanner-action/osv-scanner-action@v2.7.0
         continue-on-error: true # findings must be covered by VEX; the gate below enforces it
         with:
           scan-args: |-
