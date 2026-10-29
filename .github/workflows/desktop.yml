@@ -35,7 +35,7 @@ jobs:
       TAURI_SIGNING_PUBLIC_KEY: ${{ secrets.TAURI_SIGNING_PUBLIC_KEY }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with: { node-version: '24', cache: npm }
       - run: npm ci
       - name: Rust toolchain (preinstalled rustup on GitHub runners)
