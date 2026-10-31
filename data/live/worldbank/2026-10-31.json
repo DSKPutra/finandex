@@ -1,0 +1,10974 @@
+{
+ "source_id": "worldbank",
+ "dataset_id": "cpi-inflation",
+ "retrieved_at": "2026-10-31T02:38:51.830Z",
+ "endpoint": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&date=2019:2026&per_page=20000",
+ "http_status": 200,
+ "etag": null,
+ "body_sha256": "23c2c0b3936e904a8a791a81cc22b05df349f6dc9167e56e24de18052aaaf078",
+ "lastupdated": "2026-10-08",
+ "rows": [
+  {
+   "iso3": "AFE",
+   "country": "Africa Eastern and Southern",
+   "year": 2025,
+   "value": 4.27011140706665
+  },
+  {
+   "iso3": "AFE",
+   "country": "Africa Eastern and Southern",
+   "year": 2024,
+   "value": 4.77085731915833
+  },
+  {
+   "iso3": "AFE",
+   "country": "Africa Eastern and Southern",
+   "year": 2023,
+   "value": 7.39918558080626
+  },
+  {
+   "iso3": "AFE",
+   "country": "Africa Eastern and Southern",
+   "year": 2022,
+   "value": 10.8834775726017
+  },
+  {
+   "iso3": "AFE",
+   "country": "Africa Eastern and Southern",
+   "year": 2021,
+   "value": 6.82472709282066
+  },
+  {
+   "iso3": "AFE",
+   "country": "Africa Eastern and Southern",
+   "year": 2020,
+   "value": 5.19162942092851
+  },
+  {
+   "iso3": "AFE",
+   "country": "Africa Eastern and Southern",
+   "year": 2019,
+   "value": 4.10285075461155
+  },
+  {
+   "iso3": "AFW",
+   "country": "Africa Western and Central",
+   "year": 2025,
+   "value": 1.65781767585276
+  },
+  {
+   "iso3": "AFW",
+   "country": "Africa Western and Central",
+   "year": 2024,
+   "value": 3.60804426950566
+  },
+  {
+   "iso3": "AFW",
+   "country": "Africa Western and Central",
+   "year": 2023,
+   "value": 5.22116801324002
+  },
+  {
+   "iso3": "AFW",
+   "country": "Africa Western and Central",
+   "year": 2022,
+   "value": 7.94925143524016
+  },
+  {
+   "iso3": "AFW",
+   "country": "Africa Western and Central",
+   "year": 2021,
+   "value": 3.74556782333009
+  },
+  {
+   "iso3": "AFW",
+   "country": "Africa Western and Central",
+   "year": 2020,
+   "value": 2.49037783931948
+  },
+  {
+   "iso3": "AFW",
+   "country": "Africa Western and Central",
+   "year": 2019,
+   "value": 1.98309228487231
+  },
+  {
+   "iso3": "ARB",
+   "country": "Arab World",
+   "year": 2025,
+   "value": 1.76646490894205
+  },
+  {
+   "iso3": "ARB",
+   "country": "Arab World",
+   "year": 2024,
+   "value": 2.30890057183496
+  },
+  {
+   "iso3": "ARB",
+   "country": "Arab World",
+   "year": 2023,
+   "value": 4.00025877060151
+  },
+  {
+   "iso3": "ARB",
+   "country": "Arab World",
+   "year": 2022,
+   "value": 5.17222088647605
+  },
+  {
+   "iso3": "ARB",
+   "country": "Arab World",
+   "year": 2021,
+   "value": 2.86833027751014
+  },
+  {
+   "iso3": "ARB",
+   "country": "Arab World",
+   "year": 2020,
+   "value": 1.4470365699874
+  },
+  {
+   "iso3": "ARB",
+   "country": "Arab World",
+   "year": 2019,
+   "value": 1.33601568147655
+  },
+  {
+   "iso3": "CSS",
+   "country": "Caribbean small states",
+   "year": 2025,
+   "value": 1.10879778651364
+  },
+  {
+   "iso3": "CSS",
+   "country": "Caribbean small states",
+   "year": 2024,
+   "value": 2.73620751873312
+  },
+  {
+   "iso3": "CSS",
+   "country": "Caribbean small states",
+   "year": 2023,
+   "value": 4.10449281822016
+  },
+  {
+   "iso3": "CSS",
+   "country": "Caribbean small states",
+   "year": 2022,
+   "value": 5.82838638517958
+  },
+  {
+   "iso3": "CSS",
+   "country": "Caribbean small states",
+   "year": 2021,
+   "value": 2.22891330700343
+  },
+  {
+   "iso3": "CSS",
+   "country": "Caribbean small states",
+   "year": 2020,
+   "value": 0.121434644614893
+  },
+  {
+   "iso3": "CSS",
+   "country": "Caribbean small states",
+   "year": 2019,
+   "value": 1.00054293027237
+  },
+  {
+   "iso3": "CEB",
+   "country": "Central Europe and the Baltics",
+   "year": 2025,
+   "value": 3.81419531520146
+  },
+  {
+   "iso3": "CEB",
+   "country": "Central Europe and the Baltics",
+   "year": 2024,
+   "value": 2.75760909424278
+  },
+  {
+   "iso3": "CEB",
+   "country": "Central Europe and the Baltics",
+   "year": 2023,
+   "value": 9.44284140088564
+  },
+  {
+   "iso3": "CEB",
+   "country": "Central Europe and the Baltics",
+   "year": 2022,
+   "value": 14.6081439492433
+  },
+  {
+   "iso3": "CEB",
+   "country": "Central Europe and the Baltics",
+   "year": 2021,
+   "value": 3.83984491500146
+  },
+  {
+   "iso3": "CEB",
+   "country": "Central Europe and the Baltics",
+   "year": 2020,
+   "value": 1.67244096855756
+  },
+  {
+   "iso3": "CEB",
+   "country": "Central Europe and the Baltics",
+   "year": 2019,
+   "value": 2.6645613342544
+  },
+  {
+   "iso3": "EAR",
+   "country": "Early-demographic dividend",
+   "year": 2025,
+   "value": 3.36462189317824
+  },
+  {
+   "iso3": "EAR",
+   "country": "Early-demographic dividend",
+   "year": 2024,
+   "value": 3.29589662451998
+  },
+  {
+   "iso3": "EAR",
+   "country": "Early-demographic dividend",
+   "year": 2023,
+   "value": 5.88289680163219
+  },
+  {
+   "iso3": "EAR",
+   "country": "Early-demographic dividend",
+   "year": 2022,
+   "value": 7.11924444078173
+  },
+  {
+   "iso3": "EAR",
+   "country": "Early-demographic dividend",
+   "year": 2021,
+   "value": 4.19390935931754
+  },
+  {
+   "iso3": "EAR",
+   "country": "Early-demographic dividend",
+   "year": 2020,
+   "value": 3.07516045243924
+  },
+  {
+   "iso3": "EAR",
+   "country": "Early-demographic dividend",
+   "year": 2019,
+   "value": 2.76769231124715
+  },
+  {
+   "iso3": "EAS",
+   "country": "East Asia & Pacific",
+   "year": 2025,
+   "value": 2.01821432376869
+  },
+  {
+   "iso3": "EAS",
+   "country": "East Asia & Pacific",
+   "year": 2024,
+   "value": 2.27673550782623
+  },
+  {
+   "iso3": "EAS",
+   "country": "East Asia & Pacific",
+   "year": 2023,
+   "value": 4.25155508842779
+  },
+  {
+   "iso3": "EAS",
+   "country": "East Asia & Pacific",
+   "year": 2022,
+   "value": 5.51812928576937
+  },
+  {
+   "iso3": "EAS",
+   "country": "East Asia & Pacific",
+   "year": 2021,
+   "value": 2.47710241465446
+  },
+  {
+   "iso3": "EAS",
+   "country": "East Asia & Pacific",
+   "year": 2020,
+   "value": 0.846900734607273
+  },
+  {
+   "iso3": "EAS",
+   "country": "East Asia & Pacific",
+   "year": 2019,
+   "value": 1.71437095763401
+  },
+  {
+   "iso3": "EAP",
+   "country": "East Asia & Pacific (excluding high income)",
+   "year": 2025,
+   "value": 2.2119620764675
+  },
+  {
+   "iso3": "EAP",
+   "country": "East Asia & Pacific (excluding high income)",
+   "year": 2024,
+   "value": 2.18151273615188
+  },
+  {
+   "iso3": "EAP",
+   "country": "East Asia & Pacific (excluding high income)",
+   "year": 2023,
+   "value": 5.88585897042164
+  },
+  {
+   "iso3": "EAP",
+   "country": "East Asia & Pacific (excluding high income)",
+   "year": 2022,
+   "value": 5.66964369895445
+  },
+  {
+   "iso3": "EAP",
+   "country": "East Asia & Pacific (excluding high income)",
+   "year": 2021,
+   "value": 2.69891859529197
+  },
+  {
+   "iso3": "EAP",
+   "country": "East Asia & Pacific (excluding high income)",
+   "year": 2020,
+   "value": 2.40629214387011
+  },
+  {
+   "iso3": "EAP",
+   "country": "East Asia & Pacific (excluding high income)",
+   "year": 2019,
+   "value": 1.94257500833107
+  },
+  {
+   "iso3": "TEA",
+   "country": "East Asia & Pacific (IDA & IBRD countries)",
+   "year": 2025,
+   "value": 2.06264825470915
+  },
+  {
+   "iso3": "TEA",
+   "country": "East Asia & Pacific (IDA & IBRD countries)",
+   "year": 2024,
+   "value": 2.20662023268445
+  },
+  {
+   "iso3": "TEA",
+   "country": "East Asia & Pacific (IDA & IBRD countries)",
+   "year": 2023,
+   "value": 5.93194206291786
+  },
+  {
+   "iso3": "TEA",
+   "country": "East Asia & Pacific (IDA & IBRD countries)",
+   "year": 2022,
+   "value": 5.82115811213954
+  },
+  {
+   "iso3": "TEA",
+   "country": "East Asia & Pacific (IDA & IBRD countries)",
+   "year": 2021,
+   "value": 2.6124818577648
+  },
+  {
+   "iso3": "TEA",
+   "country": "East Asia & Pacific (IDA & IBRD countries)",
+   "year": 2020,
+   "value": 2.3931623931624
+  },
+  {
+   "iso3": "TEA",
+   "country": "East Asia & Pacific (IDA & IBRD countries)",
+   "year": 2019,
+   "value": 1.93321335810515
+  },
+  {
+   "iso3": "EMU",
+   "country": "Euro area",
+   "year": 2025,
+   "value": 2.46605755272817
+  },
+  {
+   "iso3": "EMU",
+   "country": "Euro area",
+   "year": 2024,
+   "value": 2.2564981433876
+  },
+  {
+   "iso3": "EMU",
+   "country": "Euro area",
+   "year": 2023,
+   "value": 5.94643667725823
+  },
+  {
+   "iso3": "EMU",
+   "country": "Euro area",
+   "year": 2022,
+   "value": 8.54686993188457
+  },
+  {
+   "iso3": "EMU",
+   "country": "Euro area",
+   "year": 2021,
+   "value": 2.52692009066166
+  },
+  {
+   "iso3": "EMU",
+   "country": "Euro area",
+   "year": 2020,
+   "value": 0.219064904841984
+  },
+  {
+   "iso3": "EMU",
+   "country": "Euro area",
+   "year": 2019,
+   "value": 1.44565976888253
+  },
+  {
+   "iso3": "ECS",
+   "country": "Europe & Central Asia",
+   "year": 2025,
+   "value": 3.74577316751945
+  },
+  {
+   "iso3": "ECS",
+   "country": "Europe & Central Asia",
+   "year": 2024,
+   "value": 2.77406987275873
+  },
+  {
+   "iso3": "ECS",
+   "country": "Europe & Central Asia",
+   "year": 2023,
+   "value": 6.79396706793962
+  },
+  {
+   "iso3": "ECS",
+   "country": "Europe & Central Asia",
+   "year": 2022,
+   "value": 10.7805806758686
+  },
+  {
+   "iso3": "ECS",
+   "country": "Europe & Central Asia",
+   "year": 2021,
+   "value": 3.23074912132927
+  },
+  {
+   "iso3": "ECS",
+   "country": "Europe & Central Asia",
+   "year": 2020,
+   "value": 1.20007348888468
+  },
+  {
+   "iso3": "ECS",
+   "country": "Europe & Central Asia",
+   "year": 2019,
+   "value": 1.78413120567382
+  },
+  {
+   "iso3": "ECA",
+   "country": "Europe & Central Asia (excluding high income)",
+   "year": 2025,
+   "value": 4.07249176848347
+  },
+  {
+   "iso3": "ECA",
+   "country": "Europe & Central Asia (excluding high income)",
+   "year": 2024,
+   "value": 3.48974086026953
+  },
+  {
+   "iso3": "ECA",
+   "country": "Europe & Central Asia (excluding high income)",
+   "year": 2023,
+   "value": 8.7854304984908
+  },
+  {
+   "iso3": "ECA",
+   "country": "Europe & Central Asia (excluding high income)",
+   "year": 2022,
+   "value": 13.8522590144267
+  },
+  {
+   "iso3": "ECA",
+   "country": "Europe & Central Asia (excluding high income)",
+   "year": 2021,
+   "value": 7.1848362944337
+  },
+  {
+   "iso3": "ECA",
+   "country": "Europe & Central Asia (excluding high income)",
+   "year": 2020,
+   "value": 2.75980947008127
+  },
+  {
+   "iso3": "ECA",
+   "country": "Europe & Central Asia (excluding high income)",
+   "year": 2019,
+   "value": 2.67599202639893
+  },
+  {
+   "iso3": "TEC",
+   "country": "Europe & Central Asia (IDA & IBRD countries)",
+   "year": 2025,
+   "value": 4.32666766042022
+  },
+  {
+   "iso3": "TEC",
+   "country": "Europe & Central Asia (IDA & IBRD countries)",
+   "year": 2024,
+   "value": 3.64017491828575
+  },
+  {
+   "iso3": "TEC",
+   "country": "Europe & Central Asia (IDA & IBRD countries)",
+   "year": 2023,
+   "value": 9.07365149809047
+  },
+  {
+   "iso3": "TEC",
+   "country": "Europe & Central Asia (IDA & IBRD countries)",
+   "year": 2022,
+   "value": 13.8238738788394
+  },
+  {
+   "iso3": "TEC",
+   "country": "Europe & Central Asia (IDA & IBRD countries)",
+   "year": 2021,
+   "value": 5.87835520855807
+  },
+  {
+   "iso3": "TEC",
+   "country": "Europe & Central Asia (IDA & IBRD countries)",
+   "year": 2020,
+   "value": 2.74615078213777
+  },
+  {
+   "iso3": "TEC",
+   "country": "Europe & Central Asia (IDA & IBRD countries)",
+   "year": 2019,
+   "value": 2.88986073718332
+  },
+  {
+   "iso3": "EUU",
+   "country": "European Union",
+   "year": 2025,
+   "value": 2.46605755272817
+  },
+  {
+   "iso3": "EUU",
+   "country": "European Union",
+   "year": 2024,
+   "value": 2.43531202435314
+  },
+  {
+   "iso3": "EUU",
+   "country": "European Union",
+   "year": 2023,
+   "value": 6.29942487419124
+  },
+  {
+   "iso3": "EUU",
+   "country": "European Union",
+   "year": 2022,
+   "value": 8.83346218008716
+  },
+  {
+   "iso3": "EUU",
+   "country": "European Union",
+   "year": 2021,
+   "value": 2.5545069964204
+  },
+  {
+   "iso3": "EUU",
+   "country": "European Union",
+   "year": 2020,
+   "value": 0.477700847097022
+  },
+  {
+   "iso3": "EUU",
+   "country": "European Union",
+   "year": 2019,
+   "value": 1.63437236731259
+  },
+  {
+   "iso3": "FCV",
+   "country": "Fragility, Conflict, and Violence (FCV) situations",
+   "year": 2025,
+   "value": 4.39494157156317
+  },
+  {
+   "iso3": "FCV",
+   "country": "Fragility, Conflict, and Violence (FCV) situations",
+   "year": 2024,
+   "value": 5.5176490719043
+  },
+  {
+   "iso3": "FCV",
+   "country": "Fragility, Conflict, and Violence (FCV) situations",
+   "year": 2023,
+   "value": 5.11472764384291
+  },
+  {
+   "iso3": "FCV",
+   "country": "Fragility, Conflict, and Violence (FCV) situations",
+   "year": 2022,
+   "value": 10.279401809342
+  },
+  {
+   "iso3": "FCV",
+   "country": "Fragility, Conflict, and Violence (FCV) situations",
+   "year": 2021,
+   "value": 6.04186489058042
+  },
+  {
+   "iso3": "FCV",
+   "country": "Fragility, Conflict, and Violence (FCV) situations",
+   "year": 2020,
+   "value": 3.48393567493203
+  },
+  {
+   "iso3": "FCV",
+   "country": "Fragility, Conflict, and Violence (FCV) situations",
+   "year": 2019,
+   "value": 3.00538949390382
+  },
+  {
+   "iso3": "HPC",
+   "country": "Heavily indebted poor countries (HIPC)",
+   "year": 2025,
+   "value": 3.40373458279055
+  },
+  {
+   "iso3": "HPC",
+   "country": "Heavily indebted poor countries (HIPC)",
+   "year": 2024,
+   "value": 4.60621098127101
+  },
+  {
+   "iso3": "HPC",
+   "country": "Heavily indebted poor countries (HIPC)",
+   "year": 2023,
+   "value": 7.12697482131851
+  },
+  {
+   "iso3": "HPC",
+   "country": "Heavily indebted poor countries (HIPC)",
+   "year": 2022,
+   "value": 9.65914753785068
+  },
+  {
+   "iso3": "HPC",
+   "country": "Heavily indebted poor countries (HIPC)",
+   "year": 2021,
+   "value": 4.37012190478159
+  },
+  {
+   "iso3": "HPC",
+   "country": "Heavily indebted poor countries (HIPC)",
+   "year": 2020,
+   "value": 3.47617372722187
+  },
+  {
+   "iso3": "HPC",
+   "country": "Heavily indebted poor countries (HIPC)",
+   "year": 2019,
+   "value": 2.83514555687505
+  },
+  {
+   "iso3": "IBD",
+   "country": "IBRD only",
+   "year": 2025,
+   "value": 3.69153459605728
+  },
+  {
+   "iso3": "IBD",
+   "country": "IBRD only",
+   "year": 2024,
+   "value": 3.48974086026953
+  },
+  {
+   "iso3": "IBD",
+   "country": "IBRD only",
+   "year": 2023,
+   "value": 5.87451911590196
+  },
+  {
+   "iso3": "IBD",
+   "country": "IBRD only",
+   "year": 2022,
+   "value": 9.10437983075436
+  },
+  {
+   "iso3": "IBD",
+   "country": "IBRD only",
+   "year": 2021,
+   "value": 4.27166381536797
+  },
+  {
+   "iso3": "IBD",
+   "country": "IBRD only",
+   "year": 2020,
+   "value": 2.41513094083413
+  },
+  {
+   "iso3": "IBD",
+   "country": "IBRD only",
+   "year": 2019,
+   "value": 2.51105762499405
+  },
+  {
+   "iso3": "IBT",
+   "country": "IDA & IBRD total",
+   "year": 2025,
+   "value": 3.5281487725024
+  },
+  {
+   "iso3": "IBT",
+   "country": "IDA & IBRD total",
+   "year": 2024,
+   "value": 3.62109273885843
+  },
+  {
+   "iso3": "IBT",
+   "country": "IDA & IBRD total",
+   "year": 2023,
+   "value": 6.08319268541899
+  },
+  {
+   "iso3": "IBT",
+   "country": "IDA & IBRD total",
+   "year": 2022,
+   "value": 8.95036560402306
+  },
+  {
+   "iso3": "IBT",
+   "country": "IDA & IBRD total",
+   "year": 2021,
+   "value": 4.2602077248284
+  },
+  {
+   "iso3": "IBT",
+   "country": "IDA & IBRD total",
+   "year": 2020,
+   "value": 2.9192444514512
+  },
+  {
+   "iso3": "IBT",
+   "country": "IDA & IBRD total",
+   "year": 2019,
+   "value": 2.68537355266786
+  },
+  {
+   "iso3": "IDB",
+   "country": "IDA blend",
+   "year": 2025,
+   "value": 2.40069559361747
+  },
+  {
+   "iso3": "IDB",
+   "country": "IDA blend",
+   "year": 2024,
+   "value": 3.45053028131018
+  },
+  {
+   "iso3": "IDB",
+   "country": "IDA blend",
+   "year": 2023,
+   "value": 4.56457719814894
+  },
+  {
+   "iso3": "IDB",
+   "country": "IDA blend",
+   "year": 2022,
+   "value": 6.64110132423665
+  },
+  {
+   "iso3": "IDB",
+   "country": "IDA blend",
+   "year": 2021,
+   "value": 3.46677876951928
+  },
+  {
+   "iso3": "IDB",
+   "country": "IDA blend",
+   "year": 2020,
+   "value": 2.1039488213608
+  },
+  {
+   "iso3": "IDB",
+   "country": "IDA blend",
+   "year": 2019,
+   "value": 1.9999797664804
+  },
+  {
+   "iso3": "IDX",
+   "country": "IDA only",
+   "year": 2025,
+   "value": 3.56305118215165
+  },
+  {
+   "iso3": "IDX",
+   "country": "IDA only",
+   "year": 2024,
+   "value": 4.19081721344523
+  },
+  {
+   "iso3": "IDX",
+   "country": "IDA only",
+   "year": 2023,
+   "value": 7.11587261530826
+  },
+  {
+   "iso3": "IDX",
+   "country": "IDA only",
+   "year": 2022,
+   "value": 9.52526628622842
+  },
+  {
+   "iso3": "IDX",
+   "country": "IDA only",
+   "year": 2021,
+   "value": 4.48087963413451
+  },
+  {
+   "iso3": "IDX",
+   "country": "IDA only",
+   "year": 2020,
+   "value": 4.19455227376978
+  },
+  {
+   "iso3": "IDX",
+   "country": "IDA only",
+   "year": 2019,
+   "value": 3.31763203299602
+  },
+  {
+   "iso3": "IDA",
+   "country": "IDA total",
+   "year": 2025,
+   "value": 3.38875846243549
+  },
+  {
+   "iso3": "IDA",
+   "country": "IDA total",
+   "year": 2024,
+   "value": 3.8282003182711
+  },
+  {
+   "iso3": "IDA",
+   "country": "IDA total",
+   "year": 2023,
+   "value": 6.88273054452261
+  },
+  {
+   "iso3": "IDA",
+   "country": "IDA total",
+   "year": 2022,
+   "value": 8.27180389943027
+  },
+  {
+   "iso3": "IDA",
+   "country": "IDA total",
+   "year": 2021,
+   "value": 4.18621506523519
+  },
+  {
+   "iso3": "IDA",
+   "country": "IDA total",
+   "year": 2020,
+   "value": 3.48393567493203
+  },
+  {
+   "iso3": "IDA",
+   "country": "IDA total",
+   "year": 2019,
+   "value": 2.76252019386111
+  },
+  {
+   "iso3": "LTE",
+   "country": "Late-demographic dividend",
+   "year": 2025,
+   "value": 3.70968298357444
+  },
+  {
+   "iso3": "LTE",
+   "country": "Late-demographic dividend",
+   "year": 2024,
+   "value": 2.90379501424777
+  },
+  {
+   "iso3": "LTE",
+   "country": "Late-demographic dividend",
+   "year": 2023,
+   "value": 5.86910359896119
+  },
+  {
+   "iso3": "LTE",
+   "country": "Late-demographic dividend",
+   "year": 2022,
+   "value": 9.10437983075436
+  },
+  {
+   "iso3": "LTE",
+   "country": "Late-demographic dividend",
+   "year": 2021,
+   "value": 3.49505757399448
+  },
+  {
+   "iso3": "LTE",
+   "country": "Late-demographic dividend",
+   "year": 2020,
+   "value": 1.93694126694222
+  },
+  {
+   "iso3": "LTE",
+   "country": "Late-demographic dividend",
+   "year": 2019,
+   "value": 2.16993433856377
+  },
+  {
+   "iso3": "LCN",
+   "country": "Latin America & Caribbean",
+   "year": 2025,
+   "value": 2.08132127098375
+  },
+  {
+   "iso3": "LCN",
+   "country": "Latin America & Caribbean",
+   "year": 2024,
+   "value": 3.46497037946077
+  },
+  {
+   "iso3": "LCN",
+   "country": "Latin America & Caribbean",
+   "year": 2023,
+   "value": 4.63202285403355
+  },
+  {
+   "iso3": "LCN",
+   "country": "Latin America & Caribbean",
+   "year": 2022,
+   "value": 8.08552554700601
+  },
+  {
+   "iso3": "LCN",
+   "country": "Latin America & Caribbean",
+   "year": 2021,
+   "value": 3.8780544241113
+  },
+  {
+   "iso3": "LCN",
+   "country": "Latin America & Caribbean",
+   "year": 2020,
+   "value": 1.49389017299587
+  },
+  {
+   "iso3": "LCN",
+   "country": "Latin America & Caribbean",
+   "year": 2019,
+   "value": 2.18225589066245
+  },
+  {
+   "iso3": "LAC",
+   "country": "Latin America & Caribbean (excluding high income)",
+   "year": 2025,
+   "value": 3.17171538072264
+  },
+  {
+   "iso3": "LAC",
+   "country": "Latin America & Caribbean (excluding high income)",
+   "year": 2024,
+   "value": 3.83540271728532
+  },
+  {
+   "iso3": "LAC",
+   "country": "Latin America & Caribbean (excluding high income)",
+   "year": 2023,
+   "value": 5.08677483158111
+  },
+  {
+   "iso3": "LAC",
+   "country": "Latin America & Caribbean (excluding high income)",
+   "year": 2022,
+   "value": 8.81109209279587
+  },
+  {
+   "iso3": "LAC",
+   "country": "Latin America & Caribbean (excluding high income)",
+   "year": 2021,
+   "value": 4.27166381536797
+  },
+  {
+   "iso3": "LAC",
+   "country": "Latin America & Caribbean (excluding high income)",
+   "year": 2020,
+   "value": 2.52663500084706
+  },
+  {
+   "iso3": "LAC",
+   "country": "Latin America & Caribbean (excluding high income)",
+   "year": 2019,
+   "value": 2.50460959460401
+  },
+  {
+   "iso3": "TLA",
+   "country": "Latin America & the Caribbean (IDA & IBRD countries)",
+   "year": 2025,
+   "value": 2.30758626602755
+  },
+  {
+   "iso3": "TLA",
+   "country": "Latin America & the Caribbean (IDA & IBRD countries)",
+   "year": 2024,
+   "value": 3.62770736940927
+  },
+  {
+   "iso3": "TLA",
+   "country": "Latin America & the Caribbean (IDA & IBRD countries)",
+   "year": 2023,
+   "value": 4.70881783212245
+  },
+  {
+   "iso3": "TLA",
+   "country": "Latin America & the Caribbean (IDA & IBRD countries)",
+   "year": 2022,
+   "value": 8.27477490232654
+  },
+  {
+   "iso3": "TLA",
+   "country": "Latin America & the Caribbean (IDA & IBRD countries)",
+   "year": 2021,
+   "value": 4.26105127422813
+  },
+  {
+   "iso3": "TLA",
+   "country": "Latin America & the Caribbean (IDA & IBRD countries)",
+   "year": 2020,
+   "value": 1.76751592356698
+  },
+  {
+   "iso3": "TLA",
+   "country": "Latin America & the Caribbean (IDA & IBRD countries)",
+   "year": 2019,
+   "value": 2.09604635327807
+  },
+  {
+   "iso3": "LDC",
+   "country": "Least developed countries: UN classification",
+   "year": 2025,
+   "value": 3.46779381336584
+  },
+  {
+   "iso3": "LDC",
+   "country": "Least developed countries: UN classification",
+   "year": 2024,
+   "value": 4.68509654265769
+  },
+  {
+   "iso3": "LDC",
+   "country": "Least developed countries: UN classification",
+   "year": 2023,
+   "value": 7.12697482131851
+  },
+  {
+   "iso3": "LDC",
+   "country": "Least developed countries: UN classification",
+   "year": 2022,
+   "value": 9.45801281304023
+  },
+  {
+   "iso3": "LDC",
+   "country": "Least developed countries: UN classification",
+   "year": 2021,
+   "value": 4.15649125482107
+  },
+  {
+   "iso3": "LDC",
+   "country": "Least developed countries: UN classification",
+   "year": 2020,
+   "value": 4.32934832304919
+  },
+  {
+   "iso3": "LDC",
+   "country": "Least developed countries: UN classification",
+   "year": 2019,
+   "value": 3.32255881256925
+  },
+  {
+   "iso3": "LMY",
+   "country": "Low & middle income",
+   "year": 2025,
+   "value": 3.5503443898294
+  },
+  {
+   "iso3": "LMY",
+   "country": "Low & middle income",
+   "year": 2024,
+   "value": 3.76555825770114
+  },
+  {
+   "iso3": "LMY",
+   "country": "Low & middle income",
+   "year": 2023,
+   "value": 6.10590112848287
+  },
+  {
+   "iso3": "LMY",
+   "country": "Low & middle income",
+   "year": 2022,
+   "value": 8.7260015912672
+  },
+  {
+   "iso3": "LMY",
+   "country": "Low & middle income",
+   "year": 2021,
+   "value": 4.2602077248284
+  },
+  {
+   "iso3": "LMY",
+   "country": "Low & middle income",
+   "year": 2020,
+   "value": 3.11724461733567
+  },
+  {
+   "iso3": "LMY",
+   "country": "Low & middle income",
+   "year": 2019,
+   "value": 2.76769231124715
+  },
+  {
+   "iso3": "MEA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2025,
+   "value": 2.03559944812264
+  },
+  {
+   "iso3": "MEA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2024,
+   "value": 2.12615766885021
+  },
+  {
+   "iso3": "MEA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2023,
+   "value": 4.22522603168917
+  },
+  {
+   "iso3": "MEA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2022,
+   "value": 5.17222088647605
+  },
+  {
+   "iso3": "MEA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2021,
+   "value": 2.86833027751014
+  },
+  {
+   "iso3": "MEA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2020,
+   "value": 1.4470365699874
+  },
+  {
+   "iso3": "MEA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan",
+   "year": 2019,
+   "value": 1.33601568147655
+  },
+  {
+   "iso3": "MNA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+   "year": 2025,
+   "value": 2.69360940778797
+  },
+  {
+   "iso3": "MNA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+   "year": 2024,
+   "value": 4.04611455313434
+  },
+  {
+   "iso3": "MNA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+   "year": 2023,
+   "value": 6.0911415250414
+  },
+  {
+   "iso3": "MNA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+   "year": 2022,
+   "value": 8.30646124447623
+  },
+  {
+   "iso3": "MNA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+   "year": 2021,
+   "value": 5.21404940513042
+  },
+  {
+   "iso3": "MNA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+   "year": 2020,
+   "value": 2.41513094083413
+  },
+  {
+   "iso3": "MNA",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (excluding high income)",
+   "year": 2019,
+   "value": 2.65388100453607
+  },
+  {
+   "iso3": "TMN",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+   "year": 2025,
+   "value": 1.84166666666702
+  },
+  {
+   "iso3": "TMN",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+   "year": 2024,
+   "value": 3.32890533415537
+  },
+  {
+   "iso3": "TMN",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+   "year": 2023,
+   "value": 7.70665764216231
+  },
+  {
+   "iso3": "TMN",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+   "year": 2022,
+   "value": 8.78598837999587
+  },
+  {
+   "iso3": "TMN",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+   "year": 2021,
+   "value": 5.46019980671871
+  },
+  {
+   "iso3": "TMN",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+   "year": 2020,
+   "value": 3.73003191530475
+  },
+  {
+   "iso3": "TMN",
+   "country": "Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)",
+   "year": 2019,
+   "value": 3.00538949390382
+  },
+  {
+   "iso3": "MIC",
+   "country": "Middle income",
+   "year": 2025,
+   "value": 3.51074539609587
+  },
+  {
+   "iso3": "MIC",
+   "country": "Middle income",
+   "year": 2024,
+   "value": 3.48974086026953
+  },
+  {
+   "iso3": "MIC",
+   "country": "Middle income",
+   "year": 2023,
+   "value": 6.07524384579659
+  },
+  {
+   "iso3": "MIC",
+   "country": "Middle income",
+   "year": 2022,
+   "value": 8.30646124447623
+  },
+  {
+   "iso3": "MIC",
+   "country": "Middle income",
+   "year": 2021,
+   "value": 4.15919657911797
+  },
+  {
+   "iso3": "MIC",
+   "country": "Middle income",
+   "year": 2020,
+   "value": 2.73249209419427
+  },
+  {
+   "iso3": "MIC",
+   "country": "Middle income",
+   "year": 2019,
+   "value": 2.74176382475803
+  },
+  {
+   "iso3": "NAC",
+   "country": "North America",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "NAC",
+   "country": "North America",
+   "year": 2024,
+   "value": 2.6655545188319
+  },
+  {
+   "iso3": "NAC",
+   "country": "North America",
+   "year": 2023,
+   "value": 3.99766999081456
+  },
+  {
+   "iso3": "NAC",
+   "country": "North America",
+   "year": 2022,
+   "value": 7.40280048696867
+  },
+  {
+   "iso3": "NAC",
+   "country": "North America",
+   "year": 2021,
+   "value": 4.04652602445635
+  },
+  {
+   "iso3": "NAC",
+   "country": "North America",
+   "year": 2020,
+   "value": 0.975292014307058
+  },
+  {
+   "iso3": "NAC",
+   "country": "North America",
+   "year": 2019,
+   "value": 1.88073954968806
+  },
+  {
+   "iso3": "OED",
+   "country": "OECD members",
+   "year": 2025,
+   "value": 2.8397963180572
+  },
+  {
+   "iso3": "OED",
+   "country": "OECD members",
+   "year": 2024,
+   "value": 2.76583948350075
+  },
+  {
+   "iso3": "OED",
+   "country": "OECD members",
+   "year": 2023,
+   "value": 5.67767787625707
+  },
+  {
+   "iso3": "OED",
+   "country": "OECD members",
+   "year": 2022,
+   "value": 8.23803235703129
+  },
+  {
+   "iso3": "OED",
+   "country": "OECD members",
+   "year": 2021,
+   "value": 2.81528975687994
+  },
+  {
+   "iso3": "OED",
+   "country": "OECD members",
+   "year": 2020,
+   "value": 0.730922069223955
+  },
+  {
+   "iso3": "OED",
+   "country": "OECD members",
+   "year": 2019,
+   "value": 1.7407126787018
+  },
+  {
+   "iso3": "OSS",
+   "country": "Other small states",
+   "year": 2025,
+   "value": 2.80630542279309
+  },
+  {
+   "iso3": "OSS",
+   "country": "Other small states",
+   "year": 2024,
+   "value": 2.08742660145219
+  },
+  {
+   "iso3": "OSS",
+   "country": "Other small states",
+   "year": 2023,
+   "value": 5.51293808804142
+  },
+  {
+   "iso3": "OSS",
+   "country": "Other small states",
+   "year": 2022,
+   "value": 7.46811935414937
+  },
+  {
+   "iso3": "OSS",
+   "country": "Other small states",
+   "year": 2021,
+   "value": 2.42844532789315
+  },
+  {
+   "iso3": "OSS",
+   "country": "Other small states",
+   "year": 2020,
+   "value": 0.712593443137931
+  },
+  {
+   "iso3": "OSS",
+   "country": "Other small states",
+   "year": 2019,
+   "value": 1.6420600176894
+  },
+  {
+   "iso3": "PSS",
+   "country": "Pacific island small states",
+   "year": 2025,
+   "value": 2.2119620764675
+  },
+  {
+   "iso3": "PSS",
+   "country": "Pacific island small states",
+   "year": 2024,
+   "value": 2.45545072159027
+  },
+  {
+   "iso3": "PSS",
+   "country": "Pacific island small states",
+   "year": 2023,
+   "value": 7.92164684826777
+  },
+  {
+   "iso3": "PSS",
+   "country": "Pacific island small states",
+   "year": 2022,
+   "value": 6.37906506708423
+  },
+  {
+   "iso3": "PSS",
+   "country": "Pacific island small states",
+   "year": 2021,
+   "value": 2.47788271992717
+  },
+  {
+   "iso3": "PSS",
+   "country": "Pacific island small states",
+   "year": 2020,
+   "value": 0.386388224517503
+  },
+  {
+   "iso3": "PSS",
+   "country": "Pacific island small states",
+   "year": 2019,
+   "value": 1.40719939417023
+  },
+  {
+   "iso3": "PST",
+   "country": "Post-demographic dividend",
+   "year": 2025,
+   "value": 2.41708620883036
+  },
+  {
+   "iso3": "PST",
+   "country": "Post-demographic dividend",
+   "year": 2024,
+   "value": 2.43531202435314
+  },
+  {
+   "iso3": "PST",
+   "country": "Post-demographic dividend",
+   "year": 2023,
+   "value": 5.06713865364212
+  },
+  {
+   "iso3": "PST",
+   "country": "Post-demographic dividend",
+   "year": 2022,
+   "value": 7.87737003690613
+  },
+  {
+   "iso3": "PST",
+   "country": "Post-demographic dividend",
+   "year": 2021,
+   "value": 2.50835221473776
+  },
+  {
+   "iso3": "PST",
+   "country": "Post-demographic dividend",
+   "year": 2020,
+   "value": 0.632267331911715
+  },
+  {
+   "iso3": "PST",
+   "country": "Post-demographic dividend",
+   "year": 2019,
+   "value": 1.61963190184047
+  },
+  {
+   "iso3": "PRE",
+   "country": "Pre-demographic dividend",
+   "year": 2025,
+   "value": 3.27823540357584
+  },
+  {
+   "iso3": "PRE",
+   "country": "Pre-demographic dividend",
+   "year": 2024,
+   "value": 4.19081721344523
+  },
+  {
+   "iso3": "PRE",
+   "country": "Pre-demographic dividend",
+   "year": 2023,
+   "value": 7.10220928557059
+  },
+  {
+   "iso3": "PRE",
+   "country": "Pre-demographic dividend",
+   "year": 2022,
+   "value": 8.77567482988523
+  },
+  {
+   "iso3": "PRE",
+   "country": "Pre-demographic dividend",
+   "year": 2021,
+   "value": 4.22278962033194
+  },
+  {
+   "iso3": "PRE",
+   "country": "Pre-demographic dividend",
+   "year": 2020,
+   "value": 3.39862928518852
+  },
+  {
+   "iso3": "PRE",
+   "country": "Pre-demographic dividend",
+   "year": 2019,
+   "value": 2.56908784664759
+  },
+  {
+   "iso3": "SST",
+   "country": "Small states",
+   "year": 2025,
+   "value": 2.25357866335893
+  },
+  {
+   "iso3": "SST",
+   "country": "Small states",
+   "year": 2024,
+   "value": 2.34358922540365
+  },
+  {
+   "iso3": "SST",
+   "country": "Small states",
+   "year": 2023,
+   "value": 5.06713865364212
+  },
+  {
+   "iso3": "SST",
+   "country": "Small states",
+   "year": 2022,
+   "value": 6.27689319447543
+  },
+  {
+   "iso3": "SST",
+   "country": "Small states",
+   "year": 2021,
+   "value": 2.41070312174393
+  },
+  {
+   "iso3": "SST",
+   "country": "Small states",
+   "year": 2020,
+   "value": 0.598986330824643
+  },
+  {
+   "iso3": "SST",
+   "country": "Small states",
+   "year": 2019,
+   "value": 1.30544966502391
+  },
+  {
+   "iso3": "SAS",
+   "country": "South Asia",
+   "year": 2025,
+   "value": 3.10423966443212
+  },
+  {
+   "iso3": "SAS",
+   "country": "South Asia",
+   "year": 2024,
+   "value": 3.72320611944933
+  },
+  {
+   "iso3": "SAS",
+   "country": "South Asia",
+   "year": 2023,
+   "value": 6.38250790219375
+  },
+  {
+   "iso3": "SAS",
+   "country": "South Asia",
+   "year": 2022,
+   "value": 7.18461996730069
+  },
+  {
+   "iso3": "SAS",
+   "country": "South Asia",
+   "year": 2021,
+   "value": 5.33853088974918
+  },
+  {
+   "iso3": "SAS",
+   "country": "South Asia",
+   "year": 2020,
+   "value": 5.66021998689359
+  },
+  {
+   "iso3": "SAS",
+   "country": "South Asia",
+   "year": 2019,
+   "value": 3.62894965885467
+  },
+  {
+   "iso3": "TSA",
+   "country": "South Asia (IDA & IBRD)",
+   "year": 2025,
+   "value": 3.10423966443212
+  },
+  {
+   "iso3": "TSA",
+   "country": "South Asia (IDA & IBRD)",
+   "year": 2024,
+   "value": 3.72320611944933
+  },
+  {
+   "iso3": "TSA",
+   "country": "South Asia (IDA & IBRD)",
+   "year": 2023,
+   "value": 6.38250790219375
+  },
+  {
+   "iso3": "TSA",
+   "country": "South Asia (IDA & IBRD)",
+   "year": 2022,
+   "value": 7.18461996730069
+  },
+  {
+   "iso3": "TSA",
+   "country": "South Asia (IDA & IBRD)",
+   "year": 2021,
+   "value": 5.33853088974918
+  },
+  {
+   "iso3": "TSA",
+   "country": "South Asia (IDA & IBRD)",
+   "year": 2020,
+   "value": 5.66021998689359
+  },
+  {
+   "iso3": "TSA",
+   "country": "South Asia (IDA & IBRD)",
+   "year": 2019,
+   "value": 3.62894965885467
+  },
+  {
+   "iso3": "SSF",
+   "country": "Sub-Saharan Africa",
+   "year": 2025,
+   "value": 3.40373458279055
+  },
+  {
+   "iso3": "SSF",
+   "country": "Sub-Saharan Africa",
+   "year": 2024,
+   "value": 4.30009584697999
+  },
+  {
+   "iso3": "SSF",
+   "country": "Sub-Saharan Africa",
+   "year": 2023,
+   "value": 6.69759990789844
+  },
+  {
+   "iso3": "SSF",
+   "country": "Sub-Saharan Africa",
+   "year": 2022,
+   "value": 9.45801281304023
+  },
+  {
+   "iso3": "SSF",
+   "country": "Sub-Saharan Africa",
+   "year": 2021,
+   "value": 4.43905481215002
+  },
+  {
+   "iso3": "SSF",
+   "country": "Sub-Saharan Africa",
+   "year": 2020,
+   "value": 3.39862928518852
+  },
+  {
+   "iso3": "SSF",
+   "country": "Sub-Saharan Africa",
+   "year": 2019,
+   "value": 2.86758803446899
+  },
+  {
+   "iso3": "SSA",
+   "country": "Sub-Saharan Africa (excluding high income)",
+   "year": 2025,
+   "value": 3.45723998944321
+  },
+  {
+   "iso3": "SSA",
+   "country": "Sub-Saharan Africa (excluding high income)",
+   "year": 2024,
+   "value": 4.36115246518962
+  },
+  {
+   "iso3": "SSA",
+   "country": "Sub-Saharan Africa (excluding high income)",
+   "year": 2023,
+   "value": 7.05298238454736
+  },
+  {
+   "iso3": "SSA",
+   "country": "Sub-Saharan Africa (excluding high income)",
+   "year": 2022,
+   "value": 9.52526628622842
+  },
+  {
+   "iso3": "SSA",
+   "country": "Sub-Saharan Africa (excluding high income)",
+   "year": 2021,
+   "value": 4.25936417542868
+  },
+  {
+   "iso3": "SSA",
+   "country": "Sub-Saharan Africa (excluding high income)",
+   "year": 2020,
+   "value": 3.48393567493203
+  },
+  {
+   "iso3": "SSA",
+   "country": "Sub-Saharan Africa (excluding high income)",
+   "year": 2019,
+   "value": 3.10773229242273
+  },
+  {
+   "iso3": "TSS",
+   "country": "Sub-Saharan Africa (IDA & IBRD countries)",
+   "year": 2025,
+   "value": 3.40373458279055
+  },
+  {
+   "iso3": "TSS",
+   "country": "Sub-Saharan Africa (IDA & IBRD countries)",
+   "year": 2024,
+   "value": 4.30009584697999
+  },
+  {
+   "iso3": "TSS",
+   "country": "Sub-Saharan Africa (IDA & IBRD countries)",
+   "year": 2023,
+   "value": 6.69759990789844
+  },
+  {
+   "iso3": "TSS",
+   "country": "Sub-Saharan Africa (IDA & IBRD countries)",
+   "year": 2022,
+   "value": 9.45801281304023
+  },
+  {
+   "iso3": "TSS",
+   "country": "Sub-Saharan Africa (IDA & IBRD countries)",
+   "year": 2021,
+   "value": 4.43905481215002
+  },
+  {
+   "iso3": "TSS",
+   "country": "Sub-Saharan Africa (IDA & IBRD countries)",
+   "year": 2020,
+   "value": 3.39862928518852
+  },
+  {
+   "iso3": "TSS",
+   "country": "Sub-Saharan Africa (IDA & IBRD countries)",
+   "year": 2019,
+   "value": 2.86758803446899
+  },
+  {
+   "iso3": "WLD",
+   "country": "World",
+   "year": 2025,
+   "value": 3.04141321556539
+  },
+  {
+   "iso3": "WLD",
+   "country": "World",
+   "year": 2024,
+   "value": 3.01447576977999
+  },
+  {
+   "iso3": "WLD",
+   "country": "World",
+   "year": 2023,
+   "value": 5.73316283034957
+  },
+  {
+   "iso3": "WLD",
+   "country": "World",
+   "year": 2022,
+   "value": 8.00279982052121
+  },
+  {
+   "iso3": "WLD",
+   "country": "World",
+   "year": 2021,
+   "value": 3.4676759410803
+  },
+  {
+   "iso3": "WLD",
+   "country": "World",
+   "year": 2020,
+   "value": 1.91983527270792
+  },
+  {
+   "iso3": "WLD",
+   "country": "World",
+   "year": 2019,
+   "value": 2.21677593359908
+  },
+  {
+   "iso3": "AFG",
+   "country": "Afghanistan",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "AFG",
+   "country": "Afghanistan",
+   "year": 2024,
+   "value": -6.60118564073725
+  },
+  {
+   "iso3": "AFG",
+   "country": "Afghanistan",
+   "year": 2023,
+   "value": -4.64470870797774
+  },
+  {
+   "iso3": "AFG",
+   "country": "Afghanistan",
+   "year": 2022,
+   "value": 13.7121023720064
+  },
+  {
+   "iso3": "AFG",
+   "country": "Afghanistan",
+   "year": 2021,
+   "value": 5.13320340824962
+  },
+  {
+   "iso3": "AFG",
+   "country": "Afghanistan",
+   "year": 2020,
+   "value": 5.60188791482224
+  },
+  {
+   "iso3": "AFG",
+   "country": "Afghanistan",
+   "year": 2019,
+   "value": 2.30237251516833
+  },
+  {
+   "iso3": "ALB",
+   "country": "Albania",
+   "year": 2025,
+   "value": 2.14618551167387
+  },
+  {
+   "iso3": "ALB",
+   "country": "Albania",
+   "year": 2024,
+   "value": 2.21587375089991
+  },
+  {
+   "iso3": "ALB",
+   "country": "Albania",
+   "year": 2023,
+   "value": 4.75834555150038
+  },
+  {
+   "iso3": "ALB",
+   "country": "Albania",
+   "year": 2022,
+   "value": 6.72520271530059
+  },
+  {
+   "iso3": "ALB",
+   "country": "Albania",
+   "year": 2021,
+   "value": 2.04147163139544
+  },
+  {
+   "iso3": "ALB",
+   "country": "Albania",
+   "year": 2020,
+   "value": 1.6208866171702
+  },
+  {
+   "iso3": "ALB",
+   "country": "Albania",
+   "year": 2019,
+   "value": 1.41109078954242
+  },
+  {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "year": 2025,
+   "value": 1.41835151429016
+  },
+  {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "year": 2024,
+   "value": 4.04611455313434
+  },
+  {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "year": 2023,
+   "value": 9.32217375928322
+  },
+  {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "year": 2022,
+   "value": 9.26551551551552
+  },
+  {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "year": 2021,
+   "value": 7.22606307415477
+  },
+  {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "year": 2020,
+   "value": 2.41513094083413
+  },
+  {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "year": 2019,
+   "value": 1.95176821052891
+  },
+  {
+   "iso3": "ASM",
+   "country": "American Samoa",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "ASM",
+   "country": "American Samoa",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "ASM",
+   "country": "American Samoa",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "ASM",
+   "country": "American Samoa",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "ASM",
+   "country": "American Samoa",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "ASM",
+   "country": "American Samoa",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "ASM",
+   "country": "American Samoa",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "AND",
+   "country": "Andorra",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "AND",
+   "country": "Andorra",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "AND",
+   "country": "Andorra",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "AND",
+   "country": "Andorra",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "AND",
+   "country": "Andorra",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "AND",
+   "country": "Andorra",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "AND",
+   "country": "Andorra",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "AGO",
+   "country": "Angola",
+   "year": 2025,
+   "value": 20.1620197572331
+  },
+  {
+   "iso3": "AGO",
+   "country": "Angola",
+   "year": 2024,
+   "value": 28.2404948915772
+  },
+  {
+   "iso3": "AGO",
+   "country": "Angola",
+   "year": 2023,
+   "value": 13.6441017767714
+  },
+  {
+   "iso3": "AGO",
+   "country": "Angola",
+   "year": 2022,
+   "value": 21.3552901320822
+  },
+  {
+   "iso3": "AGO",
+   "country": "Angola",
+   "year": 2021,
+   "value": 25.754294884189
+  },
+  {
+   "iso3": "AGO",
+   "country": "Angola",
+   "year": 2020,
+   "value": 22.2715392470509
+  },
+  {
+   "iso3": "AGO",
+   "country": "Angola",
+   "year": 2019,
+   "value": 17.080954143438
+  },
+  {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "year": 2025,
+   "value": 1.36873527521953
+  },
+  {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "year": 2024,
+   "value": 6.19886698842115
+  },
+  {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "year": 2023,
+   "value": 5.06713865364212
+  },
+  {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "year": 2022,
+   "value": 7.53107834634288
+  },
+  {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "year": 2021,
+   "value": 2.06299638545334
+  },
+  {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "year": 2020,
+   "value": 0.625989707046719
+  },
+  {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "year": 2019,
+   "value": 1.43135598182983
+  },
+  {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "year": 2024,
+   "value": 219.883929014578
+  },
+  {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "year": 2023,
+   "value": 133.488935594175
+  },
+  {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "year": 2022,
+   "value": 72.430757531824
+  },
+  {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "year": 2021,
+   "value": 48.4093786255199
+  },
+  {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "year": 2020,
+   "value": 42.0150947376509
+  },
+  {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "year": 2019,
+   "value": 53.5483043492339
+  },
+  {
+   "iso3": "ARM",
+   "country": "Armenia",
+   "year": 2025,
+   "value": 3.30693341072903
+  },
+  {
+   "iso3": "ARM",
+   "country": "Armenia",
+   "year": 2024,
+   "value": 0.269511978259125
+  },
+  {
+   "iso3": "ARM",
+   "country": "Armenia",
+   "year": 2023,
+   "value": 1.98041877615553
+  },
+  {
+   "iso3": "ARM",
+   "country": "Armenia",
+   "year": 2022,
+   "value": 8.64091108973854
+  },
+  {
+   "iso3": "ARM",
+   "country": "Armenia",
+   "year": 2021,
+   "value": 7.1848362944337
+  },
+  {
+   "iso3": "ARM",
+   "country": "Armenia",
+   "year": 2020,
+   "value": 1.21143577838464
+  },
+  {
+   "iso3": "ARM",
+   "country": "Armenia",
+   "year": 2019,
+   "value": 1.44344660770698
+  },
+  {
+   "iso3": "ABW",
+   "country": "Aruba",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "ABW",
+   "country": "Aruba",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "ABW",
+   "country": "Aruba",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "ABW",
+   "country": "Aruba",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "ABW",
+   "country": "Aruba",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "ABW",
+   "country": "Aruba",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "ABW",
+   "country": "Aruba",
+   "year": 2019,
+   "value": 4.25746204335427
+  },
+  {
+   "iso3": "AUS",
+   "country": "Australia",
+   "year": 2025,
+   "value": 2.87403791660173
+  },
+  {
+   "iso3": "AUS",
+   "country": "Australia",
+   "year": 2024,
+   "value": 3.16656665428797
+  },
+  {
+   "iso3": "AUS",
+   "country": "Australia",
+   "year": 2023,
+   "value": 5.59701792296707
+  },
+  {
+   "iso3": "AUS",
+   "country": "Australia",
+   "year": 2022,
+   "value": 6.59409658717841
+  },
+  {
+   "iso3": "AUS",
+   "country": "Australia",
+   "year": 2021,
+   "value": 2.86391284709318
+  },
+  {
+   "iso3": "AUS",
+   "country": "Australia",
+   "year": 2020,
+   "value": 0.846900734607273
+  },
+  {
+   "iso3": "AUS",
+   "country": "Australia",
+   "year": 2019,
+   "value": 1.610770929127
+  },
+  {
+   "iso3": "AUT",
+   "country": "Austria",
+   "year": 2025,
+   "value": 3.52719439956928
+  },
+  {
+   "iso3": "AUT",
+   "country": "Austria",
+   "year": 2024,
+   "value": 2.93791574279375
+  },
+  {
+   "iso3": "AUT",
+   "country": "Austria",
+   "year": 2023,
+   "value": 7.81413417002831
+  },
+  {
+   "iso3": "AUT",
+   "country": "Austria",
+   "year": 2022,
+   "value": 8.54686993188457
+  },
+  {
+   "iso3": "AUT",
+   "country": "Austria",
+   "year": 2021,
+   "value": 2.7666666666667
+  },
+  {
+   "iso3": "AUT",
+   "country": "Austria",
+   "year": 2020,
+   "value": 1.38191063351853
+  },
+  {
+   "iso3": "AUT",
+   "country": "Austria",
+   "year": 2019,
+   "value": 1.53089564152643
+  },
+  {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "year": 2025,
+   "value": 5.62208788068338
+  },
+  {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "year": 2024,
+   "value": 2.21217188919901
+  },
+  {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "year": 2023,
+   "value": 8.7854304984908
+  },
+  {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "year": 2022,
+   "value": 13.8522590144267
+  },
+  {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "year": 2021,
+   "value": 6.65029912708778
+  },
+  {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "year": 2020,
+   "value": 2.75980947008127
+  },
+  {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "year": 2019,
+   "value": 2.61057182799215
+  },
+  {
+   "iso3": "BHS",
+   "country": "Bahamas, The",
+   "year": 2025,
+   "value": 1.10879778651364
+  },
+  {
+   "iso3": "BHS",
+   "country": "Bahamas, The",
+   "year": 2024,
+   "value": 0.409162489083286
+  },
+  {
+   "iso3": "BHS",
+   "country": "Bahamas, The",
+   "year": 2023,
+   "value": 3.05291578969742
+  },
+  {
+   "iso3": "BHS",
+   "country": "Bahamas, The",
+   "year": 2022,
+   "value": 5.60540633583043
+  },
+  {
+   "iso3": "BHS",
+   "country": "Bahamas, The",
+   "year": 2021,
+   "value": 2.90491262928478
+  },
+  {
+   "iso3": "BHS",
+   "country": "Bahamas, The",
+   "year": 2020,
+   "value": 0.0385210980054557
+  },
+  {
+   "iso3": "BHS",
+   "country": "Bahamas, The",
+   "year": 2019,
+   "value": 2.49123527368045
+  },
+  {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "year": 2025,
+   "value": -0.137708855447901
+  },
+  {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "year": 2024,
+   "value": 0.919635459817651
+  },
+  {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "year": 2023,
+   "value": 0.0746206782192255
+  },
+  {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "year": 2022,
+   "value": 3.62574104304482
+  },
+  {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "year": 2021,
+   "value": -0.60631938514085
+  },
+  {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "year": 2020,
+   "value": -2.31770629331378
+  },
+  {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "year": 2019,
+   "value": 1.00582004702136
+  },
+  {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "year": 2025,
+   "value": 8.7687628116114
+  },
+  {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "year": 2024,
+   "value": 10.4657482763412
+  },
+  {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "year": 2023,
+   "value": 9.8835030377921
+  },
+  {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "year": 2022,
+   "value": 7.69695437176898
+  },
+  {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "year": 2021,
+   "value": 5.54565430773473
+  },
+  {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "year": 2020,
+   "value": 5.69107474746211
+  },
+  {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "year": 2019,
+   "value": 5.59199639930629
+  },
+  {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "year": 2025,
+   "value": 0.846576563196289
+  },
+  {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "year": 2024,
+   "value": 1.44643664306159
+  },
+  {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "year": 2023,
+   "value": 3.18718905472631
+  },
+  {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "year": 2019,
+   "value": 1.67662473276987
+  },
+  {
+   "iso3": "BLR",
+   "country": "Belarus",
+   "year": 2025,
+   "value": 6.59877945951182
+  },
+  {
+   "iso3": "BLR",
+   "country": "Belarus",
+   "year": 2024,
+   "value": 5.78531910428005
+  },
+  {
+   "iso3": "BLR",
+   "country": "Belarus",
+   "year": 2023,
+   "value": 5.0005990309131
+  },
+  {
+   "iso3": "BLR",
+   "country": "Belarus",
+   "year": 2022,
+   "value": 15.2096752740809
+  },
+  {
+   "iso3": "BLR",
+   "country": "Belarus",
+   "year": 2021,
+   "value": 9.46028389623098
+  },
+  {
+   "iso3": "BLR",
+   "country": "Belarus",
+   "year": 2020,
+   "value": 5.54814357456519
+  },
+  {
+   "iso3": "BLR",
+   "country": "Belarus",
+   "year": 2019,
+   "value": 5.59815595039848
+  },
+  {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "year": 2025,
+   "value": 2.46605755272817
+  },
+  {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "year": 2024,
+   "value": 3.14426633785448
+  },
+  {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "year": 2023,
+   "value": 4.04867945968735
+  },
+  {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "year": 2022,
+   "value": 9.59765381756827
+  },
+  {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "year": 2021,
+   "value": 2.4425878673141
+  },
+  {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "year": 2020,
+   "value": 0.736932660316535
+  },
+  {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "year": 2019,
+   "value": 1.43828919285485
+  },
+  {
+   "iso3": "BLZ",
+   "country": "Belize",
+   "year": 2025,
+   "value": 1.06281547952896
+  },
+  {
+   "iso3": "BLZ",
+   "country": "Belize",
+   "year": 2024,
+   "value": 3.28955985952768
+  },
+  {
+   "iso3": "BLZ",
+   "country": "Belize",
+   "year": 2023,
+   "value": 4.38984017487674
+  },
+  {
+   "iso3": "BLZ",
+   "country": "Belize",
+   "year": 2022,
+   "value": 6.27689319447543
+  },
+  {
+   "iso3": "BLZ",
+   "country": "Belize",
+   "year": 2021,
+   "value": 3.2356365923707
+  },
+  {
+   "iso3": "BLZ",
+   "country": "Belize",
+   "year": 2020,
+   "value": 0.121434644614893
+  },
+  {
+   "iso3": "BLZ",
+   "country": "Belize",
+   "year": 2019,
+   "value": 0.187069385181424
+  },
+  {
+   "iso3": "BEN",
+   "country": "Benin",
+   "year": 2025,
+   "value": 1.10155247902977
+  },
+  {
+   "iso3": "BEN",
+   "country": "Benin",
+   "year": 2024,
+   "value": 1.16093089640415
+  },
+  {
+   "iso3": "BEN",
+   "country": "Benin",
+   "year": 2023,
+   "value": 2.73870078406074
+  },
+  {
+   "iso3": "BEN",
+   "country": "Benin",
+   "year": 2022,
+   "value": 1.35077863583527
+  },
+  {
+   "iso3": "BEN",
+   "country": "Benin",
+   "year": 2021,
+   "value": 1.73353962694035
+  },
+  {
+   "iso3": "BEN",
+   "country": "Benin",
+   "year": 2020,
+   "value": 3.02272119663759
+  },
+  {
+   "iso3": "BEN",
+   "country": "Benin",
+   "year": 2019,
+   "value": 0.732849371241066
+  },
+  {
+   "iso3": "BMU",
+   "country": "Bermuda",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "BMU",
+   "country": "Bermuda",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "BMU",
+   "country": "Bermuda",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "BMU",
+   "country": "Bermuda",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "BMU",
+   "country": "Bermuda",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "BMU",
+   "country": "Bermuda",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "BMU",
+   "country": "Bermuda",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "BTN",
+   "country": "Bhutan",
+   "year": 2025,
+   "value": 3.55513663074987
+  },
+  {
+   "iso3": "BTN",
+   "country": "Bhutan",
+   "year": 2024,
+   "value": 2.76131569624097
+  },
+  {
+   "iso3": "BTN",
+   "country": "Bhutan",
+   "year": 2023,
+   "value": 4.22934419929251
+  },
+  {
+   "iso3": "BTN",
+   "country": "Bhutan",
+   "year": 2022,
+   "value": 5.6391667139637
+  },
+  {
+   "iso3": "BTN",
+   "country": "Bhutan",
+   "year": 2021,
+   "value": 7.3468144053353
+  },
+  {
+   "iso3": "BTN",
+   "country": "Bhutan",
+   "year": 2020,
+   "value": 5.62936522632507
+  },
+  {
+   "iso3": "BTN",
+   "country": "Bhutan",
+   "year": 2019,
+   "value": 2.72643037388832
+  },
+  {
+   "iso3": "BOL",
+   "country": "Bolivia",
+   "year": 2025,
+   "value": 19.5171208047329
+  },
+  {
+   "iso3": "BOL",
+   "country": "Bolivia",
+   "year": 2024,
+   "value": 5.09976568317427
+  },
+  {
+   "iso3": "BOL",
+   "country": "Bolivia",
+   "year": 2023,
+   "value": 2.57688800489192
+  },
+  {
+   "iso3": "BOL",
+   "country": "Bolivia",
+   "year": 2022,
+   "value": 1.74632872945968
+  },
+  {
+   "iso3": "BOL",
+   "country": "Bolivia",
+   "year": 2021,
+   "value": 0.737383721452274
+  },
+  {
+   "iso3": "BOL",
+   "country": "Bolivia",
+   "year": 2020,
+   "value": 0.940742153381849
+  },
+  {
+   "iso3": "BOL",
+   "country": "Bolivia",
+   "year": 2019,
+   "value": 1.83954504969025
+  },
+  {
+   "iso3": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "year": 2025,
+   "value": 3.97821271880433
+  },
+  {
+   "iso3": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "year": 2024,
+   "value": 1.69212733599715
+  },
+  {
+   "iso3": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "year": 2023,
+   "value": 6.10590112848287
+  },
+  {
+   "iso3": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "year": 2022,
+   "value": 14.020844082677
+  },
+  {
+   "iso3": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "year": 2021,
+   "value": 1.98163900587621
+  },
+  {
+   "iso3": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "year": 2020,
+   "value": -1.05129600763489
+  },
+  {
+   "iso3": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "year": 2019,
+   "value": 0.562782154061229
+  },
+  {
+   "iso3": "BWA",
+   "country": "Botswana",
+   "year": 2025,
+   "value": 2.65985038423427
+  },
+  {
+   "iso3": "BWA",
+   "country": "Botswana",
+   "year": 2024,
+   "value": 2.81835131676251
+  },
+  {
+   "iso3": "BWA",
+   "country": "Botswana",
+   "year": 2023,
+   "value": 5.06761549343829
+  },
+  {
+   "iso3": "BWA",
+   "country": "Botswana",
+   "year": 2022,
+   "value": 11.665567478802
+  },
+  {
+   "iso3": "BWA",
+   "country": "Botswana",
+   "year": 2021,
+   "value": 7.24097765588442
+  },
+  {
+   "iso3": "BWA",
+   "country": "Botswana",
+   "year": 2020,
+   "value": 1.8903591682421
+  },
+  {
+   "iso3": "BWA",
+   "country": "Botswana",
+   "year": 2019,
+   "value": 2.7728644286332
+  },
+  {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "year": 2025,
+   "value": 5.01675279604836
+  },
+  {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "year": 2024,
+   "value": 4.36746407652336
+  },
+  {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "year": 2023,
+   "value": 4.59356282283203
+  },
+  {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "year": 2022,
+   "value": 9.28010608956872
+  },
+  {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "year": 2021,
+   "value": 8.30165975585673
+  },
+  {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "year": 2020,
+   "value": 3.21176803803376
+  },
+  {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "year": 2019,
+   "value": 3.73297621216893
+  },
+  {
+   "iso3": "VGB",
+   "country": "British Virgin Islands",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "VGB",
+   "country": "British Virgin Islands",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "VGB",
+   "country": "British Virgin Islands",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "VGB",
+   "country": "British Virgin Islands",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "VGB",
+   "country": "British Virgin Islands",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "VGB",
+   "country": "British Virgin Islands",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "VGB",
+   "country": "British Virgin Islands",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "year": 2025,
+   "value": -0.302994414446814
+  },
+  {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "year": 2024,
+   "value": -0.388674165036514
+  },
+  {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "year": 2023,
+   "value": 0.357064311536945
+  },
+  {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "year": 2022,
+   "value": 3.68225030604214
+  },
+  {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "year": 2021,
+   "value": 1.73341388450595
+  },
+  {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "year": 2020,
+   "value": 1.94030623416938
+  },
+  {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "year": 2019,
+   "value": -0.371372135873153
+  },
+  {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "year": 2025,
+   "value": 4.58084355235697
+  },
+  {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "year": 2024,
+   "value": 2.44651943006078
+  },
+  {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "year": 2023,
+   "value": 9.44284140088564
+  },
+  {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "year": 2022,
+   "value": 15.3252589264367
+  },
+  {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "year": 2021,
+   "value": 3.29774435299506
+  },
+  {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "year": 2020,
+   "value": 1.67244096855756
+  },
+  {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "year": 2019,
+   "value": 3.10372944796771
+  },
+  {
+   "iso3": "BFA",
+   "country": "Burkina Faso",
+   "year": 2025,
+   "value": -0.586235316330578
+  },
+  {
+   "iso3": "BFA",
+   "country": "Burkina Faso",
+   "year": 2024,
+   "value": 4.19081721344523
+  },
+  {
+   "iso3": "BFA",
+   "country": "Burkina Faso",
+   "year": 2023,
+   "value": 0.742910428668917
+  },
+  {
+   "iso3": "BFA",
+   "country": "Burkina Faso",
+   "year": 2022,
+   "value": 14.2902354303358
+  },
+  {
+   "iso3": "BFA",
+   "country": "Burkina Faso",
+   "year": 2021,
+   "value": 3.65326761825508
+  },
+  {
+   "iso3": "BFA",
+   "country": "Burkina Faso",
+   "year": 2020,
+   "value": 1.88470066518847
+  },
+  {
+   "iso3": "BFA",
+   "country": "Burkina Faso",
+   "year": 2019,
+   "value": -3.23338933983321
+  },
+  {
+   "iso3": "BDI",
+   "country": "Burundi",
+   "year": 2025,
+   "value": 34.1339985744831
+  },
+  {
+   "iso3": "BDI",
+   "country": "Burundi",
+   "year": 2024,
+   "value": 20.2124925027847
+  },
+  {
+   "iso3": "BDI",
+   "country": "Burundi",
+   "year": 2023,
+   "value": 26.9414835762453
+  },
+  {
+   "iso3": "BDI",
+   "country": "Burundi",
+   "year": 2022,
+   "value": 18.8008786664944
+  },
+  {
+   "iso3": "BDI",
+   "country": "Burundi",
+   "year": 2021,
+   "value": 8.4045384507634
+  },
+  {
+   "iso3": "BDI",
+   "country": "Burundi",
+   "year": 2020,
+   "value": 7.3211064341552
+  },
+  {
+   "iso3": "BDI",
+   "country": "Burundi",
+   "year": 2019,
+   "value": -0.686772170797358
+  },
+  {
+   "iso3": "CPV",
+   "country": "Cabo Verde",
+   "year": 2025,
+   "value": 2.34333897365162
+  },
+  {
+   "iso3": "CPV",
+   "country": "Cabo Verde",
+   "year": 2024,
+   "value": 1.04817001091964
+  },
+  {
+   "iso3": "CPV",
+   "country": "Cabo Verde",
+   "year": 2023,
+   "value": 3.72437517668747
+  },
+  {
+   "iso3": "CPV",
+   "country": "Cabo Verde",
+   "year": 2022,
+   "value": 7.93092925430087
+  },
+  {
+   "iso3": "CPV",
+   "country": "Cabo Verde",
+   "year": 2021,
+   "value": 1.86215297494646
+  },
+  {
+   "iso3": "CPV",
+   "country": "Cabo Verde",
+   "year": 2020,
+   "value": 0.605795808395385
+  },
+  {
+   "iso3": "CPV",
+   "country": "Cabo Verde",
+   "year": 2019,
+   "value": 1.10666674296062
+  },
+  {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "year": 2025,
+   "value": 2.35127105896507
+  },
+  {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "year": 2024,
+   "value": 0.808042016536654
+  },
+  {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "year": 2023,
+   "value": 2.12746796594194
+  },
+  {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "year": 2022,
+   "value": 5.34370264895437
+  },
+  {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "year": 2021,
+   "value": 2.92073477592948
+  },
+  {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "year": 2020,
+   "value": 2.94029514263969
+  },
+  {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "year": 2019,
+   "value": 1.94257500833107
+  },
+  {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "year": 2025,
+   "value": 3.40373458279055
+  },
+  {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "year": 2024,
+   "value": 4.53331349711606
+  },
+  {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "year": 2023,
+   "value": 7.38281384280983
+  },
+  {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "year": 2022,
+   "value": 6.24767713343861
+  },
+  {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "year": 2021,
+   "value": 2.27185762503637
+  },
+  {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "year": 2020,
+   "value": 2.43760882182236
+  },
+  {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "year": 2019,
+   "value": 2.45280214062732
+  },
+  {
+   "iso3": "CAN",
+   "country": "Canada",
+   "year": 2025,
+   "value": 2.07232411149103
+  },
+  {
+   "iso3": "CAN",
+   "country": "Canada",
+   "year": 2024,
+   "value": 2.38158383281173
+  },
+  {
+   "iso3": "CAN",
+   "country": "Canada",
+   "year": 2023,
+   "value": 3.87900159788425
+  },
+  {
+   "iso3": "CAN",
+   "country": "Canada",
+   "year": 2022,
+   "value": 6.80280115341612
+  },
+  {
+   "iso3": "CAN",
+   "country": "Canada",
+   "year": 2021,
+   "value": 3.39519318527527
+  },
+  {
+   "iso3": "CAN",
+   "country": "Canada",
+   "year": 2020,
+   "value": 0.716999632307827
+  },
+  {
+   "iso3": "CAN",
+   "country": "Canada",
+   "year": 2019,
+   "value": 1.94926902411592
+  },
+  {
+   "iso3": "CYM",
+   "country": "Cayman Islands",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "CYM",
+   "country": "Cayman Islands",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "CYM",
+   "country": "Cayman Islands",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "CYM",
+   "country": "Cayman Islands",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "CYM",
+   "country": "Cayman Islands",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "CYM",
+   "country": "Cayman Islands",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "CYM",
+   "country": "Cayman Islands",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "CAF",
+   "country": "Central African Republic",
+   "year": 2025,
+   "value": 1.00198012768088
+  },
+  {
+   "iso3": "CAF",
+   "country": "Central African Republic",
+   "year": 2024,
+   "value": 1.47733600718743
+  },
+  {
+   "iso3": "CAF",
+   "country": "Central African Republic",
+   "year": 2023,
+   "value": 2.97913852618936
+  },
+  {
+   "iso3": "CAF",
+   "country": "Central African Republic",
+   "year": 2022,
+   "value": 5.58316735183246
+  },
+  {
+   "iso3": "CAF",
+   "country": "Central African Republic",
+   "year": 2021,
+   "value": 4.25936417542868
+  },
+  {
+   "iso3": "CAF",
+   "country": "Central African Republic",
+   "year": 2020,
+   "value": 1.71015659523152
+  },
+  {
+   "iso3": "CAF",
+   "country": "Central African Republic",
+   "year": 2019,
+   "value": 2.68537355266786
+  },
+  {
+   "iso3": "TCD",
+   "country": "Chad",
+   "year": 2025,
+   "value": -3.91198124406589
+  },
+  {
+   "iso3": "TCD",
+   "country": "Chad",
+   "year": 2024,
+   "value": 8.89950732263754
+  },
+  {
+   "iso3": "TCD",
+   "country": "Chad",
+   "year": 2023,
+   "value": 10.8363568399842
+  },
+  {
+   "iso3": "TCD",
+   "country": "Chad",
+   "year": 2022,
+   "value": 5.78802687843616
+  },
+  {
+   "iso3": "TCD",
+   "country": "Chad",
+   "year": 2021,
+   "value": -0.772844370359139
+  },
+  {
+   "iso3": "TCD",
+   "country": "Chad",
+   "year": 2020,
+   "value": 4.4641443723286
+  },
+  {
+   "iso3": "TCD",
+   "country": "Chad",
+   "year": 2019,
+   "value": -0.971939175419401
+  },
+  {
+   "iso3": "CHI",
+   "country": "Channel Islands",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "CHI",
+   "country": "Channel Islands",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "CHI",
+   "country": "Channel Islands",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "CHI",
+   "country": "Channel Islands",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "CHI",
+   "country": "Channel Islands",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "CHI",
+   "country": "Channel Islands",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "CHI",
+   "country": "Channel Islands",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "CHL",
+   "country": "Chile",
+   "year": 2025,
+   "value": 4.21294031801535
+  },
+  {
+   "iso3": "CHL",
+   "country": "Chile",
+   "year": 2024,
+   "value": 4.29764313218819
+  },
+  {
+   "iso3": "CHL",
+   "country": "Chile",
+   "year": 2023,
+   "value": 7.58167483870087
+  },
+  {
+   "iso3": "CHL",
+   "country": "Chile",
+   "year": 2022,
+   "value": 11.6438668448741
+  },
+  {
+   "iso3": "CHL",
+   "country": "Chile",
+   "year": 2021,
+   "value": 4.52456762240498
+  },
+  {
+   "iso3": "CHL",
+   "country": "Chile",
+   "year": 2020,
+   "value": 3.04548944288392
+  },
+  {
+   "iso3": "CHL",
+   "country": "Chile",
+   "year": 2019,
+   "value": 2.55754768847623
+  },
+  {
+   "iso3": "CHN",
+   "country": "China",
+   "year": 2025,
+   "value": 0.0595646916565402
+  },
+  {
+   "iso3": "CHN",
+   "country": "China",
+   "year": 2024,
+   "value": 0.218128938439177
+  },
+  {
+   "iso3": "CHN",
+   "country": "China",
+   "year": 2023,
+   "value": 0.23483682889305
+  },
+  {
+   "iso3": "CHN",
+   "country": "China",
+   "year": 2022,
+   "value": 1.9735755573905
+  },
+  {
+   "iso3": "CHN",
+   "country": "China",
+   "year": 2021,
+   "value": 0.981015135544881
+  },
+  {
+   "iso3": "CHN",
+   "country": "China",
+   "year": 2020,
+   "value": 2.41942189457782
+  },
+  {
+   "iso3": "CHN",
+   "country": "China",
+   "year": 2019,
+   "value": 2.89923416358226
+  },
+  {
+   "iso3": "COL",
+   "country": "Colombia",
+   "year": 2025,
+   "value": 5.14222911946201
+  },
+  {
+   "iso3": "COL",
+   "country": "Colombia",
+   "year": 2024,
+   "value": 6.60908593728228
+  },
+  {
+   "iso3": "COL",
+   "country": "Colombia",
+   "year": 2023,
+   "value": 11.7359044948689
+  },
+  {
+   "iso3": "COL",
+   "country": "Colombia",
+   "year": 2022,
+   "value": 10.1772313546166
+  },
+  {
+   "iso3": "COL",
+   "country": "Colombia",
+   "year": 2021,
+   "value": 3.49505757399448
+  },
+  {
+   "iso3": "COL",
+   "country": "Colombia",
+   "year": 2020,
+   "value": 2.52663500084706
+  },
+  {
+   "iso3": "COL",
+   "country": "Colombia",
+   "year": 2019,
+   "value": 3.52301932741446
+  },
+  {
+   "iso3": "COM",
+   "country": "Comoros",
+   "year": 2025,
+   "value": 3.24909332306432
+  },
+  {
+   "iso3": "COM",
+   "country": "Comoros",
+   "year": 2024,
+   "value": 5.05192609588218
+  },
+  {
+   "iso3": "COM",
+   "country": "Comoros",
+   "year": 2023,
+   "value": 8.37373955490995
+  },
+  {
+   "iso3": "COM",
+   "country": "Comoros",
+   "year": 2022,
+   "value": 12.5320314570998
+  },
+  {
+   "iso3": "COM",
+   "country": "Comoros",
+   "year": 2021,
+   "value": -0.00441793682346988
+  },
+  {
+   "iso3": "COM",
+   "country": "Comoros",
+   "year": 2020,
+   "value": 0.786641929499151
+  },
+  {
+   "iso3": "COM",
+   "country": "Comoros",
+   "year": 2019,
+   "value": 3.58213544469211
+  },
+  {
+   "iso3": "COD",
+   "country": "Congo, Dem. Rep.",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "COD",
+   "country": "Congo, Dem. Rep.",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "COD",
+   "country": "Congo, Dem. Rep.",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "COD",
+   "country": "Congo, Dem. Rep.",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "COD",
+   "country": "Congo, Dem. Rep.",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "COD",
+   "country": "Congo, Dem. Rep.",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "COD",
+   "country": "Congo, Dem. Rep.",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "COG",
+   "country": "Congo, Rep.",
+   "year": 2025,
+   "value": 2.40069559361747
+  },
+  {
+   "iso3": "COG",
+   "country": "Congo, Rep.",
+   "year": 2024,
+   "value": 3.09143630919166
+  },
+  {
+   "iso3": "COG",
+   "country": "Congo, Rep.",
+   "year": 2023,
+   "value": 4.30174563591016
+  },
+  {
+   "iso3": "COG",
+   "country": "Congo, Rep.",
+   "year": 2022,
+   "value": 3.04344334698477
+  },
+  {
+   "iso3": "COG",
+   "country": "Congo, Rep.",
+   "year": 2021,
+   "value": 1.7156427545126
+  },
+  {
+   "iso3": "COG",
+   "country": "Congo, Rep.",
+   "year": 2020,
+   "value": 1.79537147083107
+  },
+  {
+   "iso3": "COG",
+   "country": "Congo, Rep.",
+   "year": 2019,
+   "value": 2.20607305781525
+  },
+  {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "year": 2025,
+   "value": -0.073671440596217
+  },
+  {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "year": 2024,
+   "value": -0.412853001047069
+  },
+  {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "year": 2023,
+   "value": 0.525193508693455
+  },
+  {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "year": 2022,
+   "value": 8.27477490232654
+  },
+  {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "year": 2021,
+   "value": 1.72647755109241
+  },
+  {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "year": 2020,
+   "value": 0.724911478131375
+  },
+  {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "year": 2019,
+   "value": 2.09604635327807
+  },
+  {
+   "iso3": "CIV",
+   "country": "Cote d'Ivoire",
+   "year": 2025,
+   "value": 0.125038772593103
+  },
+  {
+   "iso3": "CIV",
+   "country": "Cote d'Ivoire",
+   "year": 2024,
+   "value": 3.45053028131018
+  },
+  {
+   "iso3": "CIV",
+   "country": "Cote d'Ivoire",
+   "year": 2023,
+   "value": 4.36972254867474
+  },
+  {
+   "iso3": "CIV",
+   "country": "Cote d'Ivoire",
+   "year": 2022,
+   "value": 5.23352856100842
+  },
+  {
+   "iso3": "CIV",
+   "country": "Cote d'Ivoire",
+   "year": 2021,
+   "value": 4.15919657911797
+  },
+  {
+   "iso3": "CIV",
+   "country": "Cote d'Ivoire",
+   "year": 2020,
+   "value": 2.41252617189052
+  },
+  {
+   "iso3": "CIV",
+   "country": "Cote d'Ivoire",
+   "year": 2019,
+   "value": 0.79085551205366
+  },
+  {
+   "iso3": "HRV",
+   "country": "Croatia",
+   "year": 2025,
+   "value": 3.69153459605728
+  },
+  {
+   "iso3": "HRV",
+   "country": "Croatia",
+   "year": 2024,
+   "value": 2.97200477643625
+  },
+  {
+   "iso3": "HRV",
+   "country": "Croatia",
+   "year": 2023,
+   "value": 7.94128177586822
+  },
+  {
+   "iso3": "HRV",
+   "country": "Croatia",
+   "year": 2022,
+   "value": 10.7805806758686
+  },
+  {
+   "iso3": "HRV",
+   "country": "Croatia",
+   "year": 2021,
+   "value": 2.5545069964204
+  },
+  {
+   "iso3": "HRV",
+   "country": "Croatia",
+   "year": 2020,
+   "value": 0.154811374562106
+  },
+  {
+   "iso3": "HRV",
+   "country": "Croatia",
+   "year": 2019,
+   "value": 0.771820346498111
+  },
+  {
+   "iso3": "CUB",
+   "country": "Cuba",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "CUB",
+   "country": "Cuba",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "CUB",
+   "country": "Cuba",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "CUB",
+   "country": "Cuba",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "CUB",
+   "country": "Cuba",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "CUB",
+   "country": "Cuba",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "CUB",
+   "country": "Cuba",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "CUW",
+   "country": "Curacao",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "CUW",
+   "country": "Curacao",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "CUW",
+   "country": "Curacao",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "CUW",
+   "country": "Curacao",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "CUW",
+   "country": "Curacao",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "CUW",
+   "country": "Curacao",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "CUW",
+   "country": "Curacao",
+   "year": 2019,
+   "value": 2.62220783425058
+  },
+  {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "year": 2025,
+   "value": 0.126528851920188
+  },
+  {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "year": 2024,
+   "value": 1.80023018624823
+  },
+  {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "year": 2023,
+   "value": 3.54134188751645
+  },
+  {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "year": 2022,
+   "value": 8.39548297993333
+  },
+  {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "year": 2021,
+   "value": 2.44608867175473
+  },
+  {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "year": 2020,
+   "value": -0.638422797978861
+  },
+  {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "year": 2019,
+   "value": 0.250370996758493
+  },
+  {
+   "iso3": "CZE",
+   "country": "Czechia",
+   "year": 2025,
+   "value": 2.45996367838864
+  },
+  {
+   "iso3": "CZE",
+   "country": "Czechia",
+   "year": 2024,
+   "value": 2.43531202435314
+  },
+  {
+   "iso3": "CZE",
+   "country": "Czechia",
+   "year": 2023,
+   "value": 10.6612601372427
+  },
+  {
+   "iso3": "CZE",
+   "country": "Czechia",
+   "year": 2022,
+   "value": 15.100165146837
+  },
+  {
+   "iso3": "CZE",
+   "country": "Czechia",
+   "year": 2021,
+   "value": 3.83984491500146
+  },
+  {
+   "iso3": "CZE",
+   "country": "Czechia",
+   "year": 2020,
+   "value": 3.1612952849781
+  },
+  {
+   "iso3": "CZE",
+   "country": "Czechia",
+   "year": 2019,
+   "value": 2.84787595918041
+  },
+  {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "year": 2025,
+   "value": 1.8900606245861
+  },
+  {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "year": 2024,
+   "value": 1.37986244415555
+  },
+  {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "year": 2023,
+   "value": 3.31178243972716
+  },
+  {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "year": 2022,
+   "value": 7.70063309931329
+  },
+  {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "year": 2021,
+   "value": 1.83962310160841
+  },
+  {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "year": 2020,
+   "value": 0.423160183761248
+  },
+  {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "year": 2019,
+   "value": 0.740090192324771
+  },
+  {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "year": 2025,
+   "value": -0.31373179953348
+  },
+  {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "year": 2024,
+   "value": 2.1120116728497
+  },
+  {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "year": 2023,
+   "value": 1.44905087029085
+  },
+  {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "year": 2022,
+   "value": 5.17222088647605
+  },
+  {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "year": 2021,
+   "value": 1.18086783934059
+  },
+  {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "year": 2020,
+   "value": 1.77900535643955
+  },
+  {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "year": 2019,
+   "value": 3.31763203299602
+  },
+  {
+   "iso3": "DMA",
+   "country": "Dominica",
+   "year": 2025,
+   "value": 2.53385126107135
+  },
+  {
+   "iso3": "DMA",
+   "country": "Dominica",
+   "year": 2024,
+   "value": 2.73620751873312
+  },
+  {
+   "iso3": "DMA",
+   "country": "Dominica",
+   "year": 2023,
+   "value": 5.08677483158111
+  },
+  {
+   "iso3": "DMA",
+   "country": "Dominica",
+   "year": 2022,
+   "value": 2.88490226829353
+  },
+  {
+   "iso3": "DMA",
+   "country": "Dominica",
+   "year": 2021,
+   "value": 2.22891330700343
+  },
+  {
+   "iso3": "DMA",
+   "country": "Dominica",
+   "year": 2020,
+   "value": 1.22026442242476
+  },
+  {
+   "iso3": "DMA",
+   "country": "Dominica",
+   "year": 2019,
+   "value": 1.50462353858141
+  },
+  {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "year": 2025,
+   "value": 3.87311768048129
+  },
+  {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "year": 2024,
+   "value": 3.30223338951227
+  },
+  {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "year": 2023,
+   "value": 4.78561281021135
+  },
+  {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "year": 2022,
+   "value": 8.81109209279587
+  },
+  {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "year": 2021,
+   "value": 8.24300347981809
+  },
+  {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "year": 2020,
+   "value": 3.78103179915516
+  },
+  {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "year": 2019,
+   "value": 1.81060377042959
+  },
+  {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "year": 2025,
+   "value": 0.710469324989076
+  },
+  {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "year": 2024,
+   "value": 1.54732515615369
+  },
+  {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "year": 2023,
+   "value": 2.21568764237058
+  },
+  {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "year": 2022,
+   "value": 3.46616972213076
+  },
+  {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "year": 2021,
+   "value": 0.133251386096389
+  },
+  {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "year": 2020,
+   "value": -0.338872392562139
+  },
+  {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "year": 2019,
+   "value": 0.266012515466155
+  },
+  {
+   "iso3": "EGY",
+   "country": "Egypt, Arab Rep.",
+   "year": 2025,
+   "value": 14.0735136645933
+  },
+  {
+   "iso3": "EGY",
+   "country": "Egypt, Arab Rep.",
+   "year": 2024,
+   "value": 28.2705899322082
+  },
+  {
+   "iso3": "EGY",
+   "country": "Egypt, Arab Rep.",
+   "year": 2023,
+   "value": 33.8847763115546
+  },
+  {
+   "iso3": "EGY",
+   "country": "Egypt, Arab Rep.",
+   "year": 2022,
+   "value": 13.8956609775177
+  },
+  {
+   "iso3": "EGY",
+   "country": "Egypt, Arab Rep.",
+   "year": 2021,
+   "value": 5.21404940513042
+  },
+  {
+   "iso3": "EGY",
+   "country": "Egypt, Arab Rep.",
+   "year": 2020,
+   "value": 5.04493288977538
+  },
+  {
+   "iso3": "EGY",
+   "country": "Egypt, Arab Rep.",
+   "year": 2019,
+   "value": 9.15279959324803
+  },
+  {
+   "iso3": "SLV",
+   "country": "El Salvador",
+   "year": 2025,
+   "value": 0.257570528307202
+  },
+  {
+   "iso3": "SLV",
+   "country": "El Salvador",
+   "year": 2024,
+   "value": 0.853782292567288
+  },
+  {
+   "iso3": "SLV",
+   "country": "El Salvador",
+   "year": 2023,
+   "value": 4.04554694222476
+  },
+  {
+   "iso3": "SLV",
+   "country": "El Salvador",
+   "year": 2022,
+   "value": 7.19861615609866
+  },
+  {
+   "iso3": "SLV",
+   "country": "El Salvador",
+   "year": 2021,
+   "value": 3.46692585313081
+  },
+  {
+   "iso3": "SLV",
+   "country": "El Salvador",
+   "year": 2020,
+   "value": -0.371590212324095
+  },
+  {
+   "iso3": "SLV",
+   "country": "El Salvador",
+   "year": 2019,
+   "value": 0.0753241350024612
+  },
+  {
+   "iso3": "GNQ",
+   "country": "Equatorial Guinea",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "GNQ",
+   "country": "Equatorial Guinea",
+   "year": 2024,
+   "value": 2.92140227309103
+  },
+  {
+   "iso3": "GNQ",
+   "country": "Equatorial Guinea",
+   "year": 2023,
+   "value": 2.85949506037321
+  },
+  {
+   "iso3": "GNQ",
+   "country": "Equatorial Guinea",
+   "year": 2022,
+   "value": 4.78671704710803
+  },
+  {
+   "iso3": "GNQ",
+   "country": "Equatorial Guinea",
+   "year": 2021,
+   "value": -0.0971007664640198
+  },
+  {
+   "iso3": "GNQ",
+   "country": "Equatorial Guinea",
+   "year": 2020,
+   "value": 4.76669523944228
+  },
+  {
+   "iso3": "GNQ",
+   "country": "Equatorial Guinea",
+   "year": 2019,
+   "value": 1.53027528964189
+  },
+  {
+   "iso3": "ERI",
+   "country": "Eritrea",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "ERI",
+   "country": "Eritrea",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "ERI",
+   "country": "Eritrea",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "ERI",
+   "country": "Eritrea",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "ERI",
+   "country": "Eritrea",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "ERI",
+   "country": "Eritrea",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "ERI",
+   "country": "Eritrea",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "EST",
+   "country": "Estonia",
+   "year": 2025,
+   "value": 4.82894582449954
+  },
+  {
+   "iso3": "EST",
+   "country": "Estonia",
+   "year": 2024,
+   "value": 3.52246471160196
+  },
+  {
+   "iso3": "EST",
+   "country": "Estonia",
+   "year": 2023,
+   "value": 9.15293232611363
+  },
+  {
+   "iso3": "EST",
+   "country": "Estonia",
+   "year": 2022,
+   "value": 19.4014768461511
+  },
+  {
+   "iso3": "EST",
+   "country": "Estonia",
+   "year": 2021,
+   "value": 4.64974641556665
+  },
+  {
+   "iso3": "EST",
+   "country": "Estonia",
+   "year": 2020,
+   "value": -0.447581601077956
+  },
+  {
+   "iso3": "EST",
+   "country": "Estonia",
+   "year": 2019,
+   "value": 2.28787209229983
+  },
+  {
+   "iso3": "SWZ",
+   "country": "Eswatini",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "SWZ",
+   "country": "Eswatini",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "SWZ",
+   "country": "Eswatini",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "SWZ",
+   "country": "Eswatini",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "SWZ",
+   "country": "Eswatini",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "SWZ",
+   "country": "Eswatini",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "SWZ",
+   "country": "Eswatini",
+   "year": 2019,
+   "value": 2.59801620311077
+  },
+  {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "year": 2025,
+   "value": 13.2296432836808
+  },
+  {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "year": 2024,
+   "value": 21.037746057771
+  },
+  {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "year": 2023,
+   "value": 30.2188278135278
+  },
+  {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "year": 2022,
+   "value": 33.8898797100898
+  },
+  {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "year": 2021,
+   "value": 26.8395221557722
+  },
+  {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "year": 2020,
+   "value": 20.3563468559061
+  },
+  {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "year": 2019,
+   "value": 15.8096321719344
+  },
+  {
+   "iso3": "FRO",
+   "country": "Faroe Islands",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "FRO",
+   "country": "Faroe Islands",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "FRO",
+   "country": "Faroe Islands",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "FRO",
+   "country": "Faroe Islands",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "FRO",
+   "country": "Faroe Islands",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "FRO",
+   "country": "Faroe Islands",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "FRO",
+   "country": "Faroe Islands",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "FJI",
+   "country": "Fiji",
+   "year": 2025,
+   "value": -1.38326833934223
+  },
+  {
+   "iso3": "FJI",
+   "country": "Fiji",
+   "year": 2024,
+   "value": 3.89084237884105
+  },
+  {
+   "iso3": "FJI",
+   "country": "Fiji",
+   "year": 2023,
+   "value": 2.97544080604538
+  },
+  {
+   "iso3": "FJI",
+   "country": "Fiji",
+   "year": 2022,
+   "value": 6.07882431529724
+  },
+  {
+   "iso3": "FJI",
+   "country": "Fiji",
+   "year": 2021,
+   "value": 1.53454853751591
+  },
+  {
+   "iso3": "FJI",
+   "country": "Fiji",
+   "year": 2020,
+   "value": -1.70014167847317
+  },
+  {
+   "iso3": "FJI",
+   "country": "Fiji",
+   "year": 2019,
+   "value": 1.79388647514555
+  },
+  {
+   "iso3": "FIN",
+   "country": "Finland",
+   "year": 2025,
+   "value": 0.332787049734142
+  },
+  {
+   "iso3": "FIN",
+   "country": "Finland",
+   "year": 2024,
+   "value": 1.57635467980291
+  },
+  {
+   "iso3": "FIN",
+   "country": "Finland",
+   "year": 2023,
+   "value": 6.25107162517039
+  },
+  {
+   "iso3": "FIN",
+   "country": "Finland",
+   "year": 2022,
+   "value": 7.11434177839211
+  },
+  {
+   "iso3": "FIN",
+   "country": "Finland",
+   "year": 2021,
+   "value": 2.20204694538849
+  },
+  {
+   "iso3": "FIN",
+   "country": "Finland",
+   "year": 2020,
+   "value": 0.290297331840518
+  },
+  {
+   "iso3": "FIN",
+   "country": "Finland",
+   "year": 2019,
+   "value": 1.02596440654212
+  },
+  {
+   "iso3": "FRA",
+   "country": "France",
+   "year": 2025,
+   "value": 0.943824761520197
+  },
+  {
+   "iso3": "FRA",
+   "country": "France",
+   "year": 2024,
+   "value": 1.99742599742599
+  },
+  {
+   "iso3": "FRA",
+   "country": "France",
+   "year": 2023,
+   "value": 4.88000215969119
+  },
+  {
+   "iso3": "FRA",
+   "country": "France",
+   "year": 2022,
+   "value": 5.22294079215231
+  },
+  {
+   "iso3": "FRA",
+   "country": "France",
+   "year": 2021,
+   "value": 1.64090620368408
+  },
+  {
+   "iso3": "FRA",
+   "country": "France",
+   "year": 2020,
+   "value": 0.477700847097022
+  },
+  {
+   "iso3": "FRA",
+   "country": "France",
+   "year": 2019,
+   "value": 1.1067657411029
+  },
+  {
+   "iso3": "PYF",
+   "country": "French Polynesia",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "PYF",
+   "country": "French Polynesia",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "PYF",
+   "country": "French Polynesia",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "PYF",
+   "country": "French Polynesia",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "PYF",
+   "country": "French Polynesia",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "PYF",
+   "country": "French Polynesia",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "PYF",
+   "country": "French Polynesia",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "year": 2025,
+   "value": 1.7676660900348
+  },
+  {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "year": 2024,
+   "value": 1.17311998381218
+  },
+  {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "year": 2023,
+   "value": 3.62901534185375
+  },
+  {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "year": 2022,
+   "value": 4.23124798274579
+  },
+  {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "year": 2021,
+   "value": 1.08690746519409
+  },
+  {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "year": 2020,
+   "value": 1.35276110675332
+  },
+  {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "year": 2019,
+   "value": 2.46456756151186
+  },
+  {
+   "iso3": "GMB",
+   "country": "Gambia, The",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "GMB",
+   "country": "Gambia, The",
+   "year": 2024,
+   "value": 11.5610532897511
+  },
+  {
+   "iso3": "GMB",
+   "country": "Gambia, The",
+   "year": 2023,
+   "value": 16.9742129632326
+  },
+  {
+   "iso3": "GMB",
+   "country": "Gambia, The",
+   "year": 2022,
+   "value": 11.5131198380504
+  },
+  {
+   "iso3": "GMB",
+   "country": "Gambia, The",
+   "year": 2021,
+   "value": 7.37034758876617
+  },
+  {
+   "iso3": "GMB",
+   "country": "Gambia, The",
+   "year": 2020,
+   "value": 5.9312763656244
+  },
+  {
+   "iso3": "GMB",
+   "country": "Gambia, The",
+   "year": 2019,
+   "value": 7.11567625631192
+  },
+  {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "year": 2025,
+   "value": 3.86921321939689
+  },
+  {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "year": 2024,
+   "value": 1.10971758022096
+  },
+  {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "year": 2023,
+   "value": 2.48776056578714
+  },
+  {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "year": 2022,
+   "value": 11.8981654203197
+  },
+  {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "year": 2021,
+   "value": 9.56691433824769
+  },
+  {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "year": 2020,
+   "value": 5.2024648897534
+  },
+  {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "year": 2019,
+   "value": 4.85289821696722
+  },
+  {
+   "iso3": "DEU",
+   "country": "Germany",
+   "year": 2025,
+   "value": 2.17178770949721
+  },
+  {
+   "iso3": "DEU",
+   "country": "Germany",
+   "year": 2024,
+   "value": 2.2564981433876
+  },
+  {
+   "iso3": "DEU",
+   "country": "Germany",
+   "year": 2023,
+   "value": 5.94643667725823
+  },
+  {
+   "iso3": "DEU",
+   "country": "Germany",
+   "year": 2022,
+   "value": 6.87257438551096
+  },
+  {
+   "iso3": "DEU",
+   "country": "Germany",
+   "year": 2021,
+   "value": 3.06666666666673
+  },
+  {
+   "iso3": "DEU",
+   "country": "Germany",
+   "year": 2020,
+   "value": 0.144877925813981
+  },
+  {
+   "iso3": "DEU",
+   "country": "Germany",
+   "year": 2019,
+   "value": 1.44565976888253
+  },
+  {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "year": 2025,
+   "value": 14.2046755548989
+  },
+  {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "year": 2024,
+   "value": 22.8483281157842
+  },
+  {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "year": 2023,
+   "value": 38.1069656296501
+  },
+  {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "year": 2022,
+   "value": 31.2558951049016
+  },
+  {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "year": 2021,
+   "value": 9.97108867504439
+  },
+  {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "year": 2020,
+   "value": 9.88728956269944
+  },
+  {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "year": 2019,
+   "value": 7.14364003330856
+  },
+  {
+   "iso3": "GIB",
+   "country": "Gibraltar",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "GIB",
+   "country": "Gibraltar",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "GIB",
+   "country": "Gibraltar",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "GIB",
+   "country": "Gibraltar",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "GIB",
+   "country": "Gibraltar",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "GIB",
+   "country": "Gibraltar",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "GIB",
+   "country": "Gibraltar",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "GRC",
+   "country": "Greece",
+   "year": 2025,
+   "value": 2.48162694360829
+  },
+  {
+   "iso3": "GRC",
+   "country": "Greece",
+   "year": 2024,
+   "value": 2.74197509290368
+  },
+  {
+   "iso3": "GRC",
+   "country": "Greece",
+   "year": 2023,
+   "value": 3.46456960141384
+  },
+  {
+   "iso3": "GRC",
+   "country": "Greece",
+   "year": 2022,
+   "value": 9.64486176520366
+  },
+  {
+   "iso3": "GRC",
+   "country": "Greece",
+   "year": 2021,
+   "value": 1.22394673806362
+  },
+  {
+   "iso3": "GRC",
+   "country": "Greece",
+   "year": 2020,
+   "value": -1.24746757345197
+  },
+  {
+   "iso3": "GRC",
+   "country": "Greece",
+   "year": 2019,
+   "value": 0.255275185263553
+  },
+  {
+   "iso3": "GRL",
+   "country": "Greenland",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "GRL",
+   "country": "Greenland",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "GRL",
+   "country": "Greenland",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "GRL",
+   "country": "Greenland",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "GRL",
+   "country": "Greenland",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "GRL",
+   "country": "Greenland",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "GRL",
+   "country": "Greenland",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "GRD",
+   "country": "Grenada",
+   "year": 2025,
+   "value": 0.610311975893832
+  },
+  {
+   "iso3": "GRD",
+   "country": "Grenada",
+   "year": 2024,
+   "value": 1.08615365134736
+  },
+  {
+   "iso3": "GRD",
+   "country": "Grenada",
+   "year": 2023,
+   "value": 2.69612269814564
+  },
+  {
+   "iso3": "GRD",
+   "country": "Grenada",
+   "year": 2022,
+   "value": 2.58053925907919
+  },
+  {
+   "iso3": "GRD",
+   "country": "Grenada",
+   "year": 2021,
+   "value": 1.21951193916837
+  },
+  {
+   "iso3": "GRD",
+   "country": "Grenada",
+   "year": 2020,
+   "value": -0.740732597045497
+  },
+  {
+   "iso3": "GRD",
+   "country": "Grenada",
+   "year": 2019,
+   "value": 0.598149764736022
+  },
+  {
+   "iso3": "GUM",
+   "country": "Guam",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "GUM",
+   "country": "Guam",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "GUM",
+   "country": "Guam",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "GUM",
+   "country": "Guam",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "GUM",
+   "country": "Guam",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "GUM",
+   "country": "Guam",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "GUM",
+   "country": "Guam",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "year": 2025,
+   "value": 1.48841591086168
+  },
+  {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "year": 2024,
+   "value": 2.86992752918293
+  },
+  {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "year": 2023,
+   "value": 6.20657592272125
+  },
+  {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "year": 2022,
+   "value": 6.88512823344286
+  },
+  {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "year": 2021,
+   "value": 4.26105127422813
+  },
+  {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "year": 2020,
+   "value": 3.21444062197345
+  },
+  {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "year": 2019,
+   "value": 3.69998398008604
+  },
+  {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "year": 2025,
+   "value": 3.57096573355343
+  },
+  {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "year": 2024,
+   "value": 8.12313914948596
+  },
+  {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "year": 2023,
+   "value": 7.80497591927973
+  },
+  {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "year": 2022,
+   "value": 10.4930409984424
+  },
+  {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "year": 2021,
+   "value": 12.5972882566934
+  },
+  {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "year": 2020,
+   "value": 10.6016203387166
+  },
+  {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "year": 2019,
+   "value": 9.47001039253012
+  },
+  {
+   "iso3": "GNB",
+   "country": "Guinea-Bissau",
+   "year": 2025,
+   "value": 0.874929691038717
+  },
+  {
+   "iso3": "GNB",
+   "country": "Guinea-Bissau",
+   "year": 2024,
+   "value": 3.76555825770114
+  },
+  {
+   "iso3": "GNB",
+   "country": "Guinea-Bissau",
+   "year": 2023,
+   "value": 7.10220928557059
+  },
+  {
+   "iso3": "GNB",
+   "country": "Guinea-Bissau",
+   "year": 2022,
+   "value": 9.39075933985203
+  },
+  {
+   "iso3": "GNB",
+   "country": "Guinea-Bissau",
+   "year": 2021,
+   "value": 2.24248879577658
+  },
+  {
+   "iso3": "GNB",
+   "country": "Guinea-Bissau",
+   "year": 2020,
+   "value": 1.14000939393222
+  },
+  {
+   "iso3": "GNB",
+   "country": "Guinea-Bissau",
+   "year": 2019,
+   "value": 0.246600268147829
+  },
+  {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "year": 2025,
+   "value": 3.32982339132475
+  },
+  {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "year": 2024,
+   "value": 2.90379501424777
+  },
+  {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "year": 2023,
+   "value": 2.8215939309081
+  },
+  {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "year": 2022,
+   "value": 6.93346066500816
+  },
+  {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "year": 2021,
+   "value": 4.50619858925892
+  },
+  {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "year": 2020,
+   "value": 0.722434045501786
+  },
+  {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "year": 2019,
+   "value": 2.11238986774464
+  },
+  {
+   "iso3": "HTI",
+   "country": "Haiti",
+   "year": 2025,
+   "value": 28.6427976686095
+  },
+  {
+   "iso3": "HTI",
+   "country": "Haiti",
+   "year": 2024,
+   "value": 26.9490564091987
+  },
+  {
+   "iso3": "HTI",
+   "country": "Haiti",
+   "year": 2023,
+   "value": 36.8135162780853
+  },
+  {
+   "iso3": "HTI",
+   "country": "Haiti",
+   "year": 2022,
+   "value": 33.98393194707
+  },
+  {
+   "iso3": "HTI",
+   "country": "Haiti",
+   "year": 2021,
+   "value": 16.8415240198784
+  },
+  {
+   "iso3": "HTI",
+   "country": "Haiti",
+   "year": 2020,
+   "value": 22.7963113642527
+  },
+  {
+   "iso3": "HTI",
+   "country": "Haiti",
+   "year": 2019,
+   "value": 18.7037825672506
+  },
+  {
+   "iso3": "HND",
+   "country": "Honduras",
+   "year": 2025,
+   "value": 4.59657982325258
+  },
+  {
+   "iso3": "HND",
+   "country": "Honduras",
+   "year": 2024,
+   "value": 4.60621098127101
+  },
+  {
+   "iso3": "HND",
+   "country": "Honduras",
+   "year": 2023,
+   "value": 6.66325180347462
+  },
+  {
+   "iso3": "HND",
+   "country": "Honduras",
+   "year": 2022,
+   "value": 9.08963911525025
+  },
+  {
+   "iso3": "HND",
+   "country": "Honduras",
+   "year": 2021,
+   "value": 4.48087963413451
+  },
+  {
+   "iso3": "HND",
+   "country": "Honduras",
+   "year": 2020,
+   "value": 3.4684117795117
+  },
+  {
+   "iso3": "HND",
+   "country": "Honduras",
+   "year": 2019,
+   "value": 4.36587159819266
+  },
+  {
+   "iso3": "HKG",
+   "country": "Hong Kong SAR, China",
+   "year": 2025,
+   "value": 1.43633540372673
+  },
+  {
+   "iso3": "HKG",
+   "country": "Hong Kong SAR, China",
+   "year": 2024,
+   "value": 1.72972119105914
+  },
+  {
+   "iso3": "HKG",
+   "country": "Hong Kong SAR, China",
+   "year": 2023,
+   "value": 2.09660511249089
+  },
+  {
+   "iso3": "HKG",
+   "country": "Hong Kong SAR, China",
+   "year": 2022,
+   "value": 1.88136707196852
+  },
+  {
+   "iso3": "HKG",
+   "country": "Hong Kong SAR, China",
+   "year": 2021,
+   "value": 1.56875834445922
+  },
+  {
+   "iso3": "HKG",
+   "country": "Hong Kong SAR, China",
+   "year": 2020,
+   "value": 0.250962021080799
+  },
+  {
+   "iso3": "HKG",
+   "country": "Hong Kong SAR, China",
+   "year": 2019,
+   "value": 2.88320853773996
+  },
+  {
+   "iso3": "HUN",
+   "country": "Hungary",
+   "year": 2025,
+   "value": 4.41198445905566
+  },
+  {
+   "iso3": "HUN",
+   "country": "Hungary",
+   "year": 2024,
+   "value": 3.70370370370363
+  },
+  {
+   "iso3": "HUN",
+   "country": "Hungary",
+   "year": 2023,
+   "value": 17.1249659678736
+  },
+  {
+   "iso3": "HUN",
+   "country": "Hungary",
+   "year": 2022,
+   "value": 14.6081439492433
+  },
+  {
+   "iso3": "HUN",
+   "country": "Hungary",
+   "year": 2021,
+   "value": 5.11096534382864
+  },
+  {
+   "iso3": "HUN",
+   "country": "Hungary",
+   "year": 2020,
+   "value": 3.32674385766727
+  },
+  {
+   "iso3": "HUN",
+   "country": "Hungary",
+   "year": 2019,
+   "value": 3.33858635382016
+  },
+  {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "year": 2025,
+   "value": 4.09085056006515
+  },
+  {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "year": 2024,
+   "value": 5.85683849970071
+  },
+  {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "year": 2023,
+   "value": 8.73630299937298
+  },
+  {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "year": 2022,
+   "value": 8.30875511558912
+  },
+  {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "year": 2021,
+   "value": 4.44423970189746
+  },
+  {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "year": 2020,
+   "value": 2.84792401518656
+  },
+  {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "year": 2019,
+   "value": 3.0139717915606
+  },
+  {
+   "iso3": "IND",
+   "country": "India",
+   "year": 2025,
+   "value": 2.39884954182294
+  },
+  {
+   "iso3": "IND",
+   "country": "India",
+   "year": 2024,
+   "value": 4.9530355097366
+  },
+  {
+   "iso3": "IND",
+   "country": "India",
+   "year": 2023,
+   "value": 5.64914318907925
+  },
+  {
+   "iso3": "IND",
+   "country": "India",
+   "year": 2022,
+   "value": 6.69903414079857
+  },
+  {
+   "iso3": "IND",
+   "country": "India",
+   "year": 2021,
+   "value": 5.13140747176363
+  },
+  {
+   "iso3": "IND",
+   "country": "India",
+   "year": 2020,
+   "value": 6.62343677628529
+  },
+  {
+   "iso3": "IND",
+   "country": "India",
+   "year": 2019,
+   "value": 3.72950573539123
+  },
+  {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "year": 2025,
+   "value": 1.91333443295079
+  },
+  {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "year": 2024,
+   "value": 2.18151273615188
+  },
+  {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "year": 2023,
+   "value": 3.66938654859761
+  },
+  {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "year": 2022,
+   "value": 4.20946463714784
+  },
+  {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "year": 2021,
+   "value": 1.56007882983334
+  },
+  {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "year": 2020,
+   "value": 1.91983527270792
+  },
+  {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "year": 2019,
+   "value": 3.0305846094166
+  },
+  {
+   "iso3": "IRN",
+   "country": "Iran, Islamic Rep.",
+   "year": 2025,
+   "value": 42.1712244965444
+  },
+  {
+   "iso3": "IRN",
+   "country": "Iran, Islamic Rep.",
+   "year": 2024,
+   "value": 32.4558714029169
+  },
+  {
+   "iso3": "IRN",
+   "country": "Iran, Islamic Rep.",
+   "year": 2023,
+   "value": 44.5791857572797
+  },
+  {
+   "iso3": "IRN",
+   "country": "Iran, Islamic Rep.",
+   "year": 2022,
+   "value": 43.4884641742178
+  },
+  {
+   "iso3": "IRN",
+   "country": "Iran, Islamic Rep.",
+   "year": 2021,
+   "value": 43.3890162681514
+  },
+  {
+   "iso3": "IRN",
+   "country": "Iran, Islamic Rep.",
+   "year": 2020,
+   "value": 30.5941390387295
+  },
+  {
+   "iso3": "IRN",
+   "country": "Iran, Islamic Rep.",
+   "year": 2019,
+   "value": 39.9073455697783
+  },
+  {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "year": 2025,
+   "value": 0.303454715219381
+  },
+  {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "year": 2024,
+   "value": 2.6116961151764
+  },
+  {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "year": 2023,
+   "value": 4.35835351089595
+  },
+  {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "year": 2022,
+   "value": 4.9947659638103
+  },
+  {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "year": 2021,
+   "value": 6.04186489058042
+  },
+  {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "year": 2020,
+   "value": 0.574162679425856
+  },
+  {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "year": 2019,
+   "value": -0.198965380023882
+  },
+  {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "year": 2025,
+   "value": 2.21044788475856
+  },
+  {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "year": 2024,
+   "value": 2.11344999577316
+  },
+  {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "year": 2023,
+   "value": 6.29942487419124
+  },
+  {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "year": 2022,
+   "value": 7.82945736434104
+  },
+  {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "year": 2021,
+   "value": 2.34034113447043
+  },
+  {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "year": 2020,
+   "value": -0.326183651280032
+  },
+  {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "year": 2019,
+   "value": 0.937842961189273
+  },
+  {
+   "iso3": "IMN",
+   "country": "Isle of Man",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "IMN",
+   "country": "Isle of Man",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "IMN",
+   "country": "Isle of Man",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "IMN",
+   "country": "Isle of Man",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "IMN",
+   "country": "Isle of Man",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "IMN",
+   "country": "Isle of Man",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "IMN",
+   "country": "Isle of Man",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "ISR",
+   "country": "Israel",
+   "year": 2025,
+   "value": 3.04141321556539
+  },
+  {
+   "iso3": "ISR",
+   "country": "Israel",
+   "year": 2024,
+   "value": 3.07480889805024
+  },
+  {
+   "iso3": "ISR",
+   "country": "Israel",
+   "year": 2023,
+   "value": 4.22522603168917
+  },
+  {
+   "iso3": "ISR",
+   "country": "Israel",
+   "year": 2022,
+   "value": 4.41162725488371
+  },
+  {
+   "iso3": "ISR",
+   "country": "Israel",
+   "year": 2021,
+   "value": 1.47965474722561
+  },
+  {
+   "iso3": "ISR",
+   "country": "Israel",
+   "year": 2020,
+   "value": -0.575254620897755
+  },
+  {
+   "iso3": "ISR",
+   "country": "Israel",
+   "year": 2019,
+   "value": 0.817645940292793
+  },
+  {
+   "iso3": "ITA",
+   "country": "Italy",
+   "year": 2025,
+   "value": 1.5316735709312
+  },
+  {
+   "iso3": "ITA",
+   "country": "Italy",
+   "year": 2024,
+   "value": 0.982375111637719
+  },
+  {
+   "iso3": "ITA",
+   "country": "Italy",
+   "year": 2023,
+   "value": 5.62219292216457
+  },
+  {
+   "iso3": "ITA",
+   "country": "Italy",
+   "year": 2022,
+   "value": 8.20128981173605
+  },
+  {
+   "iso3": "ITA",
+   "country": "Italy",
+   "year": 2021,
+   "value": 1.87378306224529
+  },
+  {
+   "iso3": "ITA",
+   "country": "Italy",
+   "year": 2020,
+   "value": -0.137707259048216
+  },
+  {
+   "iso3": "ITA",
+   "country": "Italy",
+   "year": 2019,
+   "value": 0.611249440506398
+  },
+  {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "year": 2025,
+   "value": 4.00459048079238
+  },
+  {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "year": 2024,
+   "value": 5.41194447981658
+  },
+  {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "year": 2023,
+   "value": 6.47413734662062
+  },
+  {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "year": 2022,
+   "value": 10.3495688391271
+  },
+  {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "year": 2021,
+   "value": 5.86278242801063
+  },
+  {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "year": 2020,
+   "value": 5.2267777929352
+  },
+  {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "year": 2019,
+   "value": 3.90510000865872
+  },
+  {
+   "iso3": "JPN",
+   "country": "Japan",
+   "year": 2025,
+   "value": 3.17253034260247
+  },
+  {
+   "iso3": "JPN",
+   "country": "Japan",
+   "year": 2024,
+   "value": 2.7385368163524
+  },
+  {
+   "iso3": "JPN",
+   "country": "Japan",
+   "year": 2023,
+   "value": 3.26813365933163
+  },
+  {
+   "iso3": "JPN",
+   "country": "Japan",
+   "year": 2022,
+   "value": 2.49770278172254
+  },
+  {
+   "iso3": "JPN",
+   "country": "Japan",
+   "year": 2021,
+   "value": -0.233352779398263
+  },
+  {
+   "iso3": "JPN",
+   "country": "Japan",
+   "year": 2020,
+   "value": -0.024995834027731
+  },
+  {
+   "iso3": "JPN",
+   "country": "Japan",
+   "year": 2019,
+   "value": 0.468776159383949
+  },
+  {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "year": 2025,
+   "value": 1.76646490894205
+  },
+  {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "year": 2024,
+   "value": 1.55659611283952
+  },
+  {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "year": 2023,
+   "value": 2.08486986327133
+  },
+  {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "year": 2022,
+   "value": 4.22915568897117
+  },
+  {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "year": 2021,
+   "value": 1.34609377243117
+  },
+  {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "year": 2020,
+   "value": 0.333294350628378
+  },
+  {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "year": 2019,
+   "value": 0.7615140472656
+  },
+  {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "year": 2025,
+   "value": 11.3789456104214
+  },
+  {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "year": 2024,
+   "value": 8.67566095952575
+  },
+  {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "year": 2023,
+   "value": 14.5222753412318
+  },
+  {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "year": 2022,
+   "value": 14.9948211297904
+  },
+  {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "year": 2021,
+   "value": 7.96011920034767
+  },
+  {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "year": 2020,
+   "value": 6.80371915011852
+  },
+  {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "year": 2019,
+   "value": 5.33356098916675
+  },
+  {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "year": 2025,
+   "value": 4.0693076061457
+  },
+  {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "year": 2024,
+   "value": 4.48978854243447
+  },
+  {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "year": 2023,
+   "value": 7.67139634029402
+  },
+  {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "year": 2022,
+   "value": 7.65986268272223
+  },
+  {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "year": 2021,
+   "value": 6.10793603659176
+  },
+  {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "year": 2020,
+   "value": 5.40516207933392
+  },
+  {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "year": 2019,
+   "value": 5.23963795764792
+  },
+  {
+   "iso3": "KIR",
+   "country": "Kiribati",
+   "year": 2025,
+   "value": 6.51130441863551
+  },
+  {
+   "iso3": "KIR",
+   "country": "Kiribati",
+   "year": 2024,
+   "value": 2.45545072159027
+  },
+  {
+   "iso3": "KIR",
+   "country": "Kiribati",
+   "year": 2023,
+   "value": 9.28307374517721
+  },
+  {
+   "iso3": "KIR",
+   "country": "Kiribati",
+   "year": 2022,
+   "value": 5.34595440908903
+  },
+  {
+   "iso3": "KIR",
+   "country": "Kiribati",
+   "year": 2021,
+   "value": 2.05361676773907
+  },
+  {
+   "iso3": "KIR",
+   "country": "Kiribati",
+   "year": 2020,
+   "value": 2.5532455441463
+  },
+  {
+   "iso3": "KIR",
+   "country": "Kiribati",
+   "year": 2019,
+   "value": -1.81307995302947
+  },
+  {
+   "iso3": "PRK",
+   "country": "Korea, Dem. People's Rep.",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "PRK",
+   "country": "Korea, Dem. People's Rep.",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "PRK",
+   "country": "Korea, Dem. People's Rep.",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "PRK",
+   "country": "Korea, Dem. People's Rep.",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "PRK",
+   "country": "Korea, Dem. People's Rep.",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "PRK",
+   "country": "Korea, Dem. People's Rep.",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "PRK",
+   "country": "Korea, Dem. People's Rep.",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "KOR",
+   "country": "Korea, Rep.",
+   "year": 2025,
+   "value": 2.12309421458659
+  },
+  {
+   "iso3": "KOR",
+   "country": "Korea, Rep.",
+   "year": 2024,
+   "value": 2.32174328643542
+  },
+  {
+   "iso3": "KOR",
+   "country": "Korea, Rep.",
+   "year": 2023,
+   "value": 3.5974562502901
+  },
+  {
+   "iso3": "KOR",
+   "country": "Korea, Rep.",
+   "year": 2022,
+   "value": 5.08951365062841
+  },
+  {
+   "iso3": "KOR",
+   "country": "Korea, Rep.",
+   "year": 2021,
+   "value": 2.49833333333339
+  },
+  {
+   "iso3": "KOR",
+   "country": "Korea, Rep.",
+   "year": 2020,
+   "value": 0.537288023411737
+  },
+  {
+   "iso3": "KOR",
+   "country": "Korea, Rep.",
+   "year": 2019,
+   "value": 0.383000303608135
+  },
+  {
+   "iso3": "XKX",
+   "country": "Kosovo",
+   "year": 2025,
+   "value": 3.85953869869505
+  },
+  {
+   "iso3": "XKX",
+   "country": "Kosovo",
+   "year": 2024,
+   "value": 1.61944994559476
+  },
+  {
+   "iso3": "XKX",
+   "country": "Kosovo",
+   "year": 2023,
+   "value": 4.94432438791282
+  },
+  {
+   "iso3": "XKX",
+   "country": "Kosovo",
+   "year": 2022,
+   "value": 11.5805104542012
+  },
+  {
+   "iso3": "XKX",
+   "country": "Kosovo",
+   "year": 2021,
+   "value": 3.35369139207997
+  },
+  {
+   "iso3": "XKX",
+   "country": "Kosovo",
+   "year": 2020,
+   "value": 0.198227922994854
+  },
+  {
+   "iso3": "XKX",
+   "country": "Kosovo",
+   "year": 2019,
+   "value": 2.67599202639893
+  },
+  {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "year": 2025,
+   "value": 2.36195936682045
+  },
+  {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "year": 2024,
+   "value": 2.89855072463762
+  },
+  {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "year": 2023,
+   "value": 3.64216403030708
+  },
+  {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "year": 2022,
+   "value": 3.98064961990313
+  },
+  {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "year": 2021,
+   "value": 3.42362947609188
+  },
+  {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "year": 2020,
+   "value": 2.101729548274
+  },
+  {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "year": 2019,
+   "value": 1.09184802655856
+  },
+  {
+   "iso3": "KGZ",
+   "country": "Kyrgyz Republic",
+   "year": 2025,
+   "value": 8.21496013406325
+  },
+  {
+   "iso3": "KGZ",
+   "country": "Kyrgyz Republic",
+   "year": 2024,
+   "value": 4.99760701207323
+  },
+  {
+   "iso3": "KGZ",
+   "country": "Kyrgyz Republic",
+   "year": 2023,
+   "value": 10.7532770416742
+  },
+  {
+   "iso3": "KGZ",
+   "country": "Kyrgyz Republic",
+   "year": 2022,
+   "value": 13.9229093174175
+  },
+  {
+   "iso3": "KGZ",
+   "country": "Kyrgyz Republic",
+   "year": 2021,
+   "value": 11.9050398185146
+  },
+  {
+   "iso3": "KGZ",
+   "country": "Kyrgyz Republic",
+   "year": 2020,
+   "value": 6.32542296338077
+  },
+  {
+   "iso3": "KGZ",
+   "country": "Kyrgyz Republic",
+   "year": 2019,
+   "value": 1.13362257718803
+  },
+  {
+   "iso3": "LAO",
+   "country": "Lao PDR",
+   "year": 2025,
+   "value": 7.74226936553694
+  },
+  {
+   "iso3": "LAO",
+   "country": "Lao PDR",
+   "year": 2024,
+   "value": 23.1305695942588
+  },
+  {
+   "iso3": "LAO",
+   "country": "Lao PDR",
+   "year": 2023,
+   "value": 31.2301341732645
+  },
+  {
+   "iso3": "LAO",
+   "country": "Lao PDR",
+   "year": 2022,
+   "value": 22.9562225132055
+  },
+  {
+   "iso3": "LAO",
+   "country": "Lao PDR",
+   "year": 2021,
+   "value": 3.75562036658877
+  },
+  {
+   "iso3": "LAO",
+   "country": "Lao PDR",
+   "year": 2020,
+   "value": 5.10407262959919
+  },
+  {
+   "iso3": "LAO",
+   "country": "Lao PDR",
+   "year": 2019,
+   "value": 3.32255881256925
+  },
+  {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "year": 2025,
+   "value": 3.74577316751945
+  },
+  {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "year": 2024,
+   "value": 1.26579885828728
+  },
+  {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "year": 2023,
+   "value": 8.9380462331663
+  },
+  {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "year": 2022,
+   "value": 17.3102830198814
+  },
+  {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "year": 2021,
+   "value": 3.27582937431165
+  },
+  {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "year": 2020,
+   "value": 0.219064904841984
+  },
+  {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "year": 2019,
+   "value": 2.81140920075624
+  },
+  {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "year": 2025,
+   "value": 14.597595869611
+  },
+  {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "year": 2024,
+   "value": 45.2430422716718
+  },
+  {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "year": 2023,
+   "value": 221.341644023365
+  },
+  {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "year": 2022,
+   "value": 171.205491336641
+  },
+  {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "year": 2021,
+   "value": 154.756096023393
+  },
+  {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "year": 2020,
+   "value": 84.864333047204
+  },
+  {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "year": 2019,
+   "value": 3.00538949390382
+  },
+  {
+   "iso3": "LSO",
+   "country": "Lesotho",
+   "year": 2025,
+   "value": 4.27011140706665
+  },
+  {
+   "iso3": "LSO",
+   "country": "Lesotho",
+   "year": 2024,
+   "value": 6.10544624245031
+  },
+  {
+   "iso3": "LSO",
+   "country": "Lesotho",
+   "year": 2023,
+   "value": 6.34221743124953
+  },
+  {
+   "iso3": "LSO",
+   "country": "Lesotho",
+   "year": 2022,
+   "value": 8.27180389943027
+  },
+  {
+   "iso3": "LSO",
+   "country": "Lesotho",
+   "year": 2021,
+   "value": 6.04774591950675
+  },
+  {
+   "iso3": "LSO",
+   "country": "Lesotho",
+   "year": 2020,
+   "value": 4.97809676252309
+  },
+  {
+   "iso3": "LSO",
+   "country": "Lesotho",
+   "year": 2019,
+   "value": 5.18708359197981
+  },
+  {
+   "iso3": "LBR",
+   "country": "Liberia",
+   "year": 2025,
+   "value": 8.31564329402951
+  },
+  {
+   "iso3": "LBR",
+   "country": "Liberia",
+   "year": 2024,
+   "value": 8.21497439118963
+  },
+  {
+   "iso3": "LBR",
+   "country": "Liberia",
+   "year": 2023,
+   "value": 10.0944535665551
+  },
+  {
+   "iso3": "LBR",
+   "country": "Liberia",
+   "year": 2022,
+   "value": 7.59298486560313
+  },
+  {
+   "iso3": "LBR",
+   "country": "Liberia",
+   "year": 2021,
+   "value": 7.81559385858648
+  },
+  {
+   "iso3": "LBR",
+   "country": "Liberia",
+   "year": 2020,
+   "value": 16.9557241496254
+  },
+  {
+   "iso3": "LBR",
+   "country": "Liberia",
+   "year": 2019,
+   "value": 26.9662760197878
+  },
+  {
+   "iso3": "LBY",
+   "country": "Libya",
+   "year": 2025,
+   "value": 1.84166666666702
+  },
+  {
+   "iso3": "LBY",
+   "country": "Libya",
+   "year": 2024,
+   "value": 2.12615766885021
+  },
+  {
+   "iso3": "LBY",
+   "country": "Libya",
+   "year": 2023,
+   "value": 2.37317531435179
+  },
+  {
+   "iso3": "LBY",
+   "country": "Libya",
+   "year": 2022,
+   "value": 4.51030149235695
+  },
+  {
+   "iso3": "LBY",
+   "country": "Libya",
+   "year": 2021,
+   "value": 2.86833027751014
+  },
+  {
+   "iso3": "LBY",
+   "country": "Libya",
+   "year": 2020,
+   "value": 1.4470365699874
+  },
+  {
+   "iso3": "LBY",
+   "country": "Libya",
+   "year": 2019,
+   "value": -2.1621788347059
+  },
+  {
+   "iso3": "LIE",
+   "country": "Liechtenstein",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "LIE",
+   "country": "Liechtenstein",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "LIE",
+   "country": "Liechtenstein",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "LIE",
+   "country": "Liechtenstein",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "LIE",
+   "country": "Liechtenstein",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "LIE",
+   "country": "Liechtenstein",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "LIE",
+   "country": "Liechtenstein",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "LTU",
+   "country": "Lithuania",
+   "year": 2025,
+   "value": 3.79132375529774
+  },
+  {
+   "iso3": "LTU",
+   "country": "Lithuania",
+   "year": 2024,
+   "value": 0.715728099283774
+  },
+  {
+   "iso3": "LTU",
+   "country": "Lithuania",
+   "year": 2023,
+   "value": 9.11734190721293
+  },
+  {
+   "iso3": "LTU",
+   "country": "Lithuania",
+   "year": 2022,
+   "value": 19.7050363314043
+  },
+  {
+   "iso3": "LTU",
+   "country": "Lithuania",
+   "year": 2021,
+   "value": 4.68353816718102
+  },
+  {
+   "iso3": "LTU",
+   "country": "Lithuania",
+   "year": 2020,
+   "value": 1.19988413415409
+  },
+  {
+   "iso3": "LTU",
+   "country": "Lithuania",
+   "year": 2019,
+   "value": 2.33450641721588
+  },
+  {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "year": 2025,
+   "value": 2.25723817871725
+  },
+  {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "year": 2024,
+   "value": 2.05113269954859
+  },
+  {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "year": 2023,
+   "value": 3.74140361983135
+  },
+  {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "year": 2022,
+   "value": 6.33600807777918
+  },
+  {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "year": 2021,
+   "value": 2.52692009066166
+  },
+  {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "year": 2020,
+   "value": 0.819957302127035
+  },
+  {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "year": 2019,
+   "value": 1.74332075653848
+  },
+  {
+   "iso3": "MAC",
+   "country": "Macao SAR, China",
+   "year": 2025,
+   "value": 0.333311677308541
+  },
+  {
+   "iso3": "MAC",
+   "country": "Macao SAR, China",
+   "year": 2024,
+   "value": 0.672498598854365
+  },
+  {
+   "iso3": "MAC",
+   "country": "Macao SAR, China",
+   "year": 2023,
+   "value": 0.476384495788075
+  },
+  {
+   "iso3": "MAC",
+   "country": "Macao SAR, China",
+   "year": 2022,
+   "value": 1.04502802369953
+  },
+  {
+   "iso3": "MAC",
+   "country": "Macao SAR, China",
+   "year": 2021,
+   "value": 0.0264543647055503
+  },
+  {
+   "iso3": "MAC",
+   "country": "Macao SAR, China",
+   "year": 2020,
+   "value": 0.811410511491512
+  },
+  {
+   "iso3": "MAC",
+   "country": "Macao SAR, China",
+   "year": 2019,
+   "value": 2.75193081051975
+  },
+  {
+   "iso3": "MDG",
+   "country": "Madagascar",
+   "year": 2025,
+   "value": 8.05052431791227
+  },
+  {
+   "iso3": "MDG",
+   "country": "Madagascar",
+   "year": 2024,
+   "value": 7.61335784313723
+  },
+  {
+   "iso3": "MDG",
+   "country": "Madagascar",
+   "year": 2023,
+   "value": 9.87432675044888
+  },
+  {
+   "iso3": "MDG",
+   "country": "Madagascar",
+   "year": 2022,
+   "value": 8.16059031991844
+  },
+  {
+   "iso3": "MDG",
+   "country": "Madagascar",
+   "year": 2021,
+   "value": 5.81087199133074
+  },
+  {
+   "iso3": "MDG",
+   "country": "Madagascar",
+   "year": 2020,
+   "value": 4.19455227376978
+  },
+  {
+   "iso3": "MDG",
+   "country": "Madagascar",
+   "year": 2019,
+   "value": 5.62530573954355
+  },
+  {
+   "iso3": "MWI",
+   "country": "Malawi",
+   "year": 2025,
+   "value": 28.3702565330281
+  },
+  {
+   "iso3": "MWI",
+   "country": "Malawi",
+   "year": 2024,
+   "value": 32.1796504225025
+  },
+  {
+   "iso3": "MWI",
+   "country": "Malawi",
+   "year": 2023,
+   "value": 28.7897428247298
+  },
+  {
+   "iso3": "MWI",
+   "country": "Malawi",
+   "year": 2022,
+   "value": 20.953969729969
+  },
+  {
+   "iso3": "MWI",
+   "country": "Malawi",
+   "year": 2021,
+   "value": 9.33014410835211
+  },
+  {
+   "iso3": "MWI",
+   "country": "Malawi",
+   "year": 2020,
+   "value": 8.62551469650551
+  },
+  {
+   "iso3": "MWI",
+   "country": "Malawi",
+   "year": 2019,
+   "value": 9.37083605605669
+  },
+  {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "year": 2025,
+   "value": 1.38060872293691
+  },
+  {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "year": 2024,
+   "value": 1.834100204499
+  },
+  {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "year": 2023,
+   "value": 2.48886560125753
+  },
+  {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "year": 2022,
+   "value": 3.37869862549928
+  },
+  {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "year": 2021,
+   "value": 2.47710241465446
+  },
+  {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "year": 2020,
+   "value": -1.13870215393049
+  },
+  {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "year": 2019,
+   "value": 0.662891865764326
+  },
+  {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "year": 2025,
+   "value": 4.00578494118751
+  },
+  {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "year": 2024,
+   "value": 1.41093527910134
+  },
+  {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "year": 2023,
+   "value": 2.90372427754586
+  },
+  {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "year": 2022,
+   "value": 2.33054046477249
+  },
+  {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "year": 2021,
+   "value": 0.543149688737012
+  },
+  {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "year": 2020,
+   "value": -1.3697742556981
+  },
+  {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "year": 2019,
+   "value": 0.220029731065383
+  },
+  {
+   "iso3": "MLI",
+   "country": "Mali",
+   "year": 2025,
+   "value": 3.27823540357584
+  },
+  {
+   "iso3": "MLI",
+   "country": "Mali",
+   "year": 2024,
+   "value": 3.20639864099659
+  },
+  {
+   "iso3": "MLI",
+   "country": "Mali",
+   "year": 2023,
+   "value": 2.05880228274222
+  },
+  {
+   "iso3": "MLI",
+   "country": "Mali",
+   "year": 2022,
+   "value": 9.62147608489063
+  },
+  {
+   "iso3": "MLI",
+   "country": "Mali",
+   "year": 2021,
+   "value": 3.92560283104276
+  },
+  {
+   "iso3": "MLI",
+   "country": "Mali",
+   "year": 2020,
+   "value": 0.438088940320668
+  },
+  {
+   "iso3": "MLI",
+   "country": "Mali",
+   "year": 2019,
+   "value": -1.65826694846364
+  },
+  {
+   "iso3": "MLT",
+   "country": "Malta",
+   "year": 2025,
+   "value": 2.36351752252186
+  },
+  {
+   "iso3": "MLT",
+   "country": "Malta",
+   "year": 2024,
+   "value": 1.65079469283108
+  },
+  {
+   "iso3": "MLT",
+   "country": "Malta",
+   "year": 2023,
+   "value": 5.09396758978882
+  },
+  {
+   "iso3": "MLT",
+   "country": "Malta",
+   "year": 2022,
+   "value": 6.15375621933036
+  },
+  {
+   "iso3": "MLT",
+   "country": "Malta",
+   "year": 2021,
+   "value": 1.49789217934724
+  },
+  {
+   "iso3": "MLT",
+   "country": "Malta",
+   "year": 2020,
+   "value": 0.638544956776712
+  },
+  {
+   "iso3": "MLT",
+   "country": "Malta",
+   "year": 2019,
+   "value": 1.6420600176894
+  },
+  {
+   "iso3": "MHL",
+   "country": "Marshall Islands",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "MHL",
+   "country": "Marshall Islands",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "MHL",
+   "country": "Marshall Islands",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "MHL",
+   "country": "Marshall Islands",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "MHL",
+   "country": "Marshall Islands",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "MHL",
+   "country": "Marshall Islands",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "MHL",
+   "country": "Marshall Islands",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "year": 2025,
+   "value": 1.54796926167072
+  },
+  {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "year": 2024,
+   "value": 2.49164347481971
+  },
+  {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "year": 2023,
+   "value": 4.95305034506872
+  },
+  {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "year": 2022,
+   "value": 9.52526628622842
+  },
+  {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "year": 2021,
+   "value": 3.56516484650184
+  },
+  {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "year": 2020,
+   "value": 2.38569488456319
+  },
+  {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "year": 2019,
+   "value": 2.30009262117937
+  },
+  {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "year": 2025,
+   "value": 3.67359279962943
+  },
+  {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "year": 2024,
+   "value": 3.60452203847959
+  },
+  {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "year": 2023,
+   "value": 7.05298238454736
+  },
+  {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "year": 2022,
+   "value": 10.7737512242899
+  },
+  {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "year": 2021,
+   "value": 4.02852888157375
+  },
+  {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "year": 2020,
+   "value": 2.58080077182829
+  },
+  {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "year": 2019,
+   "value": 0.405655190309553
+  },
+  {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "year": 2025,
+   "value": 3.80957950037393
+  },
+  {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "year": 2024,
+   "value": 4.72225588452931
+  },
+  {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "year": 2023,
+   "value": 5.52796087314388
+  },
+  {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "year": 2022,
+   "value": 7.89627619168549
+  },
+  {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "year": 2021,
+   "value": 5.68920847683753
+  },
+  {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "year": 2020,
+   "value": 3.39683415570006
+  },
+  {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "year": 2019,
+   "value": 3.63596142127046
+  },
+  {
+   "iso3": "FSM",
+   "country": "Micronesia, Fed. Sts.",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "FSM",
+   "country": "Micronesia, Fed. Sts.",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "FSM",
+   "country": "Micronesia, Fed. Sts.",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "FSM",
+   "country": "Micronesia, Fed. Sts.",
+   "year": 2022,
+   "value": 5.40874375479066
+  },
+  {
+   "iso3": "FSM",
+   "country": "Micronesia, Fed. Sts.",
+   "year": 2021,
+   "value": 3.19128406597466
+  },
+  {
+   "iso3": "FSM",
+   "country": "Micronesia, Fed. Sts.",
+   "year": 2020,
+   "value": 0.554594630853174
+  },
+  {
+   "iso3": "FSM",
+   "country": "Micronesia, Fed. Sts.",
+   "year": 2019,
+   "value": 1.92385170787923
+  },
+  {
+   "iso3": "MDA",
+   "country": "Moldova",
+   "year": 2025,
+   "value": 7.75904124001158
+  },
+  {
+   "iso3": "MDA",
+   "country": "Moldova",
+   "year": 2024,
+   "value": 4.67773516007048
+  },
+  {
+   "iso3": "MDA",
+   "country": "Moldova",
+   "year": 2023,
+   "value": 13.4170104381299
+  },
+  {
+   "iso3": "MDA",
+   "country": "Moldova",
+   "year": 2022,
+   "value": 28.7372976766235
+  },
+  {
+   "iso3": "MDA",
+   "country": "Moldova",
+   "year": 2021,
+   "value": 5.10641129002835
+  },
+  {
+   "iso3": "MDA",
+   "country": "Moldova",
+   "year": 2020,
+   "value": 3.76597122245357
+  },
+  {
+   "iso3": "MDA",
+   "country": "Moldova",
+   "year": 2019,
+   "value": 4.83778351428728
+  },
+  {
+   "iso3": "MCO",
+   "country": "Monaco",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "MCO",
+   "country": "Monaco",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "MCO",
+   "country": "Monaco",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "MCO",
+   "country": "Monaco",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "MCO",
+   "country": "Monaco",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "MCO",
+   "country": "Monaco",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "MCO",
+   "country": "Monaco",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "MNG",
+   "country": "Mongolia",
+   "year": 2025,
+   "value": 8.60536487369694
+  },
+  {
+   "iso3": "MNG",
+   "country": "Mongolia",
+   "year": 2024,
+   "value": 6.19779901658419
+  },
+  {
+   "iso3": "MNG",
+   "country": "Mongolia",
+   "year": 2023,
+   "value": 10.3475831314339
+  },
+  {
+   "iso3": "MNG",
+   "country": "Mongolia",
+   "year": 2022,
+   "value": 15.1509728200804
+  },
+  {
+   "iso3": "MNG",
+   "country": "Mongolia",
+   "year": 2021,
+   "value": 7.35894657888155
+  },
+  {
+   "iso3": "MNG",
+   "country": "Mongolia",
+   "year": 2020,
+   "value": 3.72372306140259
+  },
+  {
+   "iso3": "MNG",
+   "country": "Mongolia",
+   "year": 2019,
+   "value": 7.30106953550728
+  },
+  {
+   "iso3": "MNE",
+   "country": "Montenegro",
+   "year": 2025,
+   "value": 3.89921045747158
+  },
+  {
+   "iso3": "MNE",
+   "country": "Montenegro",
+   "year": 2024,
+   "value": 3.33675009282281
+  },
+  {
+   "iso3": "MNE",
+   "country": "Montenegro",
+   "year": 2023,
+   "value": 8.58476910455402
+  },
+  {
+   "iso3": "MNE",
+   "country": "Montenegro",
+   "year": 2022,
+   "value": 13.0403036347003
+  },
+  {
+   "iso3": "MNE",
+   "country": "Montenegro",
+   "year": 2021,
+   "value": 2.41080198403156
+  },
+  {
+   "iso3": "MNE",
+   "country": "Montenegro",
+   "year": 2020,
+   "value": -0.25565569984838
+  },
+  {
+   "iso3": "MNE",
+   "country": "Montenegro",
+   "year": 2019,
+   "value": 0.361570854604296
+  },
+  {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "year": 2025,
+   "value": 0.701902154839544
+  },
+  {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "year": 2024,
+   "value": 0.985256592004506
+  },
+  {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "year": 2023,
+   "value": 6.0911415250414
+  },
+  {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "year": 2022,
+   "value": 6.65704202759066
+  },
+  {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "year": 2021,
+   "value": 1.40195883962005
+  },
+  {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "year": 2020,
+   "value": 0.70596866133826
+  },
+  {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "year": 2019,
+   "value": 0.303386036590383
+  },
+  {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "year": 2025,
+   "value": 4.36846950146149
+  },
+  {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "year": 2024,
+   "value": 4.07856834812021
+  },
+  {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "year": 2023,
+   "value": 7.12697482131851
+  },
+  {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "year": 2022,
+   "value": 10.279401809342
+  },
+  {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "year": 2021,
+   "value": 6.40847652975691
+  },
+  {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "year": 2020,
+   "value": 3.48393567493203
+  },
+  {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "year": 2019,
+   "value": 2.80270307928111
+  },
+  {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "year": 2019,
+   "value": 8.82506696804558
+  },
+  {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "year": 2025,
+   "value": 3.51074539609587
+  },
+  {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "year": 2024,
+   "value": 4.23903922877036
+  },
+  {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "year": 2023,
+   "value": 5.87993463284274
+  },
+  {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "year": 2022,
+   "value": 6.08128114112413
+  },
+  {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "year": 2021,
+   "value": 3.61690530108814
+  },
+  {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "year": 2020,
+   "value": 2.20938236933469
+  },
+  {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "year": 2019,
+   "value": 3.72239414422694
+  },
+  {
+   "iso3": "NRU",
+   "country": "Naoero",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "NRU",
+   "country": "Naoero",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "NRU",
+   "country": "Naoero",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "NRU",
+   "country": "Naoero",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "NRU",
+   "country": "Naoero",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "NRU",
+   "country": "Naoero",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "NRU",
+   "country": "Naoero",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "NPL",
+   "country": "Nepal",
+   "year": 2025,
+   "value": 2.65334269811436
+  },
+  {
+   "iso3": "NPL",
+   "country": "Nepal",
+   "year": 2024,
+   "value": 4.68509654265769
+  },
+  {
+   "iso3": "NPL",
+   "country": "Nepal",
+   "year": 2023,
+   "value": 7.11587261530826
+  },
+  {
+   "iso3": "NPL",
+   "country": "Nepal",
+   "year": 2022,
+   "value": 7.6702057938028
+  },
+  {
+   "iso3": "NPL",
+   "country": "Nepal",
+   "year": 2021,
+   "value": 4.12676744440695
+  },
+  {
+   "iso3": "NPL",
+   "country": "Nepal",
+   "year": 2020,
+   "value": 5.05635826238499
+  },
+  {
+   "iso3": "NPL",
+   "country": "Nepal",
+   "year": 2019,
+   "value": 5.56616035243722
+  },
+  {
+   "iso3": "NLD",
+   "country": "Netherlands",
+   "year": 2025,
+   "value": 3.20363967869003
+  },
+  {
+   "iso3": "NLD",
+   "country": "Netherlands",
+   "year": 2024,
+   "value": 3.34639895475025
+  },
+  {
+   "iso3": "NLD",
+   "country": "Netherlands",
+   "year": 2023,
+   "value": 3.84231997489532
+  },
+  {
+   "iso3": "NLD",
+   "country": "Netherlands",
+   "year": 2022,
+   "value": 9.99817255172687
+  },
+  {
+   "iso3": "NLD",
+   "country": "Netherlands",
+   "year": 2021,
+   "value": 2.68123345078501
+  },
+  {
+   "iso3": "NLD",
+   "country": "Netherlands",
+   "year": 2020,
+   "value": 1.26788070731057
+  },
+  {
+   "iso3": "NLD",
+   "country": "Netherlands",
+   "year": 2019,
+   "value": 2.63397403948254
+  },
+  {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "year": 2025,
+   "value": 2.8397963180572
+  },
+  {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "year": 2024,
+   "value": 2.92279782301956
+  },
+  {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "year": 2023,
+   "value": 5.73316283034957
+  },
+  {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "year": 2022,
+   "value": 7.17222476016441
+  },
+  {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "year": 2021,
+   "value": 3.94112060778728
+  },
+  {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "year": 2020,
+   "value": 1.71456170007244
+  },
+  {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "year": 2019,
+   "value": 1.61963190184047
+  },
+  {
+   "iso3": "NIC",
+   "country": "Nicaragua",
+   "year": 2025,
+   "value": 2.08132127098375
+  },
+  {
+   "iso3": "NIC",
+   "country": "Nicaragua",
+   "year": 2024,
+   "value": 4.62473841057141
+  },
+  {
+   "iso3": "NIC",
+   "country": "Nicaragua",
+   "year": 2023,
+   "value": 8.38765854872536
+  },
+  {
+   "iso3": "NIC",
+   "country": "Nicaragua",
+   "year": 2022,
+   "value": 10.467424446599
+  },
+  {
+   "iso3": "NIC",
+   "country": "Nicaragua",
+   "year": 2021,
+   "value": 4.92841396948967
+  },
+  {
+   "iso3": "NIC",
+   "country": "Nicaragua",
+   "year": 2020,
+   "value": 3.68181341625571
+  },
+  {
+   "iso3": "NIC",
+   "country": "Nicaragua",
+   "year": 2019,
+   "value": 5.37628990844125
+  },
+  {
+   "iso3": "NER",
+   "country": "Niger",
+   "year": 2025,
+   "value": -4.45470804102568
+  },
+  {
+   "iso3": "NER",
+   "country": "Niger",
+   "year": 2024,
+   "value": 9.07151997725013
+  },
+  {
+   "iso3": "NER",
+   "country": "Niger",
+   "year": 2023,
+   "value": 3.70097316425833
+  },
+  {
+   "iso3": "NER",
+   "country": "Niger",
+   "year": 2022,
+   "value": 4.22621791916392
+  },
+  {
+   "iso3": "NER",
+   "country": "Niger",
+   "year": 2021,
+   "value": 3.83786802840509
+  },
+  {
+   "iso3": "NER",
+   "country": "Niger",
+   "year": 2020,
+   "value": 2.8981937602627
+  },
+  {
+   "iso3": "NER",
+   "country": "Niger",
+   "year": 2019,
+   "value": -2.48979265070854
+  },
+  {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "year": 2025,
+   "value": 23.0101235833333
+  },
+  {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "year": 2024,
+   "value": 33.2416590552748
+  },
+  {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "year": 2023,
+   "value": 24.6595502031139
+  },
+  {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "year": 2022,
+   "value": 18.8471877843274
+  },
+  {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "year": 2021,
+   "value": 16.9528457221607
+  },
+  {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "year": 2020,
+   "value": 13.2460234276598
+  },
+  {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "year": 2019,
+   "value": 11.3964223378114
+  },
+  {
+   "iso3": "MKD",
+   "country": "North Macedonia",
+   "year": 2025,
+   "value": 4.07249176848347
+  },
+  {
+   "iso3": "MKD",
+   "country": "North Macedonia",
+   "year": 2024,
+   "value": 3.48974086026953
+  },
+  {
+   "iso3": "MKD",
+   "country": "North Macedonia",
+   "year": 2023,
+   "value": 9.36187249769014
+  },
+  {
+   "iso3": "MKD",
+   "country": "North Macedonia",
+   "year": 2022,
+   "value": 14.2047173195832
+  },
+  {
+   "iso3": "MKD",
+   "country": "North Macedonia",
+   "year": 2021,
+   "value": 3.23074912132927
+  },
+  {
+   "iso3": "MKD",
+   "country": "North Macedonia",
+   "year": 2020,
+   "value": 1.20007348888468
+  },
+  {
+   "iso3": "MKD",
+   "country": "North Macedonia",
+   "year": 2019,
+   "value": 0.766439573459804
+  },
+  {
+   "iso3": "MNP",
+   "country": "Northern Mariana Islands",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "MNP",
+   "country": "Northern Mariana Islands",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "MNP",
+   "country": "Northern Mariana Islands",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "MNP",
+   "country": "Northern Mariana Islands",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "MNP",
+   "country": "Northern Mariana Islands",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "MNP",
+   "country": "Northern Mariana Islands",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "MNP",
+   "country": "Northern Mariana Islands",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "NOR",
+   "country": "Norway",
+   "year": 2025,
+   "value": 3.03967027305512
+  },
+  {
+   "iso3": "NOR",
+   "country": "Norway",
+   "year": 2024,
+   "value": 3.18065030566136
+  },
+  {
+   "iso3": "NOR",
+   "country": "Norway",
+   "year": 2023,
+   "value": 5.49584073277878
+  },
+  {
+   "iso3": "NOR",
+   "country": "Norway",
+   "year": 2022,
+   "value": 5.77360355907063
+  },
+  {
+   "iso3": "NOR",
+   "country": "Norway",
+   "year": 2021,
+   "value": 3.4676759410803
+  },
+  {
+   "iso3": "NOR",
+   "country": "Norway",
+   "year": 2020,
+   "value": 1.29520256968185
+  },
+  {
+   "iso3": "NOR",
+   "country": "Norway",
+   "year": 2019,
+   "value": 2.17023078551767
+  },
+  {
+   "iso3": "OMN",
+   "country": "Oman",
+   "year": 2025,
+   "value": 0.967741935483927
+  },
+  {
+   "iso3": "OMN",
+   "country": "Oman",
+   "year": 2024,
+   "value": 0.593589236248469
+  },
+  {
+   "iso3": "OMN",
+   "country": "Oman",
+   "year": 2023,
+   "value": 0.950782997762827
+  },
+  {
+   "iso3": "OMN",
+   "country": "Oman",
+   "year": 2022,
+   "value": 2.50614250614249
+  },
+  {
+   "iso3": "OMN",
+   "country": "Oman",
+   "year": 2021,
+   "value": 1.68221185876084
+  },
+  {
+   "iso3": "OMN",
+   "country": "Oman",
+   "year": 2020,
+   "value": -0.406402919465849
+  },
+  {
+   "iso3": "OMN",
+   "country": "Oman",
+   "year": 2019,
+   "value": 0.490815362820671
+  },
+  {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "year": 2025,
+   "value": 3.54555214890892
+  },
+  {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "year": 2024,
+   "value": 12.6325318530451
+  },
+  {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "year": 2023,
+   "value": 30.7681280657005
+  },
+  {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "year": 2022,
+   "value": 19.8738599646655
+  },
+  {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "year": 2021,
+   "value": 9.49641577285205
+  },
+  {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "year": 2020,
+   "value": 9.74011619320125
+  },
+  {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "year": 2019,
+   "value": 10.5780305672024
+  },
+  {
+   "iso3": "PLW",
+   "country": "Palau",
+   "year": 2025,
+   "value": -0.418410041841039
+  },
+  {
+   "iso3": "PLW",
+   "country": "Palau",
+   "year": 2024,
+   "value": 2.23172772921703
+  },
+  {
+   "iso3": "PLW",
+   "country": "Palau",
+   "year": 2023,
+   "value": 12.8199748216533
+  },
+  {
+   "iso3": "PLW",
+   "country": "Palau",
+   "year": 2022,
+   "value": 12.3526638378124
+  },
+  {
+   "iso3": "PLW",
+   "country": "Palau",
+   "year": 2021,
+   "value": 2.6124818577648
+  },
+  {
+   "iso3": "PLW",
+   "country": "Palau",
+   "year": 2020,
+   "value": 0.218181818181832
+  },
+  {
+   "iso3": "PLW",
+   "country": "Palau",
+   "year": 2019,
+   "value": 0.267379679144439
+  },
+  {
+   "iso3": "PAN",
+   "country": "Panama",
+   "year": 2025,
+   "value": -0.187950146495633
+  },
+  {
+   "iso3": "PAN",
+   "country": "Panama",
+   "year": 2024,
+   "value": 0.692107003454604
+  },
+  {
+   "iso3": "PAN",
+   "country": "Panama",
+   "year": 2023,
+   "value": 1.48855311404795
+  },
+  {
+   "iso3": "PAN",
+   "country": "Panama",
+   "year": 2022,
+   "value": 2.85748282185327
+  },
+  {
+   "iso3": "PAN",
+   "country": "Panama",
+   "year": 2021,
+   "value": 1.6307033730189
+  },
+  {
+   "iso3": "PAN",
+   "country": "Panama",
+   "year": 2020,
+   "value": -1.55027540803758
+  },
+  {
+   "iso3": "PAN",
+   "country": "Panama",
+   "year": 2019,
+   "value": -0.355083821021175
+  },
+  {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "year": 2025,
+   "value": 4.42141364166485
+  },
+  {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "year": 2024,
+   "value": 0.602403921107916
+  },
+  {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "year": 2023,
+   "value": 2.2986999129679
+  },
+  {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "year": 2022,
+   "value": 5.2532392221524
+  },
+  {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "year": 2021,
+   "value": 4.48359014042398
+  },
+  {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "year": 2020,
+   "value": 4.87167398565554
+  },
+  {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "year": 2019,
+   "value": 3.92867290939597
+  },
+  {
+   "iso3": "PRY",
+   "country": "Paraguay",
+   "year": 2025,
+   "value": 4.0380642333938
+  },
+  {
+   "iso3": "PRY",
+   "country": "Paraguay",
+   "year": 2024,
+   "value": 3.83540271728532
+  },
+  {
+   "iso3": "PRY",
+   "country": "Paraguay",
+   "year": 2023,
+   "value": 4.63202285403355
+  },
+  {
+   "iso3": "PRY",
+   "country": "Paraguay",
+   "year": 2022,
+   "value": 9.76556667164402
+  },
+  {
+   "iso3": "PRY",
+   "country": "Paraguay",
+   "year": 2021,
+   "value": 4.78798310123599
+  },
+  {
+   "iso3": "PRY",
+   "country": "Paraguay",
+   "year": 2020,
+   "value": 1.76751592356698
+  },
+  {
+   "iso3": "PRY",
+   "country": "Paraguay",
+   "year": 2019,
+   "value": 2.75709727562774
+  },
+  {
+   "iso3": "PER",
+   "country": "Peru",
+   "year": 2025,
+   "value": 1.53125450314272
+  },
+  {
+   "iso3": "PER",
+   "country": "Peru",
+   "year": 2024,
+   "value": 2.00770739412712
+  },
+  {
+   "iso3": "PER",
+   "country": "Peru",
+   "year": 2023,
+   "value": 6.45561348369586
+  },
+  {
+   "iso3": "PER",
+   "country": "Peru",
+   "year": 2022,
+   "value": 8.3337063009623
+  },
+  {
+   "iso3": "PER",
+   "country": "Peru",
+   "year": 2021,
+   "value": 4.27166381536797
+  },
+  {
+   "iso3": "PER",
+   "country": "Peru",
+   "year": 2020,
+   "value": 2.00241205759291
+  },
+  {
+   "iso3": "PER",
+   "country": "Peru",
+   "year": 2019,
+   "value": 2.25212191358027
+  },
+  {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "year": 2025,
+   "value": 1.6587364525509
+  },
+  {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "year": 2024,
+   "value": 3.21260487006347
+  },
+  {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "year": 2023,
+   "value": 5.97802515541409
+  },
+  {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "year": 2022,
+   "value": 5.82115811213954
+  },
+  {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "year": 2021,
+   "value": 3.92718022100332
+  },
+  {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "year": 2020,
+   "value": 2.3931623931624
+  },
+  {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "year": 2019,
+   "value": 2.39206534422404
+  },
+  {
+   "iso3": "POL",
+   "country": "Poland",
+   "year": 2025,
+   "value": 3.81419531520146
+  },
+  {
+   "iso3": "POL",
+   "country": "Poland",
+   "year": 2024,
+   "value": 3.79060897630196
+  },
+  {
+   "iso3": "POL",
+   "country": "Poland",
+   "year": 2023,
+   "value": 11.5289127961104
+  },
+  {
+   "iso3": "POL",
+   "country": "Poland",
+   "year": 2022,
+   "value": 14.4294507575757
+  },
+  {
+   "iso3": "POL",
+   "country": "Poland",
+   "year": 2021,
+   "value": 5.05502704719272
+  },
+  {
+   "iso3": "POL",
+   "country": "Poland",
+   "year": 2020,
+   "value": 3.37446972618589
+  },
+  {
+   "iso3": "POL",
+   "country": "Poland",
+   "year": 2019,
+   "value": 2.22747880938291
+  },
+  {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "year": 2025,
+   "value": 2.33601620316701
+  },
+  {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "year": 2024,
+   "value": 2.41613187791875
+  },
+  {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "year": 2023,
+   "value": 4.3112819189868
+  },
+  {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "year": 2022,
+   "value": 7.83269124233323
+  },
+  {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "year": 2021,
+   "value": 1.26565719069043
+  },
+  {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "year": 2020,
+   "value": -0.0124383299576209
+  },
+  {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "year": 2019,
+   "value": 0.338178410046124
+  },
+  {
+   "iso3": "PRI",
+   "country": "Puerto Rico (US)",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "PRI",
+   "country": "Puerto Rico (US)",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "PRI",
+   "country": "Puerto Rico (US)",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "PRI",
+   "country": "Puerto Rico (US)",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "PRI",
+   "country": "Puerto Rico (US)",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "PRI",
+   "country": "Puerto Rico (US)",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "PRI",
+   "country": "Puerto Rico (US)",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "year": 2024,
+   "value": 1.26734310292375
+  },
+  {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "year": 2023,
+   "value": 3.02764899198901
+  },
+  {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "year": 2022,
+   "value": 4.9952755374076
+  },
+  {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "year": 2021,
+   "value": 2.30446565742003
+  },
+  {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "year": 2020,
+   "value": -2.54031503004759
+  },
+  {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "year": 2019,
+   "value": -0.666641124861147
+  },
+  {
+   "iso3": "ROU",
+   "country": "Romania",
+   "year": 2025,
+   "value": 7.18903362292063
+  },
+  {
+   "iso3": "ROU",
+   "country": "Romania",
+   "year": 2024,
+   "value": 5.72140574354438
+  },
+  {
+   "iso3": "ROU",
+   "country": "Romania",
+   "year": 2023,
+   "value": 10.3971874764995
+  },
+  {
+   "iso3": "ROU",
+   "country": "Romania",
+   "year": 2022,
+   "value": 13.795488743252
+  },
+  {
+   "iso3": "ROU",
+   "country": "Romania",
+   "year": 2021,
+   "value": 5.05232876096582
+  },
+  {
+   "iso3": "ROU",
+   "country": "Romania",
+   "year": 2020,
+   "value": 2.63107311184742
+  },
+  {
+   "iso3": "ROU",
+   "country": "Romania",
+   "year": 2019,
+   "value": 3.82785432599437
+  },
+  {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "year": 2025,
+   "value": 8.71986939402666
+  },
+  {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "year": 2024,
+   "value": 8.43486410496723
+  },
+  {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "year": 2023,
+   "value": 5.86571931748967
+  },
+  {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "year": 2022,
+   "value": 13.7436797398231
+  },
+  {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "year": 2021,
+   "value": 6.69445891957612
+  },
+  {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "year": 2020,
+   "value": 3.38219796948067
+  },
+  {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "year": 2019,
+   "value": 4.47202631837903
+  },
+  {
+   "iso3": "RWA",
+   "country": "Rwanda",
+   "year": 2025,
+   "value": 5.91300016882599
+  },
+  {
+   "iso3": "RWA",
+   "country": "Rwanda",
+   "year": 2024,
+   "value": 1.77029240198634
+  },
+  {
+   "iso3": "RWA",
+   "country": "Rwanda",
+   "year": 2023,
+   "value": 19.7895467464669
+  },
+  {
+   "iso3": "RWA",
+   "country": "Rwanda",
+   "year": 2022,
+   "value": 17.6892095588153
+  },
+  {
+   "iso3": "RWA",
+   "country": "Rwanda",
+   "year": 2021,
+   "value": -0.391346748300791
+  },
+  {
+   "iso3": "RWA",
+   "country": "Rwanda",
+   "year": 2020,
+   "value": 9.85039902274206
+  },
+  {
+   "iso3": "RWA",
+   "country": "Rwanda",
+   "year": 2019,
+   "value": 3.34787655037647
+  },
+  {
+   "iso3": "WSM",
+   "country": "Samoa",
+   "year": 2025,
+   "value": 2.2119620764675
+  },
+  {
+   "iso3": "WSM",
+   "country": "Samoa",
+   "year": 2024,
+   "value": 2.17245530514377
+  },
+  {
+   "iso3": "WSM",
+   "country": "Samoa",
+   "year": 2023,
+   "value": 7.92164684826777
+  },
+  {
+   "iso3": "WSM",
+   "country": "Samoa",
+   "year": 2022,
+   "value": 10.9618822286843
+  },
+  {
+   "iso3": "WSM",
+   "country": "Samoa",
+   "year": 2021,
+   "value": 3.13320473174494
+  },
+  {
+   "iso3": "WSM",
+   "country": "Samoa",
+   "year": 2020,
+   "value": -1.56891247740895
+  },
+  {
+   "iso3": "WSM",
+   "country": "Samoa",
+   "year": 2019,
+   "value": 0.982326569888117
+  },
+  {
+   "iso3": "SMR",
+   "country": "San Marino",
+   "year": 2025,
+   "value": 2.29519525025037
+  },
+  {
+   "iso3": "SMR",
+   "country": "San Marino",
+   "year": 2024,
+   "value": 1.24216507945569
+  },
+  {
+   "iso3": "SMR",
+   "country": "San Marino",
+   "year": 2023,
+   "value": 5.93190858629403
+  },
+  {
+   "iso3": "SMR",
+   "country": "San Marino",
+   "year": 2022,
+   "value": 5.32545321311365
+  },
+  {
+   "iso3": "SMR",
+   "country": "San Marino",
+   "year": 2021,
+   "value": 1.6155141155142
+  },
+  {
+   "iso3": "SMR",
+   "country": "San Marino",
+   "year": 2020,
+   "value": -0.133368898372915
+  },
+  {
+   "iso3": "SMR",
+   "country": "San Marino",
+   "year": 2019,
+   "value": 0.472651967352852
+  },
+  {
+   "iso3": "STP",
+   "country": "Sao Tome and Principe",
+   "year": 2025,
+   "value": 11.0474362281814
+  },
+  {
+   "iso3": "STP",
+   "country": "Sao Tome and Principe",
+   "year": 2024,
+   "value": 14.3519273571008
+  },
+  {
+   "iso3": "STP",
+   "country": "Sao Tome and Principe",
+   "year": 2023,
+   "value": 21.2589138472999
+  },
+  {
+   "iso3": "STP",
+   "country": "Sao Tome and Principe",
+   "year": 2022,
+   "value": 18.005635112284
+  },
+  {
+   "iso3": "STP",
+   "country": "Sao Tome and Principe",
+   "year": 2021,
+   "value": 8.13777038378731
+  },
+  {
+   "iso3": "STP",
+   "country": "Sao Tome and Principe",
+   "year": 2020,
+   "value": 9.81932791540146
+  },
+  {
+   "iso3": "STP",
+   "country": "Sao Tome and Principe",
+   "year": 2019,
+   "value": 7.72024525213248
+  },
+  {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "year": 2025,
+   "value": 2.03559944812264
+  },
+  {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "year": 2024,
+   "value": 1.50098521057891
+  },
+  {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "year": 2023,
+   "value": 2.47391224946225
+  },
+  {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "year": 2022,
+   "value": 2.5441644569453
+  },
+  {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "year": 2021,
+   "value": 3.12995508227416
+  },
+  {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "year": 2020,
+   "value": 3.18677098411784
+  },
+  {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "year": 2019,
+   "value": -2.03668661515358
+  },
+  {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "year": 2025,
+   "value": 1.45900719841384
+  },
+  {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "year": 2024,
+   "value": 0.804503298792438
+  },
+  {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "year": 2023,
+   "value": 5.93947798773214
+  },
+  {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "year": 2022,
+   "value": 9.69681899081073
+  },
+  {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "year": 2021,
+   "value": 2.18032278088146
+  },
+  {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "year": 2020,
+   "value": 2.54314685681661
+  },
+  {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "year": 2019,
+   "value": 1.76011151192938
+  },
+  {
+   "iso3": "SRB",
+   "country": "Serbia",
+   "year": 2025,
+   "value": 3.89036786060009
+  },
+  {
+   "iso3": "SRB",
+   "country": "Serbia",
+   "year": 2024,
+   "value": 4.6705297488997
+  },
+  {
+   "iso3": "SRB",
+   "country": "Serbia",
+   "year": 2023,
+   "value": 12.3719043552519
+  },
+  {
+   "iso3": "SRB",
+   "country": "Serbia",
+   "year": 2022,
+   "value": 11.9815117344702
+  },
+  {
+   "iso3": "SRB",
+   "country": "Serbia",
+   "year": 2021,
+   "value": 4.08510285335102
+  },
+  {
+   "iso3": "SRB",
+   "country": "Serbia",
+   "year": 2020,
+   "value": 1.57553290083414
+  },
+  {
+   "iso3": "SRB",
+   "country": "Serbia",
+   "year": 2019,
+   "value": 1.84922984511086
+  },
+  {
+   "iso3": "SYC",
+   "country": "Seychelles",
+   "year": 2025,
+   "value": 0.297589655467555
+  },
+  {
+   "iso3": "SYC",
+   "country": "Seychelles",
+   "year": 2024,
+   "value": 0.311726050919668
+  },
+  {
+   "iso3": "SYC",
+   "country": "Seychelles",
+   "year": 2023,
+   "value": -1.03530088431952
+  },
+  {
+   "iso3": "SYC",
+   "country": "Seychelles",
+   "year": 2022,
+   "value": 2.6260363285129
+  },
+  {
+   "iso3": "SYC",
+   "country": "Seychelles",
+   "year": 2021,
+   "value": 9.76909936973541
+  },
+  {
+   "iso3": "SYC",
+   "country": "Seychelles",
+   "year": 2020,
+   "value": 1.20266463987122
+  },
+  {
+   "iso3": "SYC",
+   "country": "Seychelles",
+   "year": 2019,
+   "value": 1.80709400809982
+  },
+  {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "year": 2025,
+   "value": 7.48750166612985
+  },
+  {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "year": 2024,
+   "value": 28.6337500014114
+  },
+  {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "year": 2023,
+   "value": 47.6428733253178
+  },
+  {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "year": 2022,
+   "value": 27.2082883814653
+  },
+  {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "year": 2021,
+   "value": 11.8739588840234
+  },
+  {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "year": 2020,
+   "value": 13.4468711101052
+  },
+  {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "year": 2019,
+   "value": 14.804999090602
+  },
+  {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "year": 2025,
+   "value": 0.902998495002676
+  },
+  {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "year": 2024,
+   "value": 2.38951123595017
+  },
+  {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "year": 2023,
+   "value": 4.83372362825797
+  },
+  {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "year": 2022,
+   "value": 6.13095418919732
+  },
+  {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "year": 2021,
+   "value": 2.31610315765145
+  },
+  {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "year": 2020,
+   "value": -0.172111865925382
+  },
+  {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "year": 2019,
+   "value": 0.567829988405447
+  },
+  {
+   "iso3": "SXM",
+   "country": "Sint Maarten (Dutch part)",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "SXM",
+   "country": "Sint Maarten (Dutch part)",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "SXM",
+   "country": "Sint Maarten (Dutch part)",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "SXM",
+   "country": "Sint Maarten (Dutch part)",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "SXM",
+   "country": "Sint Maarten (Dutch part)",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "SXM",
+   "country": "Sint Maarten (Dutch part)",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "SXM",
+   "country": "Sint Maarten (Dutch part)",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "SVK",
+   "country": "Slovak Republic",
+   "year": 2025,
+   "value": 4.00042823495829
+  },
+  {
+   "iso3": "SVK",
+   "country": "Slovak Republic",
+   "year": 2024,
+   "value": 2.75760909424278
+  },
+  {
+   "iso3": "SVK",
+   "country": "Slovak Republic",
+   "year": 2023,
+   "value": 10.5319476645211
+  },
+  {
+   "iso3": "SVK",
+   "country": "Slovak Republic",
+   "year": 2022,
+   "value": 12.774146363761
+  },
+  {
+   "iso3": "SVK",
+   "country": "Slovak Republic",
+   "year": 2021,
+   "value": 3.14960629921259
+  },
+  {
+   "iso3": "SVK",
+   "country": "Slovak Republic",
+   "year": 2020,
+   "value": 1.93694126694222
+  },
+  {
+   "iso3": "SVK",
+   "country": "Slovak Republic",
+   "year": 2019,
+   "value": 2.6645613342544
+  },
+  {
+   "iso3": "SVN",
+   "country": "Slovenia",
+   "year": 2025,
+   "value": 2.37420873927207
+  },
+  {
+   "iso3": "SVN",
+   "country": "Slovenia",
+   "year": 2024,
+   "value": 1.96593538509715
+  },
+  {
+   "iso3": "SVN",
+   "country": "Slovenia",
+   "year": 2023,
+   "value": 7.44541647973679
+  },
+  {
+   "iso3": "SVN",
+   "country": "Slovenia",
+   "year": 2022,
+   "value": 8.83346218008716
+  },
+  {
+   "iso3": "SVN",
+   "country": "Slovenia",
+   "year": 2021,
+   "value": 1.91687660042081
+  },
+  {
+   "iso3": "SVN",
+   "country": "Slovenia",
+   "year": 2020,
+   "value": -0.0549154509283246
+  },
+  {
+   "iso3": "SVN",
+   "country": "Slovenia",
+   "year": 2019,
+   "value": 1.63437236731259
+  },
+  {
+   "iso3": "SLB",
+   "country": "Solomon Islands",
+   "year": 2025,
+   "value": 3.36462189317824
+  },
+  {
+   "iso3": "SLB",
+   "country": "Solomon Islands",
+   "year": 2024,
+   "value": 4.32183948388032
+  },
+  {
+   "iso3": "SLB",
+   "country": "Solomon Islands",
+   "year": 2023,
+   "value": 5.88585897042164
+  },
+  {
+   "iso3": "SLB",
+   "country": "Solomon Islands",
+   "year": 2022,
+   "value": 5.51812928576937
+  },
+  {
+   "iso3": "SLB",
+   "country": "Solomon Islands",
+   "year": 2021,
+   "value": -0.115437894412839
+  },
+  {
+   "iso3": "SLB",
+   "country": "Solomon Islands",
+   "year": 2020,
+   "value": 2.96354992076064
+  },
+  {
+   "iso3": "SLB",
+   "country": "Solomon Islands",
+   "year": 2019,
+   "value": 1.63485544012247
+  },
+  {
+   "iso3": "SOM",
+   "country": "Somalia, Fed. Rep.",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "SOM",
+   "country": "Somalia, Fed. Rep.",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "SOM",
+   "country": "Somalia, Fed. Rep.",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "SOM",
+   "country": "Somalia, Fed. Rep.",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "SOM",
+   "country": "Somalia, Fed. Rep.",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "SOM",
+   "country": "Somalia, Fed. Rep.",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "SOM",
+   "country": "Somalia, Fed. Rep.",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "year": 2025,
+   "value": 3.20550474112603
+  },
+  {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "year": 2024,
+   "value": 4.36115246518962
+  },
+  {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "year": 2023,
+   "value": 6.07524384579659
+  },
+  {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "year": 2022,
+   "value": 7.03987272546481
+  },
+  {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "year": 2021,
+   "value": 4.61874544887136
+  },
+  {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "year": 2020,
+   "value": 3.23238831615113
+  },
+  {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "year": 2019,
+   "value": 4.10285075461155
+  },
+  {
+   "iso3": "SSD",
+   "country": "South Sudan",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "SSD",
+   "country": "South Sudan",
+   "year": 2024,
+   "value": 91.4408220769045
+  },
+  {
+   "iso3": "SSD",
+   "country": "South Sudan",
+   "year": 2023,
+   "value": 2.38280434813754
+  },
+  {
+   "iso3": "SSD",
+   "country": "South Sudan",
+   "year": 2022,
+   "value": -6.68732094212667
+  },
+  {
+   "iso3": "SSD",
+   "country": "South Sudan",
+   "year": 2021,
+   "value": 10.5167158294358
+  },
+  {
+   "iso3": "SSD",
+   "country": "South Sudan",
+   "year": 2020,
+   "value": 29.6758435538571
+  },
+  {
+   "iso3": "SSD",
+   "country": "South Sudan",
+   "year": 2019,
+   "value": 87.2413641500032
+  },
+  {
+   "iso3": "ESP",
+   "country": "Spain",
+   "year": 2025,
+   "value": 2.67326741144651
+  },
+  {
+   "iso3": "ESP",
+   "country": "Spain",
+   "year": 2024,
+   "value": 2.77406987275873
+  },
+  {
+   "iso3": "ESP",
+   "country": "Spain",
+   "year": 2023,
+   "value": 3.53247287667898
+  },
+  {
+   "iso3": "ESP",
+   "country": "Spain",
+   "year": 2022,
+   "value": 8.39041940748896
+  },
+  {
+   "iso3": "ESP",
+   "country": "Spain",
+   "year": 2021,
+   "value": 3.09304989531805
+  },
+  {
+   "iso3": "ESP",
+   "country": "Spain",
+   "year": 2020,
+   "value": -0.322564616861942
+  },
+  {
+   "iso3": "ESP",
+   "country": "Spain",
+   "year": 2019,
+   "value": 0.699267137814226
+  },
+  {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "year": 2025,
+   "value": -4.76386036960982
+  },
+  {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "year": 2024,
+   "value": -0.42936004906973
+  },
+  {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "year": 2023,
+   "value": 16.5411742279831
+  },
+  {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "year": 2022,
+   "value": 49.7211021114327
+  },
+  {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "year": 2021,
+   "value": 7.01478071238194
+  },
+  {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "year": 2020,
+   "value": 6.15394508391737
+  },
+  {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "year": 2019,
+   "value": 3.52839358231811
+  },
+  {
+   "iso3": "KNA",
+   "country": "St. Kitts and Nevis",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "KNA",
+   "country": "St. Kitts and Nevis",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "KNA",
+   "country": "St. Kitts and Nevis",
+   "year": 2023,
+   "value": 3.55711230848243
+  },
+  {
+   "iso3": "KNA",
+   "country": "St. Kitts and Nevis",
+   "year": 2022,
+   "value": 2.66817533111249
+  },
+  {
+   "iso3": "KNA",
+   "country": "St. Kitts and Nevis",
+   "year": 2021,
+   "value": 1.195688870384
+  },
+  {
+   "iso3": "KNA",
+   "country": "St. Kitts and Nevis",
+   "year": 2020,
+   "value": -1.16724501769353
+  },
+  {
+   "iso3": "KNA",
+   "country": "St. Kitts and Nevis",
+   "year": 2019,
+   "value": -0.329562063663977
+  },
+  {
+   "iso3": "LCA",
+   "country": "St. Lucia",
+   "year": 2025,
+   "value": 2.02709512086273
+  },
+  {
+   "iso3": "LCA",
+   "country": "St. Lucia",
+   "year": 2024,
+   "value": -0.674240853418778
+  },
+  {
+   "iso3": "LCA",
+   "country": "St. Lucia",
+   "year": 2023,
+   "value": 3.81914546156358
+  },
+  {
+   "iso3": "LCA",
+   "country": "St. Lucia",
+   "year": 2022,
+   "value": 9.65268564265764
+  },
+  {
+   "iso3": "LCA",
+   "country": "St. Lucia",
+   "year": 2021,
+   "value": 2.41070312174393
+  },
+  {
+   "iso3": "LCA",
+   "country": "St. Lucia",
+   "year": 2020,
+   "value": -1.75580833517593
+  },
+  {
+   "iso3": "LCA",
+   "country": "St. Lucia",
+   "year": 2019,
+   "value": 0.539087559191757
+  },
+  {
+   "iso3": "MAF",
+   "country": "St. Martin (French part)",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "MAF",
+   "country": "St. Martin (French part)",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "MAF",
+   "country": "St. Martin (French part)",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "MAF",
+   "country": "St. Martin (French part)",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "MAF",
+   "country": "St. Martin (French part)",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "MAF",
+   "country": "St. Martin (French part)",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "MAF",
+   "country": "St. Martin (French part)",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "VCT",
+   "country": "St. Vincent and the Grenadines",
+   "year": 2025,
+   "value": 0.815322893749171
+  },
+  {
+   "iso3": "VCT",
+   "country": "St. Vincent and the Grenadines",
+   "year": 2024,
+   "value": 3.62770736940927
+  },
+  {
+   "iso3": "VCT",
+   "country": "St. Vincent and the Grenadines",
+   "year": 2023,
+   "value": 4.56457719814894
+  },
+  {
+   "iso3": "VCT",
+   "country": "St. Vincent and the Grenadines",
+   "year": 2022,
+   "value": 5.66009779226551
+  },
+  {
+   "iso3": "VCT",
+   "country": "St. Vincent and the Grenadines",
+   "year": 2021,
+   "value": 1.57272932500557
+  },
+  {
+   "iso3": "VCT",
+   "country": "St. Vincent and the Grenadines",
+   "year": 2020,
+   "value": -0.628131309354654
+  },
+  {
+   "iso3": "VCT",
+   "country": "St. Vincent and the Grenadines",
+   "year": 2019,
+   "value": 0.91306972532459
+  },
+  {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "year": 2022,
+   "value": 138.80846024176
+  },
+  {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "year": 2021,
+   "value": 359.093040778998
+  },
+  {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "year": 2020,
+   "value": 163.257782355457
+  },
+  {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "year": 2019,
+   "value": 50.9940515002964
+  },
+  {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "year": 2025,
+   "value": 9.2054681878919
+  },
+  {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "year": 2024,
+   "value": 16.2296159130279
+  },
+  {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "year": 2023,
+   "value": 51.587315960086
+  },
+  {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "year": 2022,
+   "value": 52.446027276241
+  },
+  {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "year": 2021,
+   "value": 59.1196626251976
+  },
+  {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "year": 2020,
+   "value": 34.889784309078
+  },
+  {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "year": 2025,
+   "value": 0.679015259300199
+  },
+  {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "year": 2024,
+   "value": 2.83679582836375
+  },
+  {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "year": 2023,
+   "value": 8.54678338363812
+  },
+  {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "year": 2022,
+   "value": 8.36888341476543
+  },
+  {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "year": 2021,
+   "value": 2.16416666666663
+  },
+  {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "year": 2020,
+   "value": 0.498304091118424
+  },
+  {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "year": 2019,
+   "value": 1.78413120567382
+  },
+  {
+   "iso3": "CHE",
+   "country": "Switzerland",
+   "year": 2025,
+   "value": 0.154376978290185
+  },
+  {
+   "iso3": "CHE",
+   "country": "Switzerland",
+   "year": 2024,
+   "value": 1.06234041976594
+  },
+  {
+   "iso3": "CHE",
+   "country": "Switzerland",
+   "year": 2023,
+   "value": 2.13540088016386
+  },
+  {
+   "iso3": "CHE",
+   "country": "Switzerland",
+   "year": 2022,
+   "value": 2.83502798644451
+  },
+  {
+   "iso3": "CHE",
+   "country": "Switzerland",
+   "year": 2021,
+   "value": 0.581814168489855
+  },
+  {
+   "iso3": "CHE",
+   "country": "Switzerland",
+   "year": 2020,
+   "value": -0.725874933313402
+  },
+  {
+   "iso3": "CHE",
+   "country": "Switzerland",
+   "year": 2019,
+   "value": 0.362886179940674
+  },
+  {
+   "iso3": "SYR",
+   "country": "Syrian Arab Republic",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "SYR",
+   "country": "Syrian Arab Republic",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "SYR",
+   "country": "Syrian Arab Republic",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "SYR",
+   "country": "Syrian Arab Republic",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "SYR",
+   "country": "Syrian Arab Republic",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "SYR",
+   "country": "Syrian Arab Republic",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "SYR",
+   "country": "Syrian Arab Republic",
+   "year": 2019,
+   "value": 13.417565322857
+  },
+  {
+   "iso3": "TJK",
+   "country": "Tajikistan",
+   "year": 2025,
+   "value": 3.38875846243549
+  },
+  {
+   "iso3": "TJK",
+   "country": "Tajikistan",
+   "year": 2024,
+   "value": 3.48421765331839
+  },
+  {
+   "iso3": "TJK",
+   "country": "Tajikistan",
+   "year": 2023,
+   "value": 3.58452570443271
+  },
+  {
+   "iso3": "TJK",
+   "country": "Tajikistan",
+   "year": 2022,
+   "value": 6.60549856677863
+  },
+  {
+   "iso3": "TJK",
+   "country": "Tajikistan",
+   "year": 2021,
+   "value": 8.97143251283651
+  },
+  {
+   "iso3": "TJK",
+   "country": "Tajikistan",
+   "year": 2020,
+   "value": 8.58175621506788
+  },
+  {
+   "iso3": "TJK",
+   "country": "Tajikistan",
+   "year": 2019,
+   "value": 7.76873621419655
+  },
+  {
+   "iso3": "TZA",
+   "country": "Tanzania",
+   "year": 2025,
+   "value": 3.32697361316105
+  },
+  {
+   "iso3": "TZA",
+   "country": "Tanzania",
+   "year": 2024,
+   "value": 3.05694676312372
+  },
+  {
+   "iso3": "TZA",
+   "country": "Tanzania",
+   "year": 2023,
+   "value": 3.79923291384916
+  },
+  {
+   "iso3": "TZA",
+   "country": "Tanzania",
+   "year": 2022,
+   "value": 4.35027204269101
+  },
+  {
+   "iso3": "TZA",
+   "country": "Tanzania",
+   "year": 2021,
+   "value": 3.69091958802198
+  },
+  {
+   "iso3": "TZA",
+   "country": "Tanzania",
+   "year": 2020,
+   "value": 3.29029062798325
+  },
+  {
+   "iso3": "TZA",
+   "country": "Tanzania",
+   "year": 2019,
+   "value": 3.4642805799902
+  },
+  {
+   "iso3": "THA",
+   "country": "Thailand",
+   "year": 2025,
+   "value": -0.133634356480206
+  },
+  {
+   "iso3": "THA",
+   "country": "Thailand",
+   "year": 2024,
+   "value": 0.398333333333422
+  },
+  {
+   "iso3": "THA",
+   "country": "Thailand",
+   "year": 2023,
+   "value": 1.22908986612448
+  },
+  {
+   "iso3": "THA",
+   "country": "Thailand",
+   "year": 2022,
+   "value": 6.07589952842432
+  },
+  {
+   "iso3": "THA",
+   "country": "Thailand",
+   "year": 2021,
+   "value": 1.23104516549814
+  },
+  {
+   "iso3": "THA",
+   "country": "Thailand",
+   "year": 2020,
+   "value": -0.846087518861798
+  },
+  {
+   "iso3": "THA",
+   "country": "Thailand",
+   "year": 2019,
+   "value": 0.705524801910316
+  },
+  {
+   "iso3": "TLS",
+   "country": "Timor-Leste",
+   "year": 2025,
+   "value": 0.428322848346937
+  },
+  {
+   "iso3": "TLS",
+   "country": "Timor-Leste",
+   "year": 2024,
+   "value": 2.06284153005468
+  },
+  {
+   "iso3": "TLS",
+   "country": "Timor-Leste",
+   "year": 2023,
+   "value": 8.42035103310376
+  },
+  {
+   "iso3": "TLS",
+   "country": "Timor-Leste",
+   "year": 2022,
+   "value": 7.00530945399786
+  },
+  {
+   "iso3": "TLS",
+   "country": "Timor-Leste",
+   "year": 2021,
+   "value": 3.69792094666786
+  },
+  {
+   "iso3": "TLS",
+   "country": "Timor-Leste",
+   "year": 2020,
+   "value": 0.495499215459571
+  },
+  {
+   "iso3": "TLS",
+   "country": "Timor-Leste",
+   "year": 2019,
+   "value": 0.958812739703141
+  },
+  {
+   "iso3": "TGO",
+   "country": "Togo",
+   "year": 2025,
+   "value": 0.433183451279108
+  },
+  {
+   "iso3": "TGO",
+   "country": "Togo",
+   "year": 2024,
+   "value": 2.862620740898
+  },
+  {
+   "iso3": "TGO",
+   "country": "Togo",
+   "year": 2023,
+   "value": 5.48928568141131
+  },
+  {
+   "iso3": "TGO",
+   "country": "Togo",
+   "year": 2022,
+   "value": 7.96757361617945
+  },
+  {
+   "iso3": "TGO",
+   "country": "Togo",
+   "year": 2021,
+   "value": 4.18621506523519
+  },
+  {
+   "iso3": "TGO",
+   "country": "Togo",
+   "year": 2020,
+   "value": 1.69928463299399
+  },
+  {
+   "iso3": "TGO",
+   "country": "Togo",
+   "year": 2019,
+   "value": 0.674652770077525
+  },
+  {
+   "iso3": "TON",
+   "country": "Tonga",
+   "year": 2025,
+   "value": 5.59276642101026
+  },
+  {
+   "iso3": "TON",
+   "country": "Tonga",
+   "year": 2024,
+   "value": 3.18188924237471
+  },
+  {
+   "iso3": "TON",
+   "country": "Tonga",
+   "year": 2023,
+   "value": 6.35112980255182
+  },
+  {
+   "iso3": "TON",
+   "country": "Tonga",
+   "year": 2022,
+   "value": 10.9713652903022
+  },
+  {
+   "iso3": "TON",
+   "country": "Tonga",
+   "year": 2021,
+   "value": 5.64051140636743
+  },
+  {
+   "iso3": "TON",
+   "country": "Tonga",
+   "year": 2020,
+   "value": -0.349737696727418
+  },
+  {
+   "iso3": "TON",
+   "country": "Tonga",
+   "year": 2019,
+   "value": 1.179543348218
+  },
+  {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "year": 2025,
+   "value": 0.994489987904821
+  },
+  {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "year": 2024,
+   "value": 0.526884625776839
+  },
+  {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "year": 2023,
+   "value": 4.62930242419968
+  },
+  {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "year": 2022,
+   "value": 5.82838638517958
+  },
+  {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "year": 2021,
+   "value": 2.05922746915457
+  },
+  {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "year": 2020,
+   "value": 0.598986330824643
+  },
+  {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "year": 2019,
+   "value": 1.00054293027237
+  },
+  {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "year": 2025,
+   "value": 5.15100197572676
+  },
+  {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "year": 2024,
+   "value": 7.20661657168793
+  },
+  {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "year": 2023,
+   "value": 9.32899597507865
+  },
+  {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "year": 2022,
+   "value": 8.30646124447623
+  },
+  {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "year": 2021,
+   "value": 5.706350208307
+  },
+  {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "year": 2020,
+   "value": 5.63415115897624
+  },
+  {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "year": 2019,
+   "value": 6.72007532863799
+  },
+  {
+   "iso3": "TUR",
+   "country": "Turkiye",
+   "year": 2025,
+   "value": 34.8811700293777
+  },
+  {
+   "iso3": "TUR",
+   "country": "Turkiye",
+   "year": 2024,
+   "value": 58.5064492168435
+  },
+  {
+   "iso3": "TUR",
+   "country": "Turkiye",
+   "year": 2023,
+   "value": 53.8594084019764
+  },
+  {
+   "iso3": "TUR",
+   "country": "Turkiye",
+   "year": 2022,
+   "value": 72.3088300496956
+  },
+  {
+   "iso3": "TUR",
+   "country": "Turkiye",
+   "year": 2021,
+   "value": 19.5964927532842
+  },
+  {
+   "iso3": "TUR",
+   "country": "Turkiye",
+   "year": 2020,
+   "value": 12.2789597724893
+  },
+  {
+   "iso3": "TUR",
+   "country": "Turkiye",
+   "year": 2019,
+   "value": 15.176809642769
+  },
+  {
+   "iso3": "TKM",
+   "country": "Turkmenistan",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "TKM",
+   "country": "Turkmenistan",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "TKM",
+   "country": "Turkmenistan",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "TKM",
+   "country": "Turkmenistan",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "TKM",
+   "country": "Turkmenistan",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "TKM",
+   "country": "Turkmenistan",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "TKM",
+   "country": "Turkmenistan",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "TCA",
+   "country": "Turks and Caicos Islands",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "TCA",
+   "country": "Turks and Caicos Islands",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "TCA",
+   "country": "Turks and Caicos Islands",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "TCA",
+   "country": "Turks and Caicos Islands",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "TCA",
+   "country": "Turks and Caicos Islands",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "TCA",
+   "country": "Turks and Caicos Islands",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "TCA",
+   "country": "Turks and Caicos Islands",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "TUV",
+   "country": "Tuvalu",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "TUV",
+   "country": "Tuvalu",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "TUV",
+   "country": "Tuvalu",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "TUV",
+   "country": "Tuvalu",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "TUV",
+   "country": "Tuvalu",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "TUV",
+   "country": "Tuvalu",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "TUV",
+   "country": "Tuvalu",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "UGA",
+   "country": "Uganda",
+   "year": 2025,
+   "value": 3.58082784438066
+  },
+  {
+   "iso3": "UGA",
+   "country": "Uganda",
+   "year": 2024,
+   "value": 3.32338033691818
+  },
+  {
+   "iso3": "UGA",
+   "country": "Uganda",
+   "year": 2023,
+   "value": 5.35094804280395
+  },
+  {
+   "iso3": "UGA",
+   "country": "Uganda",
+   "year": 2022,
+   "value": 7.1957888597581
+  },
+  {
+   "iso3": "UGA",
+   "country": "Uganda",
+   "year": 2021,
+   "value": 2.20457204757413
+  },
+  {
+   "iso3": "UGA",
+   "country": "Uganda",
+   "year": 2020,
+   "value": 3.31332289544501
+  },
+  {
+   "iso3": "UGA",
+   "country": "Uganda",
+   "year": 2019,
+   "value": 2.86758803446899
+  },
+  {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "year": 2025,
+   "value": 12.7303341026902
+  },
+  {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "year": 2024,
+   "value": 6.50198464669254
+  },
+  {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "year": 2023,
+   "value": 12.8490222828558
+  },
+  {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "year": 2022,
+   "value": 20.1836366617478
+  },
+  {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "year": 2021,
+   "value": 9.36313917695223
+  },
+  {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "year": 2020,
+   "value": 2.73249209419427
+  },
+  {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "year": 2019,
+   "value": 7.88671745611133
+  },
+  {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "year": 2025,
+   "value": 1.250865245598
+  },
+  {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "year": 2024,
+   "value": 1.66336510224894
+  },
+  {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "year": 2023,
+   "value": 1.62670837213248
+  },
+  {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "year": 2022,
+   "value": 5.29122604376849
+  },
+  {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "year": 2021,
+   "value": 0.179935336174431
+  },
+  {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "year": 2020,
+   "value": -2.07940317940943
+  },
+  {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "year": 2019,
+   "value": -1.93108114782172
+  },
+  {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "year": 2025,
+   "value": 3.88306881625999
+  },
+  {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "year": 2024,
+   "value": 3.2715729463592
+  },
+  {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "year": 2023,
+   "value": 6.79396706793962
+  },
+  {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "year": 2022,
+   "value": 7.92204883147902
+  },
+  {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "year": 2021,
+   "value": 2.51837109614213
+  },
+  {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "year": 2020,
+   "value": 0.989486703772491
+  },
+  {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "year": 2019,
+   "value": 1.73810460086512
+  },
+  {
+   "iso3": "USA",
+   "country": "United States",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "USA",
+   "country": "United States",
+   "year": 2024,
+   "value": 2.94952520485207
+  },
+  {
+   "iso3": "USA",
+   "country": "United States",
+   "year": 2023,
+   "value": 4.11633838374487
+  },
+  {
+   "iso3": "USA",
+   "country": "United States",
+   "year": 2022,
+   "value": 8.00279982052121
+  },
+  {
+   "iso3": "USA",
+   "country": "United States",
+   "year": 2021,
+   "value": 4.69785886363742
+  },
+  {
+   "iso3": "USA",
+   "country": "United States",
+   "year": 2020,
+   "value": 1.23358439630629
+  },
+  {
+   "iso3": "USA",
+   "country": "United States",
+   "year": 2019,
+   "value": 1.8122100752602
+  },
+  {
+   "iso3": "URY",
+   "country": "Uruguay",
+   "year": 2025,
+   "value": 4.65032720433323
+  },
+  {
+   "iso3": "URY",
+   "country": "Uruguay",
+   "year": 2024,
+   "value": 4.84914366613155
+  },
+  {
+   "iso3": "URY",
+   "country": "Uruguay",
+   "year": 2023,
+   "value": 5.86910359896119
+  },
+  {
+   "iso3": "URY",
+   "country": "Uruguay",
+   "year": 2022,
+   "value": 9.10437983075436
+  },
+  {
+   "iso3": "URY",
+   "country": "Uruguay",
+   "year": 2021,
+   "value": 7.74791402314762
+  },
+  {
+   "iso3": "URY",
+   "country": "Uruguay",
+   "year": 2020,
+   "value": 9.75640636078194
+  },
+  {
+   "iso3": "URY",
+   "country": "Uruguay",
+   "year": 2019,
+   "value": 7.88198870879619
+  },
+  {
+   "iso3": "UZB",
+   "country": "Uzbekistan",
+   "year": 2025,
+   "value": 8.79630890491107
+  },
+  {
+   "iso3": "UZB",
+   "country": "Uzbekistan",
+   "year": 2024,
+   "value": 9.62825465956681
+  },
+  {
+   "iso3": "UZB",
+   "country": "Uzbekistan",
+   "year": 2023,
+   "value": 9.95659071258017
+  },
+  {
+   "iso3": "UZB",
+   "country": "Uzbekistan",
+   "year": 2022,
+   "value": 11.4466436998835
+  },
+  {
+   "iso3": "UZB",
+   "country": "Uzbekistan",
+   "year": 2021,
+   "value": 10.8492397508122
+  },
+  {
+   "iso3": "UZB",
+   "country": "Uzbekistan",
+   "year": 2020,
+   "value": 12.8677297362606
+  },
+  {
+   "iso3": "UZB",
+   "country": "Uzbekistan",
+   "year": 2019,
+   "value": 14.5257359560686
+  },
+  {
+   "iso3": "VUT",
+   "country": "Vanuatu",
+   "year": 2025,
+   "value": 0.656455142231905
+  },
+  {
+   "iso3": "VUT",
+   "country": "Vanuatu",
+   "year": 2024,
+   "value": 1.14348948727411
+  },
+  {
+   "iso3": "VUT",
+   "country": "Vanuatu",
+   "year": 2023,
+   "value": 11.1825017088174
+  },
+  {
+   "iso3": "VUT",
+   "country": "Vanuatu",
+   "year": 2022,
+   "value": 6.67930581887121
+  },
+  {
+   "iso3": "VUT",
+   "country": "Vanuatu",
+   "year": 2021,
+   "value": 2.34328358208953
+  },
+  {
+   "iso3": "VUT",
+   "country": "Vanuatu",
+   "year": 2020,
+   "value": 5.32935073101715
+  },
+  {
+   "iso3": "VUT",
+   "country": "Vanuatu",
+   "year": 2019,
+   "value": 2.76252019386111
+  },
+  {
+   "iso3": "VEN",
+   "country": "Venezuela, RB",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "VEN",
+   "country": "Venezuela, RB",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "VEN",
+   "country": "Venezuela, RB",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "VEN",
+   "country": "Venezuela, RB",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "VEN",
+   "country": "Venezuela, RB",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "VEN",
+   "country": "Venezuela, RB",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "VEN",
+   "country": "Venezuela, RB",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "VNM",
+   "country": "Viet Nam",
+   "year": 2025,
+   "value": 3.30999314219739
+  },
+  {
+   "iso3": "VNM",
+   "country": "Viet Nam",
+   "year": 2024,
+   "value": 3.62109273885843
+  },
+  {
+   "iso3": "VNM",
+   "country": "Viet Nam",
+   "year": 2023,
+   "value": 3.25289282667662
+  },
+  {
+   "iso3": "VNM",
+   "country": "Viet Nam",
+   "year": 2022,
+   "value": 3.15650749963111
+  },
+  {
+   "iso3": "VNM",
+   "country": "Viet Nam",
+   "year": 2021,
+   "value": 1.83471554810461
+  },
+  {
+   "iso3": "VNM",
+   "country": "Viet Nam",
+   "year": 2020,
+   "value": 3.22093436652514
+  },
+  {
+   "iso3": "VNM",
+   "country": "Viet Nam",
+   "year": 2019,
+   "value": 2.79582367452243
+  },
+  {
+   "iso3": "VIR",
+   "country": "Virgin Islands (U.S.)",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "VIR",
+   "country": "Virgin Islands (U.S.)",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "VIR",
+   "country": "Virgin Islands (U.S.)",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "VIR",
+   "country": "Virgin Islands (U.S.)",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "VIR",
+   "country": "Virgin Islands (U.S.)",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "VIR",
+   "country": "Virgin Islands (U.S.)",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "VIR",
+   "country": "Virgin Islands (U.S.)",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "PSE",
+   "country": "West Bank and Gaza",
+   "year": 2025,
+   "value": 9.80840118100493
+  },
+  {
+   "iso3": "PSE",
+   "country": "West Bank and Gaza",
+   "year": 2024,
+   "value": 53.6691458303782
+  },
+  {
+   "iso3": "PSE",
+   "country": "West Bank and Gaza",
+   "year": 2023,
+   "value": 5.87110177678987
+  },
+  {
+   "iso3": "PSE",
+   "country": "West Bank and Gaza",
+   "year": 2022,
+   "value": 3.74122391852077
+  },
+  {
+   "iso3": "PSE",
+   "country": "West Bank and Gaza",
+   "year": 2021,
+   "value": 1.23748102831368
+  },
+  {
+   "iso3": "PSE",
+   "country": "West Bank and Gaza",
+   "year": 2020,
+   "value": -0.73533200109219
+  },
+  {
+   "iso3": "PSE",
+   "country": "West Bank and Gaza",
+   "year": 2019,
+   "value": 1.58018333639455
+  },
+  {
+   "iso3": "YEM",
+   "country": "Yemen, Rep.",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "YEM",
+   "country": "Yemen, Rep.",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "YEM",
+   "country": "Yemen, Rep.",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "YEM",
+   "country": "Yemen, Rep.",
+   "year": 2022,
+   "value": null
+  },
+  {
+   "iso3": "YEM",
+   "country": "Yemen, Rep.",
+   "year": 2021,
+   "value": null
+  },
+  {
+   "iso3": "YEM",
+   "country": "Yemen, Rep.",
+   "year": 2020,
+   "value": null
+  },
+  {
+   "iso3": "YEM",
+   "country": "Yemen, Rep.",
+   "year": 2019,
+   "value": null
+  },
+  {
+   "iso3": "ZMB",
+   "country": "Zambia",
+   "year": 2025,
+   "value": 13.9099095827735
+  },
+  {
+   "iso3": "ZMB",
+   "country": "Zambia",
+   "year": 2024,
+   "value": 14.9856262747939
+  },
+  {
+   "iso3": "ZMB",
+   "country": "Zambia",
+   "year": 2023,
+   "value": 10.884531691282
+  },
+  {
+   "iso3": "ZMB",
+   "country": "Zambia",
+   "year": 2022,
+   "value": 10.9932039209135
+  },
+  {
+   "iso3": "ZMB",
+   "country": "Zambia",
+   "year": 2021,
+   "value": 22.0207676245776
+  },
+  {
+   "iso3": "ZMB",
+   "country": "Zambia",
+   "year": 2020,
+   "value": 15.7330604721369
+  },
+  {
+   "iso3": "ZMB",
+   "country": "Zambia",
+   "year": 2019,
+   "value": 9.15031644316295
+  },
+  {
+   "iso3": "ZWE",
+   "country": "Zimbabwe",
+   "year": 2025,
+   "value": null
+  },
+  {
+   "iso3": "ZWE",
+   "country": "Zimbabwe",
+   "year": 2024,
+   "value": null
+  },
+  {
+   "iso3": "ZWE",
+   "country": "Zimbabwe",
+   "year": 2023,
+   "value": null
+  },
+  {
+   "iso3": "ZWE",
+   "country": "Zimbabwe",
+   "year": 2022,
+   "value": 104.705170628667
+  },
+  {
+   "iso3": "ZWE",
+   "country": "Zimbabwe",
+   "year": 2021,
+   "value": 98.5461050920623
+  },
+  {
+   "iso3": "ZWE",
+   "country": "Zimbabwe",
+   "year": 2020,
+   "value": 557.20181736205
+  },
+  {
+   "iso3": "ZWE",
+   "country": "Zimbabwe",
+   "year": 2019,
+   "value": 255.304990757855
+  }
+ ]
+}

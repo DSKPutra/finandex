@@ -2,11 +2,11 @@
 
 > © 2026 Dea Saka Kurnia Putra. All rights reserved.
 
-Dibangkitkan 2026-10-24 oleh `npm run live:report` dari `scripts/live-data/sources.yaml`, `data/live/status.json` dan snapshot di `data/live/`.
+Dibangkitkan 2026-10-31 oleh `npm run live:report` dari `scripts/live-data/sources.yaml`, `data/live/status.json` dan snapshot di `data/live/`.
 
 | Sumber | Status | Ketentuan yang dibaca | Dex | Baris baru | As-of baru | Flag kualitas | Kuota |
 |---|---|---|---|---|---|---|---|
-| European Central Bank — Data Portal (euro foreign exchange reference rates) | enabled | 2026-10-24: "All publicly available ESCB statistics may be reused free of charge on the condition that the source is quoted (e.g. Source: ECB statistics.) and that the statistics (including metadata) are not modified." | rupiahdex | 3 | 2026-10-23 | tidak ada | tanpa kunci; tidak ada kuota yang dilaporkan sumber |
+| European Central Bank — Data Portal (euro foreign exchange reference rates) | enabled | 2026-10-24: "All publicly available ESCB statistics may be reused free of charge on the condition that the source is quoted (e.g. Source: ECB statistics.) and that the statistics (including metadata) are not modified." | rupiahdex | 8 | 2026-10-30 | tidak ada | tanpa kunci; tidak ada kuota yang dilaporkan sumber |
 | World Bank — Indicators API (World Development Indicators) | enabled | 2026-10-24: Datasets licensed under CC BY 4.0, which "allows users to copy, modify and distribute data in any format for any purpose, including commercial use"; users must give appropriate credit and indicate changes. | inflationdex | 168 | 2026-10-08 | tidak ada | tanpa kunci; tidak ada kuota yang dilaporkan sumber |
 | CoinGecko API | blocked-pending-license | 2026-10-24: Attribution "Powered by CoinGecko" required; "you are not permitted to sell, rent, lease, sub-license, re-distribute or syndicate access to the CoinGecko API"; "you are not allowed to duplicate, reproduce, copy, store, derive from or translate any Data" except as expressly permitted; cache refreshed at least every 24 hours. | cryptdex | — | — | — | belum dipakai |
 | CoinMarketCap API | blocked-pending-license | Terms page returned HTTP 404 on 2026-10-24; terms not read, so the source cannot be enabled. | cryptdex | — | — | — | belum dipakai |
