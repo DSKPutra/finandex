@@ -1,14 +1,14 @@
 {
   "ecb": {
     "ok": true,
-    "at": "2026-10-24T13:46:01.172Z",
-    "detail": "180 rows",
-    "snapshot": "data/live/ecb/2026-10-24.json"
+    "at": "2026-11-25T05:36:10.114Z",
+    "detail": "224 rows",
+    "snapshot": "data/live/ecb/2026-11-25.json"
   },
   "worldbank": {
     "ok": true,
-    "at": "2026-10-24T13:46:04.658Z",
+    "at": "2026-11-25T05:36:13.194Z",
     "detail": "1827 rows",
-    "snapshot": "data/live/worldbank/2026-10-24.json"
+    "snapshot": "data/live/worldbank/2026-11-25.json"
   }
 }
